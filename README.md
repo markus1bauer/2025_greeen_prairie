@@ -31,7 +31,7 @@ Bauer M, xxx, Brudvig L (2023) __xxx__ &ndash; *xxx* xxx, xxx&ndash;xxx.
 
 #### Package versioning
 
-The used versions of R and the packages are saved in `2023_danube_dike_experiment/renv.lock`.
+The used versions of R and the packages are saved in `2025_greeen_prairie/renv.lock`.
 
 You can restore this state by executing `renv::restore()` in the console.
 
