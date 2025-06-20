@@ -73,6 +73,29 @@ soil_3 <- read_xlsx(
   here("data", "raw", "data_raw_soil.xlsx"), sheet = "NW Station"
 )
 
+excel_sheets(here("data", "raw", "data_raw_species.xlsx"))
+
+covers_2015 <- read_xlsx(
+  here("data", "raw", "data_raw_species.xlsx"), sheet = "1x1 covers Sept 2015",
+  na = c("", "NA", "na")
+)
+
+covers_2016 <- read_xlsx(
+  here("data", "raw", "data_raw_species.xlsx"), sheet = "1x1 covers 2016"
+)
+
+covers_2017 <- read_xlsx(
+  here("data", "raw", "data_raw_species.xlsx"), sheet = "1x1 covers 2017"
+)
+
+covers_2018 <- read_xlsx(
+  here("data", "raw", "data_raw_species.xlsx"), sheet = "1x1 covers 2018"
+)
+
+covers_2019 <- read_xlsx(
+  here("data", "raw", "data_raw_species.xlsx"), sheet = "1x1 covers 2019"
+)
+
 excel_sheets(here("data", "raw", "data_raw_flowers_2017.xlsx"))
 
 flowers <- read_xlsx(
@@ -85,16 +108,49 @@ flowers <- read_xlsx(
 
 excel_sheets(here("data", "raw", "data_raw_species.xlsx"))
 
-species <- read_xlsx(
-  here("data", "raw", "data_raw_species.xlsx"),
-  col_names = TRUE, na = c("", "NA", "na"), col_types =
-    cols(
-      .default = "?"
-    )
-  )
-
 species_seeded <- read_xlsx(
   here("data", "raw", "data_raw_species_seeded.xlsx"), sheet = "To Mix"
+)
+
+species_2015_1x1 <- read_xlsx(
+  here("data", "raw", "data_raw_species.xlsx"), sheet = "1x1 veg Sept 2015",
+  na = c("", "NA", "na")
+  )
+
+species_2015_5x5 <- read_xlsx(
+  here("data", "raw", "data_raw_species.xlsx"), sheet = "5x5 veg Sept 2015"
+  )
+
+species_2016_1x1 <- read_xlsx(
+  here("data", "raw", "data_raw_species.xlsx"), sheet = "1x1 veg 2016"
+)
+
+species_2016_5x5 <- read_xlsx(
+  here("data", "raw", "data_raw_species.xlsx"), sheet = "5x5 veg 2016"
+)
+
+species_2017_1x1 <- read_xlsx(
+  here("data", "raw", "data_raw_species.xlsx"), sheet = "1x1 veg 2017"
+)
+
+species_2017_5x5 <- read_xlsx(
+  here("data", "raw", "data_raw_species.xlsx"), sheet = "5x5 veg 2017"
+)
+
+species_2018_1x1 <- read_xlsx(
+  here("data", "raw", "data_raw_species.xlsx"), sheet = "1x1 veg 2018"
+)
+
+species_2018_5x5 <- read_xlsx(
+  here("data", "raw", "data_raw_species.xlsx"), sheet = "5x5 veg 2018"
+)
+
+species_2019_1x1 <- read_xlsx(
+  here("data", "raw", "data_raw_species.xlsx"), sheet = "1x1 veg 2019"
+)
+
+species_2019_5x5 <- read_xlsx(
+  here("data", "raw", "data_raw_species.xlsx"), sheet = "5x5 veg 2019"
 )
 
 
@@ -108,13 +164,103 @@ soil <- soil_1 %>%
 treatment <- treatment_1 %>%
   bind_rows(treatment_2, treatment_3)
 
+covers <- covers_2015 %>%
+  bind_rows(covers_2016, covers_2017, covers_2018, covers_2019) %>%
+  mutate(
+    id_plot = if_else(
+      site == "Lux Arbor", str_c("Lux_", plot), if_else(
+        site == "SW Station", str_c("SWS_", plot), if_else(
+        site == "NW Station", str_c("NWS_", plot), "warning"
+      )))
+    ) %>%
+  select(
+    id_plot, site, date_surveyed, date_entered, botanist, veg, bare, litter, rock,
+    moss, moss_lichens, sum, notes
+    )
+
 sites <- treatment %>%
   full_join(soil, by = "id_plot")
 
-species <- species %>%
-  full_join(species_seeded, by = "name")
+species_1x1 <- species_2015_1x1 %>%
+  bind_rows(
+    species_2016_1x1, species_2017_1x1, species_2018_1x1, species_2019_1x1
+    ) %>%
+  mutate(
+    id_plot = if_else(
+      site == "Lux Arbor", str_c("Lux_", plot), if_else(
+        site == "SW Station", str_c("SWS_", plot), if_else(
+          site == "NW Station", str_c("NWS_", plot), "warning"
+        ))),
+    plot_size = 1
+  ) %>%
+  rename(name = species) %>%
+  select(
+    id_plot, site, plot_size, date_surveyed, date_entered, botanist,
+    species_non_corrected, name, cover, notes, unknown
+    )
 
-rm(list = setdiff(ls(), c("species", "sites", "flowers")))
+species_5x5 <- species_2015_5x5 %>%
+  bind_rows(
+    species_2016_5x5, species_2017_5x5, species_2018_5x5, species_2019_5x5
+  ) %>%
+  mutate(
+    id_plot = if_else(
+      site == "Lux Arbor", str_c("Lux_", plot), if_else(
+        site == "SW Station", str_c("SWS_", plot), if_else(
+          site == "NW Station", str_c("NWS_", plot), "warning"
+        ))),
+    plot_size = 25
+  ) %>%
+  rename(name = species) %>%
+  select(
+    id_plot, site, plot_size, date_surveyed, date_entered, botanist,
+    species_non_corrected, name, notes, unknown
+  )
+
+species <- species_1x1 %>%
+  bind_rows(species_5x5)
+
+species_2 <- species %>%
+  mutate(
+    name = str_replace(name, "ACENEG", ""),
+    name = str_replace(name, "ACHMIL", "Achillea millefolium"),
+    name = str_replace(name, "AMBART", ""),
+    name = str_replace(name, "ANDGER", ""),
+    name = str_replace(name, "ASCSTR", ""),
+    name = str_replace(name, "ASCSYR", "Asclepias syriaca"),
+    name = str_replace(name, "ASCTUB", "Asclepias tuberosa"),
+    name = str_replace(name, "ASPOFF", ""),
+    name = str_replace(name, "BAPLAC", ""),
+    name = str_replace(name, "BARVUL", ""),
+    name = str_replace(name, "BERINC", ""),
+    name = str_replace(name, "BERVUL", ""),
+    name = str_replace(name, "BOUCUR", ""),
+    name = str_replace(name, "BROINE", ""),
+    name = str_replace(name, "CARDAV", ""),
+    name = str_replace(name, "CENSTO", "Centaurea stoebe")
+    name = str_replace(name, "CHAFAS", ""),
+    name = str_replace(name, "CHEALB", "Chenopodium album"),
+    name = str_replace(name, "CONCAN", ""),
+    name = str_replace(name, "CORLAN", ""),
+    name = str_replace(name, "DACGLO", ""),
+    name = str_replace(name, "DALPIN", ""),
+    name = str_replace(name, "DALPUR", ""),
+    name = str_replace(name, "DAUCAR", "Daucus carota"),
+    name = str_replace(name, "DESCAN", ""),
+    name = str_replace(name, "DESSPP", ""),
+    name = str_replace(name, "DICSPP", ""),
+    name = str_replace(name, "DIGSPP", ""),
+    name = str_replace(name, "ECHPAL", ""),
+    name = str_replace(name, "ECHPUR", ""),
+    name = str_replace(name, "ELAUMB", ""),
+    name = str_replace(name, "ELYCAN", ""),
+    name = str_replace(name, "ELYREP", "Elymus repens"),
+    name = str_replace(name, "ELYSPP", ""),
+    name = str_replace(name, "ERISPP", ""),
+    name = str_replace(name, "EUTGRA", ""),
+  )
+
+rm(list = setdiff(ls(), c("species", "sites", "flowers", "covers")))
 
 
 
