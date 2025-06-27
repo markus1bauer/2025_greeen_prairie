@@ -4,7 +4,7 @@
 #
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Markus Bauer
-# 2025-06-19
+# 2025-06-27
 
 
 
@@ -196,11 +196,16 @@ problems <- species %>%
         plot_size == "seeded", 0, if_else(
           name %in% c(
             "DIGISCSAN", "ERASPESPP", "FESRUBAGG", "POTARGE", "POTARGU",
-            "Poaceae", "Asteraceae", "Brassicaceae", "Fabaceae"
+            "Poaceae", "Asteraceae", "Brassicaceae", "Fabaceae", "Cyperaceae",
+            "Asteraceae stem_leaves_yellow"
             ), 0, if_else(
               str_detect(notes, "^sample$") &
                 str_detect(name, "^[:upper:]{6}$"),
-              0, if_else(str_detect(name, "unknown"), 1, 2)
+              0, if_else(
+                str_detect(notes, "^photo$") &
+                  str_detect(name, "^[:upper:]{6}$"),
+                0, if_else(str_detect(name, "unknown"), 1, 2)
+                )
               )
         )
       )
@@ -216,7 +221,7 @@ problems <- species %>%
 write_xlsx(
   problems,
   here(
-    "data", "processed", "data_processed_species_problems_202506261455.xlsx"
+    "data", "processed", "data_processed_species_problems_202506271316.xlsx"
       )
 )
 
@@ -241,18 +246,18 @@ data_names <- species %>%
   mutate(
     abb = name,
     name = str_replace(name, "ACENEG", "Acer negundo"),
-    name = str_replace(name, "ACERUB", "Acer rubra"),
+    name = str_replace(name, "ACERUB", "Acer rubrum"),
     name = str_replace(name, "ACESPP", "Acer sp."),
     name = str_replace(name, "ACHMIL", "Achillea millefolium"),
     name = str_replace(name, "AGRGIG", "Agrostis gigantea"),
     name = str_replace(name, "AMASPP", "Amaranthus sp."),
-    name = str_replace(name, "AMBART", "Ambrosia artimisifolia"),
+    name = str_replace(name, "AMBART", "Ambrosia artimisiifolia"),
     name = str_replace(name, "ALLPET", "Alliaria petiolata"),
     name = str_replace(name, "ALLSPP", "Allium sp."),
     name = str_replace(name, "ALLVIN", "Allium vineale"),
     name = str_replace(name, "AMARET", "Amaranthus retroflexus"),
     name = str_replace(name, "AMASPP", "Amaranthus sp."),
-    name = str_replace(name, "AMBART", "Ambrosia artimisifolia"),
+    name = str_replace(name, "AMBART", "Ambrosia artimisiifolia"),
     name = str_replace(name, "ANDGER", "Andropogon gerardii"),
     name = str_replace(name, "ARAGLA", "Arabis glabra"),
     name = str_replace(name, "ARATHA", "Arabidopsis thaliana"),
@@ -263,12 +268,14 @@ data_names <- species %>%
     name = str_replace(name, "ASTCAN", "Astragalus canadensis"),
     name = str_replace(name, "ASTERI", "Aster ericoides"),
     name = str_replace(name, "ASTLAE", "Aster laevis"),
+    name = str_replace(name, "ASTOOL", "Aster oolentangiensis"),
     name = str_replace(name, "ASTPIL", "Aster pilosus"),
+    name = str_replace(name, "ASTSAG", "Aster sagittifolius"),
     name = str_replace(name, "ASTSPP", "Aster sp."),
     name = str_replace(name, "AVESAT", "Avena sativa"),
-    name = str_replace(name, "BAPLAC", "Baptisia lactaea"),
+    name = str_replace(name, "BAPLAC", "Baptisia lactea"),
     name = str_replace(name, "BARSPP", "Barbarea sp."),
-    name = str_replace(name, "BARVUL", "Barbarea vulgare"),
+    name = str_replace(name, "BARVUL", "Barbarea vulgaris"),
     name = str_replace(name, "BERINC", "Berteroa incana"),
     name = str_replace(name, "BERVUL", "Berberis vulgaris"),
     name = str_replace(name, "BOUCUR", "Bouteloua curtipendula"),
@@ -279,6 +286,7 @@ data_names <- species %>%
     name = str_replace(name, "BROKAL", "Bromus kalmii"),
     name = str_replace(name, "BROTEC", "Bromus tectorum"),
     name = str_replace(name, "CARSPP", "Carex sp."),
+    name = str_replace(name, "CASFAS", "Cassia fasciculata"),
     name = str_replace(name, "CENSTO", "Centaurea stoebe"),
     name = str_replace(name, "CHAFAS", "Chamaecrista fasciculata"),
     name = str_replace(name, "CHAMAC", "Chamaesyce maculata"),
@@ -289,20 +297,19 @@ data_names <- species %>%
     name = str_replace(name, "CIRSPP", "Cirsium sp."),
     name = str_replace(name, "CONCAN", "Conyza canadensis"),
     name = str_replace(name, "CORLAN", "Coreopsis lanceolata"),
-    name = str_replace(name, "CYPLUP", "Cyperus lupalinus"),
+    name = str_replace(name, "CYPLUP", "Cyperus lupulinus"),
     name = str_replace(name, "CYPSPP", "Cyperus sp."),
     name = str_replace(name, "DACGLO", "Dactylis glomerata"),
     name = str_replace(name, "DALPUR", "Dalea purpurea"),
     name = str_replace(name, "DANSPI", "Danthonia spicata"),
     name = str_replace(name, "DAUCAR", "Daucus carota"),
     name = str_replace(name, "DESCAN", "Desmodium canadense"),
-    name = str_replace(name, "DESILL", "Desmodium illionense"),
+    name = str_replace(name, "DESILL", "Desmodium illinoense"),
     name = str_replace(name, "DESPAN", "Desmodium paniculatum"),
     name = str_replace(name, "DESSPP", "Desmodium sp."),
     name = str_replace(name, "DICSPP", "Dichanthelium sp."),
     name = str_replace(name, "DIGCOG", "Digitaria cognata"),
     name = str_replace(name, "DIGISC", "Digitaria ischaemum"),
-    name = str_replace(name, "DIGISCSAN", "Digitaria ischaemum or sanguinalis"),
     name = str_replace(name, "DIGSAN", "Digitaria sanguinalis"),
     name = str_replace(name, "DIGSPP", "Digitaria sp."),
     name = str_replace(name, "DRYARG", "Drymocallis arguta"),
@@ -326,13 +333,14 @@ data_names <- species %>%
     name = str_replace(
       name, "FESRUBAGG", "Festuca rubra agg."
       ),
+    name = str_replace(name, "FESTRA", "Festuca trachelyum"),
     name = str_replace(name, "GERSPP", "Geranium sp."),
-    name = str_replace(name, "GEUCAN", "Geum canadensis"),
-    name = str_replace(name, "GLETRI", "Gleditsia tricanthos"),
-    name = str_replace(name, "GNAOBT", "Gnaphilium obtusifolium"),
-    name = str_replace(name, "GNAPUR", "Gnaphilium purpureum"),
-    name = str_replace(name, "GNASPP", "Gnaphilium sp."),
-    name = str_replace(name, "GNAULI", "Gnaphilium uliginosum"),
+    name = str_replace(name, "GEUCAN", "Geum canadense"),
+    name = str_replace(name, "GLETRI", "Gleditsia triacanthos"),
+    name = str_replace(name, "GNAOBT", "Gnaphalium obtusifolium"),
+    name = str_replace(name, "GNAPUR", "Gnaphalium purpureum"),
+    name = str_replace(name, "GNASPP", "Gnaphalium sp."),
+    name = str_replace(name, "GNAULI", "Gnaphalium uliginosum"),
     name = str_replace(name, "HACSPP", "Hackelia sp."),
     name = str_replace(name, "HACVIR", "Hackelia virginiana"),
     name = str_replace(name, "HELOCC", "Helianthemum occidentale"),
@@ -351,6 +359,7 @@ data_names <- species %>%
     name = str_replace(name, "LESCAP", "Lespedeza capitata"),
     name = str_replace(name, "LESHIR", "Lespedeza hirta"),
     name = str_replace(name, "LESVIR", "Lespedeza virginica"),
+    name = str_replace(name, "LIACYL", "Liatris cylindracea"),
     name = str_replace(name, "LONMAA", "Lonicera maackii"),
     name = str_replace(name, "LUPPER", "Lupinus perennis"),
     name = str_replace(name, "MALNEG", "Malva neglecta"),
@@ -380,6 +389,7 @@ data_names <- species %>%
     name = str_replace(name, "PENDIG", "Penstemon digitalis"),
     name = str_replace(name, "PENHIR", "Penstemon hirsutus"),
     name = str_replace(name, "PERMAC", "Persicaria maculosa"),
+    name = str_replace(name, "PETPUR", "Petalostemom purpureus"),
     name = str_replace(name, "PHLPRA", "Phleum pratense"),
     name = str_replace(name, "PHYAME", "Phytolacca americana"),
     name = str_replace(name, "PHYHET", "Phytolacca heterotepala"),
@@ -391,18 +401,19 @@ data_names <- species %>%
     name = str_replace(name, "POAPRA", "Poa pratensis"),
     name = str_replace(name, "POASPP", "Poa sp."),
     name = str_replace(name, "POTARGE", "Potentilla argentilla"),
+    name = str_replace(name, "POTNOR", "Potentilla norvegica"),
     name = str_replace(name, "POTREC", "Potentilla recta"),
     name = str_replace(name, "POTSIM", "Potentilla simplex"),
     name = str_replace(name, "PRUCUL", "Prunus cultivated"),
     name = str_replace(name, "PRUSER", "Prunus serotina"),
     name = str_replace(name, "PRUSPP", "Prunus sp."),
-    name = str_replace(name, "PSEOBT", "Pseudognaphilium obtusifolium"),
+    name = str_replace(name, "PSEOBT", "Pseudognaphalium obtusifolium"),
     name = str_replace(name, "QUESPP", "Quercus sp."),
     name = str_replace(name, "QUEVEL", "Quercus velutina"),
     name = str_replace(name, "RATPIN", "Ratibida pinnata"),
     name = str_replace(name, "RHUSPP", "Rhus sp."),
     name = str_replace(name, "RHUTYP", "Rhus typhina"),
-    name = str_replace(name, "RUBALL", "Rubus allegehniensis"),
+    name = str_replace(name, "RUBALL", "Rubus allegheniensis"),
     name = str_replace(name, "RUBFLA", "Rubus flagellaris"),
     name = str_replace(name, "RUBOCC", "Rubus occidentalis"),
     name = str_replace(name, "RUDHIR", "Rudbeckia hirta"),
@@ -417,11 +428,13 @@ data_names <- species %>%
     name = str_replace(name, "SETSPP", "Setaria sp."),
     name = str_replace(name, "SETVIR", "Setaria viridis"),
     name = str_replace(name, "SILLAT", "Silene latifolia"),
-    name = str_replace(name, "SILSPP", "Silphyum sp."),
+    name = str_replace(name, "SILSPP", "Silphium sp."),
+    name = str_replace(name, "SILTER", "Silphium terebinthinaceum"),
     name = str_replace(name, "SILVUL", "Silene vulgaris"),
     name = str_replace(name, "SOLALT", "Solidago altissima"),
     name = str_replace(name, "SOLCAN", "Solidago canadensis"),
     name = str_replace(name, "SOLCAR", "Solanum carolinense"),
+    name = str_replace(name, "SOLJUN", "Solidago juncea"),
     name = str_replace(name, "SOLNEM", "Solidago nemoralis"),
     name = str_replace(name, "SOLPTY", "Solanum ptychanthum"),
     name = str_replace(name, "SOLRIG", "Solidago rigida"),
@@ -431,13 +444,14 @@ data_names <- species %>%
     name = str_replace(name, "SPOCRY", "Sporobolus cryptandrus"),
     name = str_replace(name, "STEMED", "Stellaria media"),
     name = str_replace(name, "STESPP", "Stellaria sp."),
-    name = str_replace(name, "SYMERI", "Symphiotrichum ericoides"),
+    name = str_replace(name, "SYMERI", "Symphyotrichum ericoides"),
     name = str_replace(name, "SYMLAE", "Symphyotrichum laeve"),
     name = str_replace(name, "SYMLAN", "Symphyotrichum lanceolatum"),
     name = str_replace(name, "SYMPIL", "Symphyotrichum pilosum"),
-    name = str_replace(name, "SYMSPP", "Symphiotrichum sp."),
+    name = str_replace(name, "SYMSPP", "Symphyotrichum sp."),
     name = str_replace(name, "TAROFF", "Taraxacum officinale"),
     name = str_replace(name, "TOXRAD", "Toxicodendron radicans"),
+    name = str_replace(name, "TRAOHI", "Tradescantia ohiensis"),
     name = str_replace(name, "TRASPP", "Tragopogon sp."),
     name = str_replace(name, "TRIARV", "Trifolium arvense"),
     name = str_replace(name, "TRICAM", "Trifolium campestre"),
@@ -457,13 +471,17 @@ data_names <- species %>%
     name = str_replace(name, "VICSPP", "Vicia sp."),
     name = str_replace(name, "VICVIL", "Vicia villosa"),
     name = str_replace(name, "VINSPP", "Vinca sp."),
+    name = str_replace(name, "VIOSPP", "Viola sp."),
     name = str_replace(name, "VITAES", "Vitis aestivalis"),
     name = str_replace(name, "VITVIN", "Vitis vinifera"),
     name = str_replace(name, "VITRIP", "Vitis riparia"),
     name = str_replace(name, "VITSPP", "Vitis sp."),
     name = str_replace(name, "ZIZAPT", "Zizia aptera")
   ) %>%
-  select(abb, name, seeded)
+  select(abb, name, seeded) %>%
+  group_by(abb, name) %>%
+  summarize(seeded = sum(seeded)) %>%
+  ungroup()
 
 
 ### b Harmonize names of species matrix ---------------------------------------
@@ -502,7 +520,7 @@ data_check_duplicated <- data_names %>%
       select(name_submitted, accepted_name, accepted_family, accepted_name_url),
     by = c("name_submitted")
   ) %>%
-  select(abb, name_submitted, accepted_name, everything()) %>%
+  select(abb, name_submitted, accepted_name, accepted_family, seeded) %>%
   add_count(accepted_name) %>%
   arrange(desc(n), accepted_name)
 
@@ -528,10 +546,15 @@ traits <- data_names %>%
         accepted_family, accepted_name_url, source
       ),
     by = "accepted_name"
-  )
+  ) %>%
+  mutate(
+    accepted_name = if_else(accepted_name == "", "unknown", accepted_name)
+    )
+
+# Combine all Digitarias
 
 write_csv(
-  traits, here("data", "processed", "data_processed_traits_202506261253.csv")
+  traits, here("data", "processed", "data_processed_traits_202506271357.csv")
 )
 
 
