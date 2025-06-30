@@ -4,7 +4,7 @@
 #
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Markus Bauer
-# 2025-06-27
+# 2025-06-30
 
 
 
@@ -185,7 +185,7 @@ species <- species_seeded %>%
 
 ### Name resolving ####
 
-problems <- species %>%
+data_check_problems <- species %>%
   mutate(
     date_entered = date(date_entered),
     date_surveyed = date(date_surveyed)
@@ -196,8 +196,8 @@ problems <- species %>%
         plot_size == "seeded", 0, if_else(
           name %in% c(
             "DIGISCSAN", "ERASPESPP", "FESRUBAGG", "POTARGE", "POTARGU",
-            "Poaceae", "Asteraceae", "Brassicaceae", "Fabaceae", "Cyperaceae",
-            "Asteraceae stem_leaves_yellow"
+            "Poaceae", "Asteraceae", "Brassicaceae", "Fabaceae",
+            "Cyperaceae"
             ), 0, if_else(
               str_detect(notes, "^sample$") &
                 str_detect(name, "^[:upper:]{6}$"),
@@ -217,13 +217,6 @@ problems <- species %>%
     species_pool
     ) %>%
   select(-date_entered, -species_pool)
-
-write_xlsx(
-  problems,
-  here(
-    "data", "processed", "data_processed_species_problems_202506271316.xlsx"
-      )
-)
 
 rm(list = setdiff(ls(), c("species", "sites", "flowers", "covers")))
 
@@ -255,7 +248,6 @@ data_names <- species %>%
     name = str_replace(name, "ALLPET", "Alliaria petiolata"),
     name = str_replace(name, "ALLSPP", "Allium sp."),
     name = str_replace(name, "ALLVIN", "Allium vineale"),
-    name = str_replace(name, "AMARET", "Amaranthus retroflexus"),
     name = str_replace(name, "AMASPP", "Amaranthus sp."),
     name = str_replace(name, "AMBART", "Ambrosia artimisiifolia"),
     name = str_replace(name, "ANDGER", "Andropogon gerardii"),
@@ -271,10 +263,8 @@ data_names <- species %>%
     name = str_replace(name, "ASTOOL", "Aster oolentangiensis"),
     name = str_replace(name, "ASTPIL", "Aster pilosus"),
     name = str_replace(name, "ASTSAG", "Aster sagittifolius"),
-    name = str_replace(name, "ASTSPP", "Aster sp."),
     name = str_replace(name, "AVESAT", "Avena sativa"),
     name = str_replace(name, "BAPLAC", "Baptisia lactea"),
-    name = str_replace(name, "BARSPP", "Barbarea sp."),
     name = str_replace(name, "BARVUL", "Barbarea vulgaris"),
     name = str_replace(name, "BERINC", "Berteroa incana"),
     name = str_replace(name, "BERVUL", "Berberis vulgaris"),
@@ -291,7 +281,6 @@ data_names <- species %>%
     name = str_replace(name, "CHAFAS", "Chamaecrista fasciculata"),
     name = str_replace(name, "CHAMAC", "Chamaesyce maculata"),
     name = str_replace(name, "CHEALB", "Chenopodium album"),
-    name = str_replace(name, "CHESPP", "Chenopodium sp."),
     name = str_replace(name, "CHOJUN", "Chondrilla juncea"),
     name = str_replace(name, "CIRCAN", "Circaea canadensis"),
     name = str_replace(name, "CIRSPP", "Cirsium sp."),
@@ -333,7 +322,7 @@ data_names <- species %>%
     name = str_replace(
       name, "FESRUBAGG", "Festuca rubra agg."
       ),
-    name = str_replace(name, "FESTRA", "Festuca trachelyum"),
+    name = str_replace(name, "FESTRA", "Festuca trachyphylla"),
     name = str_replace(name, "GERSPP", "Geranium sp."),
     name = str_replace(name, "GEUCAN", "Geum canadense"),
     name = str_replace(name, "GLETRI", "Gleditsia triacanthos"),
@@ -341,20 +330,16 @@ data_names <- species %>%
     name = str_replace(name, "GNAPUR", "Gnaphalium purpureum"),
     name = str_replace(name, "GNASPP", "Gnaphalium sp."),
     name = str_replace(name, "GNAULI", "Gnaphalium uliginosum"),
-    name = str_replace(name, "HACSPP", "Hackelia sp."),
     name = str_replace(name, "HACVIR", "Hackelia virginiana"),
     name = str_replace(name, "HELOCC", "Helianthemum occidentale"),
     name = str_replace(name, "HIESPP", "Hieracium sp."),
     name = str_replace(name, "HYPPER", "Hypericum perforatum"),
     name = str_replace(name, "HYPRAD", "Hypochaeris radicata"),
-    name = str_replace(name, "HYPSPP", "Hypochaeris sp."),
     name = str_replace(name, "JUNEFF", "Juncus effusus"),
-    name = str_replace(name, "JUNSPP", "Juncus sp."),
     name = str_replace(name, "JUNTEN", "Juncus tenuis"),
     name = str_replace(name, "KOEMAC", "Koeleria macrantha"),
     name = str_replace(name, "KRISPP", "Krigia sp."),
     name = str_replace(name, "LACSPP", "Lactuca sp."),
-    name = str_replace(name, "LACCAN", "Lactuca canadensis"),
     name = str_replace(name, "LEPCAM", "Lepidium campestre"),
     name = str_replace(name, "LESCAP", "Lespedeza capitata"),
     name = str_replace(name, "LESHIR", "Lespedeza hirta"),
@@ -449,6 +434,7 @@ data_names <- species %>%
     name = str_replace(name, "SYMLAN", "Symphyotrichum lanceolatum"),
     name = str_replace(name, "SYMPIL", "Symphyotrichum pilosum"),
     name = str_replace(name, "SYMSPP", "Symphyotrichum sp."),
+    name = str_replace(name, "SYMUND", "Symphyotrichum undulatum"),
     name = str_replace(name, "TAROFF", "Taraxacum officinale"),
     name = str_replace(name, "TOXRAD", "Toxicodendron radicans"),
     name = str_replace(name, "TRAOHI", "Tradescantia ohiensis"),
@@ -480,7 +466,7 @@ data_names <- species %>%
   ) %>%
   select(abb, name, seeded) %>%
   group_by(abb, name) %>%
-  summarize(seeded = sum(seeded)) %>%
+  summarize(seeded = sum(seeded, na.rm = TRUE)) %>%
   ungroup()
 
 
@@ -490,8 +476,7 @@ metadata <- TNRS_metadata()
 metadata$version
 metadata$sources %>% tibble()
 
-## Run only once and than load saved file
-data_names_check <- data_names %>%
+data_names_resolved <- data_names %>%
     rowid_to_column("id") %>%
     select(id, name) %>%
     TNRS::TNRS(
@@ -504,7 +489,7 @@ data_names_check <- data_names %>%
 data_check_warnings <- data_names %>%
   rename("name_submitted" = "name") %>%
   left_join(
-    data_names_check %>%
+    data_names_resolved %>%
       select(
         name_submitted, accepted_name, overall_score, warnings,
         warningseng, source
@@ -516,7 +501,7 @@ data_check_warnings <- data_names %>%
 data_check_duplicated <- data_names %>%
   rename("name_submitted" = "name") %>%
   left_join(
-    data_names_check %>%
+    data_names_resolved %>%
       select(name_submitted, accepted_name, accepted_family, accepted_name_url),
     by = c("name_submitted")
   ) %>%
@@ -525,7 +510,7 @@ data_check_duplicated <- data_names %>%
   arrange(desc(n), accepted_name)
 
 rm(list = setdiff(ls(), c("species", "sites", "data_names", "flowers", "covers",
-                          "data_names_check")))
+                          "data_names_resolved")))
 
 
 ### c Summarize duplicates of traits matrix ------------------------------------
@@ -533,14 +518,14 @@ rm(list = setdiff(ls(), c("species", "sites", "data_names", "flowers", "covers",
 traits <- data_names %>%
   rename("name_submitted" = "name") %>%
   left_join(
-    data_names_check %>% select(name_submitted, accepted_name),
+    data_names_resolved %>% select(name_submitted, accepted_name),
     by = "name_submitted"
   ) %>%
   select(-abb, -name_submitted) %>%
   group_by(accepted_name) %>%
   summarize(seeded = sum(seeded, na.rm = TRUE)) %>%
   left_join(
-    data_names_check %>%
+    data_names_resolved %>%
       select(
         accepted_name, taxonomic_status, accepted_name_rank,
         accepted_family, accepted_name_url, source
@@ -549,50 +534,65 @@ traits <- data_names %>%
   ) %>%
   mutate(
     accepted_name = if_else(accepted_name == "", "unknown", accepted_name)
-    )
-
-# Combine all Digitarias
-
-write_csv(
-  traits, here("data", "processed", "data_processed_traits_202506271357.csv")
-)
+    ) %>%
+  add_count(accepted_name) %>%
+  filter(
+    (taxonomic_status == "Accepted" & n == 2) | n == 1
+      ) %>%
+  distinct() %>%
+  select(-n)
 
 
 ### d Summarize duplicates of species matrix -----------------------------------
 
-data <- species %>%
+data_species <- species %>%
+  select(-seeded) %>%
   rename(abb = name) %>%
-  left_join(data_names, by = "abb") %>%
-  mutate(name = if_else(plot_size == "seeded", abb, name)) %>%
+  left_join(data_names %>% select(abb, name), by = "abb") %>% 
   rename("name_submitted" = "name") %>%
   left_join(
-    data_names_check %>% select(name_submitted, accepted_name),
+    data_names_resolved %>% select(name_submitted, accepted_name),
     by = "name_submitted"
   ) %>%
   select(
-    id_plot, plot_size, species_pool, date_surveyed, accepted_name, abundance,
-    notes
+    id_plot, plot_size, date_surveyed, accepted_name, abundance
     ) %>%
-  group_by(id_plot, plot_size, species_pool, date_surveyed, accepted_name)
-
-data_check_duplicated <- data %>%
-  add_count(accepted_name) %>%
-  arrange(desc(n), accepted_name)
-
-species2 <- data %>%
-  summarize(abundance = sum(abundance)) %>%
-  mutate(abundance = round(abundance, digits = 2))
-
-write_csv(
-    species2, here("data", "processed", "data_processed_species.csv")
+  mutate(
+    accepted_name = if_else(
+      str_detect(accepted_name, "Digitaria"), "Digitaria", if_else(
+        str_detect(accepted_name, "Melilotus"), "Melilotus", accepted_name
+      )
+      ),
+    accepted_name = if_else(accepted_name == "", "unknown", accepted_name)
     )
 
-data %>%
+data_check_duplicated <- data_species %>%
+  group_by(id_plot, plot_size, date_surveyed, accepted_name) %>%
+  add_count(accepted_name) %>%
+  arrange(desc(n), accepted_name, date_surveyed, id_plot, plot_size)
+
+species <- data_species %>%
+  group_by(id_plot, plot_size, date_surveyed, accepted_name) %>%
+  summarize(abundance = sum(abundance)) %>%
+  mutate(abundance = round(abundance, digits = 2)) %>%
+  arrange(id_plot, date_surveyed, plot_size, accepted_name) %>%
+  group_by(id_plot, date_surveyed, accepted_name) %>%
+  slice(1) %>%
+  arrange(id_plot, date_surveyed, plot_size, accepted_name)
+
+data_check_duplicated <- species %>%
+  group_by(id_plot, date_surveyed, accepted_name) %>%
+  add_count(accepted_name) %>%
+  arrange(desc(n), accepted_name, date_surveyed, id_plot)
+
+data_check_occurences <- data_species %>%
   group_by(accepted_name) %>%
   count(accepted_name) %>%
-  arrange(accepted_name, n) %>%
-  write_xlsx(
-    here("data", "processed", "data_processed_occurences_202506261236.xlsx")
+  arrange(accepted_name, n)
+
+write_xlsx(
+  data_check_occurences,
+  here("data", "processed", "data_processed_occurences_202506301745.xlsx")
   )
 
 ## 2 Traits from GIFT database ################################################
