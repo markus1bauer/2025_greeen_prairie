@@ -413,7 +413,7 @@ data_names <- species %>%
     name = str_replace(name, "SETSPP", "Setaria sp."),
     name = str_replace(name, "SETVIR", "Setaria viridis"),
     name = str_replace(name, "SILLAT", "Silene latifolia"),
-    name = str_replace(name, "SILSPP", "Silphium sp."),
+    name = str_replace(name, "SILSPP", "Silene sp."),
     name = str_replace(name, "SILTER", "Silphium terebinthinaceum"),
     name = str_replace(name, "SILVUL", "Silene vulgaris"),
     name = str_replace(name, "SOLALT", "Solidago altissima"),
@@ -428,7 +428,6 @@ data_names <- species %>%
     name = str_replace(name, "SORNUT", "Sorghastrum nutans"),
     name = str_replace(name, "SPOCRY", "Sporobolus cryptandrus"),
     name = str_replace(name, "STEMED", "Stellaria media"),
-    name = str_replace(name, "STESPP", "Stellaria sp."),
     name = str_replace(name, "SYMERI", "Symphyotrichum ericoides"),
     name = str_replace(name, "SYMLAE", "Symphyotrichum laeve"),
     name = str_replace(name, "SYMLAN", "Symphyotrichum lanceolatum"),
@@ -557,12 +556,17 @@ data_species <- species %>%
   select(
     id_plot, plot_size, date_surveyed, accepted_name, abundance
     ) %>%
+  ### Merge the following species to the genus level ###
   mutate(
     accepted_name = if_else(
       str_detect(accepted_name, "Digitaria"), "Digitaria", if_else(
-        str_detect(accepted_name, "Melilotus"), "Melilotus", accepted_name
-      )
-      ),
+        str_detect(accepted_name, "Melilotus"), "Melilotus", if_else(
+          str_detect(accepted_name, "Rhus"), "Rhus", if_else(
+            str_detect(accepted_name, "Setaria"), "Setaria", if_else(
+              str_detect(accepted_name, "Ulmus"), "Ulmus", if_else(
+                str_detect(accepted_name, "Vicia"), "Vicia", if_else(
+                  str_detect(accepted_name, "Vitis"), "Vitis", accepted_name
+                ))))))),
     accepted_name = if_else(accepted_name == "", "unknown", accepted_name)
     )
 
@@ -592,8 +596,12 @@ data_check_occurences <- data_species %>%
 
 write_xlsx(
   data_check_occurences,
-  here("data", "processed", "data_processed_occurences_202506301745.xlsx")
+  here("data", "processed", "data_processed_occurences_20250704.xlsx")
   )
+
+rm(list = setdiff(ls(), c("species", "sites", "traits", "flowers", "covers")))
+
+
 
 ## 2 Traits from GIFT database ################################################
 
@@ -614,37 +622,27 @@ data_gift <- GIFT::GIFT_traits(
 
 ### b Combine gift and traits -------------------------------------------------
 
-data <- traits %>%
+data_traits <- traits %>%
   left_join(
-    gift %>%
+    data_gift %>%
+      rename(accepted_name = work_species) %>%
+      mutate(
+        accepted_name = str_replace(
+          accepted_name, "Andropogon gerardi", "Andropogon gerardii"
+        ),
+        accepted_name = str_replace(
+          accepted_name, "Argentina anserina", "Potentilla anserina"
+        ),
+        accepted_name = str_replace(
+          accepted_name, "Taraxacum ruderalia", "Taraxacum officinale"
+        )
+      ) %>% 
       select(
         accepted_name, trait_value_1.6.3, trait_value_3.2.3, trait_value_4.1.3,
         trait_value_1.2.2
-        ) %>%
-      mutate(
-        accepted_name = str_replace(
-          accepted_name, "Avenula pubescens", "Helictotrichon pubescens"
-          ),
-        accepted_name = str_replace(
-          accepted_name, "Betonica officinalis", "Stachys officinalis"
-          ),
-        accepted_name = str_replace(
-          accepted_name,
-          "Cerastium fontanum", "Cerastium fontanum subsp. vulgare"
-          ),
-        accepted_name = str_replace(
-          accepted_name,
-          "Festuca pratensis", "Lolium pratense"
-          ),
-        accepted_name = str_replace(
-          accepted_name, "Potentilla verna", "Potentilla tabernaemontani"
-          ),
-        accepted_name = str_replace(
-          accepted_name, "Tragopogon orientalis", "Tragopogon pratensis"
-          )
-      ),
+        ),
     by = "accepted_name"
-  ) %>%
+    ) %>%
   rename(
     family = accepted_family,
     sla = trait_value_4.1.3,
@@ -653,15 +651,19 @@ data <- traits %>%
     lifeform = trait_value_1.2.2
   )
 
-data %>% filter(duplicated(accepted_name))
+data_traits %>% filter(duplicated(accepted_name))
 
-data_summarized <- data %>%
-  group_by(accepted_name) %>%
-  summarize(across(everything(), ~ first(.x, na_rm = TRUE))) %>%
-  select(accepted_name, sla, height, seedmass, lifeform, everything())
+data_missing <- data_traits %>%
+  filter(
+    (is.na(sla) | is.na(height) | is.na(seedmass)) &
+      accepted_name_rank == "species"
+    ) %>%
+  select(accepted_name, seeded, family, sla, height, )
 
-data_summarized  %>%
-  filter(duplicated(accepted_name))
+write_xlsx(
+  data_missing,
+  here("data", "processed", "data_processed_missing_20250707.xlsx")
+)
 
 gift %>%
   filter(str_detect(accepted_name, "Lolium pratense")) %>%
@@ -682,7 +684,7 @@ traits <- data_summarized %>%
     )
 
 
-rm(list = setdiff(ls(), c("species", "sites", "traits")))
+rm(list = setdiff(ls(), c("species", "sites", "traits", "flowers", "covers")))
 
 
 
