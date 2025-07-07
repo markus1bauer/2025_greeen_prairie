@@ -4,7 +4,7 @@
 #
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Markus Bauer
-# 2025-06-30
+# 2025-07-07
 
 
 
@@ -173,12 +173,15 @@ species <- species_seeded %>%
   bind_rows(data) %>%
   mutate(
     date_entered = date(date_entered),
-    date_surveyed = date(date_surveyed)
+    date_surveyed = date(date_surveyed),
+    date_surveyed = date(date_surveyed),
+    year = year(date_surveyed),
+    id_plot_year = str_c(id_plot, year, sep = "_")
   ) %>%
   left_join(sites %>% select(id_plot, species_pool), by = "id_plot") %>%
   select(
-    id_plot, plot_size, species_pool, date_surveyed, date_entered, botanist,
-    species_original, name, abundance, seeded, notes
+    id_plot_year, id_plot, plot_size, species_pool, date_surveyed, date_entered,
+    botanist, species_original, name, abundance, seeded, notes
     ) %>%
   arrange(id_plot, date_surveyed, name)
 
@@ -554,7 +557,7 @@ data_species <- species %>%
     by = "name_submitted"
   ) %>%
   select(
-    id_plot, plot_size, date_surveyed, accepted_name, abundance
+    id_plot_year, id_plot, plot_size, date_surveyed, accepted_name, abundance
     ) %>%
   ### Merge the following species to the genus level ###
   mutate(
@@ -576,7 +579,7 @@ data_check_duplicated <- data_species %>%
   arrange(desc(n), accepted_name, date_surveyed, id_plot, plot_size)
 
 species <- data_species %>%
-  group_by(id_plot, plot_size, date_surveyed, accepted_name) %>%
+  group_by(id_plot_year, id_plot, plot_size, date_surveyed, accepted_name) %>%
   summarize(abundance = sum(abundance)) %>%
   mutate(abundance = round(abundance, digits = 2)) %>%
   arrange(id_plot, date_surveyed, plot_size, accepted_name) %>%
@@ -665,23 +668,23 @@ write_xlsx(
   here("data", "processed", "data_processed_missing_20250707.xlsx")
 )
 
-gift %>%
-  filter(str_detect(accepted_name, "Lolium pratense")) %>%
-  select(1:2, starts_with("trait"))
-
-traits <- data_summarized %>%
-  mutate(
-    across(c("R1A", "R22", "both"), replace_na, 0),
-    sla = if_else(accepted_name == "Festuca nigrescens", 193.57, sla), # Value of Festuca rubra (GIFT traitbase)
-    sla = if_else(accepted_name == "Lolium pratense", 214.00, sla), # Value of LEDA traitbase
-    sla = if_else(accepted_name == "Festuca rupicola", 193.57, sla), # Value of Festuca rubra (GIFT traitbase)
-    sla = if_else(accepted_name == "Medicago falcata", 219.5, sla), # Value of Medicago sativa (GIFT traitbase)
-    height = if_else(accepted_name == "Lolium pratense", 0.55, height), # Value of LEDA traitbase
-    height = if_else(accepted_name == "Medicago falcata", 0.52, height), # Value of Medicago sativa (GIFT traitbase)
-    seedmass = if_else(
-      accepted_name == "Leucanthemum ircutianum", 0.0008119666, seedmass
-      ) # Value of Leucanthemum vulgare
-    )
+# gift %>%
+#   filter(str_detect(accepted_name, "Lolium pratense")) %>%
+#   select(1:2, starts_with("trait"))
+# 
+# traits <- data_summarized %>%
+#   mutate(
+#     across(c("R1A", "R22", "both"), replace_na, 0),
+#     sla = if_else(accepted_name == "Festuca nigrescens", 193.57, sla), # Value of Festuca rubra (GIFT traitbase)
+#     sla = if_else(accepted_name == "Lolium pratense", 214.00, sla), # Value of LEDA traitbase
+#     sla = if_else(accepted_name == "Festuca rupicola", 193.57, sla), # Value of Festuca rubra (GIFT traitbase)
+#     sla = if_else(accepted_name == "Medicago falcata", 219.5, sla), # Value of Medicago sativa (GIFT traitbase)
+#     height = if_else(accepted_name == "Lolium pratense", 0.55, height), # Value of LEDA traitbase
+#     height = if_else(accepted_name == "Medicago falcata", 0.52, height), # Value of Medicago sativa (GIFT traitbase)
+#     seedmass = if_else(
+#       accepted_name == "Leucanthemum ircutianum", 0.0008119666, seedmass
+#       ) # Value of Leucanthemum vulgare
+#     )
 
 
 rm(list = setdiff(ls(), c("species", "sites", "traits", "flowers", "covers")))
@@ -694,37 +697,35 @@ rm(list = setdiff(ls(), c("species", "sites", "traits", "flowers", "covers")))
 ### a Species richness -------------------------------------------------------
 
 richness <- species %>%
-  left_join(traits, by = "name") %>%
+  left_join(
+    traits %>% select(accepted_name, seeded, taxonomic_status, accepted_family),
+    by = "accepted_name"
+    ) %>%
   select(
-    name, status, redlist_germany, target, starts_with("X")
+    accepted_name, seeded, taxonomic_status, accepted_family,
+    id_plot_year, id_plot, abundance
   ) %>%
-  pivot_longer(names_to = "id", values_to = "n", cols = starts_with("X")) %>%
-  mutate(n = if_else(n > 0, 1, 0)) %>%
-  group_by(id)
+  mutate(presence = 1) %>%
+  group_by(id_plot_year, id_plot)
 
 #### Total species richness ###
 richness_total <- richness %>%
-  summarise(species_richness = sum(n, na.rm = TRUE)) %>%
-  ungroup()
-
-#### Red list Germany (species richness) ###
-richness_rlg <- richness %>%
-  filter(rlg == "1" | rlg == "2" | rlg == "3" | rlg == "V") %>%
-  summarise(rlg_richness = sum(n, na.rm = TRUE)) %>%
+  summarise(species_richness = sum(presence)) %>%
   ungroup()
 
 #### Target species (species richness) ###
-richness_target <- richness %>%
-  filter(target != "no") %>%
-  summarise(target_richness = sum(n, na.rm = TRUE)) %>%
+richness_seeded <- richness %>%
+  filter(seeded == 1) %>%
+  summarise(seeded_richness = sum(presence)) %>%
   ungroup()
 
-sites_dikes <- sites_dikes %>%
-  right_join(richness_total, by = "id") %>%
-  right_join(richness_rlg, by = "id") %>%
-  right_join(richness_target, by = "id")
+sites <- richness_total %>% 
+  left_join(richness_seeded %>%  select(-id_plot), by = "id_plot_year") %>%
+  left_join(sites, by = "id_plot") %>%
   mutate(
-    target_richness_ratio = target_richness / species_richness
+    seeded_richness_ratio = round(
+      seeded_richness / species_richness, digits = 2
+      )
   )
 
 
@@ -774,11 +775,6 @@ rm(list = setdiff(ls(), c("species", "sites", "traits")))
 
 ### b Final selection of variables --------------------------------------------
 
-traits <- traits %>%
-  select(
-    accepted_name, taxonomic_status, family, status, redlist_germany,
-    everything(), accepted_name_url
-    )
 
 
 
