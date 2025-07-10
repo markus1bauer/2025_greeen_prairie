@@ -20,6 +20,7 @@ library(tidyverse)
 library(ggbeeswarm)
 library(patchwork)
 library(lme4)
+library(brms)
 library(DHARMa)
 
 ### Start ###
@@ -32,13 +33,14 @@ sites <- read_csv(
     .default = "?",
     id_plot_year = "f",
     id_plot = "f",
-    site = "f",
-    treatment_id = "f",
+    site = col_factor(
+      levels = c("NW Station", "Lux Arbor", "SW Station")
+    ),
     seeding_time = col_factor(
       levels = c("unseeded", "fall", "spring"), ordered = TRUE
       ),
     herbicide = col_factor(levels = c("0", "1"), ordered = TRUE),
-    species_pool = col_factor(
+    seeded_pool = col_factor(
       levels = c("0", "6", "12", "18", "33"), ordered = TRUE
       ),
     year = "f"
@@ -47,11 +49,13 @@ sites <- read_csv(
   filter(
     year %in% c("2015", "2016", "2017", "2018"),
     richness_type == "seeded_richness",
-    pool_1 > 0,
     !(treatment_id %in% c("2", "4"))
   ) %>%
-  select(-pool_25, -pool_seeded) %>%
-  mutate(y = pool_1)
+  select(
+    id_plot_year, id_plot, site, year, herbicide, seeding_time, seeded_pool,
+    richness_1qm, richness_25qm, treatment_id
+    ) %>%
+  mutate(y = richness_1qm + richness_25qm)
 
 
 
@@ -70,46 +74,58 @@ ggplot(sites, aes(y = y, x = year)) +
   geom_quasirandom(color = "grey") +
   geom_boxplot(fill = "transparent") +
   facet_grid(~ site) +
-  labs(y = "Seeded species richness", x = "Survey year")
+  labs(y = "Seeded species richness (25qm)", x = "Survey year")
 
-ggplot(sites, aes(y = y, x = year, color = herbicide)) +
-  geom_quasirandom(color = "grey") +
-  geom_boxplot(fill = "transparent") +
+ggplot(
+  sites, aes(y = y, x = year, fill = seeding_time) # herbicide = seeding_time
+  ) +
+  geom_quasirandom(aes(color = seeding_time), dodge.width = .8, alpha = .8) +
+  geom_boxplot(alpha = .3) +
   facet_grid(~ site) +
-  labs(y = "Seeded species richness", x = "Herbicide treatment")
+  labs(y = "Seeded species richness (25qm)", x = "Herbicide treatment")
 
-ggplot(sites, aes(y = y, x = year, color = seeding_time)) +
-  geom_quasirandom(color = "grey") +
-  geom_boxplot(fill = "transparent") +
+ggplot(
+  sites, aes(y = y, x = year, fill = seeded_pool)
+  ) +
+  geom_quasirandom(aes(color = seeded_pool), dodge.width = .8, alpha = .8) +
+  geom_boxplot(alpha = .3) +
   facet_grid(~ site) +
-  labs(y = "Seeded species richness", x = "Seeding time")
+  labs(y = "Seeded species richness (25qm)", x = "Species pool")
 
-ggplot(sites, aes(y = y, x = year, color = species_pool)) +
-  #geom_quasirandom() +
-  geom_boxplot(fill = "transparent") +
-  facet_grid(~ site) +
-  labs(y = "Seeded species richness", x = "Species pool")
-
-ggplot(sites, aes(y = y, x = species_pool, color = seeding_time)) +
-  #geom_quasirandom(color = "grey") +
-  geom_boxplot(fill = "transparent") +
+ggplot(
+  data = sites,
+  aes(y = y, x = seeded_pool, fill = seeding_time)
+  ) +
+  geom_quasirandom(aes(color = seeding_time), dodge.width = .8, alpha = .8) +
+  geom_boxplot(alpha = .3) +
   facet_grid(~ year) +
-  labs(y = "Seeded species richness", x = "Species pool")
+  labs(y = "Seeded species richness (25qm)", x = "Species pool")
 
-ggplot(sites, aes(y = y, x = species_pool, color = seeding_time)) +
-  #geom_quasirandom(color = "grey") +
-  geom_boxplot(fill = "transparent") +
+ggplot(
+  data = sites,
+  aes(y = y, x = seeded_pool, fill = seeding_time)
+  ) +
+  geom_quasirandom(aes(color = seeding_time), dodge.width = .8, alpha = .8) +
+  geom_boxplot(alpha = .5) +
   facet_grid(~ site) +
-  labs(y = "Seeded species richness", x = "Species pool")
+  labs(y = "Seeded species richness (25qm)", x = "Species pool")
+
+ggplot(
+  data = sites,
+  aes(y = y, x = seeded_pool, fill = seeding_time)
+) +
+  geom_quasirandom(aes(color = seeding_time), dodge.width = .8, alpha = .8) +
+  geom_boxplot(alpha = .5) +
+  facet_grid(site ~ year) +
+  labs(y = "Seeded species richness (25qm)", x = "Species pool")
 
 ### b Outliers, zero-inflation, transformations? ------------------------------
 
-sites %>% count(eco.id)
-sites %>% count(site.type)
-sites %>% count(esy4)
-sites %>% count(esy4, eco.id)
-sites %>% count(esy4, site.type)
-plot1 <- ggplot(sites, aes(x = region, y = y)) + geom_quasirandom()
+sites %>% count(site, year)
+sites %>% count(seeded_pool)
+sites %>% count(seeding_time)
+sites %>% count(herbicide)
+plot1 <- ggplot(sites, aes(x = site, y = y)) + geom_quasirandom()
 plot2 <- ggplot(sites, aes(x = y)) + geom_histogram(binwidth = 0.7)
 plot3 <- ggplot(sites, aes(x = y)) + geom_density()
 plot4 <- ggplot(sites, aes(x = log(y))) + geom_density()
@@ -135,24 +151,24 @@ plot4 <- ggplot(sites, aes(x = log(y))) + geom_density()
 
 ### a Candidate models ---------------------------------------------------------
 
+m_simple <- lmer(
+  y ~ seeded_pool + herbicide + site + (1 | year),
+  REML = FALSE,
+  data = sites
+  )
+simulateResiduals(m_simple, plot = TRUE)
+m_full <- glmer(
+  y ~ seeded_pool * herbicide * site + (1 | year),
+  family = poisson(link = "log"),
+  data = sites
+  )
+simulateResiduals(m_full, plot = TRUE)
 m1 <- lmer(
-  y ~ esy4 * (site.type + eco.id) + obs.year + (1|id.site),
-  REML = FALSE,
-  data = sites
-  )
-simulateResiduals(m1, plot = TRUE)
-m2 <- lmer(
-  y ~ esy4 * site.type + eco.id + obs.year + (1|id.site),
-  REML = FALSE,
-  data = sites
-  )
-simulateResiduals(m2, plot = TRUE)
-m3 <- lmer(
-  y ~ esy4 * site.type + eco.id + obs.year + hydrology + (1|id.site),
+  y ~ seeded_pool * herbicide + site + (1 | year),
   REML = FALSE,
   data = sites
 )
-simulateResiduals(m3, plot = TRUE)
+simulateResiduals(m1, plot = TRUE)
 
 
 ### b Save ---------------------------------------------------------------------
@@ -160,3 +176,146 @@ simulateResiduals(m3, plot = TRUE)
 save(m1, file = here("outputs", "models", "model_sla_esy4_1.Rdata"))
 save(m2, file = here("outputs", "models", "model_sla_esy4_2.Rdata"))
 save(m3, file = here("outputs", "models", "model_sla_esy4_3.Rdata"))
+
+
+## 2 Model building ###########################################################
+
+
+### a Possible priors ----------------------------------------------------------
+
+get_prior(
+  n ~ species_pool * herbicide * year + (1 | site), 
+  data = sites
+  )
+data <- data.frame(x = c(-5, 5))
+ggplot(data, aes(x = x)) +
+  stat_function(fun = dnorm, n = 101, args = list(mean = 0, sd = 2)) +
+  stat_function(fun = dnorm, xlim = c(min(data$x), q025), geom = "area") +
+  expand_limits(y = 0) +
+  ggtitle("Normal distribution for Intercept")
+ggplot(data, aes(x = x)) +
+  stat_function(fun = dnorm, n = 101, args = list(mean = 0.3, sd = 2)) +
+  expand_limits(y = 0) +
+  ggtitle("Normal distribution for treatments")
+ggplot(data, aes(x = x)) +
+  stat_function(fun = dcauchy, n = 101, args = list(location = 0, scale = 1)) +
+  expand_limits(y = 0) +
+  ggtitle("Cauchy distribution")
+ggplot(data, aes(x = x)) +
+  stat_function(fun = dstudent_t, args = list(df = 3, mu = 0, sigma = 2.5)) +
+  expand_limits(y = 0) +
+  ggtitle(expression(Student ~ italic(t) * "-distribution"))
+
+
+### b Model specifications -----------------------------------------------------
+
+# NUTS sampler used
+iter <- 10000
+chains <- 4
+thin <- 2
+seed <- 123
+warmup <- floor(iter / 2)
+priors <- c(
+  set_prior("normal(0, 2)", class = "Intercept"),
+  set_prior("normal(0, 2)", class = "b"),
+  set_prior("normal(0.1, 2)", class = "b", coef = "species_pool12"),
+  set_prior("normal(0.2, 2)", class = "b", coef = "species_pool18"),
+  set_prior("normal(0.3, 2)", class = "b", coef = "species_pool33"),
+  set_prior("normal(0.1, 2)", class = "b", coef = "herbicide1"),
+  set_prior("normal(0.1, 2)", class = "b", coef = "year2016"),
+  set_prior("normal(0.2, 2)", class = "b", coef = "year2017"),
+  set_prior("normal(0.3, 2)", class = "b", coef = "year2018"),
+  set_prior("cauchy(0, 1)", class = "sigma")
+)
+
+
+### c Models ------------------------------------------------------------------
+
+m_simple <- brm(
+  y ~ seeded_pool + herbicide + site + (1 | year),
+  data = sites,
+  family = gaussian("identity"),
+  prior = priors,
+  chains = chains,
+  iter = iter,
+  thin = thin,
+  control = list(max_treedepth = 13),
+  warmup = warmup,
+  save_pars = save_pars(all = TRUE),
+  cores = parallel::detectCores(),
+  seed = seed
+)
+
+m_full <- brm(
+  y ~ seeded_pool * herbicide * site + (1 | year),
+  data = sites,
+  family = gaussian("identity"),
+  prior = priors,
+  chains = chains,
+  iter = iter,
+  thin = thin,
+  control = list(max_treedepth = 13),
+  warmup = warmup,
+  save_pars = save_pars(all = TRUE),
+  cores = parallel::detectCores(),
+  seed = seed
+)
+
+m1 <- brm(
+  y ~ seeded_pool * herbicide + site + (1 | year),
+  data = sites,
+  family = gaussian("identity"),
+  prior = priors,
+  chains = chains,
+  iter = iter,
+  thin = thin,
+  control = list(max_treedepth = 13),
+  warmup = floor(iter / 2),
+  save_pars = save_pars(all = TRUE),
+  cores = parallel::detectCores(),
+  seed = seed
+)
+
+m1_flat <- brm(
+  y ~ seeded_pool * herbicide + site + (1 | year),
+  data = sites,
+  family = poisson,
+  # prior = c(
+  #   set_prior("normal(0, 4)", class = "Intercept"),
+  #   set_prior("normal(0, 4)", class = "b"),
+  #   set_prior("cauchy(0, 1)", class = "sigma")
+  # ),
+  chains = chains,
+  iter = iter,
+  thin = thin,
+  control = list(max_treedepth = 13),
+  warmup = warmup,
+  save_pars = save_pars(all = TRUE),
+  cores = parallel::detectCores(),
+  seed = seed
+)
+
+m1_prior <- brm(
+  y ~ seeded_pool * herbicide + site + (1 | site),
+  data = sites,
+  family = gaussian("identity"),
+  prior = priors,
+  sample_prior = "only",
+  chains = chains,
+  iter = iter,
+  thin = thin,
+  control = list(max_treedepth = 13),
+  warmup = warmup,
+  save_pars = save_pars(all = TRUE),
+  cores = parallel::detectCores(),
+  seed = seed
+)
+
+
+### d Save ---------------------------------------------------------------------
+
+save(m_simple, file = here("outputs", "models", "model_pool_simple.Rdata"))
+save(m_full, file = here("outputs", "models", "model_pool_full.Rdata"))
+save(m1, file = here("outputs", "models", "model_pool_1.Rdata"))
+save(m1_flat, file = here("outputs", "models", "model_pool_1_flat.Rdata"))
+save(m1_prior, file = here("outputs", "models", "model_pool_1_prior.Rdata"))

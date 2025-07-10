@@ -73,7 +73,7 @@ soil_2 <- read_xlsx(
 )
 
 soil_3 <- read_xlsx(
-  here("data", "raw", "data_raw_soil.xlsx"), sheet = "NW Station"
+  here("data", "raw", "data_raw_soil.xlsx"), sheet = "NW Station", na = c("NA")
 )
 
 covers <- read_csv(
@@ -133,17 +133,17 @@ excel_sheets(here("data", "raw", "data_raw_species_seeded.xlsx"))
 species_seeded <- read_xlsx(
   here("data", "raw", "data_raw_species_seeded.xlsx"), sheet = "To Mix"
 ) %>%
-  pivot_longer(-name, names_to = "species_pool", values_to = "abundance") %>%
+  pivot_longer(-name, names_to = "seeded_pool", values_to = "abundance") %>%
   mutate(
-    species_pool = str_replace(species_pool, "species_pool_", ""),
-    species_pool = as.numeric(species_pool)
+    seeded_pool = str_replace(seeded_pool, "seeded_pool_", ""),
+    seeded_pool = as.numeric(seeded_pool)
     ) %>%
   filter(abundance > 0) %>%
   left_join(
-    sites %>% select(id_plot, species_pool), by = "species_pool",
+    sites %>% select(id_plot, seeded_pool), by = "seeded_pool",
     relationship = "many-to-many"
     ) %>%
-  select(-species_pool) %>%
+  select(-seeded_pool) %>%
   mutate(
     date_surveyed = date("2014-09-01"),
     plot_size = "seeded",
@@ -186,9 +186,9 @@ species <- species_seeded %>%
     year = year(date_surveyed),
     id_plot_year = str_c(id_plot, year, sep = "_")
   ) %>%
-  left_join(sites %>% select(id_plot, species_pool), by = "id_plot") %>%
+  left_join(sites %>% select(id_plot, seeded_pool), by = "id_plot") %>%
   select(
-    id_plot_year, id_plot, plot_size, species_pool, date_surveyed, date_entered,
+    id_plot_year, id_plot, plot_size, seeded_pool, date_surveyed, date_entered,
     botanist, species_original, name, abundance, seeded, notes
     ) %>%
   arrange(id_plot, date_surveyed, name)
@@ -225,9 +225,9 @@ data_check_problems <- species %>%
       ) %>%
   arrange(
     desc(problems), name, species_original, id_plot, date_surveyed,
-    species_pool
+    seeded_pool
     ) %>%
-  select(-date_entered, -species_pool)
+  select(-date_entered, -seeded_pool)
 
 rm(list = setdiff(ls(), c("species", "sites", "flowers", "covers")))
 
@@ -637,7 +637,15 @@ GIFT::GIFT_traits_meta() %>%
 #   here("data", "processed", "data_gift.csv")
 # )
 
-data_gift <- read_csv(here("data", "processed","data_gift.csv"))
+data_gift <- read_csv(
+  here("data", "processed","data_gift.csv"),
+  col_types = cols(
+    .default = "?",
+    cv_4.1.3 = "d",
+    references_4.1.3 = "c"
+    ),
+  na = c("NA", "", "na")
+  )
 
 
 ### b Combine gift and traits -------------------------------------------------
@@ -724,6 +732,7 @@ richness <- species %>%
     id_plot_year, id_plot, plot_size, abundance
   ) %>%
   mutate(presence = 1) %>%
+  filter(plot_size != "seeded") %>%
   group_by(id_plot_year_size, id_plot_year, id_plot, plot_size)
 
 #### Total species richness ###
@@ -737,7 +746,7 @@ richness_seeded <- richness %>%
   summarise(seeded_richness = sum(presence)) %>%
   ungroup()
 
-sites <- richness_total %>% 
+data <- richness_total %>% 
   left_join(
     richness_seeded %>%  select(id_plot_year_size, seeded_richness),
     by = "id_plot_year_size"
@@ -748,17 +757,22 @@ sites <- richness_total %>%
     values_to = "richness"
     ) %>%
   pivot_wider(names_from = "plot_size", values_from = "richness") %>%
-  left_join(sites, by = "id_plot") %>%
+  rename(richness_1qm = "1", richness_25qm = "25") %>%
+  group_by(id_plot_year, id_plot, richness_type) %>%
+  summarize(
+    richness_1qm = sum(richness_1qm, na.rm = TRUE),
+    richness_25qm = sum(richness_25qm, na.rm = TRUE)
+    ) %>%
+  right_join(sites, by = "id_plot") %>%
   mutate(
     year = str_extract(id_plot_year, "[:digit:][:digit:][:digit:][:digit:]")
   ) %>%
-  rename(pool_seeded = "seeded", pool_1 = "1", pool_25 = "25") %>%
   select(
-    id_plot_year, id_plot, site, year, herbicide, seeding_time, species_pool,
-    treatment_id, treatment_description, pool_seeded, pool_1, pool_25,
-    everything()
+    id_plot_year, id_plot, site, year, herbicide, seeding_time, seeded_pool,
+    richness_1qm, richness_25qm, treatment_id, treatment_description,
+    everything(), -Notes
   )
-
+sites <- data
 
 ### b Species eveness ---------------------------------------------
 
