@@ -1,10 +1,10 @@
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-# GRASSWORKS Project
-# CWMs of EUNIS habitat types ####
-# Specific leaf area (SLA) for ESY4
+# GREEEN prairie project
+# Model species pool * seeding approach ####
+# Seeded species richness
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Markus Bauer
-# 2025-06-10
+# 2025-07-09
 
 
 
@@ -27,20 +27,31 @@ rm(list = ls())
 
 ### Load data ###
 sites <- read_csv(
-  here("data", "processed", "data_processed_sites_esy4.csv"),
+  here("data", "processed", "data_processed_sites.csv"),
   col_names = TRUE, na = c("na", "NA", ""), col_types = cols(
     .default = "?",
-    eco.id = "f",
-    region = col_factor(levels = c("north", "centre", "south"), ordered = TRUE),
-    site.type = col_factor(
-      levels = c("positive", "restored", "negative"), ordered = TRUE
+    id_plot_year = "f",
+    id_plot = "f",
+    site = "f",
+    treatment_id = "f",
+    seeding_time = col_factor(
+      levels = c("unseeded", "fall", "spring"), ordered = TRUE
       ),
-    fertilized = "f",
-    obs.year = "f"
+    herbicide = col_factor(levels = c("0", "1"), ordered = TRUE),
+    species_pool = col_factor(
+      levels = c("0", "6", "12", "18", "33"), ordered = TRUE
+      ),
+    year = "f"
   )
 ) %>%
-  mutate(esy4 = fct_relevel(esy4, "R", "R22", "R1A")) %>%
-  rename(y = cwm.abu.sla)
+  filter(
+    year %in% c("2015", "2016", "2017", "2018"),
+    richness_type == "seeded_richness",
+    pool_1 > 0,
+    !(treatment_id %in% c("2", "4"))
+  ) %>%
+  select(-pool_25, -pool_seeded) %>%
+  mutate(y = pool_1)
 
 
 
@@ -55,28 +66,41 @@ sites <- read_csv(
 
 ### a Graphs of raw data -------------------------------------------------------
 
-ggplot(sites, aes(y = y, x = esy4)) +
-  geom_quasirandom(color = "grey") + geom_boxplot(fill = "transparent") +
-  labs(y = "CWM SLA (abu) [cm²/g]", x = "Habitat type")
-
-ggplot(sites, aes(y = y, x = eco.id)) +
+ggplot(sites, aes(y = y, x = year)) +
   geom_quasirandom(color = "grey") +
   geom_boxplot(fill = "transparent") +
-  facet_grid(~ esy4) +
-  labs(y = "CWM SLA (abu) [cm²/g]", x = "Ecoregion")
+  facet_grid(~ site) +
+  labs(y = "Seeded species richness", x = "Survey year")
 
-ggplot(sites, aes(y = y, x = site.type)) +
+ggplot(sites, aes(y = y, x = year, color = herbicide)) +
   geom_quasirandom(color = "grey") +
   geom_boxplot(fill = "transparent") +
-  facet_grid(~ esy4) +
-  labs(y = "CWM SLA (abu) [cm²/g]", x = "Site type")
+  facet_grid(~ site) +
+  labs(y = "Seeded species richness", x = "Herbicide treatment")
 
-ggplot(sites, aes(y = y, x = obs.year)) +
+ggplot(sites, aes(y = y, x = year, color = seeding_time)) +
   geom_quasirandom(color = "grey") +
   geom_boxplot(fill = "transparent") +
-  facet_grid(~ esy4) +
-  labs(y = "CWM SLA (abu) [cm²/g]", x = "Survey year")
+  facet_grid(~ site) +
+  labs(y = "Seeded species richness", x = "Seeding time")
 
+ggplot(sites, aes(y = y, x = year, color = species_pool)) +
+  #geom_quasirandom() +
+  geom_boxplot(fill = "transparent") +
+  facet_grid(~ site) +
+  labs(y = "Seeded species richness", x = "Species pool")
+
+ggplot(sites, aes(y = y, x = species_pool, color = seeding_time)) +
+  #geom_quasirandom(color = "grey") +
+  geom_boxplot(fill = "transparent") +
+  facet_grid(~ year) +
+  labs(y = "Seeded species richness", x = "Species pool")
+
+ggplot(sites, aes(y = y, x = species_pool, color = seeding_time)) +
+  #geom_quasirandom(color = "grey") +
+  geom_boxplot(fill = "transparent") +
+  facet_grid(~ site) +
+  labs(y = "Seeded species richness", x = "Species pool")
 
 ### b Outliers, zero-inflation, transformations? ------------------------------
 

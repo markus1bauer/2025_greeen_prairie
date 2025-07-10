@@ -90,7 +90,8 @@ flowers <- read_xlsx(
 ### b Combine data -------------------------------------------------------------
 
 soil <- soil_1 %>%
-  bind_rows(soil_2, soil_3)
+  bind_rows(soil_2, soil_3) %>%
+  select(-year)
 
 treatment <- treatment_1 %>%
   bind_rows(treatment_2, treatment_3)
@@ -109,7 +110,14 @@ covers <- covers %>%
   )
 
 sites <- treatment %>%
-  full_join(soil, by = "id_plot")
+  full_join(soil, by = "id_plot") %>%
+  mutate(
+    site = if_else(str_detect(id_plot, "SWS_"), "SW Station", if_else(
+      str_detect(id_plot, "NWS_"), "NW Station", if_else(
+        str_detect(id_plot, "Lux_"), "Lux Arbor", "warning"
+    )))
+    ) %>%
+  relocate(site, .after = id_plot)
 
 rm(list = setdiff(ls(), c("sites", "flowers", "covers")))
 
@@ -597,10 +605,10 @@ data_check_occurences <- data_species %>%
   count(accepted_name) %>%
   arrange(accepted_name, n)
 
-write_xlsx(
-  data_check_occurences,
-  here("data", "processed", "data_processed_occurences_20250704.xlsx")
-  )
+# write_xlsx(
+#   data_check_occurences,
+#   here("data", "processed", "data_processed_occurences_20250704.xlsx")
+#   )
 
 rm(list = setdiff(ls(), c("species", "sites", "traits", "flowers", "covers")))
 
@@ -617,10 +625,19 @@ GIFT::GIFT_traits_meta() %>%
   filter(Lvl3 %in% trait_ids) %>%
   tibble()
 
-data_gift <- GIFT::GIFT_traits(
-  trait_IDs = trait_ids,
-  agreement = 0.66, bias_ref = FALSE, bias_deriv = FALSE
-)
+# Code takes a lot of time --> Load instead the data_gift file below:
+
+# data_gift <- GIFT::GIFT_traits(
+#   trait_IDs = trait_ids,
+#   agreement = 0.66, bias_ref = FALSE, bias_deriv = FALSE
+# )
+# 
+# write_csv(
+#   data_gift,
+#   here("data", "processed", "data_gift.csv")
+# )
+
+data_gift <- read_csv(here("data", "processed","data_gift.csv"))
 
 
 ### b Combine gift and traits -------------------------------------------------
@@ -661,12 +678,12 @@ data_missing <- data_traits %>%
     (is.na(sla) | is.na(height) | is.na(seedmass)) &
       accepted_name_rank == "species"
     ) %>%
-  select(accepted_name, seeded, family, sla, height, )
+  select(accepted_name, seeded, family, sla, height, seedmass)
 
-write_xlsx(
-  data_missing,
-  here("data", "processed", "data_processed_missing_20250707.xlsx")
-)
+# write_xlsx(
+#   data_missing,
+#   here("data", "processed", "data_processed_missing_20250709.xlsx")
+# )
 
 # gift %>%
 #   filter(str_detect(accepted_name, "Lolium pratense")) %>%
@@ -701,12 +718,13 @@ richness <- species %>%
     traits %>% select(accepted_name, seeded, taxonomic_status, accepted_family),
     by = "accepted_name"
     ) %>%
+  mutate(id_plot_year_size = str_c(id_plot_year, plot_size, sep = "_")) %>%
   select(
-    accepted_name, seeded, taxonomic_status, accepted_family,
-    id_plot_year, id_plot, abundance
+    accepted_name, seeded, taxonomic_status, accepted_family, id_plot_year_size,
+    id_plot_year, id_plot, plot_size, abundance
   ) %>%
   mutate(presence = 1) %>%
-  group_by(id_plot_year, id_plot)
+  group_by(id_plot_year_size, id_plot_year, id_plot, plot_size)
 
 #### Total species richness ###
 richness_total <- richness %>%
@@ -720,30 +738,43 @@ richness_seeded <- richness %>%
   ungroup()
 
 sites <- richness_total %>% 
-  left_join(richness_seeded %>%  select(-id_plot), by = "id_plot_year") %>%
+  left_join(
+    richness_seeded %>%  select(id_plot_year_size, seeded_richness),
+    by = "id_plot_year_size"
+    ) %>%
+  pivot_longer(
+    cols = ends_with("richness"),
+    names_to = "richness_type",
+    values_to = "richness"
+    ) %>%
+  pivot_wider(names_from = "plot_size", values_from = "richness") %>%
   left_join(sites, by = "id_plot") %>%
   mutate(
-    seeded_richness_ratio = round(
-      seeded_richness / species_richness, digits = 2
-      )
+    year = str_extract(id_plot_year, "[:digit:][:digit:][:digit:][:digit:]")
+  ) %>%
+  rename(pool_seeded = "seeded", pool_1 = "1", pool_25 = "25") %>%
+  select(
+    id_plot_year, id_plot, site, year, herbicide, seeding_time, species_pool,
+    treatment_id, treatment_description, pool_seeded, pool_1, pool_25,
+    everything()
   )
 
 
 ### b Species eveness ---------------------------------------------
 
-data <- species_dikes %>%
-  mutate(across(where(is.numeric), ~ replace(., is.na(.), 0))) %>%
-  pivot_longer(-name, names_to = "id", values_to = "value") %>%
-  pivot_wider(names_from = "name", values_from = "value") %>%
-  column_to_rownames("id") %>%
-  diversity(index = "shannon") %>%
-  as_tibble(rownames = NA) %>%
-  rownames_to_column(var = "id") %>%
-  mutate(id = factor(id)) %>%
-  rename(shannon = value)
-sites_dikes <- sites_dikes %>%
-  left_join(data, by = "id") %>%
-  mutate(eveness = shannon / log(species_richness))
+# data <- species_dikes %>%
+#   mutate(across(where(is.numeric), ~ replace(., is.na(.), 0))) %>%
+#   pivot_longer(-name, names_to = "id", values_to = "value") %>%
+#   pivot_wider(names_from = "name", values_from = "value") %>%
+#   column_to_rownames("id") %>%
+#   diversity(index = "shannon") %>%
+#   as_tibble(rownames = NA) %>%
+#   rownames_to_column(var = "id") %>%
+#   mutate(id = factor(id)) %>%
+#   rename(shannon = value)
+# sites_dikes <- sites_dikes %>%
+#   left_join(data, by = "id") %>%
+#   mutate(eveness = shannon / log(species_richness))
 
 rm(list = setdiff(ls(), c("species", "sites", "traits", "coordinates")))
 
