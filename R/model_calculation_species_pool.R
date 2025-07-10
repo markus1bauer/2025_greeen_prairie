@@ -34,16 +34,19 @@ sites <- read_csv(
     id_plot_year = "f",
     id_plot = "f",
     site = col_factor(
-      levels = c("NW Station", "Lux Arbor", "SW Station")
+      levels = c("NW Station", "Lux Arbor", "SW Station"), ordered = FALSE
     ),
+    year = "f",
     seeding_time = col_factor(
-      levels = c("unseeded", "fall", "spring"), ordered = TRUE
+      levels = c("unseeded", "fall", "spring"), ordered = FALSE
       ),
-    herbicide = col_factor(levels = c("0", "1"), ordered = TRUE),
+    herbicide = col_factor(levels = c("0", "1"), ordered = FALSE),
     seeded_pool = col_factor(
       levels = c("0", "6", "12", "18", "33"), ordered = TRUE
       ),
-    year = "f"
+    treatment_id = "f",
+    treatment_description = "c",
+    richness_type = "f"
   )
 ) %>%
   filter(
@@ -184,17 +187,16 @@ save(m3, file = here("outputs", "models", "model_sla_esy4_3.Rdata"))
 ### a Possible priors ----------------------------------------------------------
 
 get_prior(
-  n ~ species_pool * herbicide * year + (1 | site), 
+  y ~ seeded_pool * herbicide * site + (1 | year), 
   data = sites
   )
-data <- data.frame(x = c(-5, 5))
+data <- data.frame(x = c(-10, 10))
 ggplot(data, aes(x = x)) +
-  stat_function(fun = dnorm, n = 101, args = list(mean = 0, sd = 2)) +
-  stat_function(fun = dnorm, xlim = c(min(data$x), q025), geom = "area") +
+  stat_function(fun = dnorm, n = 101, args = list(mean = 0, sd = 10)) +
   expand_limits(y = 0) +
   ggtitle("Normal distribution for Intercept")
 ggplot(data, aes(x = x)) +
-  stat_function(fun = dnorm, n = 101, args = list(mean = 0.3, sd = 2)) +
+  stat_function(fun = dnorm, n = 101, args = list(mean = 0.5, sd = 10)) +
   expand_limits(y = 0) +
   ggtitle("Normal distribution for treatments")
 ggplot(data, aes(x = x)) +
@@ -216,15 +218,12 @@ thin <- 2
 seed <- 123
 warmup <- floor(iter / 2)
 priors <- c(
-  set_prior("normal(0, 2)", class = "Intercept"),
-  set_prior("normal(0, 2)", class = "b"),
-  set_prior("normal(0.1, 2)", class = "b", coef = "species_pool12"),
-  set_prior("normal(0.2, 2)", class = "b", coef = "species_pool18"),
-  set_prior("normal(0.3, 2)", class = "b", coef = "species_pool33"),
-  set_prior("normal(0.1, 2)", class = "b", coef = "herbicide1"),
-  set_prior("normal(0.1, 2)", class = "b", coef = "year2016"),
-  set_prior("normal(0.2, 2)", class = "b", coef = "year2017"),
-  set_prior("normal(0.3, 2)", class = "b", coef = "year2018"),
+  set_prior("normal(0, 10)", class = "Intercept"),
+  set_prior("normal(0, 10)", class = "b"),
+  # set_prior("normal(0.15, 10)", class = "b", coef = "seeded_pool12"),
+  # set_prior("normal(0.25, 10)", class = "b", coef = "seeded_pool18"),
+  # set_prior("normal(0.5, 10)", class = "b", coef = "seeded_pool33"),
+  set_prior("normal(0.5, 10)", class = "b", coef = "herbicide1"),
   set_prior("cauchy(0, 1)", class = "sigma")
 )
 
@@ -294,6 +293,7 @@ m1_flat <- brm(
   cores = parallel::detectCores(),
   seed = seed
 )
+simulateResiduals(m1_flat, plot = TRUE)
 
 m1_prior <- brm(
   y ~ seeded_pool * herbicide + site + (1 | site),
