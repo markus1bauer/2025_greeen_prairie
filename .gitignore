@@ -49,3 +49,8 @@ po/*~
 rsconnect/
 data/raw/2022_4BandImagery_Michigan_Job1212713/2022_4BandImagery_Michigan_J1213223_metadata_forHumans.html
 /data/raw/2022_4BandImagery_Michigan_Job1212713
+/data/raw/aerial_photos
+data/raw/ecoregions2017.dbf
+data/raw/ecoregions2017.prj
+data/raw/ecoregions2017.shp
+data/raw/ecoregions2017.shx
