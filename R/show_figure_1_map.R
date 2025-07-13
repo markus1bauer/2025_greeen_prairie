@@ -70,7 +70,7 @@ ecoregions <- st_read(here("data", "raw", "ecoregions2017.shp")) %>%
       ECO_ID == 399
     )
 
-crop <- st_crop(ecoregions, xmin = -95, xmax = -70, ymin = 38.5, ymax = 48)
+crop <- st_crop(ecoregions, xmin = -95, xmax = -70, ymin = 38.4, ymax = 48)
 
 elevation <- elevatr::get_elev_raster(
   locations = data.frame(x = c(-95, -70), y = c(39, 48)),
@@ -177,11 +177,11 @@ graph_sites <- ggplot() +
     style = ggspatial::north_arrow_fancy_orienteering(),
     height = unit(1.5, "cm"),
     width = unit(1.5, "cm"),
-    pad_y = unit(.5, "cm"),
+    pad_y = unit(.6, "cm"),
     pad_x = unit(.3, "cm")
   ) +
   ggspatial::annotation_scale(
-    pad_y = unit(.8, "cm"),
+    pad_y = unit(.9, "cm"),
     pad_x = unit(2.2, "cm")
   ) +
   scale_fill_gradientn(
