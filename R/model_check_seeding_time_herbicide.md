@@ -1,6 +1,5 @@
-Analysis of Bauer et al. (submitted) GREEEN project: <br> Effect of
-extra herbicide treatment and seeding time on establishment of seeded
-species
+Analysis of XXX et al. (submitted) GREEEN project: <br> Effects of extra
+herbicide treatment and seeding time on establishment of seeded species
 ================
 <b>Markus Bauer</b> <br>
 <b>2025-07-16</b>
@@ -410,12 +409,8 @@ dotwhisker::dwplot(
   ci = 0.95,
   show_intercept = FALSE,
   vline = geom_vline(xintercept = 0, colour = "grey60", linetype = 2)) +
-  xlim(-35, 40) +
   theme_classic()
 ```
-
-    ## Package 'merDeriv' needs to be installed to compute confidence intervals
-    ##   for random effect parameters.
 
 ![](model_check_seeding_time_herbicide_files/figure-gfm/predicted_values-1.png)<!-- -->
 
@@ -573,15 +568,6 @@ necessary.
 plot(emm, comparison = TRUE)
 ```
 
-    ## Warning: Removed 6 rows containing missing values or values outside the scale range
-    ## (`geom_point()`).
-
-    ## Warning: Removed 6 rows containing missing values or values outside the scale range
-    ## (`geom_segment()`).
-
-    ## Warning: Removed 6 rows containing missing values or values outside the scale range
-    ## (`geom_point()`).
-
 ![](model_check_seeding_time_herbicide_files/figure-gfm/effect-sizes-1-1.png)<!-- -->
 
 # Session info
@@ -612,33 +598,36 @@ plot(emm, comparison = TRUE)
     ## [17] here_1.0.1      
     ## 
     ## loaded via a namespace (and not attached):
-    ##  [1] Rdpack_2.6.4           gridExtra_2.3          rlang_1.1.6           
-    ##  [4] magrittr_2.0.3         compiler_4.5.0         mgcv_1.9-3            
-    ##  [7] vctrs_0.6.5            pkgconfig_2.0.3        crayon_1.5.3          
-    ## [10] fastmap_1.2.0          backports_1.5.0        labeling_0.4.3        
-    ## [13] utf8_1.2.6             ggstance_0.3.7         promises_1.3.3        
-    ## [16] rmarkdown_2.29         tzdb_0.5.0             nloptr_2.2.1          
-    ## [19] bit_4.6.0              xfun_0.52              later_1.4.2           
-    ## [22] parallel_4.5.0         R6_2.6.1               gap.datasets_0.0.6    
-    ## [25] stringi_1.8.7          qgam_2.0.0             RColorBrewer_1.1-3    
-    ## [28] car_3.1-3              boot_1.3-31            estimability_1.5.1    
-    ## [31] Rcpp_1.1.0             iterators_1.0.14       knitr_1.50            
-    ## [34] parameters_0.27.0      httpuv_1.6.16          splines_4.5.0         
-    ## [37] timechange_0.3.0       tidyselect_1.2.1       rstudioapi_0.17.1     
-    ## [40] abind_1.4-8            yaml_2.3.10            MuMIn_1.48.11         
-    ## [43] doParallel_1.0.17      codetools_0.2-20       lattice_0.22-7        
-    ## [46] plyr_1.8.9             shiny_1.11.1           withr_3.0.2           
-    ## [49] bayestestR_0.16.1      coda_0.19-4.1          evaluate_1.0.4        
-    ## [52] marginaleffects_0.28.0 pillar_1.11.0          gap_1.6               
-    ## [55] carData_3.0-5          foreach_1.5.2          stats4_4.5.0          
-    ## [58] reformulas_0.4.1       insight_1.3.1          generics_0.1.4        
-    ## [61] vroom_1.6.5            rprojroot_2.0.4        hms_1.1.3             
-    ## [64] scales_1.4.0           minqa_1.2.8            xtable_1.8-4          
-    ## [67] glue_1.8.0             tools_4.5.0            data.table_1.17.8     
-    ## [70] mvtnorm_1.3-3          grid_4.5.0             rbibutils_2.3         
-    ## [73] datawizard_1.1.0       nlme_3.1-168           Rmisc_1.5.1           
-    ## [76] performance_0.15.0     beeswarm_0.4.0         vipor_0.4.7           
-    ## [79] Formula_1.2-5          cli_3.6.5              gtable_0.3.6          
-    ## [82] digest_0.6.37          farver_2.1.2           htmltools_0.5.8.1     
-    ## [85] lifecycle_1.0.4        mime_0.13              bit64_4.6.0-1         
-    ## [88] dotwhisker_0.8.4       MASS_7.3-65
+    ##  [1] mnormt_2.1.1           Rdpack_2.6.4           gridExtra_2.3         
+    ##  [4] sandwich_3.1-1         rlang_1.1.6            magrittr_2.0.3        
+    ##  [7] compiler_4.5.0         mgcv_1.9-3             vctrs_0.6.5           
+    ## [10] quadprog_1.5-8         pkgconfig_2.0.3        crayon_1.5.3          
+    ## [13] fastmap_1.2.0          backports_1.5.0        labeling_0.4.3        
+    ## [16] pbivnorm_0.6.0         utf8_1.2.6             ggstance_0.3.7        
+    ## [19] promises_1.3.3         rmarkdown_2.29         tzdb_0.5.0            
+    ## [22] nloptr_2.2.1           bit_4.6.0              xfun_0.52             
+    ## [25] later_1.4.2            lavaan_0.6-19          parallel_4.5.0        
+    ## [28] R6_2.6.1               gap.datasets_0.0.6     stringi_1.8.7         
+    ## [31] qgam_2.0.0             RColorBrewer_1.1-3     car_3.1-3             
+    ## [34] boot_1.3-31            numDeriv_2016.8-1.1    estimability_1.5.1    
+    ## [37] Rcpp_1.1.0             iterators_1.0.14       knitr_1.50            
+    ## [40] zoo_1.8-14             parameters_0.27.0      httpuv_1.6.16         
+    ## [43] splines_4.5.0          timechange_0.3.0       tidyselect_1.2.1      
+    ## [46] rstudioapi_0.17.1      abind_1.4-8            yaml_2.3.10           
+    ## [49] MuMIn_1.48.11          doParallel_1.0.17      codetools_0.2-20      
+    ## [52] nonnest2_0.5-8         lattice_0.22-7         plyr_1.8.9            
+    ## [55] shiny_1.11.1           withr_3.0.2            bayestestR_0.16.1     
+    ## [58] coda_0.19-4.1          evaluate_1.0.4         marginaleffects_0.28.0
+    ## [61] CompQuadForm_1.4.4     pillar_1.11.0          gap_1.6               
+    ## [64] carData_3.0-5          foreach_1.5.2          stats4_4.5.0          
+    ## [67] reformulas_0.4.1       insight_1.3.1          generics_0.1.4        
+    ## [70] vroom_1.6.5            rprojroot_2.0.4        hms_1.1.3             
+    ## [73] scales_1.4.0           minqa_1.2.8            xtable_1.8-4          
+    ## [76] glue_1.8.0             tools_4.5.0            data.table_1.17.8     
+    ## [79] mvtnorm_1.3-3          grid_4.5.0             rbibutils_2.3         
+    ## [82] datawizard_1.1.0       nlme_3.1-168           Rmisc_1.5.1           
+    ## [85] performance_0.15.0     beeswarm_0.4.0         vipor_0.4.7           
+    ## [88] Formula_1.2-5          cli_3.6.5              gtable_0.3.6          
+    ## [91] digest_0.6.37          farver_2.1.2           htmltools_0.5.8.1     
+    ## [94] lifecycle_1.0.4        mime_0.13              bit64_4.6.0-1         
+    ## [97] dotwhisker_0.8.4       MASS_7.3-65

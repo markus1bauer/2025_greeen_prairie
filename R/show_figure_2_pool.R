@@ -1,10 +1,10 @@
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-# GRASSWORKS Project
-# CWMs of EUNIS habitat types ####
-# Show figure of specific leaf area
+# GREEEN prairie project
+# Show figure ####
+# Seeded species richness ~ pool size * seeding time
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Markus Bauer
-# 2025-05-14
+# 2025-07-16
 
 
 
@@ -102,19 +102,9 @@ data <- sites %>%
     geom_quasirandom(
       data = data,
       aes(x = x, y = predicted, color = group),
-      alpha = 0.2,
-      dodge.width = 0.8,
-      cex = .5
+      alpha = 0.2, shape = 16, cex = .5,
+      dodge.width = 0.8
     ) +
-    # geom_hline(
-    #   yintercept = c(
-    #     mean(sites$y),
-    #     mean(sites$y) + 0.5 * sd(sites$y),
-    #     mean(sites$y) - 0.5 * sd(sites$y)
-    #   ),
-    #   linetype = c(1, 2, 2),
-    #   color = "grey70"
-    # ) +
     geom_errorbar(
       data = data_model,
       aes(x = x, y = predicted, color = group,

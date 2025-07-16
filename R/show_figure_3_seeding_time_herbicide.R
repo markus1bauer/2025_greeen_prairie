@@ -102,23 +102,27 @@ data <- sites %>%
   rename(predicted = y, x = herbicide, group = seeding_time, facet = site) %>%
   mutate(x = fct_recode(x, "No" = "0", "Yes" = "1"))
 
+data_annotation <- data.frame(
+  facet = factor(
+    c("NW Station", "NW Station", "NW Station", "NW Station",
+      "Lux Arbor", "Lux Arbor", "Lux Arbor", "Lux Arbor",
+      "SW Station", "SW Station", "SW Station", "SW Station"),
+    levels = c("NW Station","Lux Arbor","SW Station")
+    ),
+  x = c(.7, 1, 1.3, 2, .7, 1, 1.3, 2, .7, 1, 1.3, 2),
+  group = c("Unseeded", "Fall", "Spring", "Spring", "Unseeded", "Fall",
+            "Spring", "Spring", "Unseeded", "Fall", "Spring", "Spring"),
+  predicted = c(16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16),
+  label = c("c", "a", "bc", "b", "d", "a", "c", "b", "c", "b", "a", "a")
+  )
+
 (graph_a <- ggplot() +
     geom_quasirandom(
       data = data,
       aes(x = x, y = predicted, color = group),
-      alpha = 0.2,
-      dodge.width = 0.8,
-      cex = .5
+      shape = 16, alpha = 0.2, cex = .5,
+      dodge.width = 0.8
     ) +
-    # geom_hline(
-    #   yintercept = c(
-    #     mean(sites$y),
-    #     mean(sites$y) + 0.5 * sd(sites$y),
-    #     mean(sites$y) - 0.5 * sd(sites$y)
-    #   ),
-    #   linetype = c(1, 2, 2),
-    #   color = "grey70"
-    # ) +
     geom_errorbar(
       data = data_model,
       aes(x = x, y = predicted, color = group,
@@ -131,6 +135,10 @@ data <- sites %>%
       aes(x, predicted, color = group),
       size = 2, position = position_dodge(width = 0.8)
     ) +
+    geom_text(
+      data = data_annotation,
+      aes(x = x, y = predicted, label = label)
+      ) +
     facet_grid(~facet) +
     scale_y_continuous(limits = c(0, 16), breaks = seq(0, 20, 1)) +
     scale_color_manual(
@@ -139,7 +147,7 @@ data <- sites %>%
       values = c("#21918c", "#440154", "#FFA500")
     ) +
     labs(
-      x = "Herbicide", color = "Seeding",
+      x = "Extra herbicide pre-treatment", color = "Seeding",
       y = expression(Seeded ~ species ~ "[" * '#' * "]")
       ) +
     theme_mb())

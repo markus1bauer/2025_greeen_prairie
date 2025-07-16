@@ -1,9 +1,10 @@
-# Dike grassland field experiment
-# Recovery completeness ####
-# Show figure 5
-
+#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# GREEEN prairie project
+# Show figure ####
+# Seeded species richness ~ pool size * seeding time
+#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Markus Bauer
-# 2022-12-12
+# 2025-07-16
 
 
 
@@ -94,19 +95,17 @@ theme_mb <- function() {
 
 
 
-(p1 <- ggplot(data = sites) +
+(graph <- ggplot(data = sites) +
     geom_quasirandom(
       aes(y = y, x = seeded_pool, color = seeding_time),
-      alpha = 0.2,
-      dodge.width = 0.8,
-      cex = .5
+      alpha = 0.2, shape = 16, cex = .5,
+      dodge.width = 0.8
     ) +
     tidybayes::stat_pointinterval(
       aes(y = .epred, x = seeded_pool, color = seeding_time),
       data = model,
       point_interval = median_qi,
       .width = c(.66, .95),
-      #point_size = 2,
       position = position_dodge(width = 0.8)
     ) +
     facet_grid(~ site) +
@@ -129,12 +128,6 @@ ggsave(
   dpi = 300, width = 16, height = 8, units = "cm"
 )
 
-# p1 + theme(legend.position = "bottom")
-# ggsave(
-#   here("outputs", "figures", "figure_4a_recovery_300dpi_16.5x8cm.tiff"),
-#   dpi = 300, width = 16.5, height = 8, units = "cm"
-# )
-# 
 # (graph_a <- p1 +
 #     theme(
 #       axis.title.x = element_blank(),
