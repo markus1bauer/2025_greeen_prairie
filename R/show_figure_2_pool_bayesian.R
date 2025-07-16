@@ -114,7 +114,7 @@ theme_mb <- function() {
     scale_color_manual(
       breaks = c("fall", "spring"),
       labels = c("Fall", "Spring"),
-      values = c("#21918c", "#440154")
+      values = c("#440154", "#FFA500")
     ) +
     labs(
       x = "Seeded species pool [#]", fill = "", color = "Seeding",

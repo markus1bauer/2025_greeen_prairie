@@ -42,8 +42,8 @@ theme_mb <- function() {
 ### Load data ###
 
 sites <- data.frame(
-  longitude = c(-85.44965363680959),
-  latitude = c(42.48875440841494)
+  longitude = c(-85.68082617264459, -85.44965363680959, -86.3552715964692),
+  latitude = c(44.88253158953959, 42.48875440841494, 42.088248694771174)
 ) %>% 
   st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
 
@@ -148,19 +148,20 @@ graph_sites <- ggplot() +
 graph_sites <- ggplot() +
   tidyterra::geom_spatraster(data = elevation) +
   geom_sf(
-    data = crop, colour = "black", fill = "transparent", size = 1,
+    data = crop, colour = "grey30", fill = "transparent", size = 1,
     linetype = "solid"
   ) +
   geom_sf(data = rivers, color = "blue", linewidth = 0.2) +
   annotate(
     geom = "text", label = c("Mississippi", "Grand River"),
-    x = c(-92, -84.6), y = c(43.4, 43.3), angle = c(295, 350),
+    x = c(-91.1, -84.6), y = c(44.4, 43.3), angle = c(304, 350),
     color = "blue", size = 2.5
   ) +
   geom_sf(data = sites, colour = "black", size = 1) +
   annotate(
-    geom = "label", x = c(-83.5), y = c(42.5),
-    label = c("Lux Arbor"), fill = "transparent", size = 3,
+    geom = "label", x = c(-83.4, -83.5, -84.1), y = c(44.9, 42.5, 41.7),
+    label = c("NW Station", "Lux Arbor", "SW Station"),
+    fill = "white", size = 3, alpha = .4
   ) +
   # annotate(
   #   geom = "text", x = c(7.6, 13, 13.4, 10.4), y = c(53, 53.82, 52.2, 49.7),
