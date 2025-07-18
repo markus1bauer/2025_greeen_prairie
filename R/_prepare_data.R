@@ -4,7 +4,7 @@
 #
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Markus Bauer
-# 2025-07-07
+# 2025-07-17
 
 
 
@@ -303,10 +303,8 @@ data_names <- species %>%
     name = str_replace(name, "DALPUR", "Dalea purpurea"),
     name = str_replace(name, "DANSPI", "Danthonia spicata"),
     name = str_replace(name, "DAUCAR", "Daucus carota"),
-    name = str_replace(name, "DESCAN", "Desmodium canadense"),
     name = str_replace(name, "DESILL", "Desmodium illinoense"),
     name = str_replace(name, "DESPAN", "Desmodium paniculatum"),
-    name = str_replace(name, "DESSPP", "Desmodium sp."),
     name = str_replace(name, "DICSPP", "Dichanthelium sp."),
     name = str_replace(name, "DIGCOG", "Digitaria cognata"),
     name = str_replace(name, "DIGISC", "Digitaria ischaemum"),
@@ -517,7 +515,8 @@ data_check_duplicated <- data_names %>%
   ) %>%
   select(abb, name_submitted, accepted_name, accepted_family, seeded) %>%
   add_count(accepted_name) %>%
-  arrange(desc(n), accepted_name)
+  arrange(desc(n), accepted_name) %>%
+  filter(n > 1)
 
 rm(list = setdiff(ls(), c("species", "sites", "data_names", "flowers", "covers",
                           "data_names_resolved")))
@@ -584,7 +583,8 @@ data_species <- species %>%
 data_check_duplicated <- data_species %>%
   group_by(id_plot, plot_size, date_surveyed, accepted_name) %>%
   add_count(accepted_name) %>%
-  arrange(desc(n), accepted_name, date_surveyed, id_plot, plot_size)
+  arrange(desc(n), accepted_name, date_surveyed, id_plot, plot_size) %>%
+  filter(n > 1)
 
 species <- data_species %>%
   group_by(id_plot_year, id_plot, plot_size, date_surveyed, accepted_name) %>%
@@ -794,15 +794,49 @@ rm(list = setdiff(ls(), c("species", "sites", "traits", "coordinates")))
 
 
 
-## 3 Covers ###################################################################
+## 4 Covers ###################################################################
 
 
-### a Species richness -------------------------------------------------------
+### a Total cover -------------------------------------------------------------
 
-data_cover <- species %>%
-  mutate(target_group = if_else(famil))
-  group_by(id_plot_year, family) %>%
-  summarise(sum = sum(cover, na.rm = TRUE))
+data_cover_total <- species %>%
+  group_by(id_plot_year) %>%
+  summarise(cover_total = sum(abundance, na.rm = TRUE))
+
+data_cover_seeded_grass <- species %>%
+  left_join(
+    traits %>% select(accepted_name, accepted_family, seeded),
+    by = "accepted_name"
+    ) %>%
+  mutate(
+    abundance = if_else(
+      accepted_family == "Poaceae" & seeded == 1, abundance, 0
+      )
+    ) %>%
+  group_by(id_plot_year) %>%
+  summarise(cover_seeded_grass = sum(abundance, na.rm = TRUE))
+  
+data_cover_seeded_forbs<- species %>%
+  left_join(
+    traits %>% select(accepted_name, accepted_family, seeded),
+    by = "accepted_name"
+  ) %>%
+  mutate(
+    abundance = if_else(
+      accepted_family != "Poaceae" & seeded == 1, abundance, 0
+      )
+    ) %>%
+  group_by(id_plot_year) %>%
+  summarise(cover_seeded_forbs = sum(abundance, na.rm = TRUE))
+
+data_cover_non_seeded <- species %>%
+  left_join(
+    traits %>% select(accepted_name, seeded),
+    by = "accepted_name"
+  ) %>%
+  mutate(abundance = if_else(seeded == 0, abundance, 0)) %>%
+  group_by(id_plot_year) %>%
+  summarise(cover_non_seeded = sum(abundance, na.rm = TRUE))
 
 
 
