@@ -1,5 +1,5 @@
 ---
-title: "Analysis of Bauer et al. (submitted) Functional traits of grasslands: <br> Community weighted mean of specific leaf area (SLA) per plot (esy4)"
+title: "Analysis of XXX et al. (submitted) GREEEN project: <br> Effects of species pool size and seeding approach on establishment of seeded species"
 author: "<b>Markus Bauer</b> <br>"
 date: "<b>`r format(Sys.time(), '%Y-%m-%d')`</b>"
 output:
@@ -50,6 +50,7 @@ library(here)
 library(tidyverse)
 library(ggbeeswarm)
 library(patchwork)
+library(lme4)
 library(DHARMa)
 library(emmeans)
 ```
@@ -119,42 +120,7 @@ ggplot(sites, aes(y = y, x = year)) +
   geom_quasirandom(color = "grey") +
   geom_boxplot(fill = "transparent") +
   facet_grid(~ site) +
-  labs(y = "Seeded species richness (25qm)", x = "Survey year") +
-  theme_mb()
-ggplot(
-  sites, aes(y = y, x = year, fill = seeding_time) # herbicide = seeding_time
-  ) +
-  geom_quasirandom(aes(color = seeding_time), dodge.width = .8, alpha = .8) +
-  geom_boxplot(alpha = .3) +
-  facet_grid(~ site) +
-  labs(y = "Seeded species richness (25qm)", x = "Herbicide treatment") +
-  theme_mb()
-ggplot(
-  sites, aes(y = y, x = year, fill = seeded_pool)
-  ) +
-  geom_quasirandom(aes(color = seeded_pool), dodge.width = .8, alpha = .8) +
-  geom_boxplot(alpha = .3) +
-  facet_grid(~ site) +
-  labs(y = "Seeded species richness (25qm)", x = "Species pool [#]") +
-  theme_mb()
-ggplot(
-  data = sites,
-  aes(y = y, x = seeded_pool, fill = seeding_time)
-  ) +
-  geom_quasirandom(aes(color = seeding_time), dodge.width = .8, alpha = .8) +
-  geom_boxplot(alpha = .3) +
-  facet_grid(~ year) +
-  labs(y = "Seeded species richness (25qm)", x = "Species pool [#]") +
-  theme_mb()
-ggplot(
-  data = sites,
-  aes(y = y, x = seeded_pool, fill = seeding_time)
-  ) +
-  geom_quasirandom(aes(color = seeding_time), dodge.width = .8, alpha = .8) +
-  geom_boxplot(alpha = .5) +
-  facet_grid(~ site) +
-  labs(y = "Seeded species richness (25qm)", x = "Species pool [#]") +
-  theme_mb()
+  labs(y = "Seeded species richness (25qm)", x = "Survey year")
 ggplot(
   data = sites,
   aes(y = y, x = seeded_pool, fill = seeding_time)
@@ -162,8 +128,7 @@ ggplot(
   geom_quasirandom(aes(color = seeding_time), dodge.width = .8, alpha = .8) +
   geom_boxplot(alpha = .5) +
   facet_grid(site ~ year) +
-  labs(y = "Seeded species richness (25qm)", x = "Species pool [#]") +
-  theme_mb()
+  labs(y = "Seeded species richness (25qm)", x = "Species pool [#]")
 ```
 
 ### Outliers, zero-inflation, transformations? (Step 1, 3, 4)
@@ -198,9 +163,9 @@ Dormann et al. 2013 Ecography [DOI: 10.1111/j.1600-0587.2012.07348.x](https://do
 > **NOTE:** Only here you have to modify the script to compare other models
 
 ```{r load-models, collapse = TRUE}
-load(file = here("outputs", "models", "model_pool_1_flat_bayesian.Rdata"))
+load(file = here("outputs", "models", "model_pool_full.Rdata"))
 #load(file = here("outputs", "models", "model_sla_esy4_3.Rdata"))
-m_1 <- m1
+m_1 <- m_full
 #m_2 <- m3
 ```
 
@@ -215,24 +180,18 @@ m_1@call
 
 ```{r dharma_all, collapse = TRUE, warning = FALSE}
 simulation_output_1 <- simulateResiduals(m_1, plot = TRUE)
-simulation_output_2 <- simulateResiduals(m_2, plot = TRUE)
+# simulation_output_2 <- simulateResiduals(m_2, plot = TRUE)
 ```
 
 ```{r dharma_single, collapse = TRUE, fig.height = 3, fig.width = 4.5}
-plotResiduals(simulation_output_1$scaledResiduals, sites$esy4)
-plotResiduals(simulation_output_2$scaledResiduals, sites$esy4)
-plotResiduals(simulation_output_1$scaledResiduals, sites$eco.id)
-plotResiduals(simulation_output_2$scaledResiduals, sites$eco.id)
-plotResiduals(simulation_output_1$scaledResiduals, sites$site.type)
-plotResiduals(simulation_output_2$scaledResiduals, sites$site.type)
-plotResiduals(simulation_output_1$scaledResiduals, sites$obs.year)
-plotResiduals(simulation_output_2$scaledResiduals, sites$obs.year)
-plotResiduals(simulation_output_1$scaledResiduals, sites$hydrology)
-plotResiduals(simulation_output_2$scaledResiduals, sites$hydrology)
-plotResiduals(simulation_output_1$scaledResiduals, sites$fertilized)
-plotResiduals(simulation_output_2$scaledResiduals, sites$fertilized)
-plotResiduals(simulation_output_1$scaledResiduals, sites$mngm.type)
-plotResiduals(simulation_output_2$scaledResiduals, sites$mngm.type)
+plotResiduals(simulation_output_1$scaledResiduals, sites$herbicide)
+# plotResiduals(simulation_output_2$scaledResiduals, sites$herbicide)
+# plotResiduals(simulation_output_1$scaledResiduals, sites$seeding_time)
+# plotResiduals(simulation_output_2$scaledResiduals, sites$seeding_time)
+plotResiduals(simulation_output_1$scaledResiduals, sites$site)
+# plotResiduals(simulation_output_2$scaledResiduals, sites$site)
+# plotResiduals(simulation_output_1$scaledResiduals, sites$year)
+# plotResiduals(simulation_output_2$scaledResiduals, sites$year)
 ```
 
 ### Check collinearity part 2 (Step 5)
@@ -243,7 +202,7 @@ Zuur et al. 2010 Methods Ecol Evol [DOI: 10.1111/j.2041-210X.2009.00001.x](https
 
 ```{r vif}
 car::vif(m_1)
-car::vif(m_2)
+# car::vif(m_2)
 ```
 
 ## Model comparison
@@ -252,7 +211,7 @@ car::vif(m_2)
 
 ```{r r2, collapse = TRUE}
 MuMIn::r.squaredGLMM(m_1)
-MuMIn::r.squaredGLMM(m_2)
+# MuMIn::r.squaredGLMM(m_2)
 ```
 
 ### AICc
@@ -263,8 +222,8 @@ Burnahm & Anderson 2002 p. 66
 ISBN: 978-0-387-95364-9
 
 ```{r aicc, collapse = TRUE}
-MuMIn::AICc(m_1, m_2) %>%
-  arrange(AICc)
+# MuMIn::AICc(m_1, m_2) %>%
+#   arrange(AICc)
 ```
 
 ## Predicted values
@@ -272,19 +231,18 @@ MuMIn::AICc(m_1, m_2) %>%
 ### Summary table
 
 ```{r summary}
-car::Anova(m_2, type = 3)
-summary(m_2)
+car::Anova(m_1, type = 3)
+summary(m_1)
 ```
 
 ### Forest plot
 
 ```{r predicted_values, fig.height = 6}
 dotwhisker::dwplot(
-  list(m_1, m_2),
+  list(m_1),
   ci = 0.95,
   show_intercept = FALSE,
   vline = geom_vline(xintercept = 0, colour = "grey60", linetype = 2)) +
-  xlim(-35, 40) +
   theme_classic()
 ```
 
@@ -297,35 +255,12 @@ necessary.
 
 ```{r effect-sizes-1, message = FALSE}
 (emm <- emmeans(
-  m_2,
-  revpairwise ~ esy4,
+  m_1,
+  revpairwise ~ seeded_pool * seeding_time | site,
   type = "response"
   ))
 plot(emm, comparison = TRUE)
 ```
-
-#### Habiat type x Region
-
-```{r effect-sizes-2, message = FALSE}
-(emm <- emmeans(
-  m_2,
-  revpairwise ~ eco.id,
-  type = "response"
-  ))
-plot(emm, comparison = TRUE)
-```
-
-#### Habiat type x Site type
-
-```{r effect-sizes-3, message = FALSE}
-(emm <- emmeans(
-  m_2,
-  revpairwise ~ site.type,
-  type = "response"
-  ))
-plot(emm, comparison = TRUE)
-```
-
 
 # Session info
 

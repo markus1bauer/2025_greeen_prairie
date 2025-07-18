@@ -270,7 +270,7 @@ data_names <- species %>%
     name = str_replace(name, "ASPOFF", "Asparagus officinalis"),
     name = str_replace(name, "ASTCAN", "Astragalus canadensis"),
     name = str_replace(name, "ASTERI", "Aster ericoides"),
-    name = str_replace(name, "ASTLAE", "Aster laevis"),
+    name = str_replace(name, "ASTLAE", "Aster laevis L."),
     name = str_replace(name, "ASTOOL", "Aster oolentangiensis"),
     name = str_replace(name, "ASTPIL", "Aster pilosus"),
     name = str_replace(name, "ASTSAG", "Aster sagittifolius"),
@@ -333,16 +333,16 @@ data_names <- species %>%
     name = str_replace(
       name, "FESRUBAGG", "Festuca rubra agg."
       ),
-    name = str_replace(name, "FESTRA", "Festuca trachyphylla"),
+    name = str_replace(name, "FESTRA", "Festuca trachyphylla (Hack.) Hack."),
     name = str_replace(name, "GERSPP", "Geranium sp."),
     name = str_replace(name, "GEUCAN", "Geum canadense"),
     name = str_replace(name, "GLETRI", "Gleditsia triacanthos"),
-    name = str_replace(name, "GNAOBT", "Gnaphalium obtusifolium"),
+    name = str_replace(name, "GNAOBT", "Gnaphalium obtusifolium L."),
     name = str_replace(name, "GNAPUR", "Gnaphalium purpureum"),
     name = str_replace(name, "GNASPP", "Gnaphalium sp."),
     name = str_replace(name, "GNAULI", "Gnaphalium uliginosum"),
     name = str_replace(name, "HACVIR", "Hackelia virginiana"),
-    name = str_replace(name, "HELOCC", "Helianthemum occidentale"),
+    name = str_replace(name, "HELOCC", "Helianthus occidentalis"),
     name = str_replace(name, "HIESPP", "Hieracium sp."),
     name = str_replace(name, "HYPPER", "Hypericum perforatum"),
     name = str_replace(name, "HYPRAD", "Hypochaeris radicata"),
@@ -353,7 +353,7 @@ data_names <- species %>%
     name = str_replace(name, "LACSPP", "Lactuca sp."),
     name = str_replace(name, "LEPCAM", "Lepidium campestre"),
     name = str_replace(name, "LESCAP", "Lespedeza capitata"),
-    name = str_replace(name, "LESHIR", "Lespedeza hirta"),
+    name = str_replace(name, "LESHIR", "Lespedeza hirta (L.) Hornem."),
     name = str_replace(name, "LESVIR", "Lespedeza virginica"),
     name = str_replace(name, "LIACYL", "Liatris cylindracea"),
     name = str_replace(name, "LONMAA", "Lonicera maackii"),
@@ -396,7 +396,7 @@ data_names <- species %>%
     name = str_replace(name, "POACOM", "Poa compressa"),
     name = str_replace(name, "POAPRA", "Poa pratensis"),
     name = str_replace(name, "POASPP", "Poa sp."),
-    name = str_replace(name, "POTARGE", "Potentilla argentilla"),
+    name = str_replace(name, "POTARGE", "Potentilla argentea"),
     name = str_replace(name, "POTNOR", "Potentilla norvegica"),
     name = str_replace(name, "POTREC", "Potentilla recta"),
     name = str_replace(name, "POTSIM", "Potentilla simplex"),
@@ -434,13 +434,13 @@ data_names <- species %>%
     name = str_replace(name, "SOLNEM", "Solidago nemoralis"),
     name = str_replace(name, "SOLPTY", "Solanum ptychanthum"),
     name = str_replace(name, "SOLRIG", "Solidago rigida"),
-    name = str_replace(name, "SOLSPE", "Solidago speciosa"),
+    name = str_replace(name, "SOLSPE", "Solidago speciosa Nutt."),
     name = str_replace(name, "SOLSPP", "Solidago sp."),
     name = str_replace(name, "SORNUT", "Sorghastrum nutans"),
     name = str_replace(name, "SPOCRY", "Sporobolus cryptandrus"),
     name = str_replace(name, "STEMED", "Stellaria media"),
     name = str_replace(name, "SYMERI", "Symphyotrichum ericoides"),
-    name = str_replace(name, "SYMLAE", "Symphyotrichum laeve"),
+    name = str_replace(name, "SYMLAE", "Symphyotrichum laeve (L.) Á.Löve & D.Löve"),
     name = str_replace(name, "SYMLAN", "Symphyotrichum lanceolatum"),
     name = str_replace(name, "SYMPIL", "Symphyotrichum pilosum"),
     name = str_replace(name, "SYMSPP", "Symphyotrichum sp."),
@@ -794,7 +794,19 @@ rm(list = setdiff(ls(), c("species", "sites", "traits", "coordinates")))
 
 
 
-## 4 Calculation of CWMs ######################################################
+## 3 Covers ###################################################################
+
+
+### a Species richness -------------------------------------------------------
+
+data_cover <- species %>%
+  mutate(target_group = if_else(famil))
+  group_by(id_plot_year, family) %>%
+  summarise(sum = sum(cover, na.rm = TRUE))
+
+
+
+## 5 Calculation of CWMs ######################################################
 
 
 ### a CWM Plant height 1.6.3 --------------------------------------------------
