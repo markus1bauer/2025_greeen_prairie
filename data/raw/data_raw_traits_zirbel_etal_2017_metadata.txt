@@ -1,0 +1,202 @@
+Readme file for data and analysis associated with:
+
+Zirbel CR, Bassett T, Grman E and Brudvig LA (2017) Journal of Applied Ecology https://doi.org/10.1111/1365-2664.12885
+Zirbel CR, Bassett T, Grman E and Brudvig LA (2017) Dryad https://doi.org/10.5061/dryad.2175q
+
+Please contact Chad Zirbel (crzirbel@gmail.com) with any questions related to this data repository.
+
+The authors ask that they be contacted before publishing work using the following datasets.
+
+When using the following dataset please cite the original paper as well as the data repository.
+
+Some of the data in this repository are also available in:
+Grman, E., Bassett, T. and Brudvig, L.A. 2014. A prairie plant community data set for addressing questions in community assembly and restoration.
+Ecology 95:2363. http://dx.doi.org/10.1890/14-0888.1
+
+This repository contains 8 files including data and an Rscript. Files 1-6 contain the data and Rscript used to analyze them for the above
+mentioned manuscript. Files 7 & 8 are not a part of this analysis but are from the same sites and will be analyzed in a future publication.
+Please see the methods section of Zirbel et al. (2017) for more details on how the following data were collected and analyzed.
+
+Files contained within this repository:
+1.	plant_community_Zirbel_2017_dryad.csv
+2.	site_environmental_data_Zirbel_2017_dryad.csv
+3.	trait_data_field_Zirbel_2017_dryad.csv
+4.	trait_data_literature_Zirbel_2017_dryad.csv
+5.	ecosystem_functions_Zirbel_2017_dryad.csv
+6.	Zirbel_JAE_2017_Rscript.r
+7.	phylogeny_ Zirbel_2017_dryad.txt
+8.	tax_phylo_names_Zirbel_2017_dryad.csv
+
+  #################
+
+plant_comunity_Zirbel_2017_dryad.csv
+
+This file contains plant community composition data from plots within each of 29 restored prairie sites in Southwestern Michigan.
+Each site contains 10 1x1m vegetation sampling plots spaced evenly along a 45m transect, at the approximate site center.
+Values denote percent cover of each plant species found in each of the 1x1m plots. Sampling occurred from August 13th to the 21st in 2013.
+Cover in each plot can sum to greater than 1 if individuals were overlapping. Cover does not need to sum to 1 due to the presence of bare ground (not included in this dataset). 
+
+site.id: ID for the restored prairie site in which percent covers were collected.
+
+plot: The plot (distance along the transect) within each prairie site in which percent covers were collected.
+
+The rest of the variables in this dataset are plant species names according to Michigan Flora (Voss & Reznicek 2012).
+Values are percent covers in each 1x1m plot.
+
+  ################
+
+site_environmental_Zirbel_2017_dryad.csv
+
+This file contains environmental variables collected at each restoration site. Data in this file are largely the same as reported in:
+Grman, E., Bassett, T., and Brudvig, L.A. 2014. A prairie plant community data set for addressing questions in community assembly and restoration.
+Ecology 95:2363. http://dx.doi.org/10.1890/14-0888.1 Only the number of burns at each site has changed since this dataset was last published.
+
+site.id: ID for the restored prairie restoration site from which each variable was measured.
+
+year: The year each prairie restoration was initiated through seed sowing of native prairie plants.
+
+forest500: total amount of area within 500m of the center of each site that was covered by forest in 2010 determined using GIS, in m^2.
+
+ag500: total amount of area within 500m of the center of each site that was covered by agriculture in 2010 determined using GIS, in m^2.
+
+grass500: total amount of area within 500m of the center of each site that was covered by grassland in 2010 determined using GIS, in m^2.
+
+wet500: total amount of area within 500m of the center of each site that was covered by wetland in 2010 determined using GIS, in m^2.
+
+dev500: total amount of area within 500m of the center of each site that was covered by human development in 2010 determined using GIS, in m^2.
+
+clay: Percentage by weight of soil composed of clay.
+
+silt: Percentage by weight of soil composed of silt.
+
+sand: Percentage by weight of soil composed of sand.
+
+perc.water: mean water holding capacity. Proportional difference between saturated and oven dry weight for a sample of soil collected at each plot. Plot level values were averaged for each site.
+
+ph: Soil pH.
+
+om: Soil organic matter. percent.
+
+mehlich.p: Mehlich-III phosphorus. Units are mg P/kg soil.
+
+bray.p: Soil Bray-II extractable phosphorus Units. are mg P/kg soil.
+
+land.use: Land-use immediately prior to restoration. Either tilled agriculture, old field, or hay field.
+
+no.burns: Number of times each site has undergone a prescribed burn since being restored.
+
+  ################
+
+trait_data_field_Zirbel_2017_dryad.csv
+
+Continuous plant functional traits that were collected from within the restored prairie sites. Across all species, traits were collected at
+many restoration sites, but each species  traits are only collected at a single site. Trait values for plant height and SLA are measured on an
+individual. Seed mass values are averaged from at least 50 seeds from 5 individuals or pulled from the Kew Seed information database (SID).
+Missing trait data are represented with NA.
+
+species: Species name for each individual according to Voss & Reznicek 2012.
+
+plant.height: Height of the tallest vegetative structure of each individual. Units in meters.
+
+SLA: Specific leaf area. Leaf area divided by leaf dry mass. Units mm^2/mg.
+
+seed.mass: mass of a single seed in mg. Some seed mass data used in this manuscript were acquired from the Kew Seed Information Network.
+These species are indicated in the kew.seed column.
+
+kew.seed: Indicates whether seed mass data was collected from the Kew SID or from the field.
+
+  ################
+
+Trait_data_literature_Zirbel_2017_dryad.csv
+
+Categorical functional traits that were collected from the literature. Sources include (Kew SID, USDA Plants, Illinois Plant Information Network, Flora of North America).
+
+species: Species name for each individual according to (Voss & Reznicek 2012).
+
+dispersal.mode: Primary dispersal mode used by each species. Dispersal mode descriptions can be found in (P rez-Harguindeguy et al. 2013).
+
+life.history: Life history of each species. Can be annual, biennial, perennial, or species can have multiple life history strategies.
+
+clonal.nonclonal: Whether or not a species has the ability to reproduce vegetatively.
+
+photosynthetic.pathway: Whether the species uses C3, C4, or CAM photosynthesis.
+
+n.fixer: Whether or not the species has the ability to associate with nitrogen fixing organisms.
+
+root.type: Root morphology for each species. Values are primary, fibrous, or rhizomatous.
+
+flowers: Whether or not each species has flowers that would be attractive to an animal pollinator.
+
+  ################
+
+ecosystem_functions_Zirbel_2017_dryad.csv
+
+This file contains ecosystem function data from plots within each of 29 restored prairie sites in Southwestern Michigan.
+Each site contains 10 1x1m sampling plots. Each function described below was collected at the plot level during the 2013 growing season.
+
+site.id: ID for the restored prairie site in which each ecosystem function was collected.
+
+plot: The 1x1m plot (distance along the transect) within each prairie site in which an ecosystem function was measured.
+
+biomass: Dry mass of all living plants in each plot. Units grams.
+
+mass.loss: Decomposition rate of cellulosic fiber paper. Units grams/day.
+
+roots.per.g.sand: Dry mass of roots collected from 4 sand cores installed at each plot. Units grams/day.
+
+roots.per.g.soil: Dry mass of roots collected from 4 soil cores at each plot. Data are missing from one site; these are represented using NA. Units grams/day.
+
+DESCAN.removed: Number of Desmodium canadensis seeds removed from a seed tray adjacent to each plot after 2 weeks.
+
+SORNUT.removed: Number of Sorgastrum nutans seeds removed from a seed tray adjacent to each plot after 2 weeks.
+
+RUDHIR.removed: Number of Rudbeckia hirta seeds removed from a seed tray adjacent to each plot after 2 weeks.
+
+MONFIS.removed: Number of Monarda fistulosa seeds removed from a seed tray adjacent to each plot after 2 weeks.
+
+total.seeds.removed: Total number of seeds removed of the four species listed above.
+
+aug.worms.gone: Number of wax worms removed from a tray adjacent to each plot after 1 day.
+
+floral.cover.june: Percent cover of open animal pollinated flowers in each plot on the June sampling date.
+
+floral.plotSR.june: Number of unique animal pollinated plant species flowering in each plot on the June sampling date.
+
+floral.siteSR.june: Number of unique animal pollinated plant species flowering at each site on the June sampling date
+
+floral.cover.july: Percent cover of open animal pollinated flowers in each plot on the July sampling date.
+
+floral.plotSR.july: Number of unique animal pollinated plant species flowering in each plot on the July sampling date.
+
+floral.siteSR.july: Number of unique animal pollinated plant species flowering at each site on the July sampling date.
+
+floral.cover.sept: Percent cover of open animal pollinated flowers in each plot on the September sampling date.
+
+floral.plotSR.sept: Number of unique animal pollinated plant species flowering in each plot on the September sampling date.
+
+floral.siteSR.sept: Number of unique animal pollinated plant species flowering at each site on the September sampling date.
+
+  ###############
+
+Zirbel_JAE_2017_Rscript.r
+
+This R script contains all of code required to perform the analyses in the above manuscript. All analyses were done using R v. 3.3.0.
+All packages used for this analysis are listed in the script and Zirbel et al. 2017.
+
+  ##############
+
+phylogeny_Zirbel_2017_dryad.txt
+
+Phylogeny of all species that occur in the plant_community.csv dataset. This file was generated using Phylomatic.
+Format is newick and uses the Zanne et al., 2014 tree.
+
+  ##############
+
+tax_phylo_names_Zirbel_2017_dryad.csv
+
+Used to calculate phylogenetic diversity for each site. List of species names found at the 29 restored prairie sites in this study
+(taxonomy according to Voss & Reznicek 2012) and corresponding species names in the Zanne et al. 2014 tree.
+
+species: species names according to Voss & Reznicek 2012.
+
+phylo.name: species name according to iPlant collaborative taxonomic name resolution service to match names in the phylogeny.

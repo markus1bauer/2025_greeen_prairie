@@ -4,7 +4,7 @@
 #
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Markus Bauer
-# 2025-07-17
+# 2025-07-18
 
 
 
@@ -227,9 +227,135 @@ data_check_problems <- species %>%
     desc(problems), name, species_original, id_plot, date_surveyed,
     seeded_pool
     ) %>%
-  select(-date_entered, -seeded_pool)
+  select(-date_entered, -seeded_pool) %>%
+  filter(problems > 0)
 
 rm(list = setdiff(ls(), c("species", "sites", "flowers", "covers")))
+
+
+
+## 3 Traits ###################################################################
+
+
+### a Zirbel et al. (2017) -----------------------------------------------------
+
+# Zirbel CR, Bassett T, Grman E and Brudvig LA (2017) Journal of Applied Ecology https://doi.org/10.1111/1365-2664.12885
+# Zirbel CR, Bassett T, Grman E and Brudvig LA (2017) Dryad https://doi.org/10.5061/dryad.2175q
+
+data_2017 <- read_csv(
+  here("data", "raw", "data_raw_traits_zirbel_etal_2017.csv"),
+  na = c("", "NA", "na")
+) %>%
+  rename(
+    name = species, height_2017 = plant.height, sla_2017 = SLA,
+    seedmass_2017 = seed.mass
+    ) %>%
+  mutate(name = str_replace_all(name, "\\.", " ")) %>%
+  group_by(name) #%>%
+  summarise(across(where(is.numeric), ~ mean(.x, na.rm = TRUE)))
+
+
+
+### b Zirbel & Brudvig (2017) --------------------------------------------------
+
+# Zirbel, CR, Brudvig LA (2020) Ecology https://doi.org/10.1002/ecy.2971
+# Zirbel CR, Brudvig LA (2019) Dryad https://doi.org/10.5061/dryad.bnzs7h46q
+
+data_leaf_area <- read_csv(
+  here("data", "raw", "data_raw_traits_zirbel_brudvig_2020_leaf_area.csv"),
+  na = c("", "NA", "na")
+) %>%
+  rename(name = species, leaf_area_2020 = total.leaf.area) %>%
+  select(name, leaf_area_2020) %>%
+  group_by(name) %>%
+  summarise(leaf_area_2020 = mean(leaf_area_2020, na.rm = TRUE))
+data_leaf_mass <- read_csv(
+  here("data", "raw", "data_raw_traits_zirbel_brudvig_2020_leaf_mass.csv"),
+  na = c("", "NA", "na")
+) %>%
+  rename(name = species, leaf_mass_2020 = leaf_mass) %>%
+  select(name, leaf_mass_2020) %>%
+  group_by(name) %>%
+  summarise(leaf_mass_2020 = mean(leaf_mass_2020, na.rm = TRUE))
+data_seed_mass <- read_csv(
+  here("data", "raw", "data_raw_traits_zirbel_brudvig_2020_seed_mass.csv"),
+  na = c("", "NA", "na")
+) %>%
+  rename(name = species, seedmass_2020 = seed_mass) %>%
+  select(name, seedmass_2020) %>%
+  group_by(name) %>%
+  summarise(seedmass_2020 = mean(seedmass_2020, na.rm = TRUE))
+
+
+### c Combine data -------------------------------------------------------------
+
+traits_zirbel <- data_2017 %>%
+  full_join(data_leaf_area, by = "name") %>%
+  full_join(data_leaf_mass, by = "name") %>%
+  full_join(data_seed_mass, by = "name") %>%
+  mutate(
+    name = str_replace(name, "ANDGER", "Andropogon gerardii"),
+    name = str_replace(name, "ASCSYR", "Asclepias syriaca"),
+    name = str_replace(name, "ASCTUB", "Asclepias tuberosa"),
+    name = str_replace(name, "ASTERI", "Aster ericoides"),
+    name = str_replace(name, "ASTLAE", "Aster laevis"),
+    name = str_replace(name, "ASTOOL", "Aster oolentangiensis"),
+    name = str_replace(name, "ASTPIL", "Aster pilosus"),
+    name = str_replace(name, "ASTSAG", "Aster sagittifolius"),
+    name = str_replace(name, "BAPLAC", "Baptisia lactea"),
+    name = str_replace(name, "BOUCUR", "Bouteloua curtipendula"),
+    name = str_replace(name, "CASFAS", "Cassia fasciculata"),
+    name = str_replace(name, "CHAFAS", "Chamaecrista fasciculata"),
+    name = str_replace(name, "CORLAN", "Coreopsis lanceolata"),
+    name = str_replace(name, "DALPUR", "Dalea purpurea"),
+    name = str_replace(name, "DESILL", "Desmodium illinoense"),
+    name = str_replace(name, "DRYARG", "Drymocallis arguta"),
+    name = str_replace(name, "POTARGUTA", "Drymocallis arguta"),
+    name = str_replace(name, "ECHPUR", "Echinacea purpurea"),
+    name = str_replace(name, "ERYYUC", "Eryngium yuccifolium"),
+    name = str_replace(name, "HELOCC", "Helianthus occidentalis"),
+    name = str_replace(name, "LESCAP", "Lespedeza capitata"),
+    name = str_replace(name, "LESVIR", "Lespedeza virginica"),
+    name = str_replace(name, "LIACYL", "Liatris cylindracea"),
+    name = str_replace(name, "LUPPER", "Lupinus perennis"),
+    name = str_replace(name, "MONFIS", "Monarda fistulosa"),
+    name = str_replace(name, "MONPUN", "Monarda punctata"),
+    name = str_replace(name, "PANVIR", "Panicum virgatum"),
+    name = str_replace(name, "PENDIG", "Penstemon digitalis"),
+    name = str_replace(name, "PENHIR", "Penstemon hirsutus"),
+    name = str_replace(name, "PETPUR", "Petalostemom purpureus"),
+    name = str_replace(name, "POTARGE", "Potentilla argentea"),
+    name = str_replace(name, "RATPIN", "Ratibida pinnata"),
+    name = str_replace(name, "RUDHIR", "Rudbeckia hirta"),
+    name = str_replace(name, "SCHSCO", "Schizachyrium scoparium"),
+    name = str_replace(name, "SILTER", "Silphium terebinthinaceum"),
+    name = str_replace(name, "SOLALT", "Solidago altissima"),
+    name = str_replace(name, "SOLCAN", "Solidago canadensis"),
+    name = str_replace(name, "SOLJUN", "Solidago juncea"),
+    name = str_replace(name, "SOLNEM", "Solidago nemoralis"),
+    name = str_replace(name, "SOLRIG", "Solidago rigida"),
+    name = str_replace(name, "SOLSPE", "Solidago speciosa"),
+    name = str_replace(name, "SORNUT", "Sorghastrum nutans"),
+    name = str_replace(name, "SPOCRY", "Sporobolus cryptandrus"),
+    name = str_replace(name, "SYMERI", "Symphyotrichum ericoides"),
+    name = str_replace(name, "SYMLAE", "Symphyotrichum laeve"),
+    name = str_replace(name, "SYMLAN", "Symphyotrichum lanceolatum"),
+    name = str_replace(name, "SYMPIL", "Symphyotrichum pilosum"),
+    name = str_replace(name, "SYMUND", "Symphyotrichum undulatum"),
+    name = str_replace(name, "TRAOHI", "Tradescantia ohiensis"),
+    name = str_replace(name, "VERSTR", "Verbena stricta"),
+    name = str_replace(name, "ZIZAPT", "Zizia aptera")
+  ) %>%
+  group_by(name) %>%
+  summarise(across(where(is.numeric), ~ mean(.x, na.rm = TRUE))) %>%
+  mutate(sla_2020 = leaf_area_2020 / leaf_mass_2020) %>%
+  select(-leaf_area_2020, -leaf_mass_2020)
+  
+
+
+rm(list = setdiff(
+  ls(), c("species", "sites", "flowers", "covers","traits_zirbel"))
+  )
 
 
 
@@ -239,7 +365,7 @@ rm(list = setdiff(ls(), c("species", "sites", "flowers", "covers")))
 
 
 
-## 1 Names from TNRS database #################################################
+## 1 Names harmonization #######################################################
 
 
 ### a Replace abbreviations ----------------------------------------------------
@@ -518,8 +644,10 @@ data_check_duplicated <- data_names %>%
   arrange(desc(n), accepted_name) %>%
   filter(n > 1)
 
-rm(list = setdiff(ls(), c("species", "sites", "data_names", "flowers", "covers",
-                          "data_names_resolved")))
+rm(list = setdiff(
+  ls(), c("species", "sites", "data_names", "flowers", "covers",
+          "data_names_resolved", "traits_zirbel")
+  ))
 
 
 ### c Summarize duplicates of traits matrix ------------------------------------
@@ -610,7 +738,10 @@ data_check_occurences <- data_species %>%
 #   here("data", "processed", "data_processed_occurences_20250704.xlsx")
 #   )
 
-rm(list = setdiff(ls(), c("species", "sites", "traits", "flowers", "covers")))
+rm(list = setdiff(
+  ls(), c("species", "sites", "traits", "flowers", "covers", "traits_zirbel",
+          "data_check_occurences")
+  ))
 
 
 
@@ -686,7 +817,21 @@ data_missing <- data_traits %>%
     (is.na(sla) | is.na(height) | is.na(seedmass)) &
       accepted_name_rank == "species"
     ) %>%
-  select(accepted_name, seeded, family, sla, height, seedmass)
+  select(accepted_name, seeded, family, sla, height, seedmass) %>%
+  left_join(
+    traits_zirbel %>% rename(accepted_name = name), by = "accepted_name"
+  ) %>%
+  mutate(
+    sla = if_else(is.na(sla), sla_2017, sla),
+    sla = if_else(is.na(sla), sla_2020, sla),
+    height = if_else(is.na(height), height_2017, height),
+    seedmass = if_else(is.na(seedmass), seedmass_2017, seedmass),
+  ) %>%
+  left_join(data_check_occurences, by = "accepted_name") %>%
+  relocate(n, .after = seeded) %>%
+  filter((is.na(sla) | is.na(height) | is.na(seedmass))) %>%
+  arrange(desc(seeded), desc(n))
+
 
 # write_xlsx(
 #   data_missing,
@@ -712,7 +857,9 @@ data_missing <- data_traits %>%
 #     )
 
 
-rm(list = setdiff(ls(), c("species", "sites", "traits", "flowers", "covers")))
+rm(list = setdiff(
+  ls(), c("species", "sites", "traits", "flowers", "covers","traits_zirbel")
+  ))
 
 
 
@@ -774,23 +921,9 @@ data <- richness_total %>%
   )
 sites <- data
 
-### b Species eveness ---------------------------------------------
-
-# data <- species_dikes %>%
-#   mutate(across(where(is.numeric), ~ replace(., is.na(.), 0))) %>%
-#   pivot_longer(-name, names_to = "id", values_to = "value") %>%
-#   pivot_wider(names_from = "name", values_from = "value") %>%
-#   column_to_rownames("id") %>%
-#   diversity(index = "shannon") %>%
-#   as_tibble(rownames = NA) %>%
-#   rownames_to_column(var = "id") %>%
-#   mutate(id = factor(id)) %>%
-#   rename(shannon = value)
-# sites_dikes <- sites_dikes %>%
-#   left_join(data, by = "id") %>%
-#   mutate(eveness = shannon / log(species_richness))
-
-rm(list = setdiff(ls(), c("species", "sites", "traits", "coordinates")))
+rm(list = setdiff(
+  ls(), c("species", "sites", "traits", "coordinates","traits_zirbel")
+  ))
 
 
 
@@ -837,6 +970,16 @@ data_cover_non_seeded <- species %>%
   mutate(abundance = if_else(seeded == 0, abundance, 0)) %>%
   group_by(id_plot_year) %>%
   summarise(cover_non_seeded = sum(abundance, na.rm = TRUE))
+
+sites <- sites %>%
+  full_join(data_cover_total, by = "id_plot_year") %>%
+  full_join(data_cover_seeded_grass, by = "id_plot_year") %>%
+  full_join(data_cover_seeded_forbs, by = "id_plot_year") %>%
+  full_join(data_cover_non_seeded, by = "id_plot_year")
+
+rm(list = setdiff(
+  ls(), c("species", "sites", "traits", "coordinates","traits_zirbel")
+  ))
 
 
 
