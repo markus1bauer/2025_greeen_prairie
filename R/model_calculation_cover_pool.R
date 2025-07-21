@@ -51,14 +51,14 @@ sites <- read_csv(
 ) %>%
   filter(
     year %in% c("2015", "2016", "2017", "2018"),
-    #richness_type == "seeded_richness",
+    richness_type == "seeded_richness",
     !(treatment_id %in% c("2", "4"))
-  ) #%>%
+  ) %>%
   select(
     id_plot_year, id_plot, site, year, herbicide, seeding_time, seeded_pool,
-    richness_1qm, richness_25qm, treatment_id
+    water_cap, cover_seeded_grass, cover_seeded_forbs, cover_non_seeded
     ) %>%
-  mutate(y = richness_1qm + richness_25qm)
+  pivot_longer(starts_with("cover_"), names_to = "group", values_to = "y")
 
 
 
@@ -76,51 +76,34 @@ sites <- read_csv(
 ggplot(sites, aes(y = y, x = year)) +
   geom_quasirandom(color = "grey") +
   geom_boxplot(fill = "transparent") +
-  facet_grid(~ site) +
-  labs(y = "Seeded species richness (25qm)", x = "Survey year")
+  facet_grid(site ~ group) +
+  labs(y = "Cover (1qm) [%]", x = "Survey year")
 
 ggplot(
   sites, aes(y = y, x = year, fill = seeding_time) # herbicide = seeding_time
   ) +
   geom_quasirandom(aes(color = seeding_time), dodge.width = .8, alpha = .8) +
   geom_boxplot(alpha = .3) +
-  facet_grid(~ site) +
-  labs(y = "Seeded species richness (25qm)", x = "Seeding time")
+  facet_grid(site ~ group) +
+  labs(y = "Cover (1qm) [%]", x = "Survey year")
 
 ggplot(
   sites, aes(y = y, x = year, fill = seeded_pool)
   ) +
   geom_quasirandom(aes(color = seeded_pool), dodge.width = .8, alpha = .8) +
   geom_boxplot(alpha = .3) +
-  facet_grid(~ site) +
-  labs(y = "Seeded species richness (25qm)", x = "Species pool [#]")
+  facet_grid(site ~ group) +
+  labs(y = "Cover (1qm) [%]", x = "Survey year")
 
 ggplot(
   data = sites,
-  aes(y = y, x = seeded_pool, fill = seeding_time)
+  aes(y = y, x = year, fill = seeded_pool, color = seeding_time)
   ) +
-  geom_quasirandom(aes(color = seeding_time), dodge.width = .8, alpha = .8) +
+  #geom_quasirandom(aes(color = seeding_time), dodge.width = .8, alpha = .8) +
   geom_boxplot(alpha = .3) +
-  facet_grid(~ year) +
-  labs(y = "Seeded species richness (25qm)", x = "Species pool [#]")
+  facet_grid(site ~ group) +
+  labs(y = "Cover (1qm) [%]", x = "Survey year")
 
-ggplot(
-  data = sites,
-  aes(y = y, x = seeded_pool, fill = seeding_time)
-  ) +
-  geom_quasirandom(aes(color = seeding_time), dodge.width = .8, alpha = .8) +
-  geom_boxplot(alpha = .5) +
-  facet_grid(~ site) +
-  labs(y = "Seeded species richness (25qm)", x = "Species pool [#]")
-
-ggplot(
-  data = sites,
-  aes(y = y, x = seeded_pool, fill = seeding_time)
-) +
-  geom_quasirandom(aes(color = seeding_time), dodge.width = .8, alpha = .8) +
-  geom_boxplot(alpha = .5) +
-  facet_grid(site ~ year) +
-  labs(y = "Seeded species richness (25qm)", x = "Species pool [#]")
 
 ### b Outliers, zero-inflation, transformations? ------------------------------
 
@@ -131,7 +114,7 @@ sites %>% count(herbicide)
 plot1 <- ggplot(sites, aes(x = site, y = y)) + geom_quasirandom()
 plot2 <- ggplot(sites, aes(x = y)) + geom_histogram(binwidth = 0.7)
 plot3 <- ggplot(sites, aes(x = y)) + geom_density()
-plot4 <- ggplot(sites, aes(x = log(y))) + geom_density()
+plot4 <- ggplot(sites %>% filter(y > 0) %>% mutate(y = sqrt(y)), aes(x = y)) + geom_density()
 (plot1 + plot2) / (plot3 + plot4)
 
 
@@ -154,22 +137,27 @@ plot4 <- ggplot(sites, aes(x = log(y))) + geom_density()
 
 ### a Candidate models ---------------------------------------------------------
 
-m_simple <- glmer(
-  y ~ seeded_pool + seeding_time + site + (1 | year),
-  family = poisson(link = "log"),
-  data = sites
+m_simple <- brm(
+  y ~ group + seeded_pool + seeding_time + site + (1 | year),
+  data = sites,
+  family = hurdle_lognormal()
   )
 simulateResiduals(m_simple, plot = TRUE)
-m_full <- glmer(
-  y ~ seeded_pool * seeding_time * site + (1 | year),
-  family = poisson(link = "log"),
-  data = sites
+# hurdle_negbinomial, hurdle_poisson do not work (integer)
+# hurdle_lognormal was bad model critique
+# try hurdle_gamma() without sqrt()
+# programm own hurdle_gaussian with sqrt()
+m_full <- brm(
+  sqrt(y) ~ group * seeded_pool * seeding_time * site + (1 | year),
+  data = sites,
+  family = hurdle_gamma(link = "log")
   )
+m_full %>% DHARMa.helpers::dh_check_brms(integer = TRUE)
 simulateResiduals(m_full, plot = TRUE)
-m1 <- glmer(
-  y ~ seeded_pool * seeding_time + site + (1 | year),
-  family = poisson(link = "log"),
-  data = sites
+m1 <- brm(
+  y ~ group * seeded_pool * seeding_time + site + (1 | year),
+  data = sites,
+  family = hurdle_lognormal()
 )
 simulateResiduals(m1, plot = TRUE)
 

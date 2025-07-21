@@ -1,10 +1,10 @@
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # GREEEN prairie project
 # Model seeding time * extra herbicide pre-treatment ####
-# Seeded species richness
+# Cover
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Markus Bauer
-# 2025-07-16
+# 2025-07-21
 
 
 
@@ -56,9 +56,9 @@ sites <- read_csv(
   ) %>%
   select(
     id_plot_year, id_plot, site, year, herbicide, seeding_time, seeded_pool,
-    richness_1qm, richness_25qm, treatment_id
-    ) %>%
-  mutate(y = richness_1qm + richness_25qm)
+    water_cap, cover_seeded_grass, cover_seeded_forbs, cover_non_seeded
+  ) %>%
+  pivot_longer(starts_with("cover_"), names_to = "group", values_to = "y")
 
 
 
@@ -76,17 +76,17 @@ sites <- read_csv(
 ggplot(sites, aes(y = y, x = year)) +
   geom_quasirandom(color = "grey") +
   geom_boxplot(fill = "transparent") +
-  facet_grid(~ site) +
-  labs(y = "Seeded species richness (25qm)", x = "Survey year")
+  facet_grid(site ~ group) +
+  labs(y = "Cover (1qm) [%]", x = "Survey year")
 
 ggplot(
   data = sites,
-  aes(y = y, x = seeding_time, fill = herbicide)
+  aes(y = y, x = year, fill = herbicide, color = seeding_time)
 ) +
   geom_quasirandom(dodge.width = .8, alpha = .8) +
   geom_boxplot(alpha = .5) +
-  facet_grid(site ~ year) +
-  labs(y = "Seeded species richness (25qm)", x = "Seeding time")
+  facet_grid(site ~ group) +
+  labs(y = "Cover (1qm) [%]", x = "Survey year")
 
 ### b Outliers, zero-inflation, transformations? ------------------------------
 
