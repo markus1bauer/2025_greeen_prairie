@@ -91,7 +91,8 @@ flowers <- read_xlsx(
 
 soil <- soil_1 %>%
   bind_rows(soil_2, soil_3) %>%
-  select(-year)
+  select(-year) %>%
+  select(id_plot, id_tin, water_cap)
 
 treatment <- treatment_1 %>%
   bind_rows(treatment_2, treatment_3)
@@ -245,13 +246,13 @@ rm(list = setdiff(ls(), c("species", "sites", "flowers", "covers")))
 data_2017 <- read_csv(
   here("data", "raw", "data_raw_traits_zirbel_etal_2017.csv"),
   na = c("", "NA", "na")
-) %>%
+  ) %>%
   rename(
     name = species, height_2017 = plant.height, sla_2017 = SLA,
     seedmass_2017 = seed.mass
     ) %>%
   mutate(name = str_replace_all(name, "\\.", " ")) %>%
-  group_by(name) #%>%
+  group_by(name) %>%
   summarise(across(where(is.numeric), ~ mean(.x, na.rm = TRUE)))
 
 
@@ -917,7 +918,7 @@ data <- richness_total %>%
   select(
     id_plot_year, id_plot, site, year, herbicide, seeding_time, seeded_pool,
     richness_1qm, richness_25qm, treatment_id, treatment_description,
-    everything(), -Notes
+    everything()
   )
 sites <- data
 
@@ -997,18 +998,9 @@ rm(list = setdiff(
 ### d Add to sites table ------------------------------------------------------
 
 
-rm(list = setdiff(ls(), c("species", "sites", "traits")))
-
-
-
-## 5 Finalization ############################################################
-
-
-### a Rounding ----------------------------------------------------------------
-
-
-### b Final selection of variables --------------------------------------------
-
+rm(list = setdiff(
+  ls(), c("species", "sites", "traits", "coordinates","traits_zirbel")
+))
 
 
 

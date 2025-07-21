@@ -9,7 +9,7 @@ Alliaria petiolata,0,Accepted,species,Brassicaceae,https://powo.science.kew.org/
 Allium vineale,0,Accepted,species,Amaryllidaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:529111-1,wcvp
 Amaranthus,0,Accepted,genus,Amaranthaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:327362-2,wcvp
 Ambrosia artemisiifolia,0,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:176058-1,wcvp
-Andropogon gerardii,0,Accepted,species,Poaceae,https://www.worldfloraonline.org/taxon/wfo-0000846629,wfo
+Andropogon gerardii,1,Accepted,species,Poaceae,https://www.worldfloraonline.org/taxon/wfo-0000846629,wfo
 Arabidopsis thaliana,0,Accepted,species,Brassicaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:277970-1,wcvp
 Asclepias amplexicaulis,0,Accepted,species,Apocynaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:60445583-2,wcvp
 Asclepias syriaca,1,Accepted,species,Apocynaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:319076-2,wcvp
@@ -22,7 +22,7 @@ Baptisia alba var. macrophylla,1,Synonym,variety,Fabaceae,https://powo.science.k
 Barbarea vulgaris,0,Accepted,species,Brassicaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:29455-2,wcvp
 Berberis vulgaris,0,Accepted,species,Berberidaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:328527-2,wcvp
 Berteroa incana,0,Accepted,species,Brassicaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:278924-1,wcvp
-Bouteloua curtipendula,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1198286-2,wcvp
+Bouteloua curtipendula,1,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1198286-2,wcvp
 Brassica,0,Accepted,genus,Brassicaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30043511-2,wcvp
 Brassica napus,0,Accepted,species,Brassicaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:279419-1,wcvp
 Brassicaceae,0,Accepted,family,,,wcvp
@@ -37,7 +37,6 @@ Chenopodium album,0,Accepted,species,Amaranthaceae,https://powo.science.kew.org/
 Chondrilla juncea,0,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:328774-2,wcvp
 Circaea canadensis,0,Accepted,species,Onagraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1213937-2,wcvp
 Cirsium,0,Accepted,genus,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30001899-2,wcvp
-Cistus lasianthus subsp. alyssoides,1,Synonym,subspecies,Cistaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:77078414-1,wcvp
 Coreopsis lanceolata,1,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:319152-2,wcvp
 Cyperaceae,0,Accepted,family,,,wcvp
 Cyperus,0,Accepted,genus,Cyperaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:330001-2,wcvp
@@ -46,8 +45,6 @@ Dactylis glomerata,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon
 Dalea purpurea,1,Accepted,species,Fabaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:490847-1,wcvp
 Danthonia spicata,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1167024-2,wcvp
 Daucus carota,0,Accepted,species,Apiaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:841063-1,wcvp
-Desmodium,0,Accepted,genus,Fabaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:331550-2,wcvp
-Desmodium canadense,0,Accepted,species,Fabaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1051889-2,wcvp
 Desmodium illinoense,1,Accepted,species,Fabaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:491822-1,wcvp
 Desmodium paniculatum,0,Accepted,species,Fabaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:491980-1,wcvp
 Dichanthelium,0,Accepted,genus,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1035847-2,wcvp
@@ -83,6 +80,7 @@ Gleditsia triacanthos,0,Accepted,species,Fabaceae,https://powo.science.kew.org/t
 Gnaphalium,0,Accepted,genus,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:325908-2,wcvp
 Gnaphalium uliginosum,0,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:210174-1,wcvp
 Hackelia virginiana,0,Accepted,species,Boraginaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:116847-2,wcvp
+Helianthus occidentalis,1,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:315076-2,wcvp
 Hieracium,0,Accepted,genus,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:330082-2,wcvp
 Hypericum perforatum,0,Accepted,species,Hypericaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:433719-1,wcvp
 Hypochaeris radicata,0,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:225575-1,wcvp
@@ -117,7 +115,7 @@ Oxalis stricta,0,Accepted,species,Oxalidaceae,https://powo.science.kew.org/taxon
 Panicum,0,Accepted,genus,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1194715-2,wcvp
 Panicum capillare,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:181618-2,wcvp
 Panicum dichotomiflorum,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:325362-2,wcvp
-Panicum virgatum,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:413537-1,wcvp
+Panicum virgatum,1,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:413537-1,wcvp
 Paspalum setaceum,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:325365-2,wcvp
 Penstemon digitalis,1,Accepted,species,Plantaginaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:808077-1,wcvp
 Penstemon hirsutus,1,Accepted,species,Plantaginaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:808137-1,wcvp
@@ -133,7 +131,7 @@ Poa annua,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid
 Poa compressa,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:204172-2,wcvp
 Poa pratensis,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:417792-1,wcvp
 Poaceae,0,Accepted,family,,,wcvp
-Potentilla anserina,0,Synonym,species,Rosaceae,https://www.worldfloraonline.org/taxon/wfo-0001016615,wfo
+Potentilla argentea,0,Accepted,species,Rosaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:727660-1,wcvp
 Potentilla norvegica,0,Accepted,species,Rosaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:728598-1,wcvp
 Potentilla recta,0,Accepted,species,Rosaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:209483-2,wcvp
 Potentilla simplex,0,Accepted,species,Rosaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:728987-1,wcvp
@@ -153,7 +151,7 @@ Rumex acetosa,0,Accepted,species,Polygonaceae,https://powo.science.kew.org/taxon
 Rumex acetosella,0,Accepted,species,Polygonaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:224391-2,wcvp
 Rumex crispus,0,Accepted,species,Polygonaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:224413-2,wcvp
 Rumex obtusifolius,0,Accepted,species,Polygonaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:310739-2,wcvp
-Schizachyrium scoparium,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:420956-1,wcvp
+Schizachyrium scoparium,1,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:420956-1,wcvp
 Scrophularia lanceolata,0,Accepted,species,Scrophulariaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:809288-1,wcvp
 Setaria,0,Accepted,genus,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:331287-2,wcvp
 Setaria italica,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1207294-2,wcvp
@@ -170,12 +168,12 @@ Solidago juncea,1,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon
 Solidago nemoralis,1,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:249731-1,wcvp
 Solidago rigida,1,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:249837-1,wcvp
 Solidago speciosa,1,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:240517-2,wcvp
-Sorghastrum nutans,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:240823-2,wcvp
-Sporobolus cryptandrus,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:422687-1,wcvp
+Sorghastrum nutans,1,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:240823-2,wcvp
+Sporobolus cryptandrus,1,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:422687-1,wcvp
 Stellaria media,0,Accepted,species,Caryophyllaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:159330-1,wcvp
 Symphyotrichum,0,Accepted,genus,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30073935-2,wcvp
 Symphyotrichum ericoides,1,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:981811-1,wcvp
-Symphyotrichum laeve,1,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:247114-2,wcvp
+Symphyotrichum laeve,0,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:247114-2,wcvp
 Symphyotrichum lanceolatum,0,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:981841-1,wcvp
 Symphyotrichum oolentangiense,1,Synonym,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:981870-1,wcvp
 Symphyotrichum pilosum,0,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:981879-1,wcvp
@@ -208,3 +206,4 @@ Vitis aestivalis,0,Accepted,species,Vitaceae,https://powo.science.kew.org/taxon/
 Vitis riparia,0,Accepted,species,Vitaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:69009-1,wcvp
 Vitis vinifera,0,Accepted,species,Vitaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30478388-2,wcvp
 Zizia aptera,1,Accepted,species,Apiaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:271187-2,wcvp
+NA,1,NA,NA,NA,NA,NA
