@@ -51,14 +51,18 @@ sites <- read_csv(
 ) %>%
   filter(
     year %in% c("2015", "2016", "2017", "2018"),
-    richness_type == "seeded_richness",
-    !(treatment_id %in% c("2", "4"))
+    !(treatment_id %in% c("2", "4"))#,
+    # site != "SW Station"
   ) %>%
   select(
     id_plot_year, id_plot, site, year, herbicide, seeding_time, seeded_pool,
     water_cap, cover_seeded_grass, cover_seeded_forbs, cover_non_seeded
     ) %>%
-  pivot_longer(starts_with("cover_"), names_to = "group", values_to = "y")
+  mutate(
+    cover_total = cover_non_seeded + cover_seeded_grass + cover_seeded_forbs,
+    non_seeded_ratio = cover_non_seeded / cover_total
+  ) %>%
+  rename(y = cover_non_seeded)
 
 
 
@@ -76,32 +80,15 @@ sites <- read_csv(
 ggplot(sites, aes(y = y, x = year)) +
   geom_quasirandom(color = "grey") +
   geom_boxplot(fill = "transparent") +
-  facet_grid(site ~ group) +
+  facet_grid(~site) +
   labs(y = "Cover (1qm) [%]", x = "Survey year")
 
 ggplot(
-  sites, aes(y = y, x = year, fill = seeding_time) # herbicide = seeding_time
+  sites, aes(y = y, x = seeded_pool, fill = seeding_time) # herbicide = seeding_time
   ) +
   geom_quasirandom(aes(color = seeding_time), dodge.width = .8, alpha = .8) +
   geom_boxplot(alpha = .3) +
-  facet_grid(site ~ group) +
-  labs(y = "Cover (1qm) [%]", x = "Survey year")
-
-ggplot(
-  sites, aes(y = y, x = year, fill = seeded_pool)
-  ) +
-  geom_quasirandom(aes(color = seeded_pool), dodge.width = .8, alpha = .8) +
-  geom_boxplot(alpha = .3) +
-  facet_grid(site ~ group) +
-  labs(y = "Cover (1qm) [%]", x = "Survey year")
-
-ggplot(
-  data = sites,
-  aes(y = y, x = year, fill = seeded_pool, color = seeding_time)
-  ) +
-  #geom_quasirandom(aes(color = seeding_time), dodge.width = .8, alpha = .8) +
-  geom_boxplot(alpha = .3) +
-  facet_grid(site ~ group) +
+  facet_grid(site~year) +
   labs(y = "Cover (1qm) [%]", x = "Survey year")
 
 
@@ -114,7 +101,7 @@ sites %>% count(herbicide)
 plot1 <- ggplot(sites, aes(x = site, y = y)) + geom_quasirandom()
 plot2 <- ggplot(sites, aes(x = y)) + geom_histogram(binwidth = 0.7)
 plot3 <- ggplot(sites, aes(x = y)) + geom_density()
-plot4 <- ggplot(sites %>% filter(y > 0) %>% mutate(y = sqrt(y)), aes(x = y)) + geom_density()
+plot4 <- ggplot(sites %>% mutate(y = sqrt(y)), aes(x = y)) + geom_density()
 (plot1 + plot2) / (plot3 + plot4)
 
 
@@ -137,36 +124,29 @@ plot4 <- ggplot(sites %>% filter(y > 0) %>% mutate(y = sqrt(y)), aes(x = y)) + g
 
 ### a Candidate models ---------------------------------------------------------
 
-m_simple <- brm(
-  y ~ group + seeded_pool + seeding_time + site + (1 | year),
-  data = sites,
-  family = hurdle_lognormal()
+m_simple <- lmer(
+  sqrt(y) ~ seeding_time + seeded_pool + (0+year|site),
+  data = sites
   )
 simulateResiduals(m_simple, plot = TRUE)
-# hurdle_negbinomial, hurdle_poisson do not work (integer)
-# hurdle_lognormal was bad model critique
-# try hurdle_gamma() without sqrt()
-# programm own hurdle_gaussian with sqrt()
-m_full <- brm(
-  sqrt(y) ~ group * seeded_pool * seeding_time * site + (1 | year),
-  data = sites,
-  family = hurdle_gamma(link = "log")
+m_full <- lmer(
+  sqrt(y) ~ seeding_time * seeded_pool + (1+year|site),
+  data = sites
   )
-m_full %>% DHARMa.helpers::dh_check_brms(integer = TRUE)
 simulateResiduals(m_full, plot = TRUE)
-m1 <- brm(
-  y ~ group * seeded_pool * seeding_time + site + (1 | year),
-  data = sites,
-  family = hurdle_lognormal()
+m1 <- lmer(
+  sqrt(y) ~ seeding_time * seeded_pool * site + (1|year),
+  data = sites
 )
 simulateResiduals(m1, plot = TRUE)
-
+MuMIn::AICc(m_full, m1) %>% arrange(AICc)
 
 ### b Save ---------------------------------------------------------------------
 
-# save(m_simple, file = here("outputs", "models", "model_pool_simple.Rdata")) # bad model critique
-save(m_full, file = here("outputs", "models", "model_pool_full.Rdata"))
-# save(m1, file = here("outputs", "models", "model_pool_1.Rdata")) # bad model critique
+# save(m_simple, file = here("outputs", "models", "model_cover_pool_simple.Rdata")) # boundary singular fit
+save(m_full, file = here("outputs", "models", "model_cover_pool_full.Rdata")) # not optimal model critique
+save(m1, file = here("outputs", "models", "model_cover_pool_1.Rdata"))
+
 
 
 ## 2 Model building Bayesian ###########################################################

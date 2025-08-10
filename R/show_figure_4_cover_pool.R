@@ -1,10 +1,10 @@
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # GREEEN prairie project
-# Show figure ####
-# Seeded species richness ~ pool size * seeding time
+# Show figure 4 ####
+# Non-seeded cover ~ pool size * seeding time
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Markus Bauer
-# 2025-07-16
+# 2025-08-07
 
 
 
@@ -55,7 +55,7 @@ sites <- read_csv(
     ),
     year = "f",
     seeding_time = col_factor(
-      levels = c("unseeded", "fall", "spring"), ordered = FALSE
+      levels = c("spring", "unseeded", "fall"), ordered = FALSE
     ),
     herbicide = col_factor(levels = c("0", "1"), ordered = FALSE),
     seeded_pool = col_factor(
@@ -68,18 +68,22 @@ sites <- read_csv(
 ) %>%
   filter(
     year %in% c("2015", "2016", "2017", "2018"),
-    richness_type == "seeded_richness",
-    !(treatment_id %in% c("2", "4"))
+    !(treatment_id %in% c("2", "4"))#,
+    # site != "SW Station"
   ) %>%
   select(
     id_plot_year, id_plot, site, year, herbicide, seeding_time, seeded_pool,
-    richness_1qm, richness_25qm, treatment_id
+    water_cap, cover_seeded_grass, cover_seeded_forbs, cover_non_seeded
   ) %>%
-  mutate(y = richness_1qm + richness_25qm)
+  mutate(
+    cover_total = cover_non_seeded + cover_seeded_grass + cover_seeded_forbs,
+    non_seeded_ratio = cover_non_seeded / cover_total
+  ) %>%
+  rename(y = cover_non_seeded)
 
 ### * Model ####
-load(file = here("outputs", "models", "model_pool_full.Rdata"))
-m <- m_full
+load(file = here("outputs", "models", "model_cover_pool_1.Rdata"))
+m <- m1
 m@call
 
 
@@ -92,19 +96,20 @@ m@call
 
 data_model <- ggeffect(
   m, c("seeded_pool", "seeding_time", "site"),
-  bias_correction = TRUE
+  bias_correction = TRUE,
+  back.transform = TRUE
+  ) %>%
+  as_tibble() %>% 
+  mutate(
+    predicted = predicted^2,
+    conf.low = conf.low^2,
+    conf.high = conf.high^2
   )
 
 data <- sites %>%
   rename(predicted = y, x = seeded_pool, group = seeding_time, facet = site)
 
 (graph_a <- ggplot() +
-    geom_quasirandom(
-      data = data,
-      aes(x = x, y = predicted, color = group),
-      alpha = 0.2, shape = 16, cex = .5,
-      dodge.width = 0.8
-    ) +
     geom_errorbar(
       data = data_model,
       aes(x = x, y = predicted, color = group,
@@ -117,21 +122,25 @@ data <- sites %>%
       aes(x, predicted, color = group),
       size = 2, position = position_dodge(width = 0.8)
     ) +
+    geom_text(
+      data = data_annotation,
+      aes(x = x, y = predicted, label = label)
+    ) +
     facet_grid(~facet) +
-    scale_y_continuous(limits = c(0, 16), breaks = seq(0, 20, 1)) +
+    scale_y_continuous(limits = c(0, 87), breaks = seq(0, 90, 10)) +
     scale_color_manual(
       breaks = c("fall", "spring"),
       labels = c("Fall", "Spring"),
       values = c("#440154", "#FFA500")
     ) +
     labs(
-      x = "Seeded species pool [#]", color = "Seeding",
-      y = expression(Seeded ~ species ~ "[" * '#' * "]")
+      x = "Seeded species pool [#]", color = "Seeding\ntime",
+      y = expression(Cover ~ non-seeded ~ species ~ "[" * '%' * "]")
       ) +
     theme_mb())
 
 ### Save ###
 ggsave(
-  here("outputs", "figures", "figure_2_300dpi_16x8cm.tiff"),
+  here("outputs", "figures", "figure_4_300dpi_16x8cm.tiff"),
   dpi = 300, width = 16, height = 8, units = "cm"
   )
