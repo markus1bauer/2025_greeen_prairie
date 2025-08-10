@@ -17,6 +17,7 @@ library(readxl)
 library(writexl)
 library(TNRS)
 library(GIFT)
+library(rtry)
 library(FD)
 
 ### Start ###
@@ -406,6 +407,7 @@ data_names <- species %>%
     name = str_replace(name, "BARVUL", "Barbarea vulgaris"),
     name = str_replace(name, "BERINC", "Berteroa incana"),
     name = str_replace(name, "BERVUL", "Berberis vulgaris"),
+    name = str_replace(name, "BETULA", "Betula"),
     name = str_replace(name, "BOUCUR", "Bouteloua curtipendula"),
     name = str_replace(name, "BRANAP", "Brassica napus"),
     name = str_replace(name, "BRASPP", "Brassica sp."),
@@ -514,6 +516,7 @@ data_names <- species %>%
     name = str_replace(name, "PHLPRA", "Phleum pratense"),
     name = str_replace(name, "PHYAME", "Phytolacca americana"),
     name = str_replace(name, "PHYHET", "Phytolacca heterotepala"),
+    name = str_replace(name, "PHYSALIS", "Physalis"),
     name = str_replace(name, "PHYSPP", "Phytolacca"),
     name = str_replace(name, "PLALAN", "Plantago lanceolata"),
     name = str_replace(name, "PLAMAJ", "Plantago major"),
@@ -529,6 +532,7 @@ data_names <- species %>%
     name = str_replace(name, "PRUSER", "Prunus serotina"),
     name = str_replace(name, "PRUSPP", "Prunus sp."),
     name = str_replace(name, "PSEOBT", "Pseudognaphalium obtusifolium"),
+    name = str_replace(name, "PYRCAL", ""),# Pyrus calleryana?
     name = str_replace(name, "QUESPP", "Quercus sp."),
     name = str_replace(name, "QUEVEL", "Quercus velutina"),
     name = str_replace(name, "RATPIN", "Ratibida pinnata"),
@@ -563,6 +567,7 @@ data_names <- species %>%
     name = str_replace(name, "SOLSPP", "Solidago sp."),
     name = str_replace(name, "SORNUT", "Sorghastrum nutans"),
     name = str_replace(name, "SPOCRY", "Sporobolus cryptandrus"),
+    name = str_replace(name, "SPOHET", "Sporobolus heterolepis"),
     name = str_replace(name, "STEMED", "Stellaria media"),
     name = str_replace(name, "SYMERI", "Symphyotrichum ericoides"),
     name = str_replace(name, "SYMLAE", "Symphyotrichum laeve (L.) Á.Löve & D.Löve"),
@@ -746,7 +751,7 @@ rm(list = setdiff(
 
 
 
-## 2 Traits from GIFT database ################################################
+## 2 Traits from databases ####################################################
 
 
 ### a Load traits from GIFT ---------------------------------------------------
@@ -863,11 +868,25 @@ rm(list = setdiff(
   ))
 
 
+### c TRY database -------------------------------------------------------------
+
+data_try <- rtry_import(
+  here("data", "raw", "database_try_43371", "43371.txt")
+  ) %>%
+  filter(!(is.na(TraitID))) %>%
+  select(
+    SpeciesName, AccSpeciesID, TraitID, TraitName, DataName, DataID, StdValue,
+    UnitName, LastName, Reference
+  ) %>%
+  group_by(SpeciesName, AccSpeciesID, TraitName, TraitID, UnitName) %>%
+  summarize(mean = mean(StdValue, na.rm = TRUE))
+
+
 
 ## 3 Alpha diversity ##########################################################
 
 
-### a Species richness -------------------------------------------------------
+### a Species richness --------------------------------------------------------
 
 richness <- species %>%
   left_join(
