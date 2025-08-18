@@ -141,6 +141,30 @@ Lux_1_2019,Lux_1,25,2019-07-24,Panicum virgatum,NA
 Lux_1_2019,Lux_1,25,2019-07-24,Penstemon digitalis,NA
 Lux_1_2019,Lux_1,25,2019-07-24,Potentilla recta,NA
 Lux_1_2019,Lux_1,25,2019-07-24,Rudbeckia hirta,NA
+Lux_1_2025,Lux_1,1,2025-07-15,Bouteloua curtipendula,1
+Lux_1_2025,Lux_1,1,2025-07-15,Bromus inermis,0.3
+Lux_1_2025,Lux_1,1,2025-07-15,Centaurea stoebe,15
+Lux_1_2025,Lux_1,1,2025-07-15,Digitaria,0.3
+Lux_1_2025,Lux_1,1,2025-07-15,Elymus repens,4
+Lux_1_2025,Lux_1,1,2025-07-15,Eria,0.3
+Lux_1_2025,Lux_1,1,2025-07-15,Hypericum perforatum,0.3
+Lux_1_2025,Lux_1,1,2025-07-15,Oxalis stricta,0.1
+Lux_1_2025,Lux_1,1,2025-07-15,Plantago lanceolata,12
+Lux_1_2025,Lux_1,1,2025-07-15,Poa pratensis,20
+Lux_1_2025,Lux_1,1,2025-07-15,Ratibida pinnata,1
+Lux_1_2025,Lux_1,1,2025-07-15,Rubus flagellaris,35
+Lux_1_2025,Lux_1,1,2025-07-15,Rumex acetosella,0.1
+Lux_1_2025,Lux_1,1,2025-07-15,Schizachyrium scoparium,5
+Lux_1_2025,Lux_1,1,2025-07-15,Symphyotrichum pilosum,0.3
+Lux_1_2025,Lux_1,25,2025-07-15,Achillea millefolium,NA
+Lux_1_2025,Lux_1,25,2025-07-15,Ambrosia artemisiifolia,NA
+Lux_1_2025,Lux_1,25,2025-07-15,Asclepias syriaca,NA
+Lux_1_2025,Lux_1,25,2025-07-15,Coreopsis lanceolata,NA
+Lux_1_2025,Lux_1,25,2025-07-15,Festuca rubra,NA
+Lux_1_2025,Lux_1,25,2025-07-15,Lespedeza virginica,NA
+Lux_1_2025,Lux_1,25,2025-07-15,Monarda fistulosa,NA
+Lux_1_2025,Lux_1,25,2025-07-15,Panicum virgatum,NA
+Lux_1_2025,Lux_1,25,2025-07-15,Solidago altissima,NA
 Lux_10_2014,Lux_10,seeded,2014-09-01,Andropogon gerardii,1
 Lux_10_2014,Lux_10,seeded,2014-09-01,Bouteloua curtipendula,1
 Lux_10_2014,Lux_10,seeded,2014-09-01,Coreopsis lanceolata,1.49
@@ -244,6 +268,20 @@ Lux_10_2019,Lux_10,25,2019-07-24,Juncus tenuis,NA
 Lux_10_2019,Lux_10,25,2019-07-24,Rudbeckia hirta,NA
 Lux_10_2019,Lux_10,25,2019-07-24,Solanum carolinense,NA
 Lux_10_2019,Lux_10,25,2019-07-24,Solidago canadensis,NA
+Lux_10_2025,Lux_10,1,2025-07-15,Achillea millefolium,8
+Lux_10_2025,Lux_10,1,2025-07-15,Bromus inermis,0.5
+Lux_10_2025,Lux_10,1,2025-07-15,Centaurea stoebe,0.8
+Lux_10_2025,Lux_10,1,2025-07-15,Oxalis stricta,0.1
+Lux_10_2025,Lux_10,1,2025-07-15,Plantago lanceolata,1
+Lux_10_2025,Lux_10,1,2025-07-15,Poa pratensis,18
+Lux_10_2025,Lux_10,1,2025-07-15,Schizachyrium scoparium,37
+Lux_10_2025,Lux_10,1,2025-07-15,Symphyotrichum pilosum,1
+Lux_10_2025,Lux_10,1,2025-07-15,Trifolium dubium,21
+Lux_10_2025,Lux_10,25,2025-07-15,Andropogon gerardii,NA
+Lux_10_2025,Lux_10,25,2025-07-15,Erigeron,NA
+Lux_10_2025,Lux_10,25,2025-07-15,Hypericum perforatum,NA
+Lux_10_2025,Lux_10,25,2025-07-15,Potentilla recta,NA
+Lux_10_2025,Lux_10,25,2025-07-15,Sorghastrum nutans,NA
 Lux_11_2014,Lux_11,seeded,2014-09-01,Andropogon gerardii,1
 Lux_11_2014,Lux_11,seeded,2014-09-01,Bouteloua curtipendula,1
 Lux_11_2014,Lux_11,seeded,2014-09-01,Coreopsis lanceolata,1.49
@@ -339,6 +377,15 @@ Lux_11_2019,Lux_11,25,2019-07-24,Erigeron canadensis,NA
 Lux_11_2019,Lux_11,25,2019-07-24,Euthamia graminifolia,NA
 Lux_11_2019,Lux_11,25,2019-07-24,Panicum virgatum,NA
 Lux_11_2019,Lux_11,25,2019-07-24,Schizachyrium scoparium,NA
+Lux_11_2025,Lux_11,1,2025-07-15,Achillea millefolium,2
+Lux_11_2025,Lux_11,1,2025-07-15,Bouteloua curtipendula,1
+Lux_11_2025,Lux_11,1,2025-07-15,Bromus inermis,14
+Lux_11_2025,Lux_11,1,2025-07-15,Eria,0.7
+Lux_11_2025,Lux_11,1,2025-07-15,Poa pratensis,4
+Lux_11_2025,Lux_11,1,2025-07-15,Schizachyrium scoparium,25
+Lux_11_2025,Lux_11,25,2025-07-15,Centaurea stoebe,NA
+Lux_11_2025,Lux_11,25,2025-07-15,Panicum virgatum,NA
+Lux_11_2025,Lux_11,25,2025-07-15,Trifolium dubium,NA
 Lux_12_2014,Lux_12,seeded,2014-09-01,Andropogon gerardii,1
 Lux_12_2014,Lux_12,seeded,2014-09-01,Asclepias syriaca,0.27
 Lux_12_2014,Lux_12,seeded,2014-09-01,Asclepias tuberosa,0.26
@@ -510,6 +557,20 @@ Lux_12_2019,Lux_12,25,2019-07-24,Symphyotrichum ericoides,NA
 Lux_12_2019,Lux_12,25,2019-07-24,Turritis glabra,NA
 Lux_12_2019,Lux_12,25,2019-07-24,Verbena stricta,NA
 Lux_12_2019,Lux_12,25,2019-07-24,NA,NA
+Lux_12_2025,Lux_12,1,2025-07-15,Andropogon gerardii,20
+Lux_12_2025,Lux_12,1,2025-07-15,Bouteloua curtipendula,14
+Lux_12_2025,Lux_12,1,2025-07-15,Bromus inermis,11
+Lux_12_2025,Lux_12,1,2025-07-15,Centaurea stoebe,2
+Lux_12_2025,Lux_12,1,2025-07-15,Plantago lanceolata,0.8
+Lux_12_2025,Lux_12,1,2025-07-15,Poa pratensis,7
+Lux_12_2025,Lux_12,1,2025-07-15,Schizachyrium scoparium,13
+Lux_12_2025,Lux_12,1,2025-07-15,Sorghastrum nutans,6
+Lux_12_2025,Lux_12,1,2025-07-15,Tradescantia ohiensis,0.5
+Lux_12_2025,Lux_12,25,2025-07-15,Desmodium illinoense,NA
+Lux_12_2025,Lux_12,25,2025-07-15,Erigeron,NA
+Lux_12_2025,Lux_12,25,2025-07-15,Hypericum perforatum,NA
+Lux_12_2025,Lux_12,25,2025-07-15,Lespedeza capitata,NA
+Lux_12_2025,Lux_12,25,2025-07-15,Monarda fistulosa,NA
 Lux_13_2014,Lux_13,seeded,2014-09-01,Andropogon gerardii,1
 Lux_13_2014,Lux_13,seeded,2014-09-01,Bouteloua curtipendula,1
 Lux_13_2014,Lux_13,seeded,2014-09-01,Coreopsis lanceolata,1.49
@@ -621,6 +682,28 @@ Lux_13_2019,Lux_13,25,2019-07-24,Phleum pratense,NA
 Lux_13_2019,Lux_13,25,2019-07-24,Rubus flagellaris,NA
 Lux_13_2019,Lux_13,25,2019-07-24,Schizachyrium scoparium,NA
 Lux_13_2019,Lux_13,25,2019-07-24,Sorghastrum nutans,NA
+Lux_13_2025,Lux_13,1,2025-07-15,Achillea millefolium,12
+Lux_13_2025,Lux_13,1,2025-07-15,Agrostis gigantea,10
+Lux_13_2025,Lux_13,1,2025-07-15,Andropogon gerardii,8
+Lux_13_2025,Lux_13,1,2025-07-15,Bouteloua curtipendula,7
+Lux_13_2025,Lux_13,1,2025-07-15,Monarda fistulosa,8
+Lux_13_2025,Lux_13,1,2025-07-15,Poa pratensis,20
+Lux_13_2025,Lux_13,1,2025-07-15,Ratibida pinnata,10
+Lux_13_2025,Lux_13,1,2025-07-15,Rubus flagellaris,6
+Lux_13_2025,Lux_13,1,2025-07-15,Rumex acetosella,0.2
+Lux_13_2025,Lux_13,1,2025-07-15,Schizachyrium scoparium,12
+Lux_13_2025,Lux_13,1,2025-07-15,Symphyotrichum pilosum,0.6
+Lux_13_2025,Lux_13,25,2025-07-15,Centaurea stoebe,NA
+Lux_13_2025,Lux_13,25,2025-07-15,Echinacea purpurea,NA
+Lux_13_2025,Lux_13,25,2025-07-15,Eria,NA
+Lux_13_2025,Lux_13,25,2025-07-15,Hypericum perforatum,NA
+Lux_13_2025,Lux_13,25,2025-07-15,Juncus tenuis,NA
+Lux_13_2025,Lux_13,25,2025-07-15,Panicum virgatum,NA
+Lux_13_2025,Lux_13,25,2025-07-15,Phleum pratense,NA
+Lux_13_2025,Lux_13,25,2025-07-15,Plantago lanceolata,NA
+Lux_13_2025,Lux_13,25,2025-07-15,Solidago altissima,NA
+Lux_13_2025,Lux_13,25,2025-07-15,Trifolium dubium,NA
+Lux_13_2025,Lux_13,25,2025-07-15,Trifolium repens,NA
 Lux_14_2014,Lux_14,seeded,2014-09-01,Andropogon gerardii,1
 Lux_14_2014,Lux_14,seeded,2014-09-01,Bouteloua curtipendula,1
 Lux_14_2014,Lux_14,seeded,2014-09-01,Coreopsis lanceolata,0.74
@@ -733,6 +816,24 @@ Lux_14_2019,Lux_14,25,2019-07-24,Rubus flagellaris,NA
 Lux_14_2019,Lux_14,25,2019-07-24,Schizachyrium scoparium,NA
 Lux_14_2019,Lux_14,25,2019-07-24,Solidago canadensis,NA
 Lux_14_2019,Lux_14,25,2019-07-24,Sorghastrum nutans,NA
+Lux_14_2025,Lux_14,1,2025-07-15,Achillea millefolium,2
+Lux_14_2025,Lux_14,1,2025-07-15,Agrostis gigantea,2
+Lux_14_2025,Lux_14,1,2025-07-15,Andropogon gerardii,8
+Lux_14_2025,Lux_14,1,2025-07-15,Bouteloua curtipendula,2
+Lux_14_2025,Lux_14,1,2025-07-15,Bromus inermis,12
+Lux_14_2025,Lux_14,1,2025-07-15,Juncus tenuis,0.6
+Lux_14_2025,Lux_14,1,2025-07-15,Poa pratensis,10
+Lux_14_2025,Lux_14,1,2025-07-15,Rubus flagellaris,55
+Lux_14_2025,Lux_14,1,2025-07-15,Schizachyrium scoparium,12
+Lux_14_2025,Lux_14,25,2025-07-15,Dichanthelium,NA
+Lux_14_2025,Lux_14,25,2025-07-15,Hypericum perforatum,NA
+Lux_14_2025,Lux_14,25,2025-07-15,Panicum virgatum,NA
+Lux_14_2025,Lux_14,25,2025-07-15,Plantago lanceolata,NA
+Lux_14_2025,Lux_14,25,2025-07-15,Potentilla recta,NA
+Lux_14_2025,Lux_14,25,2025-07-15,Ratibida pinnata,NA
+Lux_14_2025,Lux_14,25,2025-07-15,Solidago altissima,NA
+Lux_14_2025,Lux_14,25,2025-07-15,Solidago rigida,NA
+Lux_14_2025,Lux_14,25,2025-07-15,Trifolium dubium,NA
 Lux_15_2014,Lux_15,seeded,2014-09-01,Andropogon gerardii,1
 Lux_15_2014,Lux_15,seeded,2014-09-01,Bouteloua curtipendula,1
 Lux_15_2014,Lux_15,seeded,2014-09-01,Coreopsis lanceolata,0.74
@@ -876,6 +977,30 @@ Lux_15_2019,Lux_15,25,2019-07-24,Rudbeckia hirta,NA
 Lux_15_2019,Lux_15,25,2019-07-24,Schizachyrium scoparium,NA
 Lux_15_2019,Lux_15,25,2019-07-24,Sorghastrum nutans,NA
 Lux_15_2019,Lux_15,25,2019-07-24,Verbena stricta,NA
+Lux_15_2025,Lux_15,1,2025-07-15,Achillea millefolium,2
+Lux_15_2025,Lux_15,1,2025-07-15,Andropogon gerardii,3
+Lux_15_2025,Lux_15,1,2025-07-15,Bouteloua curtipendula,30
+Lux_15_2025,Lux_15,1,2025-07-15,Bromus inermis,5
+Lux_15_2025,Lux_15,1,2025-07-15,Dichanthelium,2
+Lux_15_2025,Lux_15,1,2025-07-15,Drymocallis arguta,0.7
+Lux_15_2025,Lux_15,1,2025-07-15,Echinacea purpurea,2
+Lux_15_2025,Lux_15,1,2025-07-15,Eria,0.7
+Lux_15_2025,Lux_15,1,2025-07-15,Hypericum perforatum,0.3
+Lux_15_2025,Lux_15,1,2025-07-15,Poa pratensis,15
+Lux_15_2025,Lux_15,1,2025-07-15,Ratibida pinnata,12
+Lux_15_2025,Lux_15,1,2025-07-15,Solidago altissima,2
+Lux_15_2025,Lux_15,1,2025-07-15,Sorghastrum nutans,15
+Lux_15_2025,Lux_15,1,2025-07-15,Symphyotrichum pilosum,0.3
+Lux_15_2025,Lux_15,1,2025-07-15,Trifolium dubium,2
+Lux_15_2025,Lux_15,25,2025-07-15,Carex,NA
+Lux_15_2025,Lux_15,25,2025-07-15,Centaurea stoebe,NA
+Lux_15_2025,Lux_15,25,2025-07-15,Lespedeza capitata,NA
+Lux_15_2025,Lux_15,25,2025-07-15,Lespedeza virginica,NA
+Lux_15_2025,Lux_15,25,2025-07-15,Panicum virgatum,NA
+Lux_15_2025,Lux_15,25,2025-07-15,Penstemon digitalis,NA
+Lux_15_2025,Lux_15,25,2025-07-15,Plantago lanceolata,NA
+Lux_15_2025,Lux_15,25,2025-07-15,Potentilla recta,NA
+Lux_15_2025,Lux_15,25,2025-07-15,Schizachyrium scoparium,NA
 Lux_16_2014,Lux_16,seeded,2014-09-01,Andropogon gerardii,1
 Lux_16_2014,Lux_16,seeded,2014-09-01,Asclepias syriaca,0.49
 Lux_16_2014,Lux_16,seeded,2014-09-01,Asclepias tuberosa,0.48
@@ -987,6 +1112,16 @@ Lux_16_2019,Lux_16,25,2019-07-24,Potentilla argentea,NA
 Lux_16_2019,Lux_16,25,2019-07-24,Solanum carolinense,NA
 Lux_16_2019,Lux_16,25,2019-07-24,Symphyotrichum pilosum,NA
 Lux_16_2019,Lux_16,25,2019-07-24,Verbascum thapsus,NA
+Lux_16_2025,Lux_16,1,2025-07-15,Andropogon gerardii,25
+Lux_16_2025,Lux_16,1,2025-07-15,Bouteloua curtipendula,20
+Lux_16_2025,Lux_16,1,2025-07-15,Bromus inermis,20
+Lux_16_2025,Lux_16,1,2025-07-15,Eria,5
+Lux_16_2025,Lux_16,1,2025-07-15,Panicum virgatum,1
+Lux_16_2025,Lux_16,1,2025-07-15,Poa pratensis,0.5
+Lux_16_2025,Lux_16,1,2025-07-15,Schizachyrium scoparium,8
+Lux_16_2025,Lux_16,25,2025-07-15,Achillea millefolium,NA
+Lux_16_2025,Lux_16,25,2025-07-15,Juncus tenuis,NA
+Lux_16_2025,Lux_16,25,2025-07-15,Trifolium dubium,NA
 Lux_17_2014,Lux_17,seeded,2014-09-01,Andropogon gerardii,1
 Lux_17_2014,Lux_17,seeded,2014-09-01,Asclepias syriaca,0.27
 Lux_17_2014,Lux_17,seeded,2014-09-01,Asclepias tuberosa,0.26
@@ -1142,6 +1277,22 @@ Lux_17_2019,Lux_17,25,2019-07-24,Monarda fistulosa,NA
 Lux_17_2019,Lux_17,25,2019-07-24,Monarda punctata,NA
 Lux_17_2019,Lux_17,25,2019-07-24,Panicum virgatum,NA
 Lux_17_2019,Lux_17,25,2019-07-24,Penstemon digitalis,NA
+Lux_17_2025,Lux_17,1,2025-07-15,Achillea millefolium,1
+Lux_17_2025,Lux_17,1,2025-07-15,Andropogon gerardii,3
+Lux_17_2025,Lux_17,1,2025-07-15,Bouteloua curtipendula,70
+Lux_17_2025,Lux_17,1,2025-07-15,Centaurea stoebe,2
+Lux_17_2025,Lux_17,1,2025-07-15,Eria,1
+Lux_17_2025,Lux_17,1,2025-07-15,Poa pratensis,4
+Lux_17_2025,Lux_17,1,2025-07-15,Schizachyrium scoparium,5
+Lux_17_2025,Lux_17,25,2025-07-15,Asclepias tuberosa,NA
+Lux_17_2025,Lux_17,25,2025-07-15,Bromus inermis,NA
+Lux_17_2025,Lux_17,25,2025-07-15,Desmodium illinoense,NA
+Lux_17_2025,Lux_17,25,2025-07-15,Lespedeza capitata,NA
+Lux_17_2025,Lux_17,25,2025-07-15,Monarda fistulosa,NA
+Lux_17_2025,Lux_17,25,2025-07-15,Panicum virgatum,NA
+Lux_17_2025,Lux_17,25,2025-07-15,Ratibida pinnata,NA
+Lux_17_2025,Lux_17,25,2025-07-15,Trifolium dubium,NA
+Lux_17_2025,Lux_17,25,2025-07-15,unknown,NA
 Lux_18_2014,Lux_18,seeded,2014-09-01,Andropogon gerardii,1
 Lux_18_2014,Lux_18,seeded,2014-09-01,Bouteloua curtipendula,1
 Lux_18_2014,Lux_18,seeded,2014-09-01,Coreopsis lanceolata,0.74
@@ -1236,6 +1387,19 @@ Lux_18_2019,Lux_18,25,2019-07-24,Panicum virgatum,NA
 Lux_18_2019,Lux_18,25,2019-07-24,Phytolacca heterotepala,NA
 Lux_18_2019,Lux_18,25,2019-07-24,Sorghastrum nutans,NA
 Lux_18_2019,Lux_18,25,2019-07-24,Verbena urticifolia,NA
+Lux_18_2025,Lux_18,1,2025-07-15,Bouteloua curtipendula,55
+Lux_18_2025,Lux_18,1,2025-07-15,Bromus inermis,2
+Lux_18_2025,Lux_18,1,2025-07-15,Centaurea stoebe,4
+Lux_18_2025,Lux_18,1,2025-07-15,Poa pratensis,3
+Lux_18_2025,Lux_18,1,2025-07-15,Schizachyrium scoparium,30
+Lux_18_2025,Lux_18,25,2025-07-15,Achillea millefolium,NA
+Lux_18_2025,Lux_18,25,2025-07-15,Andropogon gerardii,NA
+Lux_18_2025,Lux_18,25,2025-07-15,Eria,NA
+Lux_18_2025,Lux_18,25,2025-07-15,Panicum virgatum,NA
+Lux_18_2025,Lux_18,25,2025-07-15,Plantago lanceolata,NA
+Lux_18_2025,Lux_18,25,2025-07-15,Potentilla argentea,NA
+Lux_18_2025,Lux_18,25,2025-07-15,Ratibida pinnata,NA
+Lux_18_2025,Lux_18,25,2025-07-15,Sorghastrum nutans,NA
 Lux_19_2015,Lux_19,1,2015-09-16,Achillea millefolium,1
 Lux_19_2015,Lux_19,1,2015-09-16,Centaurea stoebe,44
 Lux_19_2015,Lux_19,1,2015-09-16,Digitaria,1
@@ -1357,6 +1521,22 @@ Lux_19_2019,Lux_19,25,2019-07-24,Bromus inermis,NA
 Lux_19_2019,Lux_19,25,2019-07-24,Elymus repens,NA
 Lux_19_2019,Lux_19,25,2019-07-24,Monarda fistulosa,NA
 Lux_19_2019,Lux_19,25,2019-07-24,Solanum carolinense,NA
+Lux_19_2025,Lux_19,1,2025-07-15,Achillea millefolium,7
+Lux_19_2025,Lux_19,1,2025-07-15,Andropogon gerardii,9
+Lux_19_2025,Lux_19,1,2025-07-15,Bouteloua curtipendula,6
+Lux_19_2025,Lux_19,1,2025-07-15,Dichanthelium,0.8
+Lux_19_2025,Lux_19,1,2025-07-15,Panicum virgatum,2
+Lux_19_2025,Lux_19,1,2025-07-15,Plantago lanceolata,3
+Lux_19_2025,Lux_19,1,2025-07-15,Poa pratensis,6
+Lux_19_2025,Lux_19,1,2025-07-15,Ratibida pinnata,6
+Lux_19_2025,Lux_19,1,2025-07-15,Schizachyrium scoparium,40
+Lux_19_2025,Lux_19,1,2025-07-15,Solidago altissima,11
+Lux_19_2025,Lux_19,1,2025-07-15,Symphyotrichum ericoides,0.6
+Lux_19_2025,Lux_19,25,2025-07-15,Carex,NA
+Lux_19_2025,Lux_19,25,2025-07-15,Centaurea stoebe,NA
+Lux_19_2025,Lux_19,25,2025-07-15,Erigeron,NA
+Lux_19_2025,Lux_19,25,2025-07-15,Monarda fistulosa,NA
+Lux_19_2025,Lux_19,25,2025-07-15,Symphyotrichum pilosum,NA
 Lux_2_2014,Lux_2,seeded,2014-09-01,Andropogon gerardii,1
 Lux_2_2014,Lux_2,seeded,2014-09-01,Asclepias syriaca,0.49
 Lux_2_2014,Lux_2,seeded,2014-09-01,Asclepias tuberosa,0.48
@@ -1456,6 +1636,26 @@ Lux_2_2019,Lux_2,25,2019-07-24,Phleum pratense,NA
 Lux_2_2019,Lux_2,25,2019-07-24,Schizachyrium scoparium,NA
 Lux_2_2019,Lux_2,25,2019-07-24,Solidago canadensis,NA
 Lux_2_2019,Lux_2,25,2019-07-24,Symphyotrichum pilosum,NA
+Lux_2_2025,Lux_2,1,2025-07-15,Achillea millefolium,0.8
+Lux_2_2025,Lux_2,1,2025-07-15,Bouteloua curtipendula,4
+Lux_2_2025,Lux_2,1,2025-07-15,Bromus inermis,0.3
+Lux_2_2025,Lux_2,1,2025-07-15,Centaurea stoebe,20
+Lux_2_2025,Lux_2,1,2025-07-15,Digitaria,0.4
+Lux_2_2025,Lux_2,1,2025-07-15,Elymus repens,8
+Lux_2_2025,Lux_2,1,2025-07-15,Eria,2
+Lux_2_2025,Lux_2,1,2025-07-15,Oxalis stricta,2
+Lux_2_2025,Lux_2,1,2025-07-15,Plantago lanceolata,2
+Lux_2_2025,Lux_2,1,2025-07-15,Poa pratensis,35
+Lux_2_2025,Lux_2,1,2025-07-15,Rumex acetosella,0.4
+Lux_2_2025,Lux_2,1,2025-07-15,Schizachyrium scoparium,20
+Lux_2_2025,Lux_2,1,2025-07-15,Symphyotrichum pilosum,0.5
+Lux_2_2025,Lux_2,25,2025-07-15,Agrostis gigantea,NA
+Lux_2_2025,Lux_2,25,2025-07-15,Ambrosia artemisiifolia,NA
+Lux_2_2025,Lux_2,25,2025-07-15,Andropogon gerardii,NA
+Lux_2_2025,Lux_2,25,2025-07-15,Panicum virgatum,NA
+Lux_2_2025,Lux_2,25,2025-07-15,Ratibida pinnata,NA
+Lux_2_2025,Lux_2,25,2025-07-15,Solidago rigida,NA
+Lux_2_2025,Lux_2,25,2025-07-15,unknown,NA
 Lux_20_2014,Lux_20,seeded,2014-09-01,Andropogon gerardii,1
 Lux_20_2014,Lux_20,seeded,2014-09-01,Asclepias syriaca,0.27
 Lux_20_2014,Lux_20,seeded,2014-09-01,Asclepias tuberosa,0.26
@@ -1645,6 +1845,30 @@ Lux_20_2019,Lux_20,25,2019-07-24,Solidago canadensis,NA
 Lux_20_2019,Lux_20,25,2019-07-24,Solidago rigida,NA
 Lux_20_2019,Lux_20,25,2019-07-24,Symphyotrichum ericoides,NA
 Lux_20_2019,Lux_20,25,2019-07-24,NA,NA
+Lux_20_2025,Lux_20,1,2025-07-15,Achillea millefolium,14
+Lux_20_2025,Lux_20,1,2025-07-15,Bouteloua curtipendula,12
+Lux_20_2025,Lux_20,1,2025-07-15,Bromus inermis,14
+Lux_20_2025,Lux_20,1,2025-07-15,Centaurea stoebe,1
+Lux_20_2025,Lux_20,1,2025-07-15,Monarda fistulosa,7
+Lux_20_2025,Lux_20,1,2025-07-15,Panicum virgatum,4
+Lux_20_2025,Lux_20,1,2025-07-15,Plantago lanceolata,0.8
+Lux_20_2025,Lux_20,1,2025-07-15,Poa pratensis,9
+Lux_20_2025,Lux_20,1,2025-07-15,Ratibida pinnata,4
+Lux_20_2025,Lux_20,1,2025-07-15,Schizachyrium scoparium,9
+Lux_20_2025,Lux_20,1,2025-07-15,Solidago altissima,1
+Lux_20_2025,Lux_20,1,2025-07-15,Solidago rigida,3
+Lux_20_2025,Lux_20,1,2025-07-15,Sorghastrum nutans,4
+Lux_20_2025,Lux_20,1,2025-07-15,Symphyotrichum pilosum,3
+Lux_20_2025,Lux_20,25,2025-07-15,Andropogon gerardii,NA
+Lux_20_2025,Lux_20,25,2025-07-15,Echinacea purpurea,NA
+Lux_20_2025,Lux_20,25,2025-07-15,Helianthus occidentalis,NA
+Lux_20_2025,Lux_20,25,2025-07-15,Hypericum perforatum,NA
+Lux_20_2025,Lux_20,25,2025-07-15,Juncus tenuis,NA
+Lux_20_2025,Lux_20,25,2025-07-15,Potentilla recta,NA
+Lux_20_2025,Lux_20,25,2025-07-15,Rubus flagellaris,NA
+Lux_20_2025,Lux_20,25,2025-07-15,Symphyotrichum ericoides,NA
+Lux_20_2025,Lux_20,25,2025-07-15,Trifolium dubium,NA
+Lux_20_2025,Lux_20,25,2025-07-15,NA,NA
 Lux_21_2014,Lux_21,seeded,2014-09-01,Andropogon gerardii,1
 Lux_21_2014,Lux_21,seeded,2014-09-01,Bouteloua curtipendula,1
 Lux_21_2014,Lux_21,seeded,2014-09-01,Coreopsis lanceolata,0.74
@@ -1789,6 +2013,22 @@ Lux_21_2019,Lux_21,25,2019-07-24,Euthamia graminifolia,NA
 Lux_21_2019,Lux_21,25,2019-07-24,Rudbeckia hirta,NA
 Lux_21_2019,Lux_21,25,2019-07-24,Solidago canadensis,NA
 Lux_21_2019,Lux_21,25,2019-07-24,Verbena stricta,NA
+Lux_21_2025,Lux_21,1,2025-07-15,Achillea millefolium,1
+Lux_21_2025,Lux_21,1,2025-07-15,Andropogon gerardii,4
+Lux_21_2025,Lux_21,1,2025-07-15,Bouteloua curtipendula,9
+Lux_21_2025,Lux_21,1,2025-07-15,Bromus inermis,0.8
+Lux_21_2025,Lux_21,1,2025-07-15,Drymocallis arguta,0.7
+Lux_21_2025,Lux_21,1,2025-07-15,Lespedeza capitata,8
+Lux_21_2025,Lux_21,1,2025-07-15,Panicum virgatum,5
+Lux_21_2025,Lux_21,1,2025-07-15,Plantago lanceolata,0.6
+Lux_21_2025,Lux_21,1,2025-07-15,Poa pratensis,4
+Lux_21_2025,Lux_21,1,2025-07-15,Ratibida pinnata,15
+Lux_21_2025,Lux_21,1,2025-07-15,Schizachyrium scoparium,14
+Lux_21_2025,Lux_21,1,2025-07-15,Sorghastrum nutans,23
+Lux_21_2025,Lux_21,25,2025-07-15,Erigeron,NA
+Lux_21_2025,Lux_21,25,2025-07-15,Hypericum perforatum,NA
+Lux_21_2025,Lux_21,25,2025-07-15,Lespedeza virginica,NA
+Lux_21_2025,Lux_21,25,2025-07-15,Solidago altissima,NA
 Lux_22_2014,Lux_22,seeded,2014-09-01,Andropogon gerardii,1
 Lux_22_2014,Lux_22,seeded,2014-09-01,Bouteloua curtipendula,1
 Lux_22_2014,Lux_22,seeded,2014-09-01,Coreopsis lanceolata,1.49
@@ -1903,6 +2143,17 @@ Lux_22_2019,Lux_22,1,2019-07-24,Solidago canadensis,2
 Lux_22_2019,Lux_22,25,2019-07-24,Andropogon gerardii,NA
 Lux_22_2019,Lux_22,25,2019-07-24,Elymus canadensis,NA
 Lux_22_2019,Lux_22,25,2019-07-24,Potentilla recta,NA
+Lux_22_2025,Lux_22,1,2025-07-15,Achillea millefolium,0.8
+Lux_22_2025,Lux_22,1,2025-07-15,Bouteloua curtipendula,18
+Lux_22_2025,Lux_22,1,2025-07-15,Bromus inermis,11
+Lux_22_2025,Lux_22,1,2025-07-15,Erigeron,1
+Lux_22_2025,Lux_22,1,2025-07-15,Panicum virgatum,4
+Lux_22_2025,Lux_22,1,2025-07-15,Poa pratensis,1
+Lux_22_2025,Lux_22,1,2025-07-15,Schizachyrium scoparium,10
+Lux_22_2025,Lux_22,1,2025-07-15,Solidago rigida,0.9
+Lux_22_2025,Lux_22,25,2025-07-15,Andropogon gerardii,NA
+Lux_22_2025,Lux_22,25,2025-07-15,Centaurea stoebe,NA
+Lux_22_2025,Lux_22,25,2025-07-15,Ratibida pinnata,NA
 Lux_23_2014,Lux_23,seeded,2014-09-01,Andropogon gerardii,1
 Lux_23_2014,Lux_23,seeded,2014-09-01,Asclepias syriaca,0.49
 Lux_23_2014,Lux_23,seeded,2014-09-01,Asclepias tuberosa,0.48
@@ -2052,6 +2303,18 @@ Lux_23_2019,Lux_23,25,2019-07-24,Lespedeza virginica,NA
 Lux_23_2019,Lux_23,25,2019-07-24,Symphyotrichum pilosum,NA
 Lux_23_2019,Lux_23,25,2019-07-24,Turritis glabra,NA
 Lux_23_2019,Lux_23,25,2019-07-24,Verbascum thapsus,NA
+Lux_23_2025,Lux_23,1,2025-07-15,Bouteloua curtipendula,38
+Lux_23_2025,Lux_23,1,2025-07-15,Centaurea stoebe,15
+Lux_23_2025,Lux_23,1,2025-07-15,Fallopia convolvulus,0.1
+Lux_23_2025,Lux_23,1,2025-07-15,Oxalis stricta,0.01
+Lux_23_2025,Lux_23,1,2025-07-15,Panicum virgatum,1
+Lux_23_2025,Lux_23,1,2025-07-15,Poa pratensis,0.4
+Lux_23_2025,Lux_23,25,2025-07-15,Asclepias tuberosa,NA
+Lux_23_2025,Lux_23,25,2025-07-15,Erigeron,NA
+Lux_23_2025,Lux_23,25,2025-07-15,Lespedeza virginica,NA
+Lux_23_2025,Lux_23,25,2025-07-15,Ratibida pinnata,NA
+Lux_23_2025,Lux_23,25,2025-07-15,Rumex acetosella,NA
+Lux_23_2025,Lux_23,25,2025-07-15,Symphyotrichum pilosum,NA
 Lux_24_2014,Lux_24,seeded,2014-09-01,Andropogon gerardii,1
 Lux_24_2014,Lux_24,seeded,2014-09-01,Asclepias syriaca,0.49
 Lux_24_2014,Lux_24,seeded,2014-09-01,Asclepias tuberosa,0.48
@@ -2192,6 +2455,20 @@ Lux_24_2019,Lux_24,25,2019-07-24,Panicum virgatum,NA
 Lux_24_2019,Lux_24,25,2019-07-24,Phytolacca heterotepala,NA
 Lux_24_2019,Lux_24,25,2019-07-24,Schizachyrium scoparium,NA
 Lux_24_2019,Lux_24,25,2019-07-24,Solidago rigida,NA
+Lux_24_2025,Lux_24,1,2025-07-15,Bouteloua curtipendula,5
+Lux_24_2025,Lux_24,1,2025-07-15,Bromus inermis,9
+Lux_24_2025,Lux_24,1,2025-07-15,Centaurea stoebe,12
+Lux_24_2025,Lux_24,1,2025-07-15,Elymus repens,0.6
+Lux_24_2025,Lux_24,1,2025-07-15,Monarda fistulosa,3
+Lux_24_2025,Lux_24,1,2025-07-15,Poa pratensis,3
+Lux_24_2025,Lux_24,1,2025-07-15,Ratibida pinnata,1
+Lux_24_2025,Lux_24,1,2025-07-15,Schizachyrium scoparium,19
+Lux_24_2025,Lux_24,25,2025-07-15,Achillea millefolium,NA
+Lux_24_2025,Lux_24,25,2025-07-15,Andropogon gerardii,NA
+Lux_24_2025,Lux_24,25,2025-07-15,Erigeron,NA
+Lux_24_2025,Lux_24,25,2025-07-15,Panicum virgatum,NA
+Lux_24_2025,Lux_24,25,2025-07-15,Physalis,NA
+Lux_24_2025,Lux_24,25,2025-07-15,Verbena,NA
 Lux_25_2014,Lux_25,seeded,2014-09-01,Andropogon gerardii,1
 Lux_25_2014,Lux_25,seeded,2014-09-01,Bouteloua curtipendula,1
 Lux_25_2014,Lux_25,seeded,2014-09-01,Coreopsis lanceolata,0.74
@@ -2317,6 +2594,28 @@ Lux_25_2019,Lux_25,25,2019-07-24,Schizachyrium scoparium,NA
 Lux_25_2019,Lux_25,25,2019-07-24,Solidago canadensis,NA
 Lux_25_2019,Lux_25,25,2019-07-24,Sorghastrum nutans,NA
 Lux_25_2019,Lux_25,25,2019-07-24,Symphyotrichum pilosum,NA
+Lux_25_2025,Lux_25,1,2025-07-15,Andropogon gerardii,4
+Lux_25_2025,Lux_25,1,2025-07-15,Bouteloua curtipendula,15
+Lux_25_2025,Lux_25,1,2025-07-15,Bromus inermis,3
+Lux_25_2025,Lux_25,1,2025-07-15,Centaurea stoebe,0.4
+Lux_25_2025,Lux_25,1,2025-07-15,Digitaria,0.5
+Lux_25_2025,Lux_25,1,2025-07-15,Euthamia graminifolia,2
+Lux_25_2025,Lux_25,1,2025-07-15,Monarda fistulosa,20
+Lux_25_2025,Lux_25,1,2025-07-15,Oxalis stricta,0.8
+Lux_25_2025,Lux_25,1,2025-07-15,Panicum virgatum,2
+Lux_25_2025,Lux_25,1,2025-07-15,Poa pratensis,50
+Lux_25_2025,Lux_25,1,2025-07-15,Solanum carolinense,0.4
+Lux_25_2025,Lux_25,1,2025-07-15,Solidago altissima,3
+Lux_25_2025,Lux_25,1,2025-07-15,Symphyotrichum pilosum,2
+Lux_25_2025,Lux_25,25,2025-07-15,Achillea millefolium,NA
+Lux_25_2025,Lux_25,25,2025-07-15,Agrostis gigantea,NA
+Lux_25_2025,Lux_25,25,2025-07-15,Elaeagnus umbellata,NA
+Lux_25_2025,Lux_25,25,2025-07-15,Eria,NA
+Lux_25_2025,Lux_25,25,2025-07-15,Morus alba,NA
+Lux_25_2025,Lux_25,25,2025-07-15,Ratibida pinnata,NA
+Lux_25_2025,Lux_25,25,2025-07-15,Rubus flagellaris,NA
+Lux_25_2025,Lux_25,25,2025-07-15,Schizachyrium scoparium,NA
+Lux_25_2025,Lux_25,25,2025-07-15,Sorghastrum nutans,NA
 Lux_26_2014,Lux_26,seeded,2014-09-01,Andropogon gerardii,1
 Lux_26_2014,Lux_26,seeded,2014-09-01,Asclepias syriaca,0.27
 Lux_26_2014,Lux_26,seeded,2014-09-01,Asclepias tuberosa,0.26
@@ -2512,6 +2811,31 @@ Lux_26_2019,Lux_26,25,2019-07-24,Symphyotrichum ericoides,NA
 Lux_26_2019,Lux_26,25,2019-07-24,Symphyotrichum pilosum,NA
 Lux_26_2019,Lux_26,25,2019-07-24,Toxicodendron radicans,NA
 Lux_26_2019,Lux_26,25,2019-07-24,NA,NA
+Lux_26_2025,Lux_26,1,2025-07-15,Achillea millefolium,0.4
+Lux_26_2025,Lux_26,1,2025-07-15,Bouteloua curtipendula,1
+Lux_26_2025,Lux_26,1,2025-07-15,Desmodium illinoense,1
+Lux_26_2025,Lux_26,1,2025-07-15,Euthamia graminifolia,0.7
+Lux_26_2025,Lux_26,1,2025-07-15,Lespedeza virginica,1
+Lux_26_2025,Lux_26,1,2025-07-15,Monarda fistulosa,0.8
+Lux_26_2025,Lux_26,1,2025-07-15,Penstemon digitalis,0.4
+Lux_26_2025,Lux_26,1,2025-07-15,Poa pratensis,10
+Lux_26_2025,Lux_26,1,2025-07-15,Ratibida pinnata,4
+Lux_26_2025,Lux_26,1,2025-07-15,Rubus flagellaris,35
+Lux_26_2025,Lux_26,1,2025-07-15,Schizachyrium scoparium,18
+Lux_26_2025,Lux_26,1,2025-07-15,Solidago altissima,12
+Lux_26_2025,Lux_26,1,2025-07-15,Solidago speciosa,0.3
+Lux_26_2025,Lux_26,1,2025-07-15,Sorghastrum nutans,20
+Lux_26_2025,Lux_26,25,2025-07-15,Andropogon gerardii,NA
+Lux_26_2025,Lux_26,25,2025-07-15,Bromus inermis,NA
+Lux_26_2025,Lux_26,25,2025-07-15,Helianthus occidentalis,NA
+Lux_26_2025,Lux_26,25,2025-07-15,Hypericum perforatum,NA
+Lux_26_2025,Lux_26,25,2025-07-15,Juncus tenuis,NA
+Lux_26_2025,Lux_26,25,2025-07-15,Panicum virgatum,NA
+Lux_26_2025,Lux_26,25,2025-07-15,Plantago lanceolata,NA
+Lux_26_2025,Lux_26,25,2025-07-15,Solidago rigida,NA
+Lux_26_2025,Lux_26,25,2025-07-15,Symphyotrichum ericoides,NA
+Lux_26_2025,Lux_26,25,2025-07-15,Symphyotrichum pilosum,NA
+Lux_26_2025,Lux_26,25,2025-07-15,Trifolium dubium,NA
 Lux_27_2014,Lux_27,seeded,2014-09-01,Andropogon gerardii,1
 Lux_27_2014,Lux_27,seeded,2014-09-01,Bouteloua curtipendula,1
 Lux_27_2014,Lux_27,seeded,2014-09-01,Coreopsis lanceolata,1.49
@@ -2612,6 +2936,23 @@ Lux_27_2019,Lux_27,25,2019-07-24,Rudbeckia hirta,NA
 Lux_27_2019,Lux_27,25,2019-07-24,Solidago canadensis,NA
 Lux_27_2019,Lux_27,25,2019-07-24,Sorghastrum nutans,NA
 Lux_27_2019,Lux_27,25,2019-07-24,Symphyotrichum pilosum,NA
+Lux_27_2025,Lux_27,1,2025-07-15,Achillea millefolium,6
+Lux_27_2025,Lux_27,1,2025-07-15,Agrostis gigantea,0.5
+Lux_27_2025,Lux_27,1,2025-07-15,Andropogon gerardii,8
+Lux_27_2025,Lux_27,1,2025-07-15,Bouteloua curtipendula,4
+Lux_27_2025,Lux_27,1,2025-07-15,Bromus inermis,3
+Lux_27_2025,Lux_27,1,2025-07-15,Panicum virgatum,4
+Lux_27_2025,Lux_27,1,2025-07-15,Plantago lanceolata,0.6
+Lux_27_2025,Lux_27,1,2025-07-15,Poa pratensis,6
+Lux_27_2025,Lux_27,1,2025-07-15,Potentilla recta,1
+Lux_27_2025,Lux_27,1,2025-07-15,Rubus flagellaris,35
+Lux_27_2025,Lux_27,1,2025-07-15,Schizachyrium scoparium,35
+Lux_27_2025,Lux_27,1,2025-07-15,Sorghastrum nutans,4
+Lux_27_2025,Lux_27,25,2025-07-15,Eria,NA
+Lux_27_2025,Lux_27,25,2025-07-15,Euthamia graminifolia,NA
+Lux_27_2025,Lux_27,25,2025-07-15,Hypericum perforatum,NA
+Lux_27_2025,Lux_27,25,2025-07-15,Ratibida pinnata,NA
+Lux_27_2025,Lux_27,25,2025-07-15,Solidago altissima,NA
 Lux_28_2014,Lux_28,seeded,2014-09-01,Andropogon gerardii,1
 Lux_28_2014,Lux_28,seeded,2014-09-01,Bouteloua curtipendula,1
 Lux_28_2014,Lux_28,seeded,2014-09-01,Coreopsis lanceolata,0.74
@@ -2750,6 +3091,29 @@ Lux_28_2019,Lux_28,25,2019-07-24,Lespedeza capitata,NA
 Lux_28_2019,Lux_28,25,2019-07-24,Panicum virgatum,NA
 Lux_28_2019,Lux_28,25,2019-07-24,Solidago canadensis,NA
 Lux_28_2019,Lux_28,25,2019-07-24,Verbena stricta,NA
+Lux_28_2025,Lux_28,1,2025-07-15,Achillea millefolium,3
+Lux_28_2025,Lux_28,1,2025-07-15,Agrostis gigantea,0.3
+Lux_28_2025,Lux_28,1,2025-07-15,Andropogon gerardii,6
+Lux_28_2025,Lux_28,1,2025-07-15,Bouteloua curtipendula,8
+Lux_28_2025,Lux_28,1,2025-07-15,Eria,0.3
+Lux_28_2025,Lux_28,1,2025-07-15,Lespedeza virginica,6
+Lux_28_2025,Lux_28,1,2025-07-15,Panicum virgatum,3
+Lux_28_2025,Lux_28,1,2025-07-15,Plantago lanceolata,0.7
+Lux_28_2025,Lux_28,1,2025-07-15,Poa pratensis,5
+Lux_28_2025,Lux_28,1,2025-07-15,Ratibida pinnata,8
+Lux_28_2025,Lux_28,1,2025-07-15,Schizachyrium scoparium,45
+Lux_28_2025,Lux_28,1,2025-07-15,Sorghastrum nutans,15
+Lux_28_2025,Lux_28,1,2025-07-15,Symphyotrichum pilosum,0.4
+Lux_28_2025,Lux_28,25,2025-07-15,Bromus inermis,NA
+Lux_28_2025,Lux_28,25,2025-07-15,Centaurea stoebe,NA
+Lux_28_2025,Lux_28,25,2025-07-15,Digitaria,NA
+Lux_28_2025,Lux_28,25,2025-07-15,Drymocallis arguta,NA
+Lux_28_2025,Lux_28,25,2025-07-15,Echinacea purpurea,NA
+Lux_28_2025,Lux_28,25,2025-07-15,Hypericum perforatum,NA
+Lux_28_2025,Lux_28,25,2025-07-15,Juncus tenuis,NA
+Lux_28_2025,Lux_28,25,2025-07-15,Lespedeza capitata,NA
+Lux_28_2025,Lux_28,25,2025-07-15,Malus,NA
+Lux_28_2025,Lux_28,25,2025-07-15,Penstemon digitalis,NA
 Lux_29_2014,Lux_29,seeded,2014-09-01,Andropogon gerardii,1
 Lux_29_2014,Lux_29,seeded,2014-09-01,Asclepias syriaca,0.49
 Lux_29_2014,Lux_29,seeded,2014-09-01,Asclepias tuberosa,0.48
@@ -2844,6 +3208,18 @@ Lux_29_2019,Lux_29,25,2019-07-24,Panicum capillare,NA
 Lux_29_2019,Lux_29,25,2019-07-24,Panicum virgatum,NA
 Lux_29_2019,Lux_29,25,2019-07-24,Turritis glabra,NA
 Lux_29_2019,Lux_29,25,2019-07-24,Verbascum thapsus,NA
+Lux_29_2025,Lux_29,1,2025-07-15,Achillea millefolium,0.4
+Lux_29_2025,Lux_29,1,2025-07-15,Andropogon gerardii,6
+Lux_29_2025,Lux_29,1,2025-07-15,Bouteloua curtipendula,10
+Lux_29_2025,Lux_29,1,2025-07-15,Centaurea stoebe,15
+Lux_29_2025,Lux_29,1,2025-07-15,Eria,0.8
+Lux_29_2025,Lux_29,1,2025-07-15,Poa pratensis,6
+Lux_29_2025,Lux_29,1,2025-07-15,Rumex acetosella,0.5
+Lux_29_2025,Lux_29,1,2025-07-15,Schizachyrium scoparium,50
+Lux_29_2025,Lux_29,25,2025-07-15,Bromus inermis,NA
+Lux_29_2025,Lux_29,25,2025-07-15,Panicum virgatum,NA
+Lux_29_2025,Lux_29,25,2025-07-15,Sorghastrum nutans,NA
+Lux_29_2025,Lux_29,25,2025-07-15,Verbascum thapsus,NA
 Lux_3_2014,Lux_3,seeded,2014-09-01,Andropogon gerardii,1
 Lux_3_2014,Lux_3,seeded,2014-09-01,Asclepias syriaca,0.27
 Lux_3_2014,Lux_3,seeded,2014-09-01,Asclepias tuberosa,0.26
@@ -3002,6 +3378,34 @@ Lux_3_2019,Lux_3,25,2019-07-24,Solidago speciosa,NA
 Lux_3_2019,Lux_3,25,2019-07-24,Verbena stricta,NA
 Lux_3_2019,Lux_3,25,2019-07-24,Verbena urticifolia,NA
 Lux_3_2019,Lux_3,25,2019-07-24,NA,NA
+Lux_3_2025,Lux_3,1,2025-07-15,Achillea millefolium,4
+Lux_3_2025,Lux_3,1,2025-07-15,Agrostis gigantea,4
+Lux_3_2025,Lux_3,1,2025-07-15,Bouteloua curtipendula,1
+Lux_3_2025,Lux_3,1,2025-07-15,Centaurea stoebe,3
+Lux_3_2025,Lux_3,1,2025-07-15,Elymus repens,15
+Lux_3_2025,Lux_3,1,2025-07-15,Monarda fistulosa,15
+Lux_3_2025,Lux_3,1,2025-07-15,Oxalis stricta,0.2
+Lux_3_2025,Lux_3,1,2025-07-15,Panicum virgatum,8
+Lux_3_2025,Lux_3,1,2025-07-15,Plantago lanceolata,2
+Lux_3_2025,Lux_3,1,2025-07-15,Poa pratensis,3
+Lux_3_2025,Lux_3,1,2025-07-15,Ratibida pinnata,20
+Lux_3_2025,Lux_3,1,2025-07-15,Rumex acetosella,0.1
+Lux_3_2025,Lux_3,1,2025-07-15,Schizachyrium scoparium,3
+Lux_3_2025,Lux_3,1,2025-07-15,Sorghastrum nutans,15
+Lux_3_2025,Lux_3,1,2025-07-15,Symphyotrichum pilosum,2
+Lux_3_2025,Lux_3,25,2025-07-15,Asclepias tuberosa,NA
+Lux_3_2025,Lux_3,25,2025-07-15,Bromus inermis,NA
+Lux_3_2025,Lux_3,25,2025-07-15,Drymocallis arguta,NA
+Lux_3_2025,Lux_3,25,2025-07-15,Euthamia graminifolia,NA
+Lux_3_2025,Lux_3,25,2025-07-15,Helianthus occidentalis,NA
+Lux_3_2025,Lux_3,25,2025-07-15,Hypericum perforatum,NA
+Lux_3_2025,Lux_3,25,2025-07-15,Penstemon digitalis,NA
+Lux_3_2025,Lux_3,25,2025-07-15,Penstemon hirsutus,NA
+Lux_3_2025,Lux_3,25,2025-07-15,Phleum pratense,NA
+Lux_3_2025,Lux_3,25,2025-07-15,Potentilla recta,NA
+Lux_3_2025,Lux_3,25,2025-07-15,Solidago rigida,NA
+Lux_3_2025,Lux_3,25,2025-07-15,Solidago speciosa,NA
+Lux_3_2025,Lux_3,25,2025-07-15,Verbena stricta,NA
 Lux_30_2015,Lux_30,1,2015-09-16,Bromus inermis,0.1
 Lux_30_2015,Lux_30,1,2015-09-16,Centaurea stoebe,25
 Lux_30_2015,Lux_30,1,2015-09-16,Digitaria,5
@@ -3076,6 +3480,18 @@ Lux_30_2019,Lux_30,25,2019-07-24,Erigeron,NA
 Lux_30_2019,Lux_30,25,2019-07-24,Hypericum perforatum,NA
 Lux_30_2019,Lux_30,25,2019-07-24,Panicum virgatum,NA
 Lux_30_2019,Lux_30,25,2019-07-24,Solanum carolinense,NA
+Lux_30_2025,Lux_30,1,2025-07-15,Achillea millefolium,1
+Lux_30_2025,Lux_30,1,2025-07-15,Andropogon gerardii,4
+Lux_30_2025,Lux_30,1,2025-07-15,Bouteloua curtipendula,8
+Lux_30_2025,Lux_30,1,2025-07-15,Centaurea stoebe,0.8
+Lux_30_2025,Lux_30,1,2025-07-15,Panicum virgatum,15
+Lux_30_2025,Lux_30,1,2025-07-15,Poa pratensis,4
+Lux_30_2025,Lux_30,1,2025-07-15,Schizachyrium scoparium,60
+Lux_30_2025,Lux_30,1,2025-07-15,Sorghastrum nutans,5
+Lux_30_2025,Lux_30,25,2025-07-15,Bromus inermis,NA
+Lux_30_2025,Lux_30,25,2025-07-15,Eria,NA
+Lux_30_2025,Lux_30,25,2025-07-15,Turritis glabra,NA
+Lux_30_2025,Lux_30,25,2025-07-15,Verbena stricta,NA
 Lux_31_2014,Lux_31,seeded,2014-09-01,Andropogon gerardii,1
 Lux_31_2014,Lux_31,seeded,2014-09-01,Bouteloua curtipendula,1
 Lux_31_2014,Lux_31,seeded,2014-09-01,Coreopsis lanceolata,0.74
@@ -3250,6 +3666,25 @@ Lux_31_2019,Lux_31,25,2019-07-24,Solidago canadensis,NA
 Lux_31_2019,Lux_31,25,2019-07-24,Sorghastrum nutans,NA
 Lux_31_2019,Lux_31,25,2019-07-24,Verbena stricta,NA
 Lux_31_2019,Lux_31,25,2019-07-24,Vitis,NA
+Lux_31_2025,Lux_31,1,2025-07-15,Achillea millefolium,2
+Lux_31_2025,Lux_31,1,2025-07-15,Bouteloua curtipendula,21
+Lux_31_2025,Lux_31,1,2025-07-15,Bromus inermis,3
+Lux_31_2025,Lux_31,1,2025-07-15,Euthamia graminifolia,0.5
+Lux_31_2025,Lux_31,1,2025-07-15,Lespedeza capitata,9
+Lux_31_2025,Lux_31,1,2025-07-15,Ratibida pinnata,13
+Lux_31_2025,Lux_31,1,2025-07-15,Rubus flagellaris,12
+Lux_31_2025,Lux_31,1,2025-07-15,Schizachyrium scoparium,9
+Lux_31_2025,Lux_31,1,2025-07-15,Sorghastrum nutans,19
+Lux_31_2025,Lux_31,25,2025-07-15,Andropogon gerardii,NA
+Lux_31_2025,Lux_31,25,2025-07-15,Centaurea stoebe,NA
+Lux_31_2025,Lux_31,25,2025-07-15,Drymocallis arguta,NA
+Lux_31_2025,Lux_31,25,2025-07-15,Erigeron,NA
+Lux_31_2025,Lux_31,25,2025-07-15,Hypericum perforatum,NA
+Lux_31_2025,Lux_31,25,2025-07-15,Monarda fistulosa,NA
+Lux_31_2025,Lux_31,25,2025-07-15,Panicum virgatum,NA
+Lux_31_2025,Lux_31,25,2025-07-15,Plantago lanceolata,NA
+Lux_31_2025,Lux_31,25,2025-07-15,Poa pratensis,NA
+Lux_31_2025,Lux_31,25,2025-07-15,Solidago altissima,NA
 Lux_32_2014,Lux_32,seeded,2014-09-01,Andropogon gerardii,1
 Lux_32_2014,Lux_32,seeded,2014-09-01,Bouteloua curtipendula,1
 Lux_32_2014,Lux_32,seeded,2014-09-01,Coreopsis lanceolata,1.49
@@ -3381,6 +3816,23 @@ Lux_32_2019,Lux_32,25,2019-07-24,Morus alba,NA
 Lux_32_2019,Lux_32,25,2019-07-24,Phytolacca heterotepala,NA
 Lux_32_2019,Lux_32,25,2019-07-24,Rubus flagellaris,NA
 Lux_32_2019,Lux_32,25,2019-07-24,Solidago canadensis,NA
+Lux_32_2025,Lux_32,1,2025-07-15,Achillea millefolium,2
+Lux_32_2025,Lux_32,1,2025-07-15,Andropogon gerardii,14
+Lux_32_2025,Lux_32,1,2025-07-15,Juncus tenuis,0.4
+Lux_32_2025,Lux_32,1,2025-07-15,Panicum,4
+Lux_32_2025,Lux_32,1,2025-07-15,Panicum virgatum,8
+Lux_32_2025,Lux_32,1,2025-07-15,Plantago lanceolata,1
+Lux_32_2025,Lux_32,1,2025-07-15,Poa pratensis,11
+Lux_32_2025,Lux_32,1,2025-07-15,Ratibida pinnata,4
+Lux_32_2025,Lux_32,1,2025-07-15,Rubus flagellaris,17
+Lux_32_2025,Lux_32,1,2025-07-15,Schizachyrium scoparium,15
+Lux_32_2025,Lux_32,25,2025-07-15,Betula,NA
+Lux_32_2025,Lux_32,25,2025-07-15,Bouteloua curtipendula,NA
+Lux_32_2025,Lux_32,25,2025-07-15,Centaurea stoebe,NA
+Lux_32_2025,Lux_32,25,2025-07-15,Elaeagnus umbellata,NA
+Lux_32_2025,Lux_32,25,2025-07-15,Monarda fistulosa,NA
+Lux_32_2025,Lux_32,25,2025-07-15,Solidago altissima,NA
+Lux_32_2025,Lux_32,25,2025-07-15,Symphyotrichum ericoides,NA
 Lux_33_2014,Lux_33,seeded,2014-09-01,Andropogon gerardii,1
 Lux_33_2014,Lux_33,seeded,2014-09-01,Asclepias syriaca,0.49
 Lux_33_2014,Lux_33,seeded,2014-09-01,Asclepias tuberosa,0.48
@@ -3563,6 +4015,21 @@ Lux_33_2019,Lux_33,25,2019-07-24,Euthamia graminifolia,NA
 Lux_33_2019,Lux_33,25,2019-07-24,Festuca rubra,NA
 Lux_33_2019,Lux_33,25,2019-07-24,Panicum virgatum,NA
 Lux_33_2019,Lux_33,25,2019-07-24,Sorghastrum nutans,NA
+Lux_33_2025,Lux_33,1,2025-07-18,Achillea millefolium,3
+Lux_33_2025,Lux_33,1,2025-07-18,Andropogon gerardii,70
+Lux_33_2025,Lux_33,1,2025-07-18,Bouteloua curtipendula,6
+Lux_33_2025,Lux_33,1,2025-07-18,Lespedeza capitata,1
+Lux_33_2025,Lux_33,1,2025-07-18,Lespedeza virginica,9
+Lux_33_2025,Lux_33,1,2025-07-18,Monarda fistulosa,2
+Lux_33_2025,Lux_33,1,2025-07-18,Poa pratensis,3
+Lux_33_2025,Lux_33,1,2025-07-18,Ratibida pinnata,7
+Lux_33_2025,Lux_33,1,2025-07-18,Rubus flagellaris,5
+Lux_33_2025,Lux_33,1,2025-07-18,Solidago rigida,2
+Lux_33_2025,Lux_33,25,2025-07-18,Centaurea stoebe,NA
+Lux_33_2025,Lux_33,25,2025-07-18,Erigeron,NA
+Lux_33_2025,Lux_33,25,2025-07-18,Panicum virgatum,NA
+Lux_33_2025,Lux_33,25,2025-07-18,Schizachyrium scoparium,NA
+Lux_33_2025,Lux_33,25,2025-07-18,Sorghastrum nutans,NA
 Lux_34_2014,Lux_34,seeded,2014-09-01,Andropogon gerardii,1
 Lux_34_2014,Lux_34,seeded,2014-09-01,Asclepias syriaca,0.27
 Lux_34_2014,Lux_34,seeded,2014-09-01,Asclepias tuberosa,0.26
@@ -3716,6 +4183,24 @@ Lux_34_2019,Lux_34,25,2019-07-24,Ratibida pinnata,NA
 Lux_34_2019,Lux_34,25,2019-07-24,Rudbeckia hirta,NA
 Lux_34_2019,Lux_34,25,2019-07-24,Sorghastrum nutans,NA
 Lux_34_2019,Lux_34,25,2019-07-24,Symphyotrichum pilosum,NA
+Lux_34_2025,Lux_34,1,2025-07-18,Achillea millefolium,2
+Lux_34_2025,Lux_34,1,2025-07-18,Andropogon gerardii,23
+Lux_34_2025,Lux_34,1,2025-07-18,Bouteloua curtipendula,3
+Lux_34_2025,Lux_34,1,2025-07-18,Bromus inermis,0.7
+Lux_34_2025,Lux_34,1,2025-07-18,Monarda fistulosa,0.4
+Lux_34_2025,Lux_34,1,2025-07-18,Poa pratensis,4
+Lux_34_2025,Lux_34,1,2025-07-18,Schizachyrium scoparium,54
+Lux_34_2025,Lux_34,1,2025-07-18,Sorghastrum nutans,2
+Lux_34_2025,Lux_34,25,2025-07-18,Centaurea stoebe,NA
+Lux_34_2025,Lux_34,25,2025-07-18,Desmodium illinoense,NA
+Lux_34_2025,Lux_34,25,2025-07-18,Erigeron,NA
+Lux_34_2025,Lux_34,25,2025-07-18,Helianthus occidentalis,NA
+Lux_34_2025,Lux_34,25,2025-07-18,Lespedeza capitata,NA
+Lux_34_2025,Lux_34,25,2025-07-18,Lespedeza virginica,NA
+Lux_34_2025,Lux_34,25,2025-07-18,Panicum virgatum,NA
+Lux_34_2025,Lux_34,25,2025-07-18,Ratibida pinnata,NA
+Lux_34_2025,Lux_34,25,2025-07-18,Rubus flagellaris,NA
+Lux_34_2025,Lux_34,25,2025-07-18,Solidago altissima,NA
 Lux_35_2014,Lux_35,seeded,2014-09-01,Andropogon gerardii,1
 Lux_35_2014,Lux_35,seeded,2014-09-01,Asclepias syriaca,0.27
 Lux_35_2014,Lux_35,seeded,2014-09-01,Asclepias tuberosa,0.26
@@ -3886,6 +4371,24 @@ Lux_35_2019,Lux_35,25,2019-07-24,Solidago canadensis,NA
 Lux_35_2019,Lux_35,25,2019-07-24,Solidago rigida,NA
 Lux_35_2019,Lux_35,25,2019-07-24,Sorghastrum nutans,NA
 Lux_35_2019,Lux_35,25,2019-07-24,Zizia aptera,NA
+Lux_35_2025,Lux_35,1,2025-07-18,Achillea millefolium,3
+Lux_35_2025,Lux_35,1,2025-07-18,Andropogon gerardii,36
+Lux_35_2025,Lux_35,1,2025-07-18,Bouteloua curtipendula,42
+Lux_35_2025,Lux_35,1,2025-07-18,Centaurea stoebe,2
+Lux_35_2025,Lux_35,1,2025-07-18,Lespedeza virginica,2
+Lux_35_2025,Lux_35,1,2025-07-18,Oxalis stricta,0.1
+Lux_35_2025,Lux_35,1,2025-07-18,Panicum virgatum,0.5
+Lux_35_2025,Lux_35,1,2025-07-18,Plantago lanceolata,0.3
+Lux_35_2025,Lux_35,1,2025-07-18,Poa pratensis,8
+Lux_35_2025,Lux_35,25,2025-07-18,Bromus inermis,NA
+Lux_35_2025,Lux_35,25,2025-07-18,Desmodium illinoense,NA
+Lux_35_2025,Lux_35,25,2025-07-18,Erigeron,NA
+Lux_35_2025,Lux_35,25,2025-07-18,Lespedeza capitata,NA
+Lux_35_2025,Lux_35,25,2025-07-18,Monarda fistulosa,NA
+Lux_35_2025,Lux_35,25,2025-07-18,Penstemon digitalis,NA
+Lux_35_2025,Lux_35,25,2025-07-18,Ratibida pinnata,NA
+Lux_35_2025,Lux_35,25,2025-07-18,Schizachyrium scoparium,NA
+Lux_35_2025,Lux_35,25,2025-07-18,Solidago altissima,NA
 Lux_36_2014,Lux_36,seeded,2014-09-01,Andropogon gerardii,1
 Lux_36_2014,Lux_36,seeded,2014-09-01,Bouteloua curtipendula,1
 Lux_36_2014,Lux_36,seeded,2014-09-01,Coreopsis lanceolata,1.49
@@ -4014,6 +4517,21 @@ Lux_36_2019,Lux_36,25,2019-07-24,Schizachyrium scoparium,NA
 Lux_36_2019,Lux_36,25,2019-07-24,Solanum carolinense,NA
 Lux_36_2019,Lux_36,25,2019-07-24,Sorghastrum nutans,NA
 Lux_36_2019,Lux_36,25,2019-07-24,Symphyotrichum pilosum,NA
+Lux_36_2025,Lux_36,1,2025-07-18,Achillea millefolium,2
+Lux_36_2025,Lux_36,1,2025-07-18,Andropogon gerardii,23
+Lux_36_2025,Lux_36,1,2025-07-18,Bouteloua curtipendula,30
+Lux_36_2025,Lux_36,1,2025-07-18,Centaurea stoebe,0.6
+Lux_36_2025,Lux_36,1,2025-07-18,Poa pratensis,7
+Lux_36_2025,Lux_36,1,2025-07-18,Ratibida pinnata,9
+Lux_36_2025,Lux_36,1,2025-07-18,Schizachyrium scoparium,17
+Lux_36_2025,Lux_36,25,2025-07-18,Bromus inermis,NA
+Lux_36_2025,Lux_36,25,2025-07-18,Desmodium illinoense,NA
+Lux_36_2025,Lux_36,25,2025-07-18,Erigeron,NA
+Lux_36_2025,Lux_36,25,2025-07-18,Hypericum perforatum,NA
+Lux_36_2025,Lux_36,25,2025-07-18,Monarda fistulosa,NA
+Lux_36_2025,Lux_36,25,2025-07-18,Panax,NA
+Lux_36_2025,Lux_36,25,2025-07-18,Solidago altissima,NA
+Lux_36_2025,Lux_36,25,2025-07-18,Sorghastrum nutans,NA
 Lux_37_2014,Lux_37,seeded,2014-09-01,Andropogon gerardii,1
 Lux_37_2014,Lux_37,seeded,2014-09-01,Bouteloua curtipendula,1
 Lux_37_2014,Lux_37,seeded,2014-09-01,Coreopsis lanceolata,1.49
@@ -4113,6 +4631,23 @@ Lux_37_2019,Lux_37,25,2019-07-24,Malus,NA
 Lux_37_2019,Lux_37,25,2019-07-24,Monarda fistulosa,NA
 Lux_37_2019,Lux_37,25,2019-07-24,Rubus flagellaris,NA
 Lux_37_2019,Lux_37,25,2019-07-24,Symphyotrichum pilosum,NA
+Lux_37_2025,Lux_37,1,2025-07-15,Bouteloua curtipendula,25
+Lux_37_2025,Lux_37,1,2025-07-15,Centaurea stoebe,0.7
+Lux_37_2025,Lux_37,1,2025-07-15,Digitaria,0.4
+Lux_37_2025,Lux_37,1,2025-07-15,Elymus repens,0.3
+Lux_37_2025,Lux_37,1,2025-07-15,Eria,0.7
+Lux_37_2025,Lux_37,1,2025-07-15,Panicum virgatum,8
+Lux_37_2025,Lux_37,1,2025-07-15,Plantago lanceolata,1
+Lux_37_2025,Lux_37,1,2025-07-15,Poa pratensis,12
+Lux_37_2025,Lux_37,1,2025-07-15,Schizachyrium scoparium,35
+Lux_37_2025,Lux_37,1,2025-07-15,Sorghastrum nutans,3
+Lux_37_2025,Lux_37,1,2025-07-15,Xylosma,0.1
+Lux_37_2025,Lux_37,25,2025-07-15,Andropogon gerardii,NA
+Lux_37_2025,Lux_37,25,2025-07-15,Asclepias syriaca,NA
+Lux_37_2025,Lux_37,25,2025-07-15,Hypericum perforatum,NA
+Lux_37_2025,Lux_37,25,2025-07-15,Ratibida pinnata,NA
+Lux_37_2025,Lux_37,25,2025-07-15,Rubus flagellaris,NA
+Lux_37_2025,Lux_37,25,2025-07-15,Solidago altissima,NA
 Lux_38_2014,Lux_38,seeded,2014-09-01,Andropogon gerardii,1
 Lux_38_2014,Lux_38,seeded,2014-09-01,Asclepias syriaca,0.27
 Lux_38_2014,Lux_38,seeded,2014-09-01,Asclepias tuberosa,0.26
@@ -4301,6 +4836,30 @@ Lux_38_2019,Lux_38,25,2019-07-24,Sorghastrum nutans,NA
 Lux_38_2019,Lux_38,25,2019-07-24,Symphyotrichum pilosum,NA
 Lux_38_2019,Lux_38,25,2019-07-24,Verbena stricta,NA
 Lux_38_2019,Lux_38,25,2019-07-24,NA,NA
+Lux_38_2025,Lux_38,1,2025-07-15,Achillea millefolium,2
+Lux_38_2025,Lux_38,1,2025-07-15,Bouteloua curtipendula,20
+Lux_38_2025,Lux_38,1,2025-07-15,Bromus inermis,0.4
+Lux_38_2025,Lux_38,1,2025-07-15,Centaurea stoebe,1
+Lux_38_2025,Lux_38,1,2025-07-15,Elymus repens,0.8
+Lux_38_2025,Lux_38,1,2025-07-15,Eria,0.5
+Lux_38_2025,Lux_38,1,2025-07-15,Poa pratensis,8
+Lux_38_2025,Lux_38,1,2025-07-15,Ratibida pinnata,3
+Lux_38_2025,Lux_38,1,2025-07-15,Schizachyrium scoparium,40
+Lux_38_2025,Lux_38,1,2025-07-15,Sorghastrum nutans,20
+Lux_38_2025,Lux_38,25,2025-07-15,Albertisia,NA
+Lux_38_2025,Lux_38,25,2025-07-15,Andropogon gerardii,NA
+Lux_38_2025,Lux_38,25,2025-07-15,Asclepias tuberosa,NA
+Lux_38_2025,Lux_38,25,2025-07-15,Baptisia alba var. macrophylla,NA
+Lux_38_2025,Lux_38,25,2025-07-15,Desmodium illinoense,NA
+Lux_38_2025,Lux_38,25,2025-07-15,Helianthus occidentalis,NA
+Lux_38_2025,Lux_38,25,2025-07-15,Lespedeza capitata,NA
+Lux_38_2025,Lux_38,25,2025-07-15,Lespedeza virginica,NA
+Lux_38_2025,Lux_38,25,2025-07-15,Monarda fistulosa,NA
+Lux_38_2025,Lux_38,25,2025-07-15,Panicum virgatum,NA
+Lux_38_2025,Lux_38,25,2025-07-15,Rubus flagellaris,NA
+Lux_38_2025,Lux_38,25,2025-07-15,Solidago rigida,NA
+Lux_38_2025,Lux_38,25,2025-07-15,Symphyotrichum ericoides,NA
+Lux_38_2025,Lux_38,25,2025-07-15,NA,NA
 Lux_39_2014,Lux_39,seeded,2014-09-01,Andropogon gerardii,1
 Lux_39_2014,Lux_39,seeded,2014-09-01,Bouteloua curtipendula,1
 Lux_39_2014,Lux_39,seeded,2014-09-01,Coreopsis lanceolata,1.49
@@ -4406,6 +4965,18 @@ Lux_39_2019,Lux_39,25,2019-07-24,Morus alba,NA
 Lux_39_2019,Lux_39,25,2019-07-24,Panicum virgatum,NA
 Lux_39_2019,Lux_39,25,2019-07-24,Solidago canadensis,NA
 Lux_39_2019,Lux_39,25,2019-07-24,Sorghastrum nutans,NA
+Lux_39_2025,Lux_39,1,2025-07-15,Achillea millefolium,0.6
+Lux_39_2025,Lux_39,1,2025-07-15,Bouteloua curtipendula,20
+Lux_39_2025,Lux_39,1,2025-07-15,Bromus inermis,2
+Lux_39_2025,Lux_39,1,2025-07-15,Centaurea stoebe,0.5
+Lux_39_2025,Lux_39,1,2025-07-15,Panicum virgatum,5
+Lux_39_2025,Lux_39,1,2025-07-15,Phytolacca heterotepala,0.8
+Lux_39_2025,Lux_39,1,2025-07-15,Poa pratensis,15
+Lux_39_2025,Lux_39,1,2025-07-15,Ratibida pinnata,0.8
+Lux_39_2025,Lux_39,1,2025-07-15,Schizachyrium scoparium,50
+Lux_39_2025,Lux_39,25,2025-07-15,Andropogon gerardii,NA
+Lux_39_2025,Lux_39,25,2025-07-15,Eria,NA
+Lux_39_2025,Lux_39,25,2025-07-15,Sorghastrum nutans,NA
 Lux_4_2015,Lux_4,1,2015-09-16,Achillea millefolium,2
 Lux_4_2015,Lux_4,1,2015-09-16,Centaurea stoebe,10
 Lux_4_2015,Lux_4,1,2015-09-16,Daucus carota,0.4
@@ -4482,6 +5053,30 @@ Lux_4_2019,Lux_4,25,2019-07-24,Festuca rubra,NA
 Lux_4_2019,Lux_4,25,2019-07-24,Solidago canadensis,NA
 Lux_4_2019,Lux_4,25,2019-07-24,Symphyotrichum pilosum,NA
 Lux_4_2019,Lux_4,25,2019-07-24,Verbena urticifolia,NA
+Lux_4_2025,Lux_4,1,2025-07-15,Achillea millefolium,0.8
+Lux_4_2025,Lux_4,1,2025-07-15,Andropogon gerardii,4
+Lux_4_2025,Lux_4,1,2025-07-15,Bouteloua curtipendula,5
+Lux_4_2025,Lux_4,1,2025-07-15,Centaurea stoebe,1
+Lux_4_2025,Lux_4,1,2025-07-15,Elymus repens,2
+Lux_4_2025,Lux_4,1,2025-07-15,Hypericum perforatum,0.5
+Lux_4_2025,Lux_4,1,2025-07-15,Juncus tenuis,0.4
+Lux_4_2025,Lux_4,1,2025-07-15,Oxalis stricta,0.2
+Lux_4_2025,Lux_4,1,2025-07-15,Plantago lanceolata,0.7
+Lux_4_2025,Lux_4,1,2025-07-15,Poa pratensis,3
+Lux_4_2025,Lux_4,1,2025-07-15,Rumex acetosella,0.2
+Lux_4_2025,Lux_4,1,2025-07-15,Schizachyrium scoparium,45
+Lux_4_2025,Lux_4,1,2025-07-15,Solidago altissima,2
+Lux_4_2025,Lux_4,1,2025-07-15,Sorghastrum nutans,30
+Lux_4_2025,Lux_4,1,2025-07-15,Symphyotrichum pilosum,2
+Lux_4_2025,Lux_4,1,2025-07-15,Trifolium repens,0.03
+Lux_4_2025,Lux_4,25,2025-07-15,Desmodium illinoense,NA
+Lux_4_2025,Lux_4,25,2025-07-15,Eria,NA
+Lux_4_2025,Lux_4,25,2025-07-15,Monarda fistulosa,NA
+Lux_4_2025,Lux_4,25,2025-07-15,Potentilla recta,NA
+Lux_4_2025,Lux_4,25,2025-07-15,Ratibida pinnata,NA
+Lux_4_2025,Lux_4,25,2025-07-15,Rubus flagellaris,NA
+Lux_4_2025,Lux_4,25,2025-07-15,Trifolium dubium,NA
+Lux_4_2025,Lux_4,25,2025-07-15,NA,NA
 Lux_40_2014,Lux_40,seeded,2014-09-01,Andropogon gerardii,1
 Lux_40_2014,Lux_40,seeded,2014-09-01,Asclepias syriaca,0.49
 Lux_40_2014,Lux_40,seeded,2014-09-01,Asclepias tuberosa,0.48
@@ -4581,6 +5176,17 @@ Lux_40_2019,Lux_40,25,2019-07-24,Erigeron,NA
 Lux_40_2019,Lux_40,25,2019-07-24,Erigeron canadensis,NA
 Lux_40_2019,Lux_40,25,2019-07-24,Solidago canadensis,NA
 Lux_40_2019,Lux_40,25,2019-07-24,Sorghastrum nutans,NA
+Lux_40_2025,Lux_40,1,2025-07-15,Andropogon gerardii,2
+Lux_40_2025,Lux_40,1,2025-07-15,Bouteloua curtipendula,5
+Lux_40_2025,Lux_40,1,2025-07-15,Centaurea stoebe,3
+Lux_40_2025,Lux_40,1,2025-07-15,Eria,0.8
+Lux_40_2025,Lux_40,1,2025-07-15,Panicum virgatum,4
+Lux_40_2025,Lux_40,1,2025-07-15,Poa pratensis,6
+Lux_40_2025,Lux_40,1,2025-07-15,Schizachyrium scoparium,65
+Lux_40_2025,Lux_40,1,2025-07-15,Solanum carolinense,0.4
+Lux_40_2025,Lux_40,25,2025-07-15,Achillea millefolium,NA
+Lux_40_2025,Lux_40,25,2025-07-15,Bromus inermis,NA
+Lux_40_2025,Lux_40,25,2025-07-15,Sorghastrum nutans,NA
 Lux_41_2015,Lux_41,1,2015-09-16,Achillea millefolium,3
 Lux_41_2015,Lux_41,1,2015-09-16,Centaurea stoebe,4
 Lux_41_2015,Lux_41,1,2015-09-16,Elymus,0.1
@@ -4676,6 +5282,21 @@ Lux_41_2019,Lux_41,25,2019-07-24,Ratibida pinnata,NA
 Lux_41_2019,Lux_41,25,2019-07-24,Solanum carolinense,NA
 Lux_41_2019,Lux_41,25,2019-07-24,Solidago canadensis,NA
 Lux_41_2019,Lux_41,25,2019-07-24,Sorghastrum nutans,NA
+Lux_41_2025,Lux_41,1,2025-07-15,Achillea millefolium,2
+Lux_41_2025,Lux_41,1,2025-07-15,Bouteloua curtipendula,5
+Lux_41_2025,Lux_41,1,2025-07-15,Poa pratensis,4
+Lux_41_2025,Lux_41,1,2025-07-15,Rubus flagellaris,5
+Lux_41_2025,Lux_41,1,2025-07-15,Schizachyrium scoparium,70
+Lux_41_2025,Lux_41,1,2025-07-15,Solidago altissima,6
+Lux_41_2025,Lux_41,1,2025-07-15,Sorghastrum nutans,8
+Lux_41_2025,Lux_41,25,2025-07-15,Andropogon gerardii,NA
+Lux_41_2025,Lux_41,25,2025-07-15,Bromus inermis,NA
+Lux_41_2025,Lux_41,25,2025-07-15,Centaurea stoebe,NA
+Lux_41_2025,Lux_41,25,2025-07-15,Eria,NA
+Lux_41_2025,Lux_41,25,2025-07-15,Monarda fistulosa,NA
+Lux_41_2025,Lux_41,25,2025-07-15,Panicum virgatum,NA
+Lux_41_2025,Lux_41,25,2025-07-15,Ratibida pinnata,NA
+Lux_41_2025,Lux_41,25,2025-07-15,Symphyotrichum pilosum,NA
 Lux_42_2014,Lux_42,seeded,2014-09-01,Andropogon gerardii,1
 Lux_42_2014,Lux_42,seeded,2014-09-01,Asclepias syriaca,0.27
 Lux_42_2014,Lux_42,seeded,2014-09-01,Asclepias tuberosa,0.26
@@ -4837,6 +5458,25 @@ Lux_42_2019,Lux_42,25,2019-07-24,Rudbeckia hirta,NA
 Lux_42_2019,Lux_42,25,2019-07-24,Sorghastrum nutans,NA
 Lux_42_2019,Lux_42,25,2019-07-24,Symphyotrichum pilosum,NA
 Lux_42_2019,Lux_42,25,2019-07-24,NA,NA
+Lux_42_2025,Lux_42,1,2025-07-15,Achillea millefolium,5
+Lux_42_2025,Lux_42,1,2025-07-15,Bouteloua curtipendula,3
+Lux_42_2025,Lux_42,1,2025-07-15,Bromus inermis,0.3
+Lux_42_2025,Lux_42,1,2025-07-15,Eria,0.4
+Lux_42_2025,Lux_42,1,2025-07-15,Hypericum perforatum,0.01
+Lux_42_2025,Lux_42,1,2025-07-15,Juncus tenuis,0.5
+Lux_42_2025,Lux_42,1,2025-07-15,Monarda fistulosa,1
+Lux_42_2025,Lux_42,1,2025-07-15,Plantago lanceolata,1
+Lux_42_2025,Lux_42,1,2025-07-15,Poa pratensis,5
+Lux_42_2025,Lux_42,1,2025-07-15,Rubus flagellaris,1
+Lux_42_2025,Lux_42,1,2025-07-15,Schizachyrium scoparium,60
+Lux_42_2025,Lux_42,1,2025-07-15,Solidago altissima,6
+Lux_42_2025,Lux_42,1,2025-07-15,Sorghastrum nutans,15
+Lux_42_2025,Lux_42,25,2025-07-15,Andropogon gerardii,NA
+Lux_42_2025,Lux_42,25,2025-07-15,Desmodium illinoense,NA
+Lux_42_2025,Lux_42,25,2025-07-15,Panicum virgatum,NA
+Lux_42_2025,Lux_42,25,2025-07-15,Penstemon digitalis,NA
+Lux_42_2025,Lux_42,25,2025-07-15,Phytolacca heterotepala,NA
+Lux_42_2025,Lux_42,25,2025-07-15,Ratibida pinnata,NA
 Lux_43_2014,Lux_43,seeded,2014-09-01,Andropogon gerardii,1
 Lux_43_2014,Lux_43,seeded,2014-09-01,Bouteloua curtipendula,1
 Lux_43_2014,Lux_43,seeded,2014-09-01,Coreopsis lanceolata,0.74
@@ -4952,6 +5592,21 @@ Lux_43_2019,Lux_43,25,2019-07-24,Panicum virgatum,NA
 Lux_43_2019,Lux_43,25,2019-07-24,Plantago lanceolata,NA
 Lux_43_2019,Lux_43,25,2019-07-24,Ratibida pinnata,NA
 Lux_43_2019,Lux_43,25,2019-07-24,Symphyotrichum pilosum,NA
+Lux_43_2025,Lux_43,1,2025-07-15,Bouteloua curtipendula,30
+Lux_43_2025,Lux_43,1,2025-07-15,Bromus inermis,4
+Lux_43_2025,Lux_43,1,2025-07-15,Centaurea stoebe,50
+Lux_43_2025,Lux_43,1,2025-07-15,Eria,0.7
+Lux_43_2025,Lux_43,1,2025-07-15,Oxalis stricta,0.06
+Lux_43_2025,Lux_43,1,2025-07-15,Poa pratensis,10
+Lux_43_2025,Lux_43,1,2025-07-15,Schizachyrium scoparium,30
+Lux_43_2025,Lux_43,1,2025-07-15,Sorghastrum nutans,7
+Lux_43_2025,Lux_43,25,2025-07-15,Achillea millefolium,NA
+Lux_43_2025,Lux_43,25,2025-07-15,Andropogon gerardii,NA
+Lux_43_2025,Lux_43,25,2025-07-15,Juncus tenuis,NA
+Lux_43_2025,Lux_43,25,2025-07-15,Krigia,NA
+Lux_43_2025,Lux_43,25,2025-07-15,Panicum virgatum,NA
+Lux_43_2025,Lux_43,25,2025-07-15,Plantago lanceolata,NA
+Lux_43_2025,Lux_43,25,2025-07-15,Symphyotrichum pilosum,NA
 Lux_44_2014,Lux_44,seeded,2014-09-01,Andropogon gerardii,1
 Lux_44_2014,Lux_44,seeded,2014-09-01,Bouteloua curtipendula,1
 Lux_44_2014,Lux_44,seeded,2014-09-01,Coreopsis lanceolata,0.74
@@ -5085,6 +5740,20 @@ Lux_44_2019,Lux_44,25,2019-07-24,Rudbeckia hirta,NA
 Lux_44_2019,Lux_44,25,2019-07-24,Schizachyrium scoparium,NA
 Lux_44_2019,Lux_44,25,2019-07-24,Symphyotrichum pilosum,NA
 Lux_44_2019,Lux_44,25,2019-07-24,Verbena stricta,NA
+Lux_44_2025,Lux_44,1,2025-07-15,Andropogon gerardii,65
+Lux_44_2025,Lux_44,1,2025-07-15,Bromus inermis,1
+Lux_44_2025,Lux_44,1,2025-07-15,Lespedeza capitata,4
+Lux_44_2025,Lux_44,1,2025-07-15,Poa pratensis,7
+Lux_44_2025,Lux_44,1,2025-07-15,Ratibida pinnata,2
+Lux_44_2025,Lux_44,1,2025-07-15,Schizachyrium scoparium,12
+Lux_44_2025,Lux_44,1,2025-07-15,Sorghastrum nutans,12
+Lux_44_2025,Lux_44,25,2025-07-15,Bouteloua curtipendula,NA
+Lux_44_2025,Lux_44,25,2025-07-15,Centaurea stoebe,NA
+Lux_44_2025,Lux_44,25,2025-07-15,Drymocallis arguta,NA
+Lux_44_2025,Lux_44,25,2025-07-15,Eria,NA
+Lux_44_2025,Lux_44,25,2025-07-15,Hypericum perforatum,NA
+Lux_44_2025,Lux_44,25,2025-07-15,Lespedeza virginica,NA
+Lux_44_2025,Lux_44,25,2025-07-15,Verbena stricta,NA
 Lux_45_2014,Lux_45,seeded,2014-09-01,Andropogon gerardii,1
 Lux_45_2014,Lux_45,seeded,2014-09-01,Bouteloua curtipendula,1
 Lux_45_2014,Lux_45,seeded,2014-09-01,Coreopsis lanceolata,0.74
@@ -5226,6 +5895,25 @@ Lux_45_2019,Lux_45,25,2019-07-24,Schizachyrium scoparium,NA
 Lux_45_2019,Lux_45,25,2019-07-24,Solanum carolinense,NA
 Lux_45_2019,Lux_45,25,2019-07-24,Sorghastrum nutans,NA
 Lux_45_2019,Lux_45,25,2019-07-24,Verbena stricta,NA
+Lux_45_2025,Lux_45,1,2025-07-15,Andropogon gerardii,15
+Lux_45_2025,Lux_45,1,2025-07-15,Bouteloua curtipendula,40
+Lux_45_2025,Lux_45,1,2025-07-15,Bromus inermis,4
+Lux_45_2025,Lux_45,1,2025-07-15,Centaurea stoebe,2
+Lux_45_2025,Lux_45,1,2025-07-15,Poa pratensis,5
+Lux_45_2025,Lux_45,1,2025-07-15,Rumex acetosella,0.3
+Lux_45_2025,Lux_45,1,2025-07-15,Schizachyrium scoparium,15
+Lux_45_2025,Lux_45,25,2025-07-15,Achillea millefolium,NA
+Lux_45_2025,Lux_45,25,2025-07-15,Desmodium illinoense,NA
+Lux_45_2025,Lux_45,25,2025-07-15,Digitaria,NA
+Lux_45_2025,Lux_45,25,2025-07-15,Drymocallis arguta,NA
+Lux_45_2025,Lux_45,25,2025-07-15,Eria,NA
+Lux_45_2025,Lux_45,25,2025-07-15,Lespedeza capitata,NA
+Lux_45_2025,Lux_45,25,2025-07-15,Lespedeza virginica,NA
+Lux_45_2025,Lux_45,25,2025-07-15,Panicum virgatum,NA
+Lux_45_2025,Lux_45,25,2025-07-15,Ratibida pinnata,NA
+Lux_45_2025,Lux_45,25,2025-07-15,Rudbeckia hirta,NA
+Lux_45_2025,Lux_45,25,2025-07-15,Sorghastrum nutans,NA
+Lux_45_2025,Lux_45,25,2025-07-15,Verbena stricta,NA
 Lux_46_2014,Lux_46,seeded,2014-09-01,Andropogon gerardii,1
 Lux_46_2014,Lux_46,seeded,2014-09-01,Asclepias syriaca,0.27
 Lux_46_2014,Lux_46,seeded,2014-09-01,Asclepias tuberosa,0.26
@@ -5373,6 +6061,21 @@ Lux_46_2019,Lux_46,25,2019-07-24,Pseudognaphalium obtusifolium,NA
 Lux_46_2019,Lux_46,25,2019-07-24,Sorghastrum nutans,NA
 Lux_46_2019,Lux_46,25,2019-07-24,Symphyotrichum pilosum,NA
 Lux_46_2019,Lux_46,25,2019-07-24,NA,NA
+Lux_46_2025,Lux_46,1,2025-07-15,Bouteloua curtipendula,40
+Lux_46_2025,Lux_46,1,2025-07-15,Centaurea stoebe,3
+Lux_46_2025,Lux_46,1,2025-07-15,Desmodium illinoense,4
+Lux_46_2025,Lux_46,1,2025-07-15,Eria,1
+Lux_46_2025,Lux_46,1,2025-07-15,Monarda fistulosa,5
+Lux_46_2025,Lux_46,1,2025-07-15,Panicum virgatum,7
+Lux_46_2025,Lux_46,1,2025-07-15,Poa pratensis,6
+Lux_46_2025,Lux_46,1,2025-07-15,Schizachyrium scoparium,30
+Lux_46_2025,Lux_46,25,2025-07-15,Achillea millefolium,NA
+Lux_46_2025,Lux_46,25,2025-07-15,Andropogon gerardii,NA
+Lux_46_2025,Lux_46,25,2025-07-15,Hypericum perforatum,NA
+Lux_46_2025,Lux_46,25,2025-07-15,Lespedeza capitata,NA
+Lux_46_2025,Lux_46,25,2025-07-15,Phytolacca heterotepala,NA
+Lux_46_2025,Lux_46,25,2025-07-15,Potentilla argentea,NA
+Lux_46_2025,Lux_46,25,2025-07-15,Sorghastrum nutans,NA
 Lux_47_2014,Lux_47,seeded,2014-09-01,Andropogon gerardii,1
 Lux_47_2014,Lux_47,seeded,2014-09-01,Asclepias syriaca,0.27
 Lux_47_2014,Lux_47,seeded,2014-09-01,Asclepias tuberosa,0.26
@@ -5567,6 +6270,26 @@ Lux_47_2019,Lux_47,25,2019-07-24,Solidago rigida,NA
 Lux_47_2019,Lux_47,25,2019-07-24,Solidago speciosa,NA
 Lux_47_2019,Lux_47,25,2019-07-24,Sorghastrum nutans,NA
 Lux_47_2019,Lux_47,25,2019-07-24,Verbena stricta,NA
+Lux_47_2025,Lux_47,1,2025-07-15,Achillea millefolium,12
+Lux_47_2025,Lux_47,1,2025-07-15,Bouteloua curtipendula,20
+Lux_47_2025,Lux_47,1,2025-07-15,Centaurea stoebe,16
+Lux_47_2025,Lux_47,1,2025-07-15,Eria,5
+Lux_47_2025,Lux_47,1,2025-07-15,Panicum virgatum,8
+Lux_47_2025,Lux_47,1,2025-07-15,Poa pratensis,3
+Lux_47_2025,Lux_47,1,2025-07-15,Ratibida pinnata,1
+Lux_47_2025,Lux_47,1,2025-07-15,Schizachyrium scoparium,25
+Lux_47_2025,Lux_47,1,2025-07-15,Sorghastrum nutans,3
+Lux_47_2025,Lux_47,25,2025-07-15,Andropogon gerardii,NA
+Lux_47_2025,Lux_47,25,2025-07-15,Bromus inermis,NA
+Lux_47_2025,Lux_47,25,2025-07-15,Desmodium illinoense,NA
+Lux_47_2025,Lux_47,25,2025-07-15,Dichanthelium,NA
+Lux_47_2025,Lux_47,25,2025-07-15,Drymocallis arguta,NA
+Lux_47_2025,Lux_47,25,2025-07-15,Lespedeza capitata,NA
+Lux_47_2025,Lux_47,25,2025-07-15,Lespedeza virginica,NA
+Lux_47_2025,Lux_47,25,2025-07-15,Monarda fistulosa,NA
+Lux_47_2025,Lux_47,25,2025-07-15,Morus alba,NA
+Lux_47_2025,Lux_47,25,2025-07-15,Panicum,NA
+Lux_47_2025,Lux_47,25,2025-07-15,Phytolacca heterotepala,NA
 Lux_48_2014,Lux_48,seeded,2014-09-01,Andropogon gerardii,1
 Lux_48_2014,Lux_48,seeded,2014-09-01,Asclepias syriaca,0.49
 Lux_48_2014,Lux_48,seeded,2014-09-01,Asclepias tuberosa,0.48
@@ -5732,6 +6455,34 @@ Lux_48_2019,Lux_48,25,2019-07-24,Penstemon digitalis,NA
 Lux_48_2019,Lux_48,25,2019-07-24,Phytolacca heterotepala,NA
 Lux_48_2019,Lux_48,25,2019-07-24,Rudbeckia hirta,NA
 Lux_48_2019,Lux_48,25,2019-07-24,Symphyotrichum pilosum,NA
+Lux_48_2025,Lux_48,1,2025-07-15,Achillea millefolium,1
+Lux_48_2025,Lux_48,1,2025-07-15,Andropogon gerardii,18
+Lux_48_2025,Lux_48,1,2025-07-15,Bouteloua curtipendula,4
+Lux_48_2025,Lux_48,1,2025-07-15,Centaurea stoebe,0.4
+Lux_48_2025,Lux_48,1,2025-07-15,Cyperus lupulinus,0.5
+Lux_48_2025,Lux_48,1,2025-07-15,Dichanthelium,0.2
+Lux_48_2025,Lux_48,1,2025-07-15,Drymocallis arguta,0.9
+Lux_48_2025,Lux_48,1,2025-07-15,Eria,0.6
+Lux_48_2025,Lux_48,1,2025-07-15,Monarda fistulosa,2
+Lux_48_2025,Lux_48,1,2025-07-15,Panicum virgatum,2
+Lux_48_2025,Lux_48,1,2025-07-15,Phytolacca heterotepala,0.7
+Lux_48_2025,Lux_48,1,2025-07-15,Poa pratensis,7
+Lux_48_2025,Lux_48,1,2025-07-15,Ratibida pinnata,8
+Lux_48_2025,Lux_48,1,2025-07-15,Schizachyrium scoparium,50
+Lux_48_2025,Lux_48,1,2025-07-15,Sorghastrum nutans,3
+Lux_48_2025,Lux_48,1,2025-07-15,Symphyotrichum pilosum,0.4
+Lux_48_2025,Lux_48,25,2025-07-15,Desmodium paniculatum,NA
+Lux_48_2025,Lux_48,25,2025-07-15,Echinacea purpurea,NA
+Lux_48_2025,Lux_48,25,2025-07-15,Hypericum perforatum,NA
+Lux_48_2025,Lux_48,25,2025-07-15,Juncus tenuis,NA
+Lux_48_2025,Lux_48,25,2025-07-15,Lespedeza capitata,NA
+Lux_48_2025,Lux_48,25,2025-07-15,Lespedeza virginica,NA
+Lux_48_2025,Lux_48,25,2025-07-15,Penstemon digitalis,NA
+Lux_48_2025,Lux_48,25,2025-07-15,Plantago lanceolata,NA
+Lux_48_2025,Lux_48,25,2025-07-15,Rubus flagellaris,NA
+Lux_48_2025,Lux_48,25,2025-07-15,Solidago altissima,NA
+Lux_48_2025,Lux_48,25,2025-07-15,Solidago rigida,NA
+Lux_48_2025,Lux_48,25,2025-07-15,NA,NA
 Lux_49_2014,Lux_49,seeded,2014-09-01,Andropogon gerardii,1
 Lux_49_2014,Lux_49,seeded,2014-09-01,Asclepias syriaca,0.49
 Lux_49_2014,Lux_49,seeded,2014-09-01,Asclepias tuberosa,0.48
@@ -5832,6 +6583,17 @@ Lux_49_2019,Lux_49,25,2019-07-24,Erigeron canadensis,NA
 Lux_49_2019,Lux_49,25,2019-07-24,Panicum virgatum,NA
 Lux_49_2019,Lux_49,25,2019-07-24,Potentilla recta,NA
 Lux_49_2019,Lux_49,25,2019-07-24,Rubus flagellaris,NA
+Lux_49_2025,Lux_49,1,2025-07-18,Andropogon gerardii,11
+Lux_49_2025,Lux_49,1,2025-07-18,Bouteloua curtipendula,29
+Lux_49_2025,Lux_49,1,2025-07-18,Bromus inermis,0.1
+Lux_49_2025,Lux_49,1,2025-07-18,Plantago lanceolata,0.1
+Lux_49_2025,Lux_49,1,2025-07-18,Poa pratensis,6
+Lux_49_2025,Lux_49,1,2025-07-18,Schizachyrium scoparium,43
+Lux_49_2025,Lux_49,25,2025-07-18,Centaurea stoebe,NA
+Lux_49_2025,Lux_49,25,2025-07-18,Monarda fistulosa,NA
+Lux_49_2025,Lux_49,25,2025-07-18,Panicum virgatum,NA
+Lux_49_2025,Lux_49,25,2025-07-18,Ratibida pinnata,NA
+Lux_49_2025,Lux_49,25,2025-07-18,Verbascum thapsus,NA
 Lux_5_2014,Lux_5,seeded,2014-09-01,Andropogon gerardii,1
 Lux_5_2014,Lux_5,seeded,2014-09-01,Bouteloua curtipendula,1
 Lux_5_2014,Lux_5,seeded,2014-09-01,Coreopsis lanceolata,0.74
@@ -5929,6 +6691,21 @@ Lux_5_2019,Lux_5,25,2019-07-24,Achillea millefolium,NA
 Lux_5_2019,Lux_5,25,2019-07-24,Agrostis gigantea,NA
 Lux_5_2019,Lux_5,25,2019-07-24,Bromus inermis,NA
 Lux_5_2019,Lux_5,25,2019-07-24,Elymus canadensis,NA
+Lux_5_2025,Lux_5,1,2025-07-15,Achillea millefolium,1
+Lux_5_2025,Lux_5,1,2025-07-15,Bouteloua curtipendula,6
+Lux_5_2025,Lux_5,1,2025-07-15,Carex,2
+Lux_5_2025,Lux_5,1,2025-07-15,Centaurea stoebe,0.5
+Lux_5_2025,Lux_5,1,2025-07-15,Dichanthelium,10
+Lux_5_2025,Lux_5,1,2025-07-15,Hypericum perforatum,0.4
+Lux_5_2025,Lux_5,1,2025-07-15,Panicum virgatum,40
+Lux_5_2025,Lux_5,1,2025-07-15,Plantago lanceolata,0.8
+Lux_5_2025,Lux_5,1,2025-07-15,Poa pratensis,6
+Lux_5_2025,Lux_5,1,2025-07-15,Potentilla recta,0.2
+Lux_5_2025,Lux_5,1,2025-07-15,Schizachyrium scoparium,25
+Lux_5_2025,Lux_5,1,2025-07-15,Sorghastrum nutans,6
+Lux_5_2025,Lux_5,1,2025-07-15,Symphyotrichum pilosum,0.4
+Lux_5_2025,Lux_5,25,2025-07-15,Agrostis gigantea,NA
+Lux_5_2025,Lux_5,25,2025-07-15,Andropogon gerardii,NA
 Lux_50_2014,Lux_50,seeded,2014-09-01,Andropogon gerardii,1
 Lux_50_2014,Lux_50,seeded,2014-09-01,Bouteloua curtipendula,1
 Lux_50_2014,Lux_50,seeded,2014-09-01,Coreopsis lanceolata,1.49
@@ -6052,6 +6829,17 @@ Lux_50_2019,Lux_50,25,2019-07-24,Panicum virgatum,NA
 Lux_50_2019,Lux_50,25,2019-07-24,Solanum carolinense,NA
 Lux_50_2019,Lux_50,25,2019-07-24,Solidago canadensis,NA
 Lux_50_2019,Lux_50,25,2019-07-24,Sorghastrum nutans,NA
+Lux_50_2025,Lux_50,1,2025-07-18,Achillea millefolium,0.6
+Lux_50_2025,Lux_50,1,2025-07-18,Andropogon gerardii,39
+Lux_50_2025,Lux_50,1,2025-07-18,Bouteloua curtipendula,7
+Lux_50_2025,Lux_50,1,2025-07-18,Bromus inermis,0.6
+Lux_50_2025,Lux_50,1,2025-07-18,Monarda fistulosa,0.8
+Lux_50_2025,Lux_50,1,2025-07-18,Panicum virgatum,6
+Lux_50_2025,Lux_50,1,2025-07-18,Poa pratensis,3
+Lux_50_2025,Lux_50,1,2025-07-18,Ratibida pinnata,0.9
+Lux_50_2025,Lux_50,1,2025-07-18,Schizachyrium scoparium,27
+Lux_50_2025,Lux_50,25,2025-07-18,Erigeron,NA
+Lux_50_2025,Lux_50,25,2025-07-18,Hypericum perforatum,NA
 Lux_51_2014,Lux_51,seeded,2014-09-01,Andropogon gerardii,1
 Lux_51_2014,Lux_51,seeded,2014-09-01,Asclepias syriaca,0.49
 Lux_51_2014,Lux_51,seeded,2014-09-01,Asclepias tuberosa,0.48
@@ -6220,6 +7008,20 @@ Lux_51_2019,Lux_51,25,2019-07-24,Solidago canadensis,NA
 Lux_51_2019,Lux_51,25,2019-07-24,Solidago rigida,NA
 Lux_51_2019,Lux_51,25,2019-07-24,Sorghastrum nutans,NA
 Lux_51_2019,Lux_51,25,2019-07-24,Toxicodendron radicans,NA
+Lux_51_2025,Lux_51,1,2025-07-18,Andropogon gerardii,20
+Lux_51_2025,Lux_51,1,2025-07-18,Drymocallis arguta,1
+Lux_51_2025,Lux_51,1,2025-07-18,Lespedeza virginica,3
+Lux_51_2025,Lux_51,1,2025-07-18,Monarda fistulosa,8
+Lux_51_2025,Lux_51,1,2025-07-18,Panicum virgatum,0.6
+Lux_51_2025,Lux_51,1,2025-07-18,Poa pratensis,3
+Lux_51_2025,Lux_51,1,2025-07-18,Rumex acetosella,0.6
+Lux_51_2025,Lux_51,1,2025-07-18,Schizachyrium scoparium,66
+Lux_51_2025,Lux_51,25,2025-07-18,Achillea millefolium,NA
+Lux_51_2025,Lux_51,25,2025-07-18,Asclepias tuberosa,NA
+Lux_51_2025,Lux_51,25,2025-07-18,Bromus inermis,NA
+Lux_51_2025,Lux_51,25,2025-07-18,Centaurea stoebe,NA
+Lux_51_2025,Lux_51,25,2025-07-18,Lespedeza capitata,NA
+Lux_51_2025,Lux_51,25,2025-07-18,Ratibida pinnata,NA
 Lux_52_2014,Lux_52,seeded,2014-09-01,Andropogon gerardii,1
 Lux_52_2014,Lux_52,seeded,2014-09-01,Asclepias syriaca,0.49
 Lux_52_2014,Lux_52,seeded,2014-09-01,Asclepias tuberosa,0.48
@@ -6368,6 +7170,23 @@ Lux_52_2019,Lux_52,25,2019-07-24,Penstemon digitalis,NA
 Lux_52_2019,Lux_52,25,2019-07-24,Solanum carolinense,NA
 Lux_52_2019,Lux_52,25,2019-07-24,Solidago canadensis,NA
 Lux_52_2019,Lux_52,25,2019-07-24,Solidago rigida,NA
+Lux_52_2025,Lux_52,1,2025-07-18,Achillea millefolium,6
+Lux_52_2025,Lux_52,1,2025-07-18,Andropogon gerardii,13
+Lux_52_2025,Lux_52,1,2025-07-18,Centaurea stoebe,1
+Lux_52_2025,Lux_52,1,2025-07-18,Monarda fistulosa,5
+Lux_52_2025,Lux_52,1,2025-07-18,Panicum virgatum,4
+Lux_52_2025,Lux_52,1,2025-07-18,Poa pratensis,6
+Lux_52_2025,Lux_52,1,2025-07-18,Rumex acetosella,0.2
+Lux_52_2025,Lux_52,1,2025-07-18,Schizachyrium scoparium,47
+Lux_52_2025,Lux_52,1,2025-07-18,Sorghastrum nutans,4
+Lux_52_2025,Lux_52,25,2025-07-18,Bouteloua curtipendula,NA
+Lux_52_2025,Lux_52,25,2025-07-18,Desmodium illinoense,NA
+Lux_52_2025,Lux_52,25,2025-07-18,Erigeron,NA
+Lux_52_2025,Lux_52,25,2025-07-18,Lespedeza capitata,NA
+Lux_52_2025,Lux_52,25,2025-07-18,Lespedeza virginica,NA
+Lux_52_2025,Lux_52,25,2025-07-18,Ratibida pinnata,NA
+Lux_52_2025,Lux_52,25,2025-07-18,Sporobolus heterolepis,NA
+Lux_52_2025,Lux_52,25,2025-07-18,Verbena stricta,NA
 Lux_53_2014,Lux_53,seeded,2014-09-01,Andropogon gerardii,1
 Lux_53_2014,Lux_53,seeded,2014-09-01,Bouteloua curtipendula,1
 Lux_53_2014,Lux_53,seeded,2014-09-01,Coreopsis lanceolata,1.49
@@ -6485,6 +7304,16 @@ Lux_53_2019,Lux_53,25,2019-07-24,Panicum virgatum,NA
 Lux_53_2019,Lux_53,25,2019-07-24,Rubus flagellaris,NA
 Lux_53_2019,Lux_53,25,2019-07-24,Solidago canadensis,NA
 Lux_53_2019,Lux_53,25,2019-07-24,Verbascum thapsus,NA
+Lux_53_2025,Lux_53,1,2025-07-18,Achillea millefolium,3
+Lux_53_2025,Lux_53,1,2025-07-18,Bouteloua curtipendula,14
+Lux_53_2025,Lux_53,1,2025-07-18,Centaurea stoebe,10
+Lux_53_2025,Lux_53,1,2025-07-18,Erigeron,2
+Lux_53_2025,Lux_53,1,2025-07-18,Panicum virgatum,5
+Lux_53_2025,Lux_53,1,2025-07-18,Poa pratensis,3
+Lux_53_2025,Lux_53,1,2025-07-18,Ratibida pinnata,11
+Lux_53_2025,Lux_53,1,2025-07-18,Schizachyrium scoparium,26
+Lux_53_2025,Lux_53,25,2025-07-18,Andropogon gerardii,NA
+Lux_53_2025,Lux_53,25,2025-07-18,Rubus flagellaris,NA
 Lux_54_2015,Lux_54,1,2015-09-16,Centaurea stoebe,26
 Lux_54_2015,Lux_54,1,2015-09-16,Daucus carota,0.2
 Lux_54_2015,Lux_54,1,2015-09-16,Medicago lupulina,4
@@ -6608,6 +7437,16 @@ Lux_54_2019,Lux_54,25,2019-07-24,Solanum carolinense,NA
 Lux_54_2019,Lux_54,25,2019-07-24,Sorghastrum nutans,NA
 Lux_54_2019,Lux_54,25,2019-07-24,Symphyotrichum pilosum,NA
 Lux_54_2019,Lux_54,25,2019-07-24,Turritis glabra,NA
+Lux_54_2025,Lux_54,1,2025-07-18,Andropogon gerardii,24
+Lux_54_2025,Lux_54,1,2025-07-18,Euthamia graminifolia,0.7
+Lux_54_2025,Lux_54,1,2025-07-18,Hypericum perforatum,0.1
+Lux_54_2025,Lux_54,1,2025-07-18,Juncus tenuis,0.2
+Lux_54_2025,Lux_54,1,2025-07-18,Malus,1
+Lux_54_2025,Lux_54,1,2025-07-18,Poa pratensis,4
+Lux_54_2025,Lux_54,1,2025-07-18,Schizachyrium scoparium,39
+Lux_54_2025,Lux_54,1,2025-07-18,Solidago altissima,23
+Lux_54_2025,Lux_54,25,2025-07-18,Erigeron,NA
+Lux_54_2025,Lux_54,25,2025-07-18,Rubus flagellaris,NA
 Lux_55_2014,Lux_55,seeded,2014-09-01,Andropogon gerardii,1
 Lux_55_2014,Lux_55,seeded,2014-09-01,Asclepias syriaca,0.27
 Lux_55_2014,Lux_55,seeded,2014-09-01,Asclepias tuberosa,0.26
@@ -6769,6 +7608,28 @@ Lux_55_2019,Lux_55,25,2019-07-24,Plantago lanceolata,NA
 Lux_55_2019,Lux_55,25,2019-07-24,Ratibida pinnata,NA
 Lux_55_2019,Lux_55,25,2019-07-24,Sorghastrum nutans,NA
 Lux_55_2019,Lux_55,25,2019-07-24,Symphyotrichum pilosum,NA
+Lux_55_2025,Lux_55,1,2025-07-15,Agrostis gigantea,0.4
+Lux_55_2025,Lux_55,1,2025-07-15,Bouteloua curtipendula,0.6
+Lux_55_2025,Lux_55,1,2025-07-15,Bromus inermis,0.7
+Lux_55_2025,Lux_55,1,2025-07-15,Plantago lanceolata,0.8
+Lux_55_2025,Lux_55,1,2025-07-15,Poa pratensis,3
+Lux_55_2025,Lux_55,1,2025-07-15,Schizachyrium scoparium,85
+Lux_55_2025,Lux_55,1,2025-07-15,Sorghastrum nutans,8
+Lux_55_2025,Lux_55,25,2025-07-15,Achillea millefolium,NA
+Lux_55_2025,Lux_55,25,2025-07-15,Andropogon gerardii,NA
+Lux_55_2025,Lux_55,25,2025-07-15,Asclepias syriaca,NA
+Lux_55_2025,Lux_55,25,2025-07-15,Asclepias tuberosa,NA
+Lux_55_2025,Lux_55,25,2025-07-15,Desmodium illinoense,NA
+Lux_55_2025,Lux_55,25,2025-07-15,Eria,NA
+Lux_55_2025,Lux_55,25,2025-07-15,Lespedeza capitata,NA
+Lux_55_2025,Lux_55,25,2025-07-15,Monarda fistulosa,NA
+Lux_55_2025,Lux_55,25,2025-07-15,Panicum virgatum,NA
+Lux_55_2025,Lux_55,25,2025-07-15,Ratibida pinnata,NA
+Lux_55_2025,Lux_55,25,2025-07-15,Rubus flagellaris,NA
+Lux_55_2025,Lux_55,25,2025-07-15,Solidago altissima,NA
+Lux_55_2025,Lux_55,25,2025-07-15,Solidago rigida,NA
+Lux_55_2025,Lux_55,25,2025-07-15,Symphyotrichum pilosum,NA
+Lux_55_2025,Lux_55,25,2025-07-15,NA,NA
 Lux_56_2014,Lux_56,seeded,2014-09-01,Andropogon gerardii,1
 Lux_56_2014,Lux_56,seeded,2014-09-01,Asclepias syriaca,0.27
 Lux_56_2014,Lux_56,seeded,2014-09-01,Asclepias tuberosa,0.26
@@ -6938,6 +7799,24 @@ Lux_56_2019,Lux_56,25,2019-07-24,Rudbeckia hirta,NA
 Lux_56_2019,Lux_56,25,2019-07-24,Solidago rigida,NA
 Lux_56_2019,Lux_56,25,2019-07-24,Symphyotrichum ericoides,NA
 Lux_56_2019,Lux_56,25,2019-07-24,NA,NA
+Lux_56_2025,Lux_56,1,2025-07-15,Achillea millefolium,0.6
+Lux_56_2025,Lux_56,1,2025-07-15,Bromus inermis,0.8
+Lux_56_2025,Lux_56,1,2025-07-15,Juncus tenuis,0.5
+Lux_56_2025,Lux_56,1,2025-07-15,Lespedeza virginica,8
+Lux_56_2025,Lux_56,1,2025-07-15,Poa pratensis,4
+Lux_56_2025,Lux_56,1,2025-07-15,Schizachyrium scoparium,70
+Lux_56_2025,Lux_56,1,2025-07-15,Solanum carolinense,0.3
+Lux_56_2025,Lux_56,1,2025-07-15,Sorghastrum nutans,10
+Lux_56_2025,Lux_56,25,2025-07-15,Andropogon gerardii,NA
+Lux_56_2025,Lux_56,25,2025-07-15,Bouteloua curtipendula,NA
+Lux_56_2025,Lux_56,25,2025-07-15,Desmodium illinoense,NA
+Lux_56_2025,Lux_56,25,2025-07-15,Drymocallis arguta,NA
+Lux_56_2025,Lux_56,25,2025-07-15,Eria,NA
+Lux_56_2025,Lux_56,25,2025-07-15,Lespedeza capitata,NA
+Lux_56_2025,Lux_56,25,2025-07-15,Panicum virgatum,NA
+Lux_56_2025,Lux_56,25,2025-07-15,Ratibida pinnata,NA
+Lux_56_2025,Lux_56,25,2025-07-15,Solidago altissima,NA
+Lux_56_2025,Lux_56,25,2025-07-15,Solidago speciosa,NA
 Lux_57_2014,Lux_57,seeded,2014-09-01,Andropogon gerardii,1
 Lux_57_2014,Lux_57,seeded,2014-09-01,Asclepias syriaca,0.27
 Lux_57_2014,Lux_57,seeded,2014-09-01,Asclepias tuberosa,0.26
@@ -7110,6 +7989,31 @@ Lux_57_2019,Lux_57,25,2019-07-24,Rubus occidentalis,NA
 Lux_57_2019,Lux_57,25,2019-07-24,Solidago rigida,NA
 Lux_57_2019,Lux_57,25,2019-07-24,Sorghastrum nutans,NA
 Lux_57_2019,Lux_57,25,2019-07-24,Symphyotrichum ericoides,NA
+Lux_57_2025,Lux_57,1,2025-07-15,Achillea millefolium,1
+Lux_57_2025,Lux_57,1,2025-07-15,Bouteloua curtipendula,2
+Lux_57_2025,Lux_57,1,2025-07-15,Eria,0.7
+Lux_57_2025,Lux_57,1,2025-07-15,Poa pratensis,4
+Lux_57_2025,Lux_57,1,2025-07-15,Schizachyrium scoparium,65
+Lux_57_2025,Lux_57,1,2025-07-15,Solanum carolinense,0.3
+Lux_57_2025,Lux_57,1,2025-07-15,Solidago altissima,1
+Lux_57_2025,Lux_57,1,2025-07-15,Sorghastrum nutans,6
+Lux_57_2025,Lux_57,1,2025-07-15,Symphyotrichum pilosum,0.2
+Lux_57_2025,Lux_57,25,2025-07-15,Andropogon gerardii,NA
+Lux_57_2025,Lux_57,25,2025-07-15,Bromus inermis,NA
+Lux_57_2025,Lux_57,25,2025-07-15,Centaurea stoebe,NA
+Lux_57_2025,Lux_57,25,2025-07-15,Desmodium illinoense,NA
+Lux_57_2025,Lux_57,25,2025-07-15,Digitaria,NA
+Lux_57_2025,Lux_57,25,2025-07-15,Drymocallis arguta,NA
+Lux_57_2025,Lux_57,25,2025-07-15,Euthamia graminifolia,NA
+Lux_57_2025,Lux_57,25,2025-07-15,Hypericum perforatum,NA
+Lux_57_2025,Lux_57,25,2025-07-15,Lespedeza capitata,NA
+Lux_57_2025,Lux_57,25,2025-07-15,Lespedeza virginica,NA
+Lux_57_2025,Lux_57,25,2025-07-15,Monarda fistulosa,NA
+Lux_57_2025,Lux_57,25,2025-07-15,Panicum,NA
+Lux_57_2025,Lux_57,25,2025-07-15,Panicum virgatum,NA
+Lux_57_2025,Lux_57,25,2025-07-15,Rumex acetosella,NA
+Lux_57_2025,Lux_57,25,2025-07-15,Solidago rigida,NA
+Lux_57_2025,Lux_57,25,2025-07-15,NA,NA
 Lux_58_2015,Lux_58,1,2015-09-16,Bromus inermis,0.2
 Lux_58_2015,Lux_58,1,2015-09-16,Centaurea stoebe,12
 Lux_58_2015,Lux_58,1,2015-09-16,Oxalis stricta,1
@@ -7218,6 +8122,17 @@ Lux_58_2019,Lux_58,25,2019-07-24,Solidago canadensis,NA
 Lux_58_2019,Lux_58,25,2019-07-24,Sorghastrum nutans,NA
 Lux_58_2019,Lux_58,25,2019-07-24,Symphyotrichum pilosum,NA
 Lux_58_2019,Lux_58,25,2019-07-24,Verbena urticifolia,NA
+Lux_58_2025,Lux_58,1,2025-07-15,Achillea millefolium,2
+Lux_58_2025,Lux_58,1,2025-07-15,Bouteloua curtipendula,15
+Lux_58_2025,Lux_58,1,2025-07-15,Bromus inermis,0.5
+Lux_58_2025,Lux_58,1,2025-07-15,Centaurea stoebe,6
+Lux_58_2025,Lux_58,1,2025-07-15,Eria,0.8
+Lux_58_2025,Lux_58,1,2025-07-15,Poa pratensis,4
+Lux_58_2025,Lux_58,1,2025-07-15,Schizachyrium scoparium,60
+Lux_58_2025,Lux_58,1,2025-07-15,Sorghastrum nutans,3
+Lux_58_2025,Lux_58,25,2025-07-15,Andropogon gerardii,NA
+Lux_58_2025,Lux_58,25,2025-07-15,Panicum virgatum,NA
+Lux_58_2025,Lux_58,25,2025-07-15,Ratibida pinnata,NA
 Lux_59_2014,Lux_59,seeded,2014-09-01,Andropogon gerardii,1
 Lux_59_2014,Lux_59,seeded,2014-09-01,Bouteloua curtipendula,1
 Lux_59_2014,Lux_59,seeded,2014-09-01,Coreopsis lanceolata,1.49
@@ -7325,6 +8240,18 @@ Lux_59_2019,Lux_59,25,2019-07-24,Panicum virgatum,NA
 Lux_59_2019,Lux_59,25,2019-07-24,Ratibida pinnata,NA
 Lux_59_2019,Lux_59,25,2019-07-24,Solanum carolinense,NA
 Lux_59_2019,Lux_59,25,2019-07-24,Verbena urticifolia,NA
+Lux_59_2025,Lux_59,1,2025-07-15,Bouteloua curtipendula,70
+Lux_59_2025,Lux_59,1,2025-07-15,Bromus inermis,0.8
+Lux_59_2025,Lux_59,1,2025-07-15,Centaurea stoebe,9
+Lux_59_2025,Lux_59,1,2025-07-15,Eria,4
+Lux_59_2025,Lux_59,1,2025-07-15,Poa pratensis,8
+Lux_59_2025,Lux_59,1,2025-07-15,Schizachyrium scoparium,4
+Lux_59_2025,Lux_59,25,2025-07-15,Achillea millefolium,NA
+Lux_59_2025,Lux_59,25,2025-07-15,Andropogon gerardii,NA
+Lux_59_2025,Lux_59,25,2025-07-15,Hypericum perforatum,NA
+Lux_59_2025,Lux_59,25,2025-07-15,Panicum,NA
+Lux_59_2025,Lux_59,25,2025-07-15,Panicum virgatum,NA
+Lux_59_2025,Lux_59,25,2025-07-15,Phytolacca heterotepala,NA
 Lux_6_2014,Lux_6,seeded,2014-09-01,Andropogon gerardii,1
 Lux_6_2014,Lux_6,seeded,2014-09-01,Asclepias syriaca,0.27
 Lux_6_2014,Lux_6,seeded,2014-09-01,Asclepias tuberosa,0.26
@@ -7493,6 +8420,27 @@ Lux_6_2019,Lux_6,25,2019-07-24,Solidago rigida,NA
 Lux_6_2019,Lux_6,25,2019-07-24,Sorghastrum nutans,NA
 Lux_6_2019,Lux_6,25,2019-07-24,Symphyotrichum ericoides,NA
 Lux_6_2019,Lux_6,25,2019-07-24,NA,NA
+Lux_6_2025,Lux_6,1,2025-07-15,Achillea millefolium,0.06
+Lux_6_2025,Lux_6,1,2025-07-15,Bouteloua curtipendula,20
+Lux_6_2025,Lux_6,1,2025-07-15,Centaurea stoebe,0.2
+Lux_6_2025,Lux_6,1,2025-07-15,Desmodium illinoense,1
+Lux_6_2025,Lux_6,1,2025-07-15,Elymus repens,0.8
+Lux_6_2025,Lux_6,1,2025-07-15,Hypericum perforatum,0.06
+Lux_6_2025,Lux_6,1,2025-07-15,Monarda fistulosa,0.3
+Lux_6_2025,Lux_6,1,2025-07-15,Morus alba,0.2
+Lux_6_2025,Lux_6,1,2025-07-15,Plantago lanceolata,0.8
+Lux_6_2025,Lux_6,1,2025-07-15,Poa pratensis,30
+Lux_6_2025,Lux_6,1,2025-07-15,Schizachyrium scoparium,35
+Lux_6_2025,Lux_6,1,2025-07-15,Sorghastrum nutans,6
+Lux_6_2025,Lux_6,1,2025-07-15,NA,0.1
+Lux_6_2025,Lux_6,25,2025-07-15,Andropogon gerardii,NA
+Lux_6_2025,Lux_6,25,2025-07-15,Bromus inermis,NA
+Lux_6_2025,Lux_6,25,2025-07-15,Elaeagnus umbellata,NA
+Lux_6_2025,Lux_6,25,2025-07-15,Lespedeza capitata,NA
+Lux_6_2025,Lux_6,25,2025-07-15,Ratibida pinnata,NA
+Lux_6_2025,Lux_6,25,2025-07-15,Solidago rigida,NA
+Lux_6_2025,Lux_6,25,2025-07-15,Solidago speciosa,NA
+Lux_6_2025,Lux_6,25,2025-07-15,unknown,NA
 Lux_60_2014,Lux_60,seeded,2014-09-01,Andropogon gerardii,1
 Lux_60_2014,Lux_60,seeded,2014-09-01,Asclepias syriaca,0.49
 Lux_60_2014,Lux_60,seeded,2014-09-01,Asclepias tuberosa,0.48
@@ -7616,6 +8564,20 @@ Lux_60_2019,Lux_60,25,2019-07-24,Erigeron,NA
 Lux_60_2019,Lux_60,25,2019-07-24,Gamochaeta purpurea,NA
 Lux_60_2019,Lux_60,25,2019-07-24,Sorghastrum nutans,NA
 Lux_60_2019,Lux_60,25,2019-07-24,Symphyotrichum pilosum,NA
+Lux_60_2025,Lux_60,1,2025-07-15,Achillea millefolium,8
+Lux_60_2025,Lux_60,1,2025-07-15,Bouteloua curtipendula,4
+Lux_60_2025,Lux_60,1,2025-07-15,Centaurea stoebe,2
+Lux_60_2025,Lux_60,1,2025-07-15,Digitaria,0.6
+Lux_60_2025,Lux_60,1,2025-07-15,Panicum virgatum,10
+Lux_60_2025,Lux_60,1,2025-07-15,Poa pratensis,10
+Lux_60_2025,Lux_60,1,2025-07-15,Solidago altissima,8
+Lux_60_2025,Lux_60,1,2025-07-15,Sorghastrum nutans,55
+Lux_60_2025,Lux_60,25,2025-07-15,Andropogon gerardii,NA
+Lux_60_2025,Lux_60,25,2025-07-15,Asclepias syriaca,NA
+Lux_60_2025,Lux_60,25,2025-07-15,Dichanthelium,NA
+Lux_60_2025,Lux_60,25,2025-07-15,Eria,NA
+Lux_60_2025,Lux_60,25,2025-07-15,Euthamia graminifolia,NA
+Lux_60_2025,Lux_60,25,2025-07-15,Juncus tenuis,NA
 Lux_7_2014,Lux_7,seeded,2014-09-01,Andropogon gerardii,1
 Lux_7_2014,Lux_7,seeded,2014-09-01,Asclepias syriaca,0.27
 Lux_7_2014,Lux_7,seeded,2014-09-01,Asclepias tuberosa,0.26
@@ -7802,6 +8764,36 @@ Lux_7_2019,Lux_7,25,2019-07-24,Solidago speciosa,NA
 Lux_7_2019,Lux_7,25,2019-07-24,Symphyotrichum ericoides,NA
 Lux_7_2019,Lux_7,25,2019-07-24,Verbena stricta,NA
 Lux_7_2019,Lux_7,25,2019-07-24,NA,NA
+Lux_7_2025,Lux_7,1,2025-07-15,Achillea millefolium,4
+Lux_7_2025,Lux_7,1,2025-07-15,Andropogon gerardii,38
+Lux_7_2025,Lux_7,1,2025-07-15,Bouteloua curtipendula,8
+Lux_7_2025,Lux_7,1,2025-07-15,Bromus inermis,0.2
+Lux_7_2025,Lux_7,1,2025-07-15,Centaurea stoebe,0.4
+Lux_7_2025,Lux_7,1,2025-07-15,Digitaria,0.5
+Lux_7_2025,Lux_7,1,2025-07-15,Elymus repens,0.1
+Lux_7_2025,Lux_7,1,2025-07-15,Erigeron,0.4
+Lux_7_2025,Lux_7,1,2025-07-15,Monarda fistulosa,0.4
+Lux_7_2025,Lux_7,1,2025-07-15,Oxalis stricta,0.1
+Lux_7_2025,Lux_7,1,2025-07-15,Penstemon digitalis,0.7
+Lux_7_2025,Lux_7,1,2025-07-15,Plantago lanceolata,0.5
+Lux_7_2025,Lux_7,1,2025-07-15,Poa pratensis,11
+Lux_7_2025,Lux_7,1,2025-07-15,Ratibida pinnata,6
+Lux_7_2025,Lux_7,1,2025-07-15,Rubus flagellaris,25
+Lux_7_2025,Lux_7,1,2025-07-15,Rumex acetosella,1
+Lux_7_2025,Lux_7,1,2025-07-15,Schizachyrium scoparium,7
+Lux_7_2025,Lux_7,1,2025-07-15,Solidago rigida,0.6
+Lux_7_2025,Lux_7,1,2025-07-15,Symphyotrichum pilosum,2
+Lux_7_2025,Lux_7,25,2025-07-15,Agrostis gigantea,NA
+Lux_7_2025,Lux_7,25,2025-07-15,Carex,NA
+Lux_7_2025,Lux_7,25,2025-07-15,Dichanthelium,NA
+Lux_7_2025,Lux_7,25,2025-07-15,Drymocallis arguta,NA
+Lux_7_2025,Lux_7,25,2025-07-15,Helianthus occidentalis,NA
+Lux_7_2025,Lux_7,25,2025-07-15,Hypericum perforatum,NA
+Lux_7_2025,Lux_7,25,2025-07-15,Panicum virgatum,NA
+Lux_7_2025,Lux_7,25,2025-07-15,Solidago altissima,NA
+Lux_7_2025,Lux_7,25,2025-07-15,Solidago speciosa,NA
+Lux_7_2025,Lux_7,25,2025-07-15,Symphyotrichum ericoides,NA
+Lux_7_2025,Lux_7,25,2025-07-15,Trifolium repens,NA
 Lux_8_2014,Lux_8,seeded,2014-09-01,Andropogon gerardii,1
 Lux_8_2014,Lux_8,seeded,2014-09-01,Bouteloua curtipendula,1
 Lux_8_2014,Lux_8,seeded,2014-09-01,Coreopsis lanceolata,0.74
@@ -7908,6 +8900,26 @@ Lux_8_2019,Lux_8,25,2019-07-24,Rubus flagellaris,NA
 Lux_8_2019,Lux_8,25,2019-07-24,Schizachyrium scoparium,NA
 Lux_8_2019,Lux_8,25,2019-07-24,Solidago canadensis,NA
 Lux_8_2019,Lux_8,25,2019-07-24,Symphyotrichum pilosum,NA
+Lux_8_2025,Lux_8,1,2025-07-15,Achillea millefolium,3
+Lux_8_2025,Lux_8,1,2025-07-15,Agrostis gigantea,0.5
+Lux_8_2025,Lux_8,1,2025-07-15,Bromus inermis,4
+Lux_8_2025,Lux_8,1,2025-07-15,Elymus repens,3
+Lux_8_2025,Lux_8,1,2025-07-15,Plantago lanceolata,1
+Lux_8_2025,Lux_8,1,2025-07-15,Poa pratensis,34
+Lux_8_2025,Lux_8,1,2025-07-15,Rubus flagellaris,48
+Lux_8_2025,Lux_8,1,2025-07-15,Schizachyrium scoparium,4
+Lux_8_2025,Lux_8,25,2025-07-15,Andropogon gerardii,NA
+Lux_8_2025,Lux_8,25,2025-07-15,Asclepias syriaca,NA
+Lux_8_2025,Lux_8,25,2025-07-15,Bouteloua curtipendula,NA
+Lux_8_2025,Lux_8,25,2025-07-15,Centaurea stoebe,NA
+Lux_8_2025,Lux_8,25,2025-07-15,Erigeron,NA
+Lux_8_2025,Lux_8,25,2025-07-15,Hypericum perforatum,NA
+Lux_8_2025,Lux_8,25,2025-07-15,Monarda fistulosa,NA
+Lux_8_2025,Lux_8,25,2025-07-15,Oxalis stricta,NA
+Lux_8_2025,Lux_8,25,2025-07-15,Panicum virgatum,NA
+Lux_8_2025,Lux_8,25,2025-07-15,Ratibida pinnata,NA
+Lux_8_2025,Lux_8,25,2025-07-15,Solidago rigida,NA
+Lux_8_2025,Lux_8,25,2025-07-15,Symphyotrichum pilosum,NA
 Lux_9_2014,Lux_9,seeded,2014-09-01,Andropogon gerardii,1
 Lux_9_2014,Lux_9,seeded,2014-09-01,Asclepias syriaca,0.27
 Lux_9_2014,Lux_9,seeded,2014-09-01,Asclepias tuberosa,0.26
@@ -8084,6 +9096,28 @@ Lux_9_2019,Lux_9,25,2019-07-24,Rudbeckia hirta,NA
 Lux_9_2019,Lux_9,25,2019-07-24,Sorghastrum nutans,NA
 Lux_9_2019,Lux_9,25,2019-07-24,Verbena stricta,NA
 Lux_9_2019,Lux_9,25,2019-07-24,Verbena urticifolia,NA
+Lux_9_2025,Lux_9,1,2025-07-15,Achillea millefolium,0.7
+Lux_9_2025,Lux_9,1,2025-07-15,Bouteloua curtipendula,5
+Lux_9_2025,Lux_9,1,2025-07-15,Bromus inermis,0.7
+Lux_9_2025,Lux_9,1,2025-07-15,Daucus carota,0.1
+Lux_9_2025,Lux_9,1,2025-07-15,Desmodium illinoense,10
+Lux_9_2025,Lux_9,1,2025-07-15,Monarda fistulosa,16
+Lux_9_2025,Lux_9,1,2025-07-15,Panicum virgatum,18
+Lux_9_2025,Lux_9,1,2025-07-15,Plantago lanceolata,0.4
+Lux_9_2025,Lux_9,1,2025-07-15,Poa pratensis,8
+Lux_9_2025,Lux_9,1,2025-07-15,Ratibida pinnata,2
+Lux_9_2025,Lux_9,1,2025-07-15,Schizachyrium scoparium,6
+Lux_9_2025,Lux_9,1,2025-07-15,Symphyotrichum pilosum,0.8
+Lux_9_2025,Lux_9,25,2025-07-15,Ambrosia artemisiifolia,NA
+Lux_9_2025,Lux_9,25,2025-07-15,Carex,NA
+Lux_9_2025,Lux_9,25,2025-07-15,Centaurea stoebe,NA
+Lux_9_2025,Lux_9,25,2025-07-15,Erigeron,NA
+Lux_9_2025,Lux_9,25,2025-07-15,Hypericum perforatum,NA
+Lux_9_2025,Lux_9,25,2025-07-15,Rudbeckia hirta,NA
+Lux_9_2025,Lux_9,25,2025-07-15,Solidago altissima,NA
+Lux_9_2025,Lux_9,25,2025-07-15,Sorghastrum nutans,NA
+Lux_9_2025,Lux_9,25,2025-07-15,Symphyotrichum ericoides,NA
+Lux_9_2025,Lux_9,25,2025-07-15,Verbena stricta,NA
 NWS_1_2014,NWS_1,seeded,2014-09-01,Andropogon gerardii,1
 NWS_1_2014,NWS_1,seeded,2014-09-01,Bouteloua curtipendula,1
 NWS_1_2014,NWS_1,seeded,2014-09-01,Coreopsis lanceolata,1.49

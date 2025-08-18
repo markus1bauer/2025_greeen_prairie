@@ -253,12 +253,13 @@ data_2017 <- read_csv(
     seedmass_2017 = seed.mass
     ) %>%
   mutate(name = str_replace_all(name, "\\.", " ")) %>%
+  select(-kew.seed) %>%
   group_by(name) %>%
-  summarise(across(where(is.numeric), ~ mean(.x, na.rm = TRUE)))
+  summarize(across(where(is.numeric), ~ mean(.x, na.rm = TRUE))) %>%
+  mutate(across(everything(), ~ ifelse(is.nan(.), NA, .)))
 
 
-
-### b Zirbel & Brudvig (2017) --------------------------------------------------
+### b Zirbel & Brudvig (2020) --------------------------------------------------
 
 # Zirbel, CR, Brudvig LA (2020) Ecology https://doi.org/10.1002/ecy.2971
 # Zirbel CR, Brudvig LA (2019) Dryad https://doi.org/10.5061/dryad.bnzs7h46q
@@ -268,17 +269,24 @@ data_leaf_area <- read_csv(
   na = c("", "NA", "na")
 ) %>%
   rename(name = species, leaf_area_2020 = total.leaf.area) %>%
-  select(name, leaf_area_2020) %>%
-  group_by(name) %>%
-  summarise(leaf_area_2020 = mean(leaf_area_2020, na.rm = TRUE))
+  unite("id", name, number, source, sep = "_") %>%
+  mutate(id = str_replace(id, "HEHEL__6_NA", "HELHEL_6_NA")) %>%
+  select(id, leaf_area_2020)
 data_leaf_mass <- read_csv(
   here("data", "raw", "data_raw_traits_zirbel_brudvig_2020_leaf_mass.csv"),
   na = c("", "NA", "na")
 ) %>%
   rename(name = species, leaf_mass_2020 = leaf_mass) %>%
-  select(name, leaf_mass_2020) %>%
+  unite("id", name, number, source, sep = "_") %>%
+  select(id, leaf_mass_2020)
+data_sla <- data_leaf_area %>%
+  left_join(data_leaf_mass, by = "id") %>%
+  mutate(sla_2020 = leaf_area_2020 / leaf_mass_2020) %>%
+  separate(id, into = c("name", "number", "source"), sep = "_") %>%
+  select(-number, -source, -starts_with("leaf_")) %>%
   group_by(name) %>%
-  summarise(leaf_mass_2020 = mean(leaf_mass_2020, na.rm = TRUE))
+  summarize(across(where(is.numeric), ~ mean(.x, na.rm = TRUE))) %>%
+  mutate(across(everything(), ~ ifelse(is.nan(.), NA, .)))
 data_seed_mass <- read_csv(
   here("data", "raw", "data_raw_traits_zirbel_brudvig_2020_seed_mass.csv"),
   na = c("", "NA", "na")
@@ -286,14 +294,14 @@ data_seed_mass <- read_csv(
   rename(name = species, seedmass_2020 = seed_mass) %>%
   select(name, seedmass_2020) %>%
   group_by(name) %>%
-  summarise(seedmass_2020 = mean(seedmass_2020, na.rm = TRUE))
+  summarize(across(where(is.numeric), ~ mean(.x, na.rm = TRUE))) %>%
+  mutate(across(everything(), ~ ifelse(is.nan(.), NA, .)))
 
 
 ### c Combine data -------------------------------------------------------------
 
 traits_zirbel <- data_2017 %>%
-  full_join(data_leaf_area, by = "name") %>%
-  full_join(data_leaf_mass, by = "name") %>%
+  full_join(data_sla, by = "name") %>%
   full_join(data_seed_mass, by = "name") %>%
   mutate(
     name = str_replace(name, "ANDGER", "Andropogon gerardii"),
@@ -327,6 +335,9 @@ traits_zirbel <- data_2017 %>%
     name = str_replace(name, "PENHIR", "Penstemon hirsutus"),
     name = str_replace(name, "PETPUR", "Petalostemom purpureus"),
     name = str_replace(name, "POTARGE", "Potentilla argentea"),
+    name = str_replace(name, "POTARG", "Potentilla argentea"),
+    name = str_replace(name, "POTARGuta", "Drymocallis arguta"),
+    name = str_replace(name, "Potentilla arguta", "Drymocallis arguta"),
     name = str_replace(name, "RATPIN", "Ratibida pinnata"),
     name = str_replace(name, "RUDHIR", "Rudbeckia hirta"),
     name = str_replace(name, "SCHSCO", "Schizachyrium scoparium"),
@@ -348,13 +359,15 @@ traits_zirbel <- data_2017 %>%
     name = str_replace(name, "VERSTR", "Verbena stricta"),
     name = str_replace(name, "ZIZAPT", "Zizia aptera")
   ) %>%
+  mutate(
+    sla_2017 = sla_2017 * 10, # transform mm^2 mg^-1 --> cm^2 g^-1
+    seedmass_2017 = seedmass_2017 / 1000, # transform mg --> g
+    seedmass_2020 = seedmass_2020 / 1000 # transform mg --> g
+    ) %>%
   group_by(name) %>%
-  summarise(across(where(is.numeric), ~ mean(.x, na.rm = TRUE))) %>%
-  mutate(sla_2020 = leaf_area_2020 / leaf_mass_2020) %>%
-  select(-leaf_area_2020, -leaf_mass_2020)
+  summarize(across(where(is.numeric), ~ mean(.x, na.rm = TRUE))) %>%
+  mutate(across(everything(), ~ ifelse(is.nan(.), NA, .)))
   
-
-
 rm(list = setdiff(
   ls(), c("species", "sites", "flowers", "covers","traits_zirbel"))
   )
@@ -735,13 +748,17 @@ data_check_duplicated <- species %>%
   arrange(desc(n), accepted_name, date_surveyed, id_plot)
 
 data_check_occurences <- data_species %>%
+  filter(
+    plot_size != "seeded",
+    #str_detect(id_plot_year, "_2025")
+    ) %>%
   group_by(accepted_name) %>%
   count(accepted_name) %>%
   arrange(accepted_name, n)
 
 # write_xlsx(
 #   data_check_occurences,
-#   here("data", "processed", "data_processed_occurences_20250704.xlsx")
+#   here("data", "processed", "data_processed_occurences_20250818.xlsx")
 #   )
 
 rm(list = setdiff(
@@ -758,9 +775,9 @@ rm(list = setdiff(
 
 trait_ids <- c("1.2.2", "1.6.3", "3.2.3", "4.1.3")
 
-GIFT::GIFT_traits_meta() %>%
-  filter(Lvl3 %in% trait_ids) %>%
-  tibble()
+# GIFT::GIFT_traits_meta() %>%
+#   filter(Lvl3 %in% trait_ids) %>%
+#   tibble()
 
 # Code takes a lot of time --> Load instead the data_gift file below:
 
@@ -785,7 +802,7 @@ data_gift <- read_csv(
   )
 
 
-### b Combine gift and traits -------------------------------------------------
+### b Combine GIFT and traits -------------------------------------------------
 
 data_traits <- traits %>%
   left_join(
@@ -818,57 +835,44 @@ data_traits <- traits %>%
 
 data_traits %>% filter(duplicated(accepted_name))
 
+
+### c Check completeness -------------------------------------------------------
+
 data_missing <- data_traits %>%
   filter(
     (is.na(sla) | is.na(height) | is.na(seedmass)) &
       accepted_name_rank == "species"
     ) %>%
   select(accepted_name, seeded, family, sla, height, seedmass) %>%
+  arrange(desc(seeded))
+
+
+### d Combine Zirbel data and traits -------------------------------------------
+
+data_traits2 <- data_traits %>%
   left_join(
     traits_zirbel %>% rename(accepted_name = name), by = "accepted_name"
   ) %>%
   mutate(
-    sla = if_else(is.na(sla), sla_2017, sla),
-    sla = if_else(is.na(sla), sla_2020, sla),
-    height = if_else(is.na(height), height_2017, height),
-    seedmass = if_else(is.na(seedmass), seedmass_2017, seedmass),
+    sla = dplyr::coalesce(sla, sla_2017, sla_2020),
+    height = dplyr::coalesce(height, height_2017),
+    seedmass = dplyr::coalesce(seedmass, seedmass_2017, seedmass_2020)
   ) %>%
-  left_join(data_check_occurences, by = "accepted_name") %>%
-  relocate(n, .after = seeded) %>%
-  filter((is.na(sla) | is.na(height) | is.na(seedmass))) %>%
-  arrange(desc(seeded), desc(n))
+  select(-ends_with("_2017"), -ends_with("_2020"))
 
 
-# write_xlsx(
-#   data_missing,
-#   here("data", "processed", "data_processed_missing_20250709.xlsx")
-# )
+### e Check completeness -------------------------------------------------------
 
-# gift %>%
-#   filter(str_detect(accepted_name, "Lolium pratense")) %>%
-#   select(1:2, starts_with("trait"))
-# 
-# traits <- data_summarized %>%
-#   mutate(
-#     across(c("R1A", "R22", "both"), replace_na, 0),
-#     sla = if_else(accepted_name == "Festuca nigrescens", 193.57, sla), # Value of Festuca rubra (GIFT traitbase)
-#     sla = if_else(accepted_name == "Lolium pratense", 214.00, sla), # Value of LEDA traitbase
-#     sla = if_else(accepted_name == "Festuca rupicola", 193.57, sla), # Value of Festuca rubra (GIFT traitbase)
-#     sla = if_else(accepted_name == "Medicago falcata", 219.5, sla), # Value of Medicago sativa (GIFT traitbase)
-#     height = if_else(accepted_name == "Lolium pratense", 0.55, height), # Value of LEDA traitbase
-#     height = if_else(accepted_name == "Medicago falcata", 0.52, height), # Value of Medicago sativa (GIFT traitbase)
-#     seedmass = if_else(
-#       accepted_name == "Leucanthemum ircutianum", 0.0008119666, seedmass
-#       ) # Value of Leucanthemum vulgare
-#     )
+data_missing <- data_traits2 %>%
+  filter(
+    (is.na(sla) | is.na(height) | is.na(seedmass)) &
+      accepted_name_rank == "species"
+  ) %>%
+  select(accepted_name, seeded, family, sla, height, seedmass) %>%
+  arrange(desc(seeded))
 
 
-rm(list = setdiff(
-  ls(), c("species", "sites", "traits", "flowers", "covers","traits_zirbel")
-  ))
-
-
-### c TRY database -------------------------------------------------------------
+### f TRY database -------------------------------------------------------------
 
 data_try <- rtry_import(
   here("data", "raw", "database_try_43371", "43371.txt")
@@ -878,8 +882,92 @@ data_try <- rtry_import(
     SpeciesName, AccSpeciesID, TraitID, TraitName, DataName, DataID, StdValue,
     UnitName, LastName, Reference
   ) %>%
-  group_by(SpeciesName, AccSpeciesID, TraitName, TraitID, UnitName) %>%
-  summarize(mean = mean(StdValue, na.rm = TRUE))
+  mutate(
+    TraitID = str_replace(TraitID, "3117", "3115"),
+    TraitID = str_replace(TraitID, "3116", "3115"),
+    SpeciesName = str_replace(
+      SpeciesName, "Lespedeza virginica Britton Orthodox", "Lespedeza virginica"
+      ),
+    SpeciesName = str_replace(
+      SpeciesName, "Solidago namoralis", "Solidago nemoralis"
+      ),
+    SpeciesName = str_replace(
+      SpeciesName, "Soldago nemoralis", "Solidago nemoralis"
+      ),
+    SpeciesName = str_replace(SpeciesName, "Zizia cordata", "Zizia aptera"),
+    SpeciesName = str_replace(
+      SpeciesName, "Desmodium illinoense A.Gray Orthodox p",
+      "Desmodium illionense"
+      ),
+    SpeciesName = str_replace(
+      SpeciesName, "Desmodium illinoensis", "Desmodium illionense"),
+    SpeciesName = str_replace(
+      SpeciesName, "Aster azureus", "Symphyotrichum oolentangiense"),
+    SpeciesName = str_replace(
+      SpeciesName, "Symphiotrichum oolentangiensis",
+      "Symphyotrichum oolentangiense"
+      ),
+    SpeciesName = str_replace(
+      SpeciesName, "Aster ericoides", "Symphyotrichum ericoides"),
+    SpeciesName = str_replace(
+      SpeciesName, "Symphyotrichum undulatum \\(L\\.\\) G\\.L\\.Nesom",
+      "Symphyotrichum undulatum"
+      ),
+    SpeciesName = str_replace(
+      SpeciesName, "Aster undulatum", "Symphyotrichum undulatum"
+      ),
+    SpeciesName = str_replace(
+      SpeciesName, "Aster sagittifolius", "Symphyotrichum undulatum"
+      )
+    ) %>% 
+  group_by(AccSpeciesID, TraitID, UnitName) %>%
+  summarize(
+    accepted_name = first(SpeciesName), mean = mean(StdValue, na.rm = TRUE)
+    ) %>%
+  mutate(
+    TraitID = str_replace(TraitID, "26", "seedmass_new"),
+    TraitID = str_replace(TraitID, "3106", "height_new"),
+    TraitID = str_replace(TraitID, "3115", "sla_new")
+  ) %>%
+  ungroup() %>%
+  select(-AccSpeciesID, -UnitName) %>%
+  pivot_wider(names_from = "TraitID", values_from = "mean")
+
+
+### g Combine TRY and traits --------------------------------------------------
+
+data_traits3 <- data_traits2 %>%
+  left_join(data_try, by = "accepted_name") %>%
+  mutate(
+    sla = dplyr::coalesce(sla, sla_new),
+    height = dplyr::coalesce(height, height_new),
+    seedmass = dplyr::coalesce(seedmass, seedmass_new)
+  ) %>%
+  select(-ends_with("_new"))
+
+
+### h Check completeness -------------------------------------------------------
+
+data_missing <- data_traits3 %>%
+  filter(
+    (is.na(sla) | is.na(height) | is.na(seedmass)) &
+      accepted_name_rank == "species"
+  ) %>%
+  select(accepted_name, seeded, family, sla, height, seedmass) %>%
+  left_join(data_check_occurences, by = "accepted_name") %>%
+  relocate(n, .after = seeded) %>%
+  filter((is.na(sla) | is.na(height) | is.na(seedmass))) %>%
+  arrange(desc(seeded), desc(n))
+
+
+# write_xlsx(
+#   data_missing,
+#   here("data", "processed", "data_processed_missing_20250818.xlsx")
+# )
+
+rm(list = setdiff(
+  ls(), c("species", "sites", "traits", "flowers", "covers")
+  ))
 
 
 

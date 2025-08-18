@@ -109,6 +109,16 @@ data_model <- ggeffect(
 data <- sites %>%
   rename(predicted = y, x = seeded_pool, group = seeding_time, facet = site)
 
+data_annotation <- data.frame(
+  facet = factor(
+    c("NW Station", "Lux Arbor", "SW Station"),
+    levels = c("NW Station","Lux Arbor","SW Station")
+  ),
+  x = c("6", "6", "6"),
+  predicted = c(85, 85, 85),
+  label = c("n.s.", "n.s.", "n.s.")
+)
+
 (graph_a <- ggplot() +
     geom_errorbar(
       data = data_model,
@@ -122,10 +132,10 @@ data <- sites %>%
       aes(x, predicted, color = group),
       size = 2, position = position_dodge(width = 0.8)
     ) +
-    geom_text(
-      data = data_annotation,
-      aes(x = x, y = predicted, label = label)
-    ) +
+    # geom_text(
+    #   data = data_annotation,
+    #   aes(x = x, y = predicted, label = label)
+    # ) +
     facet_grid(~facet) +
     scale_y_continuous(limits = c(0, 87), breaks = seq(0, 90, 10)) +
     scale_color_manual(
@@ -135,7 +145,7 @@ data <- sites %>%
     ) +
     labs(
       x = "Seeded species pool [#]", color = "Seeding\ntime",
-      y = expression(Cover ~ non-seeded ~ species ~ "[" * '%' * "]")
+      y = "Cover non-seeded species [%]"
       ) +
     theme_mb())
 

@@ -9,6 +9,8 @@ Lux_10_2018,Lux_10,Lux Arbor,2018,1,spring,6,2,2,8,"Spring seeding, with herbici
 Lux_10_2018,Lux_10,Lux Arbor,2018,1,spring,6,11,11,8,"Spring seeding, with herbicide, 2 forb species/group",species_richness,59,0.4772327044025157,94.5,15,0,79.5
 Lux_10_2019,Lux_10,Lux Arbor,2019,1,spring,6,5,1,8,"Spring seeding, with herbicide, 2 forb species/group",seeded_richness,59,0.4772327044025157,98,39,0,59
 Lux_10_2019,Lux_10,Lux Arbor,2019,1,spring,6,14,7,8,"Spring seeding, with herbicide, 2 forb species/group",species_richness,59,0.4772327044025157,98,39,0,59
+Lux_10_2025,Lux_10,Lux Arbor,2025,1,spring,6,1,2,8,"Spring seeding, with herbicide, 2 forb species/group",seeded_richness,59,0.4772327044025157,87.4,37,0,50.4
+Lux_10_2025,Lux_10,Lux Arbor,2025,1,spring,6,9,5,8,"Spring seeding, with herbicide, 2 forb species/group",species_richness,59,0.4772327044025157,87.4,37,0,50.4
 Lux_11_2015,Lux_11,Lux Arbor,2015,1,spring,6,0,2,8,"Spring seeding, with herbicide, 2 forb species/group",seeded_richness,47,0.47724192905540047,65.6,0,0,65.6
 Lux_11_2015,Lux_11,Lux Arbor,2015,1,spring,6,5,11,8,"Spring seeding, with herbicide, 2 forb species/group",species_richness,47,0.47724192905540047,65.6,0,0,65.6
 Lux_11_2016,Lux_11,Lux Arbor,2016,1,spring,6,0,1,8,"Spring seeding, with herbicide, 2 forb species/group",seeded_richness,47,0.47724192905540047,94.2,0,0,94.2
@@ -19,6 +21,8 @@ Lux_11_2018,Lux_11,Lux Arbor,2018,1,spring,6,1,3,8,"Spring seeding, with herbici
 Lux_11_2018,Lux_11,Lux Arbor,2018,1,spring,6,7,9,8,"Spring seeding, with herbicide, 2 forb species/group",species_richness,47,0.47724192905540047,81.9,3,0,78.9
 Lux_11_2019,Lux_11,Lux Arbor,2019,1,spring,6,1,2,8,"Spring seeding, with herbicide, 2 forb species/group",seeded_richness,47,0.47724192905540047,86.5,8,0,78.5
 Lux_11_2019,Lux_11,Lux Arbor,2019,1,spring,6,9,6,8,"Spring seeding, with herbicide, 2 forb species/group",species_richness,47,0.47724192905540047,86.5,8,0,78.5
+Lux_11_2025,Lux_11,Lux Arbor,2025,1,spring,6,2,1,8,"Spring seeding, with herbicide, 2 forb species/group",seeded_richness,47,0.47724192905540047,46.7,26,0,20.7
+Lux_11_2025,Lux_11,Lux Arbor,2025,1,spring,6,6,3,8,"Spring seeding, with herbicide, 2 forb species/group",species_richness,47,0.47724192905540047,46.7,26,0,20.7
 Lux_12_2015,Lux_12,Lux Arbor,2015,0,fall,33,1,9,1,Fall seeding full diversity,seeded_richness,51,0.5525015173848955,32.3,0,0.2,32.1
 Lux_12_2015,Lux_12,Lux Arbor,2015,0,fall,33,5,20,1,Fall seeding full diversity,species_richness,51,0.5525015173848955,32.3,0,0.2,32.1
 Lux_12_2016,Lux_12,Lux Arbor,2016,0,fall,33,5,8,1,Fall seeding full diversity,seeded_richness,51,0.5525015173848955,94.3,13,0.7,80.6
@@ -29,6 +33,8 @@ Lux_12_2018,Lux_12,Lux Arbor,2018,0,fall,33,5,9,1,Fall seeding full diversity,se
 Lux_12_2018,Lux_12,Lux Arbor,2018,0,fall,33,13,12,1,Fall seeding full diversity,species_richness,51,0.5525015173848955,119.1,29,3,87.1
 Lux_12_2019,Lux_12,Lux Arbor,2019,0,fall,33,6,7,1,Fall seeding full diversity,seeded_richness,51,0.5525015173848955,104.4,48,2,54.4
 Lux_12_2019,Lux_12,Lux Arbor,2019,0,fall,33,13,16,1,Fall seeding full diversity,species_richness,51,0.5525015173848955,104.4,48,2,54.4
+Lux_12_2025,Lux_12,Lux Arbor,2025,0,fall,33,5,3,1,Fall seeding full diversity,seeded_richness,51,0.5525015173848955,74.3,53,0.5,20.8
+Lux_12_2025,Lux_12,Lux Arbor,2025,0,fall,33,9,5,1,Fall seeding full diversity,species_richness,51,0.5525015173848955,74.3,53,0.5,20.8
 Lux_13_2015,Lux_13,Lux Arbor,2015,0,fall,6,0,4,5,Fall seeding 2 forb species/group,seeded_richness,53,0.47169184791632063,98.8,0,0,98.8
 Lux_13_2015,Lux_13,Lux Arbor,2015,0,fall,6,6,10,5,Fall seeding 2 forb species/group,species_richness,53,0.47169184791632063,98.8,0,0,98.8
 Lux_13_2016,Lux_13,Lux Arbor,2016,0,fall,6,0,2,5,Fall seeding 2 forb species/group,seeded_richness,53,0.47169184791632063,64.3,0,0,64.3
@@ -39,16 +45,20 @@ Lux_13_2018,Lux_13,Lux Arbor,2018,0,fall,6,2,6,5,Fall seeding 2 forb species/gro
 Lux_13_2018,Lux_13,Lux Arbor,2018,0,fall,6,12,10,5,Fall seeding 2 forb species/group,species_richness,53,0.47169184791632063,90.3,5,12,73.3
 Lux_13_2019,Lux_13,Lux Arbor,2019,0,fall,6,2,5,5,Fall seeding 2 forb species/group,seeded_richness,53,0.47169184791632063,98.3,4,5,89.3
 Lux_13_2019,Lux_13,Lux Arbor,2019,0,fall,6,11,10,5,Fall seeding 2 forb species/group,species_richness,53,0.47169184791632063,98.3,4,5,89.3
+Lux_13_2025,Lux_13,Lux Arbor,2025,0,fall,6,5,2,5,Fall seeding 2 forb species/group,seeded_richness,53,0.47169184791632063,93.8,27,18,48.8
+Lux_13_2025,Lux_13,Lux Arbor,2025,0,fall,6,11,11,5,Fall seeding 2 forb species/group,species_richness,53,0.47169184791632063,93.8,27,18,48.8
 Lux_14_2015,Lux_14,Lux Arbor,2015,1,spring,12,0,0,9,"Spring seeding, with herbicide, 4 forb species/group",seeded_richness,33,0.6479000112599932,58.2,0,0,58.2
 Lux_14_2015,Lux_14,Lux Arbor,2015,1,spring,12,15,2,9,"Spring seeding, with herbicide, 4 forb species/group",species_richness,33,0.6479000112599932,58.2,0,0,58.2
 Lux_14_2016,Lux_14,Lux Arbor,2016,1,spring,12,1,0,9,"Spring seeding, with herbicide, 4 forb species/group",seeded_richness,33,0.6479000112599932,64.6,0.5,0,64.1
 Lux_14_2016,Lux_14,Lux Arbor,2016,1,spring,12,13,5,9,"Spring seeding, with herbicide, 4 forb species/group",species_richness,33,0.6479000112599932,64.6,0.5,0,64.1
-Lux_14_2017,Lux_14,Lux Arbor,2017,1,spring,12,0,3,9,"Spring seeding, with herbicide, 4 forb species/group",seeded_richness,33,0.6479000112599932,80.4,0,0,80.4
-Lux_14_2017,Lux_14,Lux Arbor,2017,1,spring,12,9,9,9,"Spring seeding, with herbicide, 4 forb species/group",species_richness,33,0.6479000112599932,80.4,0,0,80.4
+Lux_14_2017,Lux_14,Lux Arbor,2017,1,spring,12,0,3,9,"Spring seeding, with herbicide, 4 forb species/group",seeded_richness,33,0.6479000112599932,80.4,0,0,80.2
+Lux_14_2017,Lux_14,Lux Arbor,2017,1,spring,12,9,9,9,"Spring seeding, with herbicide, 4 forb species/group",species_richness,33,0.6479000112599932,80.4,0,0,80.2
 Lux_14_2018,Lux_14,Lux Arbor,2018,1,spring,12,2,3,9,"Spring seeding, with herbicide, 4 forb species/group",seeded_richness,33,0.6479000112599932,105.9,14,0,91.9
 Lux_14_2018,Lux_14,Lux Arbor,2018,1,spring,12,9,10,9,"Spring seeding, with herbicide, 4 forb species/group",species_richness,33,0.6479000112599932,105.9,14,0,91.9
 Lux_14_2019,Lux_14,Lux Arbor,2019,1,spring,12,1,4,9,"Spring seeding, with herbicide, 4 forb species/group",seeded_richness,33,0.6479000112599932,110.8,0,0.4,110.4
 Lux_14_2019,Lux_14,Lux Arbor,2019,1,spring,12,14,8,9,"Spring seeding, with herbicide, 4 forb species/group",species_richness,33,0.6479000112599932,110.8,0,0.4,110.4
+Lux_14_2025,Lux_14,Lux Arbor,2025,1,spring,12,3,3,9,"Spring seeding, with herbicide, 4 forb species/group",seeded_richness,33,0.6479000112599932,103.6,22,0,81.6
+Lux_14_2025,Lux_14,Lux Arbor,2025,1,spring,12,9,9,9,"Spring seeding, with herbicide, 4 forb species/group",species_richness,33,0.6479000112599932,103.6,22,0,81.6
 Lux_15_2015,Lux_15,Lux Arbor,2015,0,fall,12,5,3,6,Fall seeding 4 forb species/group,seeded_richness,9,0.47188066921991556,75.91,0,4.8,71.11
 Lux_15_2015,Lux_15,Lux Arbor,2015,0,fall,12,14,10,6,Fall seeding 4 forb species/group,species_richness,9,0.47188066921991556,75.91,0,4.8,71.11
 Lux_15_2016,Lux_15,Lux Arbor,2016,0,fall,12,4,5,6,Fall seeding 4 forb species/group,seeded_richness,9,0.47188066921991556,53.9,2,5.1,46.8
@@ -59,6 +69,8 @@ Lux_15_2018,Lux_15,Lux Arbor,2018,0,fall,12,4,6,6,Fall seeding 4 forb species/gr
 Lux_15_2018,Lux_15,Lux Arbor,2018,0,fall,12,14,9,6,Fall seeding 4 forb species/group,species_richness,9,0.47188066921991556,103.7,8,26.6,69.1
 Lux_15_2019,Lux_15,Lux Arbor,2019,0,fall,12,5,7,6,Fall seeding 4 forb species/group,seeded_richness,9,0.47188066921991556,106.5,2,12.3,92.2
 Lux_15_2019,Lux_15,Lux Arbor,2019,0,fall,12,14,10,6,Fall seeding 4 forb species/group,species_richness,9,0.47188066921991556,106.5,2,12.3,92.2
+Lux_15_2025,Lux_15,Lux Arbor,2025,0,fall,12,6,5,6,Fall seeding 4 forb species/group,seeded_richness,9,0.47188066921991556,92,48,14.7,29.3
+Lux_15_2025,Lux_15,Lux Arbor,2025,0,fall,12,15,9,6,Fall seeding 4 forb species/group,species_richness,9,0.47188066921991556,92,48,14.7,29.3
 Lux_16_2015,Lux_16,Lux Arbor,2015,1,spring,18,0,0,10,"Spring seeding, with herbicide, 6 forb species/group",seeded_richness,36,0.48697894999583996,61.19,0,0,61.19
 Lux_16_2015,Lux_16,Lux Arbor,2015,1,spring,18,10,6,10,"Spring seeding, with herbicide, 6 forb species/group",species_richness,36,0.48697894999583996,61.19,0,0,61.19
 Lux_16_2016,Lux_16,Lux Arbor,2016,1,spring,18,1,1,10,"Spring seeding, with herbicide, 6 forb species/group",seeded_richness,36,0.48697894999583996,94.9,4,0,90.9
@@ -69,6 +81,8 @@ Lux_16_2018,Lux_16,Lux Arbor,2018,1,spring,18,3,1,10,"Spring seeding, with herbi
 Lux_16_2018,Lux_16,Lux Arbor,2018,1,spring,18,8,10,10,"Spring seeding, with herbicide, 6 forb species/group",species_richness,36,0.48697894999583996,88.1,50,0,38.1
 Lux_16_2019,Lux_16,Lux Arbor,2019,1,spring,18,4,0,10,"Spring seeding, with herbicide, 6 forb species/group",seeded_richness,36,0.48697894999583996,111.7,52,0,59.7
 Lux_16_2019,Lux_16,Lux Arbor,2019,1,spring,18,11,7,10,"Spring seeding, with herbicide, 6 forb species/group",species_richness,36,0.48697894999583996,111.7,52,0,59.7
+Lux_16_2025,Lux_16,Lux Arbor,2025,1,spring,18,4,0,10,"Spring seeding, with herbicide, 6 forb species/group",seeded_richness,36,0.48697894999583996,79.5,54,0,25.5
+Lux_16_2025,Lux_16,Lux Arbor,2025,1,spring,18,7,3,10,"Spring seeding, with herbicide, 6 forb species/group",species_richness,36,0.48697894999583996,79.5,54,0,25.5
 Lux_17_2015,Lux_17,Lux Arbor,2015,1,spring,33,1,2,3,"Spring seeding, with herbicide, full diversity",seeded_richness,20,0.49591352491431573,57.52,0,0.02,57.5
 Lux_17_2015,Lux_17,Lux Arbor,2015,1,spring,33,10,11,3,"Spring seeding, with herbicide, full diversity",species_richness,20,0.49591352491431573,57.52,0,0.02,57.5
 Lux_17_2016,Lux_17,Lux Arbor,2016,1,spring,33,2,5,3,"Spring seeding, with herbicide, full diversity",seeded_richness,20,0.49591352491431573,93.4,3,0.8,89.6
@@ -79,6 +93,8 @@ Lux_17_2018,Lux_17,Lux Arbor,2018,1,spring,33,4,9,3,"Spring seeding, with herbic
 Lux_17_2018,Lux_17,Lux Arbor,2018,1,spring,33,10,16,3,"Spring seeding, with herbicide, full diversity",species_richness,20,0.49591352491431573,100,43,7,50
 Lux_17_2019,Lux_17,Lux Arbor,2019,1,spring,33,4,8,3,"Spring seeding, with herbicide, full diversity",seeded_richness,20,0.49591352491431573,95.4,70,4,21.4
 Lux_17_2019,Lux_17,Lux Arbor,2019,1,spring,33,10,9,3,"Spring seeding, with herbicide, full diversity",species_richness,20,0.49591352491431573,95.4,70,4,21.4
+Lux_17_2025,Lux_17,Lux Arbor,2025,1,spring,33,3,6,3,"Spring seeding, with herbicide, full diversity",seeded_richness,20,0.49591352491431573,86,78,0,8
+Lux_17_2025,Lux_17,Lux Arbor,2025,1,spring,33,7,9,3,"Spring seeding, with herbicide, full diversity",species_richness,20,0.49591352491431573,86,78,0,8
 Lux_18_2015,Lux_18,Lux Arbor,2015,1,spring,12,0,0,9,"Spring seeding, with herbicide, 4 forb species/group",seeded_richness,61,0.5542666315141931,28,0,0,28
 Lux_18_2015,Lux_18,Lux Arbor,2015,1,spring,12,4,5,9,"Spring seeding, with herbicide, 4 forb species/group",species_richness,61,0.5542666315141931,28,0,0,28
 Lux_18_2016,Lux_18,Lux Arbor,2016,1,spring,12,2,1,9,"Spring seeding, with herbicide, 4 forb species/group",seeded_richness,61,0.5542666315141931,73.5,11,0,62.5
@@ -89,6 +105,8 @@ Lux_18_2018,Lux_18,Lux Arbor,2018,1,spring,12,2,3,9,"Spring seeding, with herbic
 Lux_18_2018,Lux_18,Lux Arbor,2018,1,spring,12,5,8,9,"Spring seeding, with herbicide, 4 forb species/group",species_richness,61,0.5542666315141931,86,48,0,38
 Lux_18_2019,Lux_18,Lux Arbor,2019,1,spring,12,2,3,9,"Spring seeding, with herbicide, 4 forb species/group",seeded_richness,61,0.5542666315141931,107.2,35,0,72.2
 Lux_18_2019,Lux_18,Lux Arbor,2019,1,spring,12,7,9,9,"Spring seeding, with herbicide, 4 forb species/group",species_richness,61,0.5542666315141931,107.2,35,0,72.2
+Lux_18_2025,Lux_18,Lux Arbor,2025,1,spring,12,2,4,9,"Spring seeding, with herbicide, 4 forb species/group",seeded_richness,61,0.5542666315141931,94,85,0,9
+Lux_18_2025,Lux_18,Lux Arbor,2025,1,spring,12,5,8,9,"Spring seeding, with herbicide, 4 forb species/group",species_richness,61,0.5542666315141931,94,85,0,9
 Lux_19_2015,Lux_19,Lux Arbor,2015,0,unseeded,0,0,1,4,Unseeded control,seeded_richness,51,0.4602826694883229,68,0,0,68
 Lux_19_2015,Lux_19,Lux Arbor,2015,0,unseeded,0,6,10,4,Unseeded control,species_richness,51,0.4602826694883229,68,0,0,68
 Lux_19_2016,Lux_19,Lux Arbor,2016,0,unseeded,0,1,4,4,Unseeded control,seeded_richness,51,0.4602826694883229,78.8,5,0,73.8
@@ -99,6 +117,8 @@ Lux_19_2018,Lux_19,Lux Arbor,2018,0,unseeded,0,3,2,4,Unseeded control,seeded_ric
 Lux_19_2018,Lux_19,Lux Arbor,2018,0,unseeded,0,11,14,4,Unseeded control,species_richness,51,0.4602826694883229,106.5,29,0,77.5
 Lux_19_2019,Lux_19,Lux Arbor,2019,0,unseeded,0,3,2,4,Unseeded control,seeded_richness,51,0.4602826694883229,93.62,13,0,80.62
 Lux_19_2019,Lux_19,Lux Arbor,2019,0,unseeded,0,19,5,4,Unseeded control,species_richness,51,0.4602826694883229,93.62,13,0,80.62
+Lux_19_2025,Lux_19,Lux Arbor,2025,0,unseeded,0,6,1,4,Unseeded control,seeded_richness,51,0.4602826694883229,91.4,57,6.6,27.8
+Lux_19_2025,Lux_19,Lux Arbor,2025,0,unseeded,0,11,5,4,Unseeded control,species_richness,51,0.4602826694883229,91.4,57,6.6,27.8
 Lux_1_2015,Lux_1,Lux Arbor,2015,0,spring,33,0,1,2,"Spring seeding, no herbicide, full diversity",seeded_richness,62,0.5477091553265159,52,0,0,52
 Lux_1_2015,Lux_1,Lux Arbor,2015,0,spring,33,8,2,2,"Spring seeding, no herbicide, full diversity",species_richness,62,0.5477091553265159,52,0,0,52
 Lux_1_2016,Lux_1,Lux Arbor,2016,0,spring,33,1,2,2,"Spring seeding, no herbicide, full diversity",seeded_richness,62,0.5477091553265159,95,0,0.3,94.7
@@ -109,6 +129,8 @@ Lux_1_2018,Lux_1,Lux Arbor,2018,0,spring,33,1,9,2,"Spring seeding, no herbicide,
 Lux_1_2018,Lux_1,Lux Arbor,2018,0,spring,33,11,12,2,"Spring seeding, no herbicide, full diversity",species_richness,62,0.5477091553265159,50.5,0.5,0,50
 Lux_1_2019,Lux_1,Lux Arbor,2019,0,spring,33,1,6,2,"Spring seeding, no herbicide, full diversity",seeded_richness,62,0.5477091553265159,89.5,0,1,88.5
 Lux_1_2019,Lux_1,Lux Arbor,2019,0,spring,33,14,12,2,"Spring seeding, no herbicide, full diversity",species_richness,62,0.5477091553265159,89.5,0,1,88.5
+Lux_1_2025,Lux_1,Lux Arbor,2025,0,spring,33,3,5,2,"Spring seeding, no herbicide, full diversity",seeded_richness,62,0.5477091553265159,94.7,6,1,87.7
+Lux_1_2025,Lux_1,Lux Arbor,2025,0,spring,33,15,9,2,"Spring seeding, no herbicide, full diversity",species_richness,62,0.5477091553265159,94.7,6,1,87.7
 Lux_20_2015,Lux_20,Lux Arbor,2015,0,fall,33,4,8,1,Fall seeding full diversity,seeded_richness,63,0.6470901726710725,81.87,0,1.67,80.2
 Lux_20_2015,Lux_20,Lux Arbor,2015,0,fall,33,14,16,1,Fall seeding full diversity,species_richness,63,0.6470901726710725,81.87,0,1.67,80.2
 Lux_20_2016,Lux_20,Lux Arbor,2016,0,fall,33,2,7,1,Fall seeding full diversity,seeded_richness,63,0.6470901726710725,88.2,0,1.3,86.9
@@ -119,6 +141,8 @@ Lux_20_2018,Lux_20,Lux Arbor,2018,0,fall,33,4,11,1,Fall seeding full diversity,s
 Lux_20_2018,Lux_20,Lux Arbor,2018,0,fall,33,12,23,1,Fall seeding full diversity,species_richness,63,0.6470901726710725,105.1,0.5,5.5,99.1
 Lux_20_2019,Lux_20,Lux Arbor,2019,0,fall,33,5,10,1,Fall seeding full diversity,seeded_richness,63,0.6470901726710725,120.5,3,7.5,110
 Lux_20_2019,Lux_20,Lux Arbor,2019,0,fall,33,14,14,1,Fall seeding full diversity,species_richness,63,0.6470901726710725,120.5,3,7.5,110
+Lux_20_2025,Lux_20,Lux Arbor,2025,0,fall,33,7,5,1,Fall seeding full diversity,seeded_richness,63,0.6470901726710725,85.8,29,14,42.8
+Lux_20_2025,Lux_20,Lux Arbor,2025,0,fall,33,14,10,1,Fall seeding full diversity,species_richness,63,0.6470901726710725,85.8,29,14,42.8
 Lux_21_2015,Lux_21,Lux Arbor,2015,0,fall,12,2,5,6,Fall seeding 4 forb species/group,seeded_richness,42,0.5145648633978652,57.1,0,2.4,54.7
 Lux_21_2015,Lux_21,Lux Arbor,2015,0,fall,12,8,15,6,Fall seeding 4 forb species/group,species_richness,42,0.5145648633978652,57.1,0,2.4,54.7
 Lux_21_2016,Lux_21,Lux Arbor,2016,0,fall,12,10,1,6,Fall seeding 4 forb species/group,seeded_richness,42,0.5145648633978652,88.6,20,10.4,58.2
@@ -129,6 +153,8 @@ Lux_21_2018,Lux_21,Lux Arbor,2018,0,fall,12,10,3,6,Fall seeding 4 forb species/g
 Lux_21_2018,Lux_21,Lux Arbor,2018,0,fall,12,17,11,6,Fall seeding 4 forb species/group,species_richness,42,0.5145648633978652,110.4,54,16.8,39.6
 Lux_21_2019,Lux_21,Lux Arbor,2019,0,fall,12,9,3,6,Fall seeding 4 forb species/group,seeded_richness,42,0.5145648633978652,91,24,12.5,54.5
 Lux_21_2019,Lux_21,Lux Arbor,2019,0,fall,12,15,5,6,Fall seeding 4 forb species/group,species_richness,42,0.5145648633978652,91,24,12.5,54.5
+Lux_21_2025,Lux_21,Lux Arbor,2025,0,fall,12,8,1,6,Fall seeding 4 forb species/group,seeded_richness,42,0.5145648633978652,85.1,55,23.7,6.4
+Lux_21_2025,Lux_21,Lux Arbor,2025,0,fall,12,12,4,6,Fall seeding 4 forb species/group,species_richness,42,0.5145648633978652,85.1,55,23.7,6.4
 Lux_22_2015,Lux_22,Lux Arbor,2015,0,fall,6,3,3,5,Fall seeding 2 forb species/group,seeded_richness,48,0.5131451612903225,45,0,3.5,41.5
 Lux_22_2015,Lux_22,Lux Arbor,2015,0,fall,6,10,5,5,Fall seeding 2 forb species/group,species_richness,48,0.5131451612903225,45,0,3.5,41.5
 Lux_22_2016,Lux_22,Lux Arbor,2016,0,fall,6,5,1,5,Fall seeding 2 forb species/group,seeded_richness,48,0.5131451612903225,96.8,7,3.8,86
@@ -139,6 +165,8 @@ Lux_22_2018,Lux_22,Lux Arbor,2018,0,fall,6,5,1,5,Fall seeding 2 forb species/gro
 Lux_22_2018,Lux_22,Lux Arbor,2018,0,fall,6,11,10,5,Fall seeding 2 forb species/group,species_richness,48,0.5131451612903225,111,63,31,17
 Lux_22_2019,Lux_22,Lux Arbor,2019,0,fall,6,4,1,5,Fall seeding 2 forb species/group,seeded_richness,48,0.5131451612903225,76.57,55,7,14.57
 Lux_22_2019,Lux_22,Lux Arbor,2019,0,fall,6,12,3,5,Fall seeding 2 forb species/group,species_richness,48,0.5131451612903225,76.57,55,7,14.57
+Lux_22_2025,Lux_22,Lux Arbor,2025,0,fall,6,4,2,5,Fall seeding 2 forb species/group,seeded_richness,48,0.5131451612903225,46.7,32,0.9,13.8
+Lux_22_2025,Lux_22,Lux Arbor,2025,0,fall,6,8,3,5,Fall seeding 2 forb species/group,species_richness,48,0.5131451612903225,46.7,32,0.9,13.8
 Lux_23_2015,Lux_23,Lux Arbor,2015,0,fall,18,5,4,7,Fall seeding 6 forb species/group,seeded_richness,40,0.51256753582335,70.7,0,11.3,59.4
 Lux_23_2015,Lux_23,Lux Arbor,2015,0,fall,18,9,15,7,Fall seeding 6 forb species/group,species_richness,40,0.51256753582335,70.7,0,11.3,59.4
 Lux_23_2016,Lux_23,Lux Arbor,2016,0,fall,18,6,5,7,Fall seeding 6 forb species/group,seeded_richness,40,0.51256753582335,96.6,1,7.5,88.1
@@ -149,6 +177,8 @@ Lux_23_2018,Lux_23,Lux Arbor,2018,0,fall,18,7,7,7,Fall seeding 6 forb species/gr
 Lux_23_2018,Lux_23,Lux Arbor,2018,0,fall,18,14,11,7,Fall seeding 6 forb species/group,species_richness,40,0.51256753582335,97.6,60,8.3,29.3
 Lux_23_2019,Lux_23,Lux Arbor,2019,0,fall,18,9,2,7,Fall seeding 6 forb species/group,seeded_richness,40,0.51256753582335,51,15,16.5,19.5
 Lux_23_2019,Lux_23,Lux Arbor,2019,0,fall,18,13,7,7,Fall seeding 6 forb species/group,species_richness,40,0.51256753582335,51,15,16.5,19.5
+Lux_23_2025,Lux_23,Lux Arbor,2025,0,fall,18,2,3,7,Fall seeding 6 forb species/group,seeded_richness,40,0.51256753582335,54.51,39,0,15.51
+Lux_23_2025,Lux_23,Lux Arbor,2025,0,fall,18,6,6,7,Fall seeding 6 forb species/group,species_richness,40,0.51256753582335,54.51,39,0,15.51
 Lux_24_2015,Lux_24,Lux Arbor,2015,0,fall,18,4,6,7,Fall seeding 6 forb species/group,seeded_richness,12,0.5183573050719154,49.5,0,1.4,48.1
 Lux_24_2015,Lux_24,Lux Arbor,2015,0,fall,18,10,20,7,Fall seeding 6 forb species/group,species_richness,12,0.5183573050719154,49.5,0,1.4,48.1
 Lux_24_2016,Lux_24,Lux Arbor,2016,0,fall,18,4,3,7,Fall seeding 6 forb species/group,seeded_richness,12,0.5183573050719154,80.8,0,9.5,71.3
@@ -159,6 +189,8 @@ Lux_24_2018,Lux_24,Lux Arbor,2018,0,fall,18,5,7,7,Fall seeding 6 forb species/gr
 Lux_24_2018,Lux_24,Lux Arbor,2018,0,fall,18,9,13,7,Fall seeding 6 forb species/group,species_richness,12,0.5183573050719154,104,2,27,75
 Lux_24_2019,Lux_24,Lux Arbor,2019,0,fall,18,6,7,7,Fall seeding 6 forb species/group,seeded_richness,12,0.5183573050719154,75.01,3,24.51,47.5
 Lux_24_2019,Lux_24,Lux Arbor,2019,0,fall,18,10,9,7,Fall seeding 6 forb species/group,species_richness,12,0.5183573050719154,75.01,3,24.51,47.5
+Lux_24_2025,Lux_24,Lux Arbor,2025,0,fall,18,4,2,7,Fall seeding 6 forb species/group,seeded_richness,12,0.5183573050719154,52.6,24,4,24.6
+Lux_24_2025,Lux_24,Lux Arbor,2025,0,fall,18,8,6,7,Fall seeding 6 forb species/group,species_richness,12,0.5183573050719154,52.6,24,4,24.6
 Lux_25_2015,Lux_25,Lux Arbor,2015,1,spring,12,0,1,9,"Spring seeding, with herbicide, 4 forb species/group",seeded_richness,63,0.4672158429023134,49.2,0,0,49.2
 Lux_25_2015,Lux_25,Lux Arbor,2015,1,spring,12,6,10,9,"Spring seeding, with herbicide, 4 forb species/group",species_richness,63,0.4672158429023134,49.2,0,0,49.2
 Lux_25_2016,Lux_25,Lux Arbor,2016,1,spring,12,1,1,9,"Spring seeding, with herbicide, 4 forb species/group",seeded_richness,63,0.4672158429023134,90,9,0,81
@@ -169,6 +201,8 @@ Lux_25_2018,Lux_25,Lux Arbor,2018,1,spring,12,2,4,9,"Spring seeding, with herbic
 Lux_25_2018,Lux_25,Lux Arbor,2018,1,spring,12,9,11,9,"Spring seeding, with herbicide, 4 forb species/group",species_richness,63,0.4672158429023134,104.5,12,0,92.5
 Lux_25_2019,Lux_25,Lux Arbor,2019,1,spring,12,1,5,9,"Spring seeding, with herbicide, 4 forb species/group",seeded_richness,63,0.4672158429023134,108.8,12,0,96.8
 Lux_25_2019,Lux_25,Lux Arbor,2019,1,spring,12,7,16,9,"Spring seeding, with herbicide, 4 forb species/group",species_richness,63,0.4672158429023134,108.8,12,0,96.8
+Lux_25_2025,Lux_25,Lux Arbor,2025,1,spring,12,4,3,9,"Spring seeding, with herbicide, 4 forb species/group",seeded_richness,63,0.4672158429023134,103.1,21,20,62.1
+Lux_25_2025,Lux_25,Lux Arbor,2025,1,spring,12,13,9,9,"Spring seeding, with herbicide, 4 forb species/group",species_richness,63,0.4672158429023134,103.1,21,20,62.1
 Lux_26_2015,Lux_26,Lux Arbor,2015,0,fall,33,2,11,1,Fall seeding full diversity,seeded_richness,69,0.6442700850922757,83.4,0,0.7,82.7
 Lux_26_2015,Lux_26,Lux Arbor,2015,0,fall,33,11,24,1,Fall seeding full diversity,species_richness,69,0.6442700850922757,83.4,0,0.7,82.7
 Lux_26_2016,Lux_26,Lux Arbor,2016,0,fall,33,1,11,1,Fall seeding full diversity,seeded_richness,69,0.6442700850922757,86.5,1,0,85.5
@@ -179,6 +213,8 @@ Lux_26_2018,Lux_26,Lux Arbor,2018,0,fall,33,5,11,1,Fall seeding full diversity,s
 Lux_26_2018,Lux_26,Lux Arbor,2018,0,fall,33,11,13,1,Fall seeding full diversity,species_richness,69,0.6442700850922757,100.7,3.5,4.2,93
 Lux_26_2019,Lux_26,Lux Arbor,2019,0,fall,33,4,11,1,Fall seeding full diversity,seeded_richness,69,0.6442700850922757,103.5,10,4,89.5
 Lux_26_2019,Lux_26,Lux Arbor,2019,0,fall,33,13,18,1,Fall seeding full diversity,species_richness,69,0.6442700850922757,103.5,10,4,89.5
+Lux_26_2025,Lux_26,Lux Arbor,2025,0,fall,33,9,5,1,Fall seeding full diversity,seeded_richness,69,0.6442700850922757,104.6,39,7.5,58.1
+Lux_26_2025,Lux_26,Lux Arbor,2025,0,fall,33,14,11,1,Fall seeding full diversity,species_richness,69,0.6442700850922757,104.6,39,7.5,58.1
 Lux_27_2015,Lux_27,Lux Arbor,2015,1,spring,6,0,0,8,"Spring seeding, with herbicide, 2 forb species/group",seeded_richness,46,0.516674364896074,74.9,0,0,74.9
 Lux_27_2015,Lux_27,Lux Arbor,2015,1,spring,6,11,9,8,"Spring seeding, with herbicide, 2 forb species/group",species_richness,46,0.516674364896074,74.9,0,0,74.9
 Lux_27_2016,Lux_27,Lux Arbor,2016,1,spring,6,2,2,8,"Spring seeding, with herbicide, 2 forb species/group",seeded_richness,46,0.516674364896074,76.8,6,0,70.8
@@ -189,16 +225,20 @@ Lux_27_2018,Lux_27,Lux Arbor,2018,1,spring,6,1,2,8,"Spring seeding, with herbici
 Lux_27_2018,Lux_27,Lux Arbor,2018,1,spring,6,8,6,8,"Spring seeding, with herbicide, 2 forb species/group",species_richness,46,0.516674364896074,104,9,0,95
 Lux_27_2019,Lux_27,Lux Arbor,2019,1,spring,6,3,3,8,"Spring seeding, with herbicide, 2 forb species/group",seeded_richness,46,0.516674364896074,125.8,18,0,107.8
 Lux_27_2019,Lux_27,Lux Arbor,2019,1,spring,6,12,8,8,"Spring seeding, with herbicide, 2 forb species/group",species_richness,46,0.516674364896074,125.8,18,0,107.8
+Lux_27_2025,Lux_27,Lux Arbor,2025,1,spring,6,5,1,8,"Spring seeding, with herbicide, 2 forb species/group",seeded_richness,46,0.516674364896074,107.1,55,0,52.1
+Lux_27_2025,Lux_27,Lux Arbor,2025,1,spring,6,12,5,8,"Spring seeding, with herbicide, 2 forb species/group",species_richness,46,0.516674364896074,107.1,55,0,52.1
 Lux_28_2015,Lux_28,Lux Arbor,2015,0,fall,12,4,1,6,Fall seeding 4 forb species/group,seeded_richness,31,0.4638465702575206,71.1,0,3.6,67.5
 Lux_28_2015,Lux_28,Lux Arbor,2015,0,fall,12,12,7,6,Fall seeding 4 forb species/group,species_richness,31,0.4638465702575206,71.1,0,3.6,67.5
 Lux_28_2016,Lux_28,Lux Arbor,2016,0,fall,12,6,3,6,Fall seeding 4 forb species/group,seeded_richness,31,0.4638465702575206,81.3,3,6.5,71.8
 Lux_28_2016,Lux_28,Lux Arbor,2016,0,fall,12,15,9,6,Fall seeding 4 forb species/group,species_richness,31,0.4638465702575206,81.3,3,6.5,71.8
-Lux_28_2017,Lux_28,Lux Arbor,2017,0,fall,12,9,5,6,Fall seeding 4 forb species/group,seeded_richness,31,0.4638465702575206,55.8,10.5,22.2,23.1
-Lux_28_2017,Lux_28,Lux Arbor,2017,0,fall,12,16,16,6,Fall seeding 4 forb species/group,species_richness,31,0.4638465702575206,55.8,10.5,22.2,23.1
+Lux_28_2017,Lux_28,Lux Arbor,2017,0,fall,12,9,5,6,Fall seeding 4 forb species/group,seeded_richness,31,0.4638465702575206,55.8,10.5,22.2,21.1
+Lux_28_2017,Lux_28,Lux Arbor,2017,0,fall,12,16,16,6,Fall seeding 4 forb species/group,species_richness,31,0.4638465702575206,55.8,10.5,22.2,21.1
 Lux_28_2018,Lux_28,Lux Arbor,2018,0,fall,12,7,6,6,Fall seeding 4 forb species/group,seeded_richness,31,0.4638465702575206,50.3,12.5,11.3,26.5
 Lux_28_2018,Lux_28,Lux Arbor,2018,0,fall,12,15,11,6,Fall seeding 4 forb species/group,species_richness,31,0.4638465702575206,50.3,12.5,11.3,26.5
 Lux_28_2019,Lux_28,Lux Arbor,2019,0,fall,12,8,3,6,Fall seeding 4 forb species/group,seeded_richness,31,0.4638465702575206,99.6,48,28.1,23.5
 Lux_28_2019,Lux_28,Lux Arbor,2019,0,fall,12,14,5,6,Fall seeding 4 forb species/group,species_richness,31,0.4638465702575206,99.6,48,28.1,23.5
+Lux_28_2025,Lux_28,Lux Arbor,2025,0,fall,12,7,4,6,Fall seeding 4 forb species/group,seeded_richness,31,0.4638465702575206,100.7,77,14,9.7
+Lux_28_2025,Lux_28,Lux Arbor,2025,0,fall,12,13,10,6,Fall seeding 4 forb species/group,species_richness,31,0.4638465702575206,100.7,77,14,9.7
 Lux_29_2015,Lux_29,Lux Arbor,2015,1,spring,18,0,0,10,"Spring seeding, with herbicide, 6 forb species/group",seeded_richness,33,0.48929055580659747,54.6,0,0,54.6
 Lux_29_2015,Lux_29,Lux Arbor,2015,1,spring,18,8,5,10,"Spring seeding, with herbicide, 6 forb species/group",species_richness,33,0.48929055580659747,54.6,0,0,54.6
 Lux_29_2016,Lux_29,Lux Arbor,2016,1,spring,18,2,2,10,"Spring seeding, with herbicide, 6 forb species/group",seeded_richness,33,0.48929055580659747,92,6,0,86
@@ -209,6 +249,8 @@ Lux_29_2018,Lux_29,Lux Arbor,2018,1,spring,18,2,1,10,"Spring seeding, with herbi
 Lux_29_2018,Lux_29,Lux Arbor,2018,1,spring,18,9,2,10,"Spring seeding, with herbicide, 6 forb species/group",species_richness,33,0.48929055580659747,44.7,11,0,33.7
 Lux_29_2019,Lux_29,Lux Arbor,2019,1,spring,18,2,1,10,"Spring seeding, with herbicide, 6 forb species/group",seeded_richness,33,0.48929055580659747,101.8,31,0,70.8
 Lux_29_2019,Lux_29,Lux Arbor,2019,1,spring,18,8,7,10,"Spring seeding, with herbicide, 6 forb species/group",species_richness,33,0.48929055580659747,101.8,31,0,70.8
+Lux_29_2025,Lux_29,Lux Arbor,2025,1,spring,18,3,2,10,"Spring seeding, with herbicide, 6 forb species/group",seeded_richness,33,0.48929055580659747,88.7,66,0,22.7
+Lux_29_2025,Lux_29,Lux Arbor,2025,1,spring,18,8,4,10,"Spring seeding, with herbicide, 6 forb species/group",species_richness,33,0.48929055580659747,88.7,66,0,22.7
 Lux_2_2015,Lux_2,Lux Arbor,2015,1,spring,18,0,0,10,"Spring seeding, with herbicide, 6 forb species/group",seeded_richness,71,0.5991804078446679,66.5,0,0,66.5
 Lux_2_2015,Lux_2,Lux Arbor,2015,1,spring,18,9,5,10,"Spring seeding, with herbicide, 6 forb species/group",species_richness,71,0.5991804078446679,66.5,0,0,66.5
 Lux_2_2016,Lux_2,Lux Arbor,2016,1,spring,18,0,1,10,"Spring seeding, with herbicide, 6 forb species/group",seeded_richness,71,0.5991804078446679,84.15,0,0,84.15
@@ -219,6 +261,8 @@ Lux_2_2018,Lux_2,Lux Arbor,2018,1,spring,18,1,1,10,"Spring seeding, with herbici
 Lux_2_2018,Lux_2,Lux Arbor,2018,1,spring,18,8,5,10,"Spring seeding, with herbicide, 6 forb species/group",species_richness,71,0.5991804078446679,54.2,3.5,0,50.7
 Lux_2_2019,Lux_2,Lux Arbor,2019,1,spring,18,0,2,10,"Spring seeding, with herbicide, 6 forb species/group",seeded_richness,71,0.5991804078446679,84.2,0,0,84.2
 Lux_2_2019,Lux_2,Lux Arbor,2019,1,spring,18,7,9,10,"Spring seeding, with herbicide, 6 forb species/group",species_richness,71,0.5991804078446679,84.2,0,0,84.2
+Lux_2_2025,Lux_2,Lux Arbor,2025,1,spring,18,2,4,10,"Spring seeding, with herbicide, 6 forb species/group",seeded_richness,71,0.5991804078446679,95.4,24,0,71.4
+Lux_2_2025,Lux_2,Lux Arbor,2025,1,spring,18,13,7,10,"Spring seeding, with herbicide, 6 forb species/group",species_richness,71,0.5991804078446679,95.4,24,0,71.4
 Lux_30_2015,Lux_30,Lux Arbor,2015,0,unseeded,0,0,1,4,Unseeded control,seeded_richness,18,0.5004387504387504,43.1,0,0,43.1
 Lux_30_2015,Lux_30,Lux Arbor,2015,0,unseeded,0,5,12,4,Unseeded control,species_richness,18,0.5004387504387504,43.1,0,0,43.1
 Lux_30_2016,Lux_30,Lux Arbor,2016,0,unseeded,0,2,2,4,Unseeded control,seeded_richness,18,0.5004387504387504,87.5,6,0,81.5
@@ -229,6 +273,8 @@ Lux_30_2018,Lux_30,Lux Arbor,2018,0,unseeded,0,2,1,4,Unseeded control,seeded_ric
 Lux_30_2018,Lux_30,Lux Arbor,2018,0,unseeded,0,7,4,4,Unseeded control,species_richness,18,0.5004387504387504,57,31,0,26
 Lux_30_2019,Lux_30,Lux Arbor,2019,0,unseeded,0,2,2,4,Unseeded control,seeded_richness,18,0.5004387504387504,96,34,0,62
 Lux_30_2019,Lux_30,Lux Arbor,2019,0,unseeded,0,6,7,4,Unseeded control,species_richness,18,0.5004387504387504,96,34,0,62
+Lux_30_2025,Lux_30,Lux Arbor,2025,0,unseeded,0,5,1,4,Unseeded control,seeded_richness,18,0.5004387504387504,97.8,92,0,5.8
+Lux_30_2025,Lux_30,Lux Arbor,2025,0,unseeded,0,8,4,4,Unseeded control,species_richness,18,0.5004387504387504,97.8,92,0,5.8
 Lux_31_2015,Lux_31,Lux Arbor,2015,0,fall,12,2,4,6,Fall seeding 4 forb species/group,seeded_richness,57,0.478351721832163,68.2,0,1.2000000000000002,67
 Lux_31_2015,Lux_31,Lux Arbor,2015,0,fall,12,13,13,6,Fall seeding 4 forb species/group,species_richness,57,0.478351721832163,68.2,0,1.2000000000000002,67
 Lux_31_2016,Lux_31,Lux Arbor,2016,0,fall,12,7,4,6,Fall seeding 4 forb species/group,seeded_richness,57,0.478351721832163,98.2,0.4,6,91.8
@@ -239,6 +285,8 @@ Lux_31_2018,Lux_31,Lux Arbor,2018,0,fall,12,5,8,6,Fall seeding 4 forb species/gr
 Lux_31_2018,Lux_31,Lux Arbor,2018,0,fall,12,14,14,6,Fall seeding 4 forb species/group,species_richness,57,0.478351721832163,108.7,30,16.6,62.1
 Lux_31_2019,Lux_31,Lux Arbor,2019,0,fall,12,6,6,6,Fall seeding 4 forb species/group,seeded_richness,57,0.478351721832163,100.7,35,19.3,46.4
 Lux_31_2019,Lux_31,Lux Arbor,2019,0,fall,12,15,16,6,Fall seeding 4 forb species/group,species_richness,57,0.478351721832163,100.7,35,19.3,46.4
+Lux_31_2025,Lux_31,Lux Arbor,2025,0,fall,12,5,4,6,Fall seeding 4 forb species/group,seeded_richness,57,0.478351721832163,88.5,49,22,17.5
+Lux_31_2025,Lux_31,Lux Arbor,2025,0,fall,12,9,10,6,Fall seeding 4 forb species/group,species_richness,57,0.478351721832163,88.5,49,22,17.5
 Lux_32_2015,Lux_32,Lux Arbor,2015,0,fall,6,2,2,5,Fall seeding 2 forb species/group,seeded_richness,21,0.5496053551803378,49.1,0,1.3,47.8
 Lux_32_2015,Lux_32,Lux Arbor,2015,0,fall,6,10,16,5,Fall seeding 2 forb species/group,species_richness,21,0.5496053551803378,49.1,0,1.3,47.8
 Lux_32_2016,Lux_32,Lux Arbor,2016,0,fall,6,4,2,5,Fall seeding 2 forb species/group,seeded_richness,21,0.5496053551803378,99,9,5,85
@@ -249,6 +297,8 @@ Lux_32_2018,Lux_32,Lux Arbor,2018,0,fall,6,6,1,5,Fall seeding 2 forb species/gro
 Lux_32_2018,Lux_32,Lux Arbor,2018,0,fall,6,12,14,5,Fall seeding 2 forb species/group,species_richness,21,0.5496053551803378,112,33,20.6,58.4
 Lux_32_2019,Lux_32,Lux Arbor,2019,0,fall,6,6,1,5,Fall seeding 2 forb species/group,seeded_richness,21,0.5496053551803378,108,39,5.6,63.4
 Lux_32_2019,Lux_32,Lux Arbor,2019,0,fall,6,13,9,5,Fall seeding 2 forb species/group,species_richness,21,0.5496053551803378,108,39,5.6,63.4
+Lux_32_2025,Lux_32,Lux Arbor,2025,0,fall,6,4,3,5,Fall seeding 2 forb species/group,seeded_richness,21,0.5496053551803378,76.4,37,4,35.4
+Lux_32_2025,Lux_32,Lux Arbor,2025,0,fall,6,10,7,5,Fall seeding 2 forb species/group,species_richness,21,0.5496053551803378,76.4,37,4,35.4
 Lux_33_2015,Lux_33,Lux Arbor,2015,0,fall,18,2,11,7,Fall seeding 6 forb species/group,seeded_richness,64,0.5372090795900776,67.5,0,2.08,65.42
 Lux_33_2015,Lux_33,Lux Arbor,2015,0,fall,18,8,22,7,Fall seeding 6 forb species/group,species_richness,64,0.5372090795900776,67.5,0,2.08,65.42
 Lux_33_2016,Lux_33,Lux Arbor,2016,0,fall,18,10,4,7,Fall seeding 6 forb species/group,seeded_richness,64,0.5372090795900776,96.2,2.5,10.6,83.1
@@ -259,6 +309,8 @@ Lux_33_2018,Lux_33,Lux Arbor,2018,0,fall,18,8,6,7,Fall seeding 6 forb species/gr
 Lux_33_2018,Lux_33,Lux Arbor,2018,0,fall,18,17,14,7,Fall seeding 6 forb species/group,species_richness,64,0.5372090795900776,108,35,21,52
 Lux_33_2019,Lux_33,Lux Arbor,2019,0,fall,18,10,3,7,Fall seeding 6 forb species/group,seeded_richness,64,0.5372090795900776,107.7,11,16.1,80.6
 Lux_33_2019,Lux_33,Lux Arbor,2019,0,fall,18,19,6,7,Fall seeding 6 forb species/group,species_richness,64,0.5372090795900776,107.7,11,16.1,80.6
+Lux_33_2025,Lux_33,Lux Arbor,2025,0,fall,18,7,3,7,Fall seeding 6 forb species/group,seeded_richness,64,0.5372090795900776,108,76,21,11
+Lux_33_2025,Lux_33,Lux Arbor,2025,0,fall,18,10,5,7,Fall seeding 6 forb species/group,species_richness,64,0.5372090795900776,108,76,21,11
 Lux_34_2016,Lux_34,Lux Arbor,2016,1,spring,33,4,7,3,"Spring seeding, with herbicide, full diversity",seeded_richness,44,0.4715138361367335,96.2,41,3,52.2
 Lux_34_2016,Lux_34,Lux Arbor,2016,1,spring,33,13,15,3,"Spring seeding, with herbicide, full diversity",species_richness,44,0.4715138361367335,96.2,41,3,52.2
 Lux_34_2017,Lux_34,Lux Arbor,2017,1,spring,33,7,12,3,"Spring seeding, with herbicide, full diversity",seeded_richness,44,0.4715138361367335,96.4,66,1.4,29
@@ -267,6 +319,8 @@ Lux_34_2018,Lux_34,Lux Arbor,2018,1,spring,33,3,12,3,"Spring seeding, with herbi
 Lux_34_2018,Lux_34,Lux Arbor,2018,1,spring,33,9,21,3,"Spring seeding, with herbicide, full diversity",species_richness,44,0.4715138361367335,95.1,72,0,23.1
 Lux_34_2019,Lux_34,Lux Arbor,2019,1,spring,33,5,7,3,"Spring seeding, with herbicide, full diversity",seeded_richness,44,0.4715138361367335,103.5,88,0.5,15
 Lux_34_2019,Lux_34,Lux Arbor,2019,1,spring,33,11,10,3,"Spring seeding, with herbicide, full diversity",species_richness,44,0.4715138361367335,103.5,88,0.5,15
+Lux_34_2025,Lux_34,Lux Arbor,2025,1,spring,33,5,6,3,"Spring seeding, with herbicide, full diversity",seeded_richness,44,0.4715138361367335,89.1,82,0.4,6.7
+Lux_34_2025,Lux_34,Lux Arbor,2025,1,spring,33,8,10,3,"Spring seeding, with herbicide, full diversity",species_richness,44,0.4715138361367335,89.1,82,0.4,6.7
 Lux_35_2015,Lux_35,Lux Arbor,2015,1,spring,33,4,3,3,"Spring seeding, with herbicide, full diversity",seeded_richness,45,0.46865644561371683,51.2,0,0.5,50.7
 Lux_35_2015,Lux_35,Lux Arbor,2015,1,spring,33,10,12,3,"Spring seeding, with herbicide, full diversity",species_richness,45,0.46865644561371683,51.2,0,0.5,50.7
 Lux_35_2016,Lux_35,Lux Arbor,2016,1,spring,33,5,7,3,"Spring seeding, with herbicide, full diversity",seeded_richness,45,0.46865644561371683,99.2,1,7.4,90.8
@@ -277,6 +331,8 @@ Lux_35_2018,Lux_35,Lux Arbor,2018,1,spring,33,5,9,3,"Spring seeding, with herbic
 Lux_35_2018,Lux_35,Lux Arbor,2018,1,spring,33,13,13,3,"Spring seeding, with herbicide, full diversity",species_richness,45,0.46865644561371683,94.9,21,6.2,67.7
 Lux_35_2019,Lux_35,Lux Arbor,2019,1,spring,33,5,9,3,"Spring seeding, with herbicide, full diversity",seeded_richness,45,0.46865644561371683,104.4,59,8.1,37.3
 Lux_35_2019,Lux_35,Lux Arbor,2019,1,spring,33,14,11,3,"Spring seeding, with herbicide, full diversity",species_richness,45,0.46865644561371683,104.4,59,8.1,37.3
+Lux_35_2025,Lux_35,Lux Arbor,2025,1,spring,33,4,6,3,"Spring seeding, with herbicide, full diversity",seeded_richness,45,0.46865644561371683,93.9,78.5,2,13.4
+Lux_35_2025,Lux_35,Lux Arbor,2025,1,spring,33,9,9,3,"Spring seeding, with herbicide, full diversity",species_richness,45,0.46865644561371683,93.9,78.5,2,13.4
 Lux_36_2015,Lux_36,Lux Arbor,2015,0,fall,6,1,7,5,Fall seeding 2 forb species/group,seeded_richness,71,0.5244178858438077,40.2,0,1,39.2
 Lux_36_2015,Lux_36,Lux Arbor,2015,0,fall,6,9,16,5,Fall seeding 2 forb species/group,species_richness,71,0.5244178858438077,40.2,0,1,39.2
 Lux_36_2016,Lux_36,Lux Arbor,2016,0,fall,6,4,4,5,Fall seeding 2 forb species/group,seeded_richness,71,0.5244178858438077,95.5,10,6,79.5
@@ -287,6 +343,8 @@ Lux_36_2018,Lux_36,Lux Arbor,2018,0,fall,6,4,3,5,Fall seeding 2 forb species/gro
 Lux_36_2018,Lux_36,Lux Arbor,2018,0,fall,6,11,7,5,Fall seeding 2 forb species/group,species_richness,71,0.5244178858438077,111.5,48,30,33.5
 Lux_36_2019,Lux_36,Lux Arbor,2019,0,fall,6,4,5,5,Fall seeding 2 forb species/group,seeded_richness,71,0.5244178858438077,100.2,40,30.5,29.7
 Lux_36_2019,Lux_36,Lux Arbor,2019,0,fall,6,10,13,5,Fall seeding 2 forb species/group,species_richness,71,0.5244178858438077,100.2,40,30.5,29.7
+Lux_36_2025,Lux_36,Lux Arbor,2025,0,fall,6,4,3,5,Fall seeding 2 forb species/group,seeded_richness,71,0.5244178858438077,88.6,70,9,9.6
+Lux_36_2025,Lux_36,Lux Arbor,2025,0,fall,6,7,8,5,Fall seeding 2 forb species/group,species_richness,71,0.5244178858438077,88.6,70,9,9.6
 Lux_37_2015,Lux_37,Lux Arbor,2015,1,spring,6,0,1,8,"Spring seeding, with herbicide, 2 forb species/group",seeded_richness,26,0.48741758751973246,60.76,0,0,60.76
 Lux_37_2015,Lux_37,Lux Arbor,2015,1,spring,6,12,10,8,"Spring seeding, with herbicide, 2 forb species/group",species_richness,26,0.48741758751973246,60.76,0,0,60.76
 Lux_37_2016,Lux_37,Lux Arbor,2016,1,spring,6,3,0,8,"Spring seeding, with herbicide, 2 forb species/group",seeded_richness,26,0.48741758751973246,101,7,0,94
@@ -297,16 +355,20 @@ Lux_37_2018,Lux_37,Lux Arbor,2018,1,spring,6,2,2,8,"Spring seeding, with herbici
 Lux_37_2018,Lux_37,Lux Arbor,2018,1,spring,6,7,5,8,"Spring seeding, with herbicide, 2 forb species/group",species_richness,26,0.48741758751973246,69.11,12,0,57.11
 Lux_37_2019,Lux_37,Lux Arbor,2019,1,spring,6,3,1,8,"Spring seeding, with herbicide, 2 forb species/group",seeded_richness,26,0.48741758751973246,109,32,0,77
 Lux_37_2019,Lux_37,Lux Arbor,2019,1,spring,6,8,5,8,"Spring seeding, with herbicide, 2 forb species/group",species_richness,26,0.48741758751973246,109,32,0,77
+Lux_37_2025,Lux_37,Lux Arbor,2025,1,spring,6,4,3,8,"Spring seeding, with herbicide, 2 forb species/group",seeded_richness,26,0.48741758751973246,86.2,71,0,15.2
+Lux_37_2025,Lux_37,Lux Arbor,2025,1,spring,6,11,6,8,"Spring seeding, with herbicide, 2 forb species/group",species_richness,26,0.48741758751973246,86.2,71,0,15.2
 Lux_38_2015,Lux_38,Lux Arbor,2015,0,fall,33,3,6,1,Fall seeding full diversity,seeded_richness,66,0.5380797862187437,36.9,0,1.2,35.7
 Lux_38_2015,Lux_38,Lux Arbor,2015,0,fall,33,10,13,1,Fall seeding full diversity,species_richness,66,0.5380797862187437,36.9,0,1.2,35.7
 Lux_38_2016,Lux_38,Lux Arbor,2016,0,fall,33,4,17,1,Fall seeding full diversity,seeded_richness,66,0.5380797862187437,99.8,5,8,86.8
 Lux_38_2016,Lux_38,Lux Arbor,2016,0,fall,33,11,25,1,Fall seeding full diversity,species_richness,66,0.5380797862187437,99.8,5,8,86.8
-Lux_38_2017,Lux_38,Lux Arbor,2017,0,fall,33,7,12,1,Fall seeding full diversity,seeded_richness,66,0.5380797862187437,86.72,5.2,7.5,74.02
-Lux_38_2017,Lux_38,Lux Arbor,2017,0,fall,33,13,19,1,Fall seeding full diversity,species_richness,66,0.5380797862187437,86.72,5.2,7.5,74.02
+Lux_38_2017,Lux_38,Lux Arbor,2017,0,fall,33,7,12,1,Fall seeding full diversity,seeded_richness,66,0.5380797862187437,86.72,5.2,7.5,74
+Lux_38_2017,Lux_38,Lux Arbor,2017,0,fall,33,13,19,1,Fall seeding full diversity,species_richness,66,0.5380797862187437,86.72,5.2,7.5,74
 Lux_38_2018,Lux_38,Lux Arbor,2018,0,fall,33,5,12,1,Fall seeding full diversity,seeded_richness,66,0.5380797862187437,77.01,12,3,62.01
 Lux_38_2018,Lux_38,Lux Arbor,2018,0,fall,33,13,17,1,Fall seeding full diversity,species_richness,66,0.5380797862187437,77.01,12,3,62.01
 Lux_38_2019,Lux_38,Lux Arbor,2019,0,fall,33,5,12,1,Fall seeding full diversity,seeded_richness,66,0.5380797862187437,89.5,15,7.5,67
 Lux_38_2019,Lux_38,Lux Arbor,2019,0,fall,33,11,17,1,Fall seeding full diversity,species_richness,66,0.5380797862187437,89.5,15,7.5,67
+Lux_38_2025,Lux_38,Lux Arbor,2025,0,fall,33,4,12,1,Fall seeding full diversity,seeded_richness,66,0.5380797862187437,95.7,80,3,12.7
+Lux_38_2025,Lux_38,Lux Arbor,2025,0,fall,33,10,14,1,Fall seeding full diversity,species_richness,66,0.5380797862187437,95.7,80,3,12.7
 Lux_39_2015,Lux_39,Lux Arbor,2015,1,spring,6,0,0,8,"Spring seeding, with herbicide, 2 forb species/group",seeded_richness,27,0.4983524801852346,47.3,0,0,47.3
 Lux_39_2015,Lux_39,Lux Arbor,2015,1,spring,6,5,8,8,"Spring seeding, with herbicide, 2 forb species/group",species_richness,27,0.4983524801852346,47.3,0,0,47.3
 Lux_39_2016,Lux_39,Lux Arbor,2016,1,spring,6,2,2,8,"Spring seeding, with herbicide, 2 forb species/group",seeded_richness,27,0.4983524801852346,99.3,36,0,63.3
@@ -317,6 +379,8 @@ Lux_39_2018,Lux_39,Lux Arbor,2018,1,spring,6,2,3,8,"Spring seeding, with herbici
 Lux_39_2018,Lux_39,Lux Arbor,2018,1,spring,6,7,10,8,"Spring seeding, with herbicide, 2 forb species/group",species_richness,27,0.4983524801852346,89.5,55,0,34.5
 Lux_39_2019,Lux_39,Lux Arbor,2019,1,spring,6,2,3,8,"Spring seeding, with herbicide, 2 forb species/group",seeded_richness,27,0.4983524801852346,82.51,31,0,51.51
 Lux_39_2019,Lux_39,Lux Arbor,2019,1,spring,6,7,9,8,"Spring seeding, with herbicide, 2 forb species/group",species_richness,27,0.4983524801852346,82.51,31,0,51.51
+Lux_39_2025,Lux_39,Lux Arbor,2025,1,spring,6,4,2,8,"Spring seeding, with herbicide, 2 forb species/group",seeded_richness,27,0.4983524801852346,94.7,75,0.8,18.9
+Lux_39_2025,Lux_39,Lux Arbor,2025,1,spring,6,9,3,8,"Spring seeding, with herbicide, 2 forb species/group",species_richness,27,0.4983524801852346,94.7,75,0.8,18.9
 Lux_3_2015,Lux_3,Lux Arbor,2015,0,fall,33,0,0,1,Fall seeding full diversity,seeded_richness,60,0.6276215443279314,75.5,0,0,75.5
 Lux_3_2015,Lux_3,Lux Arbor,2015,0,fall,33,11,1,1,Fall seeding full diversity,species_richness,60,0.6276215443279314,75.5,0,0,75.5
 Lux_3_2016,Lux_3,Lux Arbor,2016,0,fall,33,0,5,1,Fall seeding full diversity,seeded_richness,60,0.6276215443279314,67.2,0,0,67.2
@@ -327,6 +391,8 @@ Lux_3_2018,Lux_3,Lux Arbor,2018,0,fall,33,2,11,1,Fall seeding full diversity,see
 Lux_3_2018,Lux_3,Lux Arbor,2018,0,fall,33,12,15,1,Fall seeding full diversity,species_richness,60,0.6276215443279314,42.6,2.5,1,39.1
 Lux_3_2019,Lux_3,Lux Arbor,2019,0,fall,33,2,11,1,Fall seeding full diversity,seeded_richness,60,0.6276215443279314,80,6,0.5,73.5
 Lux_3_2019,Lux_3,Lux Arbor,2019,0,fall,33,14,14,1,Fall seeding full diversity,species_richness,60,0.6276215443279314,80,6,0.5,73.5
+Lux_3_2025,Lux_3,Lux Arbor,2025,0,fall,33,6,8,1,Fall seeding full diversity,seeded_richness,60,0.6276215443279314,95.3,27,35,33.3
+Lux_3_2025,Lux_3,Lux Arbor,2025,0,fall,33,15,13,1,Fall seeding full diversity,species_richness,60,0.6276215443279314,95.3,27,35,33.3
 Lux_40_2015,Lux_40,Lux Arbor,2015,1,spring,18,1,0,10,"Spring seeding, with herbicide, 6 forb species/group",seeded_richness,32,0.5485193621867883,35,1,0,34
 Lux_40_2015,Lux_40,Lux Arbor,2015,1,spring,18,6,9,10,"Spring seeding, with herbicide, 6 forb species/group",species_richness,32,0.5485193621867883,35,1,0,34
 Lux_40_2016,Lux_40,Lux Arbor,2016,1,spring,18,3,2,10,"Spring seeding, with herbicide, 6 forb species/group",seeded_richness,32,0.5485193621867883,92.7,38,0,54.7
@@ -337,6 +403,8 @@ Lux_40_2018,Lux_40,Lux Arbor,2018,1,spring,18,3,1,10,"Spring seeding, with herbi
 Lux_40_2018,Lux_40,Lux Arbor,2018,1,spring,18,8,5,10,"Spring seeding, with herbicide, 6 forb species/group",species_richness,32,0.5485193621867883,57,38,0,19
 Lux_40_2019,Lux_40,Lux Arbor,2019,1,spring,18,3,2,10,"Spring seeding, with herbicide, 6 forb species/group",seeded_richness,32,0.5485193621867883,82.3,39,0,43.3
 Lux_40_2019,Lux_40,Lux Arbor,2019,1,spring,18,8,7,10,"Spring seeding, with herbicide, 6 forb species/group",species_richness,32,0.5485193621867883,82.3,39,0,43.3
+Lux_40_2025,Lux_40,Lux Arbor,2025,1,spring,18,4,1,10,"Spring seeding, with herbicide, 6 forb species/group",seeded_richness,32,0.5485193621867883,86.2,76,0,10.2
+Lux_40_2025,Lux_40,Lux Arbor,2025,1,spring,18,8,3,10,"Spring seeding, with herbicide, 6 forb species/group",species_richness,32,0.5485193621867883,86.2,76,0,10.2
 Lux_41_2015,Lux_41,Lux Arbor,2015,0,unseeded,0,0,1,4,Unseeded control,seeded_richness,64,0.5666597767672592,45.55,0,0,45.55
 Lux_41_2015,Lux_41,Lux Arbor,2015,0,unseeded,0,8,8,4,Unseeded control,species_richness,64,0.5666597767672592,45.55,0,0,45.55
 Lux_41_2016,Lux_41,Lux Arbor,2016,0,unseeded,0,2,4,4,Unseeded control,seeded_richness,64,0.5666597767672592,95,18,0,77
@@ -347,6 +415,8 @@ Lux_41_2018,Lux_41,Lux Arbor,2018,0,unseeded,0,2,3,4,Unseeded control,seeded_ric
 Lux_41_2018,Lux_41,Lux Arbor,2018,0,unseeded,0,9,7,4,Unseeded control,species_richness,64,0.5666597767672592,72.5,43,0,29.5
 Lux_41_2019,Lux_41,Lux Arbor,2019,0,unseeded,0,3,2,4,Unseeded control,seeded_richness,64,0.5666597767672592,69,31,0,38
 Lux_41_2019,Lux_41,Lux Arbor,2019,0,unseeded,0,8,7,4,Unseeded control,species_richness,64,0.5666597767672592,69,31,0,38
+Lux_41_2025,Lux_41,Lux Arbor,2025,0,unseeded,0,3,4,4,Unseeded control,seeded_richness,64,0.5666597767672592,100,83,0,17
+Lux_41_2025,Lux_41,Lux Arbor,2025,0,unseeded,0,7,8,4,Unseeded control,species_richness,64,0.5666597767672592,100,83,0,17
 Lux_42_2015,Lux_42,Lux Arbor,2015,0,spring,33,0,0,2,"Spring seeding, no herbicide, full diversity",seeded_richness,36,0.48685360235125924,68.2,0,0,68.2
 Lux_42_2015,Lux_42,Lux Arbor,2015,0,spring,33,9,4,2,"Spring seeding, no herbicide, full diversity",species_richness,36,0.48685360235125924,68.2,0,0,68.2
 Lux_42_2016,Lux_42,Lux Arbor,2016,0,spring,33,5,10,2,"Spring seeding, no herbicide, full diversity",seeded_richness,36,0.48685360235125924,94.7,14.3,1.4,79
@@ -357,6 +427,8 @@ Lux_42_2018,Lux_42,Lux Arbor,2018,0,spring,33,2,6,2,"Spring seeding, no herbicid
 Lux_42_2018,Lux_42,Lux Arbor,2018,0,spring,33,10,12,2,"Spring seeding, no herbicide, full diversity",species_richness,36,0.48685360235125924,98.51,76,0,22.51
 Lux_42_2019,Lux_42,Lux Arbor,2019,0,spring,33,3,9,2,"Spring seeding, no herbicide, full diversity",seeded_richness,36,0.48685360235125924,99,53,10,36
 Lux_42_2019,Lux_42,Lux Arbor,2019,0,spring,33,10,15,2,"Spring seeding, no herbicide, full diversity",species_richness,36,0.48685360235125924,99,53,10,36
+Lux_42_2025,Lux_42,Lux Arbor,2025,0,spring,33,4,5,2,"Spring seeding, no herbicide, full diversity",seeded_richness,36,0.48685360235125924,98.21,78,1,19.21
+Lux_42_2025,Lux_42,Lux Arbor,2025,0,spring,33,13,6,2,"Spring seeding, no herbicide, full diversity",species_richness,36,0.48685360235125924,98.21,78,1,19.21
 Lux_43_2015,Lux_43,Lux Arbor,2015,1,spring,12,0,0,9,"Spring seeding, with herbicide, 4 forb species/group",seeded_richness,56,0.4372938621188966,60,0,0,60
 Lux_43_2015,Lux_43,Lux Arbor,2015,1,spring,12,6,12,9,"Spring seeding, with herbicide, 4 forb species/group",species_richness,56,0.4372938621188966,60,0,0,60
 Lux_43_2016,Lux_43,Lux Arbor,2016,1,spring,12,0,4,9,"Spring seeding, with herbicide, 4 forb species/group",seeded_richness,56,0.4372938621188966,82.3,0,0,82.3
@@ -367,6 +439,8 @@ Lux_43_2018,Lux_43,Lux Arbor,2018,1,spring,12,3,4,9,"Spring seeding, with herbic
 Lux_43_2018,Lux_43,Lux Arbor,2018,1,spring,12,10,11,9,"Spring seeding, with herbicide, 4 forb species/group",species_richness,56,0.4372938621188966,100.6,45,0,55.6
 Lux_43_2019,Lux_43,Lux Arbor,2019,1,spring,12,2,3,9,"Spring seeding, with herbicide, 4 forb species/group",seeded_richness,56,0.4372938621188966,97,70,0,27
 Lux_43_2019,Lux_43,Lux Arbor,2019,1,spring,12,8,10,9,"Spring seeding, with herbicide, 4 forb species/group",species_richness,56,0.4372938621188966,97,70,0,27
+Lux_43_2025,Lux_43,Lux Arbor,2025,1,spring,12,3,2,9,"Spring seeding, with herbicide, 4 forb species/group",seeded_richness,56,0.4372938621188966,131.76,67,0,64.76
+Lux_43_2025,Lux_43,Lux Arbor,2025,1,spring,12,8,7,9,"Spring seeding, with herbicide, 4 forb species/group",species_richness,56,0.4372938621188966,131.76,67,0,64.76
 Lux_44_2015,Lux_44,Lux Arbor,2015,0,fall,12,4,2,6,Fall seeding 4 forb species/group,seeded_richness,6,0.6420583468395461,35.4,0,1.2,34.2
 Lux_44_2015,Lux_44,Lux Arbor,2015,0,fall,12,9,10,6,Fall seeding 4 forb species/group,species_richness,6,0.6420583468395461,35.4,0,1.2,34.2
 Lux_44_2016,Lux_44,Lux Arbor,2016,0,fall,12,9,2,6,Fall seeding 4 forb species/group,seeded_richness,6,0.6420583468395461,91,16,28,47
@@ -377,6 +451,8 @@ Lux_44_2018,Lux_44,Lux Arbor,2018,0,fall,12,10,3,6,Fall seeding 4 forb species/g
 Lux_44_2018,Lux_44,Lux Arbor,2018,0,fall,12,13,11,6,Fall seeding 4 forb species/group,species_richness,6,0.6420583468395461,116,37,49,30
 Lux_44_2019,Lux_44,Lux Arbor,2019,0,fall,12,7,5,6,Fall seeding 4 forb species/group,seeded_richness,6,0.6420583468395461,107.9,48,30.6,29.3
 Lux_44_2019,Lux_44,Lux Arbor,2019,0,fall,12,12,8,6,Fall seeding 4 forb species/group,species_richness,6,0.6420583468395461,107.9,48,30.6,29.3
+Lux_44_2025,Lux_44,Lux Arbor,2025,0,fall,12,5,4,6,Fall seeding 4 forb species/group,seeded_richness,6,0.6420583468395461,103,89,6,8
+Lux_44_2025,Lux_44,Lux Arbor,2025,0,fall,12,7,7,6,Fall seeding 4 forb species/group,species_richness,6,0.6420583468395461,103,89,6,8
 Lux_45_2015,Lux_45,Lux Arbor,2015,0,fall,12,5,3,6,Fall seeding 4 forb species/group,seeded_richness,51,0.43224908679770413,49.9,0,5,44.9
 Lux_45_2015,Lux_45,Lux Arbor,2015,0,fall,12,12,12,6,Fall seeding 4 forb species/group,species_richness,51,0.43224908679770413,49.9,0,5,44.9
 Lux_45_2016,Lux_45,Lux Arbor,2016,0,fall,12,7,1,6,Fall seeding 4 forb species/group,seeded_richness,51,0.43224908679770413,86.8,23,10.3,53.5
@@ -387,6 +463,8 @@ Lux_45_2018,Lux_45,Lux Arbor,2018,0,fall,12,5,7,6,Fall seeding 4 forb species/gr
 Lux_45_2018,Lux_45,Lux Arbor,2018,0,fall,12,14,11,6,Fall seeding 4 forb species/group,species_richness,51,0.43224908679770413,102.8,33,12,57.8
 Lux_45_2019,Lux_45,Lux Arbor,2019,0,fall,12,7,5,6,Fall seeding 4 forb species/group,seeded_richness,51,0.43224908679770413,112.1,80,13,19.1
 Lux_45_2019,Lux_45,Lux Arbor,2019,0,fall,12,13,8,6,Fall seeding 4 forb species/group,species_richness,51,0.43224908679770413,112.1,80,13,19.1
+Lux_45_2025,Lux_45,Lux Arbor,2025,0,fall,12,3,9,6,Fall seeding 4 forb species/group,seeded_richness,51,0.43224908679770413,81.3,70,0,11.3
+Lux_45_2025,Lux_45,Lux Arbor,2025,0,fall,12,7,12,6,Fall seeding 4 forb species/group,species_richness,51,0.43224908679770413,81.3,70,0,11.3
 Lux_46_2015,Lux_46,Lux Arbor,2015,0,spring,33,1,3,2,"Spring seeding, no herbicide, full diversity",seeded_richness,1,0.5219719350073857,55,0,0.2,54.8
 Lux_46_2015,Lux_46,Lux Arbor,2015,0,spring,33,8,7,2,"Spring seeding, no herbicide, full diversity",species_richness,1,0.5219719350073857,55,0,0.2,54.8
 Lux_46_2016,Lux_46,Lux Arbor,2016,0,spring,33,3,8,2,"Spring seeding, no herbicide, full diversity",seeded_richness,1,0.5219719350073857,95.5,25,4,66.5
@@ -397,6 +475,8 @@ Lux_46_2018,Lux_46,Lux Arbor,2018,0,spring,33,6,8,2,"Spring seeding, no herbicid
 Lux_46_2018,Lux_46,Lux Arbor,2018,0,spring,33,11,13,2,"Spring seeding, no herbicide, full diversity",species_richness,1,0.5219719350073857,99.5,81,1.5,17
 Lux_46_2019,Lux_46,Lux Arbor,2019,0,spring,33,5,5,2,"Spring seeding, no herbicide, full diversity",seeded_richness,1,0.5219719350073857,98.6,82,8.8,7.8
 Lux_46_2019,Lux_46,Lux Arbor,2019,0,spring,33,9,11,2,"Spring seeding, no herbicide, full diversity",species_richness,1,0.5219719350073857,98.6,82,8.8,7.8
+Lux_46_2025,Lux_46,Lux Arbor,2025,0,spring,33,5,3,2,"Spring seeding, no herbicide, full diversity",seeded_richness,1,0.5219719350073857,96,77,9,10
+Lux_46_2025,Lux_46,Lux Arbor,2025,0,spring,33,8,7,2,"Spring seeding, no herbicide, full diversity",species_richness,1,0.5219719350073857,96,77,9,10
 Lux_47_2015,Lux_47,Lux Arbor,2015,1,spring,33,0,9,3,"Spring seeding, with herbicide, full diversity",seeded_richness,59,0.4596611536910046,55,0,0,55
 Lux_47_2015,Lux_47,Lux Arbor,2015,1,spring,33,6,21,3,"Spring seeding, with herbicide, full diversity",species_richness,59,0.4596611536910046,55,0,0,55
 Lux_47_2016,Lux_47,Lux Arbor,2016,1,spring,33,7,6,3,"Spring seeding, with herbicide, full diversity",seeded_richness,59,0.4596611536910046,83.1,17,3.9,62.2
@@ -407,6 +487,8 @@ Lux_47_2018,Lux_47,Lux Arbor,2018,1,spring,33,5,11,3,"Spring seeding, with herbi
 Lux_47_2018,Lux_47,Lux Arbor,2018,1,spring,33,9,24,3,"Spring seeding, with herbicide, full diversity",species_richness,59,0.4596611536910046,116.1,85,6,25.1
 Lux_47_2019,Lux_47,Lux Arbor,2019,1,spring,33,6,10,3,"Spring seeding, with herbicide, full diversity",seeded_richness,59,0.4596611536910046,106.2,86,1.1,18.1
 Lux_47_2019,Lux_47,Lux Arbor,2019,1,spring,33,12,17,3,"Spring seeding, with herbicide, full diversity",species_richness,59,0.4596611536910046,106.2,86,1.1,18.1
+Lux_47_2025,Lux_47,Lux Arbor,2025,1,spring,33,5,6,3,"Spring seeding, with herbicide, full diversity",seeded_richness,59,0.4596611536910046,93,56,1,36
+Lux_47_2025,Lux_47,Lux Arbor,2025,1,spring,33,9,11,3,"Spring seeding, with herbicide, full diversity",species_richness,59,0.4596611536910046,93,56,1,36
 Lux_48_2015,Lux_48,Lux Arbor,2015,0,fall,18,2,6,7,Fall seeding 6 forb species/group,seeded_richness,68,0.44178753430027456,49.8,0,0.4,49.4
 Lux_48_2015,Lux_48,Lux Arbor,2015,0,fall,18,8,14,7,Fall seeding 6 forb species/group,species_richness,68,0.44178753430027456,49.8,0,0.4,49.4
 Lux_48_2016,Lux_48,Lux Arbor,2016,0,fall,18,5,6,7,Fall seeding 6 forb species/group,seeded_richness,68,0.44178753430027456,61.6,10,3,48.6
@@ -417,6 +499,8 @@ Lux_48_2018,Lux_48,Lux Arbor,2018,0,fall,18,6,7,7,Fall seeding 6 forb species/gr
 Lux_48_2018,Lux_48,Lux Arbor,2018,0,fall,18,14,12,7,Fall seeding 6 forb species/group,species_richness,68,0.44178753430027456,99.7,38,13.5,48.2
 Lux_48_2019,Lux_48,Lux Arbor,2019,0,fall,18,5,6,7,Fall seeding 6 forb species/group,seeded_richness,68,0.44178753430027456,103.5,48,34,21.5
 Lux_48_2019,Lux_48,Lux Arbor,2019,0,fall,18,14,12,7,Fall seeding 6 forb species/group,species_richness,68,0.44178753430027456,103.5,48,34,21.5
+Lux_48_2025,Lux_48,Lux Arbor,2025,0,fall,18,8,6,7,Fall seeding 6 forb species/group,seeded_richness,68,0.44178753430027456,98.7,77,10.9,10.8
+Lux_48_2025,Lux_48,Lux Arbor,2025,0,fall,18,16,12,7,Fall seeding 6 forb species/group,species_richness,68,0.44178753430027456,98.7,77,10.9,10.8
 Lux_49_2015,Lux_49,Lux Arbor,2015,1,spring,18,0,0,10,"Spring seeding, with herbicide, 6 forb species/group",seeded_richness,58,0.4558395072005327,59,0,0,59
 Lux_49_2015,Lux_49,Lux Arbor,2015,1,spring,18,5,4,10,"Spring seeding, with herbicide, 6 forb species/group",species_richness,58,0.4558395072005327,59,0,0,59
 Lux_49_2016,Lux_49,Lux Arbor,2016,1,spring,18,2,2,10,"Spring seeding, with herbicide, 6 forb species/group",seeded_richness,58,0.4558395072005327,103,15,0,88
@@ -427,6 +511,8 @@ Lux_49_2018,Lux_49,Lux Arbor,2018,1,spring,18,2,2,10,"Spring seeding, with herbi
 Lux_49_2018,Lux_49,Lux Arbor,2018,1,spring,18,8,4,10,"Spring seeding, with herbicide, 6 forb species/group",species_richness,58,0.4558395072005327,91,60,0,31
 Lux_49_2019,Lux_49,Lux Arbor,2019,1,spring,18,2,2,10,"Spring seeding, with herbicide, 6 forb species/group",seeded_richness,58,0.4558395072005327,104.9,60,0,44.9
 Lux_49_2019,Lux_49,Lux Arbor,2019,1,spring,18,11,6,10,"Spring seeding, with herbicide, 6 forb species/group",species_richness,58,0.4558395072005327,104.9,60,0,44.9
+Lux_49_2025,Lux_49,Lux Arbor,2025,1,spring,18,3,3,10,"Spring seeding, with herbicide, 6 forb species/group",seeded_richness,58,0.4558395072005327,89.2,83,0,6.2
+Lux_49_2025,Lux_49,Lux Arbor,2025,1,spring,18,6,5,10,"Spring seeding, with herbicide, 6 forb species/group",species_richness,58,0.4558395072005327,89.2,83,0,6.2
 Lux_4_2015,Lux_4,Lux Arbor,2015,0,unseeded,0,0,0,4,Unseeded control,seeded_richness,1,0.6025897462890828,95.41,0,0,95.41
 Lux_4_2015,Lux_4,Lux Arbor,2015,0,unseeded,0,7,3,4,Unseeded control,species_richness,1,0.6025897462890828,95.41,0,0,95.41
 Lux_4_2016,Lux_4,Lux Arbor,2016,0,unseeded,0,0,0,4,Unseeded control,seeded_richness,1,0.6025897462890828,61.35,0,0,61.35
@@ -437,6 +523,8 @@ Lux_4_2018,Lux_4,Lux Arbor,2018,0,unseeded,0,5,0,4,Unseeded control,seeded_richn
 Lux_4_2018,Lux_4,Lux Arbor,2018,0,unseeded,0,10,5,4,Unseeded control,species_richness,1,0.6025897462890828,83.5,11,0,72.5
 Lux_4_2019,Lux_4,Lux Arbor,2019,0,unseeded,0,4,1,4,Unseeded control,seeded_richness,1,0.6025897462890828,93.2,22,0,71.2
 Lux_4_2019,Lux_4,Lux Arbor,2019,0,unseeded,0,16,6,4,Unseeded control,species_richness,1,0.6025897462890828,93.2,22,0,71.2
+Lux_4_2025,Lux_4,Lux Arbor,2025,0,unseeded,0,4,4,4,Unseeded control,seeded_richness,1,0.6025897462890828,96.83,84,0,12.83
+Lux_4_2025,Lux_4,Lux Arbor,2025,0,unseeded,0,16,8,4,Unseeded control,species_richness,1,0.6025897462890828,96.83,84,0,12.83
 Lux_50_2015,Lux_50,Lux Arbor,2015,0,fall,6,3,2,5,Fall seeding 2 forb species/group,seeded_richness,11,0.48071689969034437,48,0,1.1,46.9
 Lux_50_2015,Lux_50,Lux Arbor,2015,0,fall,6,12,9,5,Fall seeding 2 forb species/group,species_richness,11,0.48071689969034437,48,0,1.1,46.9
 Lux_50_2016,Lux_50,Lux Arbor,2016,0,fall,6,5,1,5,Fall seeding 2 forb species/group,seeded_richness,11,0.48071689969034437,116.5,8,12,96.5
@@ -447,6 +535,8 @@ Lux_50_2018,Lux_50,Lux Arbor,2018,0,fall,6,5,5,5,Fall seeding 2 forb species/gro
 Lux_50_2018,Lux_50,Lux Arbor,2018,0,fall,6,11,11,5,Fall seeding 2 forb species/group,species_richness,11,0.48071689969034437,45,13,11,21
 Lux_50_2019,Lux_50,Lux Arbor,2019,0,fall,6,3,4,5,Fall seeding 2 forb species/group,seeded_richness,11,0.48071689969034437,106.2,50,20,36.2
 Lux_50_2019,Lux_50,Lux Arbor,2019,0,fall,6,11,10,5,Fall seeding 2 forb species/group,species_richness,11,0.48071689969034437,106.2,50,20,36.2
+Lux_50_2025,Lux_50,Lux Arbor,2025,0,fall,6,6,0,5,Fall seeding 2 forb species/group,seeded_richness,11,0.48071689969034437,84.9,79,1.7000000000000002,4.2
+Lux_50_2025,Lux_50,Lux Arbor,2025,0,fall,6,9,2,5,Fall seeding 2 forb species/group,species_richness,11,0.48071689969034437,84.9,79,1.7000000000000002,4.2
 Lux_51_2015,Lux_51,Lux Arbor,2015,0,fall,18,5,9,7,Fall seeding 6 forb species/group,seeded_richness,49,0.46536027052804996,61.4,1,2.2,58.2
 Lux_51_2015,Lux_51,Lux Arbor,2015,0,fall,18,12,17,7,Fall seeding 6 forb species/group,species_richness,49,0.46536027052804996,61.4,1,2.2,58.2
 Lux_51_2016,Lux_51,Lux Arbor,2016,0,fall,18,8,7,7,Fall seeding 6 forb species/group,seeded_richness,49,0.46536027052804996,108.8,27,15.8,66
@@ -457,6 +547,8 @@ Lux_51_2018,Lux_51,Lux Arbor,2018,0,fall,18,5,7,7,Fall seeding 6 forb species/gr
 Lux_51_2018,Lux_51,Lux Arbor,2018,0,fall,18,13,10,7,Fall seeding 6 forb species/group,species_richness,49,0.46536027052804996,98.5,30,19.5,49
 Lux_51_2019,Lux_51,Lux Arbor,2019,0,fall,18,3,11,7,Fall seeding 6 forb species/group,seeded_richness,49,0.46536027052804996,106.3,35,45,26.3
 Lux_51_2019,Lux_51,Lux Arbor,2019,0,fall,18,10,15,7,Fall seeding 6 forb species/group,species_richness,49,0.46536027052804996,106.3,35,45,26.3
+Lux_51_2025,Lux_51,Lux Arbor,2025,0,fall,18,6,3,7,Fall seeding 6 forb species/group,seeded_richness,49,0.46536027052804996,102.2,86.6,12,3.6
+Lux_51_2025,Lux_51,Lux Arbor,2025,0,fall,18,8,6,7,Fall seeding 6 forb species/group,species_richness,49,0.46536027052804996,102.2,86.6,12,3.6
 Lux_52_2015,Lux_52,Lux Arbor,2015,0,fall,18,1,6,7,Fall seeding 6 forb species/group,seeded_richness,13,0.46594827586206883,55.9,0,0.4,55.5
 Lux_52_2015,Lux_52,Lux Arbor,2015,0,fall,18,7,11,7,Fall seeding 6 forb species/group,species_richness,13,0.46594827586206883,55.9,0,0.4,55.5
 Lux_52_2016,Lux_52,Lux Arbor,2016,0,fall,18,5,10,7,Fall seeding 6 forb species/group,seeded_richness,13,0.46594827586206883,93.9,6,3.6,84.3
@@ -467,16 +559,20 @@ Lux_52_2018,Lux_52,Lux Arbor,2018,0,fall,18,5,8,7,Fall seeding 6 forb species/gr
 Lux_52_2018,Lux_52,Lux Arbor,2018,0,fall,18,9,12,7,Fall seeding 6 forb species/group,species_richness,13,0.46594827586206883,54,8.5,2,43.5
 Lux_52_2019,Lux_52,Lux Arbor,2019,0,fall,18,6,8,7,Fall seeding 6 forb species/group,seeded_richness,13,0.46594827586206883,117.6,46,5.4,66.2
 Lux_52_2019,Lux_52,Lux Arbor,2019,0,fall,18,14,10,7,Fall seeding 6 forb species/group,species_richness,13,0.46594827586206883,117.6,46,5.4,66.2
+Lux_52_2025,Lux_52,Lux Arbor,2025,0,fall,18,5,6,7,Fall seeding 6 forb species/group,seeded_richness,13,0.46594827586206883,86.2,68,5,13.2
+Lux_52_2025,Lux_52,Lux Arbor,2025,0,fall,18,9,8,7,Fall seeding 6 forb species/group,species_richness,13,0.46594827586206883,86.2,68,5,13.2
 Lux_53_2015,Lux_53,Lux Arbor,2015,0,fall,6,2,4,5,Fall seeding 2 forb species/group,seeded_richness,47,0.46792940163581603,50.5,0,1.3,49.2
 Lux_53_2015,Lux_53,Lux Arbor,2015,0,fall,6,8,9,5,Fall seeding 2 forb species/group,species_richness,47,0.46792940163581603,50.5,0,1.3,49.2
-Lux_53_2016,Lux_53,Lux Arbor,2016,0,fall,6,5,4,5,Fall seeding 2 forb species/group,seeded_richness,47,0.46792940163581603,89.7,18,12,59.7
-Lux_53_2016,Lux_53,Lux Arbor,2016,0,fall,6,15,17,5,Fall seeding 2 forb species/group,species_richness,47,0.46792940163581603,89.7,18,12,59.7
+Lux_53_2016,Lux_53,Lux Arbor,2016,0,fall,6,5,4,5,Fall seeding 2 forb species/group,seeded_richness,47,0.46792940163581603,89.7,18,12,59.5
+Lux_53_2016,Lux_53,Lux Arbor,2016,0,fall,6,15,17,5,Fall seeding 2 forb species/group,species_richness,47,0.46792940163581603,89.7,18,12,59.5
 Lux_53_2017,Lux_53,Lux Arbor,2017,0,fall,6,6,2,5,Fall seeding 2 forb species/group,seeded_richness,47,0.46792940163581603,88.1,33,7.5,47.6
 Lux_53_2017,Lux_53,Lux Arbor,2017,0,fall,6,12,12,5,Fall seeding 2 forb species/group,species_richness,47,0.46792940163581603,88.1,33,7.5,47.6
 Lux_53_2018,Lux_53,Lux Arbor,2018,0,fall,6,5,2,5,Fall seeding 2 forb species/group,seeded_richness,47,0.46792940163581603,58.5,28,11.5,19
 Lux_53_2018,Lux_53,Lux Arbor,2018,0,fall,6,10,5,5,Fall seeding 2 forb species/group,species_richness,47,0.46792940163581603,58.5,28,11.5,19
 Lux_53_2019,Lux_53,Lux Arbor,2019,0,fall,6,5,2,5,Fall seeding 2 forb species/group,seeded_richness,47,0.46792940163581603,100.8,50,42,8.8
 Lux_53_2019,Lux_53,Lux Arbor,2019,0,fall,6,10,7,5,Fall seeding 2 forb species/group,species_richness,47,0.46792940163581603,100.8,50,42,8.8
+Lux_53_2025,Lux_53,Lux Arbor,2025,0,fall,6,4,1,5,Fall seeding 2 forb species/group,seeded_richness,47,0.46792940163581603,74,45,11,18
+Lux_53_2025,Lux_53,Lux Arbor,2025,0,fall,6,8,2,5,Fall seeding 2 forb species/group,species_richness,47,0.46792940163581603,74,45,11,18
 Lux_54_2015,Lux_54,Lux Arbor,2015,0,unseeded,0,0,1,4,Unseeded control,seeded_richness,41,0.564119352726592,51.5,0,0,51.5
 Lux_54_2015,Lux_54,Lux Arbor,2015,0,unseeded,0,7,9,4,Unseeded control,species_richness,41,0.564119352726592,51.5,0,0,51.5
 Lux_54_2016,Lux_54,Lux Arbor,2016,0,unseeded,0,2,4,4,Unseeded control,seeded_richness,41,0.564119352726592,91.1,22,0,69.1
@@ -485,10 +581,12 @@ Lux_54_2017,Lux_54,Lux Arbor,2017,0,unseeded,0,3,3,4,Unseeded control,seeded_ric
 Lux_54_2017,Lux_54,Lux Arbor,2017,0,unseeded,0,17,10,4,Unseeded control,species_richness,41,0.564119352726592,92.6,28,0,64.6
 Lux_54_2018,Lux_54,Lux Arbor,2018,0,unseeded,0,4,3,4,Unseeded control,seeded_richness,41,0.564119352726592,110,80,0,30
 Lux_54_2018,Lux_54,Lux Arbor,2018,0,unseeded,0,14,10,4,Unseeded control,species_richness,41,0.564119352726592,110,80,0,30
-Lux_54_2019,Lux_54,Lux Arbor,2019,0,unseeded,0,3,4,4,Unseeded control,seeded_richness,41,0.564119352726592,104.3,44,0,60.3
-Lux_54_2019,Lux_54,Lux Arbor,2019,0,unseeded,0,15,12,4,Unseeded control,species_richness,41,0.564119352726592,104.3,44,0,60.3
-Lux_55_2015,Lux_55,Lux Arbor,2015,0,spring,33,0,4,2,"Spring seeding, no herbicide, full diversity",seeded_richness,19,0.5802910999761393,79.4,0,0,79.4
-Lux_55_2015,Lux_55,Lux Arbor,2015,0,spring,33,7,8,2,"Spring seeding, no herbicide, full diversity",species_richness,19,0.5802910999761393,79.4,0,0,79.4
+Lux_54_2019,Lux_54,Lux Arbor,2019,0,unseeded,0,3,4,4,Unseeded control,seeded_richness,41,0.564119352726592,104.3,44,0,59.3
+Lux_54_2019,Lux_54,Lux Arbor,2019,0,unseeded,0,15,12,4,Unseeded control,species_richness,41,0.564119352726592,104.3,44,0,59.3
+Lux_54_2025,Lux_54,Lux Arbor,2025,0,unseeded,0,2,0,4,Unseeded control,seeded_richness,41,0.564119352726592,92,63,0,29
+Lux_54_2025,Lux_54,Lux Arbor,2025,0,unseeded,0,8,2,4,Unseeded control,species_richness,41,0.564119352726592,92,63,0,29
+Lux_55_2015,Lux_55,Lux Arbor,2015,0,spring,33,0,4,2,"Spring seeding, no herbicide, full diversity",seeded_richness,19,0.5802910999761393,79.4,0,0,78.4
+Lux_55_2015,Lux_55,Lux Arbor,2015,0,spring,33,7,8,2,"Spring seeding, no herbicide, full diversity",species_richness,19,0.5802910999761393,79.4,0,0,78.4
 Lux_55_2016,Lux_55,Lux Arbor,2016,0,spring,33,3,4,2,"Spring seeding, no herbicide, full diversity",seeded_richness,19,0.5802910999761393,77.7,3,0.7,74
 Lux_55_2016,Lux_55,Lux Arbor,2016,0,spring,33,13,10,2,"Spring seeding, no herbicide, full diversity",species_richness,19,0.5802910999761393,77.7,3,0.7,74
 Lux_55_2017,Lux_55,Lux Arbor,2017,0,spring,33,3,11,2,"Spring seeding, no herbicide, full diversity",seeded_richness,19,0.5802910999761393,83,13.5,0,69.5
@@ -497,6 +595,8 @@ Lux_55_2018,Lux_55,Lux Arbor,2018,0,spring,33,2,9,2,"Spring seeding, no herbicid
 Lux_55_2018,Lux_55,Lux Arbor,2018,0,spring,33,15,14,2,"Spring seeding, no herbicide, full diversity",species_richness,19,0.5802910999761393,105,40,0,65
 Lux_55_2019,Lux_55,Lux Arbor,2019,0,spring,33,2,6,2,"Spring seeding, no herbicide, full diversity",seeded_richness,19,0.5802910999761393,91.1,30,0,61.1
 Lux_55_2019,Lux_55,Lux Arbor,2019,0,spring,33,10,12,2,"Spring seeding, no herbicide, full diversity",species_richness,19,0.5802910999761393,91.1,30,0,61.1
+Lux_55_2025,Lux_55,Lux Arbor,2025,0,spring,33,3,10,2,"Spring seeding, no herbicide, full diversity",seeded_richness,19,0.5802910999761393,98.5,93.6,0,4.9
+Lux_55_2025,Lux_55,Lux Arbor,2025,0,spring,33,7,15,2,"Spring seeding, no herbicide, full diversity",species_richness,19,0.5802910999761393,98.5,93.6,0,4.9
 Lux_56_2015,Lux_56,Lux Arbor,2015,0,spring,33,1,2,2,"Spring seeding, no herbicide, full diversity",seeded_richness,8,0.6033449477351919,44.6,0,0.1,44.5
 Lux_56_2015,Lux_56,Lux Arbor,2015,0,spring,33,8,11,2,"Spring seeding, no herbicide, full diversity",species_richness,8,0.6033449477351919,44.6,0,0.1,44.5
 Lux_56_2016,Lux_56,Lux Arbor,2016,0,spring,33,3,7,2,"Spring seeding, no herbicide, full diversity",seeded_richness,8,0.6033449477351919,73,7,3,63
@@ -507,6 +607,8 @@ Lux_56_2018,Lux_56,Lux Arbor,2018,0,spring,33,7,7,2,"Spring seeding, no herbicid
 Lux_56_2018,Lux_56,Lux Arbor,2018,0,spring,33,13,14,2,"Spring seeding, no herbicide, full diversity",species_richness,8,0.6033449477351919,103.6,66,12,25.6
 Lux_56_2019,Lux_56,Lux Arbor,2019,0,spring,33,5,8,2,"Spring seeding, no herbicide, full diversity",seeded_richness,8,0.6033449477351919,109,52,3.5,53.5
 Lux_56_2019,Lux_56,Lux Arbor,2019,0,spring,33,13,12,2,"Spring seeding, no herbicide, full diversity",species_richness,8,0.6033449477351919,109,52,3.5,53.5
+Lux_56_2025,Lux_56,Lux Arbor,2025,0,spring,33,3,8,2,"Spring seeding, no herbicide, full diversity",seeded_richness,8,0.6033449477351919,94.2,80,8,6.2
+Lux_56_2025,Lux_56,Lux Arbor,2025,0,spring,33,8,10,2,"Spring seeding, no herbicide, full diversity",species_richness,8,0.6033449477351919,94.2,80,8,6.2
 Lux_57_2015,Lux_57,Lux Arbor,2015,0,spring,33,1,2,2,"Spring seeding, no herbicide, full diversity",seeded_richness,30,0.4464477710693904,71.4,0,0.1,71.3
 Lux_57_2015,Lux_57,Lux Arbor,2015,0,spring,33,8,13,2,"Spring seeding, no herbicide, full diversity",species_richness,30,0.4464477710693904,71.4,0,0.1,71.3
 Lux_57_2016,Lux_57,Lux Arbor,2016,0,spring,33,2,11,2,"Spring seeding, no herbicide, full diversity",seeded_richness,30,0.4464477710693904,98.9,25,0.3,73.6
@@ -517,26 +619,32 @@ Lux_57_2018,Lux_57,Lux Arbor,2018,0,spring,33,4,8,2,"Spring seeding, no herbicid
 Lux_57_2018,Lux_57,Lux Arbor,2018,0,spring,33,11,16,2,"Spring seeding, no herbicide, full diversity",species_richness,30,0.4464477710693904,115.7,63,0.8,51.9
 Lux_57_2019,Lux_57,Lux Arbor,2019,0,spring,33,5,6,2,"Spring seeding, no herbicide, full diversity",seeded_richness,30,0.4464477710693904,111,42,4,65
 Lux_57_2019,Lux_57,Lux Arbor,2019,0,spring,33,10,9,2,"Spring seeding, no herbicide, full diversity",species_richness,30,0.4464477710693904,111,42,4,65
+Lux_57_2025,Lux_57,Lux Arbor,2025,0,spring,33,3,9,2,"Spring seeding, no herbicide, full diversity",seeded_richness,30,0.4464477710693904,80.2,73,0,7.2
+Lux_57_2025,Lux_57,Lux Arbor,2025,0,spring,33,9,16,2,"Spring seeding, no herbicide, full diversity",species_richness,30,0.4464477710693904,80.2,73,0,7.2
 Lux_58_2015,Lux_58,Lux Arbor,2015,0,unseeded,0,0,0,4,Unseeded control,seeded_richness,20,0.45478632478632486,58.4,0,0,58.4
 Lux_58_2015,Lux_58,Lux Arbor,2015,0,unseeded,0,10,8,4,Unseeded control,species_richness,20,0.45478632478632486,58.4,0,0,58.4
-Lux_58_2016,Lux_58,Lux Arbor,2016,0,unseeded,0,3,2,4,Unseeded control,seeded_richness,20,0.45478632478632486,95.8,22,0,73.8
-Lux_58_2016,Lux_58,Lux Arbor,2016,0,unseeded,0,12,12,4,Unseeded control,species_richness,20,0.45478632478632486,95.8,22,0,73.8
+Lux_58_2016,Lux_58,Lux Arbor,2016,0,unseeded,0,3,2,4,Unseeded control,seeded_richness,20,0.45478632478632486,95.8,22,0,73.5
+Lux_58_2016,Lux_58,Lux Arbor,2016,0,unseeded,0,12,12,4,Unseeded control,species_richness,20,0.45478632478632486,95.8,22,0,73.5
 Lux_58_2017,Lux_58,Lux Arbor,2017,0,unseeded,0,3,1,4,Unseeded control,seeded_richness,20,0.45478632478632486,81.31,38,0,43.31
 Lux_58_2017,Lux_58,Lux Arbor,2017,0,unseeded,0,13,12,4,Unseeded control,species_richness,20,0.45478632478632486,81.31,38,0,43.31
 Lux_58_2018,Lux_58,Lux Arbor,2018,0,unseeded,0,3,0,4,Unseeded control,seeded_richness,20,0.45478632478632486,108.5,85,0,23.5
 Lux_58_2018,Lux_58,Lux Arbor,2018,0,unseeded,0,10,9,4,Unseeded control,species_richness,20,0.45478632478632486,108.5,85,0,23.5
 Lux_58_2019,Lux_58,Lux Arbor,2019,0,unseeded,0,3,3,4,Unseeded control,seeded_richness,20,0.45478632478632486,105,61,0,44
 Lux_58_2019,Lux_58,Lux Arbor,2019,0,unseeded,0,10,12,4,Unseeded control,species_richness,20,0.45478632478632486,105,61,0,44
+Lux_58_2025,Lux_58,Lux Arbor,2025,0,unseeded,0,3,3,4,Unseeded control,seeded_richness,20,0.45478632478632486,91.3,78,0,13.3
+Lux_58_2025,Lux_58,Lux Arbor,2025,0,unseeded,0,8,3,4,Unseeded control,species_richness,20,0.45478632478632486,91.3,78,0,13.3
 Lux_59_2015,Lux_59,Lux Arbor,2015,1,spring,6,1,2,8,"Spring seeding, with herbicide, 2 forb species/group",seeded_richness,34,0.5160119749614444,64.8,0,1,63.8
 Lux_59_2015,Lux_59,Lux Arbor,2015,1,spring,6,5,11,8,"Spring seeding, with herbicide, 2 forb species/group",species_richness,34,0.5160119749614444,64.8,0,1,63.8
-Lux_59_2016,Lux_59,Lux Arbor,2016,1,spring,6,2,4,8,"Spring seeding, with herbicide, 2 forb species/group",seeded_richness,34,0.5160119749614444,96,20,0.5,75.5
-Lux_59_2016,Lux_59,Lux Arbor,2016,1,spring,6,12,13,8,"Spring seeding, with herbicide, 2 forb species/group",species_richness,34,0.5160119749614444,96,20,0.5,75.5
+Lux_59_2016,Lux_59,Lux Arbor,2016,1,spring,6,2,4,8,"Spring seeding, with herbicide, 2 forb species/group",seeded_richness,34,0.5160119749614444,96,20,0.5,74.5
+Lux_59_2016,Lux_59,Lux Arbor,2016,1,spring,6,12,13,8,"Spring seeding, with herbicide, 2 forb species/group",species_richness,34,0.5160119749614444,96,20,0.5,74.5
 Lux_59_2017,Lux_59,Lux Arbor,2017,1,spring,6,2,4,8,"Spring seeding, with herbicide, 2 forb species/group",seeded_richness,34,0.5160119749614444,81.1,30,0,51.1
 Lux_59_2017,Lux_59,Lux Arbor,2017,1,spring,6,8,12,8,"Spring seeding, with herbicide, 2 forb species/group",species_richness,34,0.5160119749614444,81.1,30,0,51.1
 Lux_59_2018,Lux_59,Lux Arbor,2018,1,spring,6,2,2,8,"Spring seeding, with herbicide, 2 forb species/group",seeded_richness,34,0.5160119749614444,107,85,0,22
 Lux_59_2018,Lux_59,Lux Arbor,2018,1,spring,6,6,14,8,"Spring seeding, with herbicide, 2 forb species/group",species_richness,34,0.5160119749614444,107,85,0,22
 Lux_59_2019,Lux_59,Lux Arbor,2019,1,spring,6,2,3,8,"Spring seeding, with herbicide, 2 forb species/group",seeded_richness,34,0.5160119749614444,101.5,65,0,36.5
 Lux_59_2019,Lux_59,Lux Arbor,2019,1,spring,6,7,7,8,"Spring seeding, with herbicide, 2 forb species/group",species_richness,34,0.5160119749614444,101.5,65,0,36.5
+Lux_59_2025,Lux_59,Lux Arbor,2025,1,spring,6,2,2,8,"Spring seeding, with herbicide, 2 forb species/group",seeded_richness,34,0.5160119749614444,95.8,74,0,21.8
+Lux_59_2025,Lux_59,Lux Arbor,2025,1,spring,6,6,6,8,"Spring seeding, with herbicide, 2 forb species/group",species_richness,34,0.5160119749614444,95.8,74,0,21.8
 Lux_5_2015,Lux_5,Lux Arbor,2015,1,spring,12,0,0,9,"Spring seeding, with herbicide, 4 forb species/group",seeded_richness,65,0.6078829744006502,95,0,0,95
 Lux_5_2015,Lux_5,Lux Arbor,2015,1,spring,12,5,5,9,"Spring seeding, with herbicide, 4 forb species/group",species_richness,65,0.6078829744006502,95,0,0,95
 Lux_5_2016,Lux_5,Lux Arbor,2016,1,spring,12,1,0,9,"Spring seeding, with herbicide, 4 forb species/group",seeded_richness,65,0.6078829744006502,79,2,0,77
@@ -547,6 +655,8 @@ Lux_5_2018,Lux_5,Lux Arbor,2018,1,spring,12,3,0,9,"Spring seeding, with herbicid
 Lux_5_2018,Lux_5,Lux Arbor,2018,1,spring,12,11,3,9,"Spring seeding, with herbicide, 4 forb species/group",species_richness,65,0.6078829744006502,57.5,11,0,46.5
 Lux_5_2019,Lux_5,Lux Arbor,2019,1,spring,12,3,0,9,"Spring seeding, with herbicide, 4 forb species/group",seeded_richness,65,0.6078829744006502,94.1,20,0,74.1
 Lux_5_2019,Lux_5,Lux Arbor,2019,1,spring,12,14,4,9,"Spring seeding, with herbicide, 4 forb species/group",species_richness,65,0.6078829744006502,94.1,20,0,74.1
+Lux_5_2025,Lux_5,Lux Arbor,2025,1,spring,12,4,1,9,"Spring seeding, with herbicide, 4 forb species/group",seeded_richness,65,0.6078829744006502,98.3,77,0,21.3
+Lux_5_2025,Lux_5,Lux Arbor,2025,1,spring,12,13,2,9,"Spring seeding, with herbicide, 4 forb species/group",species_richness,65,0.6078829744006502,98.3,77,0,21.3
 Lux_60_2015,Lux_60,Lux Arbor,2015,1,spring,18,0,1,10,"Spring seeding, with herbicide, 6 forb species/group",seeded_richness,24,0.5884877182598398,50.7,0,0,50.7
 Lux_60_2015,Lux_60,Lux Arbor,2015,1,spring,18,7,11,10,"Spring seeding, with herbicide, 6 forb species/group",species_richness,24,0.5884877182598398,50.7,0,0,50.7
 Lux_60_2016,Lux_60,Lux Arbor,2016,1,spring,18,2,2,10,"Spring seeding, with herbicide, 6 forb species/group",seeded_richness,24,0.5884877182598398,86.9,23,0,63.9
@@ -557,6 +667,8 @@ Lux_60_2018,Lux_60,Lux Arbor,2018,1,spring,18,3,2,10,"Spring seeding, with herbi
 Lux_60_2018,Lux_60,Lux Arbor,2018,1,spring,18,10,6,10,"Spring seeding, with herbicide, 6 forb species/group",species_richness,24,0.5884877182598398,107.6,85,0,22.6
 Lux_60_2019,Lux_60,Lux Arbor,2019,1,spring,18,3,2,10,"Spring seeding, with herbicide, 6 forb species/group",seeded_richness,24,0.5884877182598398,97.3,39,0,58.3
 Lux_60_2019,Lux_60,Lux Arbor,2019,1,spring,18,9,8,10,"Spring seeding, with herbicide, 6 forb species/group",species_richness,24,0.5884877182598398,97.3,39,0,58.3
+Lux_60_2025,Lux_60,Lux Arbor,2025,1,spring,18,3,2,10,"Spring seeding, with herbicide, 6 forb species/group",seeded_richness,24,0.5884877182598398,97.6,69,0,28.6
+Lux_60_2025,Lux_60,Lux Arbor,2025,1,spring,18,8,6,10,"Spring seeding, with herbicide, 6 forb species/group",species_richness,24,0.5884877182598398,97.6,69,0,28.6
 Lux_6_2015,Lux_6,Lux Arbor,2015,1,spring,33,1,6,3,"Spring seeding, with herbicide, full diversity",seeded_richness,41,0.5417269247128879,69,0,0.7,68.3
 Lux_6_2015,Lux_6,Lux Arbor,2015,1,spring,33,12,13,3,"Spring seeding, with herbicide, full diversity",species_richness,41,0.5417269247128879,69,0,0.7,68.3
 Lux_6_2016,Lux_6,Lux Arbor,2016,1,spring,33,3,4,3,"Spring seeding, with herbicide, full diversity",seeded_richness,41,0.5417269247128879,88,10,0,78
@@ -567,6 +679,8 @@ Lux_6_2018,Lux_6,Lux Arbor,2018,1,spring,33,5,10,3,"Spring seeding, with herbici
 Lux_6_2018,Lux_6,Lux Arbor,2018,1,spring,33,9,15,3,"Spring seeding, with herbicide, full diversity",species_richness,41,0.5417269247128879,91,58,4,29
 Lux_6_2019,Lux_6,Lux Arbor,2019,1,spring,33,4,13,3,"Spring seeding, with herbicide, full diversity",seeded_richness,41,0.5417269247128879,101.1,9,1.1,91
 Lux_6_2019,Lux_6,Lux Arbor,2019,1,spring,33,10,19,3,"Spring seeding, with herbicide, full diversity",species_richness,41,0.5417269247128879,101.1,9,1.1,91
+Lux_6_2025,Lux_6,Lux Arbor,2025,1,spring,33,6,5,3,"Spring seeding, with herbicide, full diversity",seeded_richness,41,0.5417269247128879,94.52,61,1.3,32.12
+Lux_6_2025,Lux_6,Lux Arbor,2025,1,spring,33,13,8,3,"Spring seeding, with herbicide, full diversity",species_richness,41,0.5417269247128879,94.52,61,1.3,32.12
 Lux_7_2015,Lux_7,Lux Arbor,2015,0,fall,33,0,11,1,Fall seeding full diversity,seeded_richness,43,0.4755734406438632,87.6,0,0,87.6
 Lux_7_2015,Lux_7,Lux Arbor,2015,0,fall,33,8,17,1,Fall seeding full diversity,species_richness,43,0.4755734406438632,87.6,0,0,87.6
 Lux_7_2016,Lux_7,Lux Arbor,2016,0,fall,33,0,6,1,Fall seeding full diversity,seeded_richness,43,0.4755734406438632,87.3,0,0,87.3
@@ -577,6 +691,8 @@ Lux_7_2018,Lux_7,Lux Arbor,2018,0,fall,33,3,18,1,Fall seeding full diversity,see
 Lux_7_2018,Lux_7,Lux Arbor,2018,0,fall,33,12,27,1,Fall seeding full diversity,species_richness,43,0.4755734406438632,90.42,1,6,83.42
 Lux_7_2019,Lux_7,Lux Arbor,2019,0,fall,33,3,13,1,Fall seeding full diversity,seeded_richness,43,0.4755734406438632,105.5,38,0.7,66.8
 Lux_7_2019,Lux_7,Lux Arbor,2019,0,fall,33,12,20,1,Fall seeding full diversity,species_richness,43,0.4755734406438632,105.5,38,0.7,66.8
+Lux_7_2025,Lux_7,Lux Arbor,2025,0,fall,33,7,5,1,Fall seeding full diversity,seeded_richness,43,0.4755734406438632,105.9,53,7.7,45.2
+Lux_7_2025,Lux_7,Lux Arbor,2025,0,fall,33,19,11,1,Fall seeding full diversity,species_richness,43,0.4755734406438632,105.9,53,7.7,45.2
 Lux_8_2015,Lux_8,Lux Arbor,2015,1,spring,12,0,0,9,"Spring seeding, with herbicide, 4 forb species/group",seeded_richness,68,0.49824820210215737,77.8,0,0,77.8
 Lux_8_2015,Lux_8,Lux Arbor,2015,1,spring,12,6,5,9,"Spring seeding, with herbicide, 4 forb species/group",species_richness,68,0.49824820210215737,77.8,0,0,77.8
 Lux_8_2016,Lux_8,Lux Arbor,2016,1,spring,12,0,0,9,"Spring seeding, with herbicide, 4 forb species/group",seeded_richness,68,0.49824820210215737,89.5,0,0,89.5
@@ -587,6 +703,8 @@ Lux_8_2018,Lux_8,Lux Arbor,2018,1,spring,12,0,3,9,"Spring seeding, with herbicid
 Lux_8_2018,Lux_8,Lux Arbor,2018,1,spring,12,8,11,9,"Spring seeding, with herbicide, 4 forb species/group",species_richness,68,0.49824820210215737,113.21,0,0,113.21
 Lux_8_2019,Lux_8,Lux Arbor,2019,1,spring,12,0,4,9,"Spring seeding, with herbicide, 4 forb species/group",seeded_richness,68,0.49824820210215737,103.2,0,0,103.2
 Lux_8_2019,Lux_8,Lux Arbor,2019,1,spring,12,9,11,9,"Spring seeding, with herbicide, 4 forb species/group",species_richness,68,0.49824820210215737,103.2,0,0,103.2
+Lux_8_2025,Lux_8,Lux Arbor,2025,1,spring,12,1,7,9,"Spring seeding, with herbicide, 4 forb species/group",seeded_richness,68,0.49824820210215737,97.5,4,0,93.5
+Lux_8_2025,Lux_8,Lux Arbor,2025,1,spring,12,8,12,9,"Spring seeding, with herbicide, 4 forb species/group",species_richness,68,0.49824820210215737,97.5,4,0,93.5
 Lux_9_2015,Lux_9,Lux Arbor,2015,1,spring,33,0,0,3,"Spring seeding, with herbicide, full diversity",seeded_richness,40,0.5083726223378311,85.1,0,0,85.1
 Lux_9_2015,Lux_9,Lux Arbor,2015,1,spring,33,8,8,3,"Spring seeding, with herbicide, full diversity",species_richness,40,0.5083726223378311,85.1,0,0,85.1
 Lux_9_2016,Lux_9,Lux Arbor,2016,1,spring,33,0,6,3,"Spring seeding, with herbicide, full diversity",seeded_richness,40,0.5083726223378311,80.8,0,0,80.8
@@ -597,6 +715,8 @@ Lux_9_2018,Lux_9,Lux Arbor,2018,1,spring,33,0,11,3,"Spring seeding, with herbici
 Lux_9_2018,Lux_9,Lux Arbor,2018,1,spring,33,11,21,3,"Spring seeding, with herbicide, full diversity",species_richness,40,0.5083726223378311,100.6,0,0,100.6
 Lux_9_2019,Lux_9,Lux Arbor,2019,1,spring,33,2,9,3,"Spring seeding, with herbicide, full diversity",seeded_richness,40,0.5083726223378311,101.1,3,4,94.1
 Lux_9_2019,Lux_9,Lux Arbor,2019,1,spring,33,14,16,3,"Spring seeding, with herbicide, full diversity",species_richness,40,0.5083726223378311,101.1,3,4,94.1
+Lux_9_2025,Lux_9,Lux Arbor,2025,1,spring,33,6,4,3,"Spring seeding, with herbicide, full diversity",seeded_richness,40,0.5083726223378311,67.7,29,28,10.7
+Lux_9_2025,Lux_9,Lux Arbor,2025,1,spring,33,12,10,3,"Spring seeding, with herbicide, full diversity",species_richness,40,0.5083726223378311,67.7,29,28,10.7
 NWS_10_2015,NWS_10,NW Station,2015,1,spring,18,3,0,10,"Spring seeding, with herbicide, 6 forb species/group",seeded_richness,53,0.3611741160773848,36.2,17.6,0,18.6
 NWS_10_2015,NWS_10,NW Station,2015,1,spring,18,10,7,10,"Spring seeding, with herbicide, 6 forb species/group",species_richness,53,0.3611741160773848,36.2,17.6,0,18.6
 NWS_10_2016,NWS_10,NW Station,2016,1,spring,18,3,0,10,"Spring seeding, with herbicide, 6 forb species/group",seeded_richness,53,0.3611741160773848,33.7,23,0,10.7
@@ -807,8 +927,8 @@ NWS_33_2018,NWS_33,NW Station,2018,1,spring,18,4,1,10,"Spring seeding, with herb
 NWS_33_2018,NWS_33,NW Station,2018,1,spring,18,7,3,10,"Spring seeding, with herbicide, 6 forb species/group",species_richness,25,0.3136844856881454,50.3,38,0,12.3
 NWS_34_2015,NWS_34,NW Station,2015,0,fall,12,1,3,6,Fall seeding 4 forb species/group,seeded_richness,37,0.31942643032137186,52.03,35,0,17.03
 NWS_34_2015,NWS_34,NW Station,2015,0,fall,12,4,9,6,Fall seeding 4 forb species/group,species_richness,37,0.31942643032137186,52.03,35,0,17.03
-NWS_34_2016,NWS_34,NW Station,2016,0,fall,12,3,0,6,Fall seeding 4 forb species/group,seeded_richness,37,0.31942643032137186,10.22,6.2,0,4.0200000000000005
-NWS_34_2016,NWS_34,NW Station,2016,0,fall,12,8,2,6,Fall seeding 4 forb species/group,species_richness,37,0.31942643032137186,10.22,6.2,0,4.0200000000000005
+NWS_34_2016,NWS_34,NW Station,2016,0,fall,12,3,0,6,Fall seeding 4 forb species/group,seeded_richness,37,0.31942643032137186,10.22,6.2,0,3.62
+NWS_34_2016,NWS_34,NW Station,2016,0,fall,12,8,2,6,Fall seeding 4 forb species/group,species_richness,37,0.31942643032137186,10.22,6.2,0,3.62
 NWS_34_2017,NWS_34,NW Station,2017,0,fall,12,3,4,6,Fall seeding 4 forb species/group,seeded_richness,37,0.31942643032137186,29.4,18,0,11.4
 NWS_34_2017,NWS_34,NW Station,2017,0,fall,12,8,7,6,Fall seeding 4 forb species/group,species_richness,37,0.31942643032137186,29.4,18,0,11.4
 NWS_34_2018,NWS_34,NW Station,2018,0,fall,12,3,4,6,Fall seeding 4 forb species/group,seeded_richness,37,0.31942643032137186,67.8,60,0,7.8
@@ -1077,16 +1197,16 @@ NWS_9_2017,NWS_9,NW Station,2017,1,spring,33,4,2,3,"Spring seeding, with herbici
 NWS_9_2017,NWS_9,NW Station,2017,1,spring,33,8,6,3,"Spring seeding, with herbicide, full diversity",species_richness,9,0.3633655229093898,35.3,17,10,8.3
 NWS_9_2018,NWS_9,NW Station,2018,1,spring,33,5,0,3,"Spring seeding, with herbicide, full diversity",seeded_richness,9,0.3633655229093898,24.5,12,2.5,10
 NWS_9_2018,NWS_9,NW Station,2018,1,spring,33,10,0,3,"Spring seeding, with herbicide, full diversity",species_richness,9,0.3633655229093898,24.5,12,2.5,10
-SWS_10_2015,SWS_10,SW Station,2015,0,fall,12,0,2,6,Fall seeding 4 forb species/group,seeded_richness,40,0.3766262162457638,82.01,0,0,82.01
-SWS_10_2015,SWS_10,SW Station,2015,0,fall,12,6,9,6,Fall seeding 4 forb species/group,species_richness,40,0.3766262162457638,82.01,0,0,82.01
+SWS_10_2015,SWS_10,SW Station,2015,0,fall,12,0,2,6,Fall seeding 4 forb species/group,seeded_richness,40,0.3766262162457638,82.01,0,0,82
+SWS_10_2015,SWS_10,SW Station,2015,0,fall,12,6,9,6,Fall seeding 4 forb species/group,species_richness,40,0.3766262162457638,82.01,0,0,82
 SWS_10_2016,SWS_10,SW Station,2016,0,fall,12,1,1,6,Fall seeding 4 forb species/group,seeded_richness,40,0.3766262162457638,68.5,0,7,61.5
 SWS_10_2016,SWS_10,SW Station,2016,0,fall,12,9,11,6,Fall seeding 4 forb species/group,species_richness,40,0.3766262162457638,68.5,0,7,61.5
 SWS_10_2017,SWS_10,SW Station,2017,0,fall,12,1,1,6,Fall seeding 4 forb species/group,seeded_richness,40,0.3766262162457638,63.4,0,6,57.4
 SWS_10_2017,SWS_10,SW Station,2017,0,fall,12,8,6,6,Fall seeding 4 forb species/group,species_richness,40,0.3766262162457638,63.4,0,6,57.4
 SWS_10_2018,SWS_10,SW Station,2018,0,fall,12,1,1,6,Fall seeding 4 forb species/group,seeded_richness,40,0.3766262162457638,75.5,0,10,65.5
 SWS_10_2018,SWS_10,SW Station,2018,0,fall,12,7,6,6,Fall seeding 4 forb species/group,species_richness,40,0.3766262162457638,75.5,0,10,65.5
-SWS_11_2015,SWS_11,SW Station,2015,1,spring,33,0,6,3,"Spring seeding, with herbicide, full diversity",seeded_richness,30,0.39096901779828613,39.61,0,0,39.61
-SWS_11_2015,SWS_11,SW Station,2015,1,spring,33,7,13,3,"Spring seeding, with herbicide, full diversity",species_richness,30,0.39096901779828613,39.61,0,0,39.61
+SWS_11_2015,SWS_11,SW Station,2015,1,spring,33,0,6,3,"Spring seeding, with herbicide, full diversity",seeded_richness,30,0.39096901779828613,39.61,0,0,39.51
+SWS_11_2015,SWS_11,SW Station,2015,1,spring,33,7,13,3,"Spring seeding, with herbicide, full diversity",species_richness,30,0.39096901779828613,39.61,0,0,39.51
 SWS_11_2016,SWS_11,SW Station,2016,1,spring,33,0,7,3,"Spring seeding, with herbicide, full diversity",seeded_richness,30,0.39096901779828613,42.75,0,0,42.75
 SWS_11_2016,SWS_11,SW Station,2016,1,spring,33,8,16,3,"Spring seeding, with herbicide, full diversity",species_richness,30,0.39096901779828613,42.75,0,0,42.75
 SWS_11_2017,SWS_11,SW Station,2017,1,spring,33,0,8,3,"Spring seeding, with herbicide, full diversity",seeded_richness,30,0.39096901779828613,57.6,0,0,57.6
@@ -1101,24 +1221,24 @@ SWS_12_2017,SWS_12,SW Station,2017,0,unseeded,0,0,0,4,Unseeded control,seeded_ri
 SWS_12_2017,SWS_12,SW Station,2017,0,unseeded,0,8,9,4,Unseeded control,species_richness,25,0.44787310742609954,45,0,0,45
 SWS_12_2018,SWS_12,SW Station,2018,0,unseeded,0,0,0,4,Unseeded control,seeded_richness,25,0.44787310742609954,100,0,0,100
 SWS_12_2018,SWS_12,SW Station,2018,0,unseeded,0,7,10,4,Unseeded control,species_richness,25,0.44787310742609954,100,0,0,100
-SWS_13_2015,SWS_13,SW Station,2015,0,fall,18,0,0,7,Fall seeding 6 forb species/group,seeded_richness,31,0.4003829750195838,82.8,0,0,82.8
-SWS_13_2015,SWS_13,SW Station,2015,0,fall,18,9,5,7,Fall seeding 6 forb species/group,species_richness,31,0.4003829750195838,82.8,0,0,82.8
+SWS_13_2015,SWS_13,SW Station,2015,0,fall,18,0,0,7,Fall seeding 6 forb species/group,seeded_richness,31,0.4003829750195838,82.8,0,0,81.8
+SWS_13_2015,SWS_13,SW Station,2015,0,fall,18,9,5,7,Fall seeding 6 forb species/group,species_richness,31,0.4003829750195838,82.8,0,0,81.8
 SWS_13_2016,SWS_13,SW Station,2016,0,fall,18,0,1,7,Fall seeding 6 forb species/group,seeded_richness,31,0.4003829750195838,53,0,0,53
 SWS_13_2016,SWS_13,SW Station,2016,0,fall,18,9,6,7,Fall seeding 6 forb species/group,species_richness,31,0.4003829750195838,53,0,0,53
 SWS_13_2017,SWS_13,SW Station,2017,0,fall,18,0,4,7,Fall seeding 6 forb species/group,seeded_richness,31,0.4003829750195838,65.2,0,0,65.2
 SWS_13_2017,SWS_13,SW Station,2017,0,fall,18,7,10,7,Fall seeding 6 forb species/group,species_richness,31,0.4003829750195838,65.2,0,0,65.2
 SWS_13_2018,SWS_13,SW Station,2018,0,fall,18,0,3,7,Fall seeding 6 forb species/group,seeded_richness,31,0.4003829750195838,76.5,0,0,76.5
 SWS_13_2018,SWS_13,SW Station,2018,0,fall,18,7,10,7,Fall seeding 6 forb species/group,species_richness,31,0.4003829750195838,76.5,0,0,76.5
-SWS_14_2015,SWS_14,SW Station,2015,0,fall,12,1,3,6,Fall seeding 4 forb species/group,seeded_richness,39,0.4404323056300266,69,0,2,67
-SWS_14_2015,SWS_14,SW Station,2015,0,fall,12,8,9,6,Fall seeding 4 forb species/group,species_richness,39,0.4404323056300266,69,0,2,67
+SWS_14_2015,SWS_14,SW Station,2015,0,fall,12,1,3,6,Fall seeding 4 forb species/group,seeded_richness,39,0.4404323056300266,69,0,2,66.3
+SWS_14_2015,SWS_14,SW Station,2015,0,fall,12,8,9,6,Fall seeding 4 forb species/group,species_richness,39,0.4404323056300266,69,0,2,66.3
 SWS_14_2016,SWS_14,SW Station,2016,0,fall,12,1,1,6,Fall seeding 4 forb species/group,seeded_richness,39,0.4404323056300266,52,0,0.5,51.5
 SWS_14_2016,SWS_14,SW Station,2016,0,fall,12,9,8,6,Fall seeding 4 forb species/group,species_richness,39,0.4404323056300266,52,0,0.5,51.5
 SWS_14_2017,SWS_14,SW Station,2017,0,fall,12,1,1,6,Fall seeding 4 forb species/group,seeded_richness,39,0.4404323056300266,24.8,0,6,18.8
 SWS_14_2017,SWS_14,SW Station,2017,0,fall,12,7,5,6,Fall seeding 4 forb species/group,species_richness,39,0.4404323056300266,24.8,0,6,18.8
 SWS_14_2018,SWS_14,SW Station,2018,0,fall,12,1,3,6,Fall seeding 4 forb species/group,seeded_richness,39,0.4404323056300266,51,0,15,36
 SWS_14_2018,SWS_14,SW Station,2018,0,fall,12,7,9,6,Fall seeding 4 forb species/group,species_richness,39,0.4404323056300266,51,0,15,36
-SWS_15_2015,SWS_15,SW Station,2015,0,fall,18,1,3,7,Fall seeding 6 forb species/group,seeded_richness,69,0.4404544141715608,88.2,0,0.2,88
-SWS_15_2015,SWS_15,SW Station,2015,0,fall,18,10,10,7,Fall seeding 6 forb species/group,species_richness,69,0.4404544141715608,88.2,0,0.2,88
+SWS_15_2015,SWS_15,SW Station,2015,0,fall,18,1,3,7,Fall seeding 6 forb species/group,seeded_richness,69,0.4404544141715608,88.2,0,0.2,87
+SWS_15_2015,SWS_15,SW Station,2015,0,fall,18,10,10,7,Fall seeding 6 forb species/group,species_richness,69,0.4404544141715608,88.2,0,0.2,87
 SWS_15_2016,SWS_15,SW Station,2016,0,fall,18,2,2,7,Fall seeding 6 forb species/group,seeded_richness,69,0.4404544141715608,68,0,10,58
 SWS_15_2016,SWS_15,SW Station,2016,0,fall,18,12,9,7,Fall seeding 6 forb species/group,species_richness,69,0.4404544141715608,68,0,10,58
 SWS_15_2017,SWS_15,SW Station,2017,0,fall,18,2,3,7,Fall seeding 6 forb species/group,seeded_richness,69,0.4404544141715608,53.5,0,9,44.5
@@ -1141,8 +1261,8 @@ SWS_17_2017,SWS_17,SW Station,2017,0,spring,33,0,6,2,"Spring seeding, no herbici
 SWS_17_2017,SWS_17,SW Station,2017,0,spring,33,7,15,2,"Spring seeding, no herbicide, full diversity",species_richness,33,0.420807698375138,38,0,0,38
 SWS_17_2018,SWS_17,SW Station,2018,0,spring,33,0,5,2,"Spring seeding, no herbicide, full diversity",seeded_richness,33,0.420807698375138,104.5,0,0,104.5
 SWS_17_2018,SWS_17,SW Station,2018,0,spring,33,10,8,2,"Spring seeding, no herbicide, full diversity",species_richness,33,0.420807698375138,104.5,0,0,104.5
-SWS_18_2015,SWS_18,SW Station,2015,0,fall,6,0,1,5,Fall seeding 2 forb species/group,seeded_richness,40,0.42355112587670724,91.2,0,0,91.2
-SWS_18_2015,SWS_18,SW Station,2015,0,fall,6,9,5,5,Fall seeding 2 forb species/group,species_richness,40,0.42355112587670724,91.2,0,0,91.2
+SWS_18_2015,SWS_18,SW Station,2015,0,fall,6,0,1,5,Fall seeding 2 forb species/group,seeded_richness,40,0.42355112587670724,91.2,0,0,91
+SWS_18_2015,SWS_18,SW Station,2015,0,fall,6,9,5,5,Fall seeding 2 forb species/group,species_richness,40,0.42355112587670724,91.2,0,0,91
 SWS_18_2016,SWS_18,SW Station,2016,0,fall,6,0,1,5,Fall seeding 2 forb species/group,seeded_richness,40,0.42355112587670724,93.1,0,0,93.1
 SWS_18_2016,SWS_18,SW Station,2016,0,fall,6,11,4,5,Fall seeding 2 forb species/group,species_richness,40,0.42355112587670724,93.1,0,0,93.1
 SWS_18_2017,SWS_18,SW Station,2017,0,fall,6,0,2,5,Fall seeding 2 forb species/group,seeded_richness,40,0.42355112587670724,44.4,0,0,44.4
@@ -1157,16 +1277,16 @@ SWS_19_2017,SWS_19,SW Station,2017,0,spring,33,1,8,2,"Spring seeding, no herbici
 SWS_19_2017,SWS_19,SW Station,2017,0,spring,33,5,18,2,"Spring seeding, no herbicide, full diversity",species_richness,33,0.42138799324428083,29,0,7,22
 SWS_19_2018,SWS_19,SW Station,2018,0,spring,33,5,5,2,"Spring seeding, no herbicide, full diversity",seeded_richness,33,0.42138799324428083,43,5,9,29
 SWS_19_2018,SWS_19,SW Station,2018,0,spring,33,11,12,2,"Spring seeding, no herbicide, full diversity",species_richness,33,0.42138799324428083,43,5,9,29
-SWS_1_2015,SWS_1,SW Station,2015,0,fall,18,0,3,7,Fall seeding 6 forb species/group,seeded_richness,64,0.39105372377219266,23.52,0,0,23.52
-SWS_1_2015,SWS_1,SW Station,2015,0,fall,18,7,14,7,Fall seeding 6 forb species/group,species_richness,64,0.39105372377219266,23.52,0,0,23.52
+SWS_1_2015,SWS_1,SW Station,2015,0,fall,18,0,3,7,Fall seeding 6 forb species/group,seeded_richness,64,0.39105372377219266,23.52,0,0,23.32
+SWS_1_2015,SWS_1,SW Station,2015,0,fall,18,7,14,7,Fall seeding 6 forb species/group,species_richness,64,0.39105372377219266,23.52,0,0,23.32
 SWS_1_2016,SWS_1,SW Station,2016,0,fall,18,0,4,7,Fall seeding 6 forb species/group,seeded_richness,64,0.39105372377219266,65.1,0,0,65.1
 SWS_1_2016,SWS_1,SW Station,2016,0,fall,18,6,12,7,Fall seeding 6 forb species/group,species_richness,64,0.39105372377219266,65.1,0,0,65.1
 SWS_1_2017,SWS_1,SW Station,2017,0,fall,18,1,2,7,Fall seeding 6 forb species/group,seeded_richness,64,0.39105372377219266,82.6,0,30,52.6
 SWS_1_2017,SWS_1,SW Station,2017,0,fall,18,7,12,7,Fall seeding 6 forb species/group,species_richness,64,0.39105372377219266,82.6,0,30,52.6
 SWS_1_2018,SWS_1,SW Station,2018,0,fall,18,2,2,7,Fall seeding 6 forb species/group,seeded_richness,64,0.39105372377219266,82.5,0,12,70.5
 SWS_1_2018,SWS_1,SW Station,2018,0,fall,18,10,10,7,Fall seeding 6 forb species/group,species_richness,64,0.39105372377219266,82.5,0,12,70.5
-SWS_20_2015,SWS_20,SW Station,2015,0,fall,6,0,0,5,Fall seeding 2 forb species/group,seeded_richness,1,0.3904600162445546,62.1,0,0,62.1
-SWS_20_2015,SWS_20,SW Station,2015,0,fall,6,8,3,5,Fall seeding 2 forb species/group,species_richness,1,0.3904600162445546,62.1,0,0,62.1
+SWS_20_2015,SWS_20,SW Station,2015,0,fall,6,0,0,5,Fall seeding 2 forb species/group,seeded_richness,1,0.3904600162445546,62.1,0,0,62
+SWS_20_2015,SWS_20,SW Station,2015,0,fall,6,8,3,5,Fall seeding 2 forb species/group,species_richness,1,0.3904600162445546,62.1,0,0,62
 SWS_20_2016,SWS_20,SW Station,2016,0,fall,6,0,2,5,Fall seeding 2 forb species/group,seeded_richness,1,0.3904600162445546,45.1,0,0,45.1
 SWS_20_2016,SWS_20,SW Station,2016,0,fall,6,8,7,5,Fall seeding 2 forb species/group,species_richness,1,0.3904600162445546,45.1,0,0,45.1
 SWS_20_2017,SWS_20,SW Station,2017,0,fall,6,1,1,5,Fall seeding 2 forb species/group,seeded_richness,1,0.3904600162445546,25,4,0,21
@@ -1189,8 +1309,8 @@ SWS_22_2017,SWS_22,SW Station,2017,0,fall,6,0,4,5,Fall seeding 2 forb species/gr
 SWS_22_2017,SWS_22,SW Station,2017,0,fall,6,10,9,5,Fall seeding 2 forb species/group,species_richness,6,0.44677419354838727,38.1,0,0,38.1
 SWS_22_2018,SWS_22,SW Station,2018,0,fall,6,0,3,5,Fall seeding 2 forb species/group,seeded_richness,6,0.44677419354838727,87.9,0,0,87.9
 SWS_22_2018,SWS_22,SW Station,2018,0,fall,6,10,7,5,Fall seeding 2 forb species/group,species_richness,6,0.44677419354838727,87.9,0,0,87.9
-SWS_23_2015,SWS_23,SW Station,2015,0,fall,33,0,2,1,Fall seeding full diversity,seeded_richness,26,0.41532007458048464,56.06,0,0,56.06
-SWS_23_2015,SWS_23,SW Station,2015,0,fall,33,9,7,1,Fall seeding full diversity,species_richness,26,0.41532007458048464,56.06,0,0,56.06
+SWS_23_2015,SWS_23,SW Station,2015,0,fall,33,0,2,1,Fall seeding full diversity,seeded_richness,26,0.41532007458048464,56.06,0,0,56.01
+SWS_23_2015,SWS_23,SW Station,2015,0,fall,33,9,7,1,Fall seeding full diversity,species_richness,26,0.41532007458048464,56.06,0,0,56.01
 SWS_23_2016,SWS_23,SW Station,2016,0,fall,33,0,2,1,Fall seeding full diversity,seeded_richness,26,0.41532007458048464,50.9,0,0,50.9
 SWS_23_2016,SWS_23,SW Station,2016,0,fall,33,11,7,1,Fall seeding full diversity,species_richness,26,0.41532007458048464,50.9,0,0,50.9
 SWS_23_2017,SWS_23,SW Station,2017,0,fall,33,1,4,1,Fall seeding full diversity,seeded_richness,26,0.41532007458048464,26.8,2,0,24.8
@@ -1203,10 +1323,10 @@ SWS_24_2016,SWS_24,SW Station,2016,0,unseeded,0,0,0,4,Unseeded control,seeded_ri
 SWS_24_2016,SWS_24,SW Station,2016,0,unseeded,0,6,5,4,Unseeded control,species_richness,44,0.38767028399907644,79,0,0,79
 SWS_24_2017,SWS_24,SW Station,2017,0,unseeded,0,0,2,4,Unseeded control,seeded_richness,44,0.38767028399907644,29.3,0,0,29.3
 SWS_24_2017,SWS_24,SW Station,2017,0,unseeded,0,7,11,4,Unseeded control,species_richness,44,0.38767028399907644,29.3,0,0,29.3
-SWS_24_2018,SWS_24,SW Station,2018,0,unseeded,0,0,1,4,Unseeded control,seeded_richness,44,0.38767028399907644,77.32,0,0,77.32
-SWS_24_2018,SWS_24,SW Station,2018,0,unseeded,0,13,8,4,Unseeded control,species_richness,44,0.38767028399907644,77.32,0,0,77.32
-SWS_25_2015,SWS_25,SW Station,2015,1,spring,12,1,3,9,"Spring seeding, with herbicide, 4 forb species/group",seeded_richness,21,0.40838083956467014,57.37,0,0.02,57.35
-SWS_25_2015,SWS_25,SW Station,2015,1,spring,12,11,10,9,"Spring seeding, with herbicide, 4 forb species/group",species_richness,21,0.40838083956467014,57.37,0,0.02,57.35
+SWS_24_2018,SWS_24,SW Station,2018,0,unseeded,0,0,1,4,Unseeded control,seeded_richness,44,0.38767028399907644,77.32,0,0,77.12
+SWS_24_2018,SWS_24,SW Station,2018,0,unseeded,0,13,8,4,Unseeded control,species_richness,44,0.38767028399907644,77.32,0,0,77.12
+SWS_25_2015,SWS_25,SW Station,2015,1,spring,12,1,3,9,"Spring seeding, with herbicide, 4 forb species/group",seeded_richness,21,0.40838083956467014,57.37,0,0.02,57.15
+SWS_25_2015,SWS_25,SW Station,2015,1,spring,12,11,10,9,"Spring seeding, with herbicide, 4 forb species/group",species_richness,21,0.40838083956467014,57.37,0,0.02,57.15
 SWS_25_2016,SWS_25,SW Station,2016,1,spring,12,0,5,9,"Spring seeding, with herbicide, 4 forb species/group",seeded_richness,21,0.40838083956467014,69.01,0,0,69.01
 SWS_25_2016,SWS_25,SW Station,2016,1,spring,12,10,8,9,"Spring seeding, with herbicide, 4 forb species/group",species_richness,21,0.40838083956467014,69.01,0,0,69.01
 SWS_25_2017,SWS_25,SW Station,2017,1,spring,12,1,4,9,"Spring seeding, with herbicide, 4 forb species/group",seeded_richness,21,0.40838083956467014,44.5,0,4,40.5
@@ -1421,10 +1541,10 @@ SWS_49_2017,SWS_49,SW Station,2017,0,spring,33,1,1,2,"Spring seeding, no herbici
 SWS_49_2017,SWS_49,SW Station,2017,0,spring,33,2,11,2,"Spring seeding, no herbicide, full diversity",species_richness,68,0.5504800404244566,73,0,3,70
 SWS_49_2018,SWS_49,SW Station,2018,0,spring,33,1,2,2,"Spring seeding, no herbicide, full diversity",seeded_richness,68,0.5504800404244566,102,0,40,62
 SWS_49_2018,SWS_49,SW Station,2018,0,spring,33,3,2,2,"Spring seeding, no herbicide, full diversity",species_richness,68,0.5504800404244566,102,0,40,62
-SWS_4_2015,SWS_4,SW Station,2015,0,fall,6,0,0,5,Fall seeding 2 forb species/group,seeded_richness,34,0.42455753735968604,67.51,0,0,67.51
-SWS_4_2015,SWS_4,SW Station,2015,0,fall,6,9,3,5,Fall seeding 2 forb species/group,species_richness,34,0.42455753735968604,67.51,0,0,67.51
-SWS_4_2016,SWS_4,SW Station,2016,0,fall,6,1,0,5,Fall seeding 2 forb species/group,seeded_richness,34,0.42455753735968604,73.3,0,4,69.3
-SWS_4_2016,SWS_4,SW Station,2016,0,fall,6,12,4,5,Fall seeding 2 forb species/group,species_richness,34,0.42455753735968604,73.3,0,4,69.3
+SWS_4_2015,SWS_4,SW Station,2015,0,fall,6,0,0,5,Fall seeding 2 forb species/group,seeded_richness,34,0.42455753735968604,67.51,0,0,65.51
+SWS_4_2015,SWS_4,SW Station,2015,0,fall,6,9,3,5,Fall seeding 2 forb species/group,species_richness,34,0.42455753735968604,67.51,0,0,65.51
+SWS_4_2016,SWS_4,SW Station,2016,0,fall,6,1,0,5,Fall seeding 2 forb species/group,seeded_richness,34,0.42455753735968604,73.3,0,4,67.3
+SWS_4_2016,SWS_4,SW Station,2016,0,fall,6,12,4,5,Fall seeding 2 forb species/group,species_richness,34,0.42455753735968604,73.3,0,4,67.3
 SWS_4_2017,SWS_4,SW Station,2017,0,fall,6,1,1,5,Fall seeding 2 forb species/group,seeded_richness,34,0.42455753735968604,44.3,0,2,42.3
 SWS_4_2017,SWS_4,SW Station,2017,0,fall,6,7,7,5,Fall seeding 2 forb species/group,species_richness,34,0.42455753735968604,44.3,0,2,42.3
 SWS_4_2018,SWS_4,SW Station,2018,0,fall,6,0,2,5,Fall seeding 2 forb species/group,seeded_richness,34,0.42455753735968604,60.5,0,0,60.5
@@ -1509,10 +1629,10 @@ SWS_59_2017,SWS_59,SW Station,2017,0,fall,33,0,8,1,Fall seeding full diversity,s
 SWS_59_2017,SWS_59,SW Station,2017,0,fall,33,6,8,1,Fall seeding full diversity,species_richness,66,0.3815610552080501,46.11,0,0,46.11
 SWS_59_2018,SWS_59,SW Station,2018,0,fall,33,3,3,1,Fall seeding full diversity,seeded_richness,66,0.3815610552080501,84.1,4,9,71.1
 SWS_59_2018,SWS_59,SW Station,2018,0,fall,33,9,5,1,Fall seeding full diversity,species_richness,66,0.3815610552080501,84.1,4,9,71.1
-SWS_5_2015,SWS_5,SW Station,2015,1,spring,12,3,4,9,"Spring seeding, with herbicide, 4 forb species/group",seeded_richness,72,0.41964696853415173,72.5,0,1,71.5
-SWS_5_2015,SWS_5,SW Station,2015,1,spring,12,10,16,9,"Spring seeding, with herbicide, 4 forb species/group",species_richness,72,0.41964696853415173,72.5,0,1,71.5
-SWS_5_2016,SWS_5,SW Station,2016,1,spring,12,3,2,9,"Spring seeding, with herbicide, 4 forb species/group",seeded_richness,72,0.41964696853415173,72.61,0,2,70.61
-SWS_5_2016,SWS_5,SW Station,2016,1,spring,12,12,10,9,"Spring seeding, with herbicide, 4 forb species/group",species_richness,72,0.41964696853415173,72.61,0,2,70.61
+SWS_5_2015,SWS_5,SW Station,2015,1,spring,12,3,4,9,"Spring seeding, with herbicide, 4 forb species/group",seeded_richness,72,0.41964696853415173,72.5,0,1,70.5
+SWS_5_2015,SWS_5,SW Station,2015,1,spring,12,10,16,9,"Spring seeding, with herbicide, 4 forb species/group",species_richness,72,0.41964696853415173,72.5,0,1,70.5
+SWS_5_2016,SWS_5,SW Station,2016,1,spring,12,3,2,9,"Spring seeding, with herbicide, 4 forb species/group",seeded_richness,72,0.41964696853415173,72.61,0,2,70.6
+SWS_5_2016,SWS_5,SW Station,2016,1,spring,12,12,10,9,"Spring seeding, with herbicide, 4 forb species/group",species_richness,72,0.41964696853415173,72.61,0,2,70.6
 SWS_5_2017,SWS_5,SW Station,2017,1,spring,12,3,2,9,"Spring seeding, with herbicide, 4 forb species/group",seeded_richness,72,0.41964696853415173,66.5,0,10.3,56.2
 SWS_5_2017,SWS_5,SW Station,2017,1,spring,12,9,9,9,"Spring seeding, with herbicide, 4 forb species/group",species_richness,72,0.41964696853415173,66.5,0,10.3,56.2
 SWS_5_2018,SWS_5,SW Station,2018,1,spring,12,0,2,9,"Spring seeding, with herbicide, 4 forb species/group",seeded_richness,72,0.41964696853415173,64,0,0,64
@@ -1541,16 +1661,16 @@ SWS_7_2017,SWS_7,SW Station,2017,0,unseeded,0,0,1,4,Unseeded control,seeded_rich
 SWS_7_2017,SWS_7,SW Station,2017,0,unseeded,0,7,7,4,Unseeded control,species_richness,70,0.44723370742272073,53.6,0,0,53.6
 SWS_7_2018,SWS_7,SW Station,2018,0,unseeded,0,1,1,4,Unseeded control,seeded_richness,70,0.44723370742272073,89.3,0,6,83.3
 SWS_7_2018,SWS_7,SW Station,2018,0,unseeded,0,9,11,4,Unseeded control,species_richness,70,0.44723370742272073,89.3,0,6,83.3
-SWS_8_2015,SWS_8,SW Station,2015,1,spring,12,1,4,9,"Spring seeding, with herbicide, 4 forb species/group",seeded_richness,62,0.41225046099575063,70.4,0,0.4,70
-SWS_8_2015,SWS_8,SW Station,2015,1,spring,12,7,7,9,"Spring seeding, with herbicide, 4 forb species/group",species_richness,62,0.41225046099575063,70.4,0,0.4,70
+SWS_8_2015,SWS_8,SW Station,2015,1,spring,12,1,4,9,"Spring seeding, with herbicide, 4 forb species/group",seeded_richness,62,0.41225046099575063,70.4,0,0.4,69.5
+SWS_8_2015,SWS_8,SW Station,2015,1,spring,12,7,7,9,"Spring seeding, with herbicide, 4 forb species/group",species_richness,62,0.41225046099575063,70.4,0,0.4,69.5
 SWS_8_2016,SWS_8,SW Station,2016,1,spring,12,2,4,9,"Spring seeding, with herbicide, 4 forb species/group",seeded_richness,62,0.41225046099575063,64.1,0,6,58.1
 SWS_8_2016,SWS_8,SW Station,2016,1,spring,12,8,11,9,"Spring seeding, with herbicide, 4 forb species/group",species_richness,62,0.41225046099575063,64.1,0,6,58.1
 SWS_8_2017,SWS_8,SW Station,2017,1,spring,12,2,4,9,"Spring seeding, with herbicide, 4 forb species/group",seeded_richness,62,0.41225046099575063,76,0,8,68
 SWS_8_2017,SWS_8,SW Station,2017,1,spring,12,5,9,9,"Spring seeding, with herbicide, 4 forb species/group",species_richness,62,0.41225046099575063,76,0,8,68
 SWS_8_2018,SWS_8,SW Station,2018,1,spring,12,0,4,9,"Spring seeding, with herbicide, 4 forb species/group",seeded_richness,62,0.41225046099575063,96,0,0,96
 SWS_8_2018,SWS_8,SW Station,2018,1,spring,12,6,11,9,"Spring seeding, with herbicide, 4 forb species/group",species_richness,62,0.41225046099575063,96,0,0,96
-SWS_9_2015,SWS_9,SW Station,2015,1,spring,6,2,2,8,"Spring seeding, with herbicide, 2 forb species/group",seeded_richness,54,0.44218002161494524,88.6,0,0.7,87.9
-SWS_9_2015,SWS_9,SW Station,2015,1,spring,6,8,9,8,"Spring seeding, with herbicide, 2 forb species/group",species_richness,54,0.44218002161494524,88.6,0,0.7,87.9
+SWS_9_2015,SWS_9,SW Station,2015,1,spring,6,2,2,8,"Spring seeding, with herbicide, 2 forb species/group",seeded_richness,54,0.44218002161494524,88.6,0,0.7,87.6
+SWS_9_2015,SWS_9,SW Station,2015,1,spring,6,8,9,8,"Spring seeding, with herbicide, 2 forb species/group",species_richness,54,0.44218002161494524,88.6,0,0.7,87.6
 SWS_9_2016,SWS_9,SW Station,2016,1,spring,6,3,1,8,"Spring seeding, with herbicide, 2 forb species/group",seeded_richness,54,0.44218002161494524,64.35,0,11.1,53.25
 SWS_9_2016,SWS_9,SW Station,2016,1,spring,6,9,7,8,"Spring seeding, with herbicide, 2 forb species/group",species_richness,54,0.44218002161494524,64.35,0,11.1,53.25
 SWS_9_2017,SWS_9,SW Station,2017,1,spring,6,2,2,8,"Spring seeding, with herbicide, 2 forb species/group",seeded_richness,54,0.44218002161494524,44.62,0,8.6,36.02
