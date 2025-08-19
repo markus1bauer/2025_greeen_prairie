@@ -1,11 +1,11 @@
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # GREEEN prairie project
-# Model seeding time * extra herbicide pre-treatment ####
-# Cover
+# Model species pool * seeding approach ####
+# Seeded species richness
 # 2015-2018 three sites
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Markus Bauer
-# 2025-08-04
+# 2025-07-09
 
 
 
@@ -53,16 +53,13 @@ sites <- read_csv(
   filter(
     year %in% c("2015", "2016", "2017", "2018"),
     richness_type == "seeded_richness",
-    treatment_id %in% c("1", "2", "3", "4")
+    !(treatment_id %in% c("2", "4"))
   ) %>%
-  mutate(
-    treatment = str_c(seeding_time, herbicide, seeded_pool, sep = "_"),
-    y = cover_non_seeded
-    ) %>%
   select(
-    id_plot_year, id_plot, site, year, treatment, water_cap, seeded_pool,
-    cover_non_seeded, cover_total, non_seeded_ratio, y
-  )
+    id_plot_year, id_plot, site, year, herbicide, seeding_time, seeded_pool,
+    richness_1qm, richness_25qm, treatment_id
+    ) %>%
+  mutate(y = richness_1qm + richness_25qm)
 
 
 
@@ -80,35 +77,62 @@ sites <- read_csv(
 ggplot(sites, aes(y = y, x = year)) +
   geom_quasirandom(color = "grey") +
   geom_boxplot(fill = "transparent") +
-  facet_grid(~site) +
-  labs(y = "Cover ratio (1qm) [%]", x = "Survey year")
+  facet_grid(~ site) +
+  labs(y = "Seeded species richness (25qm)", x = "Survey year")
+
+ggplot(
+  sites, aes(y = y, x = year, fill = seeding_time) # herbicide = seeding_time
+  ) +
+  geom_quasirandom(aes(color = seeding_time), dodge.width = .8, alpha = .8) +
+  geom_boxplot(alpha = .3) +
+  facet_grid(~ site) +
+  labs(y = "Seeded species richness (25qm)", x = "Seeding time")
+
+ggplot(
+  sites, aes(y = y, x = year, fill = seeded_pool)
+  ) +
+  geom_quasirandom(aes(color = seeded_pool), dodge.width = .8, alpha = .8) +
+  geom_boxplot(alpha = .3) +
+  facet_grid(~ site) +
+  labs(y = "Seeded species richness (25qm)", x = "Species pool [#]")
 
 ggplot(
   data = sites,
-  aes(y = y, x = treatment, fill = treatment)
-) +
-  geom_quasirandom(dodge.width = .8, alpha = .8) +
+  aes(y = y, x = seeded_pool, fill = seeding_time)
+  ) +
+  geom_quasirandom(aes(color = seeding_time), dodge.width = .8, alpha = .8) +
+  geom_boxplot(alpha = .3) +
+  facet_grid(~ year) +
+  labs(y = "Seeded species richness (25qm)", x = "Species pool [#]")
+
+ggplot(
+  data = sites,
+  aes(y = y, x = seeded_pool, fill = seeding_time)
+  ) +
+  geom_quasirandom(aes(color = seeding_time), dodge.width = .8, alpha = .8) +
   geom_boxplot(alpha = .5) +
-  facet_grid(site~year) +
-  labs(y = "Cover (1qm) [%]", x = "Survey year")
+  facet_grid(~ site) +
+  labs(y = "Seeded species richness (25qm)", x = "Species pool [#]")
 
 ggplot(
   data = sites,
-  aes(y = y, x = water_cap, color = treatment)
+  aes(y = y, x = seeded_pool, fill = seeding_time)
 ) +
-  geom_quasirandom(dodge.width = .8, alpha = .8) +
-  geom_smooth(span = 2) +
-  scale_x_continuous(limits = c(0.3, 0.7)) +
-  labs(y = "Cover (1qm) [%]", x = "Water capacity [%]")
+  geom_quasirandom(aes(color = seeding_time), dodge.width = .8, alpha = .8) +
+  geom_boxplot(alpha = .5) +
+  facet_grid(site ~ year) +
+  labs(y = "Seeded species richness (25qm)", x = "Species pool [#]")
 
 ### b Outliers, zero-inflation, transformations? ------------------------------
 
 sites %>% count(site, year)
-sites %>% count(treatment)
+sites %>% count(seeded_pool)
+sites %>% count(seeding_time)
+sites %>% count(herbicide)
 plot1 <- ggplot(sites, aes(x = site, y = y)) + geom_quasirandom()
-plot2 <- ggplot(sites, aes(x = y)) + geom_histogram()
+plot2 <- ggplot(sites, aes(x = y)) + geom_histogram(binwidth = 0.7)
 plot3 <- ggplot(sites, aes(x = y)) + geom_density()
-plot4 <- ggplot(sites, aes(x = sqrt(y))) + geom_density()
+plot4 <- ggplot(sites, aes(x = log(y))) + geom_density()
 (plot1 + plot2) / (plot3 + plot4)
 
 
@@ -131,40 +155,31 @@ plot4 <- ggplot(sites, aes(x = sqrt(y))) + geom_density()
 
 ### a Candidate models ---------------------------------------------------------
 
-m_simple <- lm(
-  non_seeded_ratio ~ treatment + site + year + water_cap,
+m_simple <- glmer(
+  y ~ seeded_pool + seeding_time + site + (1 | year),
+  family = poisson(link = "log"),
   data = sites
   )
 simulateResiduals(m_simple, plot = TRUE)
-m_full <- lmer(
-  y ~ treatment + (1|site) + (1 | year),
+m_full <- glmer(
+  y ~ seeded_pool * seeding_time * site + (1 | year),
+  family = poisson(link = "log"),
   data = sites
   )
 simulateResiduals(m_full, plot = TRUE)
-m1 <- lmer(
-  sqrt(y) ~ treatment * site + (1 | year),
+m1 <- glmer(
+  y ~ seeded_pool * seeding_time + site + (1 | year),
+  family = poisson(link = "log"),
   data = sites
 )
 simulateResiduals(m1, plot = TRUE)
-m2 <- lmer(
-  y ~ treatment * site + (0+year|site),
-  data = sites
-)
-simulateResiduals(m2, plot = TRUE)
-m3 <- lmer(
-  y ~ treatment + site + water_cap + (1|year),
-  data = sites
-)
-simulateResiduals(m3, plot = TRUE)
 
 
 ### b Save ---------------------------------------------------------------------
 
-# m_simple: bad model critique
-save(m_full, file = here("outputs", "models", "model_cover_seeding_time_herbicide_full.Rdata"))
-save(m1, file = here("outputs", "models", "model_cover_seeding_time_herbicide_1.Rdata"))
-save(m2, file = here("outputs", "models", "model_cover_seeding_time_herbicide_2.Rdata"))
-
+# save(m_simple, file = here("outputs", "models", "model_pool_simple.Rdata")) # bad model critique
+save(m_full, file = here("outputs", "models", "model_pool_full.Rdata"))
+# save(m1, file = here("outputs", "models", "model_pool_1.Rdata")) # bad model critique
 
 
 ## 2 Model building Bayesian ###########################################################
@@ -173,7 +188,7 @@ save(m2, file = here("outputs", "models", "model_cover_seeding_time_herbicide_2.
 ### a Possible priors ----------------------------------------------------------
 
 brms::get_prior(
-  y ~ herbicide * seeding_time * site + (1 | year), 
+  y ~ seeded_pool * seeding_time * site + (1 | year), 
   data = sites
   )
 data <- data.frame(x = c(-10, 10))
@@ -198,7 +213,7 @@ ggplot(data, aes(x = x)) +
 ### b Model specifications -----------------------------------------------------
 
 # NUTS sampler used
-iter <- 1000#10000
+iter <- 10000
 chains <- 4
 thin <- 2
 seed <- 123
@@ -217,53 +232,52 @@ priors <- c(
 ### c Models ------------------------------------------------------------------
 
 m_simple <- brm(
-  y ~ treatment + site,
+  y ~ seeded_pool + seeding_time + site + (1 | year),
   data = sites,
-  family = hurdle_lognormal(),
-  #prior = priors,
+  family = gaussian("identity"),
+  prior = priors,
   chains = chains,
   iter = iter,
   thin = thin,
-  # control = list(max_treedepth = 13),
-  warmup = warmup,
-  # save_pars = save_pars(all = TRUE),
-  cores = parallel::detectCores(),
-  seed = seed
-)
-m_simple %>% DHARMa.helpers::dh_check_brms(integer = TRUE)
-
-m_full <- brm(
-  y ~ herbicide * seeding_time * site + (1 | year),
-  data = sites,
-  family = poisson,
-  #prior = priors,
-  chains = chains,
-  iter = iter,
-  thin = thin,
+  control = list(max_treedepth = 13),
   warmup = warmup,
   save_pars = save_pars(all = TRUE),
   cores = parallel::detectCores(),
   seed = seed
 )
-m_full %>% DHARMa.helpers::dh_check_brms(integer = TRUE)
 
-m1 <- brm(
-  y ~ herbicide * seeding_time * site + (1 | year),
+m_full <- brm(
+  y ~ seeded_pool * seeding_time * site + (1 | year),
   data = sites,
-  family = hurdle_lognormal(),
-  #prior = priors,
+  family = gaussian("identity"),
+  prior = priors,
   chains = chains,
   iter = iter,
   thin = thin,
+  control = list(max_treedepth = 13),
+  warmup = warmup,
+  save_pars = save_pars(all = TRUE),
+  cores = parallel::detectCores(),
+  seed = seed
+)
+
+m1 <- brm(
+  y ~ seeded_pool * seeding_time + site + (1 | year),
+  data = sites,
+  family = gaussian("identity"),
+  prior = priors,
+  chains = chains,
+  iter = iter,
+  thin = thin,
+  control = list(max_treedepth = 13),
   warmup = floor(iter / 2),
   save_pars = save_pars(all = TRUE),
   cores = parallel::detectCores(),
   seed = seed
 )
-m1 %>% DHARMa.helpers::dh_check_brms(integer = TRUE)
 
 m1_flat <- brm(
-  y ~ herbicide * seeding_time * site + (1 | year),
+  y ~ seeded_pool * seeding_time * site + (1 | year),
   data = sites,
   family = poisson,
   prior = c(
@@ -279,13 +293,12 @@ m1_flat <- brm(
   cores = parallel::detectCores(),
   seed = seed
 )
-m1_flat %>% DHARMa.helpers::dh_check_brms(integer = TRUE)
 
 m1_prior <- brm(
-  y ~ herbicide * seeding_time * site + (1 | site),
+  y ~ seeded_pool * seeding_time * site + (1 | site),
   data = sites,
-  family = poisson,
-  #prior = priors,
+  family = gaussian("identity"),
+  prior = priors,
   sample_prior = "only",
   chains = chains,
   iter = iter,
@@ -294,27 +307,19 @@ m1_prior <- brm(
   cores = parallel::detectCores(),
   seed = seed
 )
-m1_prior %>% DHARMa.helpers::dh_check_brms(integer = TRUE)
 
 
 ### d Save ---------------------------------------------------------------------
 
-# m_simple: bad model critique
 save(
-  m_full,
-  file = here(
-    "outputs", "models", "model_herbicide_seeding_time_full_bayesian.Rdata"
-    )
+  m_simple, file = here("outputs", "models", "model_pool_simple_bayesian.Rdata")
   )
-# m_1: bad model critique
+save(m_full, file = here("outputs", "models", "model_pool_full_bayesian.Rdata"))
+save(m1, file = here("outputs", "models", "model_pool_1_bayesian.Rdata"))
 save(
-  m1_flat, file = here(
-    "outputs", "models", "model_herbicide_seeding_time_1_flat_bayesian.Rdata"
-    )
+  m1_flat, file = here("outputs", "models", "model_pool_1_flat_bayesian.Rdata")
   )
-# save(
-#   m1_prior,
-#   file = here(
-#     "outputs", "models", "model_herbicide_seeding_time_1_prior_bayesian.Rdata"
-#     )
-#   )
+save(
+  m1_prior,
+  file = here("outputs", "models", "model_pool_1_prior_bayesian.Rdata")
+  )
