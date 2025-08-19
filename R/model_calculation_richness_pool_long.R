@@ -51,10 +51,10 @@ sites <- read_csv(
   )
 ) %>%
   filter(
+    year != "2015",
     site == "Lux Arbor",
     richness_type == "seeded_richness",
-    !(treatment_id %in% c("2", "4")),
-    year != "2015"
+    !(treatment_id %in% c("2", "4"))
   ) %>%
   mutate(y = richness_1qm + richness_25qm)
 
@@ -73,25 +73,17 @@ sites <- read_csv(
 
 ggplot(sites, aes(y = y, x = year)) +
   geom_quasirandom(color = "grey") +
-  geom_smooth() +
+  geom_boxplot(fill = "transparent") +
   facet_grid(~ site) +
   labs(y = "Seeded species richness (25qm)", x = "Survey year")
 
 ggplot(
-  sites, aes(y = y, x = year, fill = seeding_time) # herbicide = seeding_time
-  ) +
-  geom_quasirandom(aes(color = seeding_time), dodge.width = .8, alpha = .8) +
-  geom_smooth() +
-  facet_grid(~ site) +
-  labs(y = "Seeded species richness (25qm)", x = "Seeding time")
-
-ggplot(
-  data = sites,
-  aes(y = y, x = year, fill = seeding_time)
+  data = sites, # herbicide = seeding_time
+  aes(y = y, x = seeded_pool, fill = seeding_time, color = seeding_time)
 ) +
-  geom_quasirandom(aes(color = seeding_time), dodge.width = .8, alpha = .8) +
-  geom_smooth(span = 1.15) +
-  facet_grid(site ~ seeded_pool) +
+  geom_quasirandom(dodge.width = .8, alpha = .8) +
+  geom_boxplot(fill = "transparent") +
+  facet_grid(site ~ year) +
   labs(y = "Seeded species richness (25qm)", x = "Species pool [#]")
 
 
@@ -158,139 +150,139 @@ save(m1, file = here("outputs", "models", "model_richness_pool_long_1.Rdata"))
 
 ### a Possible priors ----------------------------------------------------------
 
-brms::get_prior(
-  y ~ seeded_pool * seeding_time * site + (1 | year), 
-  data = sites
-  )
-data <- data.frame(x = c(-10, 10))
-ggplot(data, aes(x = x)) +
-  stat_function(fun = dnorm, n = 101, args = list(mean = 0, sd = 10)) +
-  expand_limits(y = 0) +
-  ggtitle("Normal distribution for Intercept")
-ggplot(data, aes(x = x)) +
-  stat_function(fun = dnorm, n = 101, args = list(mean = 0.5, sd = 10)) +
-  expand_limits(y = 0) +
-  ggtitle("Normal distribution for treatments")
-ggplot(data, aes(x = x)) +
-  stat_function(fun = dcauchy, n = 101, args = list(location = 0, scale = 1)) +
-  expand_limits(y = 0) +
-  ggtitle("Cauchy distribution")
-ggplot(data, aes(x = x)) +
-  stat_function(fun = dstudent_t, args = list(df = 3, mu = 0, sigma = 2.5)) +
-  expand_limits(y = 0) +
-  ggtitle(expression(Student ~ italic(t) * "-distribution"))
-
-
-### b Model specifications -----------------------------------------------------
-
-# NUTS sampler used
-iter <- 10000
-chains <- 4
-thin <- 2
-seed <- 123
-warmup <- floor(iter / 2)
-priors <- c(
-  set_prior("normal(0, 10)", class = "Intercept"),
-  set_prior("normal(0, 10)", class = "b"),
-  # set_prior("normal(0.15, 10)", class = "b", coef = "seeded_pool12"),
-  # set_prior("normal(0.25, 10)", class = "b", coef = "seeded_pool18"),
-  # set_prior("normal(0.5, 10)", class = "b", coef = "seeded_pool33"),
-  # set_prior("normal(0.5, 10)", class = "b", coef = "seeding_time1"),
-  set_prior("cauchy(0, 1)", class = "sigma")
-)
-
-
-### c Models ------------------------------------------------------------------
-
-m_simple <- brm(
-  y ~ seeded_pool + seeding_time + site + (1 | year),
-  data = sites,
-  family = gaussian("identity"),
-  prior = priors,
-  chains = chains,
-  iter = iter,
-  thin = thin,
-  control = list(max_treedepth = 13),
-  warmup = warmup,
-  save_pars = save_pars(all = TRUE),
-  cores = parallel::detectCores(),
-  seed = seed
-)
-
-m_full <- brm(
-  y ~ seeded_pool * seeding_time * site + (1 | year),
-  data = sites,
-  family = gaussian("identity"),
-  prior = priors,
-  chains = chains,
-  iter = iter,
-  thin = thin,
-  control = list(max_treedepth = 13),
-  warmup = warmup,
-  save_pars = save_pars(all = TRUE),
-  cores = parallel::detectCores(),
-  seed = seed
-)
-
-m1 <- brm(
-  y ~ seeded_pool * seeding_time + site + (1 | year),
-  data = sites,
-  family = gaussian("identity"),
-  prior = priors,
-  chains = chains,
-  iter = iter,
-  thin = thin,
-  control = list(max_treedepth = 13),
-  warmup = floor(iter / 2),
-  save_pars = save_pars(all = TRUE),
-  cores = parallel::detectCores(),
-  seed = seed
-)
-
-m1_flat <- brm(
-  y ~ seeded_pool * seeding_time * site + (1 | year),
-  data = sites,
-  family = poisson,
-  prior = c(
-    set_prior("normal(0, 10)", class = "Intercept"),
-    set_prior("normal(0, 10)", class = "b")#,
-    #set_prior("cauchy(0, 1)", class = "sigma")
-  ),
-  chains = chains,
-  iter = iter,
-  thin = thin,
-  warmup = warmup,
-  save_pars = save_pars(all = TRUE),
-  cores = parallel::detectCores(),
-  seed = seed
-)
-
-m1_prior <- brm(
-  y ~ seeded_pool * seeding_time * site + (1 | site),
-  data = sites,
-  family = gaussian("identity"),
-  prior = priors,
-  sample_prior = "only",
-  chains = chains,
-  iter = iter,
-  thin = thin,
-  warmup = warmup,
-  cores = parallel::detectCores(),
-  seed = seed
-)
-
-
-### d Save ---------------------------------------------------------------------
-
-save(
-  m_simple, file = here("outputs", "models", "model_pool_simple_bayesian.Rdata")
-  )
-save(m_full, file = here("outputs", "models", "model_pool_full_bayesian.Rdata"))
-save(m1, file = here("outputs", "models", "model_pool_1_bayesian.Rdata"))
-save(
-  m1_flat, file = here("outputs", "models", "model_pool_1_flat_bayesian.Rdata")
-  )
-save(
-  m1_prior,
-  file = here("outputs", "models", "model_pool_1_prior_bayesian.Rdata")
-  )
+# brms::get_prior(
+#   y ~ seeded_pool * seeding_time * site + (1 | year), 
+#   data = sites
+#   )
+# data <- data.frame(x = c(-10, 10))
+# ggplot(data, aes(x = x)) +
+#   stat_function(fun = dnorm, n = 101, args = list(mean = 0, sd = 10)) +
+#   expand_limits(y = 0) +
+#   ggtitle("Normal distribution for Intercept")
+# ggplot(data, aes(x = x)) +
+#   stat_function(fun = dnorm, n = 101, args = list(mean = 0.5, sd = 10)) +
+#   expand_limits(y = 0) +
+#   ggtitle("Normal distribution for treatments")
+# ggplot(data, aes(x = x)) +
+#   stat_function(fun = dcauchy, n = 101, args = list(location = 0, scale = 1)) +
+#   expand_limits(y = 0) +
+#   ggtitle("Cauchy distribution")
+# ggplot(data, aes(x = x)) +
+#   stat_function(fun = dstudent_t, args = list(df = 3, mu = 0, sigma = 2.5)) +
+#   expand_limits(y = 0) +
+#   ggtitle(expression(Student ~ italic(t) * "-distribution"))
+# 
+# 
+# ### b Model specifications -----------------------------------------------------
+# 
+# # NUTS sampler used
+# iter <- 10000
+# chains <- 4
+# thin <- 2
+# seed <- 123
+# warmup <- floor(iter / 2)
+# priors <- c(
+#   set_prior("normal(0, 10)", class = "Intercept"),
+#   set_prior("normal(0, 10)", class = "b"),
+#   # set_prior("normal(0.15, 10)", class = "b", coef = "seeded_pool12"),
+#   # set_prior("normal(0.25, 10)", class = "b", coef = "seeded_pool18"),
+#   # set_prior("normal(0.5, 10)", class = "b", coef = "seeded_pool33"),
+#   # set_prior("normal(0.5, 10)", class = "b", coef = "seeding_time1"),
+#   set_prior("cauchy(0, 1)", class = "sigma")
+# )
+# 
+# 
+# ### c Models ------------------------------------------------------------------
+# 
+# m_simple <- brm(
+#   y ~ seeded_pool + seeding_time + site + (1 | year),
+#   data = sites,
+#   family = gaussian("identity"),
+#   prior = priors,
+#   chains = chains,
+#   iter = iter,
+#   thin = thin,
+#   control = list(max_treedepth = 13),
+#   warmup = warmup,
+#   save_pars = save_pars(all = TRUE),
+#   cores = parallel::detectCores(),
+#   seed = seed
+# )
+# 
+# m_full <- brm(
+#   y ~ seeded_pool * seeding_time * site + (1 | year),
+#   data = sites,
+#   family = gaussian("identity"),
+#   prior = priors,
+#   chains = chains,
+#   iter = iter,
+#   thin = thin,
+#   control = list(max_treedepth = 13),
+#   warmup = warmup,
+#   save_pars = save_pars(all = TRUE),
+#   cores = parallel::detectCores(),
+#   seed = seed
+# )
+# 
+# m1 <- brm(
+#   y ~ seeded_pool * seeding_time + site + (1 | year),
+#   data = sites,
+#   family = gaussian("identity"),
+#   prior = priors,
+#   chains = chains,
+#   iter = iter,
+#   thin = thin,
+#   control = list(max_treedepth = 13),
+#   warmup = floor(iter / 2),
+#   save_pars = save_pars(all = TRUE),
+#   cores = parallel::detectCores(),
+#   seed = seed
+# )
+# 
+# m1_flat <- brm(
+#   y ~ seeded_pool * seeding_time * site + (1 | year),
+#   data = sites,
+#   family = poisson,
+#   prior = c(
+#     set_prior("normal(0, 10)", class = "Intercept"),
+#     set_prior("normal(0, 10)", class = "b")#,
+#     #set_prior("cauchy(0, 1)", class = "sigma")
+#   ),
+#   chains = chains,
+#   iter = iter,
+#   thin = thin,
+#   warmup = warmup,
+#   save_pars = save_pars(all = TRUE),
+#   cores = parallel::detectCores(),
+#   seed = seed
+# )
+# 
+# m1_prior <- brm(
+#   y ~ seeded_pool * seeding_time * site + (1 | site),
+#   data = sites,
+#   family = gaussian("identity"),
+#   prior = priors,
+#   sample_prior = "only",
+#   chains = chains,
+#   iter = iter,
+#   thin = thin,
+#   warmup = warmup,
+#   cores = parallel::detectCores(),
+#   seed = seed
+# )
+# 
+# 
+# ### d Save ---------------------------------------------------------------------
+# 
+# save(
+#   m_simple, file = here("outputs", "models", "model_pool_simple_bayesian.Rdata")
+#   )
+# save(m_full, file = here("outputs", "models", "model_pool_full_bayesian.Rdata"))
+# save(m1, file = here("outputs", "models", "model_pool_1_bayesian.Rdata"))
+# save(
+#   m1_flat, file = here("outputs", "models", "model_pool_1_flat_bayesian.Rdata")
+#   )
+# save(
+#   m1_prior,
+#   file = here("outputs", "models", "model_pool_1_prior_bayesian.Rdata")
+#   )

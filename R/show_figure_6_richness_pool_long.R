@@ -67,20 +67,17 @@ sites <- read_csv(
   )
 ) %>%
   filter(
-    year %in% c("2015", "2016", "2017", "2018"),
+    year != "2015",
+    site == "Lux Arbor",
     richness_type == "seeded_richness",
     !(treatment_id %in% c("2", "4"))
-  ) %>%
-  select(
-    id_plot_year, id_plot, site, year, herbicide, seeding_time, seeded_pool,
-    richness_1qm, richness_25qm, treatment_id
   ) %>%
   mutate(y = richness_1qm + richness_25qm)
 
 ### * Model ####
-load(file = here("outputs", "models", "model_pool_full.Rdata"))
-m <- m_full
-m@call
+load(file = here("outputs", "models", "model_richness_pool_long_1.Rdata"))
+m <- m1
+formula(m)
 
 
 
@@ -90,13 +87,13 @@ m@call
 
 
 
-data_model <- ggeffect(
-  m, c("seeded_pool", "seeding_time", "site"),
-  bias_correction = TRUE
+data_model <- ggemmeans(
+  m, c("seeded_pool", "seeding_time", "year"),
+  back_transform = TRUE
   )
 
 data <- sites %>%
-  rename(predicted = y, x = seeded_pool, group = seeding_time, facet = site)
+  rename(predicted = y, x = seeded_pool, group = seeding_time, facet = year)
 
 (graph_a <- ggplot() +
     geom_quasirandom(
@@ -118,7 +115,7 @@ data <- sites %>%
       size = 2, position = position_dodge(width = 0.8)
     ) +
     facet_grid(~facet) +
-    scale_y_continuous(limits = c(0, 16), breaks = seq(0, 20, 1)) +
+    scale_y_continuous(limits = c(0, 21), breaks = seq(0, 21, 2)) +
     scale_color_manual(
       breaks = c("fall", "spring"),
       labels = c("Fall", "Spring"),
@@ -132,6 +129,6 @@ data <- sites %>%
 
 ### Save ###
 ggsave(
-  here("outputs", "figures", "figure_2_300dpi_16x8cm.tiff"),
+  here("outputs", "figures", "figure_6_300dpi_16x8cm.tiff"),
   dpi = 300, width = 16, height = 8, units = "cm"
   )
