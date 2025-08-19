@@ -73,13 +73,7 @@ sites <- read_csv(
   ) %>%
   mutate(
     treatment = str_c(seeding_time, herbicide, seeded_pool, sep = "_"),
-    y = cover_non_seeded
-  ) %>%
-  select(
-    id_plot_year, id_plot, site, year, treatment, water_cap, seeded_pool,
-    cover_non_seeded, y
-  ) %>%
-  mutate(
+    y = cover_non_seeded,
     treatment = fct_relevel(
       treatment, "unseeded_0_0", "fall_0_33", "spring_0_33", "spring_1_33"
       ),
@@ -157,7 +151,7 @@ data_annotation <- data.frame(
       guide = "none"
     ) +
     labs(
-      x = "",
+      x = "Treatments",
       y = "Cover non-seeded species [%]"
       ) +
     theme_mb() +

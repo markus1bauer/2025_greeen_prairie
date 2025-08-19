@@ -58,11 +58,7 @@ sites <- read_csv(
   mutate(
     treatment = str_c(seeding_time, herbicide, seeded_pool, sep = "_"),
     y = cover_non_seeded
-    ) %>%
-  select(
-    id_plot_year, id_plot, site, year, treatment, water_cap, seeded_pool,
-    cover_non_seeded, cover_total, non_seeded_ratio, y
-  )
+    )
 
 
 
@@ -100,6 +96,7 @@ ggplot(
   geom_smooth(span = 2) +
   scale_x_continuous(limits = c(0.3, 0.7)) +
   labs(y = "Cover (1qm) [%]", x = "Water capacity [%]")
+
 
 ### b Outliers, zero-inflation, transformations? ------------------------------
 

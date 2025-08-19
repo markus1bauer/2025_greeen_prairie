@@ -51,7 +51,7 @@ sites <- read_csv(
   )
 ) %>%
   filter(
-    year != "2015",
+    # year != "2015",
     site == "Lux Arbor",
     richness_type == "seeded_richness",
     !(treatment_id %in% c("2", "4"))
