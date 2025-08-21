@@ -1,0 +1,201 @@
+---
+title: "GREEEN tallgrass prairie restoration: RLQ analyses"
+author: "Markus Bauer"
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+output:
+  pdf_document:
+    toc: true
+    toc_depth: 3
+    dev: "png"
+    fig_width: 7
+    fig_height: 5
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+library(tinytex)
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Technichal University of Munich, TUM School of Life Sciences, Chair of
+Restoration Ecology, Emil-Ramann-Straße 6, 85354 Freising, Germany
+
+\*[markus1.bauer\@tum.de](mailto:markus1.bauer@tum.de)
+
+ORCiD ID: [0000-0001-5372-4174](https://orcid.org/0000-0001-5372-4174)
+<br>
+[Google Scholar](https://scholar.google.de/citations?user=oHhmOkkAAAAJ&hl=de&oi=ao)
+<br>
+GitHub: [markus1bauer](https://github.com/markus1bauer)
+<br>
+GitHub: [TUM-Restoration-Ecology](https://github.com/TUM-Restoration-Ecology)
+
+# Preparation
+
+#### Packages
+
+```{r libraries, message = FALSE}
+library(here)
+library(tidyverse)
+library(ade4)
+```
+
+```{r echo = FALSE}
+rm(list = ls())
+```
+
+#### Load data
+
+```{r load-data}
+sites <- read_csv(
+  here("data", "processed", "data_processed_sites.csv"),
+  col_names = TRUE, na = c("na", "NA", ""), col_types =
+    cols(
+    .default = "?"
+  )) %>% 
+  arrange(id_plot_year) %>%
+  filter(
+    # year != "2015",
+    site == "Lux Arbor",
+    richness_type == "seeded_richness",
+    !(treatment_id %in% c("2", "4"))
+  ) %>%
+  select(
+    id_plot_year, year, seeded_pool, water_cap, cover_total,
+    cover_non_seeded
+    )
+
+traits <- read_csv(
+  here("data", "processed", "data_processed_traits.csv"),
+  col_names = TRUE, na = c("na", "NA", ""), col_types = cols(.default = "?")
+  ) %>%
+  filter(seeded == "1") %>%
+  select(accepted_name, sla, height, seedmass) %>%
+  drop_na()
+
+species <- read_csv(
+  here("data", "processed", "data_processed_species.csv"),
+  col_names = TRUE, na = c("na", "NA", ""), col_types = cols(.default = "?")
+  ) %>%
+  filter(plot_size == "1") %>%
+  select(id_plot_year, accepted_name, abundance) %>%
+  semi_join(sites, by = "id_plot_year") %>%
+  semi_join(traits, by = "accepted_name") %>%
+  arrange(id_plot_year)
+
+species %>%
+  group_by(id_plot_year) %>%
+  count()
+
+traits %>% anti_join(species, by = "accepted_name")
+  
+traits <- traits %>%
+  semi_join(species, by = "accepted_name") %>%
+  column_to_rownames(var = "accepted_name")
+
+sites <- sites %>%
+  semi_join(species, by = "id_plot_year") %>%
+  column_to_rownames(var = "id_plot_year")
+
+species <- species %>%
+  pivot_wider(
+    names_from = "accepted_name", values_from = "abundance", values_fill = 0
+    ) %>%
+  column_to_rownames(var = "id_plot_year")
+```
+
+# Statistics
+
+## Descriptive analyses
+
+```{r}
+sites %>%
+  group_by(year) %>%
+  count()
+```
+
+
+## Ordinations
+
+```{r warning=FALSE}
+dudi_l <- dudi.coa(species, scannf = FALSE)
+dudi_r <- dudi.hillsmith(
+  sites, 
+  row.w = dudi_l$lw,
+  scannf = FALSE
+  )
+dudi_q <- dudi.pca(
+  traits, 
+  row.w = dudi_l$cw,
+  scannf = FALSE
+  )
+
+```
+
+
+## RLQ analyses
+
+```{r load-models, collapse = TRUE}
+m1 <- rlq(
+  dudiR = dudi_r, 
+  dudiL = dudi_l, 
+  dudiQ = dudi_q,
+  scannf = FALSE
+  )
+```
+
+## Global test
+
+```{r}
+randtest(m1, nrepet = 999, modeltype = 6)
+```
+
+## Traits by environment crossed table
+
+```{r}
+m1$tab 
+```
+
+# Plots
+
+```{r}
+s.label(m1$lR)
+s.label(m1$lQ)
+s.arrow(m1$l1)
+s.arrow(m1$c1)
+```
+
+# Save
+
+```{r}
+scores_sites <- m1$lR %>%
+  mutate(type = "sites") %>%
+  rename(axis1 = 1, axis2 = 2)
+scores_species <- m1$lQ %>%
+  mutate(type = "species") %>%
+  rename(axis1 = 1, axis2 = 2)
+scores_environment <- m1$l1 %>%
+  mutate(type = "environment") %>%
+  rename(axis1 = 1, axis2 = 2)
+scores_traits <- m1$c1 %>%
+  mutate(type = "traits") %>%
+  rename(axis1 = 1, axis2 = 2)
+
+scores <- bind_rows(
+  scores_sites, scores_species, scores_environment, scores_traits
+  ) %>%
+  rownames_to_column(var = "id")
+
+write_csv(
+  scores, here("data", "processed", "data_processed_scores.csv")
+)
+```
+
+
+# Session info
+
+```{r session-info, echo = FALSE}
+sessionInfo()
+```
