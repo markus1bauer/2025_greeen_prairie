@@ -53,25 +53,25 @@ sites <- read_csv(
   here("data", "processed", "data_processed_sites.csv"),
   col_names = TRUE, na = c("na", "NA", ""), col_types =
     cols(
-    .default = "?"
+    .default = "?",
+    seeding_time = "f"
   )) %>% 
   arrange(id_plot_year) %>%
   filter(
-    # year != "2015",
     site == "Lux Arbor",
     richness_type == "seeded_richness",
     !(treatment_id %in% c("2", "4"))
   ) %>%
   select(
-    id_plot_year, year, seeded_pool, water_cap, cover_total,
-    cover_non_seeded
+    id_plot_year, year, seeded_pool, water_cap, seeding_time, cover_non_seeded,
+    cover_seeded_grass
     )
 
 traits <- read_csv(
   here("data", "processed", "data_processed_traits.csv"),
   col_names = TRUE, na = c("na", "NA", ""), col_types = cols(.default = "?")
   ) %>%
-  filter(seeded == "1") %>%
+  filter(seeded == "1", family != "Poaceae") %>%
   select(accepted_name, sla, height, seedmass) %>%
   drop_na()
 
@@ -84,13 +84,27 @@ species <- read_csv(
   semi_join(sites, by = "id_plot_year") %>%
   semi_join(traits, by = "accepted_name") %>%
   arrange(id_plot_year)
+```
 
+## Checks
+
+#### Seeded species richness
+
+```{r check-species-richness}
 species %>%
   group_by(id_plot_year) %>%
   count()
+```
 
+#### Check non-occuring seeded species
+
+```{r check-non-occuring-species}
 traits %>% anti_join(species, by = "accepted_name")
-  
+```
+
+## Finalize preparation
+
+```{r finalize-preaparation}
 traits <- traits %>%
   semi_join(species, by = "accepted_name") %>%
   column_to_rownames(var = "accepted_name")
@@ -110,7 +124,7 @@ species <- species %>%
 
 ## Descriptive analyses
 
-```{r}
+```{r descriptive-statistics}
 sites %>%
   group_by(year) %>%
   count()
@@ -119,7 +133,7 @@ sites %>%
 
 ## Ordinations
 
-```{r warning=FALSE}
+```{r ordinations, warning=FALSE}
 dudi_l <- dudi.coa(species, scannf = FALSE)
 dudi_r <- dudi.hillsmith(
   sites, 
@@ -127,7 +141,7 @@ dudi_r <- dudi.hillsmith(
   scannf = FALSE
   )
 dudi_q <- dudi.pca(
-  traits, 
+  traits,
   row.w = dudi_l$cw,
   scannf = FALSE
   )
@@ -148,19 +162,20 @@ m1 <- rlq(
 
 ## Global test
 
-```{r}
+```{r global-test}
 randtest(m1, nrepet = 999, modeltype = 6)
 ```
 
 ## Traits by environment crossed table
 
-```{r}
+```{r table}
 m1$tab 
 ```
 
 # Plots
 
-```{r}
+```{r plots}
+plot(m1)
 s.label(m1$lR)
 s.label(m1$lQ)
 s.arrow(m1$l1)
@@ -169,7 +184,7 @@ s.arrow(m1$c1)
 
 # Save
 
-```{r}
+```{r save, include = FALSE}
 scores_sites <- m1$lR %>%
   mutate(type = "sites") %>%
   rename(axis1 = 1, axis2 = 2)
@@ -189,7 +204,7 @@ scores <- bind_rows(
   rownames_to_column(var = "id")
 
 write_csv(
-  scores, here("data", "processed", "data_processed_scores.csv")
+  scores, here("outputs", "models", "model_rlq_pool_abundance_long.csv")
 )
 ```
 
