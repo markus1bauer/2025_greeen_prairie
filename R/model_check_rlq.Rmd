@@ -1,0 +1,179 @@
+---
+title: "Garchinger Heide and restoration sites: <br> NMDS and PERMANOVA"
+author: "<b>Markus Bauer</b> <br>"
+date: "<b>`r format(Sys.time(), '%Y-%m-%d')`</b>"
+output:
+  github_document:
+    toc: true
+    toc_depth: 3
+    dev: png
+    fig_width: 7
+    fig_height: 5
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE
+  )
+```
+
+Technichal University of Munich, TUM School of Life Sciences, Chair of
+Restoration Ecology, Emil-Ramann-Straße 6, 85354 Freising, Germany
+
+\*[markus1.bauer\@tum.de](mailto:markus1.bauer@tum.de)
+
+ORCiD ID: [0000-0001-5372-4174](https://orcid.org/0000-0001-5372-4174)
+<br>
+[Google Scholar](https://scholar.google.de/citations?user=oHhmOkkAAAAJ&hl=de&oi=ao)
+<br>
+GitHub: [markus1bauer](https://github.com/markus1bauer)
+<br>
+GitHub: [TUM-Restoration-Ecology](https://github.com/TUM-Restoration-Ecology)
+
+# Preparation
+
+#### Packages
+
+```{r libraries, message = FALSE}
+library(here)
+library(tidyverse)
+library(vegan)
+```
+
+```{r echo = FALSE}
+rm(list = ls())
+```
+
+#### Load data
+
+```{r load-data}
+sites <- read_csv(
+  here("data", "processed", "data_processed_sites.csv"),
+  col_names = TRUE, na = c("na", "NA", ""), col_types =
+    cols(
+    .default = "?"
+  )) %>% 
+  arrange(id)
+
+species <- read_csv(
+  here("data", "processed", "data_processed_species.csv"),
+  col_names = TRUE, na = c("na", "NA", ""), col_types = cols(.default = "?")
+  ) %>%
+  pivot_longer(-accepted_name, names_to = "id", values_to = "value") %>%
+  semi_join(sites, by = "id") %>%
+  arrange(id) %>%
+  pivot_wider(names_from = "accepted_name", values_from = "value") %>%
+  column_to_rownames(var = "id")
+```
+
+# Statistics
+
+## Descriptive statistics
+
+```{r warning=FALSE}
+sites %>%
+  ggplot(aes(x = as.numeric(year_hay_transfer), fill = mowing_date)) +
+  geom_histogram()
+sites %>%
+  filter(!(is.na(year_hay_transfer) | year_hay_transfer == "no")) %>%
+  ggplot(aes(x = mowing_date_start, fill = mowing_date)) +
+  geom_histogram()
+sites %>%
+  group_by(treatment) %>%
+  count(esy) %>%
+  group_by(treatment) %>%
+  mutate(ratio = round(n / sum(n), digits = 2))
+```
+
+
+## Models
+
+```{r load-models, collapse = TRUE}
+# set.seed(9)
+# ordi <- metaMDS(
+#   species, dist = "bray", k = 2, engine = "monoMDS", binary = FALSE,
+#   try = 99, previous.best = TRUE, na.rm = TRUE
+#   )
+# save(ordi, file = here("outputs", "models", "model_nmds.Rdata"))
+base::load(here("outputs", "models", "model_nmds.Rdata"))
+```
+
+```{r formulas, collapse = TRUE}
+ordi
+```
+
+## Model check
+
+```{r model-check, collapse = TRUE, warning = FALSE}
+stressplot(ordi)
+goodness_of_fit <- goodness(ordi)
+plot(ordi, type = "t", main = "Goodness of fit")
+points(ordi, display = "sites", cex = goodness_of_fit * 300)
+```
+
+
+## Vectors
+
+```{r r2, collapse = TRUE}
+ef_vector1 <- envfit(
+  ordi ~ height_vegetation + cover_vegetation + grass_cover + graminoid_cover,
+  data = sites,
+  permu = 999,
+  na.rm = TRUE
+)
+ef_vector1
+plot(ordi, type = "n")
+plot(ef_vector1, add = TRUE, p. = .99)
+# save(ef_vector1, file = here("outputs", "models", "model_nmds_envfit_vector1.Rdata"))
+```
+
+## Factors
+
+```{r aicc, collapse = TRUE}
+ef_factor1 <- envfit(
+  ordi ~  treatment,
+  data = sites, permu = 999, na.rm = TRUE
+)
+ef_factor1
+```
+
+# PERMDISP and PERMANOVA
+
+## PERMDISP
+
+```{r permdisp}
+dispersion <- betadisper(dist(species), sites$treatment)
+permutest(dispersion)
+boxplot(dispersion)
+TukeyHSD(dispersion)
+plot(dispersion, hull = FALSE, ellipse = TRUE, label = TRUE)
+```
+
+## PERMANOVA
+
+Exclude reference sites (control) from 2003 because of high dispersion within this group
+
+```{r permanova}
+data <- species %>%
+  rownames_to_column(var = "id") %>%
+  filter(!(str_detect(id, "2003roeder")))
+sites2 <- sites %>%
+  semi_join(data, by = "id")
+species2 <- data %>%
+  column_to_rownames(var = "id")
+
+(permanova <- adonis2(
+  species2 ~ treatment, data = sites2,
+  permutations = 999,
+  method = "bray")
+)
+```
+
+# Session info
+
+```{r session-info, echo = FALSE}
+sessionInfo()
+```

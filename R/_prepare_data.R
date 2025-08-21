@@ -21,7 +21,6 @@ library(rtry)
 library(FD)
 
 ### Start ###
-# Create hashtag infront of a line: shift + strg + c
 rm(list = ls())
 # installr::updateR(
 #   browse_news = FALSE,
@@ -291,6 +290,7 @@ data_seed_mass <- read_csv(
   here("data", "raw", "data_raw_traits_zirbel_brudvig_2020_seed_mass.csv"),
   na = c("", "NA", "na")
 ) %>%
+  filter(!(is.na(species))) %>% 
   rename(name = species, seedmass_2020 = seed_mass) %>%
   select(name, seedmass_2020) %>%
   group_by(name) %>%
@@ -312,7 +312,7 @@ traits_zirbel <- data_2017 %>%
     name = str_replace(name, "ASTOOL", "Aster oolentangiensis"),
     name = str_replace(name, "ASTPIL", "Aster pilosus"),
     name = str_replace(name, "ASTSAG", "Aster sagittifolius"),
-    name = str_replace(name, "BAPLAC", "Baptisia lactea"),
+    name = str_replace(name, "BAPLAC", "Baptisia alba"),
     name = str_replace(name, "BOUCUR", "Bouteloua curtipendula"),
     name = str_replace(name, "CASFAS", "Cassia fasciculata"),
     name = str_replace(name, "CHAFAS", "Chamaecrista fasciculata"),
@@ -403,6 +403,7 @@ data_names <- species %>%
     name = str_replace(name, "AMASPP", "Amaranthus sp."),
     name = str_replace(name, "AMBART", "Ambrosia artimisiifolia"),
     name = str_replace(name, "ANDGER", "Andropogon gerardii"),
+    name = str_replace(name, "APOCAN", "Apocynum cannabinum"),
     name = str_replace(name, "ARAGLA", "Arabis glabra"),
     name = str_replace(name, "ARATHA", "Arabidopsis thaliana"),
     name = str_replace(name, "ASCAMP", "Asclepias amplexicaulis"),
@@ -445,6 +446,7 @@ data_names <- species %>%
     name = str_replace(name, "DALPUR", "Dalea purpurea"),
     name = str_replace(name, "DANSPI", "Danthonia spicata"),
     name = str_replace(name, "DAUCAR", "Daucus carota"),
+    name = str_replace(name, "DESCAN", "Desmodium canadense"),
     name = str_replace(name, "DESILL", "Desmodium illinoense"),
     name = str_replace(name, "DESPAN", "Desmodium paniculatum"),
     name = str_replace(name, "DICSPP", "Dichanthelium sp."),
@@ -486,6 +488,7 @@ data_names <- species %>%
     name = str_replace(name, "HIESPP", "Hieracium sp."),
     name = str_replace(name, "HYPPER", "Hypericum perforatum"),
     name = str_replace(name, "HYPRAD", "Hypochaeris radicata"),
+    name = str_replace(name, "JUNDIC", "Juncus dichotomus"),
     name = str_replace(name, "JUNEFF", "Juncus effusus"),
     name = str_replace(name, "JUNTEN", "Juncus tenuis"),
     name = str_replace(name, "KOEMAC", "Koeleria macrantha"),
@@ -545,7 +548,7 @@ data_names <- species %>%
     name = str_replace(name, "PRUSER", "Prunus serotina"),
     name = str_replace(name, "PRUSPP", "Prunus sp."),
     name = str_replace(name, "PSEOBT", "Pseudognaphalium obtusifolium"),
-    name = str_replace(name, "PYRCAL", ""),# Pyrus calleryana?
+    name = str_replace(name, "PYRCAL", "Pyrus calleryana"),
     name = str_replace(name, "QUESPP", "Quercus sp."),
     name = str_replace(name, "QUEVEL", "Quercus velutina"),
     name = str_replace(name, "RATPIN", "Ratibida pinnata"),
@@ -559,6 +562,7 @@ data_names <- species %>%
     name = str_replace(name, "RUMACL", "Rumex acetosella"),
     name = str_replace(name, "RUMCRI", "Rumex crispus"),
     name = str_replace(name, "RUMOBT", "Rumex obtusifolius"),
+    name = str_replace(name, "RUMHAS", "Rumex sp."),
     name = str_replace(name, "SCHSCO", "Schizachyrium scoparium"),
     name = str_replace(name, "SCRLAN", "Scrophularia lanceolata"),
     name = str_replace(name, "SETITA", "Setaria italica"),
@@ -583,7 +587,7 @@ data_names <- species %>%
     name = str_replace(name, "SPOHET", "Sporobolus heterolepis"),
     name = str_replace(name, "STEMED", "Stellaria media"),
     name = str_replace(name, "SYMERI", "Symphyotrichum ericoides"),
-    name = str_replace(name, "SYMLAE", "Symphyotrichum laeve (L.) Á.Löve & D.Löve"),
+    name = str_replace(name, "SYMLAE", "Symphyotrichum laeve (L.) A.Love & D.Love"),
     name = str_replace(name, "SYMLAN", "Symphyotrichum lanceolatum"),
     name = str_replace(name, "SYMPIL", "Symphyotrichum pilosum"),
     name = str_replace(name, "SYMSPP", "Symphyotrichum sp."),
@@ -630,14 +634,19 @@ metadata$version
 metadata$sources %>% tibble()
 
 data_names_resolved <- data_names %>%
-    rowid_to_column("id") %>%
-    select(id, name) %>%
-    TNRS::TNRS(
-      sources = c("wcvp", "wfo"), # first use WCVP and alternatively WFO
-      classification = "wfo", # family classification
-      mode = "resolve"
-    ) %>%
-  rename_with(tolower)
+  rowid_to_column("id") %>%
+  select(id, name) %>%
+  TNRS::TNRS(
+    sources = c("wcvp", "wfo"), # first use WCVP and alternatively WFO
+    classification = "wfo", # family classification
+    mode = "resolve"
+  ) %>%
+  rename_with(tolower) %>%
+  mutate(
+    accepted_name = str_replace(
+      accepted_name, "Baptisia alba var. macrophylla", "Baptisia alba"
+    )
+  )
 
 data_check_warnings <- data_names %>%
   rename("name_submitted" = "name") %>%
@@ -710,6 +719,11 @@ data_species <- species %>%
     data_names_resolved %>% select(name_submitted, accepted_name),
     by = "name_submitted"
   ) %>%
+  mutate(
+    accepted_name = if_else(
+      name_submitted == "unknown", "unknown", accepted_name
+      )
+    ) %>%
   select(
     id_plot_year, id_plot, plot_size, date_surveyed, accepted_name, abundance
     ) %>%
@@ -740,7 +754,8 @@ species <- data_species %>%
   arrange(id_plot, date_surveyed, plot_size, accepted_name) %>%
   group_by(id_plot, date_surveyed, accepted_name) %>%
   slice(1) %>%
-  arrange(id_plot, date_surveyed, plot_size, accepted_name)
+  arrange(id_plot, date_surveyed, plot_size, accepted_name) %>%
+  ungroup()
 
 data_check_duplicated <- species %>%
   group_by(id_plot, date_surveyed, accepted_name) %>%
@@ -965,6 +980,8 @@ data_missing <- data_traits3 %>%
 #   here("data", "processed", "data_processed_missing_20250818.xlsx")
 # )
 
+traits <- data_traits3
+
 rm(list = setdiff(
   ls(), c("species", "sites", "traits", "flowers", "covers")
   ))
@@ -978,12 +995,12 @@ rm(list = setdiff(
 
 richness <- species %>%
   left_join(
-    traits %>% select(accepted_name, seeded, taxonomic_status, accepted_family),
+    traits %>% select(accepted_name, seeded, taxonomic_status, family),
     by = "accepted_name"
     ) %>%
   mutate(id_plot_year_size = str_c(id_plot_year, plot_size, sep = "_")) %>%
   select(
-    accepted_name, seeded, taxonomic_status, accepted_family, id_plot_year_size,
+    accepted_name, seeded, taxonomic_status, family, id_plot_year_size,
     id_plot_year, id_plot, plot_size, abundance
   ) %>%
   mutate(presence = 1) %>%
@@ -1046,12 +1063,12 @@ data_cover_total <- species %>%
 
 data_cover_seeded_grass <- species %>%
   left_join(
-    traits %>% select(accepted_name, accepted_family, seeded),
+    traits %>% select(accepted_name, family, seeded),
     by = "accepted_name"
     ) %>%
   mutate(
     abundance = if_else(
-      accepted_family == "Poaceae" & seeded == 1, abundance, 0
+      family == "Poaceae" & seeded == 1, abundance, 0
       )
     ) %>%
   group_by(id_plot_year) %>%
@@ -1059,12 +1076,12 @@ data_cover_seeded_grass <- species %>%
   
 data_cover_seeded_forbs<- species %>%
   left_join(
-    traits %>% select(accepted_name, accepted_family, seeded),
+    traits %>% select(accepted_name, family, seeded),
     by = "accepted_name"
   ) %>%
   mutate(
     abundance = if_else(
-      accepted_family != "Poaceae" & seeded == 1, abundance, 0
+      family != "Poaceae" & seeded == 1, abundance, 0
       )
     ) %>%
   group_by(id_plot_year) %>%
@@ -1091,23 +1108,102 @@ rm(list = setdiff(
 
 
 
-## 5 Calculation of CWMs ######################################################
+## 5 CWM of SLA ----------------------------------------------------------------
 
 
-### a CWM Plant height 1.6.3 --------------------------------------------------
+### a preparation --------------------------------------------------------------
 
-### b CWM Seed mass 3.2.3 -----------------------------------------------------
-
-### c CWM SLA 4.1.3 -----------------------------------------------------------
-
-
-
-### d Add to sites table ------------------------------------------------------
-
-
-rm(list = setdiff(
-  ls(), c("species", "sites", "traits", "coordinates","traits_zirbel")
-))
+# data <- traits %>%
+#   filter(seeded == 1) %>%
+#   select(accepted_name, sla)
+# 
+# data %>%
+#   naniar::miss_var_summary(order = TRUE)
+# 
+# data_traits <- data %>%
+#   filter(!is.na(sla)) %>%
+#   mutate(sla = log(sla))
+# 
+# data_species <- species %>%
+#   ungroup() %>%
+#   select(id_plot_year, plot_size, accepted_name, abundance) %>%
+#   semi_join(data_traits, by = "accepted_name") %>% 
+#   filter(plot_size != "seeded") %>%
+#   select(-plot_size)
+# 
+# # Check duplicates
+# data_species %>%
+#   group_by(id_plot_year, accepted_name) %>% 
+#   count() %>%
+#   filter(n > 1)
+# 
+# data_species <- data_species %>%
+#   arrange(accepted_name) %>%
+#   pivot_wider(
+#     names_from = "accepted_name", values_from = "abundance", values_fill = 0
+#   ) %>%
+#   filter(!is.na(id_plot_year)) %>% # no NA in dataset
+#   column_to_rownames("id_plot_year")
+# 
+# data_traits <- data_traits %>%
+#   arrange(accepted_name) %>%
+#   filter(!is.na(accepted_name)) %>% # no NA
+#   column_to_rownames("accepted_name")
+# 
+# 
+# ### b calculation --------------------------------------------------------------
+# 
+# # data_abundance <- FD::dbFD(
+# #   data_traits, data_species,
+# #   w.abun = TRUE, calc.FRic = TRUE, calc.FDiv = FALSE, corr = "sqrt"
+# # )
+# data_presence <- FD::dbFD(
+#   data_traits, data_species,
+#   w.abun = FALSE, calc.FRic = TRUE, calc.FDiv = FALSE,
+# )
+# 
+# 
+# ### c saving -------------------------------------------------------------------
+# 
+# data_abu <- data_abundance$FDis %>%
+#   as.data.frame() %>%
+#   add_column(data_abundance$CWM$sla) %>%
+#   add_column(data_abundance$FRic) %>%
+#   rownames_to_column("id.plot") %>%
+#   rename(
+#     "fdis.abu.sla" = ".",
+#     "fric.abu.sla" = "data_abundance$FRic",
+#     "cwm.abu.sla" = "data_abundance$CWM$sla"
+#   ) %>%
+#   mutate(
+#     across(where(is.numeric), ~ exp(.x)),
+#     across(where(is.numeric), ~ round(.x, digits = 2))
+#   ) %>%
+#   select(id.plot, fdis.abu.sla, fric.abu.sla, cwm.abu.sla)
+# 
+# data_pres <- data_presence$FDis %>%
+#   as.data.frame() %>%
+#   add_column(data_presence$CWM$sla) %>%
+#   add_column(data_presence$FRic) %>%
+#   rownames_to_column("id.plot") %>%
+#   rename(
+#     "fdis.pres.sla" = ".",
+#     "fric.pres.sla" = "data_presence$FRic",
+#     "cwm.pres.sla" = "data_presence$CWM$sla"
+#   ) %>%
+#   mutate(
+#     across(where(is.numeric), ~ exp(.x)),
+#     across(where(is.numeric), ~ round(.x, digits = 2))
+#   ) %>%
+#   select(id.plot, fdis.pres.sla, fric.pres.sla, cwm.pres.sla)
+# 
+# sla <- data_abu %>%
+#   full_join(data_pres, by = "id.plot")
+# 
+# rm(list = setdiff(ls(), c(
+#   "species", "traits", "environment", "veg_head", "forb_grass_ratio", "biomass",
+#   "height_max", "species_list", "oek_f", "oek_l", "sla"
+# )))
 
 
 
