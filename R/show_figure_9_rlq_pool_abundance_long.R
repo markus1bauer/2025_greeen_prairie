@@ -85,11 +85,21 @@ data <- model %>%
         type == "environment" | type == "traits", "Traits and environment",
         "warning"
       )
-      ),
+    ),
     id = str_replace(id, "treat.unseeded_0_0", "Unseeded"),
     id = str_replace(id, "treat.fall_0_33", "Fall"),
     id = str_replace(id, "treat.spring_0_33", "Spring"),
-    id = str_replace(id, "treat.spring_1_33", "Spring + Herb")
+    id = str_replace(id, "treat.spring_1_33", "Spring + Herb"),
+    id = str_replace(id, "sla", "SLA"),
+    id = str_replace(id, "height", "Height"),
+    id = str_replace(id, "seedmass", "Seed mass"),
+    id = str_replace(id, "year", "Year"),
+    id = str_replace(id, "cover_seeded_grass", "Cover seeded grass"),
+    id = str_replace(id, "cover_non_seeded", "Cover non-seeded sp."),
+    id = str_replace(id, "water_cap", "Water caption"),
+    type = if_else(
+      id %in% c("Fall", "Spring", "Spring + Herb"), "environment_factor", type
+    )
     )
 
 
@@ -113,35 +123,10 @@ graph_a <- ggplot() +
   geom_label_repel(
     data = data %>% filter(type == "species"),
     aes(x = axis1, y = axis2, label = id),
-    xlim = c(-3.3, Inf), ylim = c(-Inf, NA),
+    xlim = c(NA, Inf), ylim = c(NA, Inf),
     fill = alpha("white", .5), label.size = NA, max.overlaps = 50,
     size = 3
   ) +
-  geom_segment(
-    data = data %>% filter(type == "environment"),
-    aes(x = 0, y = 0, xend = axis1, yend = axis2),
-    arrow = arrow(length = unit(.2, "cm"), type = "closed"),
-    color = "blue"
-  ) +
-  geom_label_repel(
-    data = data %>% filter(type == "environment"),
-    aes(x = axis1, y = axis2, label = id),
-    fill = alpha("white", .5), label.size = NA, max.overlaps = 50,
-    size = 3, color = "blue"
-  ) +
-  geom_segment(
-    data = data %>% filter(type == "traits"),
-    aes(x = 0, y = 0, xend = axis1, yend = axis2),
-    arrow = arrow(length = unit(.2, "cm"), type = "closed"),
-    color = "red"
-  ) +
-  geom_label_repel(
-    data = data %>% filter(type == "traits"),
-    aes(x = axis1, y = axis2, label = id),
-    fill = alpha("white", .5), label.size = NA, max.overlaps = 50,
-    size = 3, color = "red"
-  ) +
-  facet_wrap(~facet, nrow = 2) +
   coord_fixed(clip = "off") +
   scale_color_manual(
     breaks = c("unseeded", "fall_0_33", "spring_0_33", "spring_1_33"),
@@ -151,10 +136,50 @@ graph_a <- ggplot() +
   labs(
     x = "Axis 1", color = "Seeding", y = "Axis 2"
   ) +
-  theme_mb();graph_a
+  theme_mb() +
+  theme(legend.position = "bottom");graph_a
 
 ### Save ###
 ggsave(
-  here("outputs", "figures", "figure_9_300dpi_16x18cm.tiff"),
-  dpi = 300, width = 16, height = 18, units = "cm"
-  )
+  here("outputs", "figures", "figure_9a_300dpi_16x13cm.tiff"),
+  dpi = 300, width = 16, height = 13, units = "cm"
+)
+
+graph_b <- ggplot() +
+  geom_segment(
+    data = data %>% filter(type %in% c("traits", "environment")),
+    aes(x = 0, y = 0, xend = axis1, yend = axis2, color = type),
+    arrow = arrow(length = unit(.2, "cm"), type = "closed")
+  ) +
+  geom_label_repel(
+    data = data %>% filter(type %in% c("traits", "environment")),
+    aes(x = axis1, y = axis2, label = id, color = type),
+    fill = alpha("white", 0), label.size = NA, max.overlaps = 50,
+    size = 3
+  ) +
+  geom_label(
+    data = data %>% filter(type %in% c("environment_factor")),
+    aes(x = axis1, y = axis2, label = id, color = type),
+    fill = alpha("white", 1), max.overlaps = 50,
+    size = 3
+  ) +
+  annotate(
+    "text", y = -.8, x = -0.34, size = 3,
+    label = "environment: p = .02\n traits: p = .19"
+    ) +
+  coord_fixed(clip = "off") +
+  scale_color_manual(
+    breaks = c("traits", "environment", "environment_factor"),
+    values = c("red", "blue", "blue")
+  ) +
+  labs(
+    x = "Axis 1", color = "", y = "Axis 2"
+  ) +
+  theme_mb() +
+  theme(legend.position = "none");graph_b
+
+### Save ###
+ggsave(
+  here("outputs", "figures", "figure_9b_300dpi_8x9cm.tiff"),
+  dpi = 300, width = 8, height = 9, units = "cm"
+)

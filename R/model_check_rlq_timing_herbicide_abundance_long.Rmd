@@ -78,6 +78,7 @@ traits <- read_csv(
   ) %>%
   filter(seeded == "1", family != "Poaceae") %>%
   select(accepted_name, sla, height, seedmass) %>%
+  mutate(seedmass = log(seedmass)) %>%
   drop_na()
 
 species <- read_csv(
