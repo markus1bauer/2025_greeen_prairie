@@ -113,7 +113,7 @@ graph_a <- ggplot() +
   geom_point(
     data = data %>% filter(type == "sites"),
     aes(x = axis1, y = axis2, color = treatment),
-    shape = 16, alpha = .7
+    shape = 16, alpha = .8
   ) +
   geom_point(
     data = data %>% filter(type == "species"),
@@ -130,7 +130,7 @@ graph_a <- ggplot() +
   scale_color_manual(
     breaks = c("unseeded", "fall_0_33", "spring_0_33", "spring_1_33"),
     labels = c("Unseeded", "Fall", "Spring", "Spring + Herbicide"),
-    values = c("#21918c", "#440154", "#FFA500", "#FFA570")
+    values = c("#21918c", "#440154", "#FFA500", "#5ec962")
   ) +
   labs(
     x = "Axis 1", color = "Seeding", y = "Axis 2"
@@ -159,11 +159,11 @@ graph_b <- ggplot() +
   geom_label(
     data = data %>% filter(type %in% c("environment_factor")),
     aes(x = axis1, y = axis2, label = id, color = type),
-    fill = alpha("white", 1), max.overlaps = 50,
+    fill = alpha("white", .8),
     size = 3
   ) +
   annotate(
-    "text", y = .85, x = -.54, size = 3,
+    "text", y = .85, x = -.49, size = 3,
     label = "environment: p = .001\n traits: p = .33"
   ) +
   coord_fixed(clip = "off") +

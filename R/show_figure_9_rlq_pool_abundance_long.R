@@ -114,7 +114,7 @@ graph_a <- ggplot() +
   geom_point(
     data = data %>% filter(type == "sites"),
     aes(x = axis1, y = axis2, color = treatment),
-    shape = 16, alpha = .7
+    shape = 16, alpha = .8
   ) +
   geom_point(
     data = data %>% filter(type == "species"),
@@ -131,7 +131,7 @@ graph_a <- ggplot() +
   scale_color_manual(
     breaks = c("unseeded", "fall_0_33", "spring_0_33", "spring_1_33"),
     labels = c("Unseeded", "Fall", "Spring", "Spring + Herbicide"),
-    values = c("#21918c", "#440154", "#FFA500", "#FFA570")
+    values = c("#21918c", "#440154", "#FFA500", "#5ec962")
   ) +
   labs(
     x = "Axis 1", color = "Seeding", y = "Axis 2"
@@ -160,11 +160,11 @@ graph_b <- ggplot() +
   geom_label(
     data = data %>% filter(type %in% c("environment_factor")),
     aes(x = axis1, y = axis2, label = id, color = type),
-    fill = alpha("white", 1), max.overlaps = 50,
+    fill = alpha("white", .8),
     size = 3
   ) +
   annotate(
-    "text", y = -.8, x = -0.34, size = 3,
+    "text", y = -.25, x = 0, size = 2,
     label = "environment: p = .63\n traits: p = .92"
     ) +
   coord_fixed(clip = "off") +
@@ -172,6 +172,8 @@ graph_b <- ggplot() +
     breaks = c("traits", "environment", "environment_factor"),
     values = c("red", "blue", "blue")
   ) +
+  scale_y_continuous(limits = c(-.3, .9)) +
+  scale_x_continuous(limits = c(-.9, 1)) +
   labs(
     x = "Axis 1", color = "", y = "Axis 2"
   ) +
@@ -181,5 +183,5 @@ graph_b <- ggplot() +
 ### Save ###
 ggsave(
   here("outputs", "figures", "figure_9b_300dpi_8x9cm.tiff"),
-  dpi = 300, width = 8, height = 9, units = "cm"
+  dpi = 300, width = 8, height = 5, units = "cm"
 )
