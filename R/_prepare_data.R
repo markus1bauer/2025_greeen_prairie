@@ -354,7 +354,7 @@ traits_zirbel <- data_2017 %>%
     name = str_replace(name, "SYMLAE", "Symphyotrichum laeve"),
     name = str_replace(name, "SYMLAN", "Symphyotrichum lanceolatum"),
     name = str_replace(name, "SYMPIL", "Symphyotrichum pilosum"),
-    name = str_replace(name, "SYMUND", "Symphyotrichum undulatum"),
+    name = str_replace(name, "SYMURO", "Symphyotrichum urophyllum"),
     name = str_replace(name, "TRAOHI", "Tradescantia ohiensis"),
     name = str_replace(name, "VERSTR", "Verbena stricta"),
     name = str_replace(name, "ZIZAPT", "Zizia aptera")
@@ -591,7 +591,7 @@ data_names <- species %>%
     name = str_replace(name, "SYMLAN", "Symphyotrichum lanceolatum"),
     name = str_replace(name, "SYMPIL", "Symphyotrichum pilosum"),
     name = str_replace(name, "SYMSPP", "Symphyotrichum sp."),
-    name = str_replace(name, "SYMUND", "Symphyotrichum undulatum"),
+    name = str_replace(name, "SYMURO", "Symphyotrichum urophyllum"),
     name = str_replace(name, "TAROFF", "Taraxacum officinale"),
     name = str_replace(name, "TOXRAD", "Toxicodendron radicans"),
     name = str_replace(name, "TRAOHI", "Tradescantia ohiensis"),
@@ -786,7 +786,7 @@ rm(list = setdiff(
 ## 2 Traits from databases ####################################################
 
 
-### a Load traits from GIFT ---------------------------------------------------
+### a GIFT databse and Zirbel data ---------------------------------------------
 
 trait_ids <- c("1.2.2", "1.6.3", "3.2.3", "4.1.3")
 
@@ -817,7 +817,7 @@ data_gift <- read_csv(
   )
 
 
-### b Combine GIFT and traits -------------------------------------------------
+### Combine GIFT and traits ###
 
 data_traits <- traits %>%
   left_join(
@@ -850,19 +850,7 @@ data_traits <- traits %>%
 
 data_traits %>% filter(duplicated(accepted_name))
 
-
-### c Check completeness -------------------------------------------------------
-
-data_missing <- data_traits %>%
-  filter(
-    (is.na(sla) | is.na(height) | is.na(seedmass)) &
-      accepted_name_rank == "species"
-    ) %>%
-  select(accepted_name, seeded, family, sla, height, seedmass) %>%
-  arrange(desc(seeded))
-
-
-### d Combine Zirbel data and traits -------------------------------------------
+### Combine Zirbel data and traits ###
 
 data_traits2 <- data_traits %>%
   left_join(
@@ -875,8 +863,7 @@ data_traits2 <- data_traits %>%
   ) %>%
   select(-ends_with("_2017"), -ends_with("_2020"))
 
-
-### e Check completeness -------------------------------------------------------
+### Check completeness ###
 
 data_missing <- data_traits2 %>%
   filter(
@@ -887,7 +874,7 @@ data_missing <- data_traits2 %>%
   arrange(desc(seeded))
 
 
-### f TRY database -------------------------------------------------------------
+### b TRY database -------------------------------------------------------------
 
 data_try <- rtry_import(
   here("data", "raw", "database_try_43371", "43371.txt")
@@ -948,8 +935,7 @@ data_try <- rtry_import(
   select(-AccSpeciesID, -UnitName) %>%
   pivot_wider(names_from = "TraitID", values_from = "mean")
 
-
-### g Combine TRY and traits --------------------------------------------------
+### Combine TRY and traits dataset ###
 
 data_traits3 <- data_traits2 %>%
   left_join(data_try, by = "accepted_name") %>%
@@ -960,8 +946,7 @@ data_traits3 <- data_traits2 %>%
   ) %>%
   select(-ends_with("_new"))
 
-
-### h Check completeness -------------------------------------------------------
+### Check completeness ###
 
 data_missing <- data_traits3 %>%
   filter(
@@ -975,12 +960,46 @@ data_missing <- data_traits3 %>%
   arrange(desc(seeded), desc(n))
 
 
+### g Enter traits manually ----------------------------------------------------
+
+data_traits4 <- data_traits3 %>%
+  mutate(
+    height = if_else(accepted_name == "Desmodium illinoense", 1.828, height),
+    height = if_else(accepted_name == "Penstemon hirsutus", 0.457, height),
+    height = if_else(
+      accepted_name == "Silphium terebinthinaceum", 2.743, height
+      ),
+    height = if_else(accepted_name == "Solidago speciosa", 1.524, height),
+    height = if_else(
+      accepted_name == "Symphyotrichum urophyllum", 0.914, height
+      )
+  )
+
+# Desmodium illinoense  6 feet -- 1.828 m # Prairie moon nursery, Winona, Michigan, https://www.prairiemoon.com/desmodium-illinoense-illinois-tick-trefoil
+# Penstemon hirsutus 18 inches -- 0.457 m # Prairie moon nursery, Winona, Michigan, https://www.prairiemoon.com/penstemon-hirsutus-hairy-beardtongue
+# Silphium terebinthinaceum 9 feet -- 2.743 m # Prairie moon nursery, Winona, Michigan, https://www.prairiemoon.com/silphium-terebinthinaceum-prairie-dock
+# Solidago speciosa 5 feet -- 1.524 m # Prairie moon nursery, Winona, Michigan, https://www.prairiemoon.com/solidago-speciosa-showy-goldenrod
+# Symphyotrichum urophyllum 3 feet - 0.914 m # Prairie moon nursery, Winona, Michigan, https://www.prairiemoon.com/symphyotrichum-urophyllum-arrow-leaved-aster
+
+### Check completeness ###
+
+data_missing <- data_traits4 %>%
+  filter(
+    (is.na(sla) | is.na(height) | is.na(seedmass)) &
+      accepted_name_rank == "species"
+  ) %>%
+  select(accepted_name, seeded, family, sla, height, seedmass) %>%
+  left_join(data_check_occurences, by = "accepted_name") %>%
+  relocate(n, .after = seeded) %>%
+  filter((is.na(sla) | is.na(height) | is.na(seedmass))) %>%
+  arrange(desc(seeded), desc(n))
+
 # write_xlsx(
 #   data_missing,
 #   here("data", "processed", "data_processed_missing_20250818.xlsx")
 # )
 
-traits <- data_traits3
+traits <- data_traits4
 
 rm(list = setdiff(
   ls(), c("species", "sites", "traits", "flowers", "covers")

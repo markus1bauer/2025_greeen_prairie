@@ -34,7 +34,7 @@ Lux_1_2014,Lux_1,seeded,2014-09-01,Sporobolus cryptandrus,1
 Lux_1_2014,Lux_1,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 Lux_1_2014,Lux_1,seeded,2014-09-01,Symphyotrichum laeve,0.29
 Lux_1_2014,Lux_1,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-Lux_1_2014,Lux_1,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+Lux_1_2014,Lux_1,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 Lux_1_2014,Lux_1,seeded,2014-09-01,Tradescantia ohiensis,0.28
 Lux_1_2014,Lux_1,seeded,2014-09-01,Verbena stricta,0.27
 Lux_1_2014,Lux_1,seeded,2014-09-01,Zizia aptera,0.28
@@ -176,7 +176,7 @@ Lux_10_2014,Lux_10,seeded,2014-09-01,Ratibida pinnata,1.45
 Lux_10_2014,Lux_10,seeded,2014-09-01,Schizachyrium scoparium,1
 Lux_10_2014,Lux_10,seeded,2014-09-01,Sorghastrum nutans,1
 Lux_10_2014,Lux_10,seeded,2014-09-01,Sporobolus cryptandrus,1
-Lux_10_2014,Lux_10,seeded,2014-09-01,Symphyotrichum undulatum,1.76
+Lux_10_2014,Lux_10,seeded,2014-09-01,Symphyotrichum urophyllum,1.76
 Lux_10_2015,Lux_10,1,2015-09-16,Achillea millefolium,2
 Lux_10_2015,Lux_10,1,2015-09-16,Centaurea stoebe,4
 Lux_10_2015,Lux_10,1,2015-09-16,Daucus carota,0.1
@@ -293,7 +293,7 @@ Lux_11_2014,Lux_11,seeded,2014-09-01,Ratibida pinnata,1.45
 Lux_11_2014,Lux_11,seeded,2014-09-01,Schizachyrium scoparium,1
 Lux_11_2014,Lux_11,seeded,2014-09-01,Sorghastrum nutans,1
 Lux_11_2014,Lux_11,seeded,2014-09-01,Sporobolus cryptandrus,1
-Lux_11_2014,Lux_11,seeded,2014-09-01,Symphyotrichum undulatum,1.76
+Lux_11_2014,Lux_11,seeded,2014-09-01,Symphyotrichum urophyllum,1.76
 Lux_11_2015,Lux_11,1,2015-09-16,Centaurea stoebe,2
 Lux_11_2015,Lux_11,1,2015-09-16,Digitaria,60
 Lux_11_2015,Lux_11,1,2015-09-16,Oxalis stricta,0.4
@@ -421,7 +421,7 @@ Lux_12_2014,Lux_12,seeded,2014-09-01,Sporobolus cryptandrus,1
 Lux_12_2014,Lux_12,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 Lux_12_2014,Lux_12,seeded,2014-09-01,Symphyotrichum laeve,0.29
 Lux_12_2014,Lux_12,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-Lux_12_2014,Lux_12,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+Lux_12_2014,Lux_12,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 Lux_12_2014,Lux_12,seeded,2014-09-01,Tradescantia ohiensis,0.28
 Lux_12_2014,Lux_12,seeded,2014-09-01,Verbena stricta,0.27
 Lux_12_2014,Lux_12,seeded,2014-09-01,Zizia aptera,0.28
@@ -582,7 +582,7 @@ Lux_13_2014,Lux_13,seeded,2014-09-01,Ratibida pinnata,1.45
 Lux_13_2014,Lux_13,seeded,2014-09-01,Schizachyrium scoparium,1
 Lux_13_2014,Lux_13,seeded,2014-09-01,Sorghastrum nutans,1
 Lux_13_2014,Lux_13,seeded,2014-09-01,Sporobolus cryptandrus,1
-Lux_13_2014,Lux_13,seeded,2014-09-01,Symphyotrichum undulatum,1.76
+Lux_13_2014,Lux_13,seeded,2014-09-01,Symphyotrichum urophyllum,1.76
 Lux_13_2015,Lux_13,1,2015-09-16,Achillea millefolium,0.5
 Lux_13_2015,Lux_13,1,2015-09-16,Centaurea stoebe,5
 Lux_13_2015,Lux_13,1,2015-09-16,Daucus carota,0.1
@@ -720,7 +720,7 @@ Lux_14_2014,Lux_14,seeded,2014-09-01,Rudbeckia hirta,0.81
 Lux_14_2014,Lux_14,seeded,2014-09-01,Schizachyrium scoparium,1
 Lux_14_2014,Lux_14,seeded,2014-09-01,Sorghastrum nutans,1
 Lux_14_2014,Lux_14,seeded,2014-09-01,Sporobolus cryptandrus,1
-Lux_14_2014,Lux_14,seeded,2014-09-01,Symphyotrichum undulatum,0.88
+Lux_14_2014,Lux_14,seeded,2014-09-01,Symphyotrichum urophyllum,0.88
 Lux_14_2014,Lux_14,seeded,2014-09-01,Verbena stricta,0.74
 Lux_14_2015,Lux_14,1,2015-09-16,Achillea millefolium,1
 Lux_14_2015,Lux_14,1,2015-09-16,Bromus inermis,8
@@ -850,7 +850,7 @@ Lux_15_2014,Lux_15,seeded,2014-09-01,Rudbeckia hirta,0.81
 Lux_15_2014,Lux_15,seeded,2014-09-01,Schizachyrium scoparium,1
 Lux_15_2014,Lux_15,seeded,2014-09-01,Sorghastrum nutans,1
 Lux_15_2014,Lux_15,seeded,2014-09-01,Sporobolus cryptandrus,1
-Lux_15_2014,Lux_15,seeded,2014-09-01,Symphyotrichum undulatum,0.88
+Lux_15_2014,Lux_15,seeded,2014-09-01,Symphyotrichum urophyllum,0.88
 Lux_15_2014,Lux_15,seeded,2014-09-01,Verbena stricta,0.74
 Lux_15_2015,Lux_15,1,2015-09-16,Achillea millefolium,2
 Lux_15_2015,Lux_15,1,2015-09-16,Centaurea stoebe,45
@@ -1023,7 +1023,7 @@ Lux_16_2014,Lux_16,seeded,2014-09-01,Silphium terebinthinaceum,0.52
 Lux_16_2014,Lux_16,seeded,2014-09-01,Solidago rigida,0.64
 Lux_16_2014,Lux_16,seeded,2014-09-01,Sorghastrum nutans,1
 Lux_16_2014,Lux_16,seeded,2014-09-01,Sporobolus cryptandrus,1
-Lux_16_2014,Lux_16,seeded,2014-09-01,Symphyotrichum undulatum,0.59
+Lux_16_2014,Lux_16,seeded,2014-09-01,Symphyotrichum urophyllum,0.59
 Lux_16_2014,Lux_16,seeded,2014-09-01,Verbena stricta,0.49
 Lux_16_2015,Lux_16,1,2015-09-16,Achillea millefolium,0.5
 Lux_16_2015,Lux_16,1,2015-09-16,Bromus inermis,3
@@ -1157,7 +1157,7 @@ Lux_17_2014,Lux_17,seeded,2014-09-01,Sporobolus cryptandrus,1
 Lux_17_2014,Lux_17,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 Lux_17_2014,Lux_17,seeded,2014-09-01,Symphyotrichum laeve,0.29
 Lux_17_2014,Lux_17,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-Lux_17_2014,Lux_17,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+Lux_17_2014,Lux_17,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 Lux_17_2014,Lux_17,seeded,2014-09-01,Tradescantia ohiensis,0.28
 Lux_17_2014,Lux_17,seeded,2014-09-01,Verbena stricta,0.27
 Lux_17_2014,Lux_17,seeded,2014-09-01,Zizia aptera,0.28
@@ -1309,7 +1309,7 @@ Lux_18_2014,Lux_18,seeded,2014-09-01,Rudbeckia hirta,0.81
 Lux_18_2014,Lux_18,seeded,2014-09-01,Schizachyrium scoparium,1
 Lux_18_2014,Lux_18,seeded,2014-09-01,Sorghastrum nutans,1
 Lux_18_2014,Lux_18,seeded,2014-09-01,Sporobolus cryptandrus,1
-Lux_18_2014,Lux_18,seeded,2014-09-01,Symphyotrichum undulatum,0.88
+Lux_18_2014,Lux_18,seeded,2014-09-01,Symphyotrichum urophyllum,0.88
 Lux_18_2014,Lux_18,seeded,2014-09-01,Verbena stricta,0.74
 Lux_18_2015,Lux_18,1,2015-09-16,Centaurea stoebe,8
 Lux_18_2015,Lux_18,1,2015-09-16,Digitaria,7
@@ -1559,7 +1559,7 @@ Lux_2_2014,Lux_2,seeded,2014-09-01,Silphium terebinthinaceum,0.52
 Lux_2_2014,Lux_2,seeded,2014-09-01,Solidago rigida,0.64
 Lux_2_2014,Lux_2,seeded,2014-09-01,Sorghastrum nutans,1
 Lux_2_2014,Lux_2,seeded,2014-09-01,Sporobolus cryptandrus,1
-Lux_2_2014,Lux_2,seeded,2014-09-01,Symphyotrichum undulatum,0.59
+Lux_2_2014,Lux_2,seeded,2014-09-01,Symphyotrichum urophyllum,0.59
 Lux_2_2014,Lux_2,seeded,2014-09-01,Verbena stricta,0.49
 Lux_2_2015,Lux_2,1,2015-09-16,Achillea millefolium,1
 Lux_2_2015,Lux_2,1,2015-09-16,Centaurea stoebe,3
@@ -1691,7 +1691,7 @@ Lux_20_2014,Lux_20,seeded,2014-09-01,Sporobolus cryptandrus,1
 Lux_20_2014,Lux_20,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 Lux_20_2014,Lux_20,seeded,2014-09-01,Symphyotrichum laeve,0.29
 Lux_20_2014,Lux_20,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-Lux_20_2014,Lux_20,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+Lux_20_2014,Lux_20,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 Lux_20_2014,Lux_20,seeded,2014-09-01,Tradescantia ohiensis,0.28
 Lux_20_2014,Lux_20,seeded,2014-09-01,Verbena stricta,0.27
 Lux_20_2014,Lux_20,seeded,2014-09-01,Zizia aptera,0.28
@@ -1885,7 +1885,7 @@ Lux_21_2014,Lux_21,seeded,2014-09-01,Rudbeckia hirta,0.81
 Lux_21_2014,Lux_21,seeded,2014-09-01,Schizachyrium scoparium,1
 Lux_21_2014,Lux_21,seeded,2014-09-01,Sorghastrum nutans,1
 Lux_21_2014,Lux_21,seeded,2014-09-01,Sporobolus cryptandrus,1
-Lux_21_2014,Lux_21,seeded,2014-09-01,Symphyotrichum undulatum,0.88
+Lux_21_2014,Lux_21,seeded,2014-09-01,Symphyotrichum urophyllum,0.88
 Lux_21_2014,Lux_21,seeded,2014-09-01,Verbena stricta,0.74
 Lux_21_2015,Lux_21,1,2015-09-16,Achillea millefolium,0.2
 Lux_21_2015,Lux_21,1,2015-09-16,Centaurea stoebe,14
@@ -2040,7 +2040,7 @@ Lux_22_2014,Lux_22,seeded,2014-09-01,Ratibida pinnata,1.45
 Lux_22_2014,Lux_22,seeded,2014-09-01,Schizachyrium scoparium,1
 Lux_22_2014,Lux_22,seeded,2014-09-01,Sorghastrum nutans,1
 Lux_22_2014,Lux_22,seeded,2014-09-01,Sporobolus cryptandrus,1
-Lux_22_2014,Lux_22,seeded,2014-09-01,Symphyotrichum undulatum,1.76
+Lux_22_2014,Lux_22,seeded,2014-09-01,Symphyotrichum urophyllum,1.76
 Lux_22_2015,Lux_22,1,2015-09-16,Achillea millefolium,1
 Lux_22_2015,Lux_22,1,2015-09-16,Bromus inermis,0.5
 Lux_22_2015,Lux_22,1,2015-09-16,Centaurea stoebe,22
@@ -2176,7 +2176,7 @@ Lux_23_2014,Lux_23,seeded,2014-09-01,Silphium terebinthinaceum,0.52
 Lux_23_2014,Lux_23,seeded,2014-09-01,Solidago rigida,0.64
 Lux_23_2014,Lux_23,seeded,2014-09-01,Sorghastrum nutans,1
 Lux_23_2014,Lux_23,seeded,2014-09-01,Sporobolus cryptandrus,1
-Lux_23_2014,Lux_23,seeded,2014-09-01,Symphyotrichum undulatum,0.59
+Lux_23_2014,Lux_23,seeded,2014-09-01,Symphyotrichum urophyllum,0.59
 Lux_23_2014,Lux_23,seeded,2014-09-01,Verbena stricta,0.49
 Lux_23_2015,Lux_23,1,2015-09-16,Achillea millefolium,0.4
 Lux_23_2015,Lux_23,1,2015-09-16,Centaurea stoebe,2
@@ -2337,7 +2337,7 @@ Lux_24_2014,Lux_24,seeded,2014-09-01,Silphium terebinthinaceum,0.52
 Lux_24_2014,Lux_24,seeded,2014-09-01,Solidago rigida,0.64
 Lux_24_2014,Lux_24,seeded,2014-09-01,Sorghastrum nutans,1
 Lux_24_2014,Lux_24,seeded,2014-09-01,Sporobolus cryptandrus,1
-Lux_24_2014,Lux_24,seeded,2014-09-01,Symphyotrichum undulatum,0.59
+Lux_24_2014,Lux_24,seeded,2014-09-01,Symphyotrichum urophyllum,0.59
 Lux_24_2014,Lux_24,seeded,2014-09-01,Verbena stricta,0.49
 Lux_24_2015,Lux_24,1,2015-09-16,Asclepias syriaca,0.2
 Lux_24_2015,Lux_24,1,2015-09-16,Bromus inermis,1
@@ -2485,7 +2485,7 @@ Lux_25_2014,Lux_25,seeded,2014-09-01,Rudbeckia hirta,0.81
 Lux_25_2014,Lux_25,seeded,2014-09-01,Schizachyrium scoparium,1
 Lux_25_2014,Lux_25,seeded,2014-09-01,Sorghastrum nutans,1
 Lux_25_2014,Lux_25,seeded,2014-09-01,Sporobolus cryptandrus,1
-Lux_25_2014,Lux_25,seeded,2014-09-01,Symphyotrichum undulatum,0.88
+Lux_25_2014,Lux_25,seeded,2014-09-01,Symphyotrichum urophyllum,0.88
 Lux_25_2014,Lux_25,seeded,2014-09-01,Verbena stricta,0.74
 Lux_25_2015,Lux_25,1,2015-09-16,Centaurea stoebe,13
 Lux_25_2015,Lux_25,1,2015-09-16,Oxalis stricta,1
@@ -2651,7 +2651,7 @@ Lux_26_2014,Lux_26,seeded,2014-09-01,Sporobolus cryptandrus,1
 Lux_26_2014,Lux_26,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 Lux_26_2014,Lux_26,seeded,2014-09-01,Symphyotrichum laeve,0.29
 Lux_26_2014,Lux_26,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-Lux_26_2014,Lux_26,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+Lux_26_2014,Lux_26,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 Lux_26_2014,Lux_26,seeded,2014-09-01,Tradescantia ohiensis,0.28
 Lux_26_2014,Lux_26,seeded,2014-09-01,Verbena stricta,0.27
 Lux_26_2014,Lux_26,seeded,2014-09-01,Zizia aptera,0.28
@@ -2847,7 +2847,7 @@ Lux_27_2014,Lux_27,seeded,2014-09-01,Ratibida pinnata,1.45
 Lux_27_2014,Lux_27,seeded,2014-09-01,Schizachyrium scoparium,1
 Lux_27_2014,Lux_27,seeded,2014-09-01,Sorghastrum nutans,1
 Lux_27_2014,Lux_27,seeded,2014-09-01,Sporobolus cryptandrus,1
-Lux_27_2014,Lux_27,seeded,2014-09-01,Symphyotrichum undulatum,1.76
+Lux_27_2014,Lux_27,seeded,2014-09-01,Symphyotrichum urophyllum,1.76
 Lux_27_2015,Lux_27,1,2015-09-16,Achillea millefolium,8
 Lux_27_2015,Lux_27,1,2015-09-16,Centaurea stoebe,30
 Lux_27_2015,Lux_27,1,2015-09-16,Elymus,0.4
@@ -2969,7 +2969,7 @@ Lux_28_2014,Lux_28,seeded,2014-09-01,Rudbeckia hirta,0.81
 Lux_28_2014,Lux_28,seeded,2014-09-01,Schizachyrium scoparium,1
 Lux_28_2014,Lux_28,seeded,2014-09-01,Sorghastrum nutans,1
 Lux_28_2014,Lux_28,seeded,2014-09-01,Sporobolus cryptandrus,1
-Lux_28_2014,Lux_28,seeded,2014-09-01,Symphyotrichum undulatum,0.88
+Lux_28_2014,Lux_28,seeded,2014-09-01,Symphyotrichum urophyllum,0.88
 Lux_28_2014,Lux_28,seeded,2014-09-01,Verbena stricta,0.74
 Lux_28_2015,Lux_28,1,2015-09-16,Achillea millefolium,0.8
 Lux_28_2015,Lux_28,1,2015-09-16,Centaurea stoebe,10
@@ -3136,7 +3136,7 @@ Lux_29_2014,Lux_29,seeded,2014-09-01,Silphium terebinthinaceum,0.52
 Lux_29_2014,Lux_29,seeded,2014-09-01,Solidago rigida,0.64
 Lux_29_2014,Lux_29,seeded,2014-09-01,Sorghastrum nutans,1
 Lux_29_2014,Lux_29,seeded,2014-09-01,Sporobolus cryptandrus,1
-Lux_29_2014,Lux_29,seeded,2014-09-01,Symphyotrichum undulatum,0.59
+Lux_29_2014,Lux_29,seeded,2014-09-01,Symphyotrichum urophyllum,0.59
 Lux_29_2014,Lux_29,seeded,2014-09-01,Verbena stricta,0.49
 Lux_29_2015,Lux_29,1,2015-09-16,Achillea millefolium,0.2
 Lux_29_2015,Lux_29,1,2015-09-16,Barbarea vulgaris,0.2
@@ -3255,7 +3255,7 @@ Lux_3_2014,Lux_3,seeded,2014-09-01,Sporobolus cryptandrus,1
 Lux_3_2014,Lux_3,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 Lux_3_2014,Lux_3,seeded,2014-09-01,Symphyotrichum laeve,0.29
 Lux_3_2014,Lux_3,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-Lux_3_2014,Lux_3,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+Lux_3_2014,Lux_3,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 Lux_3_2014,Lux_3,seeded,2014-09-01,Tradescantia ohiensis,0.28
 Lux_3_2014,Lux_3,seeded,2014-09-01,Verbena stricta,0.27
 Lux_3_2014,Lux_3,seeded,2014-09-01,Zizia aptera,0.28
@@ -3508,7 +3508,7 @@ Lux_31_2014,Lux_31,seeded,2014-09-01,Rudbeckia hirta,0.81
 Lux_31_2014,Lux_31,seeded,2014-09-01,Schizachyrium scoparium,1
 Lux_31_2014,Lux_31,seeded,2014-09-01,Sorghastrum nutans,1
 Lux_31_2014,Lux_31,seeded,2014-09-01,Sporobolus cryptandrus,1
-Lux_31_2014,Lux_31,seeded,2014-09-01,Symphyotrichum undulatum,0.88
+Lux_31_2014,Lux_31,seeded,2014-09-01,Symphyotrichum urophyllum,0.88
 Lux_31_2014,Lux_31,seeded,2014-09-01,Verbena stricta,0.74
 Lux_31_2015,Lux_31,1,2015-09-16,Achillea millefolium,2
 Lux_31_2015,Lux_31,1,2015-09-16,Bromus inermis,2
@@ -3696,7 +3696,7 @@ Lux_32_2014,Lux_32,seeded,2014-09-01,Ratibida pinnata,1.45
 Lux_32_2014,Lux_32,seeded,2014-09-01,Schizachyrium scoparium,1
 Lux_32_2014,Lux_32,seeded,2014-09-01,Sorghastrum nutans,1
 Lux_32_2014,Lux_32,seeded,2014-09-01,Sporobolus cryptandrus,1
-Lux_32_2014,Lux_32,seeded,2014-09-01,Symphyotrichum undulatum,1.76
+Lux_32_2014,Lux_32,seeded,2014-09-01,Symphyotrichum urophyllum,1.76
 Lux_32_2015,Lux_32,1,2015-09-16,Achillea millefolium,2
 Lux_32_2015,Lux_32,1,2015-09-16,Centaurea stoebe,10
 Lux_32_2015,Lux_32,1,2015-09-16,Coreopsis lanceolata,1
@@ -3855,7 +3855,7 @@ Lux_33_2014,Lux_33,seeded,2014-09-01,Silphium terebinthinaceum,0.52
 Lux_33_2014,Lux_33,seeded,2014-09-01,Solidago rigida,0.64
 Lux_33_2014,Lux_33,seeded,2014-09-01,Sorghastrum nutans,1
 Lux_33_2014,Lux_33,seeded,2014-09-01,Sporobolus cryptandrus,1
-Lux_33_2014,Lux_33,seeded,2014-09-01,Symphyotrichum undulatum,0.59
+Lux_33_2014,Lux_33,seeded,2014-09-01,Symphyotrichum urophyllum,0.59
 Lux_33_2014,Lux_33,seeded,2014-09-01,Verbena stricta,0.49
 Lux_33_2015,Lux_33,1,2015-09-16,Centaurea stoebe,50
 Lux_33_2015,Lux_33,1,2015-09-16,Monarda fistulosa,2
@@ -4065,7 +4065,7 @@ Lux_34_2014,Lux_34,seeded,2014-09-01,Sporobolus cryptandrus,1
 Lux_34_2014,Lux_34,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 Lux_34_2014,Lux_34,seeded,2014-09-01,Symphyotrichum laeve,0.29
 Lux_34_2014,Lux_34,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-Lux_34_2014,Lux_34,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+Lux_34_2014,Lux_34,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 Lux_34_2014,Lux_34,seeded,2014-09-01,Tradescantia ohiensis,0.28
 Lux_34_2014,Lux_34,seeded,2014-09-01,Verbena stricta,0.27
 Lux_34_2014,Lux_34,seeded,2014-09-01,Zizia aptera,0.28
@@ -4236,7 +4236,7 @@ Lux_35_2014,Lux_35,seeded,2014-09-01,Sporobolus cryptandrus,1
 Lux_35_2014,Lux_35,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 Lux_35_2014,Lux_35,seeded,2014-09-01,Symphyotrichum laeve,0.29
 Lux_35_2014,Lux_35,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-Lux_35_2014,Lux_35,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+Lux_35_2014,Lux_35,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 Lux_35_2014,Lux_35,seeded,2014-09-01,Tradescantia ohiensis,0.28
 Lux_35_2014,Lux_35,seeded,2014-09-01,Verbena stricta,0.27
 Lux_35_2014,Lux_35,seeded,2014-09-01,Zizia aptera,0.28
@@ -4400,7 +4400,7 @@ Lux_36_2014,Lux_36,seeded,2014-09-01,Ratibida pinnata,1.45
 Lux_36_2014,Lux_36,seeded,2014-09-01,Schizachyrium scoparium,1
 Lux_36_2014,Lux_36,seeded,2014-09-01,Sorghastrum nutans,1
 Lux_36_2014,Lux_36,seeded,2014-09-01,Sporobolus cryptandrus,1
-Lux_36_2014,Lux_36,seeded,2014-09-01,Symphyotrichum undulatum,1.76
+Lux_36_2014,Lux_36,seeded,2014-09-01,Symphyotrichum urophyllum,1.76
 Lux_36_2015,Lux_36,1,2015-09-16,Bromus inermis,0.4
 Lux_36_2015,Lux_36,1,2015-09-16,Centaurea stoebe,8
 Lux_36_2015,Lux_36,1,2015-09-16,Erigeron,2
@@ -4543,7 +4543,7 @@ Lux_37_2014,Lux_37,seeded,2014-09-01,Ratibida pinnata,1.45
 Lux_37_2014,Lux_37,seeded,2014-09-01,Schizachyrium scoparium,1
 Lux_37_2014,Lux_37,seeded,2014-09-01,Sorghastrum nutans,1
 Lux_37_2014,Lux_37,seeded,2014-09-01,Sporobolus cryptandrus,1
-Lux_37_2014,Lux_37,seeded,2014-09-01,Symphyotrichum undulatum,1.76
+Lux_37_2014,Lux_37,seeded,2014-09-01,Symphyotrichum urophyllum,1.76
 Lux_37_2015,Lux_37,1,2015-09-16,Achillea millefolium,1
 Lux_37_2015,Lux_37,1,2015-09-16,Bromus inermis,0.3
 Lux_37_2015,Lux_37,1,2015-09-16,Centaurea stoebe,6
@@ -4683,7 +4683,7 @@ Lux_38_2014,Lux_38,seeded,2014-09-01,Sporobolus cryptandrus,1
 Lux_38_2014,Lux_38,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 Lux_38_2014,Lux_38,seeded,2014-09-01,Symphyotrichum laeve,0.29
 Lux_38_2014,Lux_38,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-Lux_38_2014,Lux_38,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+Lux_38_2014,Lux_38,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 Lux_38_2014,Lux_38,seeded,2014-09-01,Tradescantia ohiensis,0.28
 Lux_38_2014,Lux_38,seeded,2014-09-01,Verbena stricta,0.27
 Lux_38_2014,Lux_38,seeded,2014-09-01,Zizia aptera,0.28
@@ -4871,7 +4871,7 @@ Lux_39_2014,Lux_39,seeded,2014-09-01,Ratibida pinnata,1.45
 Lux_39_2014,Lux_39,seeded,2014-09-01,Schizachyrium scoparium,1
 Lux_39_2014,Lux_39,seeded,2014-09-01,Sorghastrum nutans,1
 Lux_39_2014,Lux_39,seeded,2014-09-01,Sporobolus cryptandrus,1
-Lux_39_2014,Lux_39,seeded,2014-09-01,Symphyotrichum undulatum,1.76
+Lux_39_2014,Lux_39,seeded,2014-09-01,Symphyotrichum urophyllum,1.76
 Lux_39_2015,Lux_39,1,2015-09-16,Centaurea stoebe,14
 Lux_39_2015,Lux_39,1,2015-09-16,Digitaria,2
 Lux_39_2015,Lux_39,1,2015-09-16,Erigeron,1
@@ -5099,7 +5099,7 @@ Lux_40_2014,Lux_40,seeded,2014-09-01,Silphium terebinthinaceum,0.52
 Lux_40_2014,Lux_40,seeded,2014-09-01,Solidago rigida,0.64
 Lux_40_2014,Lux_40,seeded,2014-09-01,Sorghastrum nutans,1
 Lux_40_2014,Lux_40,seeded,2014-09-01,Sporobolus cryptandrus,1
-Lux_40_2014,Lux_40,seeded,2014-09-01,Symphyotrichum undulatum,0.59
+Lux_40_2014,Lux_40,seeded,2014-09-01,Symphyotrichum urophyllum,0.59
 Lux_40_2014,Lux_40,seeded,2014-09-01,Verbena stricta,0.49
 Lux_40_2015,Lux_40,1,2015-09-16,Bouteloua curtipendula,1
 Lux_40_2015,Lux_40,1,2015-09-16,Centaurea stoebe,1
@@ -5332,7 +5332,7 @@ Lux_42_2014,Lux_42,seeded,2014-09-01,Sporobolus cryptandrus,1
 Lux_42_2014,Lux_42,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 Lux_42_2014,Lux_42,seeded,2014-09-01,Symphyotrichum laeve,0.29
 Lux_42_2014,Lux_42,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-Lux_42_2014,Lux_42,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+Lux_42_2014,Lux_42,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 Lux_42_2014,Lux_42,seeded,2014-09-01,Tradescantia ohiensis,0.28
 Lux_42_2014,Lux_42,seeded,2014-09-01,Verbena stricta,0.27
 Lux_42_2014,Lux_42,seeded,2014-09-01,Zizia aptera,0.28
@@ -5493,7 +5493,7 @@ Lux_43_2014,Lux_43,seeded,2014-09-01,Rudbeckia hirta,0.81
 Lux_43_2014,Lux_43,seeded,2014-09-01,Schizachyrium scoparium,1
 Lux_43_2014,Lux_43,seeded,2014-09-01,Sorghastrum nutans,1
 Lux_43_2014,Lux_43,seeded,2014-09-01,Sporobolus cryptandrus,1
-Lux_43_2014,Lux_43,seeded,2014-09-01,Symphyotrichum undulatum,0.88
+Lux_43_2014,Lux_43,seeded,2014-09-01,Symphyotrichum urophyllum,0.88
 Lux_43_2014,Lux_43,seeded,2014-09-01,Verbena stricta,0.74
 Lux_43_2015,Lux_43,1,2015-09-16,Bromus inermis,1
 Lux_43_2015,Lux_43,1,2015-09-16,Centaurea stoebe,4
@@ -5623,7 +5623,7 @@ Lux_44_2014,Lux_44,seeded,2014-09-01,Rudbeckia hirta,0.81
 Lux_44_2014,Lux_44,seeded,2014-09-01,Schizachyrium scoparium,1
 Lux_44_2014,Lux_44,seeded,2014-09-01,Sorghastrum nutans,1
 Lux_44_2014,Lux_44,seeded,2014-09-01,Sporobolus cryptandrus,1
-Lux_44_2014,Lux_44,seeded,2014-09-01,Symphyotrichum undulatum,0.88
+Lux_44_2014,Lux_44,seeded,2014-09-01,Symphyotrichum urophyllum,0.88
 Lux_44_2014,Lux_44,seeded,2014-09-01,Verbena stricta,0.74
 Lux_44_2015,Lux_44,1,2015-09-16,Centaurea stoebe,3
 Lux_44_2015,Lux_44,1,2015-09-16,Echinacea purpurea,0.2
@@ -5770,7 +5770,7 @@ Lux_45_2014,Lux_45,seeded,2014-09-01,Rudbeckia hirta,0.81
 Lux_45_2014,Lux_45,seeded,2014-09-01,Schizachyrium scoparium,1
 Lux_45_2014,Lux_45,seeded,2014-09-01,Sorghastrum nutans,1
 Lux_45_2014,Lux_45,seeded,2014-09-01,Sporobolus cryptandrus,1
-Lux_45_2014,Lux_45,seeded,2014-09-01,Symphyotrichum undulatum,0.88
+Lux_45_2014,Lux_45,seeded,2014-09-01,Symphyotrichum urophyllum,0.88
 Lux_45_2014,Lux_45,seeded,2014-09-01,Verbena stricta,0.74
 Lux_45_2015,Lux_45,1,2015-09-16,Achillea millefolium,1
 Lux_45_2015,Lux_45,1,2015-09-16,Centaurea stoebe,7
@@ -5949,7 +5949,7 @@ Lux_46_2014,Lux_46,seeded,2014-09-01,Sporobolus cryptandrus,1
 Lux_46_2014,Lux_46,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 Lux_46_2014,Lux_46,seeded,2014-09-01,Symphyotrichum laeve,0.29
 Lux_46_2014,Lux_46,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-Lux_46_2014,Lux_46,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+Lux_46_2014,Lux_46,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 Lux_46_2014,Lux_46,seeded,2014-09-01,Tradescantia ohiensis,0.28
 Lux_46_2014,Lux_46,seeded,2014-09-01,Verbena stricta,0.27
 Lux_46_2014,Lux_46,seeded,2014-09-01,Zizia aptera,0.28
@@ -6110,7 +6110,7 @@ Lux_47_2014,Lux_47,seeded,2014-09-01,Sporobolus cryptandrus,1
 Lux_47_2014,Lux_47,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 Lux_47_2014,Lux_47,seeded,2014-09-01,Symphyotrichum laeve,0.29
 Lux_47_2014,Lux_47,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-Lux_47_2014,Lux_47,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+Lux_47_2014,Lux_47,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 Lux_47_2014,Lux_47,seeded,2014-09-01,Tradescantia ohiensis,0.28
 Lux_47_2014,Lux_47,seeded,2014-09-01,Verbena stricta,0.27
 Lux_47_2014,Lux_47,seeded,2014-09-01,Zizia aptera,0.28
@@ -6311,7 +6311,7 @@ Lux_48_2014,Lux_48,seeded,2014-09-01,Silphium terebinthinaceum,0.52
 Lux_48_2014,Lux_48,seeded,2014-09-01,Solidago rigida,0.64
 Lux_48_2014,Lux_48,seeded,2014-09-01,Sorghastrum nutans,1
 Lux_48_2014,Lux_48,seeded,2014-09-01,Sporobolus cryptandrus,1
-Lux_48_2014,Lux_48,seeded,2014-09-01,Symphyotrichum undulatum,0.59
+Lux_48_2014,Lux_48,seeded,2014-09-01,Symphyotrichum urophyllum,0.59
 Lux_48_2014,Lux_48,seeded,2014-09-01,Verbena stricta,0.49
 Lux_48_2015,Lux_48,1,2015-09-16,Achillea millefolium,6
 Lux_48_2015,Lux_48,1,2015-09-16,Centaurea stoebe,26
@@ -6504,7 +6504,7 @@ Lux_49_2014,Lux_49,seeded,2014-09-01,Silphium terebinthinaceum,0.52
 Lux_49_2014,Lux_49,seeded,2014-09-01,Solidago rigida,0.64
 Lux_49_2014,Lux_49,seeded,2014-09-01,Sorghastrum nutans,1
 Lux_49_2014,Lux_49,seeded,2014-09-01,Sporobolus cryptandrus,1
-Lux_49_2014,Lux_49,seeded,2014-09-01,Symphyotrichum undulatum,0.59
+Lux_49_2014,Lux_49,seeded,2014-09-01,Symphyotrichum urophyllum,0.59
 Lux_49_2014,Lux_49,seeded,2014-09-01,Verbena stricta,0.49
 Lux_49_2015,Lux_49,1,2015-09-16,Dichanthelium,10
 Lux_49_2015,Lux_49,1,2015-09-16,Elymus,2
@@ -6609,7 +6609,7 @@ Lux_5_2014,Lux_5,seeded,2014-09-01,Rudbeckia hirta,0.81
 Lux_5_2014,Lux_5,seeded,2014-09-01,Schizachyrium scoparium,1
 Lux_5_2014,Lux_5,seeded,2014-09-01,Sorghastrum nutans,1
 Lux_5_2014,Lux_5,seeded,2014-09-01,Sporobolus cryptandrus,1
-Lux_5_2014,Lux_5,seeded,2014-09-01,Symphyotrichum undulatum,0.88
+Lux_5_2014,Lux_5,seeded,2014-09-01,Symphyotrichum urophyllum,0.88
 Lux_5_2014,Lux_5,seeded,2014-09-01,Verbena stricta,0.74
 Lux_5_2015,Lux_5,1,2015-09-16,Centaurea stoebe,2
 Lux_5_2015,Lux_5,1,2015-09-16,Daucus carota,1
@@ -6716,7 +6716,7 @@ Lux_50_2014,Lux_50,seeded,2014-09-01,Ratibida pinnata,1.45
 Lux_50_2014,Lux_50,seeded,2014-09-01,Schizachyrium scoparium,1
 Lux_50_2014,Lux_50,seeded,2014-09-01,Sorghastrum nutans,1
 Lux_50_2014,Lux_50,seeded,2014-09-01,Sporobolus cryptandrus,1
-Lux_50_2014,Lux_50,seeded,2014-09-01,Symphyotrichum undulatum,1.76
+Lux_50_2014,Lux_50,seeded,2014-09-01,Symphyotrichum urophyllum,1.76
 Lux_50_2015,Lux_50,1,2015-09-16,Centaurea stoebe,4
 Lux_50_2015,Lux_50,1,2015-09-16,Coreopsis lanceolata,0.5
 Lux_50_2015,Lux_50,1,2015-09-16,Digitaria,2
@@ -6861,7 +6861,7 @@ Lux_51_2014,Lux_51,seeded,2014-09-01,Silphium terebinthinaceum,0.52
 Lux_51_2014,Lux_51,seeded,2014-09-01,Solidago rigida,0.64
 Lux_51_2014,Lux_51,seeded,2014-09-01,Sorghastrum nutans,1
 Lux_51_2014,Lux_51,seeded,2014-09-01,Sporobolus cryptandrus,1
-Lux_51_2014,Lux_51,seeded,2014-09-01,Symphyotrichum undulatum,0.59
+Lux_51_2014,Lux_51,seeded,2014-09-01,Symphyotrichum urophyllum,0.59
 Lux_51_2014,Lux_51,seeded,2014-09-01,Verbena stricta,0.49
 Lux_51_2015,Lux_51,1,2015-09-16,Achillea millefolium,1
 Lux_51_2015,Lux_51,1,2015-09-16,Bouteloua curtipendula,1
@@ -7043,7 +7043,7 @@ Lux_52_2014,Lux_52,seeded,2014-09-01,Silphium terebinthinaceum,0.52
 Lux_52_2014,Lux_52,seeded,2014-09-01,Solidago rigida,0.64
 Lux_52_2014,Lux_52,seeded,2014-09-01,Sorghastrum nutans,1
 Lux_52_2014,Lux_52,seeded,2014-09-01,Sporobolus cryptandrus,1
-Lux_52_2014,Lux_52,seeded,2014-09-01,Symphyotrichum undulatum,0.59
+Lux_52_2014,Lux_52,seeded,2014-09-01,Symphyotrichum urophyllum,0.59
 Lux_52_2014,Lux_52,seeded,2014-09-01,Verbena stricta,0.49
 Lux_52_2015,Lux_52,1,2015-09-16,Centaurea stoebe,18
 Lux_52_2015,Lux_52,1,2015-09-16,Erigeron,0.1
@@ -7197,7 +7197,7 @@ Lux_53_2014,Lux_53,seeded,2014-09-01,Ratibida pinnata,1.45
 Lux_53_2014,Lux_53,seeded,2014-09-01,Schizachyrium scoparium,1
 Lux_53_2014,Lux_53,seeded,2014-09-01,Sorghastrum nutans,1
 Lux_53_2014,Lux_53,seeded,2014-09-01,Sporobolus cryptandrus,1
-Lux_53_2014,Lux_53,seeded,2014-09-01,Symphyotrichum undulatum,1.76
+Lux_53_2014,Lux_53,seeded,2014-09-01,Symphyotrichum urophyllum,1.76
 Lux_53_2015,Lux_53,1,2015-09-16,Achillea millefolium,1
 Lux_53_2015,Lux_53,1,2015-09-16,Centaurea stoebe,23
 Lux_53_2015,Lux_53,1,2015-09-16,Coreopsis lanceolata,1
@@ -7481,7 +7481,7 @@ Lux_55_2014,Lux_55,seeded,2014-09-01,Sporobolus cryptandrus,1
 Lux_55_2014,Lux_55,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 Lux_55_2014,Lux_55,seeded,2014-09-01,Symphyotrichum laeve,0.29
 Lux_55_2014,Lux_55,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-Lux_55_2014,Lux_55,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+Lux_55_2014,Lux_55,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 Lux_55_2014,Lux_55,seeded,2014-09-01,Tradescantia ohiensis,0.28
 Lux_55_2014,Lux_55,seeded,2014-09-01,Verbena stricta,0.27
 Lux_55_2014,Lux_55,seeded,2014-09-01,Zizia aptera,0.28
@@ -7664,7 +7664,7 @@ Lux_56_2014,Lux_56,seeded,2014-09-01,Sporobolus cryptandrus,1
 Lux_56_2014,Lux_56,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 Lux_56_2014,Lux_56,seeded,2014-09-01,Symphyotrichum laeve,0.29
 Lux_56_2014,Lux_56,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-Lux_56_2014,Lux_56,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+Lux_56_2014,Lux_56,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 Lux_56_2014,Lux_56,seeded,2014-09-01,Tradescantia ohiensis,0.28
 Lux_56_2014,Lux_56,seeded,2014-09-01,Verbena stricta,0.27
 Lux_56_2014,Lux_56,seeded,2014-09-01,Zizia aptera,0.28
@@ -7851,7 +7851,7 @@ Lux_57_2014,Lux_57,seeded,2014-09-01,Sporobolus cryptandrus,1
 Lux_57_2014,Lux_57,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 Lux_57_2014,Lux_57,seeded,2014-09-01,Symphyotrichum laeve,0.29
 Lux_57_2014,Lux_57,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-Lux_57_2014,Lux_57,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+Lux_57_2014,Lux_57,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 Lux_57_2014,Lux_57,seeded,2014-09-01,Tradescantia ohiensis,0.28
 Lux_57_2014,Lux_57,seeded,2014-09-01,Verbena stricta,0.27
 Lux_57_2014,Lux_57,seeded,2014-09-01,Zizia aptera,0.28
@@ -8143,7 +8143,7 @@ Lux_59_2014,Lux_59,seeded,2014-09-01,Ratibida pinnata,1.45
 Lux_59_2014,Lux_59,seeded,2014-09-01,Schizachyrium scoparium,1
 Lux_59_2014,Lux_59,seeded,2014-09-01,Sorghastrum nutans,1
 Lux_59_2014,Lux_59,seeded,2014-09-01,Sporobolus cryptandrus,1
-Lux_59_2014,Lux_59,seeded,2014-09-01,Symphyotrichum undulatum,1.76
+Lux_59_2014,Lux_59,seeded,2014-09-01,Symphyotrichum urophyllum,1.76
 Lux_59_2015,Lux_59,1,2015-09-16,Centaurea stoebe,5
 Lux_59_2015,Lux_59,1,2015-09-16,Oxalis stricta,1
 Lux_59_2015,Lux_59,1,2015-09-16,Panicum capillare,57
@@ -8286,7 +8286,7 @@ Lux_6_2014,Lux_6,seeded,2014-09-01,Sporobolus cryptandrus,1
 Lux_6_2014,Lux_6,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 Lux_6_2014,Lux_6,seeded,2014-09-01,Symphyotrichum laeve,0.29
 Lux_6_2014,Lux_6,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-Lux_6_2014,Lux_6,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+Lux_6_2014,Lux_6,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 Lux_6_2014,Lux_6,seeded,2014-09-01,Tradescantia ohiensis,0.28
 Lux_6_2014,Lux_6,seeded,2014-09-01,Verbena stricta,0.27
 Lux_6_2014,Lux_6,seeded,2014-09-01,Zizia aptera,0.28
@@ -8462,7 +8462,7 @@ Lux_60_2014,Lux_60,seeded,2014-09-01,Silphium terebinthinaceum,0.52
 Lux_60_2014,Lux_60,seeded,2014-09-01,Solidago rigida,0.64
 Lux_60_2014,Lux_60,seeded,2014-09-01,Sorghastrum nutans,1
 Lux_60_2014,Lux_60,seeded,2014-09-01,Sporobolus cryptandrus,1
-Lux_60_2014,Lux_60,seeded,2014-09-01,Symphyotrichum undulatum,0.59
+Lux_60_2014,Lux_60,seeded,2014-09-01,Symphyotrichum urophyllum,0.59
 Lux_60_2014,Lux_60,seeded,2014-09-01,Verbena stricta,0.49
 Lux_60_2015,Lux_60,1,2015-09-16,Achillea millefolium,1
 Lux_60_2015,Lux_60,1,2015-09-16,Centaurea stoebe,11
@@ -8612,7 +8612,7 @@ Lux_7_2014,Lux_7,seeded,2014-09-01,Sporobolus cryptandrus,1
 Lux_7_2014,Lux_7,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 Lux_7_2014,Lux_7,seeded,2014-09-01,Symphyotrichum laeve,0.29
 Lux_7_2014,Lux_7,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-Lux_7_2014,Lux_7,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+Lux_7_2014,Lux_7,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 Lux_7_2014,Lux_7,seeded,2014-09-01,Tradescantia ohiensis,0.28
 Lux_7_2014,Lux_7,seeded,2014-09-01,Verbena stricta,0.27
 Lux_7_2014,Lux_7,seeded,2014-09-01,Zizia aptera,0.28
@@ -8809,7 +8809,7 @@ Lux_8_2014,Lux_8,seeded,2014-09-01,Rudbeckia hirta,0.81
 Lux_8_2014,Lux_8,seeded,2014-09-01,Schizachyrium scoparium,1
 Lux_8_2014,Lux_8,seeded,2014-09-01,Sorghastrum nutans,1
 Lux_8_2014,Lux_8,seeded,2014-09-01,Sporobolus cryptandrus,1
-Lux_8_2014,Lux_8,seeded,2014-09-01,Symphyotrichum undulatum,0.88
+Lux_8_2014,Lux_8,seeded,2014-09-01,Symphyotrichum urophyllum,0.88
 Lux_8_2014,Lux_8,seeded,2014-09-01,Verbena stricta,0.74
 Lux_8_2015,Lux_8,1,2015-09-16,Achillea millefolium,0.5
 Lux_8_2015,Lux_8,1,2015-09-16,Centaurea stoebe,5
@@ -8954,7 +8954,7 @@ Lux_9_2014,Lux_9,seeded,2014-09-01,Sporobolus cryptandrus,1
 Lux_9_2014,Lux_9,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 Lux_9_2014,Lux_9,seeded,2014-09-01,Symphyotrichum laeve,0.29
 Lux_9_2014,Lux_9,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-Lux_9_2014,Lux_9,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+Lux_9_2014,Lux_9,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 Lux_9_2014,Lux_9,seeded,2014-09-01,Tradescantia ohiensis,0.28
 Lux_9_2014,Lux_9,seeded,2014-09-01,Verbena stricta,0.27
 Lux_9_2014,Lux_9,seeded,2014-09-01,Zizia aptera,0.28
@@ -9128,7 +9128,7 @@ NWS_1_2014,NWS_1,seeded,2014-09-01,Ratibida pinnata,1.45
 NWS_1_2014,NWS_1,seeded,2014-09-01,Schizachyrium scoparium,1
 NWS_1_2014,NWS_1,seeded,2014-09-01,Sorghastrum nutans,1
 NWS_1_2014,NWS_1,seeded,2014-09-01,Sporobolus cryptandrus,1
-NWS_1_2014,NWS_1,seeded,2014-09-01,Symphyotrichum undulatum,1.76
+NWS_1_2014,NWS_1,seeded,2014-09-01,Symphyotrichum urophyllum,1.76
 NWS_1_2015,NWS_1,1,2015-09-14,Bromus inermis,12
 NWS_1_2015,NWS_1,1,2015-09-14,Centaurea stoebe,25
 NWS_1_2015,NWS_1,1,2015-09-14,Chenopodium album,1
@@ -9212,7 +9212,7 @@ NWS_10_2014,NWS_10,seeded,2014-09-01,Silphium terebinthinaceum,0.52
 NWS_10_2014,NWS_10,seeded,2014-09-01,Solidago rigida,0.64
 NWS_10_2014,NWS_10,seeded,2014-09-01,Sorghastrum nutans,1
 NWS_10_2014,NWS_10,seeded,2014-09-01,Sporobolus cryptandrus,1
-NWS_10_2014,NWS_10,seeded,2014-09-01,Symphyotrichum undulatum,0.59
+NWS_10_2014,NWS_10,seeded,2014-09-01,Symphyotrichum urophyllum,0.59
 NWS_10_2014,NWS_10,seeded,2014-09-01,Verbena stricta,0.49
 NWS_10_2015,NWS_10,1,2015-09-14,Bouteloua curtipendula,2
 NWS_10_2015,NWS_10,1,2015-09-14,Centaurea stoebe,8
@@ -9295,7 +9295,7 @@ NWS_11_2014,NWS_11,seeded,2014-09-01,Sporobolus cryptandrus,1
 NWS_11_2014,NWS_11,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 NWS_11_2014,NWS_11,seeded,2014-09-01,Symphyotrichum laeve,0.29
 NWS_11_2014,NWS_11,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-NWS_11_2014,NWS_11,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+NWS_11_2014,NWS_11,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 NWS_11_2014,NWS_11,seeded,2014-09-01,Tradescantia ohiensis,0.28
 NWS_11_2014,NWS_11,seeded,2014-09-01,Verbena stricta,0.27
 NWS_11_2014,NWS_11,seeded,2014-09-01,Zizia aptera,0.28
@@ -9364,7 +9364,7 @@ NWS_12_2014,NWS_12,seeded,2014-09-01,Silphium terebinthinaceum,0.52
 NWS_12_2014,NWS_12,seeded,2014-09-01,Solidago rigida,0.64
 NWS_12_2014,NWS_12,seeded,2014-09-01,Sorghastrum nutans,1
 NWS_12_2014,NWS_12,seeded,2014-09-01,Sporobolus cryptandrus,1
-NWS_12_2014,NWS_12,seeded,2014-09-01,Symphyotrichum undulatum,0.59
+NWS_12_2014,NWS_12,seeded,2014-09-01,Symphyotrichum urophyllum,0.59
 NWS_12_2014,NWS_12,seeded,2014-09-01,Verbena stricta,0.49
 NWS_12_2015,NWS_12,1,2015-09-14,Berteroa incana,4
 NWS_12_2015,NWS_12,1,2015-09-14,Bromus inermis,6
@@ -9460,7 +9460,7 @@ NWS_13_2014,NWS_13,seeded,2014-09-01,Sporobolus cryptandrus,1
 NWS_13_2014,NWS_13,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 NWS_13_2014,NWS_13,seeded,2014-09-01,Symphyotrichum laeve,0.29
 NWS_13_2014,NWS_13,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-NWS_13_2014,NWS_13,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+NWS_13_2014,NWS_13,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 NWS_13_2014,NWS_13,seeded,2014-09-01,Tradescantia ohiensis,0.28
 NWS_13_2014,NWS_13,seeded,2014-09-01,Verbena stricta,0.27
 NWS_13_2014,NWS_13,seeded,2014-09-01,Zizia aptera,0.28
@@ -9548,7 +9548,7 @@ NWS_14_2014,NWS_14,seeded,2014-09-01,Sporobolus cryptandrus,1
 NWS_14_2014,NWS_14,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 NWS_14_2014,NWS_14,seeded,2014-09-01,Symphyotrichum laeve,0.29
 NWS_14_2014,NWS_14,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-NWS_14_2014,NWS_14,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+NWS_14_2014,NWS_14,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 NWS_14_2014,NWS_14,seeded,2014-09-01,Tradescantia ohiensis,0.28
 NWS_14_2014,NWS_14,seeded,2014-09-01,Verbena stricta,0.27
 NWS_14_2014,NWS_14,seeded,2014-09-01,Zizia aptera,0.28
@@ -9653,7 +9653,7 @@ NWS_15_2014,NWS_15,seeded,2014-09-01,Sporobolus cryptandrus,1
 NWS_15_2014,NWS_15,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 NWS_15_2014,NWS_15,seeded,2014-09-01,Symphyotrichum laeve,0.29
 NWS_15_2014,NWS_15,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-NWS_15_2014,NWS_15,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+NWS_15_2014,NWS_15,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 NWS_15_2014,NWS_15,seeded,2014-09-01,Tradescantia ohiensis,0.28
 NWS_15_2014,NWS_15,seeded,2014-09-01,Verbena stricta,0.27
 NWS_15_2014,NWS_15,seeded,2014-09-01,Zizia aptera,0.28
@@ -9715,7 +9715,7 @@ NWS_16_2014,NWS_16,seeded,2014-09-01,Ratibida pinnata,1.45
 NWS_16_2014,NWS_16,seeded,2014-09-01,Schizachyrium scoparium,1
 NWS_16_2014,NWS_16,seeded,2014-09-01,Sorghastrum nutans,1
 NWS_16_2014,NWS_16,seeded,2014-09-01,Sporobolus cryptandrus,1
-NWS_16_2014,NWS_16,seeded,2014-09-01,Symphyotrichum undulatum,1.76
+NWS_16_2014,NWS_16,seeded,2014-09-01,Symphyotrichum urophyllum,1.76
 NWS_16_2015,NWS_16,1,2015-09-14,Centaurea stoebe,18
 NWS_16_2015,NWS_16,1,2015-09-14,Elymus canadensis,3
 NWS_16_2015,NWS_16,1,2015-09-14,Panicum capillare,1
@@ -9782,7 +9782,7 @@ NWS_17_2014,NWS_17,seeded,2014-09-01,Silphium terebinthinaceum,0.52
 NWS_17_2014,NWS_17,seeded,2014-09-01,Solidago rigida,0.64
 NWS_17_2014,NWS_17,seeded,2014-09-01,Sorghastrum nutans,1
 NWS_17_2014,NWS_17,seeded,2014-09-01,Sporobolus cryptandrus,1
-NWS_17_2014,NWS_17,seeded,2014-09-01,Symphyotrichum undulatum,0.59
+NWS_17_2014,NWS_17,seeded,2014-09-01,Symphyotrichum urophyllum,0.59
 NWS_17_2014,NWS_17,seeded,2014-09-01,Verbena stricta,0.49
 NWS_17_2015,NWS_17,1,2015-09-14,Bouteloua curtipendula,1
 NWS_17_2015,NWS_17,1,2015-09-14,Bromus inermis,4
@@ -9869,7 +9869,7 @@ NWS_18_2014,NWS_18,seeded,2014-09-01,Sporobolus cryptandrus,1
 NWS_18_2014,NWS_18,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 NWS_18_2014,NWS_18,seeded,2014-09-01,Symphyotrichum laeve,0.29
 NWS_18_2014,NWS_18,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-NWS_18_2014,NWS_18,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+NWS_18_2014,NWS_18,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 NWS_18_2014,NWS_18,seeded,2014-09-01,Tradescantia ohiensis,0.28
 NWS_18_2014,NWS_18,seeded,2014-09-01,Verbena stricta,0.27
 NWS_18_2014,NWS_18,seeded,2014-09-01,Zizia aptera,0.28
@@ -9940,7 +9940,7 @@ NWS_19_2014,NWS_19,seeded,2014-09-01,Rudbeckia hirta,0.81
 NWS_19_2014,NWS_19,seeded,2014-09-01,Schizachyrium scoparium,1
 NWS_19_2014,NWS_19,seeded,2014-09-01,Sorghastrum nutans,1
 NWS_19_2014,NWS_19,seeded,2014-09-01,Sporobolus cryptandrus,1
-NWS_19_2014,NWS_19,seeded,2014-09-01,Symphyotrichum undulatum,0.88
+NWS_19_2014,NWS_19,seeded,2014-09-01,Symphyotrichum urophyllum,0.88
 NWS_19_2014,NWS_19,seeded,2014-09-01,Verbena stricta,0.74
 NWS_19_2015,NWS_19,1,2015-09-14,Berteroa incana,7
 NWS_19_2015,NWS_19,1,2015-09-14,Bouteloua curtipendula,0.2
@@ -10015,7 +10015,7 @@ NWS_2_2014,NWS_2,seeded,2014-09-01,Rudbeckia hirta,0.81
 NWS_2_2014,NWS_2,seeded,2014-09-01,Schizachyrium scoparium,1
 NWS_2_2014,NWS_2,seeded,2014-09-01,Sorghastrum nutans,1
 NWS_2_2014,NWS_2,seeded,2014-09-01,Sporobolus cryptandrus,1
-NWS_2_2014,NWS_2,seeded,2014-09-01,Symphyotrichum undulatum,0.88
+NWS_2_2014,NWS_2,seeded,2014-09-01,Symphyotrichum urophyllum,0.88
 NWS_2_2014,NWS_2,seeded,2014-09-01,Verbena stricta,0.74
 NWS_2_2015,NWS_2,1,2015-09-14,Berteroa incana,20
 NWS_2_2015,NWS_2,1,2015-09-14,Bromus inermis,7
@@ -10085,7 +10085,7 @@ NWS_20_2014,NWS_20,seeded,2014-09-01,Ratibida pinnata,1.45
 NWS_20_2014,NWS_20,seeded,2014-09-01,Schizachyrium scoparium,1
 NWS_20_2014,NWS_20,seeded,2014-09-01,Sorghastrum nutans,1
 NWS_20_2014,NWS_20,seeded,2014-09-01,Sporobolus cryptandrus,1
-NWS_20_2014,NWS_20,seeded,2014-09-01,Symphyotrichum undulatum,1.76
+NWS_20_2014,NWS_20,seeded,2014-09-01,Symphyotrichum urophyllum,1.76
 NWS_20_2015,NWS_20,1,2015-09-14,Berteroa incana,1
 NWS_20_2015,NWS_20,1,2015-09-14,Centaurea stoebe,35
 NWS_20_2015,NWS_20,1,2015-09-14,Chenopodium album,2
@@ -10167,7 +10167,7 @@ NWS_21_2014,NWS_21,seeded,2014-09-01,Silphium terebinthinaceum,0.52
 NWS_21_2014,NWS_21,seeded,2014-09-01,Solidago rigida,0.64
 NWS_21_2014,NWS_21,seeded,2014-09-01,Sorghastrum nutans,1
 NWS_21_2014,NWS_21,seeded,2014-09-01,Sporobolus cryptandrus,1
-NWS_21_2014,NWS_21,seeded,2014-09-01,Symphyotrichum undulatum,0.59
+NWS_21_2014,NWS_21,seeded,2014-09-01,Symphyotrichum urophyllum,0.59
 NWS_21_2014,NWS_21,seeded,2014-09-01,Verbena stricta,0.49
 NWS_21_2015,NWS_21,1,2015-09-14,Bouteloua curtipendula,2
 NWS_21_2015,NWS_21,1,2015-09-14,Bromus inermis,0.5
@@ -10232,7 +10232,7 @@ NWS_22_2014,NWS_22,seeded,2014-09-01,Ratibida pinnata,1.45
 NWS_22_2014,NWS_22,seeded,2014-09-01,Schizachyrium scoparium,1
 NWS_22_2014,NWS_22,seeded,2014-09-01,Sorghastrum nutans,1
 NWS_22_2014,NWS_22,seeded,2014-09-01,Sporobolus cryptandrus,1
-NWS_22_2014,NWS_22,seeded,2014-09-01,Symphyotrichum undulatum,1.76
+NWS_22_2014,NWS_22,seeded,2014-09-01,Symphyotrichum urophyllum,1.76
 NWS_22_2015,NWS_22,1,2015-09-14,Berteroa incana,2
 NWS_22_2015,NWS_22,1,2015-09-14,Bromus inermis,1
 NWS_22_2015,NWS_22,1,2015-09-14,Centaurea stoebe,25
@@ -10300,7 +10300,7 @@ NWS_23_2014,NWS_23,seeded,2014-09-01,Silphium terebinthinaceum,0.52
 NWS_23_2014,NWS_23,seeded,2014-09-01,Solidago rigida,0.64
 NWS_23_2014,NWS_23,seeded,2014-09-01,Sorghastrum nutans,1
 NWS_23_2014,NWS_23,seeded,2014-09-01,Sporobolus cryptandrus,1
-NWS_23_2014,NWS_23,seeded,2014-09-01,Symphyotrichum undulatum,0.59
+NWS_23_2014,NWS_23,seeded,2014-09-01,Symphyotrichum urophyllum,0.59
 NWS_23_2014,NWS_23,seeded,2014-09-01,Verbena stricta,0.49
 NWS_23_2015,NWS_23,1,2015-09-14,Berteroa incana,6
 NWS_23_2015,NWS_23,1,2015-09-14,Bromus inermis,0.5
@@ -10411,7 +10411,7 @@ NWS_25_2014,NWS_25,seeded,2014-09-01,Rudbeckia hirta,0.81
 NWS_25_2014,NWS_25,seeded,2014-09-01,Schizachyrium scoparium,1
 NWS_25_2014,NWS_25,seeded,2014-09-01,Sorghastrum nutans,1
 NWS_25_2014,NWS_25,seeded,2014-09-01,Sporobolus cryptandrus,1
-NWS_25_2014,NWS_25,seeded,2014-09-01,Symphyotrichum undulatum,0.88
+NWS_25_2014,NWS_25,seeded,2014-09-01,Symphyotrichum urophyllum,0.88
 NWS_25_2014,NWS_25,seeded,2014-09-01,Verbena stricta,0.74
 NWS_25_2015,NWS_25,1,2015-09-14,Bouteloua curtipendula,2
 NWS_25_2015,NWS_25,1,2015-09-14,Centaurea stoebe,19
@@ -10471,7 +10471,7 @@ NWS_26_2014,NWS_26,seeded,2014-09-01,Rudbeckia hirta,0.81
 NWS_26_2014,NWS_26,seeded,2014-09-01,Schizachyrium scoparium,1
 NWS_26_2014,NWS_26,seeded,2014-09-01,Sorghastrum nutans,1
 NWS_26_2014,NWS_26,seeded,2014-09-01,Sporobolus cryptandrus,1
-NWS_26_2014,NWS_26,seeded,2014-09-01,Symphyotrichum undulatum,0.88
+NWS_26_2014,NWS_26,seeded,2014-09-01,Symphyotrichum urophyllum,0.88
 NWS_26_2014,NWS_26,seeded,2014-09-01,Verbena stricta,0.74
 NWS_26_2015,NWS_26,1,2015-09-14,Amaranthus,1
 NWS_26_2015,NWS_26,1,2015-09-14,Berteroa incana,8
@@ -10557,7 +10557,7 @@ NWS_27_2014,NWS_27,seeded,2014-09-01,Sporobolus cryptandrus,1
 NWS_27_2014,NWS_27,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 NWS_27_2014,NWS_27,seeded,2014-09-01,Symphyotrichum laeve,0.29
 NWS_27_2014,NWS_27,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-NWS_27_2014,NWS_27,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+NWS_27_2014,NWS_27,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 NWS_27_2014,NWS_27,seeded,2014-09-01,Tradescantia ohiensis,0.28
 NWS_27_2014,NWS_27,seeded,2014-09-01,Verbena stricta,0.27
 NWS_27_2014,NWS_27,seeded,2014-09-01,Zizia aptera,0.28
@@ -10624,7 +10624,7 @@ NWS_28_2014,NWS_28,seeded,2014-09-01,Silphium terebinthinaceum,0.52
 NWS_28_2014,NWS_28,seeded,2014-09-01,Solidago rigida,0.64
 NWS_28_2014,NWS_28,seeded,2014-09-01,Sorghastrum nutans,1
 NWS_28_2014,NWS_28,seeded,2014-09-01,Sporobolus cryptandrus,1
-NWS_28_2014,NWS_28,seeded,2014-09-01,Symphyotrichum undulatum,0.59
+NWS_28_2014,NWS_28,seeded,2014-09-01,Symphyotrichum urophyllum,0.59
 NWS_28_2014,NWS_28,seeded,2014-09-01,Verbena stricta,0.49
 NWS_28_2015,NWS_28,1,2015-09-14,Bromus inermis,35
 NWS_28_2015,NWS_28,1,2015-09-14,Centaurea stoebe,9
@@ -10714,7 +10714,7 @@ NWS_29_2014,NWS_29,seeded,2014-09-01,Sporobolus cryptandrus,1
 NWS_29_2014,NWS_29,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 NWS_29_2014,NWS_29,seeded,2014-09-01,Symphyotrichum laeve,0.29
 NWS_29_2014,NWS_29,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-NWS_29_2014,NWS_29,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+NWS_29_2014,NWS_29,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 NWS_29_2014,NWS_29,seeded,2014-09-01,Tradescantia ohiensis,0.28
 NWS_29_2014,NWS_29,seeded,2014-09-01,Verbena stricta,0.27
 NWS_29_2014,NWS_29,seeded,2014-09-01,Zizia aptera,0.28
@@ -10769,7 +10769,7 @@ NWS_3_2014,NWS_3,seeded,2014-09-01,Ratibida pinnata,1.45
 NWS_3_2014,NWS_3,seeded,2014-09-01,Schizachyrium scoparium,1
 NWS_3_2014,NWS_3,seeded,2014-09-01,Sorghastrum nutans,1
 NWS_3_2014,NWS_3,seeded,2014-09-01,Sporobolus cryptandrus,1
-NWS_3_2014,NWS_3,seeded,2014-09-01,Symphyotrichum undulatum,1.76
+NWS_3_2014,NWS_3,seeded,2014-09-01,Symphyotrichum urophyllum,1.76
 NWS_3_2015,NWS_3,1,2015-09-14,Berteroa incana,2
 NWS_3_2015,NWS_3,1,2015-09-14,Bromus inermis,25
 NWS_3_2015,NWS_3,1,2015-09-14,Centaurea stoebe,30
@@ -10848,7 +10848,7 @@ NWS_30_2014,NWS_30,seeded,2014-09-01,Silphium terebinthinaceum,0.52
 NWS_30_2014,NWS_30,seeded,2014-09-01,Solidago rigida,0.64
 NWS_30_2014,NWS_30,seeded,2014-09-01,Sorghastrum nutans,1
 NWS_30_2014,NWS_30,seeded,2014-09-01,Sporobolus cryptandrus,1
-NWS_30_2014,NWS_30,seeded,2014-09-01,Symphyotrichum undulatum,0.59
+NWS_30_2014,NWS_30,seeded,2014-09-01,Symphyotrichum urophyllum,0.59
 NWS_30_2014,NWS_30,seeded,2014-09-01,Verbena stricta,0.49
 NWS_30_2015,NWS_30,1,2015-09-14,Bouteloua curtipendula,0.6
 NWS_30_2015,NWS_30,1,2015-09-14,Bromus inermis,3
@@ -10923,7 +10923,7 @@ NWS_31_2014,NWS_31,seeded,2014-09-01,Silphium terebinthinaceum,0.52
 NWS_31_2014,NWS_31,seeded,2014-09-01,Solidago rigida,0.64
 NWS_31_2014,NWS_31,seeded,2014-09-01,Sorghastrum nutans,1
 NWS_31_2014,NWS_31,seeded,2014-09-01,Sporobolus cryptandrus,1
-NWS_31_2014,NWS_31,seeded,2014-09-01,Symphyotrichum undulatum,0.59
+NWS_31_2014,NWS_31,seeded,2014-09-01,Symphyotrichum urophyllum,0.59
 NWS_31_2014,NWS_31,seeded,2014-09-01,Verbena stricta,0.49
 NWS_31_2015,NWS_31,1,2015-09-14,Arabidopsis thaliana,0.1
 NWS_31_2015,NWS_31,1,2015-09-14,Bouteloua curtipendula,3
@@ -10998,7 +10998,7 @@ NWS_32_2014,NWS_32,seeded,2014-09-01,Rudbeckia hirta,0.81
 NWS_32_2014,NWS_32,seeded,2014-09-01,Schizachyrium scoparium,1
 NWS_32_2014,NWS_32,seeded,2014-09-01,Sorghastrum nutans,1
 NWS_32_2014,NWS_32,seeded,2014-09-01,Sporobolus cryptandrus,1
-NWS_32_2014,NWS_32,seeded,2014-09-01,Symphyotrichum undulatum,0.88
+NWS_32_2014,NWS_32,seeded,2014-09-01,Symphyotrichum urophyllum,0.88
 NWS_32_2014,NWS_32,seeded,2014-09-01,Verbena stricta,0.74
 NWS_32_2015,NWS_32,1,2015-09-14,Bromus inermis,4
 NWS_32_2015,NWS_32,1,2015-09-14,Centaurea stoebe,25
@@ -11073,7 +11073,7 @@ NWS_33_2014,NWS_33,seeded,2014-09-01,Silphium terebinthinaceum,0.52
 NWS_33_2014,NWS_33,seeded,2014-09-01,Solidago rigida,0.64
 NWS_33_2014,NWS_33,seeded,2014-09-01,Sorghastrum nutans,1
 NWS_33_2014,NWS_33,seeded,2014-09-01,Sporobolus cryptandrus,1
-NWS_33_2014,NWS_33,seeded,2014-09-01,Symphyotrichum undulatum,0.59
+NWS_33_2014,NWS_33,seeded,2014-09-01,Symphyotrichum urophyllum,0.59
 NWS_33_2014,NWS_33,seeded,2014-09-01,Verbena stricta,0.49
 NWS_33_2015,NWS_33,1,2015-09-14,Berteroa incana,2
 NWS_33_2015,NWS_33,1,2015-09-14,Centaurea stoebe,30
@@ -11133,7 +11133,7 @@ NWS_34_2014,NWS_34,seeded,2014-09-01,Rudbeckia hirta,0.81
 NWS_34_2014,NWS_34,seeded,2014-09-01,Schizachyrium scoparium,1
 NWS_34_2014,NWS_34,seeded,2014-09-01,Sorghastrum nutans,1
 NWS_34_2014,NWS_34,seeded,2014-09-01,Sporobolus cryptandrus,1
-NWS_34_2014,NWS_34,seeded,2014-09-01,Symphyotrichum undulatum,0.88
+NWS_34_2014,NWS_34,seeded,2014-09-01,Symphyotrichum urophyllum,0.88
 NWS_34_2014,NWS_34,seeded,2014-09-01,Verbena stricta,0.74
 NWS_34_2015,NWS_34,1,2015-09-14,Bromus inermis,2
 NWS_34_2015,NWS_34,1,2015-09-14,Centaurea stoebe,15
@@ -11197,7 +11197,7 @@ NWS_35_2014,NWS_35,seeded,2014-09-01,Ratibida pinnata,1.45
 NWS_35_2014,NWS_35,seeded,2014-09-01,Schizachyrium scoparium,1
 NWS_35_2014,NWS_35,seeded,2014-09-01,Sorghastrum nutans,1
 NWS_35_2014,NWS_35,seeded,2014-09-01,Sporobolus cryptandrus,1
-NWS_35_2014,NWS_35,seeded,2014-09-01,Symphyotrichum undulatum,1.76
+NWS_35_2014,NWS_35,seeded,2014-09-01,Symphyotrichum urophyllum,1.76
 NWS_35_2015,NWS_35,1,2015-09-14,Berteroa incana,0.3
 NWS_35_2015,NWS_35,1,2015-09-14,Bouteloua curtipendula,1
 NWS_35_2015,NWS_35,1,2015-09-14,Bromus inermis,12
@@ -11289,7 +11289,7 @@ NWS_36_2014,NWS_36,seeded,2014-09-01,Sporobolus cryptandrus,1
 NWS_36_2014,NWS_36,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 NWS_36_2014,NWS_36,seeded,2014-09-01,Symphyotrichum laeve,0.29
 NWS_36_2014,NWS_36,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-NWS_36_2014,NWS_36,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+NWS_36_2014,NWS_36,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 NWS_36_2014,NWS_36,seeded,2014-09-01,Tradescantia ohiensis,0.28
 NWS_36_2014,NWS_36,seeded,2014-09-01,Verbena stricta,0.27
 NWS_36_2014,NWS_36,seeded,2014-09-01,Zizia aptera,0.28
@@ -11358,7 +11358,7 @@ NWS_37_2014,NWS_37,seeded,2014-09-01,Ratibida pinnata,1.45
 NWS_37_2014,NWS_37,seeded,2014-09-01,Schizachyrium scoparium,1
 NWS_37_2014,NWS_37,seeded,2014-09-01,Sorghastrum nutans,1
 NWS_37_2014,NWS_37,seeded,2014-09-01,Sporobolus cryptandrus,1
-NWS_37_2014,NWS_37,seeded,2014-09-01,Symphyotrichum undulatum,1.76
+NWS_37_2014,NWS_37,seeded,2014-09-01,Symphyotrichum urophyllum,1.76
 NWS_37_2015,NWS_37,1,2015-09-14,Ambrosia artemisiifolia,2
 NWS_37_2015,NWS_37,1,2015-09-14,Bouteloua curtipendula,2
 NWS_37_2015,NWS_37,1,2015-09-14,Bromus kalmii,0.3
@@ -11423,7 +11423,7 @@ NWS_38_2014,NWS_38,seeded,2014-09-01,Rudbeckia hirta,0.81
 NWS_38_2014,NWS_38,seeded,2014-09-01,Schizachyrium scoparium,1
 NWS_38_2014,NWS_38,seeded,2014-09-01,Sorghastrum nutans,1
 NWS_38_2014,NWS_38,seeded,2014-09-01,Sporobolus cryptandrus,1
-NWS_38_2014,NWS_38,seeded,2014-09-01,Symphyotrichum undulatum,0.88
+NWS_38_2014,NWS_38,seeded,2014-09-01,Symphyotrichum urophyllum,0.88
 NWS_38_2014,NWS_38,seeded,2014-09-01,Verbena stricta,0.74
 NWS_38_2015,NWS_38,1,2015-09-14,Bromus inermis,10
 NWS_38_2015,NWS_38,1,2015-09-14,Centaurea stoebe,40
@@ -11500,7 +11500,7 @@ NWS_39_2014,NWS_39,seeded,2014-09-01,Rudbeckia hirta,0.81
 NWS_39_2014,NWS_39,seeded,2014-09-01,Schizachyrium scoparium,1
 NWS_39_2014,NWS_39,seeded,2014-09-01,Sorghastrum nutans,1
 NWS_39_2014,NWS_39,seeded,2014-09-01,Sporobolus cryptandrus,1
-NWS_39_2014,NWS_39,seeded,2014-09-01,Symphyotrichum undulatum,0.88
+NWS_39_2014,NWS_39,seeded,2014-09-01,Symphyotrichum urophyllum,0.88
 NWS_39_2014,NWS_39,seeded,2014-09-01,Verbena stricta,0.74
 NWS_39_2015,NWS_39,1,2015-09-14,Centaurea stoebe,56
 NWS_39_2015,NWS_39,1,2015-09-14,Elymus canadensis,4
@@ -11618,7 +11618,7 @@ NWS_40_2014,NWS_40,seeded,2014-09-01,Rudbeckia hirta,0.81
 NWS_40_2014,NWS_40,seeded,2014-09-01,Schizachyrium scoparium,1
 NWS_40_2014,NWS_40,seeded,2014-09-01,Sorghastrum nutans,1
 NWS_40_2014,NWS_40,seeded,2014-09-01,Sporobolus cryptandrus,1
-NWS_40_2014,NWS_40,seeded,2014-09-01,Symphyotrichum undulatum,0.88
+NWS_40_2014,NWS_40,seeded,2014-09-01,Symphyotrichum urophyllum,0.88
 NWS_40_2014,NWS_40,seeded,2014-09-01,Verbena stricta,0.74
 NWS_40_2015,NWS_40,1,2015-09-14,Bromus inermis,5
 NWS_40_2015,NWS_40,1,2015-09-14,Centaurea stoebe,30
@@ -11685,7 +11685,7 @@ NWS_41_2014,NWS_41,seeded,2014-09-01,Silphium terebinthinaceum,0.52
 NWS_41_2014,NWS_41,seeded,2014-09-01,Solidago rigida,0.64
 NWS_41_2014,NWS_41,seeded,2014-09-01,Sorghastrum nutans,1
 NWS_41_2014,NWS_41,seeded,2014-09-01,Sporobolus cryptandrus,1
-NWS_41_2014,NWS_41,seeded,2014-09-01,Symphyotrichum undulatum,0.59
+NWS_41_2014,NWS_41,seeded,2014-09-01,Symphyotrichum urophyllum,0.59
 NWS_41_2014,NWS_41,seeded,2014-09-01,Verbena stricta,0.49
 NWS_41_2015,NWS_41,1,2015-09-14,Bromus inermis,1
 NWS_41_2015,NWS_41,1,2015-09-14,Centaurea stoebe,50
@@ -11763,7 +11763,7 @@ NWS_42_2014,NWS_42,seeded,2014-09-01,Sporobolus cryptandrus,1
 NWS_42_2014,NWS_42,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 NWS_42_2014,NWS_42,seeded,2014-09-01,Symphyotrichum laeve,0.29
 NWS_42_2014,NWS_42,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-NWS_42_2014,NWS_42,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+NWS_42_2014,NWS_42,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 NWS_42_2014,NWS_42,seeded,2014-09-01,Tradescantia ohiensis,0.28
 NWS_42_2014,NWS_42,seeded,2014-09-01,Verbena stricta,0.27
 NWS_42_2014,NWS_42,seeded,2014-09-01,Zizia aptera,0.28
@@ -11845,7 +11845,7 @@ NWS_43_2014,NWS_43,seeded,2014-09-01,Sporobolus cryptandrus,1
 NWS_43_2014,NWS_43,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 NWS_43_2014,NWS_43,seeded,2014-09-01,Symphyotrichum laeve,0.29
 NWS_43_2014,NWS_43,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-NWS_43_2014,NWS_43,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+NWS_43_2014,NWS_43,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 NWS_43_2014,NWS_43,seeded,2014-09-01,Tradescantia ohiensis,0.28
 NWS_43_2014,NWS_43,seeded,2014-09-01,Verbena stricta,0.27
 NWS_43_2014,NWS_43,seeded,2014-09-01,Zizia aptera,0.28
@@ -11929,7 +11929,7 @@ NWS_44_2014,NWS_44,seeded,2014-09-01,Sporobolus cryptandrus,1
 NWS_44_2014,NWS_44,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 NWS_44_2014,NWS_44,seeded,2014-09-01,Symphyotrichum laeve,0.29
 NWS_44_2014,NWS_44,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-NWS_44_2014,NWS_44,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+NWS_44_2014,NWS_44,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 NWS_44_2014,NWS_44,seeded,2014-09-01,Tradescantia ohiensis,0.28
 NWS_44_2014,NWS_44,seeded,2014-09-01,Verbena stricta,0.27
 NWS_44_2014,NWS_44,seeded,2014-09-01,Zizia aptera,0.28
@@ -11986,7 +11986,7 @@ NWS_45_2014,NWS_45,seeded,2014-09-01,Ratibida pinnata,1.45
 NWS_45_2014,NWS_45,seeded,2014-09-01,Schizachyrium scoparium,1
 NWS_45_2014,NWS_45,seeded,2014-09-01,Sorghastrum nutans,1
 NWS_45_2014,NWS_45,seeded,2014-09-01,Sporobolus cryptandrus,1
-NWS_45_2014,NWS_45,seeded,2014-09-01,Symphyotrichum undulatum,1.76
+NWS_45_2014,NWS_45,seeded,2014-09-01,Symphyotrichum urophyllum,1.76
 NWS_45_2015,NWS_45,1,2015-09-14,Berteroa incana,1
 NWS_45_2015,NWS_45,1,2015-09-14,Bromus inermis,2
 NWS_45_2015,NWS_45,1,2015-09-14,Centaurea stoebe,12
@@ -12065,7 +12065,7 @@ NWS_46_2014,NWS_46,seeded,2014-09-01,Sporobolus cryptandrus,1
 NWS_46_2014,NWS_46,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 NWS_46_2014,NWS_46,seeded,2014-09-01,Symphyotrichum laeve,0.29
 NWS_46_2014,NWS_46,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-NWS_46_2014,NWS_46,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+NWS_46_2014,NWS_46,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 NWS_46_2014,NWS_46,seeded,2014-09-01,Tradescantia ohiensis,0.28
 NWS_46_2014,NWS_46,seeded,2014-09-01,Verbena stricta,0.27
 NWS_46_2014,NWS_46,seeded,2014-09-01,Zizia aptera,0.28
@@ -12153,7 +12153,7 @@ NWS_47_2014,NWS_47,seeded,2014-09-01,Sporobolus cryptandrus,1
 NWS_47_2014,NWS_47,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 NWS_47_2014,NWS_47,seeded,2014-09-01,Symphyotrichum laeve,0.29
 NWS_47_2014,NWS_47,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-NWS_47_2014,NWS_47,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+NWS_47_2014,NWS_47,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 NWS_47_2014,NWS_47,seeded,2014-09-01,Tradescantia ohiensis,0.28
 NWS_47_2014,NWS_47,seeded,2014-09-01,Verbena stricta,0.27
 NWS_47_2014,NWS_47,seeded,2014-09-01,Zizia aptera,0.28
@@ -12290,7 +12290,7 @@ NWS_49_2014,NWS_49,seeded,2014-09-01,Sporobolus cryptandrus,1
 NWS_49_2014,NWS_49,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 NWS_49_2014,NWS_49,seeded,2014-09-01,Symphyotrichum laeve,0.29
 NWS_49_2014,NWS_49,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-NWS_49_2014,NWS_49,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+NWS_49_2014,NWS_49,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 NWS_49_2014,NWS_49,seeded,2014-09-01,Tradescantia ohiensis,0.28
 NWS_49_2014,NWS_49,seeded,2014-09-01,Verbena stricta,0.27
 NWS_49_2014,NWS_49,seeded,2014-09-01,Zizia aptera,0.28
@@ -12390,7 +12390,7 @@ NWS_5_2014,NWS_5,seeded,2014-09-01,Sporobolus cryptandrus,1
 NWS_5_2014,NWS_5,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 NWS_5_2014,NWS_5,seeded,2014-09-01,Symphyotrichum laeve,0.29
 NWS_5_2014,NWS_5,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-NWS_5_2014,NWS_5,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+NWS_5_2014,NWS_5,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 NWS_5_2014,NWS_5,seeded,2014-09-01,Tradescantia ohiensis,0.28
 NWS_5_2014,NWS_5,seeded,2014-09-01,Verbena stricta,0.27
 NWS_5_2014,NWS_5,seeded,2014-09-01,Zizia aptera,0.28
@@ -12513,7 +12513,7 @@ NWS_51_2014,NWS_51,seeded,2014-09-01,Silphium terebinthinaceum,0.52
 NWS_51_2014,NWS_51,seeded,2014-09-01,Solidago rigida,0.64
 NWS_51_2014,NWS_51,seeded,2014-09-01,Sorghastrum nutans,1
 NWS_51_2014,NWS_51,seeded,2014-09-01,Sporobolus cryptandrus,1
-NWS_51_2014,NWS_51,seeded,2014-09-01,Symphyotrichum undulatum,0.59
+NWS_51_2014,NWS_51,seeded,2014-09-01,Symphyotrichum urophyllum,0.59
 NWS_51_2014,NWS_51,seeded,2014-09-01,Verbena stricta,0.49
 NWS_51_2015,NWS_51,1,2015-09-14,Asclepias syriaca,0.03
 NWS_51_2015,NWS_51,1,2015-09-14,Berteroa incana,5
@@ -12579,7 +12579,7 @@ NWS_52_2014,NWS_52,seeded,2014-09-01,Ratibida pinnata,1.45
 NWS_52_2014,NWS_52,seeded,2014-09-01,Schizachyrium scoparium,1
 NWS_52_2014,NWS_52,seeded,2014-09-01,Sorghastrum nutans,1
 NWS_52_2014,NWS_52,seeded,2014-09-01,Sporobolus cryptandrus,1
-NWS_52_2014,NWS_52,seeded,2014-09-01,Symphyotrichum undulatum,1.76
+NWS_52_2014,NWS_52,seeded,2014-09-01,Symphyotrichum urophyllum,1.76
 NWS_52_2015,NWS_52,1,2015-09-14,Bouteloua curtipendula,1
 NWS_52_2015,NWS_52,1,2015-09-14,Centaurea stoebe,38
 NWS_52_2015,NWS_52,1,2015-09-14,Elymus canadensis,3
@@ -12640,7 +12640,7 @@ NWS_53_2014,NWS_53,seeded,2014-09-01,Rudbeckia hirta,0.81
 NWS_53_2014,NWS_53,seeded,2014-09-01,Schizachyrium scoparium,1
 NWS_53_2014,NWS_53,seeded,2014-09-01,Sorghastrum nutans,1
 NWS_53_2014,NWS_53,seeded,2014-09-01,Sporobolus cryptandrus,1
-NWS_53_2014,NWS_53,seeded,2014-09-01,Symphyotrichum undulatum,0.88
+NWS_53_2014,NWS_53,seeded,2014-09-01,Symphyotrichum urophyllum,0.88
 NWS_53_2014,NWS_53,seeded,2014-09-01,Verbena stricta,0.74
 NWS_53_2015,NWS_53,1,2015-09-14,Berteroa incana,1
 NWS_53_2015,NWS_53,1,2015-09-14,Centaurea stoebe,12
@@ -12705,7 +12705,7 @@ NWS_54_2014,NWS_54,seeded,2014-09-01,Rudbeckia hirta,0.81
 NWS_54_2014,NWS_54,seeded,2014-09-01,Schizachyrium scoparium,1
 NWS_54_2014,NWS_54,seeded,2014-09-01,Sorghastrum nutans,1
 NWS_54_2014,NWS_54,seeded,2014-09-01,Sporobolus cryptandrus,1
-NWS_54_2014,NWS_54,seeded,2014-09-01,Symphyotrichum undulatum,0.88
+NWS_54_2014,NWS_54,seeded,2014-09-01,Symphyotrichum urophyllum,0.88
 NWS_54_2014,NWS_54,seeded,2014-09-01,Verbena stricta,0.74
 NWS_54_2015,NWS_54,1,2015-09-14,Centaurea stoebe,11
 NWS_54_2015,NWS_54,1,2015-09-14,Coreopsis lanceolata,0.3
@@ -12763,7 +12763,7 @@ NWS_55_2014,NWS_55,seeded,2014-09-01,Ratibida pinnata,1.45
 NWS_55_2014,NWS_55,seeded,2014-09-01,Schizachyrium scoparium,1
 NWS_55_2014,NWS_55,seeded,2014-09-01,Sorghastrum nutans,1
 NWS_55_2014,NWS_55,seeded,2014-09-01,Sporobolus cryptandrus,1
-NWS_55_2014,NWS_55,seeded,2014-09-01,Symphyotrichum undulatum,1.76
+NWS_55_2014,NWS_55,seeded,2014-09-01,Symphyotrichum urophyllum,1.76
 NWS_55_2015,NWS_55,1,2015-09-14,Centaurea stoebe,6
 NWS_55_2015,NWS_55,1,2015-09-14,Chenopodium album,0.4
 NWS_55_2015,NWS_55,1,2015-09-14,Digitaria,2
@@ -12837,7 +12837,7 @@ NWS_56_2014,NWS_56,seeded,2014-09-01,Sporobolus cryptandrus,1
 NWS_56_2014,NWS_56,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 NWS_56_2014,NWS_56,seeded,2014-09-01,Symphyotrichum laeve,0.29
 NWS_56_2014,NWS_56,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-NWS_56_2014,NWS_56,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+NWS_56_2014,NWS_56,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 NWS_56_2014,NWS_56,seeded,2014-09-01,Tradescantia ohiensis,0.28
 NWS_56_2014,NWS_56,seeded,2014-09-01,Verbena stricta,0.27
 NWS_56_2014,NWS_56,seeded,2014-09-01,Zizia aptera,0.28
@@ -12916,7 +12916,7 @@ NWS_57_2014,NWS_57,seeded,2014-09-01,Sporobolus cryptandrus,1
 NWS_57_2014,NWS_57,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 NWS_57_2014,NWS_57,seeded,2014-09-01,Symphyotrichum laeve,0.29
 NWS_57_2014,NWS_57,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-NWS_57_2014,NWS_57,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+NWS_57_2014,NWS_57,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 NWS_57_2014,NWS_57,seeded,2014-09-01,Tradescantia ohiensis,0.28
 NWS_57_2014,NWS_57,seeded,2014-09-01,Verbena stricta,0.27
 NWS_57_2014,NWS_57,seeded,2014-09-01,Zizia aptera,0.28
@@ -12976,7 +12976,7 @@ NWS_58_2014,NWS_58,seeded,2014-09-01,Ratibida pinnata,1.45
 NWS_58_2014,NWS_58,seeded,2014-09-01,Schizachyrium scoparium,1
 NWS_58_2014,NWS_58,seeded,2014-09-01,Sorghastrum nutans,1
 NWS_58_2014,NWS_58,seeded,2014-09-01,Sporobolus cryptandrus,1
-NWS_58_2014,NWS_58,seeded,2014-09-01,Symphyotrichum undulatum,1.76
+NWS_58_2014,NWS_58,seeded,2014-09-01,Symphyotrichum urophyllum,1.76
 NWS_58_2015,NWS_58,1,2015-09-14,Bouteloua curtipendula,0.4
 NWS_58_2015,NWS_58,1,2015-09-14,Centaurea stoebe,15
 NWS_58_2015,NWS_58,1,2015-09-14,Chenopodium album,0.4
@@ -13156,7 +13156,7 @@ NWS_60_2014,NWS_60,seeded,2014-09-01,Silphium terebinthinaceum,0.52
 NWS_60_2014,NWS_60,seeded,2014-09-01,Solidago rigida,0.64
 NWS_60_2014,NWS_60,seeded,2014-09-01,Sorghastrum nutans,1
 NWS_60_2014,NWS_60,seeded,2014-09-01,Sporobolus cryptandrus,1
-NWS_60_2014,NWS_60,seeded,2014-09-01,Symphyotrichum undulatum,0.59
+NWS_60_2014,NWS_60,seeded,2014-09-01,Symphyotrichum urophyllum,0.59
 NWS_60_2014,NWS_60,seeded,2014-09-01,Verbena stricta,0.49
 NWS_60_2015,NWS_60,1,2015-09-14,Bromus inermis,6
 NWS_60_2015,NWS_60,1,2015-09-14,Centaurea stoebe,7
@@ -13203,7 +13203,7 @@ NWS_7_2014,NWS_7,seeded,2014-09-01,Ratibida pinnata,1.45
 NWS_7_2014,NWS_7,seeded,2014-09-01,Schizachyrium scoparium,1
 NWS_7_2014,NWS_7,seeded,2014-09-01,Sorghastrum nutans,1
 NWS_7_2014,NWS_7,seeded,2014-09-01,Sporobolus cryptandrus,1
-NWS_7_2014,NWS_7,seeded,2014-09-01,Symphyotrichum undulatum,1.76
+NWS_7_2014,NWS_7,seeded,2014-09-01,Symphyotrichum urophyllum,1.76
 NWS_7_2015,NWS_7,1,2015-09-14,Asclepias syriaca,2
 NWS_7_2015,NWS_7,1,2015-09-14,Asteraceae,4
 NWS_7_2015,NWS_7,1,2015-09-14,Berteroa incana,2
@@ -13279,7 +13279,7 @@ NWS_8_2014,NWS_8,seeded,2014-09-01,Rudbeckia hirta,0.81
 NWS_8_2014,NWS_8,seeded,2014-09-01,Schizachyrium scoparium,1
 NWS_8_2014,NWS_8,seeded,2014-09-01,Sorghastrum nutans,1
 NWS_8_2014,NWS_8,seeded,2014-09-01,Sporobolus cryptandrus,1
-NWS_8_2014,NWS_8,seeded,2014-09-01,Symphyotrichum undulatum,0.88
+NWS_8_2014,NWS_8,seeded,2014-09-01,Symphyotrichum urophyllum,0.88
 NWS_8_2014,NWS_8,seeded,2014-09-01,Verbena stricta,0.74
 NWS_8_2015,NWS_8,1,2015-09-14,Berteroa incana,2
 NWS_8_2015,NWS_8,1,2015-09-14,Bouteloua curtipendula,2
@@ -13362,7 +13362,7 @@ NWS_9_2014,NWS_9,seeded,2014-09-01,Sporobolus cryptandrus,1
 NWS_9_2014,NWS_9,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 NWS_9_2014,NWS_9,seeded,2014-09-01,Symphyotrichum laeve,0.29
 NWS_9_2014,NWS_9,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-NWS_9_2014,NWS_9,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+NWS_9_2014,NWS_9,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 NWS_9_2014,NWS_9,seeded,2014-09-01,Tradescantia ohiensis,0.28
 NWS_9_2014,NWS_9,seeded,2014-09-01,Verbena stricta,0.27
 NWS_9_2014,NWS_9,seeded,2014-09-01,Zizia aptera,0.28
@@ -13445,7 +13445,7 @@ SWS_1_2014,SWS_1,seeded,2014-09-01,Silphium terebinthinaceum,0.52
 SWS_1_2014,SWS_1,seeded,2014-09-01,Solidago rigida,0.64
 SWS_1_2014,SWS_1,seeded,2014-09-01,Sorghastrum nutans,1
 SWS_1_2014,SWS_1,seeded,2014-09-01,Sporobolus cryptandrus,1
-SWS_1_2014,SWS_1,seeded,2014-09-01,Symphyotrichum undulatum,0.59
+SWS_1_2014,SWS_1,seeded,2014-09-01,Symphyotrichum urophyllum,0.59
 SWS_1_2014,SWS_1,seeded,2014-09-01,Verbena stricta,0.49
 SWS_1_2015,SWS_1,1,2015-09-23,Dichanthelium,15
 SWS_1_2015,SWS_1,1,2015-09-23,Elymus,8
@@ -13541,7 +13541,7 @@ SWS_10_2014,SWS_10,seeded,2014-09-01,Rudbeckia hirta,0.81
 SWS_10_2014,SWS_10,seeded,2014-09-01,Schizachyrium scoparium,1
 SWS_10_2014,SWS_10,seeded,2014-09-01,Sorghastrum nutans,1
 SWS_10_2014,SWS_10,seeded,2014-09-01,Sporobolus cryptandrus,1
-SWS_10_2014,SWS_10,seeded,2014-09-01,Symphyotrichum undulatum,0.88
+SWS_10_2014,SWS_10,seeded,2014-09-01,Symphyotrichum urophyllum,0.88
 SWS_10_2014,SWS_10,seeded,2014-09-01,Verbena stricta,0.74
 SWS_10_2015,SWS_10,1,2015-09-23,Digitaria,18
 SWS_10_2015,SWS_10,1,2015-09-23,Elymus,5
@@ -13640,7 +13640,7 @@ SWS_11_2014,SWS_11,seeded,2014-09-01,Sporobolus cryptandrus,1
 SWS_11_2014,SWS_11,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 SWS_11_2014,SWS_11,seeded,2014-09-01,Symphyotrichum laeve,0.29
 SWS_11_2014,SWS_11,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-SWS_11_2014,SWS_11,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+SWS_11_2014,SWS_11,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 SWS_11_2014,SWS_11,seeded,2014-09-01,Tradescantia ohiensis,0.28
 SWS_11_2014,SWS_11,seeded,2014-09-01,Verbena stricta,0.27
 SWS_11_2014,SWS_11,seeded,2014-09-01,Zizia aptera,0.28
@@ -13820,7 +13820,7 @@ SWS_13_2014,SWS_13,seeded,2014-09-01,Silphium terebinthinaceum,0.52
 SWS_13_2014,SWS_13,seeded,2014-09-01,Solidago rigida,0.64
 SWS_13_2014,SWS_13,seeded,2014-09-01,Sorghastrum nutans,1
 SWS_13_2014,SWS_13,seeded,2014-09-01,Sporobolus cryptandrus,1
-SWS_13_2014,SWS_13,seeded,2014-09-01,Symphyotrichum undulatum,0.59
+SWS_13_2014,SWS_13,seeded,2014-09-01,Symphyotrichum urophyllum,0.59
 SWS_13_2014,SWS_13,seeded,2014-09-01,Verbena stricta,0.49
 SWS_13_2015,SWS_13,1,2015-09-23,Allium vineale,1
 SWS_13_2015,SWS_13,1,2015-09-23,Digitaria,5
@@ -13901,7 +13901,7 @@ SWS_14_2014,SWS_14,seeded,2014-09-01,Rudbeckia hirta,0.81
 SWS_14_2014,SWS_14,seeded,2014-09-01,Schizachyrium scoparium,1
 SWS_14_2014,SWS_14,seeded,2014-09-01,Sorghastrum nutans,1
 SWS_14_2014,SWS_14,seeded,2014-09-01,Sporobolus cryptandrus,1
-SWS_14_2014,SWS_14,seeded,2014-09-01,Symphyotrichum undulatum,0.88
+SWS_14_2014,SWS_14,seeded,2014-09-01,Symphyotrichum urophyllum,0.88
 SWS_14_2014,SWS_14,seeded,2014-09-01,Verbena stricta,0.74
 SWS_14_2015,SWS_14,1,2015-09-23,Asclepias syriaca,2
 SWS_14_2015,SWS_14,1,2015-09-23,Chenopodium album,6
@@ -13987,7 +13987,7 @@ SWS_15_2014,SWS_15,seeded,2014-09-01,Silphium terebinthinaceum,0.52
 SWS_15_2014,SWS_15,seeded,2014-09-01,Solidago rigida,0.64
 SWS_15_2014,SWS_15,seeded,2014-09-01,Sorghastrum nutans,1
 SWS_15_2014,SWS_15,seeded,2014-09-01,Sporobolus cryptandrus,1
-SWS_15_2014,SWS_15,seeded,2014-09-01,Symphyotrichum undulatum,0.59
+SWS_15_2014,SWS_15,seeded,2014-09-01,Symphyotrichum urophyllum,0.59
 SWS_15_2014,SWS_15,seeded,2014-09-01,Verbena stricta,0.49
 SWS_15_2015,SWS_15,1,2015-09-23,Chenopodium album,10
 SWS_15_2015,SWS_15,1,2015-09-23,Dichanthelium,1
@@ -14084,7 +14084,7 @@ SWS_16_2014,SWS_16,seeded,2014-09-01,Rudbeckia hirta,0.81
 SWS_16_2014,SWS_16,seeded,2014-09-01,Schizachyrium scoparium,1
 SWS_16_2014,SWS_16,seeded,2014-09-01,Sorghastrum nutans,1
 SWS_16_2014,SWS_16,seeded,2014-09-01,Sporobolus cryptandrus,1
-SWS_16_2014,SWS_16,seeded,2014-09-01,Symphyotrichum undulatum,0.88
+SWS_16_2014,SWS_16,seeded,2014-09-01,Symphyotrichum urophyllum,0.88
 SWS_16_2014,SWS_16,seeded,2014-09-01,Verbena stricta,0.74
 SWS_16_2015,SWS_16,1,2015-09-23,Chenopodium album,1
 SWS_16_2015,SWS_16,1,2015-09-23,Dichanthelium,1
@@ -14188,7 +14188,7 @@ SWS_17_2014,SWS_17,seeded,2014-09-01,Sporobolus cryptandrus,1
 SWS_17_2014,SWS_17,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 SWS_17_2014,SWS_17,seeded,2014-09-01,Symphyotrichum laeve,0.29
 SWS_17_2014,SWS_17,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-SWS_17_2014,SWS_17,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+SWS_17_2014,SWS_17,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 SWS_17_2014,SWS_17,seeded,2014-09-01,Tradescantia ohiensis,0.28
 SWS_17_2014,SWS_17,seeded,2014-09-01,Verbena stricta,0.27
 SWS_17_2014,SWS_17,seeded,2014-09-01,Zizia aptera,0.28
@@ -14280,7 +14280,7 @@ SWS_18_2014,SWS_18,seeded,2014-09-01,Ratibida pinnata,1.45
 SWS_18_2014,SWS_18,seeded,2014-09-01,Schizachyrium scoparium,1
 SWS_18_2014,SWS_18,seeded,2014-09-01,Sorghastrum nutans,1
 SWS_18_2014,SWS_18,seeded,2014-09-01,Sporobolus cryptandrus,1
-SWS_18_2014,SWS_18,seeded,2014-09-01,Symphyotrichum undulatum,1.76
+SWS_18_2014,SWS_18,seeded,2014-09-01,Symphyotrichum urophyllum,1.76
 SWS_18_2015,SWS_18,1,2015-09-23,Berteroa incana,2
 SWS_18_2015,SWS_18,1,2015-09-23,Dichanthelium,2
 SWS_18_2015,SWS_18,1,2015-09-23,Digitaria,6
@@ -14368,7 +14368,7 @@ SWS_19_2014,SWS_19,seeded,2014-09-01,Sporobolus cryptandrus,1
 SWS_19_2014,SWS_19,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 SWS_19_2014,SWS_19,seeded,2014-09-01,Symphyotrichum laeve,0.29
 SWS_19_2014,SWS_19,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-SWS_19_2014,SWS_19,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+SWS_19_2014,SWS_19,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 SWS_19_2014,SWS_19,seeded,2014-09-01,Tradescantia ohiensis,0.28
 SWS_19_2014,SWS_19,seeded,2014-09-01,Verbena stricta,0.27
 SWS_19_2014,SWS_19,seeded,2014-09-01,Zizia aptera,0.28
@@ -14481,7 +14481,7 @@ SWS_2_2014,SWS_2,seeded,2014-09-01,Rudbeckia hirta,0.81
 SWS_2_2014,SWS_2,seeded,2014-09-01,Schizachyrium scoparium,1
 SWS_2_2014,SWS_2,seeded,2014-09-01,Sorghastrum nutans,1
 SWS_2_2014,SWS_2,seeded,2014-09-01,Sporobolus cryptandrus,1
-SWS_2_2014,SWS_2,seeded,2014-09-01,Symphyotrichum undulatum,0.88
+SWS_2_2014,SWS_2,seeded,2014-09-01,Symphyotrichum urophyllum,0.88
 SWS_2_2014,SWS_2,seeded,2014-09-01,Verbena stricta,0.74
 SWS_2_2015,SWS_2,1,2015-09-23,Allium vineale,0.2
 SWS_2_2015,SWS_2,1,2015-09-23,Chenopodium album,0.4
@@ -14556,7 +14556,7 @@ SWS_20_2014,SWS_20,seeded,2014-09-01,Ratibida pinnata,1.45
 SWS_20_2014,SWS_20,seeded,2014-09-01,Schizachyrium scoparium,1
 SWS_20_2014,SWS_20,seeded,2014-09-01,Sorghastrum nutans,1
 SWS_20_2014,SWS_20,seeded,2014-09-01,Sporobolus cryptandrus,1
-SWS_20_2014,SWS_20,seeded,2014-09-01,Symphyotrichum undulatum,1.76
+SWS_20_2014,SWS_20,seeded,2014-09-01,Symphyotrichum urophyllum,1.76
 SWS_20_2015,SWS_20,1,2015-09-23,Chenopodium album,3
 SWS_20_2015,SWS_20,1,2015-09-23,Digitaria,25
 SWS_20_2015,SWS_20,1,2015-09-23,Mollugo verticillata,30
@@ -14631,7 +14631,7 @@ SWS_21_2014,SWS_21,seeded,2014-09-01,Silphium terebinthinaceum,0.52
 SWS_21_2014,SWS_21,seeded,2014-09-01,Solidago rigida,0.64
 SWS_21_2014,SWS_21,seeded,2014-09-01,Sorghastrum nutans,1
 SWS_21_2014,SWS_21,seeded,2014-09-01,Sporobolus cryptandrus,1
-SWS_21_2014,SWS_21,seeded,2014-09-01,Symphyotrichum undulatum,0.59
+SWS_21_2014,SWS_21,seeded,2014-09-01,Symphyotrichum urophyllum,0.59
 SWS_21_2014,SWS_21,seeded,2014-09-01,Verbena stricta,0.49
 SWS_21_2015,SWS_21,1,2015-09-23,Asclepias tuberosa,1
 SWS_21_2015,SWS_21,1,2015-09-23,Dichanthelium,4
@@ -14718,7 +14718,7 @@ SWS_22_2014,SWS_22,seeded,2014-09-01,Ratibida pinnata,1.45
 SWS_22_2014,SWS_22,seeded,2014-09-01,Schizachyrium scoparium,1
 SWS_22_2014,SWS_22,seeded,2014-09-01,Sorghastrum nutans,1
 SWS_22_2014,SWS_22,seeded,2014-09-01,Sporobolus cryptandrus,1
-SWS_22_2014,SWS_22,seeded,2014-09-01,Symphyotrichum undulatum,1.76
+SWS_22_2014,SWS_22,seeded,2014-09-01,Symphyotrichum urophyllum,1.76
 SWS_22_2015,SWS_22,1,2015-09-23,Ambrosia artemisiifolia,10
 SWS_22_2015,SWS_22,1,2015-09-23,Dichanthelium,6
 SWS_22_2015,SWS_22,1,2015-09-23,Elymus,0.2
@@ -14820,7 +14820,7 @@ SWS_23_2014,SWS_23,seeded,2014-09-01,Sporobolus cryptandrus,1
 SWS_23_2014,SWS_23,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 SWS_23_2014,SWS_23,seeded,2014-09-01,Symphyotrichum laeve,0.29
 SWS_23_2014,SWS_23,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-SWS_23_2014,SWS_23,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+SWS_23_2014,SWS_23,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 SWS_23_2014,SWS_23,seeded,2014-09-01,Tradescantia ohiensis,0.28
 SWS_23_2014,SWS_23,seeded,2014-09-01,Verbena stricta,0.27
 SWS_23_2014,SWS_23,seeded,2014-09-01,Zizia aptera,0.28
@@ -14978,7 +14978,7 @@ SWS_25_2014,SWS_25,seeded,2014-09-01,Rudbeckia hirta,0.81
 SWS_25_2014,SWS_25,seeded,2014-09-01,Schizachyrium scoparium,1
 SWS_25_2014,SWS_25,seeded,2014-09-01,Sorghastrum nutans,1
 SWS_25_2014,SWS_25,seeded,2014-09-01,Sporobolus cryptandrus,1
-SWS_25_2014,SWS_25,seeded,2014-09-01,Symphyotrichum undulatum,0.88
+SWS_25_2014,SWS_25,seeded,2014-09-01,Symphyotrichum urophyllum,0.88
 SWS_25_2014,SWS_25,seeded,2014-09-01,Verbena stricta,0.74
 SWS_25_2015,SWS_25,1,2015-09-23,Amaranthus,0.5
 SWS_25_2015,SWS_25,1,2015-09-23,Chenopodium album,0.05
@@ -15091,7 +15091,7 @@ SWS_26_2014,SWS_26,seeded,2014-09-01,Sporobolus cryptandrus,1
 SWS_26_2014,SWS_26,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 SWS_26_2014,SWS_26,seeded,2014-09-01,Symphyotrichum laeve,0.29
 SWS_26_2014,SWS_26,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-SWS_26_2014,SWS_26,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+SWS_26_2014,SWS_26,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 SWS_26_2014,SWS_26,seeded,2014-09-01,Tradescantia ohiensis,0.28
 SWS_26_2014,SWS_26,seeded,2014-09-01,Verbena stricta,0.27
 SWS_26_2014,SWS_26,seeded,2014-09-01,Zizia aptera,0.28
@@ -15171,7 +15171,7 @@ SWS_27_2014,SWS_27,seeded,2014-09-01,Ratibida pinnata,1.45
 SWS_27_2014,SWS_27,seeded,2014-09-01,Schizachyrium scoparium,1
 SWS_27_2014,SWS_27,seeded,2014-09-01,Sorghastrum nutans,1
 SWS_27_2014,SWS_27,seeded,2014-09-01,Sporobolus cryptandrus,1
-SWS_27_2014,SWS_27,seeded,2014-09-01,Symphyotrichum undulatum,1.76
+SWS_27_2014,SWS_27,seeded,2014-09-01,Symphyotrichum urophyllum,1.76
 SWS_27_2015,SWS_27,1,2015-09-23,Dichanthelium,48
 SWS_27_2015,SWS_27,1,2015-09-23,Digitaria,10
 SWS_27_2015,SWS_27,1,2015-09-23,Plantago lanceolata,8
@@ -15254,7 +15254,7 @@ SWS_28_2014,SWS_28,seeded,2014-09-01,Rudbeckia hirta,0.81
 SWS_28_2014,SWS_28,seeded,2014-09-01,Schizachyrium scoparium,1
 SWS_28_2014,SWS_28,seeded,2014-09-01,Sorghastrum nutans,1
 SWS_28_2014,SWS_28,seeded,2014-09-01,Sporobolus cryptandrus,1
-SWS_28_2014,SWS_28,seeded,2014-09-01,Symphyotrichum undulatum,0.88
+SWS_28_2014,SWS_28,seeded,2014-09-01,Symphyotrichum urophyllum,0.88
 SWS_28_2014,SWS_28,seeded,2014-09-01,Verbena stricta,0.74
 SWS_28_2015,SWS_28,1,2015-09-23,Digitaria,5
 SWS_28_2015,SWS_28,1,2015-09-23,Elymus repens,6
@@ -15373,7 +15373,7 @@ SWS_29_2014,SWS_29,seeded,2014-09-01,Sporobolus cryptandrus,1
 SWS_29_2014,SWS_29,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 SWS_29_2014,SWS_29,seeded,2014-09-01,Symphyotrichum laeve,0.29
 SWS_29_2014,SWS_29,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-SWS_29_2014,SWS_29,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+SWS_29_2014,SWS_29,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 SWS_29_2014,SWS_29,seeded,2014-09-01,Tradescantia ohiensis,0.28
 SWS_29_2014,SWS_29,seeded,2014-09-01,Verbena stricta,0.27
 SWS_29_2014,SWS_29,seeded,2014-09-01,Zizia aptera,0.28
@@ -15485,7 +15485,7 @@ SWS_3_2014,SWS_3,seeded,2014-09-01,Rudbeckia hirta,0.81
 SWS_3_2014,SWS_3,seeded,2014-09-01,Schizachyrium scoparium,1
 SWS_3_2014,SWS_3,seeded,2014-09-01,Sorghastrum nutans,1
 SWS_3_2014,SWS_3,seeded,2014-09-01,Sporobolus cryptandrus,1
-SWS_3_2014,SWS_3,seeded,2014-09-01,Symphyotrichum undulatum,0.88
+SWS_3_2014,SWS_3,seeded,2014-09-01,Symphyotrichum urophyllum,0.88
 SWS_3_2014,SWS_3,seeded,2014-09-01,Verbena stricta,0.74
 SWS_3_2015,SWS_3,1,2015-09-23,Allium vineale,0.4
 SWS_3_2015,SWS_3,1,2015-09-23,Dichanthelium,0.3
@@ -15556,7 +15556,7 @@ SWS_30_2014,SWS_30,seeded,2014-09-01,Silphium terebinthinaceum,0.52
 SWS_30_2014,SWS_30,seeded,2014-09-01,Solidago rigida,0.64
 SWS_30_2014,SWS_30,seeded,2014-09-01,Sorghastrum nutans,1
 SWS_30_2014,SWS_30,seeded,2014-09-01,Sporobolus cryptandrus,1
-SWS_30_2014,SWS_30,seeded,2014-09-01,Symphyotrichum undulatum,0.59
+SWS_30_2014,SWS_30,seeded,2014-09-01,Symphyotrichum urophyllum,0.59
 SWS_30_2014,SWS_30,seeded,2014-09-01,Verbena stricta,0.49
 SWS_30_2015,SWS_30,1,2015-09-23,Dichanthelium,15
 SWS_30_2015,SWS_30,1,2015-09-23,Digitaria,4
@@ -15655,7 +15655,7 @@ SWS_31_2014,SWS_31,seeded,2014-09-01,Sporobolus cryptandrus,1
 SWS_31_2014,SWS_31,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 SWS_31_2014,SWS_31,seeded,2014-09-01,Symphyotrichum laeve,0.29
 SWS_31_2014,SWS_31,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-SWS_31_2014,SWS_31,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+SWS_31_2014,SWS_31,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 SWS_31_2014,SWS_31,seeded,2014-09-01,Tradescantia ohiensis,0.28
 SWS_31_2014,SWS_31,seeded,2014-09-01,Verbena stricta,0.27
 SWS_31_2014,SWS_31,seeded,2014-09-01,Zizia aptera,0.28
@@ -15731,7 +15731,7 @@ SWS_32_2014,SWS_32,seeded,2014-09-01,Ratibida pinnata,1.45
 SWS_32_2014,SWS_32,seeded,2014-09-01,Schizachyrium scoparium,1
 SWS_32_2014,SWS_32,seeded,2014-09-01,Sorghastrum nutans,1
 SWS_32_2014,SWS_32,seeded,2014-09-01,Sporobolus cryptandrus,1
-SWS_32_2014,SWS_32,seeded,2014-09-01,Symphyotrichum undulatum,1.76
+SWS_32_2014,SWS_32,seeded,2014-09-01,Symphyotrichum urophyllum,1.76
 SWS_32_2015,SWS_32,1,2015-09-23,Digitaria,78
 SWS_32_2015,SWS_32,1,2015-09-23,Elymus,15
 SWS_32_2015,SWS_32,1,2015-09-23,Oxalis stricta,2
@@ -15797,7 +15797,7 @@ SWS_33_2014,SWS_33,seeded,2014-09-01,Silphium terebinthinaceum,0.52
 SWS_33_2014,SWS_33,seeded,2014-09-01,Solidago rigida,0.64
 SWS_33_2014,SWS_33,seeded,2014-09-01,Sorghastrum nutans,1
 SWS_33_2014,SWS_33,seeded,2014-09-01,Sporobolus cryptandrus,1
-SWS_33_2014,SWS_33,seeded,2014-09-01,Symphyotrichum undulatum,0.59
+SWS_33_2014,SWS_33,seeded,2014-09-01,Symphyotrichum urophyllum,0.59
 SWS_33_2014,SWS_33,seeded,2014-09-01,Verbena stricta,0.49
 SWS_33_2015,SWS_33,1,2015-09-23,Digitaria,45
 SWS_33_2015,SWS_33,1,2015-09-23,Elymus repens,10
@@ -15849,7 +15849,7 @@ SWS_34_2014,SWS_34,seeded,2014-09-01,Ratibida pinnata,1.45
 SWS_34_2014,SWS_34,seeded,2014-09-01,Schizachyrium scoparium,1
 SWS_34_2014,SWS_34,seeded,2014-09-01,Sorghastrum nutans,1
 SWS_34_2014,SWS_34,seeded,2014-09-01,Sporobolus cryptandrus,1
-SWS_34_2014,SWS_34,seeded,2014-09-01,Symphyotrichum undulatum,1.76
+SWS_34_2014,SWS_34,seeded,2014-09-01,Symphyotrichum urophyllum,1.76
 SWS_34_2015,SWS_34,1,2015-09-23,Coreopsis lanceolata,4
 SWS_34_2015,SWS_34,1,2015-09-23,Dalea purpurea,0.04
 SWS_34_2015,SWS_34,1,2015-09-23,Dichanthelium,4
@@ -15943,7 +15943,7 @@ SWS_35_2014,SWS_35,seeded,2014-09-01,Silphium terebinthinaceum,0.52
 SWS_35_2014,SWS_35,seeded,2014-09-01,Solidago rigida,0.64
 SWS_35_2014,SWS_35,seeded,2014-09-01,Sorghastrum nutans,1
 SWS_35_2014,SWS_35,seeded,2014-09-01,Sporobolus cryptandrus,1
-SWS_35_2014,SWS_35,seeded,2014-09-01,Symphyotrichum undulatum,0.59
+SWS_35_2014,SWS_35,seeded,2014-09-01,Symphyotrichum urophyllum,0.59
 SWS_35_2014,SWS_35,seeded,2014-09-01,Verbena stricta,0.49
 SWS_35_2015,SWS_35,1,2015-09-23,Dichanthelium,25
 SWS_35_2015,SWS_35,1,2015-09-23,Elymus,25
@@ -16044,7 +16044,7 @@ SWS_36_2014,SWS_36,seeded,2014-09-01,Sporobolus cryptandrus,1
 SWS_36_2014,SWS_36,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 SWS_36_2014,SWS_36,seeded,2014-09-01,Symphyotrichum laeve,0.29
 SWS_36_2014,SWS_36,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-SWS_36_2014,SWS_36,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+SWS_36_2014,SWS_36,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 SWS_36_2014,SWS_36,seeded,2014-09-01,Tradescantia ohiensis,0.28
 SWS_36_2014,SWS_36,seeded,2014-09-01,Verbena stricta,0.27
 SWS_36_2014,SWS_36,seeded,2014-09-01,Zizia aptera,0.28
@@ -16128,7 +16128,7 @@ SWS_37_2014,SWS_37,seeded,2014-09-01,Ratibida pinnata,1.45
 SWS_37_2014,SWS_37,seeded,2014-09-01,Schizachyrium scoparium,1
 SWS_37_2014,SWS_37,seeded,2014-09-01,Sorghastrum nutans,1
 SWS_37_2014,SWS_37,seeded,2014-09-01,Sporobolus cryptandrus,1
-SWS_37_2014,SWS_37,seeded,2014-09-01,Symphyotrichum undulatum,1.76
+SWS_37_2014,SWS_37,seeded,2014-09-01,Symphyotrichum urophyllum,1.76
 SWS_37_2015,SWS_37,1,2015-09-23,Dichanthelium,12
 SWS_37_2015,SWS_37,1,2015-09-23,Elymus,1
 SWS_37_2015,SWS_37,1,2015-09-23,Oenothera biennis,3
@@ -16231,7 +16231,7 @@ SWS_38_2014,SWS_38,seeded,2014-09-01,Sporobolus cryptandrus,1
 SWS_38_2014,SWS_38,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 SWS_38_2014,SWS_38,seeded,2014-09-01,Symphyotrichum laeve,0.29
 SWS_38_2014,SWS_38,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-SWS_38_2014,SWS_38,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+SWS_38_2014,SWS_38,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 SWS_38_2014,SWS_38,seeded,2014-09-01,Tradescantia ohiensis,0.28
 SWS_38_2014,SWS_38,seeded,2014-09-01,Verbena stricta,0.27
 SWS_38_2014,SWS_38,seeded,2014-09-01,Zizia aptera,0.28
@@ -16305,7 +16305,7 @@ SWS_39_2014,SWS_39,seeded,2014-09-01,Silphium terebinthinaceum,0.52
 SWS_39_2014,SWS_39,seeded,2014-09-01,Solidago rigida,0.64
 SWS_39_2014,SWS_39,seeded,2014-09-01,Sorghastrum nutans,1
 SWS_39_2014,SWS_39,seeded,2014-09-01,Sporobolus cryptandrus,1
-SWS_39_2014,SWS_39,seeded,2014-09-01,Symphyotrichum undulatum,0.59
+SWS_39_2014,SWS_39,seeded,2014-09-01,Symphyotrichum urophyllum,0.59
 SWS_39_2014,SWS_39,seeded,2014-09-01,Verbena stricta,0.49
 SWS_39_2015,SWS_39,1,2015-09-23,Digitaria,32
 SWS_39_2015,SWS_39,1,2015-09-23,Elymus,60
@@ -16351,7 +16351,7 @@ SWS_4_2014,SWS_4,seeded,2014-09-01,Ratibida pinnata,1.45
 SWS_4_2014,SWS_4,seeded,2014-09-01,Schizachyrium scoparium,1
 SWS_4_2014,SWS_4,seeded,2014-09-01,Sorghastrum nutans,1
 SWS_4_2014,SWS_4,seeded,2014-09-01,Sporobolus cryptandrus,1
-SWS_4_2014,SWS_4,seeded,2014-09-01,Symphyotrichum undulatum,1.76
+SWS_4_2014,SWS_4,seeded,2014-09-01,Symphyotrichum urophyllum,1.76
 SWS_4_2015,SWS_4,1,2015-09-23,Allium vineale,0.01
 SWS_4_2015,SWS_4,1,2015-09-23,Berteroa incana,30
 SWS_4_2015,SWS_4,1,2015-09-23,Dichanthelium,6
@@ -16431,7 +16431,7 @@ SWS_40_2014,SWS_40,seeded,2014-09-01,Silphium terebinthinaceum,0.52
 SWS_40_2014,SWS_40,seeded,2014-09-01,Solidago rigida,0.64
 SWS_40_2014,SWS_40,seeded,2014-09-01,Sorghastrum nutans,1
 SWS_40_2014,SWS_40,seeded,2014-09-01,Sporobolus cryptandrus,1
-SWS_40_2014,SWS_40,seeded,2014-09-01,Symphyotrichum undulatum,0.59
+SWS_40_2014,SWS_40,seeded,2014-09-01,Symphyotrichum urophyllum,0.59
 SWS_40_2014,SWS_40,seeded,2014-09-01,Verbena stricta,0.49
 SWS_40_2015,SWS_40,1,2015-09-23,Digitaria,53
 SWS_40_2015,SWS_40,1,2015-09-23,Elymus,25
@@ -16499,7 +16499,7 @@ SWS_41_2014,SWS_41,seeded,2014-09-01,Rudbeckia hirta,0.81
 SWS_41_2014,SWS_41,seeded,2014-09-01,Schizachyrium scoparium,1
 SWS_41_2014,SWS_41,seeded,2014-09-01,Sorghastrum nutans,1
 SWS_41_2014,SWS_41,seeded,2014-09-01,Sporobolus cryptandrus,1
-SWS_41_2014,SWS_41,seeded,2014-09-01,Symphyotrichum undulatum,0.88
+SWS_41_2014,SWS_41,seeded,2014-09-01,Symphyotrichum urophyllum,0.88
 SWS_41_2014,SWS_41,seeded,2014-09-01,Verbena stricta,0.74
 SWS_41_2015,SWS_41,1,2015-09-23,Coreopsis lanceolata,0.8
 SWS_41_2015,SWS_41,1,2015-09-23,Dichanthelium,2
@@ -16605,7 +16605,7 @@ SWS_42_2014,SWS_42,seeded,2014-09-01,Sporobolus cryptandrus,1
 SWS_42_2014,SWS_42,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 SWS_42_2014,SWS_42,seeded,2014-09-01,Symphyotrichum laeve,0.29
 SWS_42_2014,SWS_42,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-SWS_42_2014,SWS_42,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+SWS_42_2014,SWS_42,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 SWS_42_2014,SWS_42,seeded,2014-09-01,Tradescantia ohiensis,0.28
 SWS_42_2014,SWS_42,seeded,2014-09-01,Verbena stricta,0.27
 SWS_42_2014,SWS_42,seeded,2014-09-01,Zizia aptera,0.28
@@ -16790,7 +16790,7 @@ SWS_44_2014,SWS_44,seeded,2014-09-01,Sporobolus cryptandrus,1
 SWS_44_2014,SWS_44,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 SWS_44_2014,SWS_44,seeded,2014-09-01,Symphyotrichum laeve,0.29
 SWS_44_2014,SWS_44,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-SWS_44_2014,SWS_44,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+SWS_44_2014,SWS_44,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 SWS_44_2014,SWS_44,seeded,2014-09-01,Tradescantia ohiensis,0.28
 SWS_44_2014,SWS_44,seeded,2014-09-01,Verbena stricta,0.27
 SWS_44_2014,SWS_44,seeded,2014-09-01,Zizia aptera,0.28
@@ -16873,7 +16873,7 @@ SWS_45_2014,SWS_45,seeded,2014-09-01,Silphium terebinthinaceum,0.52
 SWS_45_2014,SWS_45,seeded,2014-09-01,Solidago rigida,0.64
 SWS_45_2014,SWS_45,seeded,2014-09-01,Sorghastrum nutans,1
 SWS_45_2014,SWS_45,seeded,2014-09-01,Sporobolus cryptandrus,1
-SWS_45_2014,SWS_45,seeded,2014-09-01,Symphyotrichum undulatum,0.59
+SWS_45_2014,SWS_45,seeded,2014-09-01,Symphyotrichum urophyllum,0.59
 SWS_45_2014,SWS_45,seeded,2014-09-01,Verbena stricta,0.49
 SWS_45_2015,SWS_45,1,2015-09-23,Dichanthelium,20
 SWS_45_2015,SWS_45,1,2015-09-23,Digitaria,15
@@ -16954,7 +16954,7 @@ SWS_46_2014,SWS_46,seeded,2014-09-01,Rudbeckia hirta,0.81
 SWS_46_2014,SWS_46,seeded,2014-09-01,Schizachyrium scoparium,1
 SWS_46_2014,SWS_46,seeded,2014-09-01,Sorghastrum nutans,1
 SWS_46_2014,SWS_46,seeded,2014-09-01,Sporobolus cryptandrus,1
-SWS_46_2014,SWS_46,seeded,2014-09-01,Symphyotrichum undulatum,0.88
+SWS_46_2014,SWS_46,seeded,2014-09-01,Symphyotrichum urophyllum,0.88
 SWS_46_2014,SWS_46,seeded,2014-09-01,Verbena stricta,0.74
 SWS_46_2015,SWS_46,1,2015-09-23,Digitaria,12
 SWS_46_2015,SWS_46,1,2015-09-23,Elymus repens,65
@@ -17022,7 +17022,7 @@ SWS_47_2014,SWS_47,seeded,2014-09-01,Ratibida pinnata,1.45
 SWS_47_2014,SWS_47,seeded,2014-09-01,Schizachyrium scoparium,1
 SWS_47_2014,SWS_47,seeded,2014-09-01,Sorghastrum nutans,1
 SWS_47_2014,SWS_47,seeded,2014-09-01,Sporobolus cryptandrus,1
-SWS_47_2014,SWS_47,seeded,2014-09-01,Symphyotrichum undulatum,1.76
+SWS_47_2014,SWS_47,seeded,2014-09-01,Symphyotrichum urophyllum,1.76
 SWS_47_2015,SWS_47,1,2015-09-23,Digitaria,5
 SWS_47_2015,SWS_47,1,2015-09-23,Elymus repens,69
 SWS_47_2015,SWS_47,1,2015-09-23,Mollugo verticillata,5
@@ -17105,7 +17105,7 @@ SWS_48_2014,SWS_48,seeded,2014-09-01,Sporobolus cryptandrus,1
 SWS_48_2014,SWS_48,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 SWS_48_2014,SWS_48,seeded,2014-09-01,Symphyotrichum laeve,0.29
 SWS_48_2014,SWS_48,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-SWS_48_2014,SWS_48,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+SWS_48_2014,SWS_48,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 SWS_48_2014,SWS_48,seeded,2014-09-01,Tradescantia ohiensis,0.28
 SWS_48_2014,SWS_48,seeded,2014-09-01,Verbena stricta,0.27
 SWS_48_2014,SWS_48,seeded,2014-09-01,Zizia aptera,0.28
@@ -17195,7 +17195,7 @@ SWS_49_2014,SWS_49,seeded,2014-09-01,Sporobolus cryptandrus,1
 SWS_49_2014,SWS_49,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 SWS_49_2014,SWS_49,seeded,2014-09-01,Symphyotrichum laeve,0.29
 SWS_49_2014,SWS_49,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-SWS_49_2014,SWS_49,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+SWS_49_2014,SWS_49,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 SWS_49_2014,SWS_49,seeded,2014-09-01,Tradescantia ohiensis,0.28
 SWS_49_2014,SWS_49,seeded,2014-09-01,Verbena stricta,0.27
 SWS_49_2014,SWS_49,seeded,2014-09-01,Zizia aptera,0.28
@@ -17267,7 +17267,7 @@ SWS_5_2014,SWS_5,seeded,2014-09-01,Rudbeckia hirta,0.81
 SWS_5_2014,SWS_5,seeded,2014-09-01,Schizachyrium scoparium,1
 SWS_5_2014,SWS_5,seeded,2014-09-01,Sorghastrum nutans,1
 SWS_5_2014,SWS_5,seeded,2014-09-01,Sporobolus cryptandrus,1
-SWS_5_2014,SWS_5,seeded,2014-09-01,Symphyotrichum undulatum,0.88
+SWS_5_2014,SWS_5,seeded,2014-09-01,Symphyotrichum urophyllum,0.88
 SWS_5_2014,SWS_5,seeded,2014-09-01,Verbena stricta,0.74
 SWS_5_2015,SWS_5,1,2015-09-23,Coreopsis lanceolata,0.2
 SWS_5_2015,SWS_5,1,2015-09-23,Dalea purpurea,0.1
@@ -17358,7 +17358,7 @@ SWS_50_2014,SWS_50,seeded,2014-09-01,Ratibida pinnata,1.45
 SWS_50_2014,SWS_50,seeded,2014-09-01,Schizachyrium scoparium,1
 SWS_50_2014,SWS_50,seeded,2014-09-01,Sorghastrum nutans,1
 SWS_50_2014,SWS_50,seeded,2014-09-01,Sporobolus cryptandrus,1
-SWS_50_2014,SWS_50,seeded,2014-09-01,Symphyotrichum undulatum,1.76
+SWS_50_2014,SWS_50,seeded,2014-09-01,Symphyotrichum urophyllum,1.76
 SWS_50_2015,SWS_50,1,2015-09-23,Asclepias syriaca,1
 SWS_50_2015,SWS_50,1,2015-09-23,Digitaria,6
 SWS_50_2015,SWS_50,1,2015-09-23,Elymus repens,47
@@ -17451,7 +17451,7 @@ SWS_51_2014,SWS_51,seeded,2014-09-01,Sporobolus cryptandrus,1
 SWS_51_2014,SWS_51,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 SWS_51_2014,SWS_51,seeded,2014-09-01,Symphyotrichum laeve,0.29
 SWS_51_2014,SWS_51,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-SWS_51_2014,SWS_51,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+SWS_51_2014,SWS_51,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 SWS_51_2014,SWS_51,seeded,2014-09-01,Tradescantia ohiensis,0.28
 SWS_51_2014,SWS_51,seeded,2014-09-01,Verbena stricta,0.27
 SWS_51_2014,SWS_51,seeded,2014-09-01,Zizia aptera,0.28
@@ -17608,7 +17608,7 @@ SWS_53_2014,SWS_53,seeded,2014-09-01,Sporobolus cryptandrus,1
 SWS_53_2014,SWS_53,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 SWS_53_2014,SWS_53,seeded,2014-09-01,Symphyotrichum laeve,0.29
 SWS_53_2014,SWS_53,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-SWS_53_2014,SWS_53,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+SWS_53_2014,SWS_53,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 SWS_53_2014,SWS_53,seeded,2014-09-01,Tradescantia ohiensis,0.28
 SWS_53_2014,SWS_53,seeded,2014-09-01,Verbena stricta,0.27
 SWS_53_2014,SWS_53,seeded,2014-09-01,Zizia aptera,0.28
@@ -17749,7 +17749,7 @@ SWS_55_2014,SWS_55,seeded,2014-09-01,Rudbeckia hirta,0.81
 SWS_55_2014,SWS_55,seeded,2014-09-01,Schizachyrium scoparium,1
 SWS_55_2014,SWS_55,seeded,2014-09-01,Sorghastrum nutans,1
 SWS_55_2014,SWS_55,seeded,2014-09-01,Sporobolus cryptandrus,1
-SWS_55_2014,SWS_55,seeded,2014-09-01,Symphyotrichum undulatum,0.88
+SWS_55_2014,SWS_55,seeded,2014-09-01,Symphyotrichum urophyllum,0.88
 SWS_55_2014,SWS_55,seeded,2014-09-01,Verbena stricta,0.74
 SWS_55_2015,SWS_55,1,2015-09-23,Digitaria,40
 SWS_55_2015,SWS_55,1,2015-09-23,Elymus repens,25
@@ -17831,7 +17831,7 @@ SWS_56_2014,SWS_56,seeded,2014-09-01,Sporobolus cryptandrus,1
 SWS_56_2014,SWS_56,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 SWS_56_2014,SWS_56,seeded,2014-09-01,Symphyotrichum laeve,0.29
 SWS_56_2014,SWS_56,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-SWS_56_2014,SWS_56,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+SWS_56_2014,SWS_56,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 SWS_56_2014,SWS_56,seeded,2014-09-01,Tradescantia ohiensis,0.28
 SWS_56_2014,SWS_56,seeded,2014-09-01,Verbena stricta,0.27
 SWS_56_2014,SWS_56,seeded,2014-09-01,Zizia aptera,0.28
@@ -17887,7 +17887,7 @@ SWS_57_2014,SWS_57,seeded,2014-09-01,Ratibida pinnata,1.45
 SWS_57_2014,SWS_57,seeded,2014-09-01,Schizachyrium scoparium,1
 SWS_57_2014,SWS_57,seeded,2014-09-01,Sorghastrum nutans,1
 SWS_57_2014,SWS_57,seeded,2014-09-01,Sporobolus cryptandrus,1
-SWS_57_2014,SWS_57,seeded,2014-09-01,Symphyotrichum undulatum,1.76
+SWS_57_2014,SWS_57,seeded,2014-09-01,Symphyotrichum urophyllum,1.76
 SWS_57_2015,SWS_57,1,2015-09-23,Amaranthus,2
 SWS_57_2015,SWS_57,1,2015-09-23,Digitaria,30
 SWS_57_2015,SWS_57,1,2015-09-23,Elymus,56
@@ -17951,7 +17951,7 @@ SWS_58_2014,SWS_58,seeded,2014-09-01,Sporobolus cryptandrus,1
 SWS_58_2014,SWS_58,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 SWS_58_2014,SWS_58,seeded,2014-09-01,Symphyotrichum laeve,0.29
 SWS_58_2014,SWS_58,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-SWS_58_2014,SWS_58,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+SWS_58_2014,SWS_58,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 SWS_58_2014,SWS_58,seeded,2014-09-01,Tradescantia ohiensis,0.28
 SWS_58_2014,SWS_58,seeded,2014-09-01,Verbena stricta,0.27
 SWS_58_2014,SWS_58,seeded,2014-09-01,Zizia aptera,0.28
@@ -18061,7 +18061,7 @@ SWS_59_2014,SWS_59,seeded,2014-09-01,Sporobolus cryptandrus,1
 SWS_59_2014,SWS_59,seeded,2014-09-01,Symphyotrichum ericoides,0.3
 SWS_59_2014,SWS_59,seeded,2014-09-01,Symphyotrichum laeve,0.29
 SWS_59_2014,SWS_59,seeded,2014-09-01,Symphyotrichum oolentangiense,0.48
-SWS_59_2014,SWS_59,seeded,2014-09-01,Symphyotrichum undulatum,0.32
+SWS_59_2014,SWS_59,seeded,2014-09-01,Symphyotrichum urophyllum,0.32
 SWS_59_2014,SWS_59,seeded,2014-09-01,Tradescantia ohiensis,0.28
 SWS_59_2014,SWS_59,seeded,2014-09-01,Verbena stricta,0.27
 SWS_59_2014,SWS_59,seeded,2014-09-01,Zizia aptera,0.28
@@ -18144,7 +18144,7 @@ SWS_6_2014,SWS_6,seeded,2014-09-01,Silphium terebinthinaceum,0.52
 SWS_6_2014,SWS_6,seeded,2014-09-01,Solidago rigida,0.64
 SWS_6_2014,SWS_6,seeded,2014-09-01,Sorghastrum nutans,1
 SWS_6_2014,SWS_6,seeded,2014-09-01,Sporobolus cryptandrus,1
-SWS_6_2014,SWS_6,seeded,2014-09-01,Symphyotrichum undulatum,0.59
+SWS_6_2014,SWS_6,seeded,2014-09-01,Symphyotrichum urophyllum,0.59
 SWS_6_2014,SWS_6,seeded,2014-09-01,Verbena stricta,0.49
 SWS_6_2015,SWS_6,1,2015-09-23,Chenopodium album,4
 SWS_6_2015,SWS_6,1,2015-09-23,Digitaria,4
@@ -18231,7 +18231,7 @@ SWS_60_2014,SWS_60,seeded,2014-09-01,Silphium terebinthinaceum,0.52
 SWS_60_2014,SWS_60,seeded,2014-09-01,Solidago rigida,0.64
 SWS_60_2014,SWS_60,seeded,2014-09-01,Sorghastrum nutans,1
 SWS_60_2014,SWS_60,seeded,2014-09-01,Sporobolus cryptandrus,1
-SWS_60_2014,SWS_60,seeded,2014-09-01,Symphyotrichum undulatum,0.59
+SWS_60_2014,SWS_60,seeded,2014-09-01,Symphyotrichum urophyllum,0.59
 SWS_60_2014,SWS_60,seeded,2014-09-01,Verbena stricta,0.49
 SWS_60_2015,SWS_60,1,2015-09-23,Digitaria,60
 SWS_60_2015,SWS_60,1,2015-09-23,Elymus repens,4
@@ -18367,7 +18367,7 @@ SWS_8_2014,SWS_8,seeded,2014-09-01,Rudbeckia hirta,0.81
 SWS_8_2014,SWS_8,seeded,2014-09-01,Schizachyrium scoparium,1
 SWS_8_2014,SWS_8,seeded,2014-09-01,Sorghastrum nutans,1
 SWS_8_2014,SWS_8,seeded,2014-09-01,Sporobolus cryptandrus,1
-SWS_8_2014,SWS_8,seeded,2014-09-01,Symphyotrichum undulatum,0.88
+SWS_8_2014,SWS_8,seeded,2014-09-01,Symphyotrichum urophyllum,0.88
 SWS_8_2014,SWS_8,seeded,2014-09-01,Verbena stricta,0.74
 SWS_8_2015,SWS_8,1,2015-09-23,Coreopsis lanceolata,0.4
 SWS_8_2015,SWS_8,1,2015-09-23,Elymus,12
@@ -18444,7 +18444,7 @@ SWS_9_2014,SWS_9,seeded,2014-09-01,Ratibida pinnata,1.45
 SWS_9_2014,SWS_9,seeded,2014-09-01,Schizachyrium scoparium,1
 SWS_9_2014,SWS_9,seeded,2014-09-01,Sorghastrum nutans,1
 SWS_9_2014,SWS_9,seeded,2014-09-01,Sporobolus cryptandrus,1
-SWS_9_2014,SWS_9,seeded,2014-09-01,Symphyotrichum undulatum,1.76
+SWS_9_2014,SWS_9,seeded,2014-09-01,Symphyotrichum urophyllum,1.76
 SWS_9_2015,SWS_9,1,2015-09-23,Coreopsis lanceolata,0.6
 SWS_9_2015,SWS_9,1,2015-09-23,Dalea purpurea,0.1
 SWS_9_2015,SWS_9,1,2015-09-23,Digitaria,50

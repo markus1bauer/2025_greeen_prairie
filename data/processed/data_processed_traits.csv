@@ -48,7 +48,7 @@ Dalea purpurea,1,Accepted,species,Fabaceae,https://powo.science.kew.org/taxon/ur
 Danthonia spicata,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1167024-2,wcvp,NA,8.92e-4,NA,graminoid
 Daucus carota,0,Accepted,species,Apiaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:841063-1,wcvp,0.572666667,0.001002938,197.63,NA
 Desmodium canadense,0,Accepted,species,Fabaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1051889-2,wcvp,1.14075,0.0051,166.25165886000002,forb
-Desmodium illinoense,1,Accepted,species,Fabaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:491822-1,wcvp,NA,0.0066,355.95591848533024,forb
+Desmodium illinoense,1,Accepted,species,Fabaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:491822-1,wcvp,1.828,0.0066,355.95591848533024,forb
 Desmodium paniculatum,0,Accepted,species,Fabaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:491980-1,wcvp,0.91,0.00273,NA,forb
 Dichanthelium,0,Accepted,genus,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1035847-2,wcvp,NA,NA,NA,NA
 Digitaria,0,Accepted,genus,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:329395-2,wcvp,NA,NA,NA,NA
@@ -122,7 +122,7 @@ Panicum dichotomiflorum,0,Accepted,species,Poaceae,https://powo.science.kew.org/
 Panicum virgatum,1,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:413537-1,wcvp,1.65,0.001527,117.54759165499999,graminoid
 Paspalum setaceum,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:325365-2,wcvp,NA,9.8e-4,NA,graminoid
 Penstemon digitalis,1,Accepted,species,Plantaginaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:808077-1,wcvp,1.2,0.001134,108.127100986,forb
-Penstemon hirsutus,1,Accepted,species,Plantaginaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:808137-1,wcvp,NA,1.6e-4,14.751160041052632,forb
+Penstemon hirsutus,1,Accepted,species,Plantaginaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:808137-1,wcvp,0.457,1.6e-4,14.751160041052632,forb
 Persicaria maculosa,0,Accepted,species,Polygonaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:695052-1,wcvp,0.644333333,0.001839969,257.29,NA
 Phleum pratense,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:415868-1,wcvp,0.660333333,4.26e-4,258.15,NA
 Physalis,0,Accepted,genus,Solanaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:329952-2,wcvp,NA,NA,NA,NA
@@ -165,7 +165,7 @@ Setaria italica,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/ur
 Setaria viridis,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1171009-2,wcvp,0.506,9.42e-4,238.2,NA
 Silene latifolia,0,Accepted,species,Caryophyllaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:157647-1,wcvp,0.4875,8.84e-4,216.25,NA
 Silene vulgaris,0,Accepted,species,Caryophyllaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:158668-1,wcvp,0.385,8.77e-4,198.7,NA
-Silphium terebinthinaceum,1,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30257140-2,wcvp,NA,NA,170.53125,forb
+Silphium terebinthinaceum,1,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30257140-2,wcvp,2.743,NA,170.53125,forb
 Solanum americanum,0,Synonym,species,Solanaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:238279-2,wcvp,1,8.59e-4,NA,NA
 Solanum carolinense,0,Accepted,species,Solanaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:285195-2,wcvp,0.54275,0.00244,149.15538242,NA
 Solidago,0,Accepted,genus,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:60436299-2,wcvp,NA,NA,NA,NA
@@ -174,7 +174,7 @@ Solidago canadensis,0,Accepted,species,Asteraceae,https://powo.science.kew.org/t
 Solidago juncea,1,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:249633-1,wcvp,0.7834490196078432,4.12e-4,13.278873239462389,forb
 Solidago nemoralis,1,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:249731-1,wcvp,0.61,3.93e-4,12.81440783168856,forb
 Solidago rigida,1,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:249837-1,wcvp,1.1,6.94e-4,86.463297028,forb
-Solidago speciosa,1,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:240517-2,wcvp,NA,2.55e-4,263.25213235294115,forb
+Solidago speciosa,1,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:240517-2,wcvp,1.524,2.55e-4,263.25213235294115,forb
 Sorghastrum nutans,1,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:240823-2,wcvp,1.8,0.002305182,135.862764035,graminoid
 Sporobolus cryptandrus,1,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:422687-1,wcvp,0.91,1.06e-4,227.17897435897436,NA
 Sporobolus heterolepis,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1026241-2,wcvp,0.7,0.0011365,NA,graminoid
@@ -185,7 +185,7 @@ Symphyotrichum laeve,1,Accepted,species,Asteraceae,https://powo.science.kew.org/
 Symphyotrichum lanceolatum,0,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:981841-1,wcvp,1.8,4.18e-4,NA,forb
 Symphyotrichum oolentangiense,1,Synonym,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:981870-1,wcvp,0.36167816091954025,1.7e-4,14.34241695884096,NA
 Symphyotrichum pilosum,0,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:981879-1,wcvp,0.91,6.48e-4,NA,forb
-Symphyotrichum undulatum,1,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:981914-1,wcvp,NA,0.2804,20.78775285470082,forb
+Symphyotrichum urophyllum,1,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:981915-1,wcvp,0.914,NA,NA,forb
 Taraxacum officinale,0,Accepted,species,Asteraceae,https://www.worldfloraonline.org/taxon/wfo-0000062154,wfo,NA,6.827931029999999e-4,NA,herb
 Toxicodendron radicans,0,Accepted,species,Anacardiaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:255769-2,wcvp,NA,0.01686,NA,NA
 Tradescantia ohiensis,1,Accepted,species,Commelinaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:173408-1,wcvp,0.92125,0.003655,102.51800597100001,forb
