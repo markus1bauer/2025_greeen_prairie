@@ -1110,7 +1110,12 @@ data_cover_seeded_grass <- species %>%
     ) %>%
   filter(seeded == 1 & family == "Poaceae") %>%
   group_by(id_plot_year) %>%
-  summarise(cover_seeded_grass = sum(abundance, na.rm = TRUE))
+  summarise(cover_seeded_grass = sum(abundance, na.rm = TRUE)) %>%
+  mutate(
+    cover_seeded_grass = if_else(
+      is.na(cover_seeded_grass), 0, cover_seeded_grass
+    )
+  )
   
 data_cover_seeded_forbs<- species %>%
   left_join(
@@ -1119,7 +1124,12 @@ data_cover_seeded_forbs<- species %>%
   ) %>%
   filter(family != "Poaceae" & seeded == 1) %>%
   group_by(id_plot_year) %>%
-  summarise(cover_seeded_forbs = sum(abundance, na.rm = TRUE))
+  summarise(cover_seeded_forbs = sum(abundance, na.rm = TRUE)) %>%
+  mutate(
+    cover_seeded_forbs = if_else(
+      is.na(cover_seeded_forbs), 0, cover_seeded_forbs
+      )
+    )
 
 data_cover_non_seeded <- species %>%
   left_join(
@@ -1128,7 +1138,12 @@ data_cover_non_seeded <- species %>%
   ) %>%
   filter(seeded == 0) %>%
   group_by(id_plot_year) %>%
-  summarise(cover_non_seeded = sum(abundance, na.rm = TRUE))
+  summarise(cover_non_seeded = sum(abundance, na.rm = TRUE)) %>%
+  mutate(
+    cover_non_seeded = if_else(
+      is.na(cover_non_seeded), 0, cover_non_seeded
+    )
+  )
 
 sites <- sites %>%
   full_join(data_cover_total, by = "id_plot_year") %>%
