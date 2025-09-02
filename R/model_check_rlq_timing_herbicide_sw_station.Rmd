@@ -1,5 +1,5 @@
 ---
-title: "GREEEN tallgrass prairie restoration: RLQ analyses"
+title: "GREEEN tallgrass prairie restoration: RLQ analyses (SW Station)"
 author: "Markus Bauer"
 date: "`r format(Sys.time(), '%Y-%m-%d')`"
 output:
@@ -58,7 +58,7 @@ sites <- read_csv(
   )) %>% 
   arrange(id_plot_year) %>%
   filter(
-    site == "Lux Arbor",
+    site == "SW Station",
     richness_type == "seeded_richness",
     treatment_id %in% c("1", "2", "3", "4")
   ) %>%
@@ -78,14 +78,15 @@ traits <- read_csv(
   ) %>%
   filter(seeded == "1", family != "Poaceae") %>%
   select(accepted_name, sla, height, seedmass) %>%
-  mutate(seedmass = log(seedmass)) %>%
+  mutate(seedmass = log(seedmass)) %>% 
   drop_na()
 
 species <- read_csv(
   here("data", "processed", "data_processed_species.csv"),
   col_names = TRUE, na = c("na", "NA", ""), col_types = cols(.default = "?")
   ) %>%
-  filter(plot_size == "1") %>%
+  filter(plot_size %in% c("1", "25")) %>%
+  mutate(abundance = 1) %>%
   select(id_plot_year, accepted_name, abundance) %>%
   semi_join(sites, by = "id_plot_year") %>%
   semi_join(traits, by = "accepted_name") %>%
@@ -151,7 +152,6 @@ dudi_q <- dudi.pca(
   row.w = dudi_l$cw,
   scannf = FALSE
   )
-
 ```
 
 
@@ -211,7 +211,7 @@ scores <- bind_rows(
 
 write_csv(
   scores, here(
-    "outputs", "models", "model_rlq_timing_herbicide_abundance_long.csv"
+    "outputs", "models", "model_rlq_timing_herbicide_presabs_long.csv"
     )
 )
 ```
