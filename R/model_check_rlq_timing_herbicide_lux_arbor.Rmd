@@ -211,7 +211,7 @@ scores <- bind_rows(
 
 write_csv(
   scores, here(
-    "outputs", "models", "model_rlq_timing_herbicide_presabs_long.csv"
+    "outputs", "models", "model_rlq_timing_herbicide_lux_arbor.csv"
     )
 )
 ```

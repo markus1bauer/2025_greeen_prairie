@@ -118,7 +118,8 @@ traits <- traits %>%
 
 sites <- sites %>%
   semi_join(species, by = "id_plot_year") %>%
-  column_to_rownames(var = "id_plot_year")
+  column_to_rownames(var = "id_plot_year") %>%
+  select(-water_cap)
 
 species <- species %>%
   pivot_wider(
@@ -211,7 +212,7 @@ scores <- bind_rows(
 
 write_csv(
   scores, here(
-    "outputs", "models", "model_rlq_timing_herbicide_presabs_long.csv"
+    "outputs", "models", "model_rlq_timing_herbicide_nw_station.csv"
     )
 )
 ```

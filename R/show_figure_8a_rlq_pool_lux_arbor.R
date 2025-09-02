@@ -69,7 +69,7 @@ sites <- read_csv(
 
 ### * Model ####
 model <- read_csv(
-  here("outputs", "models", "model_rlq_timing_herbicide_presabs_long.csv"),
+  here("outputs", "models", "model_rlq_timing_herbicide_lux_arbor.csv"),
   col_names = TRUE, na = c("na", "NA", ""), col_types = cols(
     .default = "?",
     type = "f"
@@ -179,6 +179,6 @@ graph_b <- ggplot() +
 
   ### Save ###
   ggsave(
-    here("outputs", "figures", "figure_10b_300dpi_8x9cm.tiff"),
+    here("outputs", "figures", "figure_8b_300dpi_8x9cm.tiff"),
     dpi = 300, width = 8, height = 9, units = "cm"
   )
