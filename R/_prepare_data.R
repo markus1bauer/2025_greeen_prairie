@@ -304,13 +304,65 @@ data_seed_mass_2020 <- read_csv(
 data <- read_csv(
   here("data", "raw", "data_raw_traits_measured.csv"),
   na = c("", "NA", "na")
-) 
+)
+
+sla <- data %>%
+  pivot_wider(
+    id_cols = id_plant, names_from = "trait_type", values_from = "trait_value"
+    ) %>%
+  group_by(id_plant) %>%
+  summarize(across(everything(), ~ mean(.x, na.rm = TRUE))) %>% 
+  mutate(
+    sla_excl_petiole = leaf_area_excl_petiole / leaf_dry_mass_excl_petiole,
+    sla_incl_petiole = leaf_area_incl_petiole / leaf_dry_mass_incl_petiole,
+    ) %>%
+  select(id_plant, sla_excl_petiole, sla_incl_petiole) %>%
+  pivot_longer(
+    cols = -id_plant, names_to = "trait_type", values_to = "trait_value"
+    ) %>%
+  filter(!(is.na(trait_value)))
+
 data_2025 <- data %>%
+  bind_rows(sla) %>%
+  mutate(
+    id_plot = str_sub(id_plant, start = 1, end = 6),
+    id_plot = str_replace(id_plot, "_$", ""),
+    name = if_else(str_detect(id_plant, "DRYARG"), "Drymocallis arguta", name),
+    trait_id_try = if_else(
+      str_detect(trait_type, "sla_excl"), 3115, trait_id_try
+      ),
+    trait_id_try = if_else(
+      str_detect(trait_type, "sla_incl"), 3116, trait_id_try
+      ),
+    trait_id_gift = if_else(
+      str_detect(trait_type, "sla_"), "4.1.3", trait_id_gift
+      ),
+    unit = if_else(
+      str_detect(trait_type, "sla_"), "squareCentiMeterPerGram", unit
+      ),
+    nomenclature = if_else(
+      str_detect(name, "Drymocallis arguta"),
+      "https://wfoplantlist.org/taxon/wfo-0001005709-2025-06", nomenclature
+      )
+  ) %>%
   group_by(name, trait_type, trait_id_try) %>%
   summarize(across(where(is.numeric), ~ mean(.x, na.rm = TRUE))) %>%
-  filter(trait_type == "vegetative_height") %>%
-  pivot_wider(id_cols = name, names_from = "trait_type", values_from = "trait_value") %>%
-  rename(height_2025 = vegetative_height)
+  filter(!(str_detect(trait_type, "leaf_dry_mass"))) %>%
+  pivot_wider(
+    id_cols = name, names_from = "trait_type", values_from = "trait_value"
+    )
+
+# write_csv(
+#   data_2025,
+#   here("data", "processed", "data_processed_traits_measured.csv")
+# )
+
+data_2025 <- data_2025 %>%
+  rename(
+    height_2025 = vegetative_height,
+    sla_2025 = sla_excl_petiole
+    ) %>%
+  select(name, sla_2025, height_2025)
 
 
 ### d Combine data -------------------------------------------------------------
@@ -872,7 +924,7 @@ data_traits %>% filter(duplicated(accepted_name))
 
 data_traits2 <- data_traits %>%
   mutate(
-    sla = dplyr::coalesce(sla, sla_2017, sla_2020),
+    sla = dplyr::coalesce(sla, sla_2017, sla_2020, sla_2025),
     height = dplyr::coalesce(height, height_2017, height_2025),
     seedmass = dplyr::coalesce(seedmass, seedmass_2017, seedmass_2020)
   ) %>%
