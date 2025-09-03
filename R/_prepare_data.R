@@ -1008,6 +1008,12 @@ data_try <- rtry_import(
     TraitID = str_replace(TraitID, "3117", "sla_new_petiole_undefined")
   ) %>%
   ungroup() %>%
+  mutate(
+    mean = if_else(str_detect(TraitID, "sla_new"), mean * 10, mean),
+    # transform mm^2 mg^-1 --> cm^2 g^-1
+    mean = if_else(str_detect(TraitID, "seedmass"), mean / 1000, mean)
+    # transform mg --> g
+  ) %>%
   select(-AccSpeciesID, -UnitName) %>%
   pivot_wider(names_from = "TraitID", values_from = "mean") %>%
   mutate(
