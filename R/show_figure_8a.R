@@ -88,7 +88,7 @@ data <- model %>%
     id = str_replace(id, "treat.unseeded_0_0", "Unseeded"),
     id = str_replace(id, "treat.fall_0_33", "Fall"),
     id = str_replace(id, "treat.spring_0_33", "Spring"),
-    id = str_replace(id, "treat.spring_1_33", "Spring + Herb"),
+    id = str_replace(id, "treat.spring_1_33", "Spring + Herbicide"),
     id = str_replace(id, "sla", "SLA"),
     id = str_replace(id, "height", "Height"),
     id = str_replace(id, "seedmass", "Seed mass"),
@@ -97,9 +97,10 @@ data <- model %>%
     id = str_replace(id, "cover_non_seeded", "Cover non-seeded sp."),
     id = str_replace(id, "water_cap", "Water caption"),
     type = if_else(
-      id %in% c("Fall", "Spring", "Spring + Herb"), "environment_factor", type
+      id %in% c("Fall", "Spring", "Spring + Herbicide"), "environment_factor", type
       )
-    )
+    ) %>%
+  filter(type != "traits")
 
 
 
@@ -115,17 +116,23 @@ graph_a <- ggplot() +
     aes(x = axis1, y = axis2, color = treatment),
     shape = 16, alpha = .8
   ) +
-  geom_point(
-    data = data %>% filter(type == "species"),
-    aes(x = axis1, y = axis2), shape = 4
-  ) +
-  geom_label_repel(
-    data = data %>% filter(type == "species"),
+  geom_label(
+    data = data %>% filter(type == "environment_factor"),
     aes(x = axis1, y = axis2, label = id),
-    xlim = c(NA, Inf), ylim = c(NA, Inf),
-    fill = alpha("white", .5), label.size = NA, max.overlaps = 50,
+    fill = alpha("white", .8),
     size = 3
   ) +
+  # geom_point(
+  #   data = data %>% filter(type == "species"),
+  #   aes(x = axis1, y = axis2), shape = 4
+  # ) +
+  # geom_label_repel(
+  #   data = data %>% filter(type == "species"),
+  #   aes(x = axis1, y = axis2, label = id),
+  #   xlim = c(NA, Inf), ylim = c(NA, Inf),
+  #   fill = alpha("white", .5), label.size = NA, max.overlaps = 50,
+  #   size = 3
+  # ) +
   coord_fixed(clip = "off") +
   scale_color_manual(
     breaks = c("unseeded", "fall_0_33", "spring_0_33", "spring_1_33"),
@@ -136,12 +143,12 @@ graph_a <- ggplot() +
     x = "Axis 1", color = "Seeding", y = "Axis 2"
   ) +
   theme_mb() +
-  theme(legend.position = "bottom");graph_a
+  theme(legend.position = "none");graph_a
 
 ### Save ###
 ggsave(
-  here("outputs", "figures", "figure_8a_i_300dpi_16x11cm.tiff"),
-  dpi = 300, width = 16, height = 11, units = "cm"
+  here("outputs", "figures", "figure_8a_i_300dpi_8x7.5cm.tiff"),
+  dpi = 300, width = 8, height = 7.5, units = "cm"
 )
 
 graph_b <- ggplot() +
@@ -163,10 +170,10 @@ graph_b <- ggplot() +
     size = 3
   ) +
   annotate(
-    "text", y = .85, x = -.49, size = 3,
-    label = "environment: p = .001\n traits: p = .33"
+    "text", y = 1.05, x = -.75, size = 3,
+    label = "environment: p = .001\n traits: p = .156"
   ) +
-  coord_fixed(clip = "off") +
+  coord_fixed() +
   scale_color_manual(
     breaks = c("traits", "environment", "environment_factor"),
     values = c("red", "blue", "blue")
@@ -179,6 +186,6 @@ graph_b <- ggplot() +
 
   ### Save ###
   ggsave(
-    here("outputs", "figures", "figure_8a_ii_300dpi_8x9cm.tiff"),
-    dpi = 300, width = 8, height = 9, units = "cm"
+    here("outputs", "figures", "figure_8a_ii_300dpi_8x8cm.tiff"),
+    dpi = 300, width = 8, height = 8, units = "cm"
   )

@@ -88,7 +88,7 @@ data <- model %>%
     id = str_replace(id, "treat.unseeded_0_0", "Unseeded"),
     id = str_replace(id, "treat.fall_0_33", "Fall"),
     id = str_replace(id, "treat.spring_0_33", "Spring"),
-    id = str_replace(id, "treat.spring_1_33", "Spring + Herb"),
+    id = str_replace(id, "treat.spring_1_33", "Spring + Herbicide"),
     id = str_replace(id, "sla", "SLA"),
     id = str_replace(id, "height", "Height"),
     id = str_replace(id, "seedmass", "Seed mass"),
@@ -97,7 +97,7 @@ data <- model %>%
     id = str_replace(id, "cover_non_seeded", "Cover non-seeded sp."),
     id = str_replace(id, "water_cap", "Water caption"),
     type = if_else(
-      id %in% c("Fall", "Spring", "Spring + Herb"), "environment_factor", type
+      id %in% c("Fall", "Spring", "Spring + Herbicide"), "environment_factor", type
       )
     )
 
@@ -163,8 +163,8 @@ graph_b <- ggplot() +
     size = 3
   ) +
   annotate(
-    "text", y = .85, x = -.49, size = 3,
-    label = "environment: p = .001\n traits: p = .33"
+    "text", y = 1.05, x = -.52, size = 3,
+    label = "environment: p = .001\n traits: p = .042"
   ) +
   coord_fixed(clip = "off") +
   scale_color_manual(
@@ -179,6 +179,8 @@ graph_b <- ggplot() +
 
   ### Save ###
   ggsave(
-    here("outputs", "figures", "figure_8b_ii_300dpi_8x9cm.tiff"),
-    dpi = 300, width = 8, height = 9, units = "cm"
+    here("outputs", "figures", "figure_8b_ii_300dpi_8x10cm.tiff"),
+    dpi = 300, width = 8, height = 10, units = "cm"
   )
+
+  
