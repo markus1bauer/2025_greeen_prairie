@@ -1,10 +1,10 @@
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # GREEEN prairie project
-# Show figure 5 ####
-# Cover non-seeded species ~ herbicide * seeding time
+# Show figure ####
+# Seeded species richness ~ pool size * seeding time
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Markus Bauer
-# 2025-08-07
+# 2025-07-16
 
 
 
@@ -69,23 +69,17 @@ sites <- read_csv(
   filter(
     year %in% c("2015", "2016", "2017", "2018"),
     richness_type == "seeded_richness",
-    treatment_id %in% c("1", "2", "3", "4")
+    !(treatment_id %in% c("2", "4"))
   ) %>%
-  mutate(
-    treatment = str_c(seeding_time, herbicide, seeded_pool, sep = "_"),
-    y = cover_non_seeded,
-    treatment = fct_relevel(
-      treatment, "unseeded_0_0", "fall_0_33", "spring_0_33", "spring_1_33"
-      ),
-    treatment = fct_recode(
-      treatment, "Unseeded" = "unseeded_0_0", "Fall" = "fall_0_33",
-      "Spring" = "spring_0_33", "Spring+\nHerbicide" = "spring_1_33"
-    )
-  )
+  select(
+    id_plot_year, id_plot, site, year, herbicide, seeding_time, seeded_pool,
+    richness_1qm, richness_25qm, treatment_id
+  ) %>%
+  mutate(y = richness_1qm + richness_25qm)
 
 ### * Model ####
-load(file = here("outputs", "models", "model_cover_seeding_time_herbicide_1.Rdata"))
-m <- m1
+load(file = here("outputs", "models", "model_pool_full.Rdata"))
+m <- m_full
 m@call
 
 
@@ -96,69 +90,48 @@ m@call
 
 
 
-data_model <- ggemmeans(
-  m, c("treatment", "site"),
-  bias_correction = TRUE,
-  back_transform = TRUE
-  ) %>%
-  as_tibble() %>%
-  mutate(
-    x = fct_relevel(
-      x, "unseeded_0_0", "fall_0_33", "spring_0_33", "spring_1_33"
-    ),
-    x = fct_recode(
-      x, "Unseeded" = "unseeded_0_0", "Fall" = "fall_0_33",
-      "Spring" = "spring_0_33", "Spring+\nHerbicide" = "spring_1_33"
-    )
+data_model <- ggeffect(
+  m, c("seeded_pool", "seeding_time", "site"),
+  bias_correction = TRUE
   )
 
 data <- sites %>%
-  rename(predicted = y, x = treatment, group = site)
-
-data_annotation <- data.frame(
-  facet = factor(
-    c("NW Station", "Lux Arbor", "SW Station"),
-    levels = c("NW Station","Lux Arbor","SW Station")
-    ),
-  x = c("Unseeded", "Unseeded", "Unseeded"),
-  predicted = c(90, 90, 90),
-  label = c("n.s.", "n.s.", "n.s.")
-  )
+  rename(predicted = y, x = seeded_pool, group = seeding_time, facet = site)
 
 (graph_a <- ggplot() +
+    geom_quasirandom(
+      data = data,
+      aes(x = x, y = predicted, color = group),
+      alpha = 0.2, shape = 16, cex = .5,
+      dodge.width = 0.8
+    ) +
     geom_errorbar(
       data = data_model,
-      aes(x = x, y = predicted, color = x,
+      aes(x = x, y = predicted, color = group,
           ymin = conf.low, ymax = conf.high),
       width = 0.0, linewidth = 0.4,
       position = position_dodge(width = 0.8)
     ) +
     geom_point(
       data = data_model,
-      aes(x, predicted, color = x),
+      aes(x, predicted, color = group),
       size = 2, position = position_dodge(width = 0.8)
     ) +
-    geom_text(
-      data = data_annotation,
-      aes(x = x, y = predicted, label = label)
-      ) +
-    facet_grid(~group) +
-    scale_y_continuous(limits = c(0, 90), breaks = seq(0, 100, 10)) +
+    facet_grid(~facet) +
+    scale_y_continuous(limits = c(0, 16), breaks = seq(0, 20, 1)) +
     scale_color_manual(
-      breaks = c("Unseeded" , "Fall", "Spring", "Spring+\nHerbicide"),
-      labels = c("Unseeded" , "Fall", "Spring", "Spring+\nHerbicide"),
-      values = c("#21918c", "#440154", "#FFA500", "#FFA500"),
-      guide = "none"
+      breaks = c("fall", "spring"),
+      labels = c("Fall", "Spring"),
+      values = c("#440154", "#FFA500")
     ) +
     labs(
-      x = "Treatments",
-      y = "Cover non-seeded species [%]"
+      x = "Seeded species pool [#]", color = "Seeding",
+      y = expression(Seeded ~ species ~ "[" * '#' * "]")
       ) +
-    theme_mb() +
-    theme(axis.text.x = element_text(angle = 90, vjust = .3)))
+    theme_mb())
 
 ### Save ###
 ggsave(
-  here("outputs", "figures", "figure_5_300dpi_16x8cm.tiff"),
+  here("outputs", "figures", "figure_2_300dpi_16x8cm.tiff"),
   dpi = 300, width = 16, height = 8, units = "cm"
   )

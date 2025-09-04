@@ -21,6 +21,7 @@ library(tidyverse)
 library(ggbeeswarm)
 library(patchwork)
 library(lme4)
+library(glmmTMB)
 library(brms)
 library(DHARMa)
 
@@ -32,21 +33,15 @@ sites <- read_csv(
   here("data", "processed", "data_processed_sites.csv"),
   col_names = TRUE, na = c("na", "NA", ""), col_types = cols(
     .default = "?",
-    id_plot_year = "f",
     id_plot = "f",
-    site = col_factor(
-      levels = c("NW Station", "Lux Arbor", "SW Station"), ordered = FALSE
-    ),
     year = "f",
     seeding_time = col_factor(
       levels = c("unseeded", "fall", "spring"), ordered = FALSE
       ),
-    herbicide = col_factor(levels = c("0", "1"), ordered = FALSE),
     seeded_pool = col_factor(
       levels = c("0", "6", "12", "18", "33"), ordered = TRUE
       ),
     treatment_id = "f",
-    treatment_description = "c",
     richness_type = "f"
   )
 ) %>%
@@ -55,10 +50,6 @@ sites <- read_csv(
     richness_type == "seeded_richness",
     !(treatment_id %in% c("2", "4"))
   ) %>%
-  select(
-    id_plot_year, id_plot, site, year, herbicide, seeding_time, seeded_pool,
-    richness_1qm, richness_25qm, treatment_id
-    ) %>%
   mutate(y = richness_1qm + richness_25qm)
 
 
@@ -98,6 +89,7 @@ ggplot(
   facet_grid(site ~ year) +
   labs(y = "Seeded species richness (25qm)", x = "Species pool [#]")
 
+
 ### b Outliers, zero-inflation, transformations? ------------------------------
 
 sites %>% count(site, year)
@@ -130,33 +122,43 @@ plot4 <- ggplot(sites, aes(x = log(y))) + geom_density()
 
 ### a Candidate models ---------------------------------------------------------
 
-m_simple <- glmer(
+m1 <- glmer(
+  y ~ seeded_pool + seeding_time + water_cap + (1 | year),
+  family = poisson(link = "log"),
+  data = sites
+)
+simulationOutput <- simulateResiduals(m1, plot = TRUE)
+testDispersion(simulationOutput)
+
+m2 <- glmer(
   y ~ seeded_pool + seeding_time + (1 | year),
   family = poisson(link = "log"),
   data = sites
   )
-simulateResiduals(m_simple, plot = TRUE)
-testDispersion(simulateResiduals(m_simple, plot = FALSE))
-m_full <- glmer(
+simulationOutput <- simulateResiduals(m2, plot = TRUE)
+testDispersion(simulationOutput)
+
+m3 <- glmer(
   y ~ seeded_pool * seeding_time + (1 | year),
   family = poisson(link = "log"),
   data = sites
   )
-simulateResiduals(m_full, plot = TRUE)
-testDispersion(simulateResiduals(m_full, plot = FALSE))
-m1 <- glm(
+simulationOutput <- simulateResiduals(m3, plot = TRUE)
+testDispersion(simulationOutput)
+
+m4 <- glm(
   y ~ seeded_pool * seeding_time + year,
   family = poisson(link = "log"),
   data = sites
 )
-simulateResiduals(m1, plot = TRUE)
-testDispersion(simulateResiduals(m1, plot = FALSE))
+simulationOutput <- simulateResiduals(m4, plot = TRUE)
+testDispersion(simulationOutput)
+
 
 ### b Save ---------------------------------------------------------------------
 
-save(m_simple, file = here("outputs", "models", "model_richness_pool_sws_simple.Rdata"))
-save(m_full, file = here("outputs", "models", "model_richness_pool_sws_full.Rdata"))
-save(m1, file = here("outputs", "models", "model_richness_pool_sws_1.Rdata"))
+save(m2, file = here("outputs", "models", "model_richness_pool_sws_2.Rdata"))
+save(m3, file = here("outputs", "models", "model_richness_pool_sws_3.Rdata"))
 
 
 # ## 2 Model building Bayesian #################################################

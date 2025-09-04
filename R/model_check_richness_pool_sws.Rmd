@@ -1,12 +1,12 @@
 ---
-title: "Analysis of XXX et al. (submitted) GREEEN project: <br> Effects of extra herbicide treatment and seeding time on establishment of seeded species"
-author: "<b>Markus Bauer</b> <br>"
-date: "<b>`r format(Sys.time(), '%Y-%m-%d')`</b>"
+title: "GREEEN tallgrass prairie restoration: Seeded richness ~ Species pool size (SW Station)"
+author: "Markus Bauer"
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
 output:
-  github_document:
+  pdf_document:
     toc: true
     toc_depth: 3
-    dev: png
+    dev: "png"
     fig_width: 7
     fig_height: 5
 editor_options: 
@@ -51,6 +51,7 @@ library(tidyverse)
 library(ggbeeswarm)
 library(patchwork)
 library(lme4)
+library(glmmTMB)
 library(DHARMa)
 library(emmeans)
 ```
@@ -66,37 +67,24 @@ sites <- read_csv(
   here("data", "processed", "data_processed_sites.csv"),
   col_names = TRUE, na = c("na", "NA", ""), col_types = cols(
     .default = "?",
-    id_plot_year = "f",
     id_plot = "f",
-    site = col_factor(
-      levels = c("NW Station", "Lux Arbor", "SW Station"), ordered = FALSE
-    ),
     year = "f",
     seeding_time = col_factor(
       levels = c("unseeded", "fall", "spring"), ordered = FALSE
       ),
-    herbicide = col_factor(levels = c("0", "1"), ordered = FALSE),
     seeded_pool = col_factor(
       levels = c("0", "6", "12", "18", "33"), ordered = TRUE
       ),
     treatment_id = "f",
-    treatment_description = "c",
     richness_type = "f"
   )
 ) %>%
   filter(
-    year %in% c("2015", "2016", "2017", "2018"),
+    site == "SW Station",
     richness_type == "seeded_richness",
-    treatment_id %in% c("1", "2", "3", "4")
+    !(treatment_id %in% c("2", "4"))
   ) %>%
-  mutate(
-    treatment = str_c(seeding_time, herbicide, seeded_pool, sep = "_"),
-    y = cover_non_seeded
-    ) %>%
-  select(
-    id_plot_year, id_plot, site, year, treatment, water_cap, seeded_pool,
-    cover_non_seeded, cover_total, non_seeded_ratio, y
-  )
+  mutate(y = richness_1qm + richness_25qm)
 ```
 
 # Statistics
@@ -112,7 +100,8 @@ sd(sites$y)
 quantile(sites$y, probs = c(0.05, 0.95), na.rm = TRUE)
 sites %>% count(site, year)
 sites %>% count(seeded_pool)
-sites %>% count(treatment)
+sites %>% count(seeding_time)
+sites %>% count(herbicide)
 ```
 
 ### Graphs of raw data (Step 2, 6, 7)
@@ -121,26 +110,26 @@ sites %>% count(treatment)
 ggplot(sites, aes(y = y, x = year)) +
   geom_quasirandom(color = "grey") +
   geom_boxplot(fill = "transparent") +
-  facet_grid(~site) +
-  labs(y = "Cover ratio (1qm) [%]", x = "Survey year")
+  facet_grid(~ site) +
+  labs(y = "Seeded species richness (25qm)", x = "Survey year")
 
 ggplot(
   data = sites,
-  aes(y = y, x = treatment, fill = treatment)
+  aes(y = y, x = seeded_pool, fill = seeding_time) # seeding time = herbicide treatment
 ) +
-  geom_quasirandom(dodge.width = .8, alpha = .8) +
+  geom_quasirandom(aes(color = seeding_time), dodge.width = .8, alpha = .8) +
   geom_boxplot(alpha = .5) +
-  facet_grid(site~year) +
-  labs(y = "Cover (1qm) [%]", x = "Survey year")
+  facet_grid(~ site) +
+  labs(y = "Seeded species richness (25qm)", x = "Species pool [#]")
 
 ggplot(
-  data = sites,
-  aes(y = y, x = water_cap, color = treatment)
+  data = sites, # herbicide = seeding_time
+  aes(y = y, x = seeded_pool, fill = seeding_time, color = seeding_time)
 ) +
   geom_quasirandom(dodge.width = .8, alpha = .8) +
-  geom_smooth(span = 2) +
-  scale_x_continuous(limits = c(0.3, 0.7)) +
-  labs(y = "Cover (1qm) [%]", x = "Water capacity [%]")
+  geom_boxplot(fill = "transparent") +
+  facet_grid(site ~ year) +
+  labs(y = "Seeded species richness (25qm)", x = "Species pool [#]")
 ```
 
 ### Outliers, zero-inflation, transformations? (Step 1, 3, 4)
@@ -175,10 +164,10 @@ Dormann et al. 2013 Ecography [DOI: 10.1111/j.1600-0587.2012.07348.x](https://do
 > **NOTE:** Only here you have to modify the script to compare other models
 
 ```{r load-models, collapse = TRUE}
-load(file = here("outputs", "models", "model_cover_seeding_time_herbicide_full.Rdata"))
-load(file = here("outputs", "models", "model_cover_seeding_time_herbicide_1.Rdata"))
-m_1 <- m_full
-m_2 <- m1
+load(file = here("outputs", "models", "model_richness_pool_sws_2.Rdata"))
+load(file = here("outputs", "models", "model_richness_pool_sws_3.Rdata"))
+m_1 <- m2
+m_2 <- m3
 ```
 
 ```{r formulas, collapse = TRUE}
@@ -196,10 +185,10 @@ simulation_output_2 <- simulateResiduals(m_2, plot = TRUE)
 ```
 
 ```{r dharma_single, collapse = TRUE, fig.height = 3, fig.width = 4.5}
-plotResiduals(simulation_output_1$scaledResiduals, sites$treatment)
-plotResiduals(simulation_output_2$scaledResiduals, sites$treatment)
-plotResiduals(simulation_output_1$scaledResiduals, sites$site)
-plotResiduals(simulation_output_2$scaledResiduals, sites$site)
+plotResiduals(simulation_output_1$scaledResiduals, sites$herbicide)
+plotResiduals(simulation_output_2$scaledResiduals, sites$herbicide)
+# plotResiduals(simulation_output_1$scaledResiduals, sites$seeding_time)
+# plotResiduals(simulation_output_2$scaledResiduals, sites$seeding_time)
 # plotResiduals(simulation_output_1$scaledResiduals, sites$year)
 # plotResiduals(simulation_output_2$scaledResiduals, sites$year)
 plotResiduals(simulation_output_1$scaledResiduals, sites$water_cap)
@@ -213,7 +202,7 @@ Remove VIF > 3 or > 10
 Zuur et al. 2010 Methods Ecol Evol [DOI: 10.1111/j.2041-210X.2009.00001.x](https://doi.org/10.1111/j.2041-210X.2009.00001.x)
 
 ```{r vif}
-# car::vif(m_1)
+car::vif(m_1)
 car::vif(m_2)
 ```
 
@@ -263,10 +252,10 @@ dotwhisker::dwplot(
 Effect sizes of chosen model just to get exact values of means etc. if
 necessary.
 
-```{r effect-sizes-1, message = FALSE, warning = FALSE}
+```{r effect-sizes-1, message = FALSE}
 (emm <- emmeans(
   m_2,
-  revpairwise ~ treatment | site,
+  revpairwise ~ seeding_time | seeded_pool,
   type = "response"
   ))
 plot(emm, comparison = TRUE)

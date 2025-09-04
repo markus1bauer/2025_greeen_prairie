@@ -2,10 +2,10 @@
 # GREEEN prairie project
 # Model seeding time * extra herbicide pre-treatment ####
 # Seeded species richness
-# 2015-2025 only Lux Arbor
+# Lux Arbor
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Markus Bauer
-# 2025-07-16
+# 2025-09-04
 
 
 
@@ -21,7 +21,7 @@ library(tidyverse)
 library(ggbeeswarm)
 library(patchwork)
 library(lme4)
-library(brms)
+library(glmmTMB)
 library(DHARMa)
 
 ### Start ###
@@ -32,35 +32,26 @@ sites <- read_csv(
   here("data", "processed", "data_processed_sites.csv"),
   col_names = TRUE, na = c("na", "NA", ""), col_types = cols(
     .default = "?",
-    id_plot_year = "f",
     id_plot = "f",
-    site = col_factor(
-      levels = c("NW Station", "Lux Arbor", "SW Station"), ordered = FALSE
-    ),
     year = "f",
     seeding_time = col_factor(
       levels = c("unseeded", "fall", "spring"), ordered = FALSE
       ),
     herbicide = col_factor(levels = c("0", "1"), ordered = FALSE),
-    seeded_pool = col_factor(
-      levels = c("0", "6", "12", "18", "33"), ordered = TRUE
-      ),
     treatment_id = "f",
-    treatment_description = "c",
     richness_type = "f"
   )
 ) %>%
   filter(
-    # year != "2015",
     site == "Lux Arbor",
     richness_type == "seeded_richness",
     treatment_id %in% c("1", "2", "3", "4")
   ) %>%
   mutate(
     treatment = str_c(seeding_time, herbicide, seeded_pool, sep = "_"),
-    treatment = factor(treatment),
-    y = richness_1qm + richness_25qm
-    )
+    treatment = factor(treatment)
+  ) %>%
+  mutate(y = richness_1qm + richness_25qm)
 
 
 
@@ -87,25 +78,28 @@ ggplot(
 ) +
   geom_quasirandom(dodge.width = .8, alpha = .8) +
   geom_boxplot(alpha = .5) +
-  facet_grid(site~year) +
+  facet_grid(~site) +
   labs(y = "Cover (1qm) [%]", x = "Survey year")
 
 ggplot(
   data = sites,
-  aes(y = y, x = water_cap, color = treatment)
+  aes(y = y, x = treatment, fill = treatment)
 ) +
   geom_quasirandom(dodge.width = .8, alpha = .8) +
+  geom_boxplot(alpha = .5) +
+  facet_grid(site~year) +
+  labs(y = "Cover (1qm) [%]", x = "Survey year")
+
+ggplot(data = sites, aes(y = y, x = water_cap)) +
+  geom_point() +
   geom_smooth(span = 2) +
-  scale_x_continuous(limits = c(0.3, 0.7)) +
   labs(y = "Cover (1qm) [%]", x = "Water capacity [%]")
 
 
 ### b Outliers, zero-inflation, transformations? ------------------------------
 
 sites %>% count(site, year)
-sites %>% count(seeded_pool)
-sites %>% count(seeding_time)
-sites %>% count(herbicide)
+sites %>% count(treatment)
 plot1 <- ggplot(sites, aes(x = site, y = y)) + geom_quasirandom()
 plot2 <- ggplot(sites, aes(x = y)) + geom_histogram(binwidth = 0.7)
 plot3 <- ggplot(sites, aes(x = y)) + geom_density()
@@ -113,7 +107,7 @@ plot4 <- ggplot(sites, aes(x = sqrt(y))) + geom_density()
 (plot1 + plot2) / (plot3 + plot4)
 
 
-### c Check collinearity Frequency ------------------------------------------------------
+### c Check collinearity Frequency ---------------------------------------------
 
 # sites %>%
 #   select() %>%
@@ -132,40 +126,51 @@ plot4 <- ggplot(sites, aes(x = sqrt(y))) + geom_density()
 
 ### a Candidate models ---------------------------------------------------------
 
-m_simple <- glm(
-  y ~ treatment + year + water_cap,
+m1 <- glmer(
+  y ~ treatment + water_cap + (1 | year),
   family = poisson(link = "log"),
   data = sites
-  )
-simulateResiduals(m_simple, plot = TRUE)
-m_full <- glm(
+)
+simulationOutput <- simulateResiduals(m1, plot = TRUE)
+testDispersion(simulationOutput)
+
+m2 <- glm(
   y ~ treatment * year + water_cap,
   family = poisson(link = "log"),
   data = sites
   )
-simulateResiduals(m_full, plot = TRUE)
-m1 <- lm(
+simulationOutput <- simulateResiduals(m2, plot = TRUE)
+testDispersion(simulationOutput)
+
+m3 <- glmmTMB::glmmTMB(
+  y ~ treatment * year + water_cap,
+  family = nbinom2(link = "log"),
+  data = sites
+)
+simulationOutput <- simulateResiduals(m3, plot = TRUE)
+testDispersion(simulationOutput)
+
+m4 <- lm(
   y ~ treatment * year + water_cap,
   data = sites
 )
-simulateResiduals(m1, plot = TRUE)
-m2 <- lm(
+simulateResiduals(m4, plot = TRUE)
+
+m5 <- lm(
   y ~ treatment * (year + water_cap),
   data = sites
 )
-simulateResiduals(m2, plot = TRUE)
+simulateResiduals(m5, plot = TRUE)
 
 
 ### b Save ---------------------------------------------------------------------
 
-# m_simple: bad model critique
-# save(m_full, file = here("outputs", "models", "model_seeding_time_herbicide_full.Rdata"))
-save(m1, file = here("outputs", "models", "model_seeding_time_herbicide_long_1.Rdata"))
-save(m2, file = here("outputs", "models", "model_seeding_time_herbicide_long_2.Rdata"))
+save(m4, file = here("outputs", "models", "model_richness_timing_herbicide_lux_4.Rdata"))
+save(m5, file = here("outputs", "models", "model_richness_timing_herbicide_lux_5.Rdata"))
 
 
 
-## 2 Model building Bayesian ###########################################################
+## 2 Model building Bayesian ###################################################
 
 
 ### a Possible priors ----------------------------------------------------------
