@@ -4,7 +4,7 @@
 # Seeded species richness ~ pool size * seeding time
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Markus Bauer
-# 2025-07-16
+# 2025-09-05
 
 
 
@@ -35,7 +35,7 @@ theme_mb <- function() {
                               color = "black"),
     axis.line = element_line(),
     legend.key = element_rect(fill = "white"),
-    legend.position = "right",
+    legend.position = "bottom",
     legend.text = element_text(size = 9),
     legend.margin = margin(0, 0, 0, 0, "cm"),
     plot.margin = margin(0, 0, 0, 0, "cm"),
@@ -67,7 +67,6 @@ sites <- read_csv(
   )
 ) %>%
   filter(
-    year != "2015",
     site == "Lux Arbor",
     richness_type == "seeded_richness",
     !(treatment_id %in% c("2", "4"))
@@ -75,8 +74,8 @@ sites <- read_csv(
   mutate(y = richness_1qm + richness_25qm)
 
 ### * Model ####
-load(file = here("outputs", "models", "model_richness_pool_long_1.Rdata"))
-m <- m1
+load(file = here("outputs", "models", "model_richness_pool_lux_2.Rdata"))
+m <- m2
 formula(m)
 
 
@@ -90,7 +89,7 @@ formula(m)
 data_model <- ggemmeans(
   m, c("seeded_pool", "seeding_time", "year"),
   back_transform = TRUE
-  )
+  ) 
 
 data <- sites %>%
   rename(predicted = y, x = seeded_pool, group = seeding_time, facet = year)
@@ -115,7 +114,7 @@ data <- sites %>%
       size = 2, position = position_dodge(width = 0.8)
     ) +
     facet_grid(~facet) +
-    scale_y_continuous(limits = c(0, 21), breaks = seq(0, 21, 2)) +
+    scale_y_continuous(limits = c(0, 18), breaks = seq(0, 21, 5)) +
     scale_color_manual(
       breaks = c("fall", "spring"),
       labels = c("Fall", "Spring"),
@@ -129,6 +128,6 @@ data <- sites %>%
 
 ### Save ###
 ggsave(
-  here("outputs", "figures", "figure_6_300dpi_16x8cm.tiff"),
-  dpi = 300, width = 16, height = 8, units = "cm"
+  here("outputs", "figures", "figure_2_300dpi_16x5cm.tiff"),
+  dpi = 300, width = 16, height = 5, units = "cm"
   )

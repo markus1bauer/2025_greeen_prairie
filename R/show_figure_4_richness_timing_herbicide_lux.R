@@ -5,7 +5,7 @@
 # 2015-2025 only Lux Arbor
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Markus Bauer
-# 2025-07-16
+# 2025-09-05
 
 
 
@@ -68,7 +68,6 @@ sites <- read_csv(
   )
 ) %>%
   filter(
-    # year != "2015",
     site == "Lux Arbor",
     richness_type == "seeded_richness",
     treatment_id %in% c("1", "2", "3", "4")
@@ -86,8 +85,8 @@ sites <- read_csv(
   )
 
 ### * Model ####
-load(file = here("outputs", "models", "model_seeding_time_herbicide_long_1.Rdata"))
-m <- m1
+load(file = here("outputs", "models", "model_richness_timing_herbicide_lux_3.Rdata"))
+m <- m3
 formula(m)
 
 
@@ -130,7 +129,7 @@ data <- sites %>%
 #   label = c("c", "a", "bc", "b", "d", "a", "c", "b", "c", "b", "a", "a")
 #   )
 
-(graph_a <- ggplot() +
+graph_a <- ggplot() +
     geom_quasirandom(
       data = data,
       aes(x = x, y = predicted, color = x),
@@ -154,7 +153,7 @@ data <- sites %>%
     #   aes(x = x, y = predicted, label = label)
     #   ) +
     facet_grid(~group) +
-    scale_y_continuous(limits = c(0, 20), breaks = seq(0, 21, 2)) +
+    scale_y_continuous(limits = c(0, 20), breaks = seq(0, 21, 5)) +
     scale_color_manual(
       breaks = c("Unseeded" , "Fall", "Spring", "Spring+\nHerbicide"),
       labels = c("Unseeded" , "Fall", "Spring", "Spring+\nHerbicide"),
@@ -162,14 +161,13 @@ data <- sites %>%
       guide = "none"
     ) +
     labs(
-      x = "Treatments",
-      y = expression(Seeded ~ species ~ "[" * '#' * "]")
+      x = "", y = expression(Seeded ~ species ~ "[" * '#' * "]")
     ) +
     theme_mb() +
-    theme(axis.text.x = element_text(angle = 90, vjust = .5)))
+    theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 0)); graph_a
 
 ### Save ###
 ggsave(
-  here("outputs", "figures", "figure_7_300dpi_16x8cm.tiff"),
-  dpi = 300, width = 16, height = 8, units = "cm"
+  here("outputs", "figures", "figure_4_300dpi_16x5cm.tiff"),
+  dpi = 300, width = 16, height = 5, units = "cm"
   )

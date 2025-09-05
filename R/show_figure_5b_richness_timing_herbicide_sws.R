@@ -67,19 +67,25 @@ sites <- read_csv(
   )
 ) %>%
   filter(
-    year %in% c("2015", "2016", "2017", "2018"),
+    site == "SW Station",
     richness_type == "seeded_richness",
     treatment_id %in% c("1", "2", "3", "4")
   ) %>%
-  select(
-    id_plot_year, id_plot, site, year, herbicide, seeding_time, seeded_pool,
-    richness_1qm, richness_25qm, treatment_id
-  ) %>%
-  mutate(y = richness_1qm + richness_25qm)
+  mutate(
+    treatment = str_c(seeding_time, herbicide, seeded_pool, sep = "_"),
+    y = richness_1qm + richness_25qm,
+    treatment = fct_relevel(
+      treatment, "unseeded_0_0", "fall_0_33", "spring_0_33", "spring_1_33"
+    ),
+    treatment = fct_recode(
+      treatment, "Unseeded" = "unseeded_0_0", "Fall" = "fall_0_33",
+      "Spring" = "spring_0_33", "Spring+\nHerbicide" = "spring_1_33"
+    )
+  )
 
 ### * Model ####
-load(file = here("outputs", "models", "model_seeding_time_herbicide_full.Rdata"))
-m <- m_full
+load(file = here("outputs", "models", "model_richness_timing_herbicide_sws_2.Rdata"))
+m <- m2
 m@call
 
 
@@ -91,69 +97,84 @@ m@call
 
 
 data_model <- ggemmeans(
-  m, c("herbicide", "seeding_time", "site"),
+  m, c("treatment"),
   bias_correction = TRUE
   ) %>%
   as_tibble() %>%
-  mutate(x = fct_recode(x, "No" = "0", "Yes" = "1")) %>%
-  filter(!(is.na(predicted)))
-
-data <- sites %>%
-  rename(predicted = y, x = herbicide, group = seeding_time, facet = site) %>%
-  mutate(x = fct_recode(x, "No" = "0", "Yes" = "1"))
-
-data_annotation <- data.frame(
-  facet = factor(
-    c("NW Station", "NW Station", "NW Station", "NW Station",
-      "Lux Arbor", "Lux Arbor", "Lux Arbor", "Lux Arbor",
-      "SW Station", "SW Station", "SW Station", "SW Station"),
-    levels = c("NW Station","Lux Arbor","SW Station")
+  mutate(
+    x = fct_relevel(
+      x, "unseeded_0_0", "fall_0_33", "spring_0_33", "spring_1_33"
     ),
-  x = c(.7, 1, 1.3, 2, .7, 1, 1.3, 2, .7, 1, 1.3, 2),
-  group = c("Unseeded", "Fall", "Spring", "Spring", "Unseeded", "Fall",
-            "Spring", "Spring", "Unseeded", "Fall", "Spring", "Spring"),
-  predicted = c(16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16),
-  label = c("c", "a", "bc", "b", "d", "a", "c", "b", "c", "b", "a", "a")
+    x = fct_recode(
+      x, "Unseeded" = "unseeded_0_0", "Fall" = "fall_0_33",
+      "Spring" = "spring_0_33", "Spring+\nHerbicide" = "spring_1_33"
+    )
   )
 
-(graph_a <- ggplot() +
-    geom_quasirandom(
-      data = data,
-      aes(x = x, y = predicted, color = group),
-      shape = 16, alpha = 0.2, cex = .5,
-      dodge.width = 0.8
-    ) +
+data <- sites %>%
+  rename(predicted = y, x = treatment, group = year, facet = site)
+
+# data_annotation <- data.frame(
+#   facet = factor(
+#     c("NW Station", "NW Station", "NW Station", "NW Station",
+#       "Lux Arbor", "Lux Arbor", "Lux Arbor", "Lux Arbor",
+#       "SW Station", "SW Station", "SW Station", "SW Station"),
+#     levels = c("NW Station","Lux Arbor","SW Station")
+#     ),
+#   x = c(.7, 1, 1.3, 2, .7, 1, 1.3, 2, .7, 1, 1.3, 2),
+#   group = c("Unseeded", "Fall", "Spring", "Spring", "Unseeded", "Fall",
+#             "Spring", "Spring", "Unseeded", "Fall", "Spring", "Spring"),
+#   predicted = c(16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16),
+#   label = c("c", "a", "bc", "b", "d", "a", "c", "b", "c", "b", "a", "a")
+#   )
+
+graph <- ggplot() +
+    # geom_quasirandom(
+    #   data = data,
+    #   aes(x = x, y = predicted, color = x),
+    #   shape = 16, alpha = 0.2, cex = .5,
+    #   dodge.width = 0.8
+    # ) +
     geom_errorbar(
       data = data_model,
-      aes(x = x, y = predicted, color = group,
+      aes(x = x, y = predicted, color = x,
           ymin = conf.low, ymax = conf.high),
       width = 0.0, linewidth = 0.4,
       position = position_dodge(width = 0.8)
     ) +
     geom_point(
       data = data_model,
-      aes(x, predicted, color = group),
+      aes(x, predicted, color = x),
       size = 2, position = position_dodge(width = 0.8)
     ) +
-    geom_text(
-      data = data_annotation,
-      aes(x = x, y = predicted, label = label)
-      ) +
-    facet_grid(~facet) +
-    scale_y_continuous(limits = c(0, 16), breaks = seq(0, 20, 1)) +
+    # geom_text(
+    #   data = data_annotation,
+    #   aes(x = x, y = predicted, label = label)
+    #   ) +
+    # facet_grid(~facet) +
+    scale_y_continuous(limits = c(0, 7), breaks = seq(0, 20, 1)) +
     scale_color_manual(
-      breaks = c("unseeded", "fall", "spring"),
-      labels = c("Unseeded" , "Fall", "Spring"),
-      values = c("#21918c", "#440154", "#FFA500")
+      breaks = c("Unseeded" , "Fall", "Spring", "Spring+\nHerbicide"),
+      labels = c("Unseeded" , "Fall", "Spring", "Spring+\nHerbicide"),
+      values = c("#21918c", "#440154", "#FFA500", "#FFA500"),
+      guide = "none"
     ) +
     labs(
-      x = "Extra herbicide pre-treatment", color = "Seeding",
+      color = "Seeding", x = "",
       y = expression(Seeded ~ species ~ "[" * '#' * "]")
       ) +
-    theme_mb())
+    theme_mb(); graph
 
 ### Save ###
 ggsave(
-  here("outputs", "figures", "figure_3_300dpi_16x8cm.tiff"),
-  dpi = 300, width = 16, height = 8, units = "cm"
+  here("outputs", "figures", "figure_5b_300dpi_6x4cm.tiff"),
+  dpi = 300, width = 6, height = 4, units = "cm"
   )
+
+graph_b <- graph +
+  theme(
+    axis.text.y = element_blank(),
+    axis.ticks.y = element_blank(),
+    axis.line.y = element_blank(),
+    axis.title.y = element_blank()
+  ); graph_b

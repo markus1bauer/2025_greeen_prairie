@@ -103,7 +103,7 @@ graph_a <- data %>%
     x = "", y = "Number of plots with occurences [#]", fill = "Pool size [#]"
   ) +
   theme_mb() +
-  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1)); graph_a
+  theme(axis.text.x = element_text(angle = 60, vjust = 1, hjust = 1)); graph_a
 
 ### Save ###
 ggsave(
