@@ -156,7 +156,6 @@ simulateResiduals(m2, plot = TRUE)
 ### b Save ---------------------------------------------------------------------
 
 save(m1, file = here("outputs", "models", "model_richness_pool_lux_1.Rdata"))
-save(m2, file = here("outputs", "models", "model_richness_pool_lux_2.Rdata"))
 
 
 ## 2 Model building Bayesian ###################################################

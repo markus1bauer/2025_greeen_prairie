@@ -133,40 +133,19 @@ m1 <- glmer(
 simulationOutput <- simulateResiduals(m1, plot = TRUE)
 testDispersion(simulationOutput)
 
-m2 <- glmmTMB::glmmTMB(
-  y ~ treatment + water_cap + (1 | year),
-  family = nbinom2(link = "log"),
-  data = sites
-)
-simulationOutput <- simulateResiduals(m2, plot = TRUE)
-testDispersion(simulationOutput)
-
-m3 <- glm(
+m2 <- glm(
   y ~ treatment * year + water_cap,
   family = poisson(link = "log"),
   data = sites
 )
 simulateResiduals(m3, plot = TRUE)
-testDispersion(simulateResiduals(m3, plot = FALSE))
-
-m4 <- glmmTMB::glmmTMB(
-  y ~ treatment * year + water_cap,
-  family = nbinom2(link = "log"),
-  data = sites
-)
-simulationOutput <- simulateResiduals(m4, plot = TRUE)
-testDispersion(simulationOutput)
-
-m5 <- lm(
-  y ~ treatment * year + water_cap,
-  data = sites
-)
-simulateResiduals(m5, plot = TRUE)
+testDispersion(simulateResiduals(m2, plot = FALSE))
 
 
 ### b Save ---------------------------------------------------------------------
 
-save(m5, file = here("outputs", "models", "model_richness_timing_herbicide_nws_5.Rdata"))
+save(m1, file = here("outputs", "models", "model_richness_timing_herbicide_nws_1.Rdata"))
+save(m2, file = here("outputs", "models", "model_richness_timing_herbicide_nws_2.Rdata"))
 
 
 # ## 2 Model building Bayesian #################################################

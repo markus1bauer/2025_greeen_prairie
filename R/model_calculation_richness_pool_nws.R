@@ -158,9 +158,11 @@ m3 <-lm(
 )
 simulateResiduals(m3, plot = TRUE)
 
+
 ### b Save ---------------------------------------------------------------------
 
-save(m3, file = here("outputs", "models", "model_richness_pool_nws_3.Rdata"))
+save(m_full, file = here("outputs", "models", "model_richness_pool_nws_full.Rdata"))
+save(m1, file = here("outputs", "models", "model_richness_pool_nws_1.Rdata"))
 
 
 # ## 2 Model building Bayesian ###########################################################

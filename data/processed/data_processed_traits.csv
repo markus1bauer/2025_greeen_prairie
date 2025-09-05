@@ -1,483 +1,486 @@
-accepted_name,seeded,taxonomic_status,accepted_name_rank,family,accepted_name_url,source,height,seedmass,sla,lifeform
-unknown,0,,,,,,NA,NA,NA,NA
-Acer,0,Accepted,genus,Sapindaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:328248-2,wcvp,NA,NA,NA,NA
-Acer negundo,0,Accepted,species,Sapindaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:781412-1,wcvp,17.3725,0.035703738,251,tree
-Acer rubrum,0,Accepted,species,Sapindaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1867-2,wcvp,24.52,0.019932063,NA,tree
-Achillea millefolium,0,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:2294-2,wcvp,0.65375,1.79e-4,189.35,NA
-Agrostis gigantea,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:385783-1,wcvp,0.828333333,8.32e-5,227.84,NA
-Alliaria petiolata,0,Accepted,species,Brassicaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1176324-2,wcvp,0.583333333,0.002601208,412,NA
-Allium vineale,0,Accepted,species,Amaryllidaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:529111-1,wcvp,0.375,0.007386,187,NA
-Amaranthus,0,Accepted,genus,Amaranthaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:327362-2,wcvp,NA,NA,NA,NA
-Ambrosia artemisiifolia,0,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:176058-1,wcvp,0.8725,0.00399,231.3,NA
-Andropogon gerardii,1,Accepted,species,Poaceae,https://www.worldfloraonline.org/taxon/wfo-0000846629,wfo,1.8,0.002534,122.54114704599999,graminoid
-Apocynum cannabinum,0,Accepted,species,Apocynaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:16527-2,wcvp,1,9.7e-4,163.07893911000002,forb
-Arabidopsis thaliana,0,Accepted,species,Brassicaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:277970-1,wcvp,0.229333333,3.13e-5,329,NA
-Asclepias amplexicaulis,0,Accepted,species,Apocynaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:60445583-2,wcvp,NA,0.0106,NA,forb
-Asclepias syriaca,1,Accepted,species,Apocynaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:319076-2,wcvp,1.22725,0.0062266,158.28,forb
-Asclepias tuberosa,1,Accepted,species,Apocynaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:94704-1,wcvp,0.61,0.006620625,184.63891973,forb
-Asparagus officinalis,0,Accepted,species,Asparagaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:531229-1,wcvp,0.933333333,0.033671833,109.55,NA
-Asteraceae,0,Accepted,family,,,wcvp,NA,NA,NA,NA
-Astragalus canadensis,0,Accepted,species,Fabaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:24595-2,wcvp,0.15,0.001749667,NA,forb
-Avena sativa,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:391732-1,wcvp,0.846666667,0.028530606,206.8,NA
-Baptisia alba,1,Synonym,variety,Fabaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:273066-2,wcvp,NA,0.01626,268.19354838709677,forb
-Barbarea vulgaris,0,Accepted,species,Brassicaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:29455-2,wcvp,0.475,0.00039475000000000003,266.5,NA
-Berberis vulgaris,0,Accepted,species,Berberidaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:328527-2,wcvp,1.917,0.025669533,130.32,shrub
-Berteroa incana,0,Accepted,species,Brassicaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:278924-1,wcvp,0.3625,5.14e-4,177.43,forb
-Betula,0,Accepted,genus,Betulaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:328387-2,wcvp,NA,NA,NA,NA
-Bouteloua curtipendula,1,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1198286-2,wcvp,0.91,0.0020735,112.48656035850001,NA
-Brassica,0,Accepted,genus,Brassicaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30043511-2,wcvp,NA,NA,NA,NA
-Brassica napus,0,Accepted,species,Brassicaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:279419-1,wcvp,0.854,0.003482258,248.05,NA
-Brassicaceae,0,Accepted,family,,,wcvp,NA,NA,NA,NA
-Bromus inermis,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:393784-1,wcvp,0.6175,0.003040125,219.32,NA
-Bromus japonicus,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:60459493-2,wcvp,0.275,0.002440167,279.1,herb
-Bromus kalmii,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:37071-2,wcvp,0.91,0.002497222,NA,graminoid
-Bromus tectorum,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:394163-1,wcvp,0.304,0.003115106,350.3,NA
-Carex,0,Accepted,genus,Cyperaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:330029-2,wcvp,NA,NA,NA,NA
-Centaurea stoebe,0,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:191689-1,wcvp,0.6125,0.0018025,227.23,forb
-Chamaecrista fasciculata,1,Accepted,species,Fabaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:54500-2,wcvp,0.73,0.007681111,297.17426919685437,forb
-Chenopodium album,0,Accepted,species,Amaranthaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:55993-2,wcvp,0.7666,0.013975483,222.14,NA
-Chondrilla juncea,0,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:328774-2,wcvp,0.575,5.74e-4,75.3,NA
-Circaea canadensis,0,Accepted,species,Onagraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1213937-2,wcvp,NA,0.00264,NA,forb
-Cirsium,0,Accepted,genus,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30001899-2,wcvp,NA,NA,NA,NA
-Coreopsis lanceolata,1,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:319152-2,wcvp,0.555,0.001555467,165.20813763500001,NA
-Cyperaceae,0,Accepted,family,,,wcvp,NA,NA,NA,NA
-Cyperus,0,Accepted,genus,Cyperaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:330001-2,wcvp,NA,NA,NA,NA
-Cyperus lupulinus,0,Accepted,species,Cyperaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:74847-2,wcvp,NA,NA,NA,graminoid
-Dactylis glomerata,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:397309-1,wcvp,0.704666667,9.19e-4,247.66,NA
-Dalea purpurea,1,Accepted,species,Fabaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:490847-1,wcvp,0.91,0.002309786,190.72222222222223,NA
-Danthonia spicata,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1167024-2,wcvp,NA,8.92e-4,NA,graminoid
-Daucus carota,0,Accepted,species,Apiaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:841063-1,wcvp,0.572666667,0.001002938,197.63,NA
-Desmodium canadense,0,Accepted,species,Fabaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1051889-2,wcvp,1.14075,0.0051,166.25165886000002,forb
-Desmodium illinoense,1,Accepted,species,Fabaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:491822-1,wcvp,0.6042857142857143,0.0066,355.95591848533024,forb
-Desmodium paniculatum,0,Accepted,species,Fabaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:491980-1,wcvp,0.91,0.00273,NA,forb
-Dichanthelium,0,Accepted,genus,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1035847-2,wcvp,NA,NA,NA,NA
-Digitaria,0,Accepted,genus,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:329395-2,wcvp,NA,NA,NA,NA
-Digitaria cognata,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:80227-2,wcvp,NA,5.5e-4,NA,graminoid
-Digitaria ischaemum,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:398891-1,wcvp,0.18,6.29e-4,406.15,NA
-Digitaria sanguinalis,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:399115-1,wcvp,0.22,6.62e-4,352.5,NA
-Drymocallis arguta,1,Accepted,species,Rosaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:84384-2,wcvp,0.91,1.42e-4,136.26078063801964,NA
-Echinacea pallida,0,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:202374-1,wcvp,0.37,0.0049695,96.451377873,forb
-Echinacea purpurea,1,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1174497-2,wcvp,0.37,0.002164,126.40202280611112,forb
-Elaeagnus umbellata,0,Accepted,species,Elaeagnaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:927281-1,wcvp,4.6,0.0152625,NA,shrub
-Elymus,0,Accepted,genus,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:328322-2,wcvp,NA,NA,NA,NA
-Elymus canadensis,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:400194-1,wcvp,0.91,0.0042035,124.14332373368421,graminoid
-Elymus repens,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:90320-2,wcvp,0.78,0.003138357,236.19,NA
-Elymus virginicus,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:90367-2,wcvp,0.76,0.004918556,NA,graminoid
-Eragrostis cilianensis,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1104599-2,wcvp,0.303333333,7.13e-5,NA,NA
-Eragrostis spectabilis,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1137778-2,wcvp,0.27,2.57e-4,NA,graminoid
-Erechtites hieraciifolius,0,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1152557-2,wcvp,NA,5.6e-4,NA,NA
-Erigeron,0,Accepted,genus,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:326342-2,wcvp,0.70975,4.7142857e-5,244.694285095,NA
-Erigeron canadensis,0,Synonym,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:203653-1,wcvp,1.00625,1.77e-4,224.05,NA
-Eryngium yuccifolium,1,Accepted,species,Apiaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:842103-1,wcvp,1.0115,0.00382,91.748961777,forb
-Euphorbia maculata,0,Accepted,species,Euphorbiaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:347236-1,wcvp,NA,1.77e-4,NA,NA
-Euthamia graminifolia,0,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1004467-1,wcvp,0.6,1.06e-4,NA,forb
-Fabaceae,0,Accepted,family,,,wcvp,NA,NA,NA,NA
-Fagopyrum esculentum,0,Accepted,species,Polygonaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:694526-1,wcvp,0.828333333,0.025273,NA,forb
-Fallopia convolvulus,0,Accepted,species,Polygonaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:103354-2,wcvp,0.688,0.004761917,238.75,NA
-Festuca rubra,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30010036-2,wcvp,0.431,0.006072466,193.57,NA
-Festuca trachyphylla,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:60451281-2,wcvp,0.125,5.95e-4,55.5,graminoid
-Gamochaeta purpurea,0,Synonym,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:107379-2,wcvp,0.3,3.83e-5,NA,NA
-Geranium,0,Accepted,genus,Geraniaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:327764-2,wcvp,NA,NA,NA,NA
-Geum canadense,0,Accepted,species,Rosaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30065568-2,wcvp,1.2,0.00515,NA,forb
-Gleditsia triacanthos,0,Accepted,species,Fabaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:110723-2,wcvp,27.16,0.176454889,NA,tree
-Gnaphalium,0,Accepted,genus,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:325908-2,wcvp,NA,NA,NA,NA
-Gnaphalium uliginosum,0,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:210174-1,wcvp,0.151666667,1.88e-5,378.33,forb
-Hackelia virginiana,0,Accepted,species,Boraginaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:116847-2,wcvp,NA,0.0026,NA,forb
-Helianthus occidentalis,1,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:315076-2,wcvp,0.5365573770491804,0.00221,183.53441597074817,forb
-Hieracium,0,Accepted,genus,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:330082-2,wcvp,0.1813052,2.7333333300000003e-4,227.69832536500002,NA
-Hypericum perforatum,0,Accepted,species,Hypericaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:433719-1,wcvp,0.454,1.62e-4,260.64,NA
-Hypochaeris radicata,0,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:225575-1,wcvp,0.32,8.14e-4,NA,NA
-Juncus dichotomus,0,Accepted,species,Juncaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:442886-1,wcvp,0.88,NA,NA,NA
-Juncus effusus,0,Accepted,species,Juncaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:442917-1,wcvp,1.266666667,6.98e-4,109.36,NA
-Juncus tenuis,0,Accepted,species,Juncaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:304453-2,wcvp,0.422666667,1.34e-5,134.97,NA
-Koeleria macrantha,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:406615-1,wcvp,0.2665,4.22e-4,118.07,graminoid
-Krigia,0,Accepted,genus,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:331687-2,wcvp,NA,NA,NA,NA
-Lactuca,0,Accepted,genus,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:327393-2,wcvp,NA,NA,NA,NA
-Lepidium campestre,0,Accepted,species,Brassicaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:286087-1,wcvp,0.296,0.0022175,253.05,forb
-Lespedeza capitata,1,Accepted,species,Fabaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:502425-1,wcvp,0.79,0.002738625,274.5025641025641,forb
-Lespedeza hirta,0,Accepted,species,Fabaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30017567-2,wcvp,1.8,0.0029105,NA,forb
-Lespedeza virginica,1,Accepted,species,Fabaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:138683-2,wcvp,0.708,0.00191,126.2115385,forb
-Liatris cylindracea,1,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:230560-1,wcvp,0.5644642857142856,0.0032605,110.01868686868687,forb
-Lonicera maackii,0,Accepted,species,Caprifoliaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:60463205-2,wcvp,4.9,0.0030625,NA,shrub
-Lupinus perennis,1,Accepted,species,Fabaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:504907-1,wcvp,0.3265,0.021530834,167.43,forb
-Malus,0,Accepted,genus,Rosaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30024474-2,wcvp,NA,NA,NA,NA
-Malva neglecta,0,Accepted,species,Malvaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:561795-1,wcvp,0.3315,0.002265667,237,NA
-Medicago,0,Accepted,genus,Fabaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:331761-2,wcvp,NA,NA,NA,NA
-Medicago lupulina,0,Accepted,species,Fabaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:506268-1,wcvp,0.393333333,0.001660477,272.39,NA
-Medicago sativa,0,Accepted,species,Fabaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30234961-2,wcvp,0.52,0.002280026,219.5,NA
-Melilotus,0,Accepted,genus,Fabaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:325467-2,wcvp,NA,0.002253696356,NA,NA
-Melilotus albus,0,Accepted,species,Fabaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:156656-2,wcvp,1.5,0.002233695,NA,NA
-Melilotus officinalis,0,Accepted,species,Fabaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30429323-2,wcvp,1.169333333,0.002445792,201.825,NA
-Mollugo verticillata,0,Accepted,species,Molluginaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:280992-2,wcvp,0.2,9.01e-5,NA,NA
-Monarda fistulosa,1,Accepted,species,Lamiaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:452042-1,wcvp,1.205,3.75e-4,152.61095707,forb
-Monarda punctata,1,Accepted,species,Lamiaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:452072-1,wcvp,0.3984615384615385,2.69e-4,239.5449567099567,forb
-Morus alba,0,Accepted,species,Moraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30051955-2,wcvp,13,0.004701111,NA,tree
-Morus rubra,0,Accepted,species,Moraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:854710-1,wcvp,20.56,0.001448667,NA,tree
-Oenothera,0,Accepted,genus,Onagraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:60437227-2,wcvp,NA,NA,NA,NA
-Oenothera biennis,0,Accepted,species,Onagraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:172755-2,wcvp,1.079,5.1e-4,157.01,NA
-Oxalis stricta,0,Accepted,species,Oxalidaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:178499-2,wcvp,0.175,2.06e-4,577,forb
-Panicum,0,Accepted,genus,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1194715-2,wcvp,NA,NA,NA,NA
-Panicum capillare,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:181618-2,wcvp,0.2,3.44e-4,287.72,NA
-Panicum dichotomiflorum,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:325362-2,wcvp,0.7,7.31e-4,NA,NA
-Panicum virgatum,1,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:413537-1,wcvp,1.65,0.001527,117.54759165499999,graminoid
-Paspalum setaceum,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:325365-2,wcvp,NA,9.8e-4,NA,graminoid
-Penstemon digitalis,1,Accepted,species,Plantaginaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:808077-1,wcvp,1.2,0.001134,108.127100986,forb
-Penstemon hirsutus,1,Accepted,species,Plantaginaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:808137-1,wcvp,0.457,1.6e-4,147.5116004105263,forb
-Persicaria maculosa,0,Accepted,species,Polygonaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:695052-1,wcvp,0.644333333,0.001839969,257.29,NA
-Phleum pratense,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:415868-1,wcvp,0.660333333,4.26e-4,258.15,NA
-Physalis,0,Accepted,genus,Solanaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:329952-2,wcvp,NA,NA,NA,NA
-Phytolacca,0,Accepted,genus,Phytolaccaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:327321-2,wcvp,NA,NA,NA,NA
-Phytolacca americana,0,Accepted,species,Phytolaccaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:323290-2,wcvp,2.425,0.006869571,NA,NA
-Phytolacca heterotepala,0,Accepted,species,Phytolaccaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:195821-2,wcvp,NA,NA,NA,forb
-Plantago lanceolata,0,Accepted,species,Plantaginaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:321285-2,wcvp,0.278333333,0.001424813,186.26,NA
-Plantago major,0,Accepted,species,Plantaginaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:321286-2,wcvp,0.265,2.04e-4,216.325,NA
-Poa,0,Accepted,genus,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30001404-2,wcvp,NA,NA,NA,NA
-Poa annua,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:320035-2,wcvp,0.125,2.87e-4,364.34,NA
-Poa compressa,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:204172-2,wcvp,0.415,2.02e-4,194.2,NA
-Poa pratensis,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:417792-1,wcvp,0.353333333,0.006821617,212.92,NA
-Poaceae,0,Accepted,family,,,wcvp,NA,NA,NA,NA
-Potentilla argentea,0,Accepted,species,Rosaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:727660-1,wcvp,0.252,8.98e-5,167,forb
-Potentilla norvegica,0,Accepted,species,Rosaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:728598-1,wcvp,0.315,8.65e-5,248,forb
-Potentilla recta,0,Accepted,species,Rosaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:209483-2,wcvp,0.5,2.69e-4,174,NA
-Potentilla simplex,0,Accepted,species,Rosaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:728987-1,wcvp,NA,NA,NA,forb
-Prunus,0,Accepted,genus,Rosaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30003057-2,wcvp,NA,NA,NA,NA
-Prunus serotina,0,Accepted,species,Rosaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:730262-1,wcvp,20.421,0.122608125,180.15,tree
-Pseudognaphalium obtusifolium,0,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:909626-1,wcvp,NA,3.8e-5,NA,forb
-Pyrus calleryana,0,Accepted,species,Rosaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:730740-1,wcvp,6.5,0.0129,NA,tree
-Quercus,0,Accepted,genus,Fagaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:325819-2,wcvp,NA,NA,NA,NA
-Quercus velutina,0,Accepted,species,Fagaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:296899-1,wcvp,24.495,1.851821111,NA,tree
-Ratibida pinnata,1,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:217881-2,wcvp,1.2,9.63e-4,100.8031519525,forb
-Rhus,0,Accepted,genus,Anacardiaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30005665-2,wcvp,NA,0.008670500000000001,NA,NA
-Rhus typhina,0,Accepted,species,Anacardiaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:70939-1,wcvp,7.28,0.0123925,NA,NA
-Rubus allegheniensis,0,Accepted,species,Rosaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:298725-2,wcvp,1.525,0.002053375,162.3685682888889,subshrub
-Rubus flagellaris,0,Accepted,species,Rosaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30083253-2,wcvp,1.5,0.00343,148.0675804565,subshrub
-Rubus occidentalis,0,Accepted,species,Rosaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:223350-2,wcvp,1.8,0.0013645,NA,subshrub
-Rudbeckia hirta,1,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:223740-2,wcvp,0.25,8.32e-4,193.5,forb
-Rumex acetosa,0,Accepted,species,Polygonaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:332105-2,wcvp,0.505,0.074610972,292.06,NA
-Rumex acetosella,0,Accepted,species,Polygonaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:224391-2,wcvp,0.155,5.41e-4,240.91,NA
-Rumex crispus,0,Accepted,species,Polygonaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:224413-2,wcvp,0.714,0.03654317,240.97,NA
-Rumex obtusifolius,0,Accepted,species,Polygonaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:310739-2,wcvp,0.579,0.001539864,297.12,NA
-Schizachyrium scoparium,1,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:420956-1,wcvp,1.055,0.00167975,148.7650816305,graminoid
-Scrophularia lanceolata,0,Accepted,species,Scrophulariaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:809288-1,wcvp,1.5,1.56e-4,NA,forb
-Setaria,0,Accepted,genus,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:331287-2,wcvp,NA,0.001114048148,NA,NA
-Setaria italica,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1207294-2,wcvp,0.87125,0.002452778,239.1,NA
-Setaria viridis,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1171009-2,wcvp,0.506,9.42e-4,238.2,NA
-Silene latifolia,0,Accepted,species,Caryophyllaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:157647-1,wcvp,0.4875,8.84e-4,216.25,NA
-Silene vulgaris,0,Accepted,species,Caryophyllaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:158668-1,wcvp,0.385,8.77e-4,198.7,NA
-Silphium terebinthinaceum,1,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30257140-2,wcvp,0.716406779661017,0.010748706896551724,170.53125,forb
-Solanum americanum,0,Synonym,species,Solanaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:238279-2,wcvp,1,8.59e-4,NA,NA
-Solanum carolinense,0,Accepted,species,Solanaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:285195-2,wcvp,0.54275,0.00244,149.15538242,NA
-Solidago,0,Accepted,genus,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:60436299-2,wcvp,NA,NA,NA,NA
-Solidago altissima,0,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:285347-2,wcvp,NA,9.32e-5,NA,forb
-Solidago canadensis,0,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:249454-1,wcvp,1.2375,1.35e-4,258.67,forb
-Solidago juncea,1,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:249633-1,wcvp,0.7834490196078432,4.12e-4,130.4785211270612,forb
-Solidago nemoralis,1,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:249731-1,wcvp,0.61,3.93e-4,121.6360551605252,forb
-Solidago rigida,1,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:249837-1,wcvp,1.1,6.94e-4,86.463297028,forb
-Solidago speciosa,1,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:240517-2,wcvp,0.71,2.55e-4,263.25213235294115,forb
-Sorghastrum nutans,1,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:240823-2,wcvp,1.8,0.002305182,135.862764035,graminoid
-Sporobolus cryptandrus,1,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:422687-1,wcvp,0.91,1.06e-4,227.17897435897436,NA
-Sporobolus heterolepis,0,Accepted,species,Poaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1026241-2,wcvp,0.7,0.0011365,NA,graminoid
-Stellaria media,0,Accepted,species,Caryophyllaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:159330-1,wcvp,0.202666667,0.002523356,536.81,NA
-Symphyotrichum,0,Accepted,genus,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30073935-2,wcvp,NA,NA,NA,NA
-Symphyotrichum ericoides,1,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:981811-1,wcvp,0.41214285714285714,1.27e-4,167.58674812030074,forb
-Symphyotrichum laeve,1,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:247114-2,wcvp,0.975,4.25e-4,127.14,forb
-Symphyotrichum lanceolatum,0,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:981841-1,wcvp,1.8,4.18e-4,NA,forb
-Symphyotrichum oolentangiense,1,Synonym,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:981870-1,wcvp,0.36167816091954025,1.7e-4,142.8665171354313,NA
-Symphyotrichum pilosum,0,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:981879-1,wcvp,0.91,6.48e-4,NA,forb
-Symphyotrichum urophyllum,1,Accepted,species,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:981915-1,wcvp,0.914,NA,NA,forb
-Taraxacum officinale,0,Accepted,species,Asteraceae,https://www.worldfloraonline.org/taxon/wfo-0000062154,wfo,NA,6.827931029999999e-4,NA,herb
-Toxicodendron radicans,0,Accepted,species,Anacardiaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:255769-2,wcvp,NA,0.01686,NA,NA
-Tradescantia ohiensis,1,Accepted,species,Commelinaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:173408-1,wcvp,0.92125,0.003655,102.51800597100001,forb
-Tragopogon,0,Accepted,genus,Asteraceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30102386-2,wcvp,NA,NA,NA,NA
-Trifolium,0,Accepted,genus,Fabaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:325471-2,wcvp,NA,NA,NA,NA
-Trifolium arvense,0,Accepted,species,Fabaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:522881-1,wcvp,0.1485,3.91e-4,182.06,NA
-Trifolium campestre,0,Accepted,species,Fabaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:522975-1,wcvp,0.288,3.29e-4,270.83,NA
-Trifolium dubium,0,Synonym,species,Fabaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:523099-1,wcvp,0.2375,3.97e-4,259.61,NA
-Trifolium hybridum,0,Accepted,species,Fabaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30240399-2,wcvp,0.42,7.55e-4,249.03,NA
-Trifolium pratense,0,Accepted,species,Fabaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:523575-1,wcvp,0.464333333,0.00147925,233.73,NA
-Trifolium repens,0,Accepted,species,Fabaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:523626-1,wcvp,0.25,6.01e-4,314.43,NA
-Turritis glabra,0,Accepted,species,Brassicaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:290916-1,wcvp,0.603,7.29e-5,246.63,forb
-Ulmus,0,Accepted,genus,Ulmaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30004945-2,wcvp,NA,NA,NA,NA
-Ulmus pumila,0,Accepted,species,Ulmaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:303333-2,wcvp,21,0.006606584,NA,NA
-Urtica dioica,0,Accepted,species,Urticaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:260630-2,wcvp,0.987333333,9.2e-5,284.8,NA
-Verbascum thapsus,0,Accepted,species,Scrophulariaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:770183-1,wcvp,1.144333333,1.02e-4,169.18,NA
-Verbena,0,Accepted,genus,Verbenaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:330551-2,wcvp,NA,NA,NA,NA
-Verbena stricta,1,Accepted,species,Verbenaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:865493-1,wcvp,0.765,0.001014167,182.80948442238764,forb
-Verbena urticifolia,0,Accepted,species,Verbenaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:324310-2,wcvp,NA,4.6e-4,NA,forb
-Vicia,0,Accepted,genus,Fabaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:330034-2,wcvp,NA,NA,NA,NA
-Vicia villosa,0,Accepted,species,Fabaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:525259-1,wcvp,0.555,0.034105833,260.6233333,NA
-Vinca,0,Accepted,genus,Apocynaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:2619-1,wcvp,NA,NA,NA,NA
-Viola,0,Accepted,genus,Violaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30000540-2,wcvp,NA,0.0015876375,NA,NA
-Vitis,0,Accepted,genus,Vitaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:325876-2,wcvp,NA,0.0576125,NA,NA
-Vitis aestivalis,0,Accepted,species,Vitaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:309286-2,wcvp,9.1,0.0314525,NA,shrub
-Vitis riparia,0,Accepted,species,Vitaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:69009-1,wcvp,14,0.05514,NA,shrub
-Vitis vinifera,0,Accepted,species,Vitaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30478388-2,wcvp,12.5,0.0255,247.1,shrub
-Zizia aptera,1,Accepted,species,Apiaceae,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:271187-2,wcvp,0.34,0.001624167,100.11490093730431,forb
-ACAVIR,NA,NA,NA,NA,NA,NA,NA,6.311111109999999e-4,NA,NA
-ACHMIL,NA,NA,NA,NA,NA,NA,NA,2.19909091e-4,NA,NA
-AGAFOE,NA,NA,NA,NA,NA,NA,NA,2.9e-4,223.32650029866596,NA
-AGANEP,NA,NA,NA,NA,NA,NA,NA,3.30142857e-4,328.54060134310134,NA
-AGRGIG,NA,NA,NA,NA,NA,NA,NA,7.833333300000001e-5,NA,NA
-AGRHYE,NA,NA,NA,NA,NA,NA,NA,5.8357143e-5,NA,NA
-AGRPAR,NA,NA,NA,NA,NA,NA,NA,0.00717,NA,NA
-ALLCER,NA,NA,NA,NA,NA,NA,NA,0.00385,272.92857142857144,NA
-ALLPET,NA,NA,NA,NA,NA,NA,NA,0.002597888889,NA,NA
-ALLVIN,NA,NA,NA,NA,NA,NA,NA,0.019,NA,NA
-AMBART,NA,NA,NA,NA,NA,NA,NA,0.0039900000000000005,NA,NA
-AMBPSI,NA,NA,NA,NA,NA,NA,NA,0.006618142856999999,NA,NA
-AMOCAN,NA,NA,NA,NA,NA,NA,NA,0.0019317,NA,NA
-ANECYL,NA,NA,NA,NA,NA,NA,NA,0.001056,NA,NA
-ANEVIR,NA,NA,NA,NA,NA,NA,NA,0.00113,NA,NA
-APOCAN,NA,NA,NA,NA,NA,NA,NA,0.0010688,NA,NA
-AQUCAN,NA,NA,NA,NA,NA,NA,NA,NA,393.6787037037037,NA
-ARCMIN,NA,NA,NA,NA,NA,NA,NA,0.0094175,NA,NA
-ARNATR,NA,NA,NA,NA,NA,NA,NA,0.00267,213.4426518853559,NA
-ARTCAM,NA,NA,NA,NA,NA,NA,NA,1.20833333e-4,NA,NA
-ASCVER,NA,NA,NA,NA,NA,NA,NA,0.002199,286.35,NA
-ASTCAN,NA,NA,NA,NA,NA,NA,NA,0.001741176471,284.55814718614715,NA
-Acalypha virginica,NA,NA,NA,NA,NA,NA,0.91,6.52e-4,NA,forb
-Agastache foeniculum,NA,NA,NA,NA,NA,NA,NA,2.95e-4,NA,NA
-Agastache nepetoides,NA,NA,NA,NA,NA,NA,NA,3.31e-4,NA,NA
-Agrimonia parviflora,NA,NA,NA,NA,NA,NA,1.8,0.0043725,NA,NA
-Agrostis hyemalis,NA,NA,NA,NA,NA,NA,1.1,5.84e-5,NA,graminoid
-Allium cernuum,NA,NA,NA,NA,NA,NA,NA,0.00385,NA,forb
-Ambrosia psilostachya,NA,NA,NA,NA,NA,NA,0.45,0.0066035,193.4,forb
-Amorpha canescens,NA,NA,NA,NA,NA,NA,1.2,0.002181743,NA,NA
-Anemone cylindrica,NA,NA,NA,NA,NA,NA,NA,0.001312,NA,forb
-Anemone virginiana,NA,NA,NA,NA,NA,NA,NA,0.001135,NA,forb
-Arctium minus,NA,NA,NA,NA,NA,NA,0.975,0.010592143,240.67,NA
-Arnoglossum atriplicifolium,NA,NA,NA,NA,NA,NA,1.2305,0.0025455,123.0722757325,forb
-Artemisia campestris,NA,NA,NA,NA,NA,NA,0.45,1.17e-4,168.5,forb
-Asclepias verticillata,NA,NA,NA,NA,NA,NA,NA,0.00219775,NA,forb
-BARVUL,NA,NA,NA,NA,NA,NA,NA,5.96909091e-4,NA,NA
-BERINC,NA,NA,NA,NA,NA,NA,NA,3.84875e-4,NA,NA
-BRIEUP,NA,NA,NA,NA,NA,NA,NA,9.4e-4,NA,NA
-BROINE,NA,NA,NA,NA,NA,NA,NA,0.002857142857,NA,NA
-BROKAL,NA,NA,NA,NA,NA,NA,NA,0.002575333333,NA,NA
-Baptisia lactea,NA,NA,NA,NA,NA,NA,0.9405,0.01642,NA,NA
-Brickellia eupatorioides,NA,NA,NA,NA,NA,NA,NA,9.4e-4,NA,NA
-CALCAN,NA,NA,NA,NA,NA,NA,NA,9.850000000000001e-5,NA,NA
-CARANN,NA,NA,NA,NA,NA,NA,NA,4.3e-4,NA,NA
-CARBIC,NA,NA,NA,NA,NA,NA,NA,0.001315,246.2888888888889,NA
-CARBRE,NA,NA,NA,NA,NA,NA,NA,8.900000000000001e-4,224.23653846153846,NA
-CARCRI,NA,NA,NA,NA,NA,NA,NA,6.71857143e-4,NA,NA
-CARGRA,NA,NA,NA,NA,NA,NA,NA,4.92e-4,NA,NA
-CARMOL,NA,NA,NA,NA,NA,NA,NA,NA,303.55128205128204,NA
-CARNOR,NA,NA,NA,NA,NA,NA,NA,7.3e-4,288.4,NA
-CARPEL,NA,NA,NA,NA,NA,NA,NA,0.0018,NA,NA
-CEAAME,NA,NA,NA,NA,NA,NA,NA,0.003419625,NA,NA
-CELORB,NA,NA,NA,NA,NA,NA,NA,0.009825555556,NA,NA
-CENSTO,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-CERFON,NA,NA,NA,NA,NA,NA,NA,1.4116999999999998e-4,NA,NA
-CERPUM,NA,NA,NA,NA,NA,NA,NA,4.6e-5,NA,NA
-CHASFA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-CHEALB,NA,NA,NA,NA,NA,NA,NA,7.181666669999999e-4,NA,NA
-CICINT,NA,NA,NA,NA,NA,NA,NA,0.003326153846,NA,NA
-CIRARV,NA,NA,NA,NA,NA,NA,NA,0.001303894737,NA,NA
-CONCAN,NA,NA,NA,NA,NA,NA,NA,5.7357143e-5,NA,NA
-CORNUS,NA,NA,NA,NA,NA,NA,NA,0.058944336810000005,NA,NA
-CORPAL,NA,NA,NA,NA,NA,NA,NA,0.0019895,NA,NA
-CORTIN,NA,NA,NA,NA,NA,NA,NA,2.9e-4,NA,NA
-CORTRI,NA,NA,NA,NA,NA,NA,NA,0.00256,303.0377759495407,NA
-CYPSTR,NA,NA,NA,NA,NA,NA,NA,3.54666667e-4,NA,NA
-Calamagrostis canadensis,NA,NA,NA,NA,NA,NA,1.5,1.07e-4,NA,graminoid
-Carex annectens,NA,NA,NA,NA,NA,NA,NA,4.3e-4,NA,graminoid
-Carex bicknellii,NA,NA,NA,NA,NA,NA,1,0.00131,NA,graminoid
-Carex brevior,NA,NA,NA,NA,NA,NA,NA,8.9e-4,NA,graminoid
-Carex crinita,NA,NA,NA,NA,NA,NA,1.6,6.75e-4,NA,graminoid
-Carex granularis,NA,NA,NA,NA,NA,NA,0.76,4.92e-4,NA,graminoid
-Carex normalis,NA,NA,NA,NA,NA,NA,1.5,7.3e-4,NA,graminoid
-Carex pellita,NA,NA,NA,NA,NA,NA,NA,0.0018,NA,graminoid
-Ceanothus americanus,NA,NA,NA,NA,NA,NA,0.91,0.003771167,NA,NA
-Celastrus orbiculatus,NA,NA,NA,NA,NA,NA,9.1,0.008983,NA,shrub
-Cerastium fontanum,NA,NA,NA,NA,NA,NA,0.215,1.31e-4,322.535,forb
-Cerastium pumilum,NA,NA,NA,NA,NA,NA,0.055,4.87e-5,301.3,forb
-Cichorium intybus,NA,NA,NA,NA,NA,NA,0.68375,0.003666667,264.3,NA
-Cirsium arvense,NA,NA,NA,NA,NA,NA,0.720666667,0.001500643,154.02,NA
-Conyza canadensis,NA,NA,NA,NA,NA,NA,NA,5.7357143e-5,NA,NA
-Coreopsis palmata,NA,NA,NA,NA,NA,NA,NA,0.001988,NA,forb
-Coreopsis tinctoria,NA,NA,NA,NA,NA,NA,0.74,2.17e-4,NA,NA
-Coreopsis tripteris,NA,NA,NA,NA,NA,NA,NA,0.00256,85.33220979055555,forb
-Cornus,NA,NA,NA,NA,NA,NA,NA,0.058944336810000005,NA,NA
-Cyperus strigosus,NA,NA,NA,NA,NA,NA,1,3.26e-4,NA,graminoid
-DACGLO,NA,NA,NA,NA,NA,NA,NA,8.84960784e-4,NA,NA
-DALCAN,NA,NA,NA,NA,NA,NA,NA,0.0026067333330000004,NA,NA
-DAUCAR,NA,NA,NA,NA,NA,NA,NA,0.001101988235,NA,NA
-DESCAN,NA,NA,NA,NA,NA,NA,NA,0.0051955555560000005,482.30267323611645,NA
-DESIMANLL,NA,NA,NA,NA,NA,NA,NA,0.005987571429,NA,NA
-DESMAN,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-DESPAN,NA,NA,NA,NA,NA,NA,NA,0.003192,NA,NA
-DESRIG,NA,NA,NA,NA,NA,NA,NA,0.0025369999999999998,NA,NA
-DIAARM,NA,NA,NA,NA,NA,NA,NA,7.114285710000001e-4,NA,NA
-DICCLA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-DIGCOG,NA,NA,NA,NA,NA,NA,NA,5.5e-4,NA,NA
-Dalea candida,NA,NA,NA,NA,NA,NA,0.61,0.002216417,NA,NA
-Desmanthus illinoensis,NA,NA,NA,NA,NA,NA,0.91,0.005656445,NA,NA
-Desmodium rigidum,NA,NA,NA,NA,NA,NA,NA,0.0025369999999999998,NA,NA
-Dianthus armeria,NA,NA,NA,NA,NA,NA,0.3625,3.65e-4,148.8,NA
-Dichanthelium clandestinum,NA,NA,NA,NA,NA,NA,0.61,0.001296,222.483622045,graminoid
-ECHANG,NA,NA,NA,NA,NA,NA,NA,0.1383555556,NA,NA
-ECHPAL,NA,NA,NA,NA,NA,NA,NA,0.00566,NA,NA
-ELAUMB,NA,NA,NA,NA,NA,NA,NA,0.014683,NA,NA
-ELYCAN,NA,NA,NA,NA,NA,NA,NA,0.004265,248.23307287658034,NA
-ELYREP,NA,NA,NA,NA,NA,NA,NA,0.0042699999999999995,NA,NA
-ELYVIL,NA,NA,NA,NA,NA,NA,NA,0.003428,NA,NA
-ELYVIR,NA,NA,NA,NA,NA,NA,NA,0.005089909091,300.8268822901902,NA
-ERIGERON,NA,NA,NA,NA,NA,NA,NA,4.7142857e-5,NA,NA
-EUPCOR,NA,NA,NA,NA,NA,NA,NA,0.00379,NA,NA
-EUPMAC,NA,NA,NA,NA,NA,NA,NA,2.7874999999999997e-4,NA,NA
-EUPPER,NA,NA,NA,NA,NA,NA,NA,1.05875e-4,NA,NA
-EUPPUR,NA,NA,NA,NA,NA,NA,NA,4.5e-4,NA,NA
-Echinacea angustifolia,NA,NA,NA,NA,NA,NA,NA,0.18485,NA,forb
-Elymus villosus,NA,NA,NA,NA,NA,NA,NA,0.003455,NA,graminoid
-Eupatorium maculatum,NA,NA,NA,NA,NA,NA,NA,2.7874999999999997e-4,NA,NA
-Eupatorium perfoliatum,NA,NA,NA,NA,NA,NA,NA,1.09e-4,NA,forb
-Eupatorium purpureum,NA,NA,NA,NA,NA,NA,NA,4.5e-4,NA,herb
-Euphorbia corollata,NA,NA,NA,NA,NA,NA,NA,0.00379,NA,forb
-FALCON,NA,NA,NA,NA,NA,NA,NA,0.0067,NA,NA
-FRAVIR,NA,NA,NA,NA,NA,NA,NA,4.64142857e-4,NA,NA
-Fragaria virginiana,NA,NA,NA,NA,NA,NA,NA,4.6e-4,NA,forb
-GAUBIE,NA,NA,NA,NA,NA,NA,NA,0.0105,153.52739726027397,NA
-GENAND,NA,NA,NA,NA,NA,NA,NA,5.875e-5,NA,NA
-GERMAC,NA,NA,NA,NA,NA,NA,NA,0.00607,NA,NA
-GEUCAN,NA,NA,NA,NA,NA,NA,NA,0.00723425,NA,NA
-Gentiana andrewsii,NA,NA,NA,NA,NA,NA,0.61,5.27e-5,NA,forb
-Geranium maculatum,NA,NA,NA,NA,NA,NA,NA,0.00607,NA,forb
-HELGIG,NA,NA,NA,NA,NA,NA,NA,0.0032280000000000004,NA,NA
-HELGRO,NA,NA,NA,NA,NA,NA,NA,0.00197,NA,NA
-HELHEL,NA,NA,NA,NA,NA,NA,NA,0.0045060000000000005,342.44283187522296,NA
-HELMOL,NA,NA,NA,NA,NA,NA,NA,0.004742857143,NA,NA
-HELPAU,NA,NA,NA,NA,NA,NA,NA,0.00777,NA,NA
-HELSTR,NA,NA,NA,NA,NA,NA,NA,0.0052699999999999995,NA,NA
-HIERACIUM,NA,NA,NA,NA,NA,NA,NA,2.7333333300000003e-4,NA,NA
-HYPASC,NA,NA,NA,NA,NA,NA,NA,1.1999999999999999e-4,NA,NA
-HYPKAL,NA,NA,NA,NA,NA,NA,NA,8e-5,NA,NA
-HYPPER,NA,NA,NA,NA,NA,NA,NA,1.863e-4,NA,NA
-HYPPUN,NA,NA,NA,NA,NA,NA,NA,4e-5,NA,NA
-HYPRAD,NA,NA,NA,NA,NA,NA,NA,8.32461538e-4,NA,NA
-Helianthus giganteus,NA,NA,NA,NA,NA,NA,NA,0.003228,NA,forb
-Helianthus grosseserratus,NA,NA,NA,NA,NA,NA,1.5,0.001292,NA,forb
-Helianthus mollis,NA,NA,NA,NA,NA,NA,NA,0.00466,NA,forb
-Helianthus pauciflorus,NA,NA,NA,NA,NA,NA,NA,0.00777,NA,forb
-Helianthus strumosus,NA,NA,NA,NA,NA,NA,NA,0.00527,NA,forb
-Heliopsis helianthoides,NA,NA,NA,NA,NA,NA,1.25425,0.0040716,164.27,forb
-Hypericum ascyron,NA,NA,NA,NA,NA,NA,1.5,1.64e-4,172.78249999500002,forb
-Hypericum kalmianum,NA,NA,NA,NA,NA,NA,NA,8e-5,NA,shrub
-Hypericum punctatum,NA,NA,NA,NA,NA,NA,0.91,4e-5,NA,forb
-JUNDUD,NA,NA,NA,NA,NA,NA,NA,1e-5,NA,NA
-JUNTEN,NA,NA,NA,NA,NA,NA,NA,1.15e-5,NA,NA
-JUNTOR,NA,NA,NA,NA,NA,NA,NA,1.0399999999999999e-5,NA,NA
-Juncus dudleyi,NA,NA,NA,NA,NA,NA,NA,1e-5,NA,graminoid
-Juncus torreyi,NA,NA,NA,NA,NA,NA,0.9,1.1e-5,NA,graminoid
-KOECRI,NA,NA,NA,NA,NA,NA,NA,NA,188.64072765469822,NA
-KOEMAC,NA,NA,NA,NA,NA,NA,NA,3.20090909e-4,NA,NA
-LIAASP,NA,NA,NA,NA,NA,NA,NA,0.0020125,NA,NA
-LIAPYC,NA,NA,NA,NA,NA,NA,NA,0.0017875,NA,NA
-LIASPI,NA,NA,NA,NA,NA,NA,NA,0.002997,NA,NA
-LIESCA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-LOBINF,NA,NA,NA,NA,NA,NA,NA,1.4e-5,NA,NA
-LOBSIP,NA,NA,NA,NA,NA,NA,NA,3.6874999999999995e-5,NA,NA
-LUDALT,NA,NA,NA,NA,NA,NA,NA,2.9874999999999998e-5,NA,NA
-LYCOPUS,NA,NA,NA,NA,NA,NA,NA,1.7315972199999997e-4,NA,NA
-Liatris aspera,NA,NA,NA,NA,NA,NA,NA,0.002113333,NA,forb
-Liatris pycnostachya,NA,NA,NA,NA,NA,NA,1.1,0.002821667,NA,forb
-Liatris spicata,NA,NA,NA,NA,NA,NA,1.4,0.003699,NA,forb
-Lobelia inflata,NA,NA,NA,NA,NA,NA,NA,1.4e-5,NA,forb
-Lobelia siphilitica,NA,NA,NA,NA,NA,NA,NA,4.17e-5,NA,forb
-Ludwigia alternifolia,NA,NA,NA,NA,NA,NA,NA,2.95e-5,NA,forb
-Lycopus,NA,NA,NA,NA,NA,NA,NA,1.7315972199999997e-4,NA,NA
-MAIRAC,NA,NA,NA,NA,NA,NA,NA,0.02931,NA,NA
-MEDLUP,NA,NA,NA,NA,NA,NA,NA,0.001562230769,NA,NA
-MELILOTUS,NA,NA,NA,NA,NA,NA,NA,0.002253696356,NA,NA
-MORALB,NA,NA,NA,NA,NA,NA,NA,0.00966,NA,NA
-MUHFRO,NA,NA,NA,NA,NA,NA,NA,1.1999999999999999e-4,NA,NA
-Maianthemum racemosum,NA,NA,NA,NA,NA,NA,NA,0.0313025,NA,forb
-Muhlenbergia frondosa,NA,NA,NA,NA,NA,NA,0.61,2.11e-4,NA,graminoid
-OENBIE,NA,NA,NA,NA,NA,NA,NA,3.80866667e-4,NA,NA
-OXALIS,NA,NA,NA,NA,NA,NA,NA,2.1799999999999999e-4,NA,NA
-Oxalis,NA,NA,NA,NA,NA,NA,NA,2.1799999999999999e-4,NA,NA
-PARINT,NA,NA,NA,NA,NA,NA,NA,0.0030800000000000003,156.25785808394505,NA
-PARQUI,NA,NA,NA,NA,NA,NA,NA,0.025876999999999997,NA,NA
-PENGRA,NA,NA,NA,NA,NA,NA,NA,0.0017975,NA,NA
-PERSICARIA,NA,NA,NA,NA,NA,NA,NA,0.0039238,NA,NA
-PHLPRA,NA,NA,NA,NA,NA,NA,NA,3.68625e-4,NA,NA
-PLALAN,NA,NA,NA,NA,NA,NA,NA,0.00144524,NA,NA
-POACOM,NA,NA,NA,NA,NA,NA,NA,2.0625e-4,NA,NA
-POAPRA,NA,NA,NA,NA,NA,NA,NA,2.83368421e-4,NA,NA
-POTREC,NA,NA,NA,NA,NA,NA,NA,2.77777778e-4,NA,NA
-PSEOBT,NA,NA,NA,NA,NA,NA,NA,4e-5,NA,NA
-PYCTEN,NA,NA,NA,NA,NA,NA,NA,7.000000000000001e-5,298.90238095238095,NA
-PYCVIR,NA,NA,NA,NA,NA,NA,NA,1.4000000000000001e-4,NA,NA
-PYRCAL,NA,NA,NA,NA,NA,NA,NA,0.0129,NA,NA
-Parthenium integrifolium,NA,NA,NA,NA,NA,NA,0.87,0.00308,146.9424612,forb
-Parthenocissus quinquefolia,NA,NA,NA,NA,NA,NA,6.766666667,0.023885417,198.35,shrub
-Penstemon grandiflorus,NA,NA,NA,NA,NA,NA,NA,0.0017975,NA,NA
-Persicaria,NA,NA,NA,NA,NA,NA,NA,0.0039238,NA,NA
-Pycnanthemum tenuifolium,NA,NA,NA,NA,NA,NA,NA,7e-5,NA,forb
-Pycnanthemum virginianum,NA,NA,NA,NA,NA,NA,NA,1.4e-4,NA,forb
-RHACAT,NA,NA,NA,NA,NA,NA,NA,0.030367275,NA,NA
-RHUS,NA,NA,NA,NA,NA,NA,NA,0.008670500000000001,NA,NA
-RUBALL,NA,NA,NA,NA,NA,NA,NA,0.0023902999999999997,NA,NA
-RUBFLA,NA,NA,NA,NA,NA,NA,NA,0.0034300000000000003,NA,NA
-RUBOCC,NA,NA,NA,NA,NA,NA,NA,0.00137875,NA,NA
-RUDFUL,NA,NA,NA,NA,NA,NA,NA,5e-4,NA,NA
-RUDLAC,NA,NA,NA,NA,NA,NA,NA,0.0023925,NA,NA
-RUDSUB,NA,NA,NA,NA,NA,NA,NA,9.4e-4,NA,NA
-RUDTRI,NA,NA,NA,NA,NA,NA,NA,7.700000000000001e-4,283.26832675438595,NA
-RUMACE,NA,NA,NA,NA,NA,NA,NA,6.9428e-4,NA,NA
-RUMCRI,NA,NA,NA,NA,NA,NA,NA,0.0015621304350000001,NA,NA
-Rhamnus cathartica,NA,NA,NA,NA,NA,NA,5.3335,0.026720273,167.06,tree
-Rudbeckia fulgida,NA,NA,NA,NA,NA,NA,NA,5e-4,NA,forb
-Rudbeckia laciniata,NA,NA,NA,NA,NA,NA,1.9,0.00235175,NA,forb
-Rudbeckia subtomentosa,NA,NA,NA,NA,NA,NA,NA,9.4e-4,NA,forb
-Rudbeckia triloba,NA,NA,NA,NA,NA,NA,NA,7.7e-4,NA,forb
-SAPOFF,NA,NA,NA,NA,NA,NA,NA,0.001662545455,NA,NA
-SASALB,NA,NA,NA,NA,NA,NA,NA,0.078685,NA,NA
-SCRLAN,NA,NA,NA,NA,NA,NA,NA,1.59285714e-4,NA,NA
-SENHEB,NA,NA,NA,NA,NA,NA,NA,NA,203.784632034632,NA
-SETARIA,NA,NA,NA,NA,NA,NA,NA,0.001114048148,NA,NA
-SILINT,NA,NA,NA,NA,NA,NA,NA,0.03065,210.83274819361708,NA
-SILLAC,NA,NA,NA,NA,NA,NA,NA,0.07805,136.80110389901137,NA
-SILLAT,NA,NA,NA,NA,NA,NA,NA,7.76363636e-4,NA,NA
-SILPER,NA,NA,NA,NA,NA,NA,NA,0.006849999999999999,NA,NA
-SOLCAR,NA,NA,NA,NA,NA,NA,NA,0.00244,NA,NA
-SOLRID,NA,NA,NA,NA,NA,NA,NA,2e-4,NA,NA
-SPAPEC,NA,NA,NA,NA,NA,NA,NA,0.02691,253.5151515151515,NA
-SPOHET,NA,NA,NA,NA,NA,NA,NA,0.001828,NA,NA
-SYMNOV,NA,NA,NA,NA,NA,NA,NA,6.596e-4,290.3013438735178,NA
-Saponaria officinalis,NA,NA,NA,NA,NA,NA,0.557,0.0016877,233.5,NA
-Sassafras albidum,NA,NA,NA,NA,NA,NA,19.12,0.0827425,NA,NA
-Senna hebecarpa,NA,NA,NA,NA,NA,NA,1.0285,NA,137.08477486666666,forb
-Silphium integrifolium,NA,NA,NA,NA,NA,NA,NA,0.03065,NA,forb
-Silphium laciniatum,NA,NA,NA,NA,NA,NA,NA,0.07805,71.275340865,forb
-Silphium perfoliatum,NA,NA,NA,NA,NA,NA,1.8,0.00685,121.83524495,forb
-Solidago riddellii,NA,NA,NA,NA,NA,NA,NA,2e-4,NA,forb
-Spartina pectinata,NA,NA,NA,NA,NA,NA,NA,0.02691,NA,NA
-TAROFF,NA,NA,NA,NA,NA,NA,NA,6.827931029999999e-4,NA,NA
-TEPVIR,NA,NA,NA,NA,NA,NA,NA,NA,250.70822588705647,NA
-THADAS,NA,NA,NA,NA,NA,NA,NA,0.002363333333,NA,NA
-TOXRAD,NA,NA,NA,NA,NA,NA,NA,0.01692153846,NA,NA
-TRIARV,NA,NA,NA,NA,NA,NA,NA,4.41421053e-4,NA,NA
-TRIFLA,NA,NA,NA,NA,NA,NA,NA,0.0010220000000000001,NA,NA
-TRIPER,NA,NA,NA,NA,NA,NA,NA,2.9999999999999997e-5,NA,NA
-TRIPRA,NA,NA,NA,NA,NA,NA,NA,0.0016259523810000002,NA,NA
-TRIREP,NA,NA,NA,NA,NA,NA,NA,5.62466667e-4,NA,NA
-Thalictrum dasycarpum,NA,NA,NA,NA,NA,NA,NA,0.002265,NA,forb
-Tridens flavus,NA,NA,NA,NA,NA,NA,0.76,8.38e-4,NA,graminoid
-Triodanis perfoliata,NA,NA,NA,NA,NA,NA,NA,2.48e-5,NA,NA
-ULMPUM,NA,NA,NA,NA,NA,NA,NA,0.006216583333,NA,NA
-URTDIO,NA,NA,NA,NA,NA,NA,NA,1.11571429e-4,NA,NA
-VERFAS,NA,NA,NA,NA,NA,NA,NA,NA,317.0909090909091,NA
-VERHAS,NA,NA,NA,NA,NA,NA,NA,2.3019999999999998e-4,NA,NA
-VERNONIA,NA,NA,NA,NA,NA,NA,NA,9.857142859999999e-4,NA,NA
-VERONICA,NA,NA,NA,NA,NA,NA,NA,2.15392209e-4,NA,NA
-VERTHA,NA,NA,NA,NA,NA,NA,NA,9.1266667e-5,NA,NA
-VERVIR,NA,NA,NA,NA,NA,NA,NA,6.5714286e-5,504.91858974358973,NA
-VIOLA,NA,NA,NA,NA,NA,NA,NA,0.0015876375,NA,NA
-VITIS,NA,NA,NA,NA,NA,NA,NA,0.0576125,NA,NA
-Verbena hastata,NA,NA,NA,NA,NA,NA,NA,2.31e-4,NA,forb
-Vernonia,NA,NA,NA,NA,NA,NA,NA,9.857142859999999e-4,NA,NA
-Veronica,NA,NA,NA,NA,NA,NA,NA,2.15392209e-4,NA,NA
-Veronicastrum virginicum,NA,NA,NA,NA,NA,NA,NA,7e-5,NA,forb
-ZIZAUR,NA,NA,NA,NA,NA,NA,NA,0.002314285714,15.55166972,NA
-Zizia aurea,NA,NA,NA,NA,NA,NA,NA,0.002345,NA,forb
+accepted_name,family,seeded,pool_size,height,seedmass,sla,lifeform,taxonomic_status,accepted_name_rank,source,accepted_name_url
+unknown,,0,NA,NA,NA,NA,NA,,,,
+Acer,Sapindaceae,0,NA,NA,NA,NA,NA,Accepted,genus,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:328248-2
+Acer negundo,Sapindaceae,0,NA,17.3725,0.035703738,251,tree,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:781412-1
+Acer rubrum,Sapindaceae,0,NA,24.52,0.019932063,NA,tree,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1867-2
+Achillea millefolium,Asteraceae,0,NA,0.65375,1.79e-4,189.35,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:2294-2
+Agrostis gigantea,Poaceae,0,NA,0.828333333,8.32e-5,227.84,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:385783-1
+Alliaria petiolata,Brassicaceae,0,NA,0.583333333,0.002601208,412,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1176324-2
+Allium vineale,Amaryllidaceae,0,NA,0.375,0.007386,187,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:529111-1
+Amaranthus,Amaranthaceae,0,NA,NA,NA,NA,NA,Accepted,genus,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:327362-2
+Ambrosia artemisiifolia,Asteraceae,0,NA,0.8725,0.00399,231.3,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:176058-1
+Andropogon gerardii,Poaceae,1,NA,1.8,0.002534,122.54114704599999,graminoid,Accepted,species,wfo,https://www.worldfloraonline.org/taxon/wfo-0000846629
+Apocynum cannabinum,Apocynaceae,0,NA,1,9.7e-4,163.07893911000002,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:16527-2
+Arabidopsis thaliana,Brassicaceae,0,NA,0.229333333,3.13e-5,329,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:277970-1
+Asclepias amplexicaulis,Apocynaceae,0,NA,NA,0.0106,NA,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:60445583-2
+Asclepias syriaca,Apocynaceae,1,18,1.22725,0.0062266,158.28,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:319076-2
+Asclepias tuberosa,Apocynaceae,1,18,0.61,0.006620625,184.63891973,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:94704-1
+Asparagus officinalis,Asparagaceae,0,NA,0.933333333,0.033671833,109.55,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:531229-1
+Asteraceae,,0,NA,NA,NA,NA,NA,Accepted,family,wcvp,
+Astragalus canadensis,Fabaceae,0,NA,0.15,0.001749667,NA,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:24595-2
+Avena sativa,Poaceae,0,NA,0.846666667,0.028530606,206.8,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:391732-1
+Baptisia alba,Fabaceae,1,33,NA,0.01626,268.19354838709677,forb,Synonym,variety,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:273066-2
+Barbarea vulgaris,Brassicaceae,0,NA,0.475,0.00039475000000000003,266.5,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:29455-2
+Berberis vulgaris,Berberidaceae,0,NA,1.917,0.025669533,130.32,shrub,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:328527-2
+Berteroa incana,Brassicaceae,0,NA,0.3625,5.14e-4,177.43,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:278924-1
+Betula,Betulaceae,0,NA,NA,NA,NA,NA,Accepted,genus,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:328387-2
+Bouteloua curtipendula,Poaceae,1,6,0.91,0.0020735,112.48656035850001,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1198286-2
+Brassica,Brassicaceae,0,NA,NA,NA,NA,NA,Accepted,genus,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30043511-2
+Brassica napus,Brassicaceae,0,NA,0.854,0.003482258,248.05,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:279419-1
+Brassicaceae,,0,NA,NA,NA,NA,NA,Accepted,family,wcvp,
+Bromus inermis,Poaceae,0,NA,0.6175,0.003040125,219.32,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:393784-1
+Bromus japonicus,Poaceae,0,NA,0.275,0.002440167,279.1,herb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:60459493-2
+Bromus kalmii,Poaceae,0,NA,0.91,0.002497222,NA,graminoid,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:37071-2
+Bromus tectorum,Poaceae,0,NA,0.304,0.003115106,350.3,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:394163-1
+Carex,Cyperaceae,0,NA,NA,NA,NA,NA,Accepted,genus,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:330029-2
+Centaurea stoebe,Asteraceae,0,NA,0.6125,0.0018025,227.23,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:191689-1
+Chamaecrista fasciculata,Fabaceae,1,18,0.73,0.007681111,297.17426919685437,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:54500-2
+Chenopodium album,Amaranthaceae,0,NA,0.7666,0.013975483,222.14,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:55993-2
+Chondrilla juncea,Asteraceae,0,NA,0.575,5.74e-4,75.3,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:328774-2
+Circaea canadensis,Onagraceae,0,NA,NA,0.00264,NA,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1213937-2
+Cirsium,Asteraceae,0,NA,NA,NA,NA,NA,Accepted,genus,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30001899-2
+Coreopsis lanceolata,Asteraceae,1,6,0.555,0.001555467,165.20813763500001,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:319152-2
+Cyperaceae,,0,NA,NA,NA,NA,NA,Accepted,family,wcvp,
+Cyperus,Cyperaceae,0,NA,NA,NA,NA,NA,Accepted,genus,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:330001-2
+Cyperus lupulinus,Cyperaceae,0,NA,NA,NA,NA,graminoid,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:74847-2
+Dactylis glomerata,Poaceae,0,NA,0.704666667,9.19e-4,247.66,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:397309-1
+Dalea purpurea,Fabaceae,1,6,0.91,0.002309786,190.72222222222223,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:490847-1
+Danthonia spicata,Poaceae,0,NA,NA,8.92e-4,NA,graminoid,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1167024-2
+Daucus carota,Apiaceae,0,NA,0.572666667,0.001002938,197.63,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:841063-1
+Desmodium canadense,Fabaceae,0,NA,1.14075,0.0051,166.25165886000002,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1051889-2
+Desmodium illinoense,Fabaceae,1,33,0.6042857142857143,0.0066,355.95591848533024,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:491822-1
+Desmodium paniculatum,Fabaceae,0,NA,0.91,0.00273,NA,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:491980-1
+Dichanthelium,Poaceae,0,NA,NA,NA,NA,NA,Accepted,genus,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1035847-2
+Digitaria,Poaceae,0,NA,NA,NA,NA,NA,Accepted,genus,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:329395-2
+Digitaria cognata,Poaceae,0,NA,NA,5.5e-4,NA,graminoid,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:80227-2
+Digitaria ischaemum,Poaceae,0,NA,0.18,6.29e-4,406.15,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:398891-1
+Digitaria sanguinalis,Poaceae,0,NA,0.22,6.62e-4,352.5,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:399115-1
+Drymocallis arguta,Rosaceae,1,12,0.91,1.42e-4,136.26078063801964,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:84384-2
+Echinacea pallida,Asteraceae,0,NA,0.37,0.0049695,96.451377873,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:202374-1
+Echinacea purpurea,Asteraceae,1,6,0.37,0.002164,126.40202280611112,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1174497-2
+Elaeagnus umbellata,Elaeagnaceae,0,NA,4.6,0.0152625,NA,shrub,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:927281-1
+Elymus,Poaceae,0,NA,NA,NA,NA,NA,Accepted,genus,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:328322-2
+Elymus canadensis,Poaceae,0,NA,0.91,0.0042035,124.14332373368421,graminoid,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:400194-1
+Elymus repens,Poaceae,0,NA,0.78,0.003138357,236.19,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:90320-2
+Elymus virginicus,Poaceae,0,NA,0.76,0.004918556,NA,graminoid,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:90367-2
+Eragrostis cilianensis,Poaceae,0,NA,0.303333333,7.13e-5,NA,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1104599-2
+Eragrostis spectabilis,Poaceae,0,NA,0.27,2.57e-4,NA,graminoid,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1137778-2
+Erechtites hieraciifolius,Asteraceae,0,NA,NA,5.6e-4,NA,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1152557-2
+Erigeron,Asteraceae,0,NA,0.70975,4.7142857e-5,244.694285095,NA,Accepted,genus,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:326342-2
+Erigeron canadensis,Asteraceae,0,NA,1.00625,1.77e-4,224.05,NA,Synonym,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:203653-1
+Eryngium yuccifolium,Apiaceae,1,6,1.0115,0.00382,91.748961777,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:842103-1
+Euphorbia maculata,Euphorbiaceae,0,NA,NA,1.77e-4,NA,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:347236-1
+Euthamia graminifolia,Asteraceae,0,NA,0.6,1.06e-4,NA,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1004467-1
+Fabaceae,,0,NA,NA,NA,NA,NA,Accepted,family,wcvp,
+Fagopyrum esculentum,Polygonaceae,0,NA,0.828333333,0.025273,NA,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:694526-1
+Fallopia convolvulus,Polygonaceae,0,NA,0.688,0.004761917,238.75,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:103354-2
+Festuca rubra,Poaceae,0,NA,0.431,0.006072466,193.57,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30010036-2
+Festuca trachyphylla,Poaceae,0,NA,0.125,5.95e-4,55.5,graminoid,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:60451281-2
+Gamochaeta purpurea,Asteraceae,0,NA,0.3,3.83e-5,NA,NA,Synonym,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:107379-2
+Geranium,Geraniaceae,0,NA,NA,NA,NA,NA,Accepted,genus,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:327764-2
+Geum canadense,Rosaceae,0,NA,1.2,0.00515,NA,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30065568-2
+Gleditsia triacanthos,Fabaceae,0,NA,27.16,0.176454889,NA,tree,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:110723-2
+Gnaphalium,Asteraceae,0,NA,NA,NA,NA,NA,Accepted,genus,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:325908-2
+Gnaphalium uliginosum,Asteraceae,0,NA,0.151666667,1.88e-5,378.33,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:210174-1
+Hackelia virginiana,Boraginaceae,0,NA,NA,0.0026,NA,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:116847-2
+Helianthus occidentalis,Asteraceae,1,33,0.5365573770491804,0.00221,183.53441597074817,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:315076-2
+Hieracium,Asteraceae,0,NA,0.1813052,2.7333333300000003e-4,227.69832536500002,NA,Accepted,genus,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:330082-2
+Hypericum perforatum,Hypericaceae,0,NA,0.454,1.62e-4,260.64,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:433719-1
+Hypochaeris radicata,Asteraceae,0,NA,0.32,8.14e-4,NA,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:225575-1
+Juncus dichotomus,Juncaceae,0,NA,0.88,NA,NA,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:442886-1
+Juncus effusus,Juncaceae,0,NA,1.266666667,6.98e-4,109.36,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:442917-1
+Juncus tenuis,Juncaceae,0,NA,0.422666667,1.34e-5,134.97,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:304453-2
+Koeleria macrantha,Poaceae,0,NA,0.2665,4.22e-4,118.07,graminoid,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:406615-1
+Krigia,Asteraceae,0,NA,NA,NA,NA,NA,Accepted,genus,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:331687-2
+Lactuca,Asteraceae,0,NA,NA,NA,NA,NA,Accepted,genus,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:327393-2
+Lepidium campestre,Brassicaceae,0,NA,0.296,0.0022175,253.05,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:286087-1
+Lespedeza capitata,Fabaceae,1,12,0.79,0.002738625,274.5025641025641,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:502425-1
+Lespedeza hirta,Fabaceae,0,NA,1.8,0.0029105,NA,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30017567-2
+Lespedeza virginica,Fabaceae,1,12,0.708,0.00191,126.2115385,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:138683-2
+Liatris cylindracea,Asteraceae,1,33,0.5644642857142856,0.0032605,110.01868686868687,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:230560-1
+Lonicera maackii,Caprifoliaceae,0,NA,4.9,0.0030625,NA,shrub,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:60463205-2
+Lupinus perennis,Fabaceae,1,33,0.3265,0.021530834,167.43,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:504907-1
+Malus,Rosaceae,0,NA,NA,NA,NA,NA,Accepted,genus,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30024474-2
+Malva neglecta,Malvaceae,0,NA,0.3315,0.002265667,237,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:561795-1
+Medicago,Fabaceae,0,NA,NA,NA,NA,NA,Accepted,genus,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:331761-2
+Medicago lupulina,Fabaceae,0,NA,0.393333333,0.001660477,272.39,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:506268-1
+Medicago sativa,Fabaceae,0,NA,0.52,0.002280026,219.5,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30234961-2
+Melilotus,Fabaceae,0,NA,NA,0.002253696356,NA,NA,Accepted,genus,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:325467-2
+Melilotus albus,Fabaceae,0,NA,1.5,0.002233695,NA,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:156656-2
+Melilotus officinalis,Fabaceae,0,NA,1.169333333,0.002445792,201.825,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30429323-2
+Mollugo verticillata,Molluginaceae,0,NA,0.2,9.01e-5,NA,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:280992-2
+Monarda fistulosa,Lamiaceae,1,18,1.205,3.75e-4,152.61095707,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:452042-1
+Monarda punctata,Lamiaceae,1,33,0.3984615384615385,2.69e-4,239.5449567099567,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:452072-1
+Morus alba,Moraceae,0,NA,13,0.004701111,NA,tree,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30051955-2
+Morus rubra,Moraceae,0,NA,20.56,0.001448667,NA,tree,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:854710-1
+Oenothera,Onagraceae,0,NA,NA,NA,NA,NA,Accepted,genus,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:60437227-2
+Oenothera biennis,Onagraceae,0,NA,1.079,5.1e-4,157.01,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:172755-2
+Oxalis stricta,Oxalidaceae,0,NA,0.175,2.06e-4,577,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:178499-2
+Panicum,Poaceae,0,NA,NA,NA,NA,NA,Accepted,genus,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1194715-2
+Panicum capillare,Poaceae,0,NA,0.2,3.44e-4,287.72,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:181618-2
+Panicum dichotomiflorum,Poaceae,0,NA,0.7,7.31e-4,NA,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:325362-2
+Panicum virgatum,Poaceae,1,6,1.65,0.001527,117.54759165499999,graminoid,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:413537-1
+Paspalum setaceum,Poaceae,0,NA,NA,9.8e-4,NA,graminoid,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:325365-2
+Penstemon digitalis,Plantaginaceae,1,12,1.2,0.001134,108.127100986,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:808077-1
+Penstemon hirsutus,Plantaginaceae,1,33,0.457,1.6e-4,147.5116004105263,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:808137-1
+Persicaria maculosa,Polygonaceae,0,NA,0.644333333,0.001839969,257.29,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:695052-1
+Phleum pratense,Poaceae,0,NA,0.660333333,4.26e-4,258.15,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:415868-1
+Physalis,Solanaceae,0,NA,NA,NA,NA,NA,Accepted,genus,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:329952-2
+Phytolacca,Phytolaccaceae,0,NA,NA,NA,NA,NA,Accepted,genus,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:327321-2
+Phytolacca americana,Phytolaccaceae,0,NA,2.425,0.006869571,NA,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:323290-2
+Phytolacca heterotepala,Phytolaccaceae,0,NA,NA,NA,NA,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:195821-2
+Plantago lanceolata,Plantaginaceae,0,NA,0.278333333,0.001424813,186.26,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:321285-2
+Plantago major,Plantaginaceae,0,NA,0.265,2.04e-4,216.325,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:321286-2
+Poa,Poaceae,0,NA,NA,NA,NA,NA,Accepted,genus,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30001404-2
+Poa annua,Poaceae,0,NA,0.125,2.87e-4,364.34,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:320035-2
+Poa compressa,Poaceae,0,NA,0.415,2.02e-4,194.2,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:204172-2
+Poa pratensis,Poaceae,0,NA,0.353333333,0.006821617,212.92,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:417792-1
+Poaceae,,0,NA,NA,NA,NA,NA,Accepted,family,wcvp,
+Potentilla argentea,Rosaceae,0,NA,0.252,8.98e-5,167,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:727660-1
+Potentilla norvegica,Rosaceae,0,NA,0.315,8.65e-5,248,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:728598-1
+Potentilla recta,Rosaceae,0,NA,0.5,2.69e-4,174,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:209483-2
+Potentilla simplex,Rosaceae,0,NA,NA,NA,NA,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:728987-1
+Prunus,Rosaceae,0,NA,NA,NA,NA,NA,Accepted,genus,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30003057-2
+Prunus serotina,Rosaceae,0,NA,20.421,0.122608125,180.15,tree,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:730262-1
+Pseudognaphalium obtusifolium,Asteraceae,0,NA,NA,3.8e-5,NA,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:909626-1
+Pyrus calleryana,Rosaceae,0,NA,6.5,0.0129,NA,tree,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:730740-1
+Quercus,Fagaceae,0,NA,NA,NA,NA,NA,Accepted,genus,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:325819-2
+Quercus velutina,Fagaceae,0,NA,24.495,1.851821111,NA,tree,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:296899-1
+Ratibida pinnata,Asteraceae,1,6,1.2,9.63e-4,100.8031519525,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:217881-2
+Rhus,Anacardiaceae,0,NA,NA,0.008670500000000001,NA,NA,Accepted,genus,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30005665-2
+Rhus typhina,Anacardiaceae,0,NA,7.28,0.0123925,NA,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:70939-1
+Rubus allegheniensis,Rosaceae,0,NA,1.525,0.002053375,162.3685682888889,subshrub,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:298725-2
+Rubus flagellaris,Rosaceae,0,NA,1.5,0.00343,148.0675804565,subshrub,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30083253-2
+Rubus occidentalis,Rosaceae,0,NA,1.8,0.0013645,NA,subshrub,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:223350-2
+Rudbeckia hirta,Asteraceae,1,12,0.25,8.32e-4,193.5,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:223740-2
+Rumex acetosa,Polygonaceae,0,NA,0.505,0.074610972,292.06,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:332105-2
+Rumex acetosella,Polygonaceae,0,NA,0.155,5.41e-4,240.91,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:224391-2
+Rumex crispus,Polygonaceae,0,NA,0.714,0.03654317,240.97,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:224413-2
+Rumex obtusifolius,Polygonaceae,0,NA,0.579,0.001539864,297.12,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:310739-2
+Schizachyrium scoparium,Poaceae,1,6,1.055,0.00167975,148.7650816305,graminoid,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:420956-1
+Scrophularia lanceolata,Scrophulariaceae,0,NA,1.5,1.56e-4,NA,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:809288-1
+Setaria,Poaceae,0,NA,NA,0.001114048148,NA,NA,Accepted,genus,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:331287-2
+Setaria italica,Poaceae,0,NA,0.87125,0.002452778,239.1,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1207294-2
+Setaria viridis,Poaceae,0,NA,0.506,9.42e-4,238.2,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1171009-2
+Silene latifolia,Caryophyllaceae,0,NA,0.4875,8.84e-4,216.25,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:157647-1
+Silene vulgaris,Caryophyllaceae,0,NA,0.385,8.77e-4,198.7,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:158668-1
+Silphium terebinthinaceum,Asteraceae,1,18,0.716406779661017,0.010748706896551724,170.53125,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30257140-2
+Solanum americanum,Solanaceae,0,NA,1,8.59e-4,NA,NA,Synonym,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:238279-2
+Solanum carolinense,Solanaceae,0,NA,0.54275,0.00244,149.15538242,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:285195-2
+Solidago,Asteraceae,0,NA,NA,NA,NA,NA,Accepted,genus,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:60436299-2
+Solidago altissima,Asteraceae,0,NA,NA,9.32e-5,NA,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:285347-2
+Solidago canadensis,Asteraceae,0,NA,1.2375,1.35e-4,258.67,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:249454-1
+Solidago juncea,Asteraceae,1,33,0.7834490196078432,4.12e-4,130.4785211270612,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:249633-1
+Solidago nemoralis,Asteraceae,1,33,0.61,3.93e-4,121.6360551605252,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:249731-1
+Solidago rigida,Asteraceae,1,18,1.1,6.94e-4,86.463297028,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:249837-1
+Solidago speciosa,Asteraceae,1,33,0.71,2.55e-4,263.25213235294115,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:240517-2
+Sorghastrum nutans,Poaceae,1,NA,1.8,0.002305182,135.862764035,graminoid,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:240823-2
+Sporobolus cryptandrus,Poaceae,1,6,0.91,1.06e-4,227.17897435897436,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:422687-1
+Sporobolus heterolepis,Poaceae,0,NA,0.7,0.0011365,NA,graminoid,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1026241-2
+Stellaria media,Caryophyllaceae,0,NA,0.202666667,0.002523356,536.81,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:159330-1
+Symphyotrichum,Asteraceae,0,NA,NA,NA,NA,NA,Accepted,genus,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30073935-2
+Symphyotrichum ericoides,Asteraceae,1,33,0.41214285714285714,1.27e-4,167.58674812030074,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:981811-1
+Symphyotrichum laeve,Asteraceae,1,33,0.975,4.25e-4,127.14,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:247114-2
+Symphyotrichum lanceolatum,Asteraceae,0,NA,1.8,4.18e-4,NA,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:981841-1
+Symphyotrichum oolentangiense,Asteraceae,1,NA,0.36167816091954025,1.7e-4,142.8665171354313,NA,Synonym,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:981870-1
+Symphyotrichum pilosum,Asteraceae,0,NA,0.91,6.48e-4,NA,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:981879-1
+Symphyotrichum urophyllum,Asteraceae,1,6,0.914,NA,NA,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:981915-1
+Taraxacum officinale,Asteraceae,0,NA,NA,6.827931029999999e-4,NA,herb,Accepted,species,wfo,https://www.worldfloraonline.org/taxon/wfo-0000062154
+Toxicodendron radicans,Anacardiaceae,0,NA,NA,0.01686,NA,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:255769-2
+Tradescantia ohiensis,Commelinaceae,1,33,0.92125,0.003655,102.51800597100001,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:173408-1
+Tragopogon,Asteraceae,0,NA,NA,NA,NA,NA,Accepted,genus,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30102386-2
+Trifolium,Fabaceae,0,NA,NA,NA,NA,NA,Accepted,genus,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:325471-2
+Trifolium arvense,Fabaceae,0,NA,0.1485,3.91e-4,182.06,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:522881-1
+Trifolium campestre,Fabaceae,0,NA,0.288,3.29e-4,270.83,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:522975-1
+Trifolium dubium,Fabaceae,0,NA,0.2375,3.97e-4,259.61,NA,Synonym,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:523099-1
+Trifolium hybridum,Fabaceae,0,NA,0.42,7.55e-4,249.03,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30240399-2
+Trifolium pratense,Fabaceae,0,NA,0.464333333,0.00147925,233.73,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:523575-1
+Trifolium repens,Fabaceae,0,NA,0.25,6.01e-4,314.43,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:523626-1
+Turritis glabra,Brassicaceae,0,NA,0.603,7.29e-5,246.63,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:290916-1
+Ulmus,Ulmaceae,0,NA,NA,NA,NA,NA,Accepted,genus,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30004945-2
+Ulmus pumila,Ulmaceae,0,NA,21,0.006606584,NA,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:303333-2
+Urtica dioica,Urticaceae,0,NA,0.987333333,9.2e-5,284.8,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:260630-2
+Verbascum thapsus,Scrophulariaceae,0,NA,1.144333333,1.02e-4,169.18,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:770183-1
+Verbena,Verbenaceae,0,NA,NA,NA,NA,NA,Accepted,genus,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:330551-2
+Verbena stricta,Verbenaceae,1,12,0.765,0.001014167,182.80948442238764,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:865493-1
+Verbena urticifolia,Verbenaceae,0,NA,NA,4.6e-4,NA,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:324310-2
+Vicia,Fabaceae,0,NA,NA,NA,NA,NA,Accepted,genus,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:330034-2
+Vicia villosa,Fabaceae,0,NA,0.555,0.034105833,260.6233333,NA,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:525259-1
+Vinca,Apocynaceae,0,NA,NA,NA,NA,NA,Accepted,genus,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:2619-1
+Viola,Violaceae,0,NA,NA,0.0015876375,NA,NA,Accepted,genus,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30000540-2
+Vitis,Vitaceae,0,NA,NA,0.0576125,NA,NA,Accepted,genus,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:325876-2
+Vitis aestivalis,Vitaceae,0,NA,9.1,0.0314525,NA,shrub,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:309286-2
+Vitis riparia,Vitaceae,0,NA,14,0.05514,NA,shrub,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:69009-1
+Vitis vinifera,Vitaceae,0,NA,12.5,0.0255,247.1,shrub,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30478388-2
+Zizia aptera,Apiaceae,1,33,0.34,0.001624167,100.11490093730431,forb,Accepted,species,wcvp,https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:271187-2
+ACAVIR,NA,NA,NA,NA,6.311111109999999e-4,NA,NA,NA,NA,NA,NA
+ACHMIL,NA,NA,NA,NA,2.19909091e-4,NA,NA,NA,NA,NA,NA
+AGAFOE,NA,NA,NA,NA,2.9e-4,223.32650029866596,NA,NA,NA,NA,NA
+AGANEP,NA,NA,NA,NA,3.30142857e-4,328.54060134310134,NA,NA,NA,NA,NA
+AGRGIG,NA,NA,NA,NA,7.833333300000001e-5,NA,NA,NA,NA,NA,NA
+AGRHYE,NA,NA,NA,NA,5.8357143e-5,NA,NA,NA,NA,NA,NA
+AGRPAR,NA,NA,NA,NA,0.00717,NA,NA,NA,NA,NA,NA
+ALLCER,NA,NA,NA,NA,0.00385,272.92857142857144,NA,NA,NA,NA,NA
+ALLPET,NA,NA,NA,NA,0.002597888889,NA,NA,NA,NA,NA,NA
+ALLVIN,NA,NA,NA,NA,0.019,NA,NA,NA,NA,NA,NA
+AMBART,NA,NA,NA,NA,0.0039900000000000005,NA,NA,NA,NA,NA,NA
+AMBPSI,NA,NA,NA,NA,0.006618142856999999,NA,NA,NA,NA,NA,NA
+AMOCAN,NA,NA,NA,NA,0.0019317,NA,NA,NA,NA,NA,NA
+ANECYL,NA,NA,NA,NA,0.001056,NA,NA,NA,NA,NA,NA
+ANEVIR,NA,NA,NA,NA,0.00113,NA,NA,NA,NA,NA,NA
+APOCAN,NA,NA,NA,NA,0.0010688,NA,NA,NA,NA,NA,NA
+AQUCAN,NA,NA,NA,NA,NA,393.6787037037037,NA,NA,NA,NA,NA
+ARCMIN,NA,NA,NA,NA,0.0094175,NA,NA,NA,NA,NA,NA
+ARNATR,NA,NA,NA,NA,0.00267,213.4426518853559,NA,NA,NA,NA,NA
+ARTCAM,NA,NA,NA,NA,1.20833333e-4,NA,NA,NA,NA,NA,NA
+ASCVER,NA,NA,NA,NA,0.002199,286.35,NA,NA,NA,NA,NA
+ASTCAN,NA,NA,NA,NA,0.001741176471,284.55814718614715,NA,NA,NA,NA,NA
+Acalypha virginica,NA,NA,NA,0.91,6.52e-4,NA,forb,NA,NA,NA,NA
+Agastache foeniculum,NA,NA,NA,NA,2.95e-4,NA,NA,NA,NA,NA,NA
+Agastache nepetoides,NA,NA,NA,NA,3.31e-4,NA,NA,NA,NA,NA,NA
+Agrimonia parviflora,NA,NA,NA,1.8,0.0043725,NA,NA,NA,NA,NA,NA
+Agrostis hyemalis,NA,NA,NA,1.1,5.84e-5,NA,graminoid,NA,NA,NA,NA
+Allium cernuum,NA,NA,NA,NA,0.00385,NA,forb,NA,NA,NA,NA
+Ambrosia psilostachya,NA,NA,NA,0.45,0.0066035,193.4,forb,NA,NA,NA,NA
+Amorpha canescens,NA,NA,NA,1.2,0.002181743,NA,NA,NA,NA,NA,NA
+Androgpogon gerardii,NA,NA,6,NA,NA,NA,NA,NA,NA,NA,NA
+Anemone cylindrica,NA,NA,NA,NA,0.001312,NA,forb,NA,NA,NA,NA
+Anemone virginiana,NA,NA,NA,NA,0.001135,NA,forb,NA,NA,NA,NA
+Arctium minus,NA,NA,NA,0.975,0.010592143,240.67,NA,NA,NA,NA,NA
+Arnoglossum atriplicifolium,NA,NA,NA,1.2305,0.0025455,123.0722757325,forb,NA,NA,NA,NA
+Artemisia campestris,NA,NA,NA,0.45,1.17e-4,168.5,forb,NA,NA,NA,NA
+Asclepias verticillata,NA,NA,NA,NA,0.00219775,NA,forb,NA,NA,NA,NA
+Aster oolentangiensis,NA,NA,33,NA,NA,NA,NA,NA,NA,NA,NA
+BARVUL,NA,NA,NA,NA,5.96909091e-4,NA,NA,NA,NA,NA,NA
+BERINC,NA,NA,NA,NA,3.84875e-4,NA,NA,NA,NA,NA,NA
+BRIEUP,NA,NA,NA,NA,9.4e-4,NA,NA,NA,NA,NA,NA
+BROINE,NA,NA,NA,NA,0.002857142857,NA,NA,NA,NA,NA,NA
+BROKAL,NA,NA,NA,NA,0.002575333333,NA,NA,NA,NA,NA,NA
+Baptisia lactea,NA,NA,NA,0.9405,0.01642,NA,NA,NA,NA,NA,NA
+Brickellia eupatorioides,NA,NA,NA,NA,9.4e-4,NA,NA,NA,NA,NA,NA
+CALCAN,NA,NA,NA,NA,9.850000000000001e-5,NA,NA,NA,NA,NA,NA
+CARANN,NA,NA,NA,NA,4.3e-4,NA,NA,NA,NA,NA,NA
+CARBIC,NA,NA,NA,NA,0.001315,246.2888888888889,NA,NA,NA,NA,NA
+CARBRE,NA,NA,NA,NA,8.900000000000001e-4,224.23653846153846,NA,NA,NA,NA,NA
+CARCRI,NA,NA,NA,NA,6.71857143e-4,NA,NA,NA,NA,NA,NA
+CARGRA,NA,NA,NA,NA,4.92e-4,NA,NA,NA,NA,NA,NA
+CARMOL,NA,NA,NA,NA,NA,303.55128205128204,NA,NA,NA,NA,NA
+CARNOR,NA,NA,NA,NA,7.3e-4,288.4,NA,NA,NA,NA,NA
+CARPEL,NA,NA,NA,NA,0.0018,NA,NA,NA,NA,NA,NA
+CEAAME,NA,NA,NA,NA,0.003419625,NA,NA,NA,NA,NA,NA
+CELORB,NA,NA,NA,NA,0.009825555556,NA,NA,NA,NA,NA,NA
+CENSTO,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+CERFON,NA,NA,NA,NA,1.4116999999999998e-4,NA,NA,NA,NA,NA,NA
+CERPUM,NA,NA,NA,NA,4.6e-5,NA,NA,NA,NA,NA,NA
+CHASFA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+CHEALB,NA,NA,NA,NA,7.181666669999999e-4,NA,NA,NA,NA,NA,NA
+CICINT,NA,NA,NA,NA,0.003326153846,NA,NA,NA,NA,NA,NA
+CIRARV,NA,NA,NA,NA,0.001303894737,NA,NA,NA,NA,NA,NA
+CONCAN,NA,NA,NA,NA,5.7357143e-5,NA,NA,NA,NA,NA,NA
+CORNUS,NA,NA,NA,NA,0.058944336810000005,NA,NA,NA,NA,NA,NA
+CORPAL,NA,NA,NA,NA,0.0019895,NA,NA,NA,NA,NA,NA
+CORTIN,NA,NA,NA,NA,2.9e-4,NA,NA,NA,NA,NA,NA
+CORTRI,NA,NA,NA,NA,0.00256,303.0377759495407,NA,NA,NA,NA,NA
+CYPSTR,NA,NA,NA,NA,3.54666667e-4,NA,NA,NA,NA,NA,NA
+Calamagrostis canadensis,NA,NA,NA,1.5,1.07e-4,NA,graminoid,NA,NA,NA,NA
+Carex annectens,NA,NA,NA,NA,4.3e-4,NA,graminoid,NA,NA,NA,NA
+Carex bicknellii,NA,NA,NA,1,0.00131,NA,graminoid,NA,NA,NA,NA
+Carex brevior,NA,NA,NA,NA,8.9e-4,NA,graminoid,NA,NA,NA,NA
+Carex crinita,NA,NA,NA,1.6,6.75e-4,NA,graminoid,NA,NA,NA,NA
+Carex granularis,NA,NA,NA,0.76,4.92e-4,NA,graminoid,NA,NA,NA,NA
+Carex normalis,NA,NA,NA,1.5,7.3e-4,NA,graminoid,NA,NA,NA,NA
+Carex pellita,NA,NA,NA,NA,0.0018,NA,graminoid,NA,NA,NA,NA
+Ceanothus americanus,NA,NA,NA,0.91,0.003771167,NA,NA,NA,NA,NA,NA
+Celastrus orbiculatus,NA,NA,NA,9.1,0.008983,NA,shrub,NA,NA,NA,NA
+Cerastium fontanum,NA,NA,NA,0.215,1.31e-4,322.535,forb,NA,NA,NA,NA
+Cerastium pumilum,NA,NA,NA,0.055,4.87e-5,301.3,forb,NA,NA,NA,NA
+Cichorium intybus,NA,NA,NA,0.68375,0.003666667,264.3,NA,NA,NA,NA,NA
+Cirsium arvense,NA,NA,NA,0.720666667,0.001500643,154.02,NA,NA,NA,NA,NA
+Conyza canadensis,NA,NA,NA,NA,5.7357143e-5,NA,NA,NA,NA,NA,NA
+Coreopsis palmata,NA,NA,NA,NA,0.001988,NA,forb,NA,NA,NA,NA
+Coreopsis tinctoria,NA,NA,NA,0.74,2.17e-4,NA,NA,NA,NA,NA,NA
+Coreopsis tripteris,NA,NA,NA,NA,0.00256,85.33220979055555,forb,NA,NA,NA,NA
+Cornus,NA,NA,NA,NA,0.058944336810000005,NA,NA,NA,NA,NA,NA
+Cyperus strigosus,NA,NA,NA,1,3.26e-4,NA,graminoid,NA,NA,NA,NA
+DACGLO,NA,NA,NA,NA,8.84960784e-4,NA,NA,NA,NA,NA,NA
+DALCAN,NA,NA,NA,NA,0.0026067333330000004,NA,NA,NA,NA,NA,NA
+DAUCAR,NA,NA,NA,NA,0.001101988235,NA,NA,NA,NA,NA,NA
+DESCAN,NA,NA,NA,NA,0.0051955555560000005,482.30267323611645,NA,NA,NA,NA,NA
+DESIMANLL,NA,NA,NA,NA,0.005987571429,NA,NA,NA,NA,NA,NA
+DESMAN,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+DESPAN,NA,NA,NA,NA,0.003192,NA,NA,NA,NA,NA,NA
+DESRIG,NA,NA,NA,NA,0.0025369999999999998,NA,NA,NA,NA,NA,NA
+DIAARM,NA,NA,NA,NA,7.114285710000001e-4,NA,NA,NA,NA,NA,NA
+DICCLA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+DIGCOG,NA,NA,NA,NA,5.5e-4,NA,NA,NA,NA,NA,NA
+Dalea candida,NA,NA,NA,0.61,0.002216417,NA,NA,NA,NA,NA,NA
+Desmanthus illinoensis,NA,NA,NA,0.91,0.005656445,NA,NA,NA,NA,NA,NA
+Desmodium rigidum,NA,NA,NA,NA,0.0025369999999999998,NA,NA,NA,NA,NA,NA
+Dianthus armeria,NA,NA,NA,0.3625,3.65e-4,148.8,NA,NA,NA,NA,NA
+Dichanthelium clandestinum,NA,NA,NA,0.61,0.001296,222.483622045,graminoid,NA,NA,NA,NA
+ECHANG,NA,NA,NA,NA,0.1383555556,NA,NA,NA,NA,NA,NA
+ECHPAL,NA,NA,NA,NA,0.00566,NA,NA,NA,NA,NA,NA
+ELAUMB,NA,NA,NA,NA,0.014683,NA,NA,NA,NA,NA,NA
+ELYCAN,NA,NA,NA,NA,0.004265,248.23307287658034,NA,NA,NA,NA,NA
+ELYREP,NA,NA,NA,NA,0.0042699999999999995,NA,NA,NA,NA,NA,NA
+ELYVIL,NA,NA,NA,NA,0.003428,NA,NA,NA,NA,NA,NA
+ELYVIR,NA,NA,NA,NA,0.005089909091,300.8268822901902,NA,NA,NA,NA,NA
+ERIGERON,NA,NA,NA,NA,4.7142857e-5,NA,NA,NA,NA,NA,NA
+EUPCOR,NA,NA,NA,NA,0.00379,NA,NA,NA,NA,NA,NA
+EUPMAC,NA,NA,NA,NA,2.7874999999999997e-4,NA,NA,NA,NA,NA,NA
+EUPPER,NA,NA,NA,NA,1.05875e-4,NA,NA,NA,NA,NA,NA
+EUPPUR,NA,NA,NA,NA,4.5e-4,NA,NA,NA,NA,NA,NA
+Echinacea angustifolia,NA,NA,NA,NA,0.18485,NA,forb,NA,NA,NA,NA
+Elymus villosus,NA,NA,NA,NA,0.003455,NA,graminoid,NA,NA,NA,NA
+Eupatorium maculatum,NA,NA,NA,NA,2.7874999999999997e-4,NA,NA,NA,NA,NA,NA
+Eupatorium perfoliatum,NA,NA,NA,NA,1.09e-4,NA,forb,NA,NA,NA,NA
+Eupatorium purpureum,NA,NA,NA,NA,4.5e-4,NA,herb,NA,NA,NA,NA
+Euphorbia corollata,NA,NA,NA,NA,0.00379,NA,forb,NA,NA,NA,NA
+FALCON,NA,NA,NA,NA,0.0067,NA,NA,NA,NA,NA,NA
+FRAVIR,NA,NA,NA,NA,4.64142857e-4,NA,NA,NA,NA,NA,NA
+Fragaria virginiana,NA,NA,NA,NA,4.6e-4,NA,forb,NA,NA,NA,NA
+GAUBIE,NA,NA,NA,NA,0.0105,153.52739726027397,NA,NA,NA,NA,NA
+GENAND,NA,NA,NA,NA,5.875e-5,NA,NA,NA,NA,NA,NA
+GERMAC,NA,NA,NA,NA,0.00607,NA,NA,NA,NA,NA,NA
+GEUCAN,NA,NA,NA,NA,0.00723425,NA,NA,NA,NA,NA,NA
+Gentiana andrewsii,NA,NA,NA,0.61,5.27e-5,NA,forb,NA,NA,NA,NA
+Geranium maculatum,NA,NA,NA,NA,0.00607,NA,forb,NA,NA,NA,NA
+HELGIG,NA,NA,NA,NA,0.0032280000000000004,NA,NA,NA,NA,NA,NA
+HELGRO,NA,NA,NA,NA,0.00197,NA,NA,NA,NA,NA,NA
+HELHEL,NA,NA,NA,NA,0.0045060000000000005,342.44283187522296,NA,NA,NA,NA,NA
+HELMOL,NA,NA,NA,NA,0.004742857143,NA,NA,NA,NA,NA,NA
+HELPAU,NA,NA,NA,NA,0.00777,NA,NA,NA,NA,NA,NA
+HELSTR,NA,NA,NA,NA,0.0052699999999999995,NA,NA,NA,NA,NA,NA
+HIERACIUM,NA,NA,NA,NA,2.7333333300000003e-4,NA,NA,NA,NA,NA,NA
+HYPASC,NA,NA,NA,NA,1.1999999999999999e-4,NA,NA,NA,NA,NA,NA
+HYPKAL,NA,NA,NA,NA,8e-5,NA,NA,NA,NA,NA,NA
+HYPPER,NA,NA,NA,NA,1.863e-4,NA,NA,NA,NA,NA,NA
+HYPPUN,NA,NA,NA,NA,4e-5,NA,NA,NA,NA,NA,NA
+HYPRAD,NA,NA,NA,NA,8.32461538e-4,NA,NA,NA,NA,NA,NA
+Helianthus giganteus,NA,NA,NA,NA,0.003228,NA,forb,NA,NA,NA,NA
+Helianthus grosseserratus,NA,NA,NA,1.5,0.001292,NA,forb,NA,NA,NA,NA
+Helianthus mollis,NA,NA,NA,NA,0.00466,NA,forb,NA,NA,NA,NA
+Helianthus pauciflorus,NA,NA,NA,NA,0.00777,NA,forb,NA,NA,NA,NA
+Helianthus strumosus,NA,NA,NA,NA,0.00527,NA,forb,NA,NA,NA,NA
+Heliopsis helianthoides,NA,NA,NA,1.25425,0.0040716,164.27,forb,NA,NA,NA,NA
+Hypericum ascyron,NA,NA,NA,1.5,1.64e-4,172.78249999500002,forb,NA,NA,NA,NA
+Hypericum kalmianum,NA,NA,NA,NA,8e-5,NA,shrub,NA,NA,NA,NA
+Hypericum punctatum,NA,NA,NA,0.91,4e-5,NA,forb,NA,NA,NA,NA
+JUNDUD,NA,NA,NA,NA,1e-5,NA,NA,NA,NA,NA,NA
+JUNTEN,NA,NA,NA,NA,1.15e-5,NA,NA,NA,NA,NA,NA
+JUNTOR,NA,NA,NA,NA,1.0399999999999999e-5,NA,NA,NA,NA,NA,NA
+Juncus dudleyi,NA,NA,NA,NA,1e-5,NA,graminoid,NA,NA,NA,NA
+Juncus torreyi,NA,NA,NA,0.9,1.1e-5,NA,graminoid,NA,NA,NA,NA
+KOECRI,NA,NA,NA,NA,NA,188.64072765469822,NA,NA,NA,NA,NA
+KOEMAC,NA,NA,NA,NA,3.20090909e-4,NA,NA,NA,NA,NA,NA
+LIAASP,NA,NA,NA,NA,0.0020125,NA,NA,NA,NA,NA,NA
+LIAPYC,NA,NA,NA,NA,0.0017875,NA,NA,NA,NA,NA,NA
+LIASPI,NA,NA,NA,NA,0.002997,NA,NA,NA,NA,NA,NA
+LIESCA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+LOBINF,NA,NA,NA,NA,1.4e-5,NA,NA,NA,NA,NA,NA
+LOBSIP,NA,NA,NA,NA,3.6874999999999995e-5,NA,NA,NA,NA,NA,NA
+LUDALT,NA,NA,NA,NA,2.9874999999999998e-5,NA,NA,NA,NA,NA,NA
+LYCOPUS,NA,NA,NA,NA,1.7315972199999997e-4,NA,NA,NA,NA,NA,NA
+Liatris aspera,NA,NA,NA,NA,0.002113333,NA,forb,NA,NA,NA,NA
+Liatris pycnostachya,NA,NA,NA,1.1,0.002821667,NA,forb,NA,NA,NA,NA
+Liatris spicata,NA,NA,NA,1.4,0.003699,NA,forb,NA,NA,NA,NA
+Lobelia inflata,NA,NA,NA,NA,1.4e-5,NA,forb,NA,NA,NA,NA
+Lobelia siphilitica,NA,NA,NA,NA,4.17e-5,NA,forb,NA,NA,NA,NA
+Ludwigia alternifolia,NA,NA,NA,NA,2.95e-5,NA,forb,NA,NA,NA,NA
+Lycopus,NA,NA,NA,NA,1.7315972199999997e-4,NA,NA,NA,NA,NA,NA
+MAIRAC,NA,NA,NA,NA,0.02931,NA,NA,NA,NA,NA,NA
+MEDLUP,NA,NA,NA,NA,0.001562230769,NA,NA,NA,NA,NA,NA
+MELILOTUS,NA,NA,NA,NA,0.002253696356,NA,NA,NA,NA,NA,NA
+MORALB,NA,NA,NA,NA,0.00966,NA,NA,NA,NA,NA,NA
+MUHFRO,NA,NA,NA,NA,1.1999999999999999e-4,NA,NA,NA,NA,NA,NA
+Maianthemum racemosum,NA,NA,NA,NA,0.0313025,NA,forb,NA,NA,NA,NA
+Muhlenbergia frondosa,NA,NA,NA,0.61,2.11e-4,NA,graminoid,NA,NA,NA,NA
+OENBIE,NA,NA,NA,NA,3.80866667e-4,NA,NA,NA,NA,NA,NA
+OXALIS,NA,NA,NA,NA,2.1799999999999999e-4,NA,NA,NA,NA,NA,NA
+Oxalis,NA,NA,NA,NA,2.1799999999999999e-4,NA,NA,NA,NA,NA,NA
+PARINT,NA,NA,NA,NA,0.0030800000000000003,156.25785808394505,NA,NA,NA,NA,NA
+PARQUI,NA,NA,NA,NA,0.025876999999999997,NA,NA,NA,NA,NA,NA
+PENGRA,NA,NA,NA,NA,0.0017975,NA,NA,NA,NA,NA,NA
+PERSICARIA,NA,NA,NA,NA,0.0039238,NA,NA,NA,NA,NA,NA
+PHLPRA,NA,NA,NA,NA,3.68625e-4,NA,NA,NA,NA,NA,NA
+PLALAN,NA,NA,NA,NA,0.00144524,NA,NA,NA,NA,NA,NA
+POACOM,NA,NA,NA,NA,2.0625e-4,NA,NA,NA,NA,NA,NA
+POAPRA,NA,NA,NA,NA,2.83368421e-4,NA,NA,NA,NA,NA,NA
+POTREC,NA,NA,NA,NA,2.77777778e-4,NA,NA,NA,NA,NA,NA
+PSEOBT,NA,NA,NA,NA,4e-5,NA,NA,NA,NA,NA,NA
+PYCTEN,NA,NA,NA,NA,7.000000000000001e-5,298.90238095238095,NA,NA,NA,NA,NA
+PYCVIR,NA,NA,NA,NA,1.4000000000000001e-4,NA,NA,NA,NA,NA,NA
+PYRCAL,NA,NA,NA,NA,0.0129,NA,NA,NA,NA,NA,NA
+Parthenium integrifolium,NA,NA,NA,0.87,0.00308,146.9424612,forb,NA,NA,NA,NA
+Parthenocissus quinquefolia,NA,NA,NA,6.766666667,0.023885417,198.35,shrub,NA,NA,NA,NA
+Penstemon grandiflorus,NA,NA,NA,NA,0.0017975,NA,NA,NA,NA,NA,NA
+Persicaria,NA,NA,NA,NA,0.0039238,NA,NA,NA,NA,NA,NA
+Pycnanthemum tenuifolium,NA,NA,NA,NA,7e-5,NA,forb,NA,NA,NA,NA
+Pycnanthemum virginianum,NA,NA,NA,NA,1.4e-4,NA,forb,NA,NA,NA,NA
+RHACAT,NA,NA,NA,NA,0.030367275,NA,NA,NA,NA,NA,NA
+RHUS,NA,NA,NA,NA,0.008670500000000001,NA,NA,NA,NA,NA,NA
+RUBALL,NA,NA,NA,NA,0.0023902999999999997,NA,NA,NA,NA,NA,NA
+RUBFLA,NA,NA,NA,NA,0.0034300000000000003,NA,NA,NA,NA,NA,NA
+RUBOCC,NA,NA,NA,NA,0.00137875,NA,NA,NA,NA,NA,NA
+RUDFUL,NA,NA,NA,NA,5e-4,NA,NA,NA,NA,NA,NA
+RUDLAC,NA,NA,NA,NA,0.0023925,NA,NA,NA,NA,NA,NA
+RUDSUB,NA,NA,NA,NA,9.4e-4,NA,NA,NA,NA,NA,NA
+RUDTRI,NA,NA,NA,NA,7.700000000000001e-4,283.26832675438595,NA,NA,NA,NA,NA
+RUMACE,NA,NA,NA,NA,6.9428e-4,NA,NA,NA,NA,NA,NA
+RUMCRI,NA,NA,NA,NA,0.0015621304350000001,NA,NA,NA,NA,NA,NA
+Rhamnus cathartica,NA,NA,NA,5.3335,0.026720273,167.06,tree,NA,NA,NA,NA
+Rudbeckia fulgida,NA,NA,NA,NA,5e-4,NA,forb,NA,NA,NA,NA
+Rudbeckia laciniata,NA,NA,NA,1.9,0.00235175,NA,forb,NA,NA,NA,NA
+Rudbeckia subtomentosa,NA,NA,NA,NA,9.4e-4,NA,forb,NA,NA,NA,NA
+Rudbeckia triloba,NA,NA,NA,NA,7.7e-4,NA,forb,NA,NA,NA,NA
+SAPOFF,NA,NA,NA,NA,0.001662545455,NA,NA,NA,NA,NA,NA
+SASALB,NA,NA,NA,NA,0.078685,NA,NA,NA,NA,NA,NA
+SCRLAN,NA,NA,NA,NA,1.59285714e-4,NA,NA,NA,NA,NA,NA
+SENHEB,NA,NA,NA,NA,NA,203.784632034632,NA,NA,NA,NA,NA
+SETARIA,NA,NA,NA,NA,0.001114048148,NA,NA,NA,NA,NA,NA
+SILINT,NA,NA,NA,NA,0.03065,210.83274819361708,NA,NA,NA,NA,NA
+SILLAC,NA,NA,NA,NA,0.07805,136.80110389901137,NA,NA,NA,NA,NA
+SILLAT,NA,NA,NA,NA,7.76363636e-4,NA,NA,NA,NA,NA,NA
+SILPER,NA,NA,NA,NA,0.006849999999999999,NA,NA,NA,NA,NA,NA
+SOLCAR,NA,NA,NA,NA,0.00244,NA,NA,NA,NA,NA,NA
+SOLRID,NA,NA,NA,NA,2e-4,NA,NA,NA,NA,NA,NA
+SPAPEC,NA,NA,NA,NA,0.02691,253.5151515151515,NA,NA,NA,NA,NA
+SPOHET,NA,NA,NA,NA,0.001828,NA,NA,NA,NA,NA,NA
+SYMNOV,NA,NA,NA,NA,6.596e-4,290.3013438735178,NA,NA,NA,NA,NA
+Saponaria officinalis,NA,NA,NA,0.557,0.0016877,233.5,NA,NA,NA,NA,NA
+Sassafras albidum,NA,NA,NA,19.12,0.0827425,NA,NA,NA,NA,NA,NA
+Senna hebecarpa,NA,NA,NA,1.0285,NA,137.08477486666666,forb,NA,NA,NA,NA
+Silphium integrifolium,NA,NA,NA,NA,0.03065,NA,forb,NA,NA,NA,NA
+Silphium laciniatum,NA,NA,NA,NA,0.07805,71.275340865,forb,NA,NA,NA,NA
+Silphium perfoliatum,NA,NA,NA,1.8,0.00685,121.83524495,forb,NA,NA,NA,NA
+Solidago riddellii,NA,NA,NA,NA,2e-4,NA,forb,NA,NA,NA,NA
+Sorgasthrum nutans,NA,NA,6,NA,NA,NA,NA,NA,NA,NA,NA
+Spartina pectinata,NA,NA,NA,NA,0.02691,NA,NA,NA,NA,NA,NA
+TAROFF,NA,NA,NA,NA,6.827931029999999e-4,NA,NA,NA,NA,NA,NA
+TEPVIR,NA,NA,NA,NA,NA,250.70822588705647,NA,NA,NA,NA,NA
+THADAS,NA,NA,NA,NA,0.002363333333,NA,NA,NA,NA,NA,NA
+TOXRAD,NA,NA,NA,NA,0.01692153846,NA,NA,NA,NA,NA,NA
+TRIARV,NA,NA,NA,NA,4.41421053e-4,NA,NA,NA,NA,NA,NA
+TRIFLA,NA,NA,NA,NA,0.0010220000000000001,NA,NA,NA,NA,NA,NA
+TRIPER,NA,NA,NA,NA,2.9999999999999997e-5,NA,NA,NA,NA,NA,NA
+TRIPRA,NA,NA,NA,NA,0.0016259523810000002,NA,NA,NA,NA,NA,NA
+TRIREP,NA,NA,NA,NA,5.62466667e-4,NA,NA,NA,NA,NA,NA
+Thalictrum dasycarpum,NA,NA,NA,NA,0.002265,NA,forb,NA,NA,NA,NA
+Tridens flavus,NA,NA,NA,0.76,8.38e-4,NA,graminoid,NA,NA,NA,NA
+Triodanis perfoliata,NA,NA,NA,NA,2.48e-5,NA,NA,NA,NA,NA,NA
+ULMPUM,NA,NA,NA,NA,0.006216583333,NA,NA,NA,NA,NA,NA
+URTDIO,NA,NA,NA,NA,1.11571429e-4,NA,NA,NA,NA,NA,NA
+VERFAS,NA,NA,NA,NA,NA,317.0909090909091,NA,NA,NA,NA,NA
+VERHAS,NA,NA,NA,NA,2.3019999999999998e-4,NA,NA,NA,NA,NA,NA
+VERNONIA,NA,NA,NA,NA,9.857142859999999e-4,NA,NA,NA,NA,NA,NA
+VERONICA,NA,NA,NA,NA,2.15392209e-4,NA,NA,NA,NA,NA,NA
+VERTHA,NA,NA,NA,NA,9.1266667e-5,NA,NA,NA,NA,NA,NA
+VERVIR,NA,NA,NA,NA,6.5714286e-5,504.91858974358973,NA,NA,NA,NA,NA
+VIOLA,NA,NA,NA,NA,0.0015876375,NA,NA,NA,NA,NA,NA
+VITIS,NA,NA,NA,NA,0.0576125,NA,NA,NA,NA,NA,NA
+Verbena hastata,NA,NA,NA,NA,2.31e-4,NA,forb,NA,NA,NA,NA
+Vernonia,NA,NA,NA,NA,9.857142859999999e-4,NA,NA,NA,NA,NA,NA
+Veronica,NA,NA,NA,NA,2.15392209e-4,NA,NA,NA,NA,NA,NA
+Veronicastrum virginicum,NA,NA,NA,NA,7e-5,NA,forb,NA,NA,NA,NA
+ZIZAUR,NA,NA,NA,NA,0.002314285714,15.55166972,NA,NA,NA,NA,NA
+Zizia aurea,NA,NA,NA,NA,0.002345,NA,forb,NA,NA,NA,NA

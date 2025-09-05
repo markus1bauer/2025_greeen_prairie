@@ -139,15 +139,24 @@ m2 <- glmer(
   family = poisson(link = "log"),
   data = sites
 )
+simulationOutput <- simulateResiduals(m2, plot = TRUE)
+testDispersion(simulationOutput)
 
 m3 <- glmmTMB::glmmTMB(
-  y ~ treatment * water_cap + (1 | year),
+  y ~ treatment + water_cap + (1 | year),
   family = nbinom2(link = "log"),
   data = sites
 )
 simulationOutput <- simulateResiduals(m3, plot = TRUE)
 testDispersion(simulationOutput)
 
+m4 <- glmmTMB::glmmTMB(
+  y ~ treatment * year + water_cap,
+  family = nbinom2(link = "log"),
+  data = sites
+)
+simulationOutput <- simulateResiduals(m4, plot = TRUE)
+testDispersion(simulationOutput)
 
 ### b Save ---------------------------------------------------------------------
 

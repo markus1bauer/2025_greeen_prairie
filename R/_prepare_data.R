@@ -132,7 +132,7 @@ rm(list = setdiff(ls(), c("sites", "flowers", "covers")))
 
 excel_sheets(here("data", "raw", "data_raw_species_seeded.xlsx"))
 
-species_seeded <- read_xlsx(
+data <- read_xlsx(
   here("data", "raw", "data_raw_species_seeded.xlsx"), sheet = "To Mix"
 ) %>%
   pivot_longer(-name, names_to = "seeded_pool", values_to = "abundance") %>%
@@ -145,12 +145,19 @@ species_seeded <- read_xlsx(
     sites %>% select(id_plot, seeded_pool), by = "seeded_pool",
     relationship = "many-to-many"
     ) %>%
-  select(-seeded_pool) %>%
   mutate(
     date_surveyed = date("2014-09-01"),
     plot_size = "seeded",
     seeded = 1
     )
+
+traits <- data %>%
+  select(name, seeded_pool) %>%
+  group_by(name) %>%
+  summarize(pool_size = min(seeded_pool, na.rm = TRUE))
+
+species_seeded <- data %>%
+  select(-seeded_pool)
 
 species <- read_csv(
   here("data", "raw", "data_raw_species.csv"), na = c("", "NA", "na"),
@@ -196,7 +203,7 @@ species <- species_seeded %>%
   arrange(id_plot, date_surveyed, name)
 
 
-### Name resolving ####
+### Name resolving ###
 
 data_check_problems <- species %>%
   mutate(
@@ -232,7 +239,7 @@ data_check_problems <- species %>%
   select(-date_entered, -seeded_pool) %>%
   filter(problems > 0)
 
-rm(list = setdiff(ls(), c("species", "sites", "flowers", "covers")))
+rm(list = setdiff(ls(), c("species", "sites", "flowers", "covers", "traits")))
 
 
 
@@ -367,9 +374,10 @@ data_2025 <- data_2025 %>%
 
 ### d Combine data -------------------------------------------------------------
 
-traits <- data_2017 %>%
+data <- data_2017 %>%
   full_join(data_sla_2020, by = "name") %>%
   full_join(data_seed_mass_2020, by = "name") %>%
+  full_join(traits, by = "name") %>%
   mutate(
     name = str_replace(name, "ANDGER", "Andropogon gerardii"),
     name = str_replace(name, "ASCSYR", "Asclepias syriaca"),
@@ -435,6 +443,8 @@ traits <- data_2017 %>%
   summarize(across(where(is.numeric), ~ mean(.x, na.rm = TRUE))) %>%
   mutate(across(everything(), ~ ifelse(is.nan(.), NA, .))) %>%
   full_join(data_2025, by = "name")
+
+traits <- data
   
 rm(list = setdiff(
   ls(), c("species", "sites", "flowers", "covers", "traits"))
@@ -655,7 +665,9 @@ data_names <- species %>%
     name = str_replace(name, "SPOHET", "Sporobolus heterolepis"),
     name = str_replace(name, "STEMED", "Stellaria media"),
     name = str_replace(name, "SYMERI", "Symphyotrichum ericoides"),
-    name = str_replace(name, "SYMLAE", "Symphyotrichum laeve (L.) A.Love & D.Love"),
+    name = str_replace(
+      name, "SYMLAE", "Symphyotrichum laeve (L.) A.Love & D.Love"
+      ),
     name = str_replace(name, "SYMLAN", "Symphyotrichum lanceolatum"),
     name = str_replace(name, "SYMPIL", "Symphyotrichum pilosum"),
     name = str_replace(name, "SYMSPP", "Symphyotrichum sp."),
@@ -774,7 +786,12 @@ data <- data_names %>%
       ) %>%
   distinct() %>%
   select(-n) %>%
-  full_join(traits %>% rename(accepted_name = name), by = "accepted_name")
+  full_join(traits %>% rename(accepted_name = name), by = "accepted_name") %>%
+  relocate(
+    c("taxonomic_status", "accepted_name_rank", "source", "accepted_name_url"),
+    .after = last_col()
+    ) %>% 
+  relocate(c("seeded", "pool_size"), .after = "accepted_family")
 
 traits <- data
 
@@ -1057,7 +1074,11 @@ data_traits4 <- data_traits3 %>%
     height = if_else(
       accepted_name == "Symphyotrichum urophyllum", 0.914, height
       )
-  )
+  ) %>%
+  relocate(
+    c("taxonomic_status", "accepted_name_rank", "source", "accepted_name_url"),
+    .after = last_col()
+    )
 
 # Penstemon hirsutus up to 18 inches -- 0.457 m # Prairie moon nursery, Winona, Michigan, https://www.prairiemoon.com/penstemon-hirsutus-hairy-beardtongue
 # Symphyotrichum urophyllum upt to 3 feet - 0.914 m # Prairie moon nursery, Winona, Michigan, https://www.prairiemoon.com/symphyotrichum-urophyllum-arrow-leaved-aster
@@ -1114,7 +1135,7 @@ richness_total <- richness %>%
 
 #### Target species (species richness) ###
 richness_seeded <- richness %>%
-  filter(seeded == 1) %>%
+  filter(seeded == 1 & family != "Poaceae") %>%
   summarise(seeded_richness = sum(presence)) %>%
   ungroup()
 
