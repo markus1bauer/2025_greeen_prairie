@@ -138,7 +138,7 @@ m2 <- glm(
   family = poisson(link = "log"),
   data = sites
 )
-simulateResiduals(m3, plot = TRUE)
+simulateResiduals(m2, plot = TRUE)
 testDispersion(simulateResiduals(m2, plot = FALSE))
 
 

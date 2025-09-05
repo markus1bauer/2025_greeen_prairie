@@ -184,10 +184,10 @@ simulation_output_2 <- simulateResiduals(m_2, plot = TRUE)
 ```
 
 ```{r dharma_single, collapse = TRUE, fig.height = 3, fig.width = 4.5}
+plotResiduals(simulation_output_1$scaledResiduals, factor(sites$seeded_pool))
+plotResiduals(simulation_output_2$scaledResiduals, factor(sites$seeded_pool))
 plotResiduals(simulation_output_1$scaledResiduals, sites$herbicide)
 plotResiduals(simulation_output_2$scaledResiduals, sites$herbicide)
-# plotResiduals(simulation_output_1$scaledResiduals, sites$seeding_time)
-# plotResiduals(simulation_output_2$scaledResiduals, sites$seeding_time)
 plotResiduals(simulation_output_1$scaledResiduals, sites$year)
 plotResiduals(simulation_output_2$scaledResiduals, sites$year)
 plotResiduals(simulation_output_1$scaledResiduals, sites$water_cap)
@@ -202,7 +202,7 @@ Zuur et al. 2010 Methods Ecol Evol [DOI: 10.1111/j.2041-210X.2009.00001.x](https
 
 ```{r vif}
 # car::vif(m_1)
-car::vif(m_2)
+# car::vif(m_2)
 ```
 
 ## Model comparison

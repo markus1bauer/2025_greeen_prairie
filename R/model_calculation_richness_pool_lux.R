@@ -146,16 +146,25 @@ m1 <- glmmTMB::glmmTMB(
 simulationOutput <- simulateResiduals(m1, plot = TRUE)
 testDispersion(simulationOutput)
 
-m2 <- lm(
+m2 <- glmmTMB::glmmTMB(
+  y ~ seeded_pool * seeding_time * year + water_cap,
+  family = nbinom2(link = "log"),
+  data = sites
+)
+simulationOutput <- simulateResiduals(m2, plot = TRUE)
+testDispersion(simulationOutput)
+
+m3 <- lm(
   sqrt(y) ~ seeded_pool * seeding_time * year + water_cap,
   data = sites
 )
-simulateResiduals(m2, plot = TRUE)
+simulateResiduals(m3, plot = TRUE)
 
 
 ### b Save ---------------------------------------------------------------------
 
 save(m1, file = here("outputs", "models", "model_richness_pool_lux_1.Rdata"))
+save(m2, file = here("outputs", "models", "model_richness_pool_lux_2.Rdata"))
 
 
 ## 2 Model building Bayesian ###################################################

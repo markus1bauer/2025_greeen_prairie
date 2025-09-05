@@ -165,8 +165,8 @@ simulateResiduals(m5, plot = TRUE)
 
 ### b Save ---------------------------------------------------------------------
 
-save(m4, file = here("outputs", "models", "model_richness_timing_herbicide_lux_4.Rdata"))
-save(m5, file = here("outputs", "models", "model_richness_timing_herbicide_lux_5.Rdata"))
+save(m2, file = here("outputs", "models", "model_richness_timing_herbicide_lux_2.Rdata"))
+save(m3, file = here("outputs", "models", "model_richness_timing_herbicide_lux_3.Rdata"))
 
 
 
