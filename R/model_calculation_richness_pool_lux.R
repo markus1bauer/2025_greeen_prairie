@@ -122,49 +122,41 @@ plot4 <- ggplot(sites, aes(x = sqrt(y))) + geom_density()
 
 ### a Candidate models ---------------------------------------------------------
 
-m_simple <- glm(
+m1 <- glm(
   y ~ seeded_pool + seeding_time + year + water_cap,
   family = poisson(link = "log"),
   data = sites
   )
-simulationOutput <- simulateResiduals(m_simple, plot = TRUE)
-testDispersion(simulationOutput)
-
-m_full <- glm(
-  y ~ seeded_pool * seeding_time * year + water_cap,
-  family = poisson(link = "log"),
-  data = sites
-  )
-simulationOutput <- simulateResiduals(m_full, plot = TRUE)
-testDispersion(simulationOutput)
-
-m1 <- glmmTMB::glmmTMB(
-  y ~ seeded_pool * seeding_time + water_cap + (1 | year),
-  family = nbinom2(link = "log"),
-  data = sites
-)
 simulationOutput <- simulateResiduals(m1, plot = TRUE)
 testDispersion(simulationOutput)
 
-m2 <- glmmTMB::glmmTMB(
-  y ~ seeded_pool * seeding_time * year + water_cap,
-  family = nbinom2(link = "log"),
+m2 <- glm(
+  y ~ seeded_pool * seeding_time + year + water_cap,
+  family = poisson(link = "log"),
   data = sites
-)
+  )
 simulationOutput <- simulateResiduals(m2, plot = TRUE)
 testDispersion(simulationOutput)
 
-m3 <- lm(
+m3 <- glmmTMB::glmmTMB(
+  y ~ seeded_pool * seeding_time + year + water_cap,
+  family = nbinom2(link = "log"),
+  data = sites
+)
+simulationOutput <- simulateResiduals(m3, plot = TRUE)
+testDispersion(simulationOutput)
+
+m4 <- lm(
   sqrt(y) ~ seeded_pool * seeding_time * year + water_cap,
   data = sites
 )
-simulateResiduals(m3, plot = TRUE)
+simulateResiduals(m4, plot = TRUE)
 
 
 ### b Save ---------------------------------------------------------------------
 
-save(m1, file = here("outputs", "models", "model_richness_pool_lux_1.Rdata"))
 save(m2, file = here("outputs", "models", "model_richness_pool_lux_2.Rdata"))
+save(m3, file = here("outputs", "models", "model_richness_pool_lux_3.Rdata"))
 
 
 ## 2 Model building Bayesian ###################################################

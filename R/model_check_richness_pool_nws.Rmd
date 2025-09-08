@@ -166,10 +166,14 @@ Dormann et al. 2013 Ecography [DOI: 10.1111/j.1600-0587.2012.07348.x](https://do
 ```{r load-models, collapse = TRUE}
 load(file = here("outputs", "models", "model_richness_pool_nws_1.Rdata"))
 m_1 <- m1
+# m_2 <- m2
 ```
 
 ```{r formulas, collapse = TRUE}
 formula(m_1)
+# formula(m_2)
+# m_1@call
+# m_2@call
 ```
 
 ## Model check
@@ -182,16 +186,37 @@ simulation_output_1 <- simulateResiduals(m_1, plot = TRUE)
 ```
 
 ```{r dharma_single, collapse = TRUE, fig.height = 3, fig.width = 4.5}
-# plotResiduals(simulation_output_1$scaledResiduals, factor(sites$seeded_pool))
+plotResiduals(
+  simulation_output_1$scaledResiduals,
+  factor(sites %>% filter(!(is.na(water_cap))) %>%  pull(seeded_pool))
+  )
 # plotResiduals(simulation_output_2$scaledResiduals, factor(sites$seeded_pool))
-# plotResiduals(simulation_output_1$scaledResiduals, sites$herbicide)
+plotResiduals(
+  simulation_output_1$scaledResiduals,
+  factor(sites %>% filter(!(is.na(water_cap))) %>%  pull(herbicide))
+  )
 # plotResiduals(simulation_output_2$scaledResiduals, sites$herbicide)
-# plotResiduals(simulation_output_1$scaledResiduals, sites$seeding_time)
+plotResiduals(
+  simulation_output_1$scaledResiduals,
+  factor(sites %>% filter(!(is.na(water_cap))) %>%  pull(seeding_time))
+  )
 # plotResiduals(simulation_output_2$scaledResiduals, sites$seeding_time)
-# plotResiduals(simulation_output_1$scaledResiduals, sites$year)
+plotResiduals(
+  simulation_output_1$scaledResiduals,
+  factor(sites %>% filter(!(is.na(water_cap))) %>%  pull(year))
+  )
 # plotResiduals(simulation_output_2$scaledResiduals, sites$year)
-# plotResiduals(simulation_output_1$scaledResiduals, sites$water_cap)
+plotResiduals(
+  simulation_output_1$scaledResiduals,
+  factor(sites %>% filter(!(is.na(water_cap))) %>%  pull(water_cap))
+  )
 # plotResiduals(simulation_output_2$scaledResiduals, sites$water_cap)
+```
+#### Test for overdispersion
+
+```{r overdispersion, collapse = TRUE, fig.height = 3, fig.width = 4.5}
+testDispersion(simulation_output_1)
+# testDispersion(simulation_output_2)
 ```
 
 ### Check collinearity part 2 (Step 5)

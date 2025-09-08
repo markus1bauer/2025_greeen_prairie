@@ -74,8 +74,8 @@ sites <- read_csv(
   mutate(y = richness_1qm + richness_25qm)
 
 ### * Model ####
-load(file = here("outputs", "models", "model_richness_pool_lux_2.Rdata"))
-m <- m2
+load(file = here("outputs", "models", "model_richness_pool_lux_3.Rdata"))
+m <- m3
 formula(m)
 
 
@@ -122,7 +122,8 @@ data <- sites %>%
     ) +
     labs(
       x = "Seeded species pool [#]", color = "Seeding",
-      y = expression(Seeded ~ species ~ "[" * '#' * "]")
+      y = expression(Seeded ~ species ~ "[" * '#' * "]"),
+      title = "Lux Arbor"
       ) +
     theme_mb())
 

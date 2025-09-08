@@ -158,7 +158,7 @@ dudi_q <- dudi.pca(
 ## RLQ analyses
 
 ```{r load-models, collapse = TRUE}
-m1 <- rlq(
+m_rlq <- rlq(
   dudiR = dudi_r, 
   dudiL = dudi_l, 
   dudiQ = dudi_q,
@@ -166,41 +166,79 @@ m1 <- rlq(
   )
 ```
 
-## Global test
+### Global test
 
 ```{r global-test}
-randtest(m1, nrepet = 999, modeltype = 6)
+randtest(m_rlq, nrepet = 999, modeltype = 6)
 ```
 
-## Traits by environment crossed table
+### Traits by environment crossed table
 
 ```{r table}
-m1$tab 
+m_rlq$tab 
 ```
 
-# Plots
+### RLQ Plots
 
 ```{r plots}
-plot(m1)
-s.label(m1$lR)
-s.label(m1$lQ)
-s.arrow(m1$l1)
-s.arrow(m1$c1)
+plot(m_rlq)
+s.label(m_rlq$lR)
+s.label(m_rlq$lQ)
+s.arrow(m_rlq$l1)
+s.arrow(m_rlq$c1)
+```
+
+## Fourth-corner analysis
+
+```{r}
+m_4th <- fourthcorner(
+  tabR = sites, 
+  tabL = species, 
+  tabQ = traits,
+  modeltype = 6,
+  p.adjust.method.G = "none", 
+  p.adjust.method.D = "none", 
+  nrepet = 49999
+)
+```
+
+```{r}
+m_4th_adj <- p.adjust.4thcorner(
+  m_4th,
+  p.adjust.method.G = "fdr", 
+  p.adjust.method.D = "fdr", 
+  p.adjust.D = "global"
+)
+m_4th_adj
+```
+
+### Plot
+
+```{r}
+plot(m_4th_adj, alpha = 0.05, stat = "D2")
+```
+```{r}
+plot(m_4th_adj,
+  x.rlq = m_rlq,
+  alpha = 0.05,
+  stat = "D2",
+  type = "biplot"
+)
 ```
 
 # Save
 
 ```{r save, include = FALSE}
-scores_sites <- m1$lR %>%
+scores_sites <- m_rlq$lR %>%
   mutate(type = "sites") %>%
   rename(axis1 = 1, axis2 = 2)
-scores_species <- m1$lQ %>%
+scores_species <- m_rlq$lQ %>%
   mutate(type = "species") %>%
   rename(axis1 = 1, axis2 = 2)
-scores_environment <- m1$l1 %>%
+scores_environment <- m_rlq$l1 %>%
   mutate(type = "environment") %>%
   rename(axis1 = 1, axis2 = 2)
-scores_traits <- m1$c1 %>%
+scores_traits <- m_rlq$c1 %>%
   mutate(type = "traits") %>%
   rename(axis1 = 1, axis2 = 2)
 

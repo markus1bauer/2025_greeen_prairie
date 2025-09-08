@@ -161,7 +161,8 @@ graph_a <- ggplot() +
       guide = "none"
     ) +
     labs(
-      x = "", y = expression(Seeded ~ species ~ "[" * '#' * "]")
+      x = "", y = expression(Seeded ~ species ~ "[" * '#' * "]"),
+      title = "Lux Arbor"
     ) +
     theme_mb() +
     theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 0)); graph_a

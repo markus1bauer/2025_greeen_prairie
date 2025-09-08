@@ -126,47 +126,39 @@ plot4 <- ggplot(sites, aes(x = sqrt(y))) + geom_density()
 
 ### a Candidate models ---------------------------------------------------------
 
-m1 <- glmer(
-  y ~ treatment + water_cap + (1 | year),
-  family = poisson(link = "log"),
-  data = sites
-)
-simulationOutput <- simulateResiduals(m1, plot = TRUE)
-testDispersion(simulationOutput)
-
-m2 <- glm(
+m1 <- glm(
   y ~ treatment * year + water_cap,
   family = poisson(link = "log"),
   data = sites
   )
-simulationOutput <- simulateResiduals(m2, plot = TRUE)
+simulationOutput <- simulateResiduals(m1, plot = TRUE)
 testDispersion(simulationOutput)
 
-m3 <- glmmTMB::glmmTMB(
+m2 <- glmmTMB::glmmTMB(
   y ~ treatment * year + water_cap,
   family = nbinom2(link = "log"),
   data = sites
 )
-simulationOutput <- simulateResiduals(m3, plot = TRUE)
+simulationOutput <- simulateResiduals(m2, plot = TRUE)
 testDispersion(simulationOutput)
 
-m4 <- lm(
+m3 <- lm(
   y ~ treatment * year + water_cap,
+  data = sites
+)
+simulateResiduals(m3, plot = TRUE)
+
+m4 <- lm(
+  y ~ treatment * (year + water_cap),
   data = sites
 )
 simulateResiduals(m4, plot = TRUE)
 
-m5 <- lm(
-  y ~ treatment * (year + water_cap),
-  data = sites
-)
-simulateResiduals(m5, plot = TRUE)
-
 
 ### b Save ---------------------------------------------------------------------
 
+save(m1, file = here("outputs", "models", "model_richness_timing_herbicide_lux_1.Rdata"))
 save(m2, file = here("outputs", "models", "model_richness_timing_herbicide_lux_2.Rdata"))
-save(m3, file = here("outputs", "models", "model_richness_timing_herbicide_lux_3.Rdata"))
 
 
 
