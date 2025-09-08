@@ -1073,12 +1073,12 @@ data_traits4 <- data_traits3 %>%
     height = if_else(accepted_name == "Penstemon hirsutus", 0.457, height),
     height = if_else(
       accepted_name == "Symphyotrichum urophyllum", 0.914, height
-      )
+    )
   ) %>%
   relocate(
     c("taxonomic_status", "accepted_name_rank", "source", "accepted_name_url"),
     .after = last_col()
-    )
+  )
 
 # Penstemon hirsutus up to 18 inches -- 0.457 m # Prairie moon nursery, Winona, Michigan, https://www.prairiemoon.com/penstemon-hirsutus-hairy-beardtongue
 # Symphyotrichum urophyllum upt to 3 feet - 0.914 m # Prairie moon nursery, Winona, Michigan, https://www.prairiemoon.com/symphyotrichum-urophyllum-arrow-leaved-aster
@@ -1102,6 +1102,72 @@ data_missing <- data_traits4 %>%
 # )
 
 traits <- data_traits4
+
+
+### d GRooT: functional root traits ############################################
+
+# Guerrero-Ramirez et al. (2021) Glob Ecol Biogeogr
+# https://doi.org/10.1111/geb.13179
+# https://groot-database.github.io/GRooT/
+
+data_groot <- read_csv(
+  here::here(
+    "data", "raw", "database_groot", "GRooTAggregateSpeciesVersion.csv"
+  ),
+  na = c("na", "NA", ""),
+  col_names = TRUE
+) %>%
+  filter(traitName %in% c(
+    "Root_tissue_density", "Specific_root_length", "Mean_Root_diameter",
+    "Rooting_depth"
+  )) %>%
+  mutate(accepted_name = str_c(genusTNRS, speciesTNRS, sep = " ")) %>%
+  pivot_wider(
+    id_cols = accepted_name,
+    names_from = "traitName",
+    values_from = "meanSpecies"
+  ) %>%
+  rename(
+    root_diameter = Mean_Root_diameter, rtd = Root_tissue_density,
+    srl = Specific_root_length, rooting_depth = Rooting_depth
+  )
+
+data_traits5 <- data_traits4 %>%
+  left_join(data_groot, by = "accepted_name")
+
+### Check completeness ###
+
+data_missing <- data_traits5 %>%
+  filter(
+    accepted_name_rank == "species",
+    if_any(
+      .cols = c(
+        sla, height, seedmass, root_diameter, rooting_depth, rtd, srl
+        ),
+      .fns = ~is.na(.)
+      ),
+  ) %>%
+  select(
+    accepted_name, seeded, family, sla, height, seedmass, root_diameter,
+    rooting_depth, rtd, srl
+    ) %>%
+  left_join(data_check_occurences, by = "accepted_name") %>%
+  relocate(n, .after = seeded) %>%
+  arrange(desc(seeded), desc(n))
+
+### Check completeness ###
+
+data_missing <- data_traits4 %>%
+  filter(
+    (is.na(sla) | is.na(height) | is.na(seedmass)) &
+      accepted_name_rank == "species"
+  ) %>%
+  select(accepted_name, seeded, family, sla, height, seedmass) %>%
+  left_join(data_check_occurences, by = "accepted_name") %>%
+  relocate(n, .after = seeded) %>%
+  filter((is.na(sla) | is.na(height) | is.na(seedmass))) %>%
+  arrange(desc(seeded), desc(n))
+
 
 rm(list = setdiff(
   ls(), c("species", "sites", "traits", "flowers", "covers")
