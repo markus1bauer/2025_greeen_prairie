@@ -860,7 +860,7 @@ data_check_occurences <- data_species %>%
 
 # write_xlsx(
 #   data_check_occurences,
-#   here("data", "processed", "data_processed_occurences_20250818.xlsx")
+#   here("outputs", "tables", "species_occurences_20250818.xlsx")
 #   )
 
 rm(list = setdiff(
@@ -1098,7 +1098,7 @@ data_missing <- data_traits4 %>%
 
 # write_xlsx(
 #   data_missing,
-#   here("data", "processed", "data_processed_missing_20250902.xlsx")
+#   here("outputs", "tables", "missing_traits_20250902.xlsx")
 # )
 
 traits <- data_traits4
