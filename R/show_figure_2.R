@@ -1,7 +1,7 @@
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # GREEEN prairie project
 # Show figure ####
-# Seeded species richness ~ pool size * seeding time
+# Seeded species richness ~ herbicide pre-treatment * seeding time
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Markus Bauer
 # 2025-09-05
@@ -40,6 +40,6 @@ graph_a / (graph_b + graph_c) +
 
 ### Save ###
 ggsave(
-  here("outputs", "figures", "figure_2_300dpi_12x10cm.tiff"),
-  dpi = 300, width = 12, height = 10, units = "cm"
+  here("outputs", "figures", "figure_2_300dpi_14x10cm.tiff"),
+  dpi = 300, width = 14, height = 10, units = "cm"
 )

@@ -4,7 +4,7 @@
 # Seeded species richness ~ herbicide pre-treatment * seeding time
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Markus Bauer
-# 2025-09-05
+# 2025-09-09
 
 
 
@@ -20,7 +20,8 @@ library(tidyverse)
 library(patchwork)
 
 ### Start ###
-rm(list = setdiff(ls(), c("graph_a", "graph_b", "graph_c", "graph_d")))
+rm(list = setdiff(ls(), c("graph_a", "graph_b", "graph_c", "graph_d",
+                          "graph_e", "graph_f")))
 
 
 
@@ -30,16 +31,20 @@ rm(list = setdiff(ls(), c("graph_a", "graph_b", "graph_c", "graph_d")))
 
 
 
-graph_a / (graph_b + graph_c) +
-  plot_layout(guides = "collect") +
-  plot_annotation(
-    tag_levels = "A", tag_prefix = "", tag_suffix = "",
-    theme = theme(legend.position = "bottom")
-    ) &
+graph_a + graph_b + graph_c + graph_d + graph_e + graph_f +
+  plot_layout(
+    ncol = 2, guides = "collect", widths = c(1, 1), heights = c(1, 1, 1),
+    design = "
+    14
+    25
+    36
+    "
+    ) +
+  plot_annotation(tag_levels = "A", tag_prefix = "", tag_suffix = "") &
   theme(plot.tag = element_text(size = 10, face = "bold"))
 
 ### Save ###
 ggsave(
-  here("outputs", "figures", "figure_3_300dpi_14x10cm.tiff"),
-  dpi = 300, width = 14, height = 10, units = "cm"
+  here("outputs", "figures", "figure_3_300dpi_16x20cm.tiff"),
+  dpi = 300, width = 16, height = 20, units = "cm"
 )
