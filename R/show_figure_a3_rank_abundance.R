@@ -52,7 +52,8 @@ species <- read_csv(
     ) %>%
   filter(
     plot_size %in% c("1", "25"),
-    year == "2025"
+    year == "2025",
+    str_detect(id_plot, "Lux")
   ) %>%
   group_by(accepted_name) %>%
   count() %>%
@@ -72,7 +73,8 @@ data <- traits %>%
     species,
     by = "accepted_name"
     ) %>%
-  mutate(n = replace_na(n, 0))
+  mutate(n = replace_na(n, 0)) %>%
+  arrange(desc(n))
 
 
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
