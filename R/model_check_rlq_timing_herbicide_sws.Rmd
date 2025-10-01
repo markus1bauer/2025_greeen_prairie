@@ -1,6 +1,6 @@
 ---
 title: "GREEEN tallgrass prairie restoration: RLQ analyses (SW Station)"
-author: "Markus Bauer"
+author: "MB"
 date: "`r format(Sys.time(), '%Y-%m-%d')`"
 output:
   pdf_document:
@@ -18,19 +18,6 @@ editor_options:
 library(tinytex)
 knitr::opts_chunk$set(echo = TRUE)
 ```
-
-Technichal University of Munich, TUM School of Life Sciences, Chair of
-Restoration Ecology, Emil-Ramann-Straße 6, 85354 Freising, Germany
-
-\*[markus1.bauer\@tum.de](mailto:markus1.bauer@tum.de)
-
-ORCiD ID: [0000-0001-5372-4174](https://orcid.org/0000-0001-5372-4174)
-<br>
-[Google Scholar](https://scholar.google.de/citations?user=oHhmOkkAAAAJ&hl=de&oi=ao)
-<br>
-GitHub: [markus1bauer](https://github.com/markus1bauer)
-<br>
-GitHub: [TUM-Restoration-Ecology](https://github.com/TUM-Restoration-Ecology)
 
 # Preparation
 
