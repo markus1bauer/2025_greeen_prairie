@@ -265,7 +265,7 @@ necessary.
 ```{r effect-sizes-1, message = FALSE}
 (emm <- emmeans(
   m_1,
-  revpairwise ~ seeding_time,
+  revpairwise ~ seeding_time | seeded_pool,
   type = "response"
   ))
 plot(emm, comparison = TRUE)
