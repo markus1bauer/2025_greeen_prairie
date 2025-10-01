@@ -31,7 +31,9 @@ rm(list = setdiff(ls(), c("graph_a", "graph_b", "graph_c", "graph_d")))
 
 
 graph_a / (graph_b + graph_c) +
-  plot_layout(guides = "collect") +
+  plot_layout(
+    guides = "collect"
+    ) +
   plot_annotation(
     tag_levels = "A", tag_prefix = "", tag_suffix = "",
     theme = theme(legend.position = "bottom")
