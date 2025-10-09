@@ -117,12 +117,12 @@ data <- sites %>%
     scale_y_continuous(limits = c(0, 18), breaks = seq(0, 21, 5)) +
     scale_color_manual(
       breaks = c("fall", "spring"),
-      labels = c("Fall", "Spring"),
+      labels = c("Autumn", "Spring"),
       values = c("#440154", "#FFA500")
     ) +
     labs(
       x = "Seeded species pool [#]", color = "Seeding",
-      y = expression(Seeded ~ species ~ "[" * '#' * "]"),
+      y = expression(Seeded ~ forbs ~ "[" * '#' * "]"),
       title = "Lux Arbor"
       ) +
     theme_mb())

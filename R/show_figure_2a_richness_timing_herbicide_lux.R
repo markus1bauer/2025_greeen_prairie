@@ -79,7 +79,7 @@ sites <- read_csv(
       treatment, "unseeded_0_0", "fall_0_33", "spring_0_33", "spring_1_33"
     ),
     treatment = fct_recode(
-      treatment, "Unseeded" = "unseeded_0_0", "Fall" = "fall_0_33",
+      treatment, "Unseeded" = "unseeded_0_0", "Autumn" = "fall_0_33",
       "Spring" = "spring_0_33", "Spring+\nHerbicide" = "spring_1_33"
     )
   )
@@ -107,7 +107,7 @@ data_model <- ggemmeans(
       x, "unseeded_0_0", "fall_0_33", "spring_0_33", "spring_1_33"
     ),
     x = fct_recode(
-      x, "Unseeded" = "unseeded_0_0", "Fall" = "fall_0_33",
+      x, "Unseeded" = "unseeded_0_0", "Autumn" = "fall_0_33",
       "Spring" = "spring_0_33", "Spring+\nHerbicide" = "spring_1_33"
     )
   )
@@ -155,13 +155,13 @@ graph_a <- ggplot() +
     facet_grid(~group) +
     scale_y_continuous(limits = c(0, 17), breaks = seq(0, 21, 5)) +
     scale_color_manual(
-      breaks = c("Unseeded" , "Fall", "Spring", "Spring+\nHerbicide"),
-      labels = c("Unseeded" , "Fall", "Spring", "Spring+\nHerbicide"),
+      breaks = c("Unseeded" , "Autumn", "Spring", "Spring+\nHerbicide"),
+      labels = c("Unseeded" , "Autumn", "Spring", "Spring+\nHerbicide"),
       values = c("#21918c", "#440154", "#FFA500", "#FFA570"),
       guide = "none"
     ) +
     labs(
-      x = "", y = expression(Seeded ~ species ~ "[" * '#' * "]"),
+      x = "", y = expression(Seeded ~ forbs ~ "[" * '#' * "]"),
       title = "Lux Arbor"
     ) +
     theme_mb() +

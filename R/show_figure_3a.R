@@ -88,7 +88,7 @@ data <- model %>%
       )
       ),
     id = str_replace(id, "treat.unseeded_0_0", "Unseeded"),
-    id = str_replace(id, "treat.fall_0_33", "Fall"),
+    id = str_replace(id, "treat.fall_0_33", "Autumn"),
     id = str_replace(id, "treat.spring_0_33", "Spring"),
     id = str_replace(id, "treat.spring_1_33", "Spring + Herbicide"),
     id = str_replace(id, "sla", "SLA"),
@@ -99,7 +99,7 @@ data <- model %>%
     id = str_replace(id, "cover_non_seeded", "Cover non-seeded sp."),
     id = str_replace(id, "water_cap", "Water caption"),
     type = if_else(
-      id %in% c("Fall", "Spring", "Spring + Herbicide"), "environment_factor", type
+      id %in% c("Autumn", "Spring", "Spring + Herbicide"), "environment_factor", type
       )
     )
 
@@ -132,7 +132,7 @@ graph_a <- ggplot() +
   coord_fixed(xlim = c(-2.5, 2.5), ylim = c(-2.2, 2.2)) +
   scale_color_manual(
     breaks = c("unseeded", "fall_0_33", "spring_0_33", "spring_1_33"),
-    labels = c("Unseeded", "Fall", "Spring", "Spring + Herbicide"),
+    labels = c("Unseeded", "Autumn", "Spring", "Spring + Herbicide"),
     values = c("#21918c", "#440154", "#FFA500", "#FFA570")
   ) +
   labs(
@@ -144,6 +144,6 @@ graph_a <- ggplot() +
 
 ### Save ###
 ggsave(
-  here("outputs", "figures", "figure_3a_300dpi_5x5cm.tiff"),
-  dpi = 300, width = 5, height = 5, units = "cm"
+  here("outputs", "figures", "figure_3a_300dpi_8x8cm.tiff"),
+  dpi = 300, width = 8, height = 8, units = "cm"
 )

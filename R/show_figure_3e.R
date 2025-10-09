@@ -1,7 +1,7 @@
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # GREEEN prairie project
 # Show figure ####
-# RLQ ~ herbicide * seeding time (NW Station)
+# RLQ ~ herbicide * seeding time (SW Station)
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Markus Bauer
 # 2025-09-09
@@ -55,7 +55,7 @@ sites <- read_csv(
       seeding_time = "f"
     )) %>% 
   filter(
-    site == "NW Station",
+    site == "SW Station",
     richness_type == "seeded_richness",
     treatment_id %in% c("1", "2", "3", "4")
   ) %>%
@@ -63,13 +63,14 @@ sites <- read_csv(
     treatment = str_c(seeding_time, herbicide, seeded_pool, sep = "_"),
     treatment = factor(treatment)
   ) %>%
+  #filter(treatment != "unseeded_0_0") %>%
   select(
-    id_plot_year, year, treatment, water_cap, cover_non_seeded, site
+    id_plot_year, year, treatment, water_cap, cover_non_seeded
   )
 
 ### * Model ####
 model <- read_csv(
-  here("outputs", "models", "model_rlq_timing_herbicide_nw_station.csv"),
+  here("outputs", "models", "model_rlq_timing_herbicide_sw_station.csv"),
   col_names = TRUE, na = c("na", "NA", ""), col_types = cols(
     .default = "?",
     type = "f"
@@ -77,18 +78,18 @@ model <- read_csv(
 )
 
 data <- model %>%
-  left_join(sites %>% rename(id = id_plot_year) %>% select(-site), by = "id") %>%
+  left_join(sites %>% rename(id = id_plot_year), by = "id") %>%
   mutate(
     facet = if_else(
       type == "sites" | type == "species", "Species and sites", if_else(
         type == "environment" | type == "traits", "Traits and environment",
         "warning"
       )
-    ),
+      ),
     id = str_replace(id, "treat.unseeded_0_0", "Unseeded"),
-    id = str_replace(id, "treat.fall_0_33", "Fall"),
+    id = str_replace(id, "treat.fall_0_33", "Autumn"),
     id = str_replace(id, "treat.spring_0_33", "Spring"),
-    id = str_replace(id, "treat.spring_1_33", "Spring + Herbicide"),
+    id = str_replace(id, "treat.spring_1_33", "Spring + Herb"),
     id = str_replace(id, "sla", "SLA"),
     id = str_replace(id, "height", "Height"),
     id = str_replace(id, "seedmass", "Seed mass"),
@@ -97,9 +98,9 @@ data <- model %>%
     id = str_replace(id, "cover_non_seeded", "Cover non-seeded sp."),
     id = str_replace(id, "water_cap", "Water caption"),
     type = if_else(
-      id %in% c("Fall", "Spring", "Spring + Herbicide"), "environment_factor", type
-    )
-  ) %>%
+      id %in% c("Autumn", "Spring", "Spring + Herb"), "environment_factor", type
+      )
+    ) %>%
   filter(type != "traits")
 
 
@@ -111,29 +112,37 @@ data <- model %>%
 
 
 graph_e <- ggplot() +
-  geom_segment(
-    data = data %>% filter(type %in% c("traits", "environment")),
-    aes(x = 0, y = 0, xend = axis1, yend = axis2, color = type),
-    arrow = arrow(length = unit(.2, "cm"), type = "closed")
+  geom_point(
+    data = data %>% filter(type == "sites"),
+    aes(x = axis1, y = axis2, color = treatment),
+    shape = 16, alpha = .8
   ) +
-  geom_label_repel(
-    data = data %>% filter(type %in% c("traits", "environment")),
-    aes(x = axis1, y = axis2, label = id, color = type),
-    fill = alpha("white", 0), label.size = NA, max.overlaps = 50,
+  geom_label(
+    data = data %>% filter(type == "environment_factor"),
+    aes(x = axis1, y = axis2, label = id),
+    fill = alpha("white", .8),
     size = 3
   ) +
-  annotate(
-    "text", y = .18, x = -.3, size = 3,
-    label = "environment: p = .001\n traits: p = .156"
-  ) +
-  coord_fixed() +
+  # geom_point(
+  #   data = data %>% filter(type == "species"),
+  #   aes(x = axis1, y = axis2), shape = 4
+  # ) +
+  # geom_label_repel(
+  #   data = data %>% filter(type == "species"),
+  #   aes(x = axis1, y = axis2, label = id),
+  #   xlim = c(NA, Inf), ylim = c(NA, Inf),
+  #   fill = alpha("white", .5), label.size = NA, max.overlaps = 50,
+  #   size = 3
+  # ) +
+  coord_fixed(xlim = c(-2.5, 2.5), ylim = c(-2.2, 2.2)) +
   scale_color_manual(
-    breaks = c("traits", "environment", "environment_factor"),
-    values = c("red", "blue", "blue")
+    breaks = c("unseeded", "fall_0_33", "spring_0_33", "spring_1_33"),
+    labels = c("Unseeded", "Autumn", "Spring", "Spring + Herbicide"),
+    values = c("#21918c", "#440154", "#FFA500", "#FFA570")
   ) +
   labs(
-    x = "Principal Axis 1", color = "", y = "Principal Axis 2",
-    title = "NW Station"
+    x = "Principal Axis 1", color = "Seeding", y = "Principal Axis 2",
+    title = "SW Station"
   ) +
   theme_mb() +
   theme(legend.position = "none");graph_e

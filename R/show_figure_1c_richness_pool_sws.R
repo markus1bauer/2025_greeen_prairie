@@ -121,12 +121,12 @@ graph <- ggplot() +
     scale_y_continuous(limits = c(0, 7), breaks = seq(0, 20, 1)) +
     scale_color_manual(
       breaks = c("fall", "spring"),
-      labels = c("Fall", "Spring"),
+      labels = c("Autumn", "Spring"),
       values = c("#440154", "#FFA500")
     ) +
     labs(
       x = "Seeded species pool [#]", color = "Seeding\ntiming",
-      y = expression(Seeded ~ species ~ "[" * '#' * "]"),
+      y = expression(Seeded ~ forbs ~ "[" * '#' * "]"),
       title = "SW Station"
       ) +
     theme_mb();graph

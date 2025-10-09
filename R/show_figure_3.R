@@ -35,9 +35,9 @@ graph_a + graph_b + graph_c + graph_d + graph_e + graph_f +
   plot_layout(
     ncol = 2, guides = "collect", widths = c(1, 1), heights = c(1, 1, 1),
     design = "
-    14
-    25
-    36
+    12
+    34
+    56
     "
     ) +
   plot_annotation(tag_levels = "A", tag_prefix = "", tag_suffix = "") &

@@ -1,7 +1,7 @@
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # GREEEN prairie project
 # Show figure ####
-# RLQ ~ herbicide * seeding time (SW Station)
+# RLQ ~ herbicide * seeding time (NW Station)
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Markus Bauer
 # 2025-09-09
@@ -55,22 +55,21 @@ sites <- read_csv(
       seeding_time = "f"
     )) %>% 
   filter(
-    site == "SW Station",
+    site == "NW Station",
     richness_type == "seeded_richness",
     treatment_id %in% c("1", "2", "3", "4")
   ) %>%
   mutate(
     treatment = str_c(seeding_time, herbicide, seeded_pool, sep = "_"),
     treatment = factor(treatment)
-  ) %>%
-  #filter(treatment != "unseeded_0_0") %>%
+    ) %>%
   select(
-    id_plot_year, year, treatment, water_cap, cover_non_seeded
+    id_plot_year, year, treatment, water_cap, cover_non_seeded, site
   )
 
 ### * Model ####
 model <- read_csv(
-  here("outputs", "models", "model_rlq_timing_herbicide_sw_station.csv"),
+  here("outputs", "models", "model_rlq_timing_herbicide_nw_station.csv"),
   col_names = TRUE, na = c("na", "NA", ""), col_types = cols(
     .default = "?",
     type = "f"
@@ -78,7 +77,7 @@ model <- read_csv(
 )
 
 data <- model %>%
-  left_join(sites %>% rename(id = id_plot_year), by = "id") %>%
+  left_join(sites %>% rename(id = id_plot_year) %>% select(-site), by = "id") %>%
   mutate(
     facet = if_else(
       type == "sites" | type == "species", "Species and sites", if_else(
@@ -87,9 +86,9 @@ data <- model %>%
       )
       ),
     id = str_replace(id, "treat.unseeded_0_0", "Unseeded"),
-    id = str_replace(id, "treat.fall_0_33", "Fall"),
+    id = str_replace(id, "treat.fall_0_33", "Autumn"),
     id = str_replace(id, "treat.spring_0_33", "Spring"),
-    id = str_replace(id, "treat.spring_1_33", "Spring + Herb"),
+    id = str_replace(id, "treat.spring_1_33", "Spring + Herbicide"),
     id = str_replace(id, "sla", "SLA"),
     id = str_replace(id, "height", "Height"),
     id = str_replace(id, "seedmass", "Seed mass"),
@@ -98,7 +97,7 @@ data <- model %>%
     id = str_replace(id, "cover_non_seeded", "Cover non-seeded sp."),
     id = str_replace(id, "water_cap", "Water caption"),
     type = if_else(
-      id %in% c("Fall", "Spring", "Spring + Herb"), "environment_factor", type
+      id %in% c("Autumn", "Spring", "Spring + Herbicide"), "environment_factor", type
       )
     ) %>%
   filter(type != "traits")
@@ -137,18 +136,18 @@ graph_c <- ggplot() +
   coord_fixed(xlim = c(-2.5, 2.5), ylim = c(-2.2, 2.2)) +
   scale_color_manual(
     breaks = c("unseeded", "fall_0_33", "spring_0_33", "spring_1_33"),
-    labels = c("Unseeded", "Fall", "Spring", "Spring + Herbicide"),
+    labels = c("Unseeded", "Autumn", "Spring", "Spring + Herbicide"),
     values = c("#21918c", "#440154", "#FFA500", "#FFA570")
   ) +
   labs(
     x = "Principal Axis 1", color = "Seeding", y = "Principal Axis 2",
-    title = "SW Station"
+    title = "NW Station"
   ) +
   theme_mb() +
   theme(legend.position = "none");graph_c
 
 ### Save ###
 ggsave(
-  here("outputs", "figures", "figure_3c_300dpi_5x5cm.tiff"),
-  dpi = 300, width = 5, height = 5, units = "cm"
+  here("outputs", "figures", "figure_3c_300dpi_8x8cm.tiff"),
+  dpi = 300, width = 8, height = 8, units = "cm"
 )
