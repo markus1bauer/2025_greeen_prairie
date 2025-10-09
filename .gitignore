@@ -78,3 +78,6 @@ data/raw/photos_leaf_area/greeen_lux_20250827_Lux_45_DRYARG_02_no_petiole.jpg
 data/raw/photos_leaf_area/greeen_lux_20250827_Lux_45_DRYARG_02_with_petiole.jpg
 data/raw/photos_leaf_area/greeen_lux_20250827_Lux_56_DRYARG_01_no_petiole.jpg
 data/raw/photos_leaf_area/greeen_lux_20250827_Lux_56_DRYARG_01_with_petiole.jpg
+R/aaa_treatment_example.csv
+R/aaa_ordination_trajectory.R
+R/aaa_species_matrix_example.csv
