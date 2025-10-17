@@ -65,7 +65,7 @@ sites <- read_csv(
     treatment = factor(treatment)
   ) %>%
   select(
-    id_plot_year, year, treatment, water_cap, cover_non_seeded
+    id_plot_year, treatment, water_cap, cover_non_seeded
   )
 
 ### * Model ####
@@ -93,14 +93,15 @@ data <- model %>%
     id = str_replace(id, "sla", "SLA"),
     id = str_replace(id, "height", "Height"),
     id = str_replace(id, "seedmass", "Seed mass"),
-    id = str_replace(id, "year", "Year"),
     id = str_replace(id, "cover_seeded_grass", "Cover seeded grass"),
     id = str_replace(id, "cover_non_seeded", "Cover non-seeded sp."),
     id = str_replace(id, "water_cap", "Water caption"),
     type = if_else(
-      id %in% c("Fall", "Spring", "Spring +\nHerbicide"), "environment_factor", type
+      id %in% c("Fall", "Spring", "Spring +\nHerbicide"),
+      "environment_factor", type
     )
-  )
+  ) %>%
+  filter(id != "year")
 
 
 

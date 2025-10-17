@@ -103,6 +103,24 @@ data <- model %>%
     ) %>%
   filter(type != "traits")
 
+se <- function(z) {
+  qt(0.025, df = length(z) - 1, lower.tail = FALSE) * sd(z) / sqrt(length(z))
+} # function to calculate std.err
+
+centroid <- data %>%
+  filter(type == "sites") %>%
+  group_by(year, treatment) %>%
+  summarize(
+    mean1 = mean(axis1), mean2 = mean(axis2), sd1 = sd(axis1), sd2 = sd(axis2),
+    se1 = se(axis1), se2 = se(axis2)
+  ) %>%
+  mutate(
+    treatment = str_replace(treatment, "treat.fall_0_33", "Autumn"),
+    treatment = str_replace(treatment, "treat.spring_0_33", "Spring"),
+    treatment = str_replace(treatment, "treat.spring_1_33", "Spring + Herbicide"),
+  ) %>%
+  ungroup()
+
 
 
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -111,34 +129,35 @@ data <- model %>%
 
 
 
-graph_e <- ggplot() +
-  geom_point(
-    data = data %>% filter(type == "sites"),
-    aes(x = axis1, y = axis2, color = treatment),
-    shape = 16, alpha = .8
+graph_e <- ggplot(
+  data = centroid, aes(x = mean1, y = mean2, color = treatment, label = year)
+) +
+  geom_point(shape = 16, alpha = 1, size = 2) +
+  geom_errorbar(
+    aes(ymin = mean2 - se2, ymax = mean2 + se2, color = treatment),
+    width = 0, alpha = 0.5
   ) +
-  geom_label(
-    data = data %>% filter(type == "environment_factor"),
-    aes(x = axis1, y = axis2, label = id),
-    fill = alpha("white", .8),
-    size = 3
+  geom_errorbarh(
+    aes(xmin = mean1 - se1, xmax = mean1 + se1, color = treatment),
+    height = 0, alpha = 0.5
   ) +
-  # geom_point(
-  #   data = data %>% filter(type == "species"),
-  #   aes(x = axis1, y = axis2), shape = 4
-  # ) +
-  # geom_label_repel(
-  #   data = data %>% filter(type == "species"),
-  #   aes(x = axis1, y = axis2, label = id),
-  #   xlim = c(NA, Inf), ylim = c(NA, Inf),
-  #   fill = alpha("white", .5), label.size = NA, max.overlaps = 50,
-  #   size = 3
-  # ) +
-  coord_fixed(xlim = c(-2.5, 2.5), ylim = c(-2.2, 2.2)) +
+  geom_path(size = 0.6) +
+  geom_text_repel(size = 3, color = "black") +
+  annotate(
+    "label", x = -.5, y = 2.2, color = "#FFA500", size = 3, label = "Spring"
+  ) +
+  annotate(
+    "label", x = -.5, y = -1.5, color = "#FFA570", size = 3,
+    label = "Spring +\nHerbicide"
+  ) +
+  annotate(
+    "label", x = -1.8, y = 1.4, color = "#440154", size = 3, label = "Autumn"
+  ) +
+  coord_fixed(xlim = c(-2.5, 1.7), ylim = c(-2.1, 2.3)) +
   scale_color_manual(
-    breaks = c("unseeded", "fall_0_33", "spring_0_33", "spring_1_33"),
-    labels = c("Unseeded", "Autumn", "Spring", "Spring + Herbicide"),
-    values = c("#21918c", "#440154", "#FFA500", "#FFA570")
+    breaks = c("spring_0_33", "spring_1_33", "fall_0_33"),
+    labels = c("Spring", "Spring + Herbicide", "Autumn"),
+    values = c("#FFA500", "#FFA570", "#440154")
   ) +
   labs(
     x = "Principal Axis 1", color = "Seeding", y = "Principal Axis 2",
@@ -149,6 +168,6 @@ graph_e <- ggplot() +
 
 ### Save ###
 ggsave(
-  here("outputs", "figures", "figure_3e_300dpi_8x8cm.tiff"),
+  here("outputs", "figures", "figure_3e_300dpi_8x8cm_centroid.tiff"),
   dpi = 300, width = 8, height = 8, units = "cm"
 )
