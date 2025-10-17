@@ -69,7 +69,8 @@ sites <- read_csv(
   filter(
     site == "NW Station",
     richness_type == "seeded_richness",
-    !(treatment_id %in% c("2", "4"))
+    !(treatment_id %in% c("2", "4")),
+    !(year == 2016)
   ) %>%
   select(
     id_plot_year, id_plot, site, year, herbicide, seeding_time, seeded_pool,
@@ -118,7 +119,7 @@ graph <- ggplot() +
     size = 2, position = position_dodge(width = 0.8)
   ) +
   #facet_grid(facet) +
-  scale_y_continuous(limits = c(0, 7), breaks = seq(0, 20, 1)) +
+  scale_y_continuous(limits = c(0, 8), breaks = seq(0, 20, 1)) +
   scale_color_manual(
     breaks = c("fall", "spring"),
     labels = c("Autumn", "Spring"),

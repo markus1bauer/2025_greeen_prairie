@@ -68,7 +68,8 @@ sites <- read_csv(
   filter(
     site == "NW Station",
     richness_type == "seeded_richness",
-    !(treatment_id %in% c("2", "4"))
+    !(treatment_id %in% c("2", "4")),
+    !(year == 2016)
   ) %>%
   mutate(y = richness_1qm + richness_25qm)
 ```
@@ -157,7 +158,9 @@ m_1 <- m1
 
 ```{r formulas, collapse = TRUE}
 formula(m_1)
+class(m_1)
 # formula(m_2)
+# class(m_2)
 # m_1@call
 # m_2@call
 ```

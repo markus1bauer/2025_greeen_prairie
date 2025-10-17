@@ -288,7 +288,7 @@ save(m3, file = here("outputs", "models", "model_richness_pool_sws_3.Rdata"))
 # )
 # 
 # 
-# ### d Save ---------------------------------------------------------------------
+# ### d Save -------------------------------------------------------------------
 # 
 # save(
 #   m_simple, file = here("outputs", "models", "model_pool_simple_bayesian.Rdata")

@@ -48,7 +48,8 @@ sites <- read_csv(
   filter(
     site == "NW Station",
     richness_type == "seeded_richness",
-    !(treatment_id %in% c("2", "4"))
+    !(treatment_id %in% c("2", "4")),
+    !(year == 2016)
   ) %>%
   mutate(y = richness_1qm + richness_25qm)
 
@@ -161,7 +162,6 @@ simulateResiduals(m3, plot = TRUE)
 
 ### b Save ---------------------------------------------------------------------
 
-save(m_full, file = here("outputs", "models", "model_richness_pool_nws_full.Rdata"))
 save(m1, file = here("outputs", "models", "model_richness_pool_nws_1.Rdata"))
 
 
@@ -305,4 +305,4 @@ save(m1, file = here("outputs", "models", "model_richness_pool_nws_1.Rdata"))
 # save(
 #   m1_prior,
 #   file = here("outputs", "models", "model_pool_1_prior_bayesian.Rdata")
-  )
+# )

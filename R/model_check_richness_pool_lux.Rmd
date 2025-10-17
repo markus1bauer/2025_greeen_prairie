@@ -158,11 +158,11 @@ m_2 <- m3
 
 ```{r formulas, collapse = TRUE}
 formula(m_1)
+class(m_1)
 formula(m_2)
+class(m_2)
 # m_1@call
 # m_2@call
-class(m_1)
-class(m_2)
 ```
 
 ## Model check
