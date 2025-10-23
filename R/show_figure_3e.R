@@ -147,13 +147,13 @@ graph_e <- ggplot(
     "label", x = -.5, y = 2.2, color = "#FFA500", size = 3, label = "Spring"
   ) +
   annotate(
-    "label", x = -.5, y = -1.5, color = "#FFA570", size = 3,
+    "label", x = -.5, y = -1.7, color = "#FFA570", size = 3,
     label = "Spring +\nHerbicide"
   ) +
   annotate(
     "label", x = -1.8, y = 1.4, color = "#440154", size = 3, label = "Autumn"
   ) +
-  coord_fixed(xlim = c(-2.5, 1.7), ylim = c(-2.1, 2.3)) +
+  coord_fixed(xlim = c(-2.5, 2.5), ylim = c(-2.7, 2.3)) +
   scale_color_manual(
     breaks = c("spring_0_33", "spring_1_33", "fall_0_33"),
     labels = c("Spring", "Spring + Herbicide", "Autumn"),
@@ -168,6 +168,6 @@ graph_e <- ggplot(
 
 ### Save ###
 ggsave(
-  here("outputs", "figures", "figure_3e_300dpi_8x8cm_centroid.tiff"),
-  dpi = 300, width = 8, height = 8, units = "cm"
+  here("outputs", "figures", "figure_3e_300dpi_7x7cm_centroid.tiff"),
+  dpi = 300, width = 7, height = 7, units = "cm"
 )

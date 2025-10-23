@@ -1,7 +1,7 @@
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # GREEEN prairie project
 # Show figure ####
-# Seeded species richness ~ herbicide pre-treatment * seeding time
+# RLQ ~ herbicide pre-treatment * seeding time
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Markus Bauer
 # 2025-09-09
@@ -45,6 +45,6 @@ graph_a + graph_b + graph_c + graph_d + graph_e + graph_f +
 
 ### Save ###
 ggsave(
-  here("outputs", "figures", "figure_3_300dpi_16x20cm.tiff"),
-  dpi = 300, width = 16, height = 21, units = "cm"
+  here("outputs", "figures", "figure_3_300dpi_14x21cm.tiff"),
+  dpi = 300, width = 14, height = 21, units = "cm"
 )

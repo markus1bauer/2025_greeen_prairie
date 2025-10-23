@@ -124,10 +124,10 @@ graph_b <- ggplot() +
     size = 3
   ) +
   annotate(
-    "text", y = .74, x = -.15, size = 3,
+    "text", y = .75, x = -.3, size = 3,
     label = "environment:\np = .001\n traits: p = .042"
   ) +
-  coord_fixed(clip = "off") +
+  coord_fixed(xlim = c(-.6, .9), ylim = c(-.7, .9), clip = "off") +
   scale_color_manual(
     breaks = c("traits", "environment", "environment_factor"),
     values = c("red", "blue", "blue")

@@ -143,16 +143,16 @@ graph_c <- ggplot(
   geom_path(linewidth = 0.6) +
   geom_text_repel(size = 3, color = "black") +
   annotate(
-    "label", x = .3, y = -1.6, color = "#FFA500", size = 3, label = "Spring"
+    "label", x = -2, y = -2, color = "#FFA500", size = 3, label = "Spring"
     ) +
   annotate(
-    "label", x = -.9, y = 2, color = "#FFA570", size = 3,
+    "label", x = -1.2, y = 2, color = "#FFA570", size = 3,
     label = "Spring +\nHerbicide"
     ) +
   annotate(
-    "label", x = -2, y = -0.5, color = "#440154", size = 3, label = "Autumn"
+    "label", x = -.3, y = -2, color = "#440154", size = 3, label = "Autumn"
     ) +
-  coord_fixed(xlim = c(-2.5, 2.5), ylim = c(-2.2, 2.2)) +
+  coord_fixed(xlim = c(-2.5, 2.5), ylim = c(-2.7, 2.3)) +
   scale_color_manual(
     breaks = c("spring_0_33", "spring_1_33", "fall_0_33"),
     labels = c("Spring", "Spring + Herbicide", "Autumn"),
@@ -167,6 +167,6 @@ graph_c <- ggplot(
 
 ### Save ###
 ggsave(
-  here("outputs", "figures", "figure_3c_300dpi_8x8cm_centroid.tiff"),
-  dpi = 300, width = 8, height = 8, units = "cm"
+  here("outputs", "figures", "figure_3c_300dpi_7x7cm_centroid.tiff"),
+  dpi = 300, width = 7, height = 7, units = "cm"
 )

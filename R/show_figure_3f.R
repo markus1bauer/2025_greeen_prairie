@@ -123,10 +123,10 @@ graph_f <- ggplot() +
     size = 3
   ) +
   annotate(
-    "text", y = .03, x = .22, size = 3,
+    "text", y = .8, x = -.1, size = 3,
     label = "environment: p = .001\n traits: p = .450"
   ) +
-  coord_fixed() +
+  coord_fixed(xlim = c(-.6, .9), ylim = c(-.7, .9), clip = "off") +
   scale_color_manual(
     breaks = c("traits", "environment", "environment_factor"),
     values = c("red", "blue", "blue")
@@ -140,6 +140,6 @@ graph_f <- ggplot() +
 
 ### Save ###
 ggsave(
-  here("outputs", "figures", "figure_3f_300dpi_8x8cm.tiff"),
-  dpi = 300, width = 8, height = 8, units = "cm"
+  here("outputs", "figures", "figure_3f_300dpi_7x7cm.tiff"),
+  dpi = 300, width = 7, height = 7, units = "cm"
 )

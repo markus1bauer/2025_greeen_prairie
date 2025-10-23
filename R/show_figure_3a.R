@@ -144,16 +144,16 @@ graph_a <- ggplot(
   geom_path(size = 0.6) +
   geom_text_repel(size = 3, color = "black") +
   annotate(
-    "label", x = -1, y = 1, color = "#FFA500", size = 3, label = "Spring"
+    "label", x = -1.1, y = 1.2, color = "#FFA500", size = 3, label = "Spring"
   ) +
   annotate(
-    "label", x = 1.8, y = 1.7, color = "#FFA570", size = 3,
+    "label", x = 1.8, y = 1.8, color = "#FFA570", size = 3,
     label = "Spring +\nHerbicide"
   ) +
   annotate(
     "label", x = -.1, y = -1.3, color = "#440154", size = 3, label = "Autumn"
   ) +
-  coord_fixed(xlim = c(-2.4, 2.5), ylim = c(-2.7, 2)) +
+  coord_fixed(xlim = c(-2.5, 2.5), ylim = c(-2.7, 2.3)) +
   scale_color_manual(
     breaks = c("spring_0_33", "spring_1_33", "fall_0_33"),
     labels = c("Spring", "Spring + Herbicide", "Autumn"),
