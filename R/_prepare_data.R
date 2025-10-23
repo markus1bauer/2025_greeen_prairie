@@ -4,7 +4,7 @@
 #
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Markus Bauer
-# 2025-07-18
+# 2025-10-23
 
 
 
@@ -824,12 +824,10 @@ data_check_duplicated <- species %>%
   arrange(desc(n), accepted_name, date_surveyed, id_plot)
 
 data_check_occurences <- data_species %>%
-  filter(
-    plot_size != "seeded",
-  ) %>%
+  filter(plot_size != "seeded") %>%
   group_by(accepted_name) %>%
   count(accepted_name) %>%
-  arrange(accepted_name, n)
+  arrange(accepted_name, n) 
 
 # write_xlsx(
 #   data_check_occurences,
@@ -1286,7 +1284,7 @@ data_cover_non_seeded <- species %>%
     traits %>% select(accepted_name, seeded),
     by = "accepted_name"
   ) %>%
-  filter(seeded == 0) %>%
+  filter(is.na(seeded)) %>%
   group_by(id_plot_year) %>%
   summarise(cover_non_seeded = sum(abundance, na.rm = TRUE))
 
