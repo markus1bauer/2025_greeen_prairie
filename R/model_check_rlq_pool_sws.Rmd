@@ -1,0 +1,267 @@
+---
+title: "GREEEN tallgrass prairie restoration: RLQ analyses pool size (SW Station)"
+author: "MB"
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+output:
+  pdf_document:
+    toc: true
+    toc_depth: 3
+    dev: "png"
+    fig_width: 7
+    fig_height: 5
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+library(tinytex)
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Preparation
+
+#### Packages
+
+```{r libraries, message = FALSE}
+library(here)
+library(tidyverse)
+library(ade4)
+```
+
+```{r echo = FALSE}
+rm(list = ls())
+```
+
+#### Load data
+
+```{r load-data}
+sites <- read_csv(
+  here("data", "processed", "data_processed_sites.csv"),
+  col_names = TRUE, na = c("na", "NA", ""), col_types =
+    cols(
+    .default = "?",
+    seeding_time = "f"
+  )) %>% 
+  arrange(id_plot_year) %>%
+  filter(
+    site == "SW Station",
+    richness_type == "seeded_richness",
+    !(treatment_id %in% c("2", "4"))
+  ) %>%
+  mutate(
+    treatment = str_c(seeding_time, seeded_pool, sep = "_"),
+    treatment = factor(treatment)
+  ) %>%
+  select(
+    id_plot_year, year, treatment, water_cap, cover_non_seeded,
+    cover_seeded_grass
+    )
+
+traits <- read_csv(
+  here("data", "processed", "data_processed_traits.csv"),
+  col_names = TRUE, na = c("na", "NA", ""), col_types = cols(.default = "?")
+  ) %>%
+  filter(seeded == "1", family != "Poaceae") %>%
+  select(accepted_name, sla, height, seedmass) %>%
+  mutate(seedmass = log(seedmass)) %>% 
+  drop_na()
+
+species <- read_csv(
+  here("data", "processed", "data_processed_species.csv"),
+  col_names = TRUE, na = c("na", "NA", ""), col_types = cols(.default = "?")
+  ) %>%
+  filter(plot_size %in% c("1", "25")) %>%
+  mutate(abundance = 1) %>%
+  select(id_plot_year, accepted_name, abundance) %>%
+  semi_join(sites, by = "id_plot_year") %>%
+  semi_join(traits, by = "accepted_name") %>%
+  arrange(id_plot_year)
+```
+
+## Checks
+
+#### Plots per year
+
+```{r check-plot-number}
+sites %>%
+  group_by(year) %>%
+  count()
+```
+
+#### Seeded species richness
+
+```{r check-species-richness}
+species %>%
+  group_by(id_plot_year) %>%
+  count(name = "seeded_forb_richness") %>%
+  ungroup() %>% 
+  count(seeded_forb_richness, name = "number_of_plots") %>%
+  mutate(
+    "plots_>=_1_species" = sum(number_of_plots),
+    total_number_plots = 72
+    )
+```
+
+#### Check non-occuring seeded species
+
+```{r check-non-occuring-species}
+traits %>% anti_join(species, by = "accepted_name")
+```
+
+## Finalize preparation
+
+```{r finalize-preaparation}
+traits <- traits %>%
+  semi_join(species, by = "accepted_name") %>%
+  column_to_rownames(var = "accepted_name")
+
+sites <- sites %>%
+  semi_join(species, by = "id_plot_year") %>%
+  column_to_rownames(var = "id_plot_year")
+
+species <- species %>%
+  pivot_wider(
+    names_from = "accepted_name", values_from = "abundance", values_fill = 0
+    ) %>%
+  column_to_rownames(var = "id_plot_year")
+```
+
+# Statistics
+
+## Descriptive analyses
+
+```{r descriptive-statistics}
+sites %>%
+  group_by(year) %>%
+  count()
+```
+
+
+## Ordinations
+
+```{r ordinations-for-rlq, warning=FALSE}
+dudi_l <- dudi.coa(species, scannf = FALSE)
+dudi_r <- dudi.hillsmith(
+  sites, 
+  row.w = dudi_l$lw,
+  scannf = FALSE
+  )
+dudi_q <- dudi.pca(
+  traits,
+  row.w = dudi_l$cw,
+  scannf = FALSE
+  )
+```
+
+
+## RLQ analyses
+
+```{r calculate-rlq, collapse = TRUE}
+m_rlq <- rlq(
+  dudiR = dudi_r, 
+  dudiL = dudi_l, 
+  dudiQ = dudi_q,
+  scannf = FALSE
+  )
+```
+
+### Global test
+
+Model 2: species-environment relationship
+
+Model 4: species-traits relationship
+
+```{r rlq-global-test}
+randtest(m_rlq, nrepet = 999, modeltype = 6)
+```
+
+### Traits by environment crossed table
+
+```{r rlq-table}
+m_rlq$tab 
+```
+
+### RLQ Plots
+
+```{r plots}
+plot(m_rlq)
+s.label(m_rlq$lR)
+s.label(m_rlq$lQ)
+s.arrow(m_rlq$l1)
+s.arrow(m_rlq$c1)
+```
+
+## Fourth-corner analysis
+
+```{r 4th-calculation}
+m_4th <- fourthcorner(
+  tabR = sites, 
+  tabL = species, 
+  tabQ = traits,
+  modeltype = 6,
+  p.adjust.method.G = "none", 
+  p.adjust.method.D = "none", 
+  nrepet = 49999
+)
+```
+
+```{r 4th-p-adjustment}
+m_4th_adj <- p.adjust.4thcorner(
+  m_4th,
+  p.adjust.method.G = "fdr", 
+  p.adjust.method.D = "fdr", 
+  p.adjust.D = "global"
+)
+m_4th_adj
+```
+
+### Plot
+
+```{r 4th-plot-matrix}
+plot(m_4th_adj, alpha = 0.05, stat = "D2")
+```
+
+```{r 4th-biplot}
+plot(m_4th_adj,
+  x.rlq = m_rlq,
+  alpha = 0.05,
+  stat = "D2",
+  type = "biplot"
+)
+```
+
+# Save
+
+```{r save, include = FALSE}
+scores_sites <- m_rlq$lR %>%
+  mutate(type = "sites") %>%
+  rename(axis1 = 1, axis2 = 2)
+scores_species <- m_rlq$lQ %>%
+  mutate(type = "species") %>%
+  rename(axis1 = 1, axis2 = 2)
+scores_environment <- m_rlq$l1 %>%
+  mutate(type = "environment") %>%
+  rename(axis1 = 1, axis2 = 2)
+scores_traits <- m_rlq$c1 %>%
+  mutate(type = "traits") %>%
+  rename(axis1 = 1, axis2 = 2)
+
+scores <- bind_rows(
+  scores_sites, scores_species, scores_environment, scores_traits
+  ) %>%
+  rownames_to_column(var = "id")
+
+write_csv(
+  scores, here(
+    "outputs", "models", "model_rlq_pool_sw_station.csv"
+    )
+)
+```
+
+
+# Session info
+
+```{r session-info, echo = FALSE}
+sessionInfo()
+```
