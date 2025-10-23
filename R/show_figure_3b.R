@@ -124,8 +124,8 @@ graph_b <- ggplot() +
     size = 3
   ) +
   annotate(
-    "text", y = .64, x = .32, size = 3,
-    label = "environment: p = .001\n traits: p = .042"
+    "text", y = .74, x = -.15, size = 3,
+    label = "environment:\np = .001\n traits: p = .042"
   ) +
   coord_fixed(clip = "off") +
   scale_color_manual(
@@ -141,6 +141,6 @@ graph_b <- ggplot() +
 
 ### Save ###
 ggsave(
-  here("outputs", "figures", "figure_3b_300dpi_8x8cm.tiff"),
-  dpi = 300, width = 8, height = 8, units = "cm"
+  here("outputs", "figures", "figure_3b_300dpi_7x7cm.tiff"),
+  dpi = 300, width = 7, height = 7, units = "cm"
 )

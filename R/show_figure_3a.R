@@ -144,10 +144,10 @@ graph_a <- ggplot(
   geom_path(size = 0.6) +
   geom_text_repel(size = 3, color = "black") +
   annotate(
-    "label", x = -.6, y = 1, color = "#FFA500", size = 3, label = "Spring"
+    "label", x = -1, y = 1, color = "#FFA500", size = 3, label = "Spring"
   ) +
   annotate(
-    "label", x = 1.7, y = 1.7, color = "#FFA570", size = 3,
+    "label", x = 1.8, y = 1.7, color = "#FFA570", size = 3,
     label = "Spring +\nHerbicide"
   ) +
   annotate(
@@ -168,6 +168,6 @@ graph_a <- ggplot(
 
 ### Save ###
 ggsave(
-  here("outputs", "figures", "figure_3a_300dpi_8x8cm_centroid.tiff"),
-  dpi = 300, width = 8, height = 8, units = "cm"
+  here("outputs", "figures", "figure_3a_300dpi_7x7cm_centroid.tiff"),
+  dpi = 300, width = 7, height = 7, units = "cm"
 )

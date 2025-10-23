@@ -46,5 +46,5 @@ graph_a + graph_b + graph_c + graph_d + graph_e + graph_f +
 ### Save ###
 ggsave(
   here("outputs", "figures", "figure_3_300dpi_16x20cm.tiff"),
-  dpi = 300, width = 16, height = 20, units = "cm"
+  dpi = 300, width = 16, height = 21, units = "cm"
 )
