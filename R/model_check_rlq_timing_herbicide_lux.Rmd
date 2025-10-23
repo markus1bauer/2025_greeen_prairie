@@ -82,12 +82,22 @@ species <- read_csv(
 
 ## Checks
 
+#### Plots per year
+
+```{r check-plot-number}
+sites %>%
+  group_by(year) %>%
+  count()
+```
+
 #### Seeded species richness
 
 ```{r check-species-richness}
 species %>%
   group_by(id_plot_year) %>%
-  count()
+  count() %>%
+  ungroup() %>% 
+  count(n)
 ```
 
 #### Check non-occuring seeded species
