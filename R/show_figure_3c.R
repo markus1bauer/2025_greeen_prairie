@@ -146,11 +146,11 @@ graph_c <- ggplot(
     "label", x = -2, y = -2, color = "#FFA500", size = 3, label = "Spring"
     ) +
   annotate(
-    "label", x = -1.2, y = 2, color = "#FFA570", size = 3,
+    "label", x = -1.6, y = 2, color = "#FFA570", size = 3,
     label = "Spring +\nHerbicide"
     ) +
   annotate(
-    "label", x = -.3, y = -2, color = "#440154", size = 3, label = "Autumn"
+    "label", x = 1.5, y = -1.2, color = "#440154", size = 3, label = "Autumn"
     ) +
   coord_fixed(xlim = c(-2.5, 2.5), ylim = c(-2.7, 2.3)) +
   scale_color_manual(

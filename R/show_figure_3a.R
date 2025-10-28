@@ -144,7 +144,7 @@ graph_a <- ggplot(
   geom_path(size = 0.6) +
   geom_text_repel(size = 3, color = "black") +
   annotate(
-    "label", x = -1.1, y = 1.2, color = "#FFA500", size = 3, label = "Spring"
+    "label", x = 1.2, y = -1.6, color = "#FFA500", size = 3, label = "Spring"
   ) +
   annotate(
     "label", x = 1.8, y = 1.8, color = "#FFA570", size = 3,

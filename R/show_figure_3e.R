@@ -147,7 +147,7 @@ graph_e <- ggplot(
     "label", x = -.5, y = 2.2, color = "#FFA500", size = 3, label = "Spring"
   ) +
   annotate(
-    "label", x = -.5, y = -1.7, color = "#FFA570", size = 3,
+    "label", x = 1.8, y = -1.7, color = "#FFA570", size = 3,
     label = "Spring +\nHerbicide"
   ) +
   annotate(

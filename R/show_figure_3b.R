@@ -125,7 +125,7 @@ graph_b <- ggplot() +
   ) +
   annotate(
     "text", y = .75, x = -.3, size = 3,
-    label = "environment:\np = .001\n traits: p = .042"
+    label = "environment:\np = .001\n traits: p = .081"
   ) +
   coord_fixed(xlim = c(-.6, .9), ylim = c(-.7, .9), clip = "off") +
   scale_color_manual(
