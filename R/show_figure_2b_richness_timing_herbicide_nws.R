@@ -152,7 +152,7 @@ graph <- ggplot() +
   #   aes(x = x, y = predicted, label = label)
   #   ) +
   # facet_grid(~facet) +
-  scale_y_continuous(limits = c(0, 7), breaks = seq(0, 20, 1)) +
+  scale_y_continuous(limits = c(0, 8), breaks = seq(0, 20, 2)) +
   scale_color_manual(
     breaks = c("Unseeded" , "Autumn", "Spring", "Spring+\nHerbicide"),
     labels = c("Unseeded" , "Autumn", "Spring", "Spring+\nHerbicide"),

@@ -84,9 +84,9 @@ sites <- read_csv(
   )
 
 ### * Model ####
-load(file = here("outputs", "models", "model_richness_timing_herbicide_sws_2.Rdata"))
-m <- m2
-m@call
+load(file = here("outputs", "models", "model_richness_timing_herbicide_sws_3.Rdata"))
+m <- m3
+formula(m3)
 
 
 
@@ -152,7 +152,7 @@ graph <- ggplot() +
     #   aes(x = x, y = predicted, label = label)
     #   ) +
     # facet_grid(~facet) +
-    scale_y_continuous(limits = c(0, 7), breaks = seq(0, 20, 1)) +
+    scale_y_continuous(limits = c(0, 8), breaks = seq(0, 20, 2)) +
     scale_color_manual(
       breaks = c("Unseeded" , "Autumn", "Spring", "Spring+\nHerbicide"),
       labels = c("Unseeded" , "Autumn", "Spring", "Spring+\nHerbicide"),
