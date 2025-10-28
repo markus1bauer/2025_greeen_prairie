@@ -146,11 +146,13 @@ m3 <- glmmTMB::glmmTMB(
 simulationOutput <- simulateResiduals(m3, plot = TRUE)
 testDispersion(simulationOutput)
 
-m4 <- lm(
-  sqrt(y) ~ seeded_pool * seeding_time * year + water_cap,
+m4 <- glmmTMB::glmmTMB(
+  y ~ seeded_pool * seeding_time + year,
+  family = nbinom2(link = "log"),
   data = sites
 )
-simulateResiduals(m4, plot = TRUE)
+simulationOutput <- simulateResiduals(m4, plot = TRUE)
+testDispersion(simulationOutput)
 
 
 ### b Save ---------------------------------------------------------------------
