@@ -1,15 +1,15 @@
-﻿accepted_name,n
+accepted_name,n
 Acer,4
 Acer negundo,10
 Acer rubrum,4
 Achillea millefolium,330
 Agrostis gigantea,46
-Albertisia,1
 Alliaria petiolata,1
 Allium vineale,35
 Amaranthus,24
 Ambrosia artemisiifolia,111
 Andropogon gerardii,201
+Apocynum cannabinum,1
 Arabidopsis thaliana,2
 Asclepias amplexicaulis,1
 Asclepias syriaca,216
@@ -18,7 +18,7 @@ Asparagus officinalis,30
 Asteraceae,27
 Astragalus canadensis,1
 Avena sativa,2
-Baptisia alba var. macrophylla,4
+Baptisia alba,4
 Barbarea vulgaris,30
 Berberis vulgaris,2
 Berteroa incana,228
@@ -46,6 +46,7 @@ Dactylis glomerata,25
 Dalea purpurea,80
 Danthonia spicata,9
 Daucus carota,57
+Desmodium canadense,1
 Desmodium illinoense,123
 Desmodium paniculatum,2
 Dichanthelium,89
@@ -61,8 +62,7 @@ Elymus virginicus,5
 Eragrostis cilianensis,1
 Eragrostis spectabilis,87
 Erechtites hieraciifolius,1
-Eria,33
-Erigeron,281
+Erigeron,314
 Erigeron canadensis,292
 Eryngium yuccifolium,1
 Euphorbia maculata,2
@@ -83,15 +83,16 @@ Helianthus occidentalis,30
 Hieracium,38
 Hypericum perforatum,143
 Hypochaeris radicata,19
+Juncus dichotomus,1
 Juncus effusus,1
 Juncus tenuis,127
 Koeleria macrantha,50
-Krigia,25
+Krigia,24
 Lactuca,4
 Lepidium campestre,67
 Lespedeza capitata,181
 Lespedeza hirta,1
-Lespedeza virginica,154
+Lespedeza virginica,155
 Lonicera maackii,1
 Lupinus perennis,1
 Malus,7
@@ -108,7 +109,6 @@ Morus rubra,9
 Oenothera,5
 Oenothera biennis,55
 Oxalis stricta,309
-Panax,1
 Panicum,8
 Panicum capillare,190
 Panicum dichotomiflorum,57
@@ -136,6 +136,7 @@ Potentilla simplex,3
 Prunus,11
 Prunus serotina,5
 Pseudognaphalium obtusifolium,32
+Pyrus calleryana,3
 Quercus,4
 Quercus velutina,2
 Ratibida pinnata,324
@@ -145,7 +146,7 @@ Rubus flagellaris,64
 Rubus occidentalis,3
 Rudbeckia hirta,148
 Rumex acetosa,190
-Rumex acetosella,63
+Rumex acetosella,64
 Rumex crispus,2
 Rumex obtusifolius,1
 Schizachyrium scoparium,527
@@ -156,18 +157,18 @@ Silene vulgaris,199
 Solanum americanum,12
 Solanum carolinense,325
 Solidago,8
-Solidago altissima,31
+Solidago altissima,32
 Solidago canadensis,171
 Solidago nemoralis,3
 Solidago rigida,75
 Solidago speciosa,26
-Sorghastrum nutans,199
+Sorghastrum nutans,198
 Sporobolus cryptandrus,196
 Sporobolus heterolepis,1
 Stellaria media,115
 Symphyotrichum,2
 Symphyotrichum ericoides,31
-Symphyotrichum laeve,1
+Symphyotrichum laeve,43
 Symphyotrichum lanceolatum,1
 Symphyotrichum pilosum,157
 Taraxacum officinale,39
@@ -192,7 +193,5 @@ Vicia,137
 Vinca,4
 Viola,6
 Vitis,24
-Xylosma,1
 Zizia aptera,12
-unknown,61
-,45
+unknown,58
