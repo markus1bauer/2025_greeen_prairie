@@ -4,7 +4,7 @@
 #
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Markus Bauer
-# 2025-10-23
+# 2025-10-28
 
 
 
@@ -829,9 +829,9 @@ data_check_occurences <- data_species %>%
   count(accepted_name) %>%
   arrange(accepted_name, n) 
 
-# write_xlsx(
+# write_csv(
 #   data_check_occurences,
-#   here("outputs", "tables", "species_occurences_20251007.xlsx")
+#   here("outputs", "tables", "species_occurences.csv")
 #   )
 
 
@@ -1107,11 +1107,12 @@ data_missing <- data_traits4 %>%
   left_join(data_check_occurences, by = "accepted_name") %>%
   relocate(n, .after = seeded) %>%
   filter((is.na(sla) | is.na(height) | is.na(seedmass))) %>%
+  filter(seeded == 1 | n > 0) %>%
   arrange(desc(seeded), desc(n))
 
-# write_xlsx(
+# write_csv(
 #   data_missing,
-#   here("outputs", "tables", "missing_traits_20250902.xlsx")
+#   here("outputs", "tables", "missing_traits_20251028.csv")
 # )
 
 traits <- data_traits4
