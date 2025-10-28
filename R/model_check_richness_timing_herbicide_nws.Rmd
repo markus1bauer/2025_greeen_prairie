@@ -164,7 +164,9 @@ m_2 <- m2
 ```{r formulas, collapse = TRUE}
 m_1@call
 formula(m_2)
+class(m_2)
 # formula(m_1)
+# class(m_1)
 # m_2@call
 ```
 
@@ -219,7 +221,8 @@ plotResiduals(
   factor(sites %>% filter(!(is.na(water_cap))) %>%  pull(water_cap))
   )
 ```
-#### Test for overdispersion
+
+### Test for overdispersion
 
 ```{r overdispersion, collapse = TRUE, fig.height = 3, fig.width = 4.5}
 testDispersion(simulation_output_1)

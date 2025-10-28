@@ -187,7 +187,8 @@ plotResiduals(simulation_output_2$scaledResiduals, sites$year)
 plotResiduals(simulation_output_1$scaledResiduals, sites$water_cap)
 plotResiduals(simulation_output_2$scaledResiduals, sites$water_cap)
 ```
-#### Test for overdispersion
+
+### Test for overdispersion
 
 ```{r overdispersion, collapse = TRUE, fig.height = 3, fig.width = 4.5}
 testDispersion(simulation_output_1)
