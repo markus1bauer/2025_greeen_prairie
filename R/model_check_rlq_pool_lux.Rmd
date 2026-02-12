@@ -1,5 +1,6 @@
 ---
-title: "GREEEN tallgrass prairie restoration: RLQ analyses of pool size (Lux Arbor)"
+title: "GREEEN tallgrass prairie restoration"
+subtitle: "RLQ analyses of pool size (Lux Arbor)"
 author: "MB"
 date: "`r format(Sys.time(), '%Y-%m-%d')`"
 output:
