@@ -1247,9 +1247,29 @@ data <- richness_total %>%
   )
 sites <- data
 
+
+### b Establishment rate ------------------------------------------------------
+
+### Establishment rate per plot #
+
+data <- sites %>%
+  ungroup() %>%
+  filter(richness_type == "seeded_richness" & seeded_pool > 0) %>%
+  mutate(
+    establishment_rate = round(
+      (richness_1qm + richness_25qm) / seeded_pool, digits = 2
+      )
+    ) %>%
+  select(id_plot_year, establishment_rate)
+
+sites <- sites %>%
+  left_join(data, by = "id_plot_year")
+
+
+  
 rm(list = setdiff(
   ls(), c("species", "sites", "traits", "coordinates","traits")
-  ))
+))
 
 
 
