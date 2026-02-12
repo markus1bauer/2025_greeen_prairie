@@ -118,7 +118,7 @@ graph <- ggplot() +
       size = 2, position = position_dodge(width = 0.8)
     ) +
     # facet_grid(~facet) +
-    scale_y_continuous(limits = c(0, 8), breaks = seq(0, 20, 1)) +
+    scale_y_continuous(limits = c(0, 8), breaks = seq(0, 10, 2)) +
     scale_color_manual(
       breaks = c("fall", "spring"),
       labels = c("Autumn", "Spring"),
