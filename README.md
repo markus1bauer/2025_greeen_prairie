@@ -55,7 +55,7 @@ When using the **data available** in this repository, please cite the original p
 
 **Dataset**
 
-> Bauer M, Groves AM, Isaacs R, Landis DA, Brudvig LA (2026) Data and code for Bauer et al. (prepared) (v1.0.0) [Data set]. &ndash; *Zenodo*. <https://doi.org/xxx>
+> Bauer M, Groves AM, Isaacs R, Landis DA, Brudvig LA (2026) Data and code for Bauer et al. (prepared) (v1.0.0) [Data set]. &ndash; *Zenodo*. [https://doi.org/10.5281/zenodo.18760448](https://doi.org/10.5281/zenodo.18760448)
 
 This dataset will also be linked to PANGAEA
 > Bauer M, Groves AM, Isaacs R, Landis DA, Brudvig LA (xxx) xxx. &ndash; *PANGAEA*. https://doi.org/xxx
