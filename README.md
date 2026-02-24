@@ -1,14 +1,22 @@
-# Data and code for Bauer et al. (xxx) xxx
+# Data and code for Bauer et al. (prepared) GREEEN prairie
 
 *Markus Bauer* <a href="https://orcid.org/0000-0001-5372-4174"><img src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" width="16" height="16"/></a>
+*Anna M. Groves* <a href="https://orcid.org/0000-0002-4063-197X"><img src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" width="16" height="16"/></a>
+*Rufus Isaacs* <a href="https://orcid.org/0000-0001-7523-4643"><img src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" width="16" height="16"/></a>
+*Douglas A. Landis* <a href="https://orcid.org/0000-0003-4943-6000"><img src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" width="16" height="16"/></a>
+*Lars A. Brudvig* <a href="https://orcid.org/0000-0002-3857-2165"><img src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" width="16" height="16"/></a>
 
 Data and code for:
 
-Bauer M, xxx, Brudvig L (2023) __xxx__ &ndash; *xxx* xxx, xxx&ndash;xxx.
+Bauer M, Groves AM, Isaacs R, Landis DA, Brudvig LA (xxx) __xxx__ &ndash; *xxx* xxx, xxx&ndash;xxx.
 
 [![DOI:xxx](http://img.shields.io/badge/DOI-xxx-informational.svg)](https://doi.org/xxx)
 
-**Study region**: [Experiment at xxx](https://www.openstreetmap.org/#map=xxx) <br> <br> \## Content of the repository
+**Study region**: [Three experimental sites in Michigan/USA](https://www.openstreetmap.org/#map=8/43.361/-84.809&layers=P)
+<br>
+<br>
+
+## Content of the repository
 
 1.  **Data**: the folder `data` contains
     -   `Raw` and `processed` data of the sites variables (.csv)
@@ -26,8 +34,6 @@ Bauer M, xxx, Brudvig L (2023) __xxx__ &ndash; *xxx* xxx, xxx&ndash;xxx.
     -   Scripts to generate all figures and tables (.R)
     -   Metadata script for creating EML file
     -   Folder for calculating habitat types (ESY)
-4.  **Markdown**: the folder `markdown` contains
-    -   Markdown documents of the analyses with model evaluations and comparisons (.md)
 
 #### Package versioning
 
@@ -45,13 +51,13 @@ When using the **data available** in this repository, please cite the original p
 
 **Publication**
 
-> Bauer M, xxx & Brudvig L (xxx) xxx. &ndash; *xxx* xx, xxx&ndash;xxx.. <https://doi.org/xxx>
+> Bauer M, Groves AM, Isaacs R, Landis DA, Brudvig LA (xxx) xxx. &ndash; *xxx* xx, xxx&ndash;xxx.. <https://doi.org/xxx>
 
 **Dataset**
 
-> Bauer M, xxx, Brudvig L (2023) Data and code for Bauer et al. (xxx) xxx (v1.1.0) [Data set]. &ndash; *Zenodo*. <https://doi.org/xxx>
+> Bauer M, Groves AM, Isaacs R, Landis DA, Brudvig LA (2026) Data and code for Bauer et al. (prepared) (v1.0.0) [Data set]. &ndash; *Zenodo*. <https://doi.org/xxx>
 
-This dataset is also linked to PANGAEA
-> Bauer M, xxx, Brudvig L (xxx) xxx. &ndash; *PANGAEA*. https://doi.org/xxx
+This dataset will also be linked to PANGAEA
+> Bauer M, Groves AM, Isaacs R, Landis DA, Brudvig LA (xxx) xxx. &ndash; *PANGAEA*. https://doi.org/xxx
 
 Contact [markus1.bauer\@tum.de](mailto:markus1.bauer@tum.de) for any further information.
