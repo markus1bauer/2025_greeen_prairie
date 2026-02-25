@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="88904eb5-af7e-4a22-89c2-738960f5356a" system="uuid" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd">
+  <dataset>
+    <alternateIdentifier/>
+    <shortName>GREEEN: prairie restoration with different pool sizes and planting season</shortName>
+    <title>Tallgrass restoration experiment with different species pool sizes and different seeding seasons</title>
+    <creator id="https://orcid.org/0000-0001-5372-4174">
+      <individualName>
+        <givenName>Markus</givenName>
+        <surName>Bauer</surName>
+      </individualName>
+      <organizationName>Technical University of Munich</organizationName>
+      <positionName>Researcher</positionName>
+      <address>
+        <deliveryPoint>Emil-Ramann-Strasse 6</deliveryPoint>
+        <city>Freising</city>
+        <administrativeArea>Bavaria</administrativeArea>
+        <postalCode>85354</postalCode>
+        <country>Germany</country>
+      </address>
+      <phone>0049-152-56391781</phone>
+      <electronicMailAddress>markus1.bauer@tum.de</electronicMailAddress>
+    </creator>
+    <associatedParty id="https://orcid.org/0000-0002-4063-197X">
+      <individualName>
+        <givenName>Anna M.</givenName>
+        <surName>Groves</surName>
+      </individualName>
+      <organizationName>Ampliflora</organizationName>
+      <electronicMailAddress>itsdrfunk@gmail.com</electronicMailAddress>
+      <role>Researcher</role>
+    </associatedParty>
+    <associatedParty id="https://orcid.org/0000-0001-7523-4643">
+      <individualName>
+        <givenName>Rufus</givenName>
+        <surName>Isaacs</surName>
+      </individualName>
+      <organizationName>Michigan State University</organizationName>
+      <electronicMailAddress>isaacsr@msu.edu</electronicMailAddress>
+      <role>Researcher</role>
+    </associatedParty>
+    <associatedParty id="https://orcid.org/0000-0003-4943-6000">
+      <individualName>
+        <givenName>Douglas A.</givenName>
+        <surName>Landis</surName>
+      </individualName>
+      <organizationName>Michigan State University</organizationName>
+      <electronicMailAddress>landisd@msu.edu</electronicMailAddress>
+      <role>Researcher</role>
+    </associatedParty>
+    <associatedParty id="https://orcid.org/0000-0002-3857-2165">
+      <individualName>
+        <givenName>Lars A.</givenName>
+        <surName>Brudvig</surName>
+      </individualName>
+      <organizationName>Michigan State University</organizationName>
+      <electronicMailAddress>brudvig@msu.edu</electronicMailAddress>
+      <role>Researcher</role>
+    </associatedParty>
+    <pubDate>2026</pubDate>
+    <language>English</language>
+    <abstract>There are three experimental sites in Michigan with 60 plots each. We conducted per plot vegetation surveys. The treatments were a herbicide treatment, planting season (autumn or spring) and the seeded pool size (6, 12, 18, 33). The monitoring lasted from 2015 to 2025 at one site and from 2015 and 2018 at two sites. We measured some own leaves to get specific leaf area.</abstract>
+    <keywordSet>
+      <keyword>grasslands</keyword>
+      <keyword>human disturbance</keyword>
+      <keyword>plant communities</keyword>
+      <keyword>plant height</keyword>
+      <keyword>plant species composition</keyword>
+      <keyword>restoration</keyword>
+      <keyword>seeds</keyword>
+      <keyword>species richness</keyword>
+      <keyword>specific leaf area</keyword>
+      <keyword>vegetation</keyword>
+      <keywordThesaurus>LTER controlled vocabulary</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword>RLQ</keyword>
+      <keyword>community assembly</keyword>
+      <keyword>community ecology</keyword>
+      <keyword>plant functional traits</keyword>
+      <keyword>species pool size</keyword>
+      <keyword>tallgrass prairie</keyword>
+      <keyword>target species richness</keyword>
+      <keyword>temperate grassland</keyword>
+      <keywordThesaurus>own vocabulary</keywordThesaurus>
+    </keywordSet>
+    <licensed>
+      <licenseName>CC-BY-4.0</licenseName>
+      <url>https://creativecommons.org/licenses/by/4.0/deed.en</url>
+    </licensed>
+    <coverage>
+      <geographicCoverage>
+        <geographicDescription>Three experiments in Michigan/USA</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-86.359</westBoundingCoordinate>
+          <eastBoundingCoordinate>-85.4486</eastBoundingCoordinate>
+          <northBoundingCoordinate>44.8203</northBoundingCoordinate>
+          <southBoundingCoordinate>42.084</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>2015-03-01</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>2025-07-31</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Subdivision</taxonRankName>
+          <taxonRankValue>Spermatophytina</taxonRankValue>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+    </coverage>
+    <contact>
+      <individualName>
+        <givenName>Markus</givenName>
+        <surName>Bauer</surName>
+      </individualName>
+      <organizationName>Technical University of Munich</organizationName>
+      <address>
+        <deliveryPoint>Emil-Ramann-Strasse 6</deliveryPoint>
+        <city>Freising</city>
+        <administrativeArea>Bavaria</administrativeArea>
+        <postalCode>85354</postalCode>
+        <country>Germany</country>
+      </address>
+      <electronicMailAddress>markus1.bauer@tum.de</electronicMailAddress>
+      <onlineUrl>https://www.lss.ls.tum.de/en/roek/home/</onlineUrl>
+    </contact>
+  </dataset>
+</eml:eml>
