@@ -22,14 +22,14 @@ Bauer M, Groves AM, Isaacs R, Landis DA, Brudvig LA (xxx) __xxx__ &ndash; *xxx* 
     -   `Raw` and `processed` data of the sites variables (.csv)
     -   `Raw` and `processed` data of the species' abundances (.csv)
     -   `Raw` and `processed` data of the species' traits (.csv)
+    -   `Photos` of the scanned leaves (.jpg)
     -   `Raw` and `processed` data of measured leaf areas and measured traits (SLA and height) (.csv)
     -   `Raw` data of GRooT and TRY database as well as data from Zierbel et al. (2017) and Zirbel & Brudvig (2020)
-    -   `photos` of the scanned leaves (.jpg)
 2.  **Outputs**: the folder `outputs` contains
-    -   The figures generated (.tiff)
-    -   The tables generated (.html/.png)
-    -   The models (.Rdata) and the scores of the NMDS calculated (.csv)
-    -   The model checks (.pdf)
+    -   The `figures` generated (.tiff)
+    -   The `tables` of the manuscript (.csv)
+    -   The `models` (.Rdata) and the scores of the NMDS calculated (.csv)
+    -   The `model_checks` with plots of raw data and test statistics (.pdf)
 3.  **R**: the folder `R` contains
     -   Scripts to calculate all models (.R)
     -   Scripts to check models (.Rmd). The PDF file are stored in `Outputs/model_checks` 
