@@ -81,12 +81,6 @@ covers <- read_csv(
   here("data", "raw", "data_raw_covers.csv"), na = c("", "NA", "na")
 )
 
-excel_sheets(here("data", "raw", "data_raw_flowers.xlsx"))
-
-flowers <- read_xlsx(
-  here("data", "raw", "data_raw_flowers.xlsx"), "Floral data"
-)
-
 
 ### b Combine data -------------------------------------------------------------
 
@@ -121,7 +115,7 @@ sites <- treatment %>%
     ) %>%
   relocate(site, .after = id_plot)
 
-rm(list = setdiff(ls(), c("sites", "flowers", "covers")))
+rm(list = setdiff(ls(), c("sites", "covers")))
 
 
 
@@ -239,7 +233,7 @@ data_check_problems <- species %>%
   select(-date_entered, -seeded_pool) %>%
   filter(problems > 0)
 
-rm(list = setdiff(ls(), c("species", "sites", "flowers", "covers", "traits")))
+rm(list = setdiff(ls(), c("species", "sites", "covers", "traits")))
 
 
 
@@ -252,7 +246,9 @@ rm(list = setdiff(ls(), c("species", "sites", "flowers", "covers", "traits")))
 # Zirbel CR, Bassett T, Grman E and Brudvig LA (2017) Dryad https://doi.org/10.5061/dryad.2175q
 
 data_2017 <- read_csv(
-  here("data", "raw", "data_raw_traits_zirbel_etal_2017.csv"),
+  here(
+    "data", "raw", "zirbel_etal_2017", "data_raw_traits_zirbel_etal_2017.csv"
+    ),
   na = c("", "NA", "na")
   ) %>%
   rename(
@@ -272,7 +268,10 @@ data_2017 <- read_csv(
 # Zirbel CR, Brudvig LA (2019) Dryad https://doi.org/10.5061/dryad.bnzs7h46q
 
 data_leaf_area <- read_csv(
-  here("data", "raw", "data_raw_traits_zirbel_brudvig_2020_leaf_area.csv"),
+  here(
+    "data", "raw", "zirbel_brudvig_2020",
+    "data_raw_traits_zirbel_brudvig_2020_leaf_area.csv"
+    ),
   na = c("", "NA", "na")
 ) %>%
   rename(name = species, leaf_area_2020 = total.leaf.area) %>%
@@ -280,7 +279,10 @@ data_leaf_area <- read_csv(
   mutate(id = str_replace(id, "HEHEL__6_NA", "HELHEL_6_NA")) %>%
   select(id, leaf_area_2020)
 data_leaf_mass <- read_csv(
-  here("data", "raw", "data_raw_traits_zirbel_brudvig_2020_leaf_mass.csv"),
+  here(
+    "data", "raw", "zirbel_brudvig_2020",
+    "data_raw_traits_zirbel_brudvig_2020_leaf_mass.csv"
+    ),
   na = c("", "NA", "na")
 ) %>%
   rename(name = species, leaf_mass_2020 = leaf_mass) %>%
@@ -295,7 +297,10 @@ data_sla_2020 <- data_leaf_area %>%
   summarize(across(where(is.numeric), ~ mean(.x, na.rm = TRUE))) %>%
   mutate(across(everything(), ~ ifelse(is.nan(.), NA, .)))
 data_seed_mass_2020 <- read_csv(
-  here("data", "raw", "data_raw_traits_zirbel_brudvig_2020_seed_mass.csv"),
+  here(
+    "data", "raw", "zirbel_brudvig_2020",
+    "data_raw_traits_zirbel_brudvig_2020_seed_mass.csv"
+    ),
   na = c("", "NA", "na")
 ) %>%
   filter(!(is.na(species))) %>% 
@@ -454,7 +459,7 @@ data <- data_2017 %>%
 traits <- data
   
 rm(list = setdiff(
-  ls(), c("species", "sites", "flowers", "covers", "traits"))
+  ls(), c("species", "sites", "covers", "traits"))
   )
 
 
@@ -764,7 +769,7 @@ data_check_duplicated <- data_names %>% # focus on n > 2
   filter(n > 1)
 
 rm(list = setdiff(
-  ls(), c("species", "sites", "data_names", "flowers", "covers",
+  ls(), c("species", "sites", "data_names", "covers",
           "data_names_resolved", "traits")
   ))
 
@@ -877,7 +882,7 @@ traits <- data
 
 
 rm(list = setdiff(
-  ls(), c("species", "sites", "traits", "flowers", "covers", "traits",
+  ls(), c("species", "sites", "traits", "covers", "traits",
           "data_check_occurences")
   ))
 
@@ -1184,7 +1189,7 @@ data_missing <- data_traits4 %>%
 
 
 rm(list = setdiff(
-  ls(), c("species", "sites", "traits", "flowers", "covers")
+  ls(), c("species", "sites", "traits", "covers")
   ))
 
 
