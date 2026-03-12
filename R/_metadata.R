@@ -29,7 +29,8 @@ rm(list = ls())
 #methods_file <- here("data", "text", "methods.odt")
 #methods <- set_methods(methods_file)
 
-#EMLassemblyline::view_unit_dictionary()
+# remotes::install_github("EDIorg/EMLassemblyline")
+# EMLassemblyline::view_unit_dictionary()
 # List of standard units, which should be used in metadata file
 
 

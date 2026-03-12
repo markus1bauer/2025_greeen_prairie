@@ -1,0 +1,4 @@
+﻿attributeName,attributeDefinition,formatString,unit,numberType,type,factor,comment
+folder,this is the folder where the photos are stored,NA,NA,NA,character,NA,NA
+sample,sample ID with project and site and date and site and species and plot number,NA,NA,NA,character,NA,NA
+total.leaf.area,the calculated total leaf area,NA,centiMeterSquared,real,numeric,NA,calculated with _prepare_data_leaf_area_calculator.R

@@ -1,0 +1,8 @@
+﻿attributeName,attributeDefinition,formatString,unit,numberType,type,factor,comment
+name,botanical species name,NA,NA,NA,character,NA,nomenclature World Flora Online
+generative_height,,NA,meter,real,numeric,NA,NA
+vegetative_height,,NA,meter,real,numeric,NA,NA
+leaf_area_excl_petiole,,NA,centiMeterSquared,real,numeric,NA,NA
+leaf_area_incl_petiole,,NA,centiMeterSquared,real,numeric,NA,NA
+sla_excl_petiole,,NA,centiMeterSquaredPerGram,real,numeric,NA,TRY ID: 3115 / GIFT ID: 4.1.3
+sla_incl_petiole,,NA,centiMeterSquaredPerGram,real,numeric,NA,TRY ID: 3116 / GIFT ID: 4.1.3

@@ -65,17 +65,11 @@ treatment_3 <- read_xlsx(
 ) %>%
   mutate(id_plot = str_c("NWS_", id_plot))
 
-soil_1 <- read_xlsx(
-  here("data", "raw", "data_raw_soil.xlsx"), sheet = "Lux"
-)
-
-soil_2 <- read_xlsx(
-  here("data", "raw", "data_raw_soil.xlsx"), sheet = "SW Station"
-)
-
-soil_3 <- read_xlsx(
-  here("data", "raw", "data_raw_soil.xlsx"), sheet = "NW Station", na = c("NA")
-)
+soil <- read_csv(
+  here("data", "raw", "data_raw_soil.csv"),
+  na = c("NA")
+) %>%
+  select(id_plot, id_tin, water_cap)
 
 covers <- read_csv(
   here("data", "raw", "data_raw_covers.csv"), na = c("", "NA", "na")
@@ -83,11 +77,6 @@ covers <- read_csv(
 
 
 ### b Combine data -------------------------------------------------------------
-
-soil <- soil_1 %>%
-  bind_rows(soil_2, soil_3) %>%
-  select(-year) %>%
-  select(id_plot, id_tin, water_cap)
 
 treatment <- treatment_1 %>%
   bind_rows(treatment_2, treatment_3)
@@ -350,7 +339,7 @@ data_2025 <- data %>%
       str_detect(trait_type, "sla_"), "4.1.3", trait_id_gift
       ),
     unit = if_else(
-      str_detect(trait_type, "sla_"), "squareCentiMeterPerGram", unit
+      str_detect(trait_type, "sla_"), "centiMeterSquaredPerGram", unit
       ),
     nomenclature = if_else(
       str_detect(name, "Drymocallis arguta"),

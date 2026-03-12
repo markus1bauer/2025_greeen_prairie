@@ -1,0 +1,13 @@
+﻿attributeName,attributeDefinition,formatString,unit,numberType,type,factor,comment
+accepted_name,botanical name with the nomenclature in accepted_name_url column,NA,NA,NA,character,NA,NA
+family,family of the species according to accepted_name_url column,NA,NA,NA,character,NA,NA
+seeded,marks species which were part of the seeded species pools,NA,NA,NA,factor,1 = yes,NA
+pool_size,seeded species pool size,NA,NA,NA,factor,6 / 12 / 18 / 33,NA
+height,plant height of the species,NA,meter,real,numeric,NA,NA
+seedmass,seed mass of the species,NA,gram,real,numeric,NA,NA
+sla,specific leaf area,NA,centiMeterSquaredPerGram,real,numeric,NA,NA
+lifeform,life form of the species,NA,NA,NA,factor,graminoid / shrub / forb,NA
+taxonomic_status,is the species name accepted or a synonym?,NA,NA,NA,factor,Accepted / Synonym,NA
+accepted_name_rank,the rank of the species name,NA,NA,NA,factor,species / genus,NA
+source,the name of the nomenclature,NA,NA,NA,factor,wcvp = World Checklist of Vascular Plants / wfo = World Flora Online,NA
+accepted_name_url,the link to the taxonomic backbone,NA,NA,NA,character,NA,NA
