@@ -1,0 +1,19 @@
+attributeName,attributeDefinition,formatString,unit,numberType,type,factor,comment
+id_plot_year,ID of the plot as a combination of site and plot number and survey year,NA,NA,NA,character,NA,NA
+id_plot,ID of the plot as a combination of plot number and site,NA,NA,NA,character,NA,NA
+site,The experiment was replicated at three sites,NA,NA,NA,factor,Lux Arbor / NW Station / SW Station,NA
+year,year of taking the soil sample,YYYY,NA,NA,date,NA,NA
+herbicide,extra herbicide treatment in spring before doing spring seeding,NA,NA,NA,double,0 = no / 1 = yes,herbicide against dicotyledonous
+seeding_time,plot seeded in autumn or in the following spring with forbs,NA,NA,NA,factor,unseeded / fall / spring,unseeded are the control plots
+seeded_pool,number of different species seeded in a plot,NA,NA,NA,factor,0 / 6 / 12 / 18 / 33 species,number of different species
+richness_1qm,species richness within the 1 sqare meter plot,NA,NA,integer,numeric,NA,NA
+richness_25qm,species richness within the 25 square meter plot,NA,NA,integer,numeric,NA,NA
+treatment_id,ten different treatment combination were applied,NA,NA,NA,factor,1 / 2 / 3 / 4 / 5 / 6 / 7 / 8 / 9  / 10,description of factors in treatment_description column
+richness_type,Type of species richnes either total or only the seeded species,NA,NA,NA,factor,seeded_richness / species_richness,
+id_tin,This is an ID of the soil sample per site (not unique across sites),NA,dimensionless,integer,numeric,NA,NA
+water_cap,calculated water capacity,NA,NA,real,numeric,NA,NA
+establishment_rate,rate of established seeded species in the 25 square meter plot of the total amount of species in the specific plot (seeded_pool column),NA,dimensionless,real,numeric,NA,NA
+cover_total,Accumulated cover of all species,NA,percent,real,numeric,NA,NA
+cover_seeded_grass,Accumulated cover of all seeded grass species,NA,percent,real,numeric,NA,NA
+cover_seeded_forbs,Accumulated cover of all seeded forb species,NA,percent,real,numeric,NA,NA
+cover_non_seeded,Accumulated cover of all non-seeded species,NA,percent,real,numeric,NA,NA

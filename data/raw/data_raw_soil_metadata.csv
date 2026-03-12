@@ -1,0 +1,10 @@
+attributeName,attributeDefinition,formatString,unit,numberType,type,factor,comment
+id_plot,ID of the plot as a combination of plot number and site,NA,NA,NA,character,NA,NA
+site,The experiment was replicated at three sites,NA,NA,NA,factor,Lux Arbor / NW Station / SW Station,NA
+year,year of taking the soil sample,YYYY,NA,NA,date,NA,NA
+id_tin,This is an ID of the soil sample per site (not unique across sites),NA,dimensionless,integer,numeric,NA,NA
+tinfilter_g,weight of the tin filter,NA,gram,real,numeric,NA,NA
+soil_soaked_g,weight of the moist soil,NA,gram,real,numeric,NA,NA
+soil_dried_g,weight of the dry soil,NA,gram,real,numeric,NA,NA
+water_cap,calculated water capacity,NA,NA,real,numeric,NA,NA
+notes,further comments,NA,NA,NA,character,NA,NA

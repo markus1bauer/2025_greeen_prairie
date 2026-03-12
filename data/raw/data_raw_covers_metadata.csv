@@ -1,0 +1,12 @@
+attributeName,attributeDefinition,formatString,unit,numberType,type,factor,comment
+date_surveyed,date of vegetation survey,YYYY-mm-dd,NA,NA,date,NA,NA
+date_entered,date when the notes were entered in the spreadsheet,YYYY-mm-dd,NA,NA,date,NA,NA
+botanist,person who surveyed the vegetation,NA,NA,NA,character,NA,NA
+site,location of the plot,NA,NA,NA,factor,Lux Arbor / NW Station / SW Station,NA
+plot,plot number as ID,NA,NA,NA,character,NA,NA
+veg,total cover of the vegetation,NA,percent,real,numeric,NA,NA
+bare,cover of bare ground,NA,percent,real,numeric,NA,NA
+litter,cover of litter,NA,percent,real,numeric,NA,NA
+rock,cover of rocks,NA,percent,real,numeric,NA,NA
+moss,cover of mosses,NA,percent,real,numeric,NA,NA
+notes,further notes,NA,NA,NA,character,NA,NA

@@ -1,0 +1,11 @@
+attributeName,attributeDefinition,formatString,unit,numberType,type,factor,comment
+plot_size,quadrat size which was used for the vegetation survey,NA,NA,NA,factor,seeded = seed mixture / 1  meterSquared / 25 meterSquared,1 x 1 m plots or 5 x 5 m plots
+date_surveyed,date of the vegetation survey,YYYY-mm-dd,NA,NA,date,NA,NA
+date_entered,date on which the notes were entered in the digital spreadsheet,YYYY-mm-dd,NA,NA,date,NA,NA
+botanist,person who conducted the vegetation survey,NA,NA,NA,character,NA,NA
+site,the experiment was replicated at three sites,NA,NA,NA,factor,Lux Arbor / NW Station / SW Station,NA
+plot,plot number as ID unique only within a site,NA,NA,NA,character,NA,NA
+species_original,abbrevation of the botanical species name,NA,NA,NA,character,NA,the first thee letters are from the genus and the latter from the species name
+cover,abundance of the species in the plot estimated as cover,NA,percent,real,numeric,NA,NA
+species,corrected species_original names,NA,NA,NA,character,NA,NA
+notes,further comments,NA,NA,NA,character,NA,NA

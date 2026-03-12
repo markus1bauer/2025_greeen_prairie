@@ -1,0 +1,7 @@
+attributeName,attributeDefinition,formatString,unit,numberType,type,factor,comment
+id_plot_year,id of the plot as a combination of the site and the plot number and the survey year,NA,NA,NA,character,NA,NA
+id_plot,id of the plot as a combination of the site and the plot number,NA,NA,NA,character,NA,NA
+plot_size,quadrat size which was used for the vegetation survey,NA,NA,NA,factor,seeded = seed mixture / 1  meterSquared / 25 meterSquared,1 x 1 m plots or 5 x 5 m plots
+date_surveyed,date of the vegetation survey,YYYY-mm-dd,NA,NA,date,NA,NA
+accepted_name,abbrevation of the botanical species name,NA,NA,NA,character,NA,the first thee letters are from the genus and the latter from the species name
+abundance,abundance of the species in the plot estimated as cover,NA,percent,real,numeric,NA,NA

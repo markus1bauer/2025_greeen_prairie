@@ -1,0 +1,7 @@
+attributeName,attributeDefinition,formatString,unit,numberType,type,factor,comment
+date_surveyed,date of the vegetation survey,YYYY-mm-dd,NA,NA,date,NA,NA
+site,the experiment was replicated at three sites,NA,NA,NA,factor,Lux Arbor / NW Station / SW Station,NA
+plot,plot number (ID) which is unique only within a site,NA,NA,NA,character,NA,NA
+species,abbreviation of the botanical species name,NA,NA,NA,character,NA,the first three letters are from the genus and the latter three letters from the species
+count,count of individuals of one species within one plot,NA,dimensionless,integer,numeric,NA,NA
+notes,further comments,NA,NA,NA,character,NA,NA

@@ -1,0 +1,6 @@
+attributeName,attributeDefinition,formatString,unit,numberType,type,factor,comment
+name,botanical species names,NA,NA,NA,character,NA,if abbreviated the first three letters are from the genus and the latter three letters from the species
+seeded_pool_33,seed weight in the 33 species seed mix per plot,NA,NA,real,numeric,NA,NA
+seeded_pool_18,seed weight in the 18 species seed mix per plot,NA,NA,real,numeric,NA,NA
+seeded_pool_12,seed weight in the 12 species seed mix per plot,NA,NA,real,numeric,NA,NA
+seeded_pool_6,seed weight in the 6 species seed mix per plot,NA,NA,real,numeric,NA,NA

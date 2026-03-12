@@ -1,0 +1,7 @@
+attributeName,attributeDefinition,formatString,unit,numberType,type,factor,comment
+id_plot,id of the plot,NA,NA,NA,character,NA,NA
+treatment_id,ten different treatment combination were applied,NA,NA,NA,factor,1 / 2 / 3 / 4 / 5 / 6 / 7 / 8 / 9  / 10,description of factors in treatment_description column
+treatment_description,description of the treatment_id,NA,NA,NA,character,NA,NA
+seeding_time,plot seeded in autumn or in the following spring with forbs,NA,NA,NA,factor,unseeded / fall / spring,unseeded are the control plots
+seeded_pool,number of different species seeded in a plot,NA,NA,NA,factor,0 / 6 / 12 / 18 / 33 species,number of different species
+herbicide,extra herbicide treatment in spring before doing spring seeding,NA,NA,NA,double,0 = no / 1 = yes,herbicide against dicotyledonous
